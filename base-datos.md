@@ -92,6 +92,7 @@
 - fecha_matricula
 - nivel_educativo
 - modalidad
+- repitente
 - id_centro **(FK)**
 - id_grado **(FK)**
 - id_seccion **(FK)**
