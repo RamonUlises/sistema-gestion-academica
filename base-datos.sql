@@ -79,8 +79,6 @@ CREATE TABLE datos_academicos (
     codigo_estudiante VARCHAR(20) PRIMARY KEY,
     fecha_matricula DATE NOT NULL,
     nivel_educativo VARCHAR(255) NOT NULL,
-    grado VARCHAR(2) NOT NULL,
-    seccion CHAR(1) NOT NULL,
     modalidad VARCHAR(255) NOT NULL,
     repitente BOOLEAN DEFAULT FALSE,
     id_grado INT,
@@ -148,10 +146,6 @@ CREATE TRIGGER trigger_estudiantes
 BEFORE INSERT ON estudiantes
 FOR EACH ROW
 BEGIN
-    IF CHAR_LENGTH(NEW.codigo_estudiante) != 20 THEN
-        SIGNAL SQLSTATE '45000'
-        SET MESSAGE_TEXT = 'El codigo del estudiante debe tener 20 caracteres';
-    END IF;
     IF NEW.cedula NOT REGEXP '^[0-9]{3}-[0-9]{6}-[0-9]{4}[A-Z]{1}$' THEN
         SIGNAL SQLSTATE '45000'
         SET MESSAGE_TEXT = 'La cedula del estudiante debe tener el formato 000-000000-0000A';
