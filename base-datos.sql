@@ -19,7 +19,9 @@ CREATE TABLE departamentos(
 
 CREATE TABLE municipios(
     id_municipio INT PRIMARY KEY AUTO_INCREMENT,
-    municipio VARCHAR(50) NOT NULL
+    municipio VARCHAR(50) NOT NULL,
+    id_departamento INT,
+    FOREIGN KEY (id_departamento) REFERENCES departamentos(id_departamento)
 );
 
 CREATE TABLE nacionalidades(
