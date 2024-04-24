@@ -71,6 +71,9 @@
     <Compile Include="Matrícula.Designer.cs">
       <DependentUpon>Matrícula.cs</DependentUpon>
     </Compile>
+    <Compile Include="MBControl\MBButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reingreso.cs">

@@ -16,5 +16,15 @@ namespace SGA
         {
             InitializeComponent();
         }
+
+        private void Estudiantes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mbButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
