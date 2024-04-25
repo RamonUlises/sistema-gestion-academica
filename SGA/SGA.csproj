@@ -74,6 +74,12 @@
     <Compile Include="MBControl\MBButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="MBControl\MBTexbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MBControl\MBTexbox.Designer.cs">
+      <DependentUpon>MBTexbox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reingreso.cs">
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Matrícula.resx">
       <DependentUpon>Matrícula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MBControl\MBTexbox.resx">
+      <DependentUpon>MBTexbox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

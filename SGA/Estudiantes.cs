@@ -26,5 +26,11 @@ namespace SGA
         {
 
         }
+
+        private void mbTexbox2__TextChanged(object sender, EventArgs e)
+        {
+          
+
+        }
     }
 }
