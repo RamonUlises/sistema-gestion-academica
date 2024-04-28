@@ -31,25 +31,28 @@
             this.mbTexbox1 = new SGA.MBControl.MBTexbox();
             this.mbButton2 = new SGA.MBControl.MBButton();
             this.mbButton1 = new SGA.MBControl.MBButton();
-            this.mbTexbox2 = new SGA.MBControl.MBTexbox();
             this.SuspendLayout();
             // 
             // mbTexbox1
             // 
             this.mbTexbox1.BackColor = System.Drawing.SystemColors.Window;
             this.mbTexbox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.mbTexbox1.BorderSize = 2;
+            this.mbTexbox1.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.mbTexbox1.BorderRadius = 20;
+            this.mbTexbox1.BorderSize = 1;
             this.mbTexbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mbTexbox1.ForeColor = System.Drawing.Color.DimGray;
-            this.mbTexbox1.Location = new System.Drawing.Point(90, 90);
+            this.mbTexbox1.Location = new System.Drawing.Point(439, 88);
             this.mbTexbox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mbTexbox1.Multiline = false;
             this.mbTexbox1.Name = "mbTexbox1";
-            this.mbTexbox1.Padding = new System.Windows.Forms.Padding(7);
+            this.mbTexbox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.mbTexbox1.PasswordChar = false;
+            this.mbTexbox1.PlaceholderColor = System.Drawing.Color.Black;
+            this.mbTexbox1.PlaceholderText = "paswoord";
             this.mbTexbox1.Size = new System.Drawing.Size(250, 35);
             this.mbTexbox1.TabIndex = 2;
-            this.mbTexbox1.UnderlineStyle = true;
+            this.mbTexbox1.UnderlineStyle = false;
             // 
             // mbButton2
             // 
@@ -90,30 +93,11 @@
             this.mbButton1.UseVisualStyleBackColor = false;
             this.mbButton1.Click += new System.EventHandler(this.mbButton1_Click);
             // 
-            // mbTexbox2
-            // 
-            this.mbTexbox2.BackColor = System.Drawing.SystemColors.Window;
-            this.mbTexbox2.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.mbTexbox2.BorderSize = 2;
-            this.mbTexbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox2.ForeColor = System.Drawing.Color.DimGray;
-            this.mbTexbox2.Location = new System.Drawing.Point(26, 236);
-            this.mbTexbox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox2.Multiline = false;
-            this.mbTexbox2.Name = "mbTexbox2";
-            this.mbTexbox2.Padding = new System.Windows.Forms.Padding(7);
-            this.mbTexbox2.PasswordChar = false;
-            this.mbTexbox2.Size = new System.Drawing.Size(250, 35);
-            this.mbTexbox2.TabIndex = 3;
-            this.mbTexbox2.UnderlineStyle = false;
-            this.mbTexbox2._TextChanged += new System.EventHandler(this.mbTexbox2__TextChanged);
-            // 
             // Estudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1060, 657);
-            this.Controls.Add(this.mbTexbox2);
             this.Controls.Add(this.mbTexbox1);
             this.Controls.Add(this.mbButton2);
             this.Controls.Add(this.mbButton1);
@@ -129,6 +113,5 @@
         private MBControl.MBButton mbButton1;
         private MBControl.MBButton mbButton2;
         private MBControl.MBTexbox mbTexbox1;
-        private MBControl.MBTexbox mbTexbox2;
     }
 }
