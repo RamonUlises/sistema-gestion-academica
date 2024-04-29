@@ -43,7 +43,7 @@
             this.mbTexbox1.BorderSize = 1;
             this.mbTexbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mbTexbox1.ForeColor = System.Drawing.Color.DimGray;
-            this.mbTexbox1.Location = new System.Drawing.Point(439, 88);
+            this.mbTexbox1.Location = new System.Drawing.Point(644, 225);
             this.mbTexbox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mbTexbox1.Multiline = false;
             this.mbTexbox1.Name = "mbTexbox1";
@@ -100,19 +100,37 @@
             this.mbComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.mbComboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.mbComboBox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.mbComboBox1.BorderSize = 2;
+            this.mbComboBox1.BorderSize = 1;
             this.mbComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.mbComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.mbComboBox1.ForeColor = System.Drawing.Color.DimGray;
             this.mbComboBox1.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.mbComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(255)))));
+            this.mbComboBox1.Items.AddRange(new object[] {
+            "edqasd",
+            "asd",
+            "s",
+            "da",
+            "sd",
+            "asdAWEFASDFASER",
+            "F",
+            "SDF",
+            "AS",
+            "ERFA",
+            "DF",
+            "AS",
+            "F",
+            "SDF",
+            "AE",
+            "F"});
+            this.mbComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.mbComboBox1.ListTextColor = System.Drawing.Color.DimGray;
-            this.mbComboBox1.Location = new System.Drawing.Point(407, 381);
+            this.mbComboBox1.Location = new System.Drawing.Point(503, 445);
             this.mbComboBox1.MinimumSize = new System.Drawing.Size(200, 30);
             this.mbComboBox1.Name = "mbComboBox1";
-            this.mbComboBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.mbComboBox1.Padding = new System.Windows.Forms.Padding(1);
             this.mbComboBox1.Size = new System.Drawing.Size(200, 30);
             this.mbComboBox1.TabIndex = 3;
-            this.mbComboBox1.OnSelectedIndexChanged += new System.EventHandler(this.mbComboBox1_OnSelectedIndexChanged_1);
+            this.mbComboBox1.Texts = "";
             // 
             // Estudiantes
             // 
