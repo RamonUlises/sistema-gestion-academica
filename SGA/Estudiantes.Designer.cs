@@ -31,6 +31,7 @@
             this.mbTexbox1 = new SGA.MBControl.MBTexbox();
             this.mbButton2 = new SGA.MBControl.MBButton();
             this.mbButton1 = new SGA.MBControl.MBButton();
+            this.mbComboBox1 = new SGA.MBControl.MBComboBox();
             this.SuspendLayout();
             // 
             // mbTexbox1
@@ -93,11 +94,32 @@
             this.mbButton1.UseVisualStyleBackColor = false;
             this.mbButton1.Click += new System.EventHandler(this.mbButton1_Click);
             // 
+            // mbComboBox1
+            // 
+            this.mbComboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.mbComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.mbComboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.mbComboBox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.mbComboBox1.BorderSize = 2;
+            this.mbComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.mbComboBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.mbComboBox1.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.mbComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(255)))));
+            this.mbComboBox1.ListTextColor = System.Drawing.Color.DimGray;
+            this.mbComboBox1.Location = new System.Drawing.Point(407, 381);
+            this.mbComboBox1.MinimumSize = new System.Drawing.Size(200, 30);
+            this.mbComboBox1.Name = "mbComboBox1";
+            this.mbComboBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.mbComboBox1.Size = new System.Drawing.Size(200, 30);
+            this.mbComboBox1.TabIndex = 3;
+            this.mbComboBox1.OnSelectedIndexChanged += new System.EventHandler(this.mbComboBox1_OnSelectedIndexChanged_1);
+            // 
             // Estudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1060, 657);
+            this.Controls.Add(this.mbComboBox1);
             this.Controls.Add(this.mbTexbox1);
             this.Controls.Add(this.mbButton2);
             this.Controls.Add(this.mbButton1);
@@ -113,5 +135,6 @@
         private MBControl.MBButton mbButton1;
         private MBControl.MBButton mbButton2;
         private MBControl.MBTexbox mbTexbox1;
+        private MBControl.MBComboBox mbComboBox1;
     }
 }

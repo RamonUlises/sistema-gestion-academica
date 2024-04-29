@@ -74,6 +74,9 @@
     <Compile Include="MBControl\MBButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="MBControl\MBComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="MBControl\MBTexbox.cs">
       <SubType>UserControl</SubType>
     </Compile>

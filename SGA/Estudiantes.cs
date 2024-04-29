@@ -32,5 +32,15 @@ namespace SGA
           
 
         }
+
+        private void mbComboBox1_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mbComboBox1_OnSelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
