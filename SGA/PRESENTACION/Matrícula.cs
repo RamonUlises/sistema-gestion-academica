@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SGA.MBControl;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,27 @@ namespace SGA
         public Matrícula()
         {
             InitializeComponent();
+            
+        }
+
+        private void Matrícula_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mbComboBox1_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

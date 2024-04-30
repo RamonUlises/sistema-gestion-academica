@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
@@ -47,7 +48,6 @@
             this.iconformulario = new FontAwesome.Sharp.IconPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelEscritorio = new System.Windows.Forms.Panel();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
@@ -73,8 +73,30 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 766);
+            this.panelMenu.Size = new System.Drawing.Size(220, 1033);
             this.panelMenu.TabIndex = 0;
+            // 
+            // iconButton5
+            // 
+            this.iconButton5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.iconButton5.FlatAppearance.BorderSize = 0;
+            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton5.ForeColor = System.Drawing.Color.White;
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            this.iconButton5.IconColor = System.Drawing.Color.White;
+            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton5.IconSize = 32;
+            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton5.Location = new System.Drawing.Point(0, 973);
+            this.iconButton5.Name = "iconButton5";
+            this.iconButton5.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButton5.Size = new System.Drawing.Size(220, 60);
+            this.iconButton5.TabIndex = 5;
+            this.iconButton5.Text = "Informacion";
+            this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton5.UseVisualStyleBackColor = true;
+            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
             // iconButton4
             // 
@@ -198,7 +220,7 @@
             this.panelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBarraTitulo.Location = new System.Drawing.Point(220, 0);
             this.panelBarraTitulo.Name = "panelBarraTitulo";
-            this.panelBarraTitulo.Size = new System.Drawing.Size(839, 75);
+            this.panelBarraTitulo.Size = new System.Drawing.Size(1682, 75);
             this.panelBarraTitulo.TabIndex = 1;
             this.panelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraTitulo_MouseDown);
             // 
@@ -210,7 +232,7 @@
             this.iconPictureBox6.IconColor = System.Drawing.Color.White;
             this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox6.IconSize = 20;
-            this.iconPictureBox6.Location = new System.Drawing.Point(804, 3);
+            this.iconPictureBox6.Location = new System.Drawing.Point(1647, 3);
             this.iconPictureBox6.Name = "iconPictureBox6";
             this.iconPictureBox6.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox6.TabIndex = 4;
@@ -225,7 +247,7 @@
             this.iconPictureBox3.IconColor = System.Drawing.Color.White;
             this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox3.IconSize = 20;
-            this.iconPictureBox3.Location = new System.Drawing.Point(804, 12);
+            this.iconPictureBox3.Location = new System.Drawing.Point(1647, 12);
             this.iconPictureBox3.Name = "iconPictureBox3";
             this.iconPictureBox3.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox3.TabIndex = 4;
@@ -239,7 +261,7 @@
             this.iconPictureBox5.IconColor = System.Drawing.Color.White;
             this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox5.IconSize = 20;
-            this.iconPictureBox5.Location = new System.Drawing.Point(766, 3);
+            this.iconPictureBox5.Location = new System.Drawing.Point(1609, 3);
             this.iconPictureBox5.Name = "iconPictureBox5";
             this.iconPictureBox5.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox5.TabIndex = 3;
@@ -254,7 +276,7 @@
             this.iconPictureBox4.IconColor = System.Drawing.Color.White;
             this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox4.IconSize = 20;
-            this.iconPictureBox4.Location = new System.Drawing.Point(730, 0);
+            this.iconPictureBox4.Location = new System.Drawing.Point(1573, 0);
             this.iconPictureBox4.Name = "iconPictureBox4";
             this.iconPictureBox4.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox4.TabIndex = 2;
@@ -269,7 +291,7 @@
             this.iconPictureBox2.IconColor = System.Drawing.Color.White;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 20;
-            this.iconPictureBox2.Location = new System.Drawing.Point(766, 12);
+            this.iconPictureBox2.Location = new System.Drawing.Point(1609, 12);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox2.TabIndex = 3;
@@ -283,7 +305,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 20;
-            this.iconPictureBox1.Location = new System.Drawing.Point(728, 12);
+            this.iconPictureBox1.Location = new System.Drawing.Point(1571, 12);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox1.TabIndex = 2;
@@ -320,7 +342,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(220, 75);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(839, 9);
+            this.panel1.Size = new System.Drawing.Size(1682, 9);
             this.panel1.TabIndex = 2;
             // 
             // panelEscritorio
@@ -329,36 +351,14 @@
             this.panelEscritorio.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEscritorio.Location = new System.Drawing.Point(220, 84);
             this.panelEscritorio.Name = "panelEscritorio";
-            this.panelEscritorio.Size = new System.Drawing.Size(839, 682);
+            this.panelEscritorio.Size = new System.Drawing.Size(1682, 949);
             this.panelEscritorio.TabIndex = 3;
-            // 
-            // iconButton5
-            // 
-            this.iconButton5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.iconButton5.FlatAppearance.BorderSize = 0;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.ForeColor = System.Drawing.Color.White;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            this.iconButton5.IconColor = System.Drawing.Color.White;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.IconSize = 32;
-            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(0, 706);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton5.Size = new System.Drawing.Size(220, 60);
-            this.iconButton5.TabIndex = 5;
-            this.iconButton5.Text = "Informacion";
-            this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton5.UseVisualStyleBackColor = true;
-            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1059, 766);
+            this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.panelEscritorio);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelBarraTitulo);

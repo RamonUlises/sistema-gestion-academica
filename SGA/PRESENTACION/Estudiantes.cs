@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SGA.MBControl;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace SGA
         public Estudiantes()
         {
             InitializeComponent();
+            
         }
 
         private void Estudiantes_Load(object sender, EventArgs e)
@@ -59,6 +61,11 @@ namespace SGA
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint_1(object sender, PaintEventArgs e)
         {
 
         }
