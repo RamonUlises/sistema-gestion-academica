@@ -1,6 +1,6 @@
 ﻿namespace SGA
 {
-    partial class Matrícula
+    partial class Informacion
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Matrícula
+            // Informacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1081, 684);
-            this.Name = "Matrícula";
-            this.Text = "Matrícula";
+            this.ClientSize = new System.Drawing.Size(911, 577);
+            this.Name = "Informacion";
+            this.Text = "Informacion";
             this.ResumeLayout(false);
 
         }
