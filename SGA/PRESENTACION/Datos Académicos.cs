@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace SGA.PRESENTACION
 {
-    public partial class Matricula2 : Form
+    public partial class Datos_académicos : Form
     {
-        public Matricula2()
+        public Datos_académicos()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace SGA.PRESENTACION
 {
-    partial class Matricula2
+    partial class Datos_académicos
     {
         /// <summary>
         /// Required designer variable.
@@ -813,14 +813,14 @@
             this.panel1.Size = new System.Drawing.Size(1902, 1033);
             this.panel1.TabIndex = 0;
             // 
-            // Matricula2
+            // Datos_académicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.panel1);
-            this.Name = "Matricula2";
-            this.Text = "Matricula2";
+            this.Name = "Datos_académicos";
+            this.Text = "Datos académicos";
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);

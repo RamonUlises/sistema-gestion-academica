@@ -235,7 +235,7 @@ namespace SGA
         private void iconButton6_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            OpenChildForm(new Matricula2());
+            OpenChildForm(new Datos_académicos());
             //hideSubMenu();
 
         }

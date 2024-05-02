@@ -284,7 +284,7 @@ namespace SGA
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Matricula2 frm = new Matricula2();
+            Datos_académicos frm = new Datos_académicos();
             frm.Show();
             this.Hide();
 
@@ -554,7 +554,7 @@ namespace SGA
 
         private void mbButton1_Click(object sender, EventArgs e)
         {
-            Matricula2 frm = new Matricula2();
+            Datos_académicos frm = new Datos_académicos();
             frm.Show();
             this.Hide();
         }
