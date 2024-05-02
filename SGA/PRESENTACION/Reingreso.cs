@@ -16,5 +16,10 @@ namespace SGA
         {
             InitializeComponent();
         }
+
+        private void Reingreso_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

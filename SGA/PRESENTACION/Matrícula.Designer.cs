@@ -28,71 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Matrícula));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.mbTexbox19 = new SGA.MBControl.MBTexbox();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.label31 = new System.Windows.Forms.Label();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.label32 = new System.Windows.Forms.Label();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.label33 = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.mbTexbox18 = new SGA.MBControl.MBTexbox();
             this.panel21 = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
-            this.mbTexbox17 = new SGA.MBControl.MBTexbox();
             this.panel20 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
-            this.mbTexbox16 = new SGA.MBControl.MBTexbox();
             this.panel19 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
-            this.mbComboBox1 = new SGA.MBControl.MBComboBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
-            this.mbTexbox15 = new SGA.MBControl.MBTexbox();
             this.panel17 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
-            this.mbTexbox12 = new SGA.MBControl.MBTexbox();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
-            this.mbTexbox13 = new SGA.MBControl.MBTexbox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
-            this.mbTexbox14 = new SGA.MBControl.MBTexbox();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
-            this.mbTexbox9 = new SGA.MBControl.MBTexbox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
-            this.mbTexbox10 = new SGA.MBControl.MBTexbox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
-            this.mbTexbox11 = new SGA.MBControl.MBTexbox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.mbTexbox8 = new SGA.MBControl.MBTexbox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.mbTexbox6 = new SGA.MBControl.MBTexbox();
+            this.chSexoMasMatricula = new System.Windows.Forms.CheckBox();
+            this.chSexoFemMatricula = new System.Windows.Forms.CheckBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
-            this.mbTexbox7 = new SGA.MBControl.MBTexbox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.mbTexbox5 = new SGA.MBControl.MBTexbox();
+            this.ChParitdaNacimientoNo = new System.Windows.Forms.CheckBox();
+            this.chPartidaNacimeintoSi = new System.Windows.Forms.CheckBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.mbTexbox4 = new SGA.MBControl.MBTexbox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.mbTexbox3 = new SGA.MBControl.MBTexbox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.mbTexbox2 = new SGA.MBControl.MBTexbox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -100,15 +85,40 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.mbTexbox20 = new SGA.MBControl.MBTexbox();
-            this.mbTexbox1 = new SGA.MBControl.MBTexbox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnGuardarMatricula = new SGA.MBControl.MBButton();
+            this.mbTexbox4 = new SGA.MBControl.MBTexbox();
+            this.cbNacionalidadMatricula = new SGA.MBControl.MBComboBox();
+            this.txt2ApellidoMatricula = new SGA.MBControl.MBTexbox();
+            this.cbPaisNacimentoMatricula = new SGA.MBControl.MBComboBox();
+            this.txt2NombreMatricula = new SGA.MBControl.MBTexbox();
+            this.txtDiscapacidadMatricula = new SGA.MBControl.MBTexbox();
+            this.txtComunidadIndigenaMatricula = new SGA.MBControl.MBTexbox();
+            this.txtLenguaMaternaMatricula = new SGA.MBControl.MBTexbox();
+            this.txtTerritorioIndigenaMatricula = new SGA.MBControl.MBTexbox();
+            this.cbEtniaMatricula = new SGA.MBControl.MBComboBox();
+            this.TxtDireccionDomiciliarMatricula = new SGA.MBControl.MBTexbox();
+            this.txtBarrioMatricula = new SGA.MBControl.MBTexbox();
+            this.txtMuniciopioDistritoMatricula = new SGA.MBControl.MBTexbox();
+            this.txtDepartamentoresideMatricula = new SGA.MBControl.MBTexbox();
+            this.txtTelefonoMatricula = new SGA.MBControl.MBTexbox();
+            this.txtTallaMatricula = new SGA.MBControl.MBTexbox();
+            this.txtPesoMAtricula = new SGA.MBControl.MBTexbox();
+            this.mbTexbox7 = new SGA.MBControl.MBTexbox();
+            this.mbTexbox5 = new SGA.MBControl.MBTexbox();
+            this.txt1ApellidoMatricula = new SGA.MBControl.MBTexbox();
+            this.txt1NombreMatricula = new SGA.MBControl.MBTexbox();
+            this.txtCedulaMatricula = new SGA.MBControl.MBTexbox();
+            this.mbTexbox20 = new SGA.MBControl.MBTexbox();
+            this.mbTexbox1 = new SGA.MBControl.MBTexbox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel23.SuspendLayout();
+            this.panel24.SuspendLayout();
+            this.panel25.SuspendLayout();
             this.panel22.SuspendLayout();
             this.panel21.SuspendLayout();
             this.panel20.SuspendLayout();
@@ -134,55 +144,58 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.AutoScroll = true;
-            this.panel1.AutoScrollMargin = new System.Drawing.Size(15, 15);
-            this.panel1.AutoScrollMinSize = new System.Drawing.Size(15, 15);
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label28);
-            this.panel1.Controls.Add(this.mbTexbox19);
+            this.panel1.Controls.Add(this.btnGuardarMatricula);
+            this.panel1.Controls.Add(this.panel26);
+            this.panel1.Controls.Add(this.mbTexbox4);
+            this.panel1.Controls.Add(this.panel23);
+            this.panel1.Controls.Add(this.cbNacionalidadMatricula);
+            this.panel1.Controls.Add(this.txt2ApellidoMatricula);
+            this.panel1.Controls.Add(this.cbPaisNacimentoMatricula);
+            this.panel1.Controls.Add(this.panel24);
+            this.panel1.Controls.Add(this.txt2NombreMatricula);
+            this.panel1.Controls.Add(this.panel25);
+            this.panel1.Controls.Add(this.txtDiscapacidadMatricula);
             this.panel1.Controls.Add(this.panel22);
-            this.panel1.Controls.Add(this.mbTexbox18);
+            this.panel1.Controls.Add(this.txtComunidadIndigenaMatricula);
             this.panel1.Controls.Add(this.panel21);
-            this.panel1.Controls.Add(this.mbTexbox17);
+            this.panel1.Controls.Add(this.txtLenguaMaternaMatricula);
             this.panel1.Controls.Add(this.panel20);
-            this.panel1.Controls.Add(this.mbTexbox16);
+            this.panel1.Controls.Add(this.txtTerritorioIndigenaMatricula);
             this.panel1.Controls.Add(this.panel19);
-            this.panel1.Controls.Add(this.mbComboBox1);
+            this.panel1.Controls.Add(this.cbEtniaMatricula);
             this.panel1.Controls.Add(this.panel18);
-            this.panel1.Controls.Add(this.mbTexbox15);
+            this.panel1.Controls.Add(this.TxtDireccionDomiciliarMatricula);
             this.panel1.Controls.Add(this.panel17);
-            this.panel1.Controls.Add(this.mbTexbox12);
+            this.panel1.Controls.Add(this.txtBarrioMatricula);
             this.panel1.Controls.Add(this.panel14);
-            this.panel1.Controls.Add(this.mbTexbox13);
+            this.panel1.Controls.Add(this.txtMuniciopioDistritoMatricula);
             this.panel1.Controls.Add(this.panel15);
-            this.panel1.Controls.Add(this.mbTexbox14);
+            this.panel1.Controls.Add(this.txtDepartamentoresideMatricula);
             this.panel1.Controls.Add(this.panel16);
-            this.panel1.Controls.Add(this.mbTexbox9);
+            this.panel1.Controls.Add(this.txtTelefonoMatricula);
             this.panel1.Controls.Add(this.panel11);
-            this.panel1.Controls.Add(this.mbTexbox10);
             this.panel1.Controls.Add(this.panel12);
-            this.panel1.Controls.Add(this.mbTexbox11);
             this.panel1.Controls.Add(this.panel13);
-            this.panel1.Controls.Add(this.mbTexbox8);
+            this.panel1.Controls.Add(this.txtTallaMatricula);
             this.panel1.Controls.Add(this.panel10);
-            this.panel1.Controls.Add(this.checkBox4);
-            this.panel1.Controls.Add(this.checkBox3);
-            this.panel1.Controls.Add(this.mbTexbox6);
+            this.panel1.Controls.Add(this.chSexoMasMatricula);
+            this.panel1.Controls.Add(this.chSexoFemMatricula);
+            this.panel1.Controls.Add(this.txtPesoMAtricula);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.mbTexbox7);
             this.panel1.Controls.Add(this.panel9);
-            this.panel1.Controls.Add(this.checkBox2);
-            this.panel1.Controls.Add(this.checkBox1);
+            this.panel1.Controls.Add(this.ChParitdaNacimientoNo);
+            this.panel1.Controls.Add(this.chPartidaNacimeintoSi);
             this.panel1.Controls.Add(this.mbTexbox5);
             this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.mbTexbox4);
+            this.panel1.Controls.Add(this.txt1ApellidoMatricula);
             this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.mbTexbox3);
+            this.panel1.Controls.Add(this.txt1NombreMatricula);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.mbTexbox2);
+            this.panel1.Controls.Add(this.txtCedulaMatricula);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.mbTexbox1);
@@ -195,64 +208,83 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // pictureBox1
+            // panel26
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(1417, 1018);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(33, 34);
-            this.pictureBox1.TabIndex = 59;
-            this.pictureBox1.TabStop = false;
+            this.panel26.Location = new System.Drawing.Point(980, 2271);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(200, 628);
+            this.panel26.TabIndex = 63;
             // 
-            // label28
+            // panel23
             // 
-            this.label28.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(1348, 1026);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(73, 20);
-            this.label28.TabIndex = 58;
-            this.label28.Text = "Siguiente";
+            this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel23.Controls.Add(this.label31);
+            this.panel23.Location = new System.Drawing.Point(1022, 1723);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(182, 45);
+            this.panel23.TabIndex = 19;
             // 
-            // mbTexbox19
+            // label31
             // 
-            this.mbTexbox19.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbTexbox19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox19.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox19.BorderRadius = 25;
-            this.mbTexbox19.BorderSize = 1;
-            this.mbTexbox19.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox19.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox19.Location = new System.Drawing.Point(1095, 962);
-            this.mbTexbox19.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox19.Multiline = false;
-            this.mbTexbox19.Name = "mbTexbox19";
-            this.mbTexbox19.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox19.PasswordChar = false;
-            this.mbTexbox19.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox19.PlaceholderText = "";
-            this.mbTexbox19.Size = new System.Drawing.Size(251, 38);
-            this.mbTexbox19.TabIndex = 57;
-            this.mbTexbox19.UnderlineStyle = false;
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(29, 11);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(133, 20);
+            this.label31.TabIndex = 0;
+            this.label31.Text = "Fecha nacimiento:";
+            // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel24.Controls.Add(this.label32);
+            this.panel24.Location = new System.Drawing.Point(619, 1728);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(152, 45);
+            this.panel24.TabIndex = 17;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(29, 11);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(95, 20);
+            this.label32.TabIndex = 0;
+            this.label32.Text = "2er.Apellido:";
+            // 
+            // panel25
+            // 
+            this.panel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel25.Controls.Add(this.label33);
+            this.panel25.Location = new System.Drawing.Point(208, 1730);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(152, 45);
+            this.panel25.TabIndex = 15;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(29, 11);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(95, 20);
+            this.label33.TabIndex = 0;
+            this.label33.Text = "2er.Nombre:";
             // 
             // panel22
             // 
-            this.panel22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel22.Controls.Add(this.label27);
             this.panel22.Controls.Add(this.label26);
-            this.panel22.Location = new System.Drawing.Point(857, 951);
+            this.panel22.Location = new System.Drawing.Point(715, 2173);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(222, 64);
             this.panel22.TabIndex = 56;
+            this.panel22.Paint += new System.Windows.Forms.PaintEventHandler(this.panel22_Paint);
             // 
             // label27
             // 
-            this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(29, 30);
@@ -260,10 +292,10 @@
             this.label27.Size = new System.Drawing.Size(171, 17);
             this.label27.TabIndex = 1;
             this.label27.Text = "(Según diagnóstico médico)";
+            this.label27.Click += new System.EventHandler(this.label27_Click);
             // 
             // label26
             // 
-            this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(59, 11);
@@ -271,42 +303,20 @@
             this.label26.Size = new System.Drawing.Size(107, 40);
             this.label26.TabIndex = 0;
             this.label26.Text = "Discapacidad: \r\n\r\n";
-            // 
-            // mbTexbox18
-            // 
-            this.mbTexbox18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbTexbox18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox18.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox18.BorderRadius = 25;
-            this.mbTexbox18.BorderSize = 1;
-            this.mbTexbox18.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox18.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox18.Location = new System.Drawing.Point(1118, 890);
-            this.mbTexbox18.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox18.Multiline = false;
-            this.mbTexbox18.Name = "mbTexbox18";
-            this.mbTexbox18.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox18.PasswordChar = false;
-            this.mbTexbox18.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox18.PlaceholderText = "";
-            this.mbTexbox18.Size = new System.Drawing.Size(218, 38);
-            this.mbTexbox18.TabIndex = 55;
-            this.mbTexbox18.UnderlineStyle = false;
+            this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
             // panel21
             // 
-            this.panel21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel21.Controls.Add(this.label25);
-            this.panel21.Location = new System.Drawing.Point(857, 877);
+            this.panel21.Location = new System.Drawing.Point(715, 2099);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(255, 64);
             this.panel21.TabIndex = 54;
+            this.panel21.Paint += new System.Windows.Forms.PaintEventHandler(this.panel21_Paint_1);
             // 
             // label25
             // 
-            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(20, 11);
@@ -314,43 +324,20 @@
             this.label25.Size = new System.Drawing.Size(202, 40);
             this.label25.TabIndex = 0;
             this.label25.Text = "El es estudiante habita en  \ncomunidad indígena. ¿Cuál?";
-            // 
-            // mbTexbox17
-            // 
-            this.mbTexbox17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbTexbox17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox17.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox17.BorderRadius = 25;
-            this.mbTexbox17.BorderSize = 1;
-            this.mbTexbox17.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox17.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox17.Location = new System.Drawing.Point(534, 955);
-            this.mbTexbox17.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox17.Multiline = false;
-            this.mbTexbox17.Name = "mbTexbox17";
-            this.mbTexbox17.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox17.PasswordChar = false;
-            this.mbTexbox17.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox17.PlaceholderText = "";
-            this.mbTexbox17.Size = new System.Drawing.Size(218, 38);
-            this.mbTexbox17.TabIndex = 53;
-            this.mbTexbox17.UnderlineStyle = false;
-            this.mbTexbox17._TextChanged += new System.EventHandler(this.mbTexbox17__TextChanged);
+            this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // panel20
             // 
-            this.panel20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel20.Controls.Add(this.label24);
-            this.panel20.Location = new System.Drawing.Point(351, 953);
+            this.panel20.Location = new System.Drawing.Point(209, 2175);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(169, 45);
             this.panel20.TabIndex = 52;
+            this.panel20.Paint += new System.Windows.Forms.PaintEventHandler(this.panel20_Paint);
             // 
             // label24
             // 
-            this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(17, 11);
@@ -358,42 +345,20 @@
             this.label24.Size = new System.Drawing.Size(125, 20);
             this.label24.TabIndex = 0;
             this.label24.Text = "Lengua Materna:";
-            // 
-            // mbTexbox16
-            // 
-            this.mbTexbox16.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbTexbox16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox16.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox16.BorderRadius = 25;
-            this.mbTexbox16.BorderSize = 1;
-            this.mbTexbox16.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox16.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox16.Location = new System.Drawing.Point(612, 890);
-            this.mbTexbox16.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox16.Multiline = false;
-            this.mbTexbox16.Name = "mbTexbox16";
-            this.mbTexbox16.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox16.PasswordChar = false;
-            this.mbTexbox16.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox16.PlaceholderText = "";
-            this.mbTexbox16.Size = new System.Drawing.Size(218, 38);
-            this.mbTexbox16.TabIndex = 45;
-            this.mbTexbox16.UnderlineStyle = false;
+            this.label24.Click += new System.EventHandler(this.label24_Click);
             // 
             // panel19
             // 
-            this.panel19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel19.Controls.Add(this.label23);
-            this.panel19.Location = new System.Drawing.Point(351, 877);
+            this.panel19.Location = new System.Drawing.Point(209, 2099);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(255, 64);
             this.panel19.TabIndex = 44;
+            this.panel19.Paint += new System.Windows.Forms.PaintEventHandler(this.panel19_Paint);
             // 
             // label23
             // 
-            this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(17, 11);
@@ -403,38 +368,18 @@
             this.label23.Text = "El es estudiante pertenece a un\n territorio indígena. ¿Cuál?";
             this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
-            // mbComboBox1
-            // 
-            this.mbComboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbComboBox1.BorderColor = System.Drawing.Color.Black;
-            this.mbComboBox1.BorderSize = 0;
-            this.mbComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.mbComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.mbComboBox1.ForeColor = System.Drawing.Color.Black;
-            this.mbComboBox1.IconColor = System.Drawing.Color.Black;
-            this.mbComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbComboBox1.ListTextColor = System.Drawing.Color.Black;
-            this.mbComboBox1.Location = new System.Drawing.Point(588, 817);
-            this.mbComboBox1.MinimumSize = new System.Drawing.Size(200, 30);
-            this.mbComboBox1.Name = "mbComboBox1";
-            this.mbComboBox1.Size = new System.Drawing.Size(200, 38);
-            this.mbComboBox1.TabIndex = 43;
-            this.mbComboBox1.Texts = "";
-            // 
             // panel18
             // 
-            this.panel18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel18.Controls.Add(this.label22);
-            this.panel18.Location = new System.Drawing.Point(350, 804);
+            this.panel18.Location = new System.Drawing.Point(208, 2026);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(232, 64);
             this.panel18.TabIndex = 42;
+            this.panel18.Paint += new System.Windows.Forms.PaintEventHandler(this.panel18_Paint);
             // 
             // label22
             // 
-            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(25, 11);
@@ -442,42 +387,20 @@
             this.label22.Size = new System.Drawing.Size(192, 40);
             this.label22.TabIndex = 0;
             this.label22.Text = "Pueblo Indígena,\r\nÁfrodescendiente o étnico:";
-            // 
-            // mbTexbox15
-            // 
-            this.mbTexbox15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbTexbox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox15.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox15.BorderRadius = 25;
-            this.mbTexbox15.BorderSize = 1;
-            this.mbTexbox15.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox15.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox15.Location = new System.Drawing.Point(571, 752);
-            this.mbTexbox15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox15.Multiline = false;
-            this.mbTexbox15.Name = "mbTexbox15";
-            this.mbTexbox15.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox15.PasswordChar = false;
-            this.mbTexbox15.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox15.PlaceholderText = "";
-            this.mbTexbox15.Size = new System.Drawing.Size(629, 38);
-            this.mbTexbox15.TabIndex = 41;
-            this.mbTexbox15.UnderlineStyle = false;
+            this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // panel17
             // 
-            this.panel17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel17.Controls.Add(this.label21);
-            this.panel17.Location = new System.Drawing.Point(350, 747);
+            this.panel17.Location = new System.Drawing.Point(208, 1969);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(200, 45);
             this.panel17.TabIndex = 40;
+            this.panel17.Paint += new System.Windows.Forms.PaintEventHandler(this.panel17_Paint);
             // 
             // label21
             // 
-            this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(20, 11);
@@ -485,35 +408,13 @@
             this.label21.Size = new System.Drawing.Size(151, 20);
             this.label21.TabIndex = 0;
             this.label21.Text = "Dirección domiciliar:";
-            // 
-            // mbTexbox12
-            // 
-            this.mbTexbox12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbTexbox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox12.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox12.BorderRadius = 25;
-            this.mbTexbox12.BorderSize = 1;
-            this.mbTexbox12.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox12.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox12.Location = new System.Drawing.Point(1306, 684);
-            this.mbTexbox12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox12.Multiline = false;
-            this.mbTexbox12.Name = "mbTexbox12";
-            this.mbTexbox12.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox12.PasswordChar = false;
-            this.mbTexbox12.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox12.PlaceholderText = "";
-            this.mbTexbox12.Size = new System.Drawing.Size(221, 38);
-            this.mbTexbox12.TabIndex = 39;
-            this.mbTexbox12.UnderlineStyle = false;
+            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // panel14
             // 
-            this.panel14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel14.Controls.Add(this.label18);
-            this.panel14.Location = new System.Drawing.Point(1197, 679);
+            this.panel14.Location = new System.Drawing.Point(1055, 1901);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(103, 45);
             this.panel14.TabIndex = 38;
@@ -521,7 +422,6 @@
             // 
             // label18
             // 
-            this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(26, 11);
@@ -531,41 +431,18 @@
             this.label18.Text = "Barrio:";
             this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
-            // mbTexbox13
-            // 
-            this.mbTexbox13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbTexbox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox13.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox13.BorderRadius = 25;
-            this.mbTexbox13.BorderSize = 1;
-            this.mbTexbox13.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox13.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox13.Location = new System.Drawing.Point(1022, 684);
-            this.mbTexbox13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox13.Multiline = false;
-            this.mbTexbox13.Name = "mbTexbox13";
-            this.mbTexbox13.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox13.PasswordChar = false;
-            this.mbTexbox13.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox13.PlaceholderText = "";
-            this.mbTexbox13.Size = new System.Drawing.Size(156, 38);
-            this.mbTexbox13.TabIndex = 37;
-            this.mbTexbox13.UnderlineStyle = false;
-            // 
             // panel15
             // 
-            this.panel15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel15.Controls.Add(this.label19);
-            this.panel15.Location = new System.Drawing.Point(823, 680);
+            this.panel15.Location = new System.Drawing.Point(681, 1902);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(182, 45);
             this.panel15.TabIndex = 36;
+            this.panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.panel15_Paint);
             // 
             // label19
             // 
-            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(22, 11);
@@ -573,42 +450,20 @@
             this.label19.Size = new System.Drawing.Size(138, 20);
             this.label19.TabIndex = 0;
             this.label19.Text = "Municipio/Distrito:";
-            // 
-            // mbTexbox14
-            // 
-            this.mbTexbox14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbTexbox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox14.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox14.BorderRadius = 25;
-            this.mbTexbox14.BorderSize = 1;
-            this.mbTexbox14.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox14.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox14.Location = new System.Drawing.Point(571, 687);
-            this.mbTexbox14.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox14.Multiline = false;
-            this.mbTexbox14.Name = "mbTexbox14";
-            this.mbTexbox14.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox14.PasswordChar = false;
-            this.mbTexbox14.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox14.PlaceholderText = "";
-            this.mbTexbox14.Size = new System.Drawing.Size(231, 38);
-            this.mbTexbox14.TabIndex = 35;
-            this.mbTexbox14.UnderlineStyle = false;
+            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // panel16
             // 
-            this.panel16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel16.Controls.Add(this.label20);
-            this.panel16.Location = new System.Drawing.Point(350, 682);
+            this.panel16.Location = new System.Drawing.Point(208, 1904);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(200, 45);
             this.panel16.TabIndex = 34;
+            this.panel16.Paint += new System.Windows.Forms.PaintEventHandler(this.panel16_Paint);
             // 
             // label20
             // 
-            this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(20, 11);
@@ -616,42 +471,19 @@
             this.label20.Size = new System.Drawing.Size(157, 20);
             this.label20.TabIndex = 0;
             this.label20.Text = "Departamento reside:";
-            // 
-            // mbTexbox9
-            // 
-            this.mbTexbox9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbTexbox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox9.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox9.BorderRadius = 25;
-            this.mbTexbox9.BorderSize = 1;
-            this.mbTexbox9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox9.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox9.Location = new System.Drawing.Point(1329, 626);
-            this.mbTexbox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox9.Multiline = false;
-            this.mbTexbox9.Name = "mbTexbox9";
-            this.mbTexbox9.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox9.PasswordChar = false;
-            this.mbTexbox9.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox9.PlaceholderText = "";
-            this.mbTexbox9.Size = new System.Drawing.Size(198, 38);
-            this.mbTexbox9.TabIndex = 33;
-            this.mbTexbox9.UnderlineStyle = false;
+            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // panel11
             // 
-            this.panel11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel11.Controls.Add(this.label15);
-            this.panel11.Location = new System.Drawing.Point(1197, 621);
+            this.panel11.Location = new System.Drawing.Point(1055, 1843);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(126, 45);
             this.panel11.TabIndex = 32;
             // 
             // label15
             // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(29, 11);
@@ -660,41 +492,17 @@
             this.label15.TabIndex = 0;
             this.label15.Text = "Teléfono:";
             // 
-            // mbTexbox10
-            // 
-            this.mbTexbox10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbTexbox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox10.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox10.BorderRadius = 25;
-            this.mbTexbox10.BorderSize = 1;
-            this.mbTexbox10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox10.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox10.Location = new System.Drawing.Point(996, 626);
-            this.mbTexbox10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox10.Multiline = false;
-            this.mbTexbox10.Name = "mbTexbox10";
-            this.mbTexbox10.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox10.PasswordChar = false;
-            this.mbTexbox10.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox10.PlaceholderText = "";
-            this.mbTexbox10.Size = new System.Drawing.Size(182, 38);
-            this.mbTexbox10.TabIndex = 29;
-            this.mbTexbox10.UnderlineStyle = false;
-            // 
             // panel12
             // 
-            this.panel12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel12.Controls.Add(this.label16);
-            this.panel12.Location = new System.Drawing.Point(823, 622);
+            this.panel12.Location = new System.Drawing.Point(634, 1844);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(166, 45);
+            this.panel12.Size = new System.Drawing.Size(158, 45);
             this.panel12.TabIndex = 28;
             // 
             // label16
             // 
-            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(29, 11);
@@ -703,41 +511,17 @@
             this.label16.TabIndex = 0;
             this.label16.Text = "Nacionalidad:";
             // 
-            // mbTexbox11
-            // 
-            this.mbTexbox11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbTexbox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox11.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox11.BorderRadius = 25;
-            this.mbTexbox11.BorderSize = 1;
-            this.mbTexbox11.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox11.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox11.Location = new System.Drawing.Point(543, 626);
-            this.mbTexbox11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox11.Multiline = false;
-            this.mbTexbox11.Name = "mbTexbox11";
-            this.mbTexbox11.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox11.PasswordChar = false;
-            this.mbTexbox11.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox11.PlaceholderText = "";
-            this.mbTexbox11.Size = new System.Drawing.Size(259, 38);
-            this.mbTexbox11.TabIndex = 27;
-            this.mbTexbox11.UnderlineStyle = false;
-            // 
             // panel13
             // 
-            this.panel13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel13.Controls.Add(this.label17);
-            this.panel13.Location = new System.Drawing.Point(350, 624);
+            this.panel13.Location = new System.Drawing.Point(208, 1846);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(176, 45);
             this.panel13.TabIndex = 26;
             // 
             // label17
             // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(18, 11);
@@ -746,41 +530,17 @@
             this.label17.TabIndex = 0;
             this.label17.Text = "Pais de nacimiento:";
             // 
-            // mbTexbox8
-            // 
-            this.mbTexbox8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbTexbox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox8.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox8.BorderRadius = 25;
-            this.mbTexbox8.BorderSize = 1;
-            this.mbTexbox8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox8.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox8.Location = new System.Drawing.Point(1306, 567);
-            this.mbTexbox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox8.Multiline = false;
-            this.mbTexbox8.Name = "mbTexbox8";
-            this.mbTexbox8.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox8.PasswordChar = false;
-            this.mbTexbox8.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox8.PlaceholderText = "";
-            this.mbTexbox8.Size = new System.Drawing.Size(221, 38);
-            this.mbTexbox8.TabIndex = 25;
-            this.mbTexbox8.UnderlineStyle = false;
-            // 
             // panel10
             // 
-            this.panel10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel10.Controls.Add(this.label14);
-            this.panel10.Location = new System.Drawing.Point(1164, 562);
+            this.panel10.Location = new System.Drawing.Point(1022, 1784);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(136, 45);
             this.panel10.TabIndex = 24;
             // 
             // label14
             // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(29, 11);
@@ -789,68 +549,42 @@
             this.label14.TabIndex = 0;
             this.label14.Text = "Talla (Cm):";
             // 
-            // checkBox4
+            // chSexoMasMatricula
             // 
-            this.checkBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.checkBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(584, 576);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(91, 21);
-            this.checkBox4.TabIndex = 23;
-            this.checkBox4.Text = "Masculino";
-            this.checkBox4.UseVisualStyleBackColor = false;
+            this.chSexoMasMatricula.AutoSize = true;
+            this.chSexoMasMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.chSexoMasMatricula.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chSexoMasMatricula.Location = new System.Drawing.Point(442, 1798);
+            this.chSexoMasMatricula.Name = "chSexoMasMatricula";
+            this.chSexoMasMatricula.Size = new System.Drawing.Size(91, 21);
+            this.chSexoMasMatricula.TabIndex = 23;
+            this.chSexoMasMatricula.Text = "Masculino";
+            this.chSexoMasMatricula.UseVisualStyleBackColor = false;
             // 
-            // checkBox3
+            // chSexoFemMatricula
             // 
-            this.checkBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.checkBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(698, 576);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(90, 21);
-            this.checkBox3.TabIndex = 22;
-            this.checkBox3.Text = "Femenino";
-            this.checkBox3.UseVisualStyleBackColor = false;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
-            // 
-            // mbTexbox6
-            // 
-            this.mbTexbox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbTexbox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox6.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox6.BorderRadius = 25;
-            this.mbTexbox6.BorderSize = 1;
-            this.mbTexbox6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox6.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox6.Location = new System.Drawing.Point(996, 567);
-            this.mbTexbox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox6.Multiline = false;
-            this.mbTexbox6.Name = "mbTexbox6";
-            this.mbTexbox6.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox6.PasswordChar = false;
-            this.mbTexbox6.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox6.PlaceholderText = "";
-            this.mbTexbox6.Size = new System.Drawing.Size(153, 38);
-            this.mbTexbox6.TabIndex = 21;
-            this.mbTexbox6.UnderlineStyle = false;
+            this.chSexoFemMatricula.AutoSize = true;
+            this.chSexoFemMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.chSexoFemMatricula.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chSexoFemMatricula.Location = new System.Drawing.Point(556, 1798);
+            this.chSexoFemMatricula.Name = "chSexoFemMatricula";
+            this.chSexoFemMatricula.Size = new System.Drawing.Size(90, 21);
+            this.chSexoFemMatricula.TabIndex = 22;
+            this.chSexoFemMatricula.Text = "Femenino";
+            this.chSexoFemMatricula.UseVisualStyleBackColor = false;
+            this.chSexoFemMatricula.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // panel8
             // 
-            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel8.Controls.Add(this.label12);
-            this.panel8.Location = new System.Drawing.Point(861, 563);
+            this.panel8.Location = new System.Drawing.Point(719, 1785);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(128, 45);
             this.panel8.TabIndex = 20;
             // 
             // label12
             // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(29, 11);
@@ -859,41 +593,17 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Peso (Kg):";
             // 
-            // mbTexbox7
-            // 
-            this.mbTexbox7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbTexbox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox7.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox7.BorderRadius = 25;
-            this.mbTexbox7.BorderSize = 1;
-            this.mbTexbox7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox7.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox7.Location = new System.Drawing.Point(517, 567);
-            this.mbTexbox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox7.Multiline = false;
-            this.mbTexbox7.Name = "mbTexbox7";
-            this.mbTexbox7.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox7.PasswordChar = false;
-            this.mbTexbox7.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox7.PlaceholderText = "";
-            this.mbTexbox7.Size = new System.Drawing.Size(331, 38);
-            this.mbTexbox7.TabIndex = 19;
-            this.mbTexbox7.UnderlineStyle = false;
-            // 
             // panel9
             // 
-            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel9.Controls.Add(this.label13);
-            this.panel9.Location = new System.Drawing.Point(350, 565);
+            this.panel9.Location = new System.Drawing.Point(208, 1787);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(152, 45);
             this.panel9.TabIndex = 18;
             // 
             // label13
             // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(52, 11);
@@ -902,108 +612,60 @@
             this.label13.TabIndex = 0;
             this.label13.Text = "Sexo:";
             // 
-            // checkBox2
+            // ChParitdaNacimientoNo
             // 
-            this.checkBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(1390, 514);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(48, 21);
-            this.checkBox2.TabIndex = 17;
-            this.checkBox2.Text = "No";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.ChParitdaNacimientoNo.AutoSize = true;
+            this.ChParitdaNacimientoNo.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChParitdaNacimientoNo.Location = new System.Drawing.Point(1248, 1679);
+            this.ChParitdaNacimientoNo.Name = "ChParitdaNacimientoNo";
+            this.ChParitdaNacimientoNo.Size = new System.Drawing.Size(48, 21);
+            this.ChParitdaNacimientoNo.TabIndex = 17;
+            this.ChParitdaNacimientoNo.Text = "No";
+            this.ChParitdaNacimientoNo.UseVisualStyleBackColor = true;
+            this.ChParitdaNacimientoNo.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
-            // checkBox1
+            // chPartidaNacimeintoSi
             // 
-            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(1456, 515);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(40, 21);
-            this.checkBox1.TabIndex = 16;
-            this.checkBox1.Text = "Si";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // mbTexbox5
-            // 
-            this.mbTexbox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbTexbox5.BackColor = System.Drawing.Color.White;
-            this.mbTexbox5.BorderColor = System.Drawing.Color.Black;
-            this.mbTexbox5.BorderFocusColor = System.Drawing.Color.Black;
-            this.mbTexbox5.BorderRadius = 25;
-            this.mbTexbox5.BorderSize = 1;
-            this.mbTexbox5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox5.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox5.Location = new System.Drawing.Point(1361, 505);
-            this.mbTexbox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox5.Multiline = false;
-            this.mbTexbox5.Name = "mbTexbox5";
-            this.mbTexbox5.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox5.PasswordChar = false;
-            this.mbTexbox5.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox5.PlaceholderText = "";
-            this.mbTexbox5.Size = new System.Drawing.Size(166, 38);
-            this.mbTexbox5.TabIndex = 15;
-            this.mbTexbox5.UnderlineStyle = false;
+            this.chPartidaNacimeintoSi.AutoSize = true;
+            this.chPartidaNacimeintoSi.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chPartidaNacimeintoSi.Location = new System.Drawing.Point(1314, 1680);
+            this.chPartidaNacimeintoSi.Name = "chPartidaNacimeintoSi";
+            this.chPartidaNacimeintoSi.Size = new System.Drawing.Size(40, 21);
+            this.chPartidaNacimeintoSi.TabIndex = 16;
+            this.chPartidaNacimeintoSi.Text = "Si";
+            this.chPartidaNacimeintoSi.UseVisualStyleBackColor = true;
+            this.chPartidaNacimeintoSi.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
             // 
             // panel7
             // 
-            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel7.Controls.Add(this.label11);
-            this.panel7.Location = new System.Drawing.Point(1164, 503);
+            this.panel7.Location = new System.Drawing.Point(1022, 1668);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(182, 45);
             this.panel7.TabIndex = 14;
             // 
             // label11
             // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(29, 11);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(133, 20);
+            this.label11.Size = new System.Drawing.Size(142, 20);
             this.label11.TabIndex = 0;
-            this.label11.Text = "Fecha nacimiento:";
-            // 
-            // mbTexbox4
-            // 
-            this.mbTexbox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbTexbox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox4.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox4.BorderRadius = 25;
-            this.mbTexbox4.BorderSize = 1;
-            this.mbTexbox4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox4.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox4.Location = new System.Drawing.Point(928, 510);
-            this.mbTexbox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox4.Multiline = false;
-            this.mbTexbox4.Name = "mbTexbox4";
-            this.mbTexbox4.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox4.PasswordChar = false;
-            this.mbTexbox4.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox4.PlaceholderText = "";
-            this.mbTexbox4.Size = new System.Drawing.Size(221, 38);
-            this.mbTexbox4.TabIndex = 13;
-            this.mbTexbox4.UnderlineStyle = false;
+            this.label11.Text = "Partida nacimiento:";
             // 
             // panel6
             // 
-            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel6.Controls.Add(this.label10);
-            this.panel6.Location = new System.Drawing.Point(761, 508);
+            this.panel6.Location = new System.Drawing.Point(619, 1673);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(152, 45);
             this.panel6.TabIndex = 12;
             // 
             // label10
             // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(29, 11);
@@ -1012,41 +674,17 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "1er.Apellido:";
             // 
-            // mbTexbox3
-            // 
-            this.mbTexbox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbTexbox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox3.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox3.BorderRadius = 25;
-            this.mbTexbox3.BorderSize = 1;
-            this.mbTexbox3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox3.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox3.Location = new System.Drawing.Point(517, 512);
-            this.mbTexbox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox3.Multiline = false;
-            this.mbTexbox3.Name = "mbTexbox3";
-            this.mbTexbox3.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox3.PasswordChar = false;
-            this.mbTexbox3.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox3.PlaceholderText = "";
-            this.mbTexbox3.Size = new System.Drawing.Size(221, 38);
-            this.mbTexbox3.TabIndex = 11;
-            this.mbTexbox3.UnderlineStyle = false;
-            // 
             // panel5
             // 
-            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel5.Controls.Add(this.label9);
-            this.panel5.Location = new System.Drawing.Point(350, 510);
+            this.panel5.Location = new System.Drawing.Point(208, 1675);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(152, 45);
             this.panel5.TabIndex = 10;
             // 
             // label9
             // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(29, 11);
@@ -1057,50 +695,25 @@
             // 
             // label8
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1172, 467);
+            this.label8.Location = new System.Drawing.Point(1030, 1632);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(117, 17);
             this.label8.TabIndex = 9;
             this.label8.Text = "(Si ya tiene cédula)";
             // 
-            // mbTexbox2
-            // 
-            this.mbTexbox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mbTexbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox2.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox2.BorderRadius = 25;
-            this.mbTexbox2.BorderSize = 1;
-            this.mbTexbox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox2.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox2.Location = new System.Drawing.Point(571, 458);
-            this.mbTexbox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox2.Multiline = false;
-            this.mbTexbox2.Name = "mbTexbox2";
-            this.mbTexbox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox2.PasswordChar = false;
-            this.mbTexbox2.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox2.PlaceholderText = "";
-            this.mbTexbox2.Size = new System.Drawing.Size(595, 38);
-            this.mbTexbox2.TabIndex = 8;
-            this.mbTexbox2.UnderlineStyle = false;
-            // 
             // panel4
             // 
-            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel4.Controls.Add(this.label7);
-            this.panel4.Location = new System.Drawing.Point(350, 453);
+            this.panel4.Location = new System.Drawing.Point(208, 1618);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 45);
             this.panel4.TabIndex = 7;
             // 
             // label7
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(29, 11);
@@ -1111,14 +724,13 @@
             // 
             // panel3
             // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label30);
             this.panel3.Controls.Add(this.label29);
             this.panel3.Controls.Add(this.mbTexbox20);
-            this.panel3.Location = new System.Drawing.Point(350, 379);
+            this.panel3.Location = new System.Drawing.Point(208, 1544);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1278, 59);
@@ -1138,7 +750,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(315, 16);
+            this.label4.Location = new System.Drawing.Point(315, 15);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(572, 23);
             this.label4.TabIndex = 0;
@@ -1168,6 +780,552 @@
             this.label29.Text = "_________________________________________________________________________________" +
     "____________________________________________________________________________";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(209, 1449);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(1143, 16);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "_________________________________________________________________________________" +
+    "_____________________________________________________________";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(209, 1423);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(1143, 16);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "_________________________________________________________________________________" +
+    "_____________________________________________________________";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(212, 1239);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1281, 178);
+            this.panel2.TabIndex = 2;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(359, 100);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(590, 32);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "HOJA DE  NUEVO INGRESO DE ESTUDIANTES 2024";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(361, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(527, 128);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "                  MINISTERIO DE EDUCACION \r\n          DIVISIÓN DE ESTADÍSTICAS ED" +
+    "UCATIVAS\r\n\r\n\r\n";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // btnGuardarMatricula
+            // 
+            this.btnGuardarMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnGuardarMatricula.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnGuardarMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnGuardarMatricula.BorderRadius = 40;
+            this.btnGuardarMatricula.BorderSize = 1;
+            this.btnGuardarMatricula.FlatAppearance.BorderSize = 0;
+            this.btnGuardarMatricula.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnGuardarMatricula.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnGuardarMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarMatricula.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarMatricula.Location = new System.Drawing.Point(620, 2303);
+            this.btnGuardarMatricula.Name = "btnGuardarMatricula";
+            this.btnGuardarMatricula.Size = new System.Drawing.Size(172, 55);
+            this.btnGuardarMatricula.TabIndex = 64;
+            this.btnGuardarMatricula.Text = "Guardar";
+            this.btnGuardarMatricula.TextColor = System.Drawing.Color.White;
+            this.btnGuardarMatricula.UseVisualStyleBackColor = false;
+            this.btnGuardarMatricula.Click += new System.EventHandler(this.btnGuardarMatricula_Click);
+            // 
+            // mbTexbox4
+            // 
+            this.mbTexbox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.mbTexbox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.mbTexbox4.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.mbTexbox4.BorderRadius = 25;
+            this.mbTexbox4.BorderSize = 1;
+            this.mbTexbox4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mbTexbox4.ForeColor = System.Drawing.Color.Black;
+            this.mbTexbox4.Location = new System.Drawing.Point(1210, 1723);
+            this.mbTexbox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.mbTexbox4.Multiline = false;
+            this.mbTexbox4.Name = "mbTexbox4";
+            this.mbTexbox4.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.mbTexbox4.PasswordChar = false;
+            this.mbTexbox4.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.mbTexbox4.PlaceholderText = "";
+            this.mbTexbox4.Size = new System.Drawing.Size(175, 38);
+            this.mbTexbox4.TabIndex = 62;
+            this.mbTexbox4.UnderlineStyle = false;
+            // 
+            // cbNacionalidadMatricula
+            // 
+            this.cbNacionalidadMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbNacionalidadMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbNacionalidadMatricula.BorderSize = 1;
+            this.cbNacionalidadMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cbNacionalidadMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cbNacionalidadMatricula.ForeColor = System.Drawing.Color.Black;
+            this.cbNacionalidadMatricula.IconColor = System.Drawing.Color.Black;
+            this.cbNacionalidadMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbNacionalidadMatricula.ListTextColor = System.Drawing.Color.Black;
+            this.cbNacionalidadMatricula.Location = new System.Drawing.Point(798, 1854);
+            this.cbNacionalidadMatricula.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cbNacionalidadMatricula.Name = "cbNacionalidadMatricula";
+            this.cbNacionalidadMatricula.Padding = new System.Windows.Forms.Padding(1);
+            this.cbNacionalidadMatricula.Size = new System.Drawing.Size(200, 30);
+            this.cbNacionalidadMatricula.TabIndex = 61;
+            this.cbNacionalidadMatricula.Texts = "";
+            // 
+            // txt2ApellidoMatricula
+            // 
+            this.txt2ApellidoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt2ApellidoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt2ApellidoMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt2ApellidoMatricula.BorderRadius = 25;
+            this.txt2ApellidoMatricula.BorderSize = 1;
+            this.txt2ApellidoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt2ApellidoMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txt2ApellidoMatricula.Location = new System.Drawing.Point(786, 1730);
+            this.txt2ApellidoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt2ApellidoMatricula.Multiline = false;
+            this.txt2ApellidoMatricula.Name = "txt2ApellidoMatricula";
+            this.txt2ApellidoMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txt2ApellidoMatricula.PasswordChar = false;
+            this.txt2ApellidoMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txt2ApellidoMatricula.PlaceholderText = "";
+            this.txt2ApellidoMatricula.Size = new System.Drawing.Size(221, 38);
+            this.txt2ApellidoMatricula.TabIndex = 18;
+            this.txt2ApellidoMatricula.UnderlineStyle = false;
+            // 
+            // cbPaisNacimentoMatricula
+            // 
+            this.cbPaisNacimentoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbPaisNacimentoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbPaisNacimentoMatricula.BorderSize = 1;
+            this.cbPaisNacimentoMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cbPaisNacimentoMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cbPaisNacimentoMatricula.ForeColor = System.Drawing.Color.Black;
+            this.cbPaisNacimentoMatricula.IconColor = System.Drawing.Color.Black;
+            this.cbPaisNacimentoMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbPaisNacimentoMatricula.ListTextColor = System.Drawing.Color.Black;
+            this.cbPaisNacimentoMatricula.Location = new System.Drawing.Point(396, 1854);
+            this.cbPaisNacimentoMatricula.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cbPaisNacimentoMatricula.Name = "cbPaisNacimentoMatricula";
+            this.cbPaisNacimentoMatricula.Padding = new System.Windows.Forms.Padding(1);
+            this.cbPaisNacimentoMatricula.Size = new System.Drawing.Size(200, 30);
+            this.cbPaisNacimentoMatricula.TabIndex = 60;
+            this.cbPaisNacimentoMatricula.Texts = "";
+            // 
+            // txt2NombreMatricula
+            // 
+            this.txt2NombreMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt2NombreMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt2NombreMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt2NombreMatricula.BorderRadius = 25;
+            this.txt2NombreMatricula.BorderSize = 1;
+            this.txt2NombreMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt2NombreMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txt2NombreMatricula.Location = new System.Drawing.Point(375, 1732);
+            this.txt2NombreMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt2NombreMatricula.Multiline = false;
+            this.txt2NombreMatricula.Name = "txt2NombreMatricula";
+            this.txt2NombreMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txt2NombreMatricula.PasswordChar = false;
+            this.txt2NombreMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txt2NombreMatricula.PlaceholderText = "";
+            this.txt2NombreMatricula.Size = new System.Drawing.Size(221, 38);
+            this.txt2NombreMatricula.TabIndex = 16;
+            this.txt2NombreMatricula.UnderlineStyle = false;
+            // 
+            // txtDiscapacidadMatricula
+            // 
+            this.txtDiscapacidadMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtDiscapacidadMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtDiscapacidadMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtDiscapacidadMatricula.BorderRadius = 25;
+            this.txtDiscapacidadMatricula.BorderSize = 1;
+            this.txtDiscapacidadMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiscapacidadMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtDiscapacidadMatricula.Location = new System.Drawing.Point(953, 2184);
+            this.txtDiscapacidadMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDiscapacidadMatricula.Multiline = false;
+            this.txtDiscapacidadMatricula.Name = "txtDiscapacidadMatricula";
+            this.txtDiscapacidadMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtDiscapacidadMatricula.PasswordChar = false;
+            this.txtDiscapacidadMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtDiscapacidadMatricula.PlaceholderText = "";
+            this.txtDiscapacidadMatricula.Size = new System.Drawing.Size(251, 38);
+            this.txtDiscapacidadMatricula.TabIndex = 57;
+            this.txtDiscapacidadMatricula.UnderlineStyle = false;
+            this.txtDiscapacidadMatricula._TextChanged += new System.EventHandler(this.mbTexbox19__TextChanged);
+            // 
+            // txtComunidadIndigenaMatricula
+            // 
+            this.txtComunidadIndigenaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtComunidadIndigenaMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtComunidadIndigenaMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtComunidadIndigenaMatricula.BorderRadius = 25;
+            this.txtComunidadIndigenaMatricula.BorderSize = 1;
+            this.txtComunidadIndigenaMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtComunidadIndigenaMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtComunidadIndigenaMatricula.Location = new System.Drawing.Point(976, 2112);
+            this.txtComunidadIndigenaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtComunidadIndigenaMatricula.Multiline = false;
+            this.txtComunidadIndigenaMatricula.Name = "txtComunidadIndigenaMatricula";
+            this.txtComunidadIndigenaMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtComunidadIndigenaMatricula.PasswordChar = false;
+            this.txtComunidadIndigenaMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtComunidadIndigenaMatricula.PlaceholderText = "";
+            this.txtComunidadIndigenaMatricula.Size = new System.Drawing.Size(218, 38);
+            this.txtComunidadIndigenaMatricula.TabIndex = 55;
+            this.txtComunidadIndigenaMatricula.UnderlineStyle = false;
+            this.txtComunidadIndigenaMatricula._TextChanged += new System.EventHandler(this.mbTexbox18__TextChanged_1);
+            // 
+            // txtLenguaMaternaMatricula
+            // 
+            this.txtLenguaMaternaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtLenguaMaternaMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtLenguaMaternaMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtLenguaMaternaMatricula.BorderRadius = 25;
+            this.txtLenguaMaternaMatricula.BorderSize = 1;
+            this.txtLenguaMaternaMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLenguaMaternaMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtLenguaMaternaMatricula.Location = new System.Drawing.Point(392, 2177);
+            this.txtLenguaMaternaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtLenguaMaternaMatricula.Multiline = false;
+            this.txtLenguaMaternaMatricula.Name = "txtLenguaMaternaMatricula";
+            this.txtLenguaMaternaMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtLenguaMaternaMatricula.PasswordChar = false;
+            this.txtLenguaMaternaMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtLenguaMaternaMatricula.PlaceholderText = "";
+            this.txtLenguaMaternaMatricula.Size = new System.Drawing.Size(218, 38);
+            this.txtLenguaMaternaMatricula.TabIndex = 53;
+            this.txtLenguaMaternaMatricula.UnderlineStyle = false;
+            this.txtLenguaMaternaMatricula._TextChanged += new System.EventHandler(this.mbTexbox17__TextChanged);
+            // 
+            // txtTerritorioIndigenaMatricula
+            // 
+            this.txtTerritorioIndigenaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTerritorioIndigenaMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTerritorioIndigenaMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTerritorioIndigenaMatricula.BorderRadius = 25;
+            this.txtTerritorioIndigenaMatricula.BorderSize = 1;
+            this.txtTerritorioIndigenaMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTerritorioIndigenaMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtTerritorioIndigenaMatricula.Location = new System.Drawing.Point(470, 2112);
+            this.txtTerritorioIndigenaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTerritorioIndigenaMatricula.Multiline = false;
+            this.txtTerritorioIndigenaMatricula.Name = "txtTerritorioIndigenaMatricula";
+            this.txtTerritorioIndigenaMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTerritorioIndigenaMatricula.PasswordChar = false;
+            this.txtTerritorioIndigenaMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtTerritorioIndigenaMatricula.PlaceholderText = "";
+            this.txtTerritorioIndigenaMatricula.Size = new System.Drawing.Size(218, 38);
+            this.txtTerritorioIndigenaMatricula.TabIndex = 45;
+            this.txtTerritorioIndigenaMatricula.UnderlineStyle = false;
+            this.txtTerritorioIndigenaMatricula._TextChanged += new System.EventHandler(this.mbTexbox16__TextChanged);
+            // 
+            // cbEtniaMatricula
+            // 
+            this.cbEtniaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbEtniaMatricula.BorderColor = System.Drawing.Color.Black;
+            this.cbEtniaMatricula.BorderSize = 0;
+            this.cbEtniaMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cbEtniaMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cbEtniaMatricula.ForeColor = System.Drawing.Color.Black;
+            this.cbEtniaMatricula.IconColor = System.Drawing.Color.Black;
+            this.cbEtniaMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbEtniaMatricula.ListTextColor = System.Drawing.Color.Black;
+            this.cbEtniaMatricula.Location = new System.Drawing.Point(446, 2039);
+            this.cbEtniaMatricula.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cbEtniaMatricula.Name = "cbEtniaMatricula";
+            this.cbEtniaMatricula.Size = new System.Drawing.Size(200, 38);
+            this.cbEtniaMatricula.TabIndex = 43;
+            this.cbEtniaMatricula.Texts = "";
+            this.cbEtniaMatricula.OnSelectedIndexChanged += new System.EventHandler(this.mbComboBox1_OnSelectedIndexChanged_1);
+            // 
+            // TxtDireccionDomiciliarMatricula
+            // 
+            this.TxtDireccionDomiciliarMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.TxtDireccionDomiciliarMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.TxtDireccionDomiciliarMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.TxtDireccionDomiciliarMatricula.BorderRadius = 25;
+            this.TxtDireccionDomiciliarMatricula.BorderSize = 1;
+            this.TxtDireccionDomiciliarMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDireccionDomiciliarMatricula.ForeColor = System.Drawing.Color.Black;
+            this.TxtDireccionDomiciliarMatricula.Location = new System.Drawing.Point(429, 1974);
+            this.TxtDireccionDomiciliarMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TxtDireccionDomiciliarMatricula.Multiline = false;
+            this.TxtDireccionDomiciliarMatricula.Name = "TxtDireccionDomiciliarMatricula";
+            this.TxtDireccionDomiciliarMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.TxtDireccionDomiciliarMatricula.PasswordChar = false;
+            this.TxtDireccionDomiciliarMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.TxtDireccionDomiciliarMatricula.PlaceholderText = "";
+            this.TxtDireccionDomiciliarMatricula.Size = new System.Drawing.Size(629, 38);
+            this.TxtDireccionDomiciliarMatricula.TabIndex = 41;
+            this.TxtDireccionDomiciliarMatricula.UnderlineStyle = false;
+            this.TxtDireccionDomiciliarMatricula._TextChanged += new System.EventHandler(this.mbTexbox15__TextChanged);
+            // 
+            // txtBarrioMatricula
+            // 
+            this.txtBarrioMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtBarrioMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtBarrioMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtBarrioMatricula.BorderRadius = 25;
+            this.txtBarrioMatricula.BorderSize = 1;
+            this.txtBarrioMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBarrioMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtBarrioMatricula.Location = new System.Drawing.Point(1164, 1906);
+            this.txtBarrioMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBarrioMatricula.Multiline = false;
+            this.txtBarrioMatricula.Name = "txtBarrioMatricula";
+            this.txtBarrioMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtBarrioMatricula.PasswordChar = false;
+            this.txtBarrioMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtBarrioMatricula.PlaceholderText = "";
+            this.txtBarrioMatricula.Size = new System.Drawing.Size(221, 38);
+            this.txtBarrioMatricula.TabIndex = 39;
+            this.txtBarrioMatricula.UnderlineStyle = false;
+            this.txtBarrioMatricula._TextChanged += new System.EventHandler(this.mbTexbox12__TextChanged);
+            // 
+            // txtMuniciopioDistritoMatricula
+            // 
+            this.txtMuniciopioDistritoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtMuniciopioDistritoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtMuniciopioDistritoMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtMuniciopioDistritoMatricula.BorderRadius = 25;
+            this.txtMuniciopioDistritoMatricula.BorderSize = 1;
+            this.txtMuniciopioDistritoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMuniciopioDistritoMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtMuniciopioDistritoMatricula.Location = new System.Drawing.Point(880, 1906);
+            this.txtMuniciopioDistritoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtMuniciopioDistritoMatricula.Multiline = false;
+            this.txtMuniciopioDistritoMatricula.Name = "txtMuniciopioDistritoMatricula";
+            this.txtMuniciopioDistritoMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtMuniciopioDistritoMatricula.PasswordChar = false;
+            this.txtMuniciopioDistritoMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtMuniciopioDistritoMatricula.PlaceholderText = "";
+            this.txtMuniciopioDistritoMatricula.Size = new System.Drawing.Size(156, 38);
+            this.txtMuniciopioDistritoMatricula.TabIndex = 37;
+            this.txtMuniciopioDistritoMatricula.UnderlineStyle = false;
+            this.txtMuniciopioDistritoMatricula._TextChanged += new System.EventHandler(this.mbTexbox13__TextChanged);
+            // 
+            // txtDepartamentoresideMatricula
+            // 
+            this.txtDepartamentoresideMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtDepartamentoresideMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtDepartamentoresideMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtDepartamentoresideMatricula.BorderRadius = 25;
+            this.txtDepartamentoresideMatricula.BorderSize = 1;
+            this.txtDepartamentoresideMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDepartamentoresideMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtDepartamentoresideMatricula.Location = new System.Drawing.Point(429, 1909);
+            this.txtDepartamentoresideMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDepartamentoresideMatricula.Multiline = false;
+            this.txtDepartamentoresideMatricula.Name = "txtDepartamentoresideMatricula";
+            this.txtDepartamentoresideMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtDepartamentoresideMatricula.PasswordChar = false;
+            this.txtDepartamentoresideMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtDepartamentoresideMatricula.PlaceholderText = "";
+            this.txtDepartamentoresideMatricula.Size = new System.Drawing.Size(231, 38);
+            this.txtDepartamentoresideMatricula.TabIndex = 35;
+            this.txtDepartamentoresideMatricula.UnderlineStyle = false;
+            this.txtDepartamentoresideMatricula._TextChanged += new System.EventHandler(this.mbTexbox14__TextChanged);
+            // 
+            // txtTelefonoMatricula
+            // 
+            this.txtTelefonoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTelefonoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTelefonoMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTelefonoMatricula.BorderRadius = 25;
+            this.txtTelefonoMatricula.BorderSize = 1;
+            this.txtTelefonoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefonoMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtTelefonoMatricula.Location = new System.Drawing.Point(1187, 1848);
+            this.txtTelefonoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTelefonoMatricula.Multiline = false;
+            this.txtTelefonoMatricula.Name = "txtTelefonoMatricula";
+            this.txtTelefonoMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTelefonoMatricula.PasswordChar = false;
+            this.txtTelefonoMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtTelefonoMatricula.PlaceholderText = "";
+            this.txtTelefonoMatricula.Size = new System.Drawing.Size(198, 38);
+            this.txtTelefonoMatricula.TabIndex = 33;
+            this.txtTelefonoMatricula.UnderlineStyle = false;
+            this.txtTelefonoMatricula._TextChanged += new System.EventHandler(this.mbTexbox9__TextChanged);
+            // 
+            // txtTallaMatricula
+            // 
+            this.txtTallaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTallaMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTallaMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTallaMatricula.BorderRadius = 25;
+            this.txtTallaMatricula.BorderSize = 1;
+            this.txtTallaMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTallaMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtTallaMatricula.Location = new System.Drawing.Point(1164, 1789);
+            this.txtTallaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTallaMatricula.Multiline = false;
+            this.txtTallaMatricula.Name = "txtTallaMatricula";
+            this.txtTallaMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTallaMatricula.PasswordChar = false;
+            this.txtTallaMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtTallaMatricula.PlaceholderText = "";
+            this.txtTallaMatricula.Size = new System.Drawing.Size(221, 38);
+            this.txtTallaMatricula.TabIndex = 25;
+            this.txtTallaMatricula.UnderlineStyle = false;
+            // 
+            // txtPesoMAtricula
+            // 
+            this.txtPesoMAtricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtPesoMAtricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtPesoMAtricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtPesoMAtricula.BorderRadius = 25;
+            this.txtPesoMAtricula.BorderSize = 1;
+            this.txtPesoMAtricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPesoMAtricula.ForeColor = System.Drawing.Color.Black;
+            this.txtPesoMAtricula.Location = new System.Drawing.Point(854, 1789);
+            this.txtPesoMAtricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPesoMAtricula.Multiline = false;
+            this.txtPesoMAtricula.Name = "txtPesoMAtricula";
+            this.txtPesoMAtricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtPesoMAtricula.PasswordChar = false;
+            this.txtPesoMAtricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtPesoMAtricula.PlaceholderText = "";
+            this.txtPesoMAtricula.Size = new System.Drawing.Size(153, 38);
+            this.txtPesoMAtricula.TabIndex = 21;
+            this.txtPesoMAtricula.UnderlineStyle = false;
+            // 
+            // mbTexbox7
+            // 
+            this.mbTexbox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.mbTexbox7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.mbTexbox7.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.mbTexbox7.BorderRadius = 25;
+            this.mbTexbox7.BorderSize = 1;
+            this.mbTexbox7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mbTexbox7.ForeColor = System.Drawing.Color.Black;
+            this.mbTexbox7.Location = new System.Drawing.Point(375, 1789);
+            this.mbTexbox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.mbTexbox7.Multiline = false;
+            this.mbTexbox7.Name = "mbTexbox7";
+            this.mbTexbox7.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.mbTexbox7.PasswordChar = false;
+            this.mbTexbox7.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.mbTexbox7.PlaceholderText = "";
+            this.mbTexbox7.Size = new System.Drawing.Size(331, 38);
+            this.mbTexbox7.TabIndex = 19;
+            this.mbTexbox7.UnderlineStyle = false;
+            // 
+            // mbTexbox5
+            // 
+            this.mbTexbox5.BackColor = System.Drawing.Color.White;
+            this.mbTexbox5.BorderColor = System.Drawing.Color.Black;
+            this.mbTexbox5.BorderFocusColor = System.Drawing.Color.Black;
+            this.mbTexbox5.BorderRadius = 25;
+            this.mbTexbox5.BorderSize = 1;
+            this.mbTexbox5.Enabled = false;
+            this.mbTexbox5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mbTexbox5.ForeColor = System.Drawing.Color.Black;
+            this.mbTexbox5.Location = new System.Drawing.Point(1219, 1670);
+            this.mbTexbox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.mbTexbox5.Multiline = false;
+            this.mbTexbox5.Name = "mbTexbox5";
+            this.mbTexbox5.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.mbTexbox5.PasswordChar = false;
+            this.mbTexbox5.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.mbTexbox5.PlaceholderText = "";
+            this.mbTexbox5.Size = new System.Drawing.Size(166, 38);
+            this.mbTexbox5.TabIndex = 15;
+            this.mbTexbox5.UnderlineStyle = false;
+            this.mbTexbox5._TextChanged += new System.EventHandler(this.mbTexbox5__TextChanged);
+            // 
+            // txt1ApellidoMatricula
+            // 
+            this.txt1ApellidoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt1ApellidoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt1ApellidoMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt1ApellidoMatricula.BorderRadius = 25;
+            this.txt1ApellidoMatricula.BorderSize = 1;
+            this.txt1ApellidoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt1ApellidoMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txt1ApellidoMatricula.Location = new System.Drawing.Point(786, 1675);
+            this.txt1ApellidoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt1ApellidoMatricula.Multiline = false;
+            this.txt1ApellidoMatricula.Name = "txt1ApellidoMatricula";
+            this.txt1ApellidoMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txt1ApellidoMatricula.PasswordChar = false;
+            this.txt1ApellidoMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txt1ApellidoMatricula.PlaceholderText = "";
+            this.txt1ApellidoMatricula.Size = new System.Drawing.Size(221, 38);
+            this.txt1ApellidoMatricula.TabIndex = 13;
+            this.txt1ApellidoMatricula.UnderlineStyle = false;
+            // 
+            // txt1NombreMatricula
+            // 
+            this.txt1NombreMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt1NombreMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt1NombreMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt1NombreMatricula.BorderRadius = 25;
+            this.txt1NombreMatricula.BorderSize = 1;
+            this.txt1NombreMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt1NombreMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txt1NombreMatricula.Location = new System.Drawing.Point(375, 1677);
+            this.txt1NombreMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt1NombreMatricula.Multiline = false;
+            this.txt1NombreMatricula.Name = "txt1NombreMatricula";
+            this.txt1NombreMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txt1NombreMatricula.PasswordChar = false;
+            this.txt1NombreMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txt1NombreMatricula.PlaceholderText = "";
+            this.txt1NombreMatricula.Size = new System.Drawing.Size(221, 38);
+            this.txt1NombreMatricula.TabIndex = 11;
+            this.txt1NombreMatricula.UnderlineStyle = false;
+            // 
+            // txtCedulaMatricula
+            // 
+            this.txtCedulaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtCedulaMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtCedulaMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtCedulaMatricula.BorderRadius = 25;
+            this.txtCedulaMatricula.BorderSize = 1;
+            this.txtCedulaMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCedulaMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtCedulaMatricula.Location = new System.Drawing.Point(429, 1623);
+            this.txtCedulaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCedulaMatricula.Multiline = false;
+            this.txtCedulaMatricula.Name = "txtCedulaMatricula";
+            this.txtCedulaMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCedulaMatricula.PasswordChar = false;
+            this.txtCedulaMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtCedulaMatricula.PlaceholderText = "";
+            this.txtCedulaMatricula.Size = new System.Drawing.Size(595, 38);
+            this.txtCedulaMatricula.TabIndex = 8;
+            this.txtCedulaMatricula.UnderlineStyle = false;
+            // 
             // mbTexbox20
             // 
             this.mbTexbox20.BackColor = System.Drawing.SystemColors.Window;
@@ -1191,7 +1349,6 @@
             // 
             // mbTexbox1
             // 
-            this.mbTexbox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mbTexbox1.BackColor = System.Drawing.SystemColors.Window;
             this.mbTexbox1.BorderColor = System.Drawing.Color.Black;
             this.mbTexbox1.BorderFocusColor = System.Drawing.Color.Black;
@@ -1199,7 +1356,7 @@
             this.mbTexbox1.BorderSize = 1;
             this.mbTexbox1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mbTexbox1.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox1.Location = new System.Drawing.Point(1378, 330);
+            this.mbTexbox1.Location = new System.Drawing.Point(1236, 1495);
             this.mbTexbox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mbTexbox1.Multiline = false;
             this.mbTexbox1.Name = "mbTexbox1";
@@ -1210,67 +1367,6 @@
             this.mbTexbox1.Size = new System.Drawing.Size(250, 40);
             this.mbTexbox1.TabIndex = 5;
             this.mbTexbox1.UnderlineStyle = false;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(351, 284);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1143, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "_________________________________________________________________________________" +
-    "_____________________________________________________________";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(351, 258);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1143, 16);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "_________________________________________________________________________________" +
-    "_____________________________________________________________";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(354, 74);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1281, 178);
-            this.panel2.TabIndex = 2;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(359, 100);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(593, 32);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "HOJA DE  NURVO INGRESO DE ESTUDIANTES 2024";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(361, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(527, 128);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "                  MINISTERIO DE EDUCACION \r\n          DIVISIÓN DE ESTADÍSTICAS ED" +
-    "UCATIVAS\r\n\r\n\r\n";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Matrícula
             // 
@@ -1283,7 +1379,12 @@
             this.Load += new System.EventHandler(this.Matrícula_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel23.ResumeLayout(false);
+            this.panel23.PerformLayout();
+            this.panel24.ResumeLayout(false);
+            this.panel24.PerformLayout();
+            this.panel25.ResumeLayout(false);
+            this.panel25.PerformLayout();
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
             this.panel21.ResumeLayout(false);
@@ -1344,71 +1445,80 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label7;
-        private MBControl.MBTexbox mbTexbox2;
+        private MBControl.MBTexbox txtCedulaMatricula;
         private System.Windows.Forms.Label label8;
-        private MBControl.MBTexbox mbTexbox3;
+        private MBControl.MBTexbox txt1NombreMatricula;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label9;
-        private MBControl.MBTexbox mbTexbox4;
+        private MBControl.MBTexbox txt1ApellidoMatricula;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label10;
         private MBControl.MBTexbox mbTexbox5;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private MBControl.MBTexbox mbTexbox6;
+        private System.Windows.Forms.CheckBox ChParitdaNacimientoNo;
+        private System.Windows.Forms.CheckBox chPartidaNacimeintoSi;
+        private MBControl.MBTexbox txtPesoMAtricula;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label12;
         private MBControl.MBTexbox mbTexbox7;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private MBControl.MBTexbox mbTexbox8;
+        private System.Windows.Forms.CheckBox chSexoFemMatricula;
+        private MBControl.MBTexbox txtTallaMatricula;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private MBControl.MBTexbox mbTexbox9;
+        private System.Windows.Forms.CheckBox chSexoMasMatricula;
+        private MBControl.MBTexbox txtTelefonoMatricula;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label15;
-        private MBControl.MBTexbox mbTexbox10;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label16;
-        private MBControl.MBTexbox mbTexbox11;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label label17;
-        private MBControl.MBTexbox mbTexbox12;
+        private MBControl.MBTexbox txtBarrioMatricula;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Label label18;
-        private MBControl.MBTexbox mbTexbox13;
+        private MBControl.MBTexbox txtMuniciopioDistritoMatricula;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label19;
-        private MBControl.MBTexbox mbTexbox14;
+        private MBControl.MBTexbox txtDepartamentoresideMatricula;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label label20;
-        private MBControl.MBTexbox mbTexbox15;
+        private MBControl.MBTexbox TxtDireccionDomiciliarMatricula;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Label label21;
-        private MBControl.MBComboBox mbComboBox1;
+        private MBControl.MBComboBox cbEtniaMatricula;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label label22;
-        private MBControl.MBTexbox mbTexbox16;
+        private MBControl.MBTexbox txtTerritorioIndigenaMatricula;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Label label23;
-        private MBControl.MBTexbox mbTexbox18;
+        private MBControl.MBTexbox txtComunidadIndigenaMatricula;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Label label25;
-        private MBControl.MBTexbox mbTexbox17;
+        private MBControl.MBTexbox txtLenguaMaternaMatricula;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Label label24;
-        private MBControl.MBTexbox mbTexbox19;
+        private MBControl.MBTexbox txtDiscapacidadMatricula;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
         private MBControl.MBTexbox mbTexbox20;
+        private MBControl.MBComboBox cbNacionalidadMatricula;
+        private MBControl.MBComboBox cbPaisNacimentoMatricula;
+        private MBControl.MBTexbox mbTexbox4;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.Label label31;
+        private MBControl.MBTexbox txt2ApellidoMatricula;
+        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.Label label32;
+        private MBControl.MBTexbox txt2NombreMatricula;
+        private System.Windows.Forms.Panel panel25;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Panel panel26;
+        private MBControl.MBButton btnGuardarMatricula;
     }
 }

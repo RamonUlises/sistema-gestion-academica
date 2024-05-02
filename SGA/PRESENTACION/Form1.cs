@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
+using SGA.PRESENTACION;
 
 namespace SGA
 {
@@ -30,7 +31,27 @@ namespace SGA
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            customizarDiseno();
 
+        }
+        private void customizarDiseno()
+        {
+            panelSubMenu.Visible = false;
+        }
+        private void hideSubMenu()
+        {
+            if (panelSubMenu.Visible == true)
+                panelSubMenu.Visible = false;
+        }
+        private void showSubMenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                hideSubMenu();
+                subMenu.Visible = true;
+            }
+            else
+                subMenu.Visible = false;
         }
         //Structs
         private struct RGBColors
@@ -41,6 +62,7 @@ namespace SGA
             public static Color color4 = Color.FromArgb(95, 77, 221);
             public static Color color5 = Color.FromArgb(249, 88, 155);
             public static Color color6 = Color.FromArgb(24, 161, 251);
+            public static Color color7 = Color.FromArgb(33, 74, 34);
         }
 
         //methods
@@ -116,7 +138,9 @@ namespace SGA
         private void iconButton2_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            showSubMenu(panelSubMenu);
             OpenChildForm(new Matrícula());
+           
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
@@ -206,6 +230,14 @@ namespace SGA
         {
             ActivateButton(sender, RGBColors.color6);
             OpenChildForm(new Informacion());
+        }
+
+        private void iconButton6_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color6);
+            OpenChildForm(new Matricula2());
+            //hideSubMenu();
+
         }
     }
 }

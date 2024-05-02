@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(1010, 651);
             this.Name = "Reingreso";
             this.Text = "Reingreso";
+            this.Load += new System.EventHandler(this.Reingreso_Load);
             this.ResumeLayout(false);
 
         }
