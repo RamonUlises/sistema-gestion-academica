@@ -42,7 +42,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1060, 657);
+            this.panel1.Size = new System.Drawing.Size(1664, 902);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -51,7 +51,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1060, 150);
+            this.panel2.Size = new System.Drawing.Size(1664, 150);
             this.panel2.TabIndex = 0;
             // 
             // mbTexbox1
@@ -74,7 +74,7 @@
             this.mbTexbox1.PasswordChar = false;
             this.mbTexbox1.PlaceholderColor = System.Drawing.Color.DimGray;
             this.mbTexbox1.PlaceholderText = "Buscar...";
-            this.mbTexbox1.Size = new System.Drawing.Size(250, 35);
+            this.mbTexbox1.Size = new System.Drawing.Size(854, 35);
             this.mbTexbox1.TabIndex = 0;
             this.mbTexbox1.UnderlineStyle = false;
             // 
@@ -82,8 +82,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1060, 657);
+            this.ClientSize = new System.Drawing.Size(1664, 902);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Estudiantes";
             this.Text = "Estudiantes";
             this.Load += new System.EventHandler(this.Estudiantes_Load);
