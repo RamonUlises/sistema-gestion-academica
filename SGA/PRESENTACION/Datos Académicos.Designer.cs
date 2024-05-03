@@ -821,6 +821,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Datos_académicos";
             this.Text = "Datos académicos";
+            this.Load += new System.EventHandler(this.Datos_académicos_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);

@@ -38,5 +38,10 @@ namespace SGA.PRESENTACION
         {
 
         }
+
+        private void Datos_académicos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

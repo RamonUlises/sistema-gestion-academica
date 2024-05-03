@@ -16,11 +16,7 @@ namespace SGA
 {
     public partial class Matrícula : Form
     {
-        //fields
-        private Form currentChildForm;
-        private System.Windows.Forms.Label tituloFormulario;
-
-
+       
         public Matrícula()
         {
             InitializeComponent();
@@ -280,14 +276,6 @@ namespace SGA
 
         private void label28_Click(object sender, EventArgs e)
         {
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Datos_académicos frm = new Datos_académicos();
-            frm.Show();
-            this.Hide();
-
         }
 
         private void mbTexbox9__TextChanged(object sender, EventArgs e)
@@ -550,13 +538,6 @@ namespace SGA
 
 
             
-        }
-
-        private void mbButton1_Click(object sender, EventArgs e)
-        {
-            Datos_académicos frm = new Datos_académicos();
-            frm.Show();
-            this.Hide();
         }
     }
 }
