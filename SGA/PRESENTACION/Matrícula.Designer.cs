@@ -204,8 +204,8 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1902, 1055);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(1682, 949);
+            this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnGuardarMatricula
@@ -1374,6 +1374,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1902, 1055);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Matrícula";
             this.Text = "Matrícula";
             this.Load += new System.EventHandler(this.Matrícula_Load);

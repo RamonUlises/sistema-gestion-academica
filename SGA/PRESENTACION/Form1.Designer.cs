@@ -396,6 +396,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelBarraTitulo);
             this.Controls.Add(this.panelMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

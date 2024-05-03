@@ -34,7 +34,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1010, 651);
+            this.ClientSize = new System.Drawing.Size(1682, 949);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Reingreso";
             this.Text = "Reingreso";
             this.Load += new System.EventHandler(this.Reingreso_Load);

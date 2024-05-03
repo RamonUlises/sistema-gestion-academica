@@ -810,15 +810,16 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1902, 1033);
+            this.panel1.Size = new System.Drawing.Size(1682, 949);
             this.panel1.TabIndex = 0;
             // 
             // Datos_académicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1902, 1033);
+            this.ClientSize = new System.Drawing.Size(1682, 949);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Datos_académicos";
             this.Text = "Datos académicos";
             this.Load += new System.EventHandler(this.Datos_académicos_Load);
