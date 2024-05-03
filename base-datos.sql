@@ -117,7 +117,6 @@ CREATE TABLE estudiantes(
     id_lengua INT,
     id_discapacidad INT,
     id_tutor_x_estudiante INT,
-    codigo_estudiante VARCHAR(20),
     FOREIGN KEY (id_sexo) REFERENCES sexos(id_sexo),
     FOREIGN KEY (id_pais) REFERENCES paises(id_pais),
     FOREIGN KEY (id_departamento) REFERENCES departamentos(id_departamento),
@@ -126,8 +125,7 @@ CREATE TABLE estudiantes(
     FOREIGN KEY (id_etnia) REFERENCES etnias(id_etnia),
     FOREIGN KEY (id_lengua) REFERENCES lenguas(id_lengua),
     FOREIGN KEY (id_discapacidad) REFERENCES discapacidades(id_discapacidad),
-    FOREIGN KEY (id_tutor_x_estudiante) REFERENCES tutores_x_estudiantes(id_tutor_x_estudiante),
-    FOREIGN KEY (codigo_estudiante) REFERENCES datos_academicos(codigo_estudiante)
+    FOREIGN KEY (id_tutor_x_estudiante) REFERENCES tutores_x_estudiantes(id_tutor_x_estudiante)
 );
 
 CREATE TABLE traslados (
@@ -137,9 +135,11 @@ CREATE TABLE traslados (
     codigo_estudiante VARCHAR(20),
     id_centro INT,
     id_periodo INT,
+    id_estudiante INT,
     FOREIGN KEY (codigo_estudiante) REFERENCES estudiantes(codigo_estudiante),
     FOREIGN KEY (id_centro) REFERENCES centros(id_centro),
-    FOREIGN KEY (id_periodo) REFERENCES periodos(id_periodo)
+    FOREIGN KEY (id_periodo) REFERENCES periodos(id_periodo),
+    FOREIGN KEY (id_estudiante) REFERENCES estudiantes(id_estudiante)
 );
 
 // DELIMITER
