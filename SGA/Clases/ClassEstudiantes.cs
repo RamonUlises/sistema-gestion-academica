@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SGA.Clases
 {
-    public class Estudiantes
+    public class ClassEstudiantes
     {
         public int Id { get; set; }
         public string Nombre1 { get; set; } // ya
@@ -15,7 +15,7 @@ namespace SGA.Clases
         public string Apellido1 { get; set; } // ya
         public string Apellido2 { get; set; } // ya
         public string Cedula { get; set; } // ya
-        public bool FechaNacimiento { get; set; } // ya
+        public bool PartidaNacimiento { get; set; } // ya
         public string Telefono { get; set; } // ya
         public string Direccion { get; set; } // ya
         public string FechaMatricula { get; set; } // ya
@@ -30,11 +30,12 @@ namespace SGA.Clases
         public string Municipio { get; set; } // ya
         public string Nacionalidad { get; set; } // ya
         public string Etnia { get; set; } // ya
-        public string Lengua { get; set; }
-        public string NombresTutor { get; set; }
-        public string CedulaTutor { get; set; }
-        public string TelefonoTutor { get; set; }
-
+        public string Lengua { get; set; } // ya
+        public string Discapacidad { get; set; } // ya
+        public string NombresTutor { get; set; } // ya
+        public string CedulaTutor { get; set; } // ya
+        public string TelefonoTutor { get; set; } // ya
+      
         // Validación de nombres
         public ValidarResultados ValidarNombres()
         {
@@ -105,8 +106,23 @@ namespace SGA.Clases
             } else if(this.Nacionalidad.Length != 0)
             {
                 return Validation(false, "La nacionalidad es requerida");
+            } else if (this.Etnia.Length != 0)
+            {
+                return Validation(false, "La etnia es requerida");
+            } else if(this.Lengua.Length != 0)
+            {
+                return Validation(false, "La lengua es requerida");
+            } else if(this.NombresTutor.Length != 0)
+            {
+                return Validation(false, "El nombre del tutor es requerido");
+            } else if(this.CedulaTutor.Length != 0)
+            {
+                return Validation(false, "La cédula del tutor es requerida");
+            } else if(this.TelefonoTutor.Length != 0)
+            {
+                return Validation(false, "El teléfono del tutor es requerido");
             }
-            return Validation(false, "La dirección es requerida");
+            return Validation(true, "GG");
         }
 
         public ValidarResultados ValidarPesoTalla()

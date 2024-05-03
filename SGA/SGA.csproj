@@ -71,7 +71,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\Estudiantes.cs" />
+    <Compile Include="Clases\ClassEstudiantes.cs" />
     <Compile Include="Clases\ValidarResultados.cs" />
     <Compile Include="MBControl\panelRounded.cs" />
     <Compile Include="PRESENTACION\Estudiantes.cs">

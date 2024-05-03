@@ -1,4 +1,5 @@
-﻿using SGA.MBControl;
+﻿using SGA.Clases;
+using SGA.MBControl;
 using SGA.PRESENTACION;
 using System;
 using System.Collections.Generic;
@@ -63,10 +64,110 @@ namespace SGA
         //    tituloFormulario.Text = childForm.Text;
             
         //}
+        public string checkedPartidaNacimiento()
+        {
+            if (chPartidaNacimeintoSi.Checked == true && ChParitdaNacimientoNo.Checked == true) 
+            {
+               MessageBox.Show("Seleccione solo un tipo de partida de nacimiento");
+                return "error";
+            } else if (ChParitdaNacimientoNo.Checked == true)
+            {
+                return "false";
+            }
+            else if (chPartidaNacimeintoSi.Checked == true)
+            {
+                return "true";
+            }
+            else
+            {
+                MessageBox.Show("Seleccione si el estudiante posee partida de nacimiento");
+                return "error";
+            }
+        }
 
+        public string checkedSexo()
+        {
+            if(chSexoFemMatricula.Checked == true && chSexoMasMatricula.Checked == true)
+            {
+                MessageBox.Show("Seleccione solo un tipo de sexo");
+                return "";
+            }else if (chSexoFemMatricula.Checked == true)
+            {
+                return "Femenino";
+            }
+            else if (chSexoMasMatricula.Checked == true)
+            {
+                return "Masculino";
+            }
+            else
+            {
+                MessageBox.Show("Seleccione el sexo del estudiante");
+                return "";
+            }
+        }
         private void btnGuardarMatricula_Click(object sender, EventArgs e)
         {
+            string resPart = checkedPartidaNacimiento();
+            if (resPart == "error") return;
+            string resSexo = checkedSexo();
+            if(resSexo == "") return;
+            ClassEstudiantes estudiante = new ClassEstudiantes();
             
+            estudiante.Nombre1 = txt1NombreMatricula.Text;
+            estudiante.Nombre2 = txt2NombreMatricula.Text;
+            estudiante.Apellido1 = txt1ApellidoMatricula.Text;
+            estudiante.Apellido2 = txt2ApellidoMatricula.Text;
+            estudiante.Cedula = txtCedulaMatricula.Text;
+            estudiante.PartidaNacimiento = resPart == "true";
+            estudiante.Sexo = checkedSexo();
+
+            string pattern = @"^\d+(\.\d+)?$";
+
+            if(!Regex.IsMatch(txtPesoMatricula.Text, pattern))
+            {
+                MessageBox.Show("El peso debe ser un número");
+                return;
+            }
+            estudiante.Peso = Double.Parse(txtPesoMatricula.Text);
+
+            if (!Regex.IsMatch(txtTallaMatricula.Text, pattern))
+            {
+                MessageBox.Show("La talla debe ser un número");
+                return;
+            }
+            estudiante.Talla = Double.Parse(txtTallaMatricula.Text);
+            estudiante.Pais = cbPaisNacimentoMatricula.Text;
+            estudiante.Nacionalidad = cbNacionalidadMatricula.Text;
+            estudiante.Telefono = txtTelefonoMatricula.Text;
+            estudiante.Departamento = txtDepartamentoMatricula.Text;
+            estudiante.Municipio = txtMuniciopioMatricula.Text;
+            estudiante.Barrio = txtBarrioMatricula.Text;
+            estudiante.Direccion = TxtDireccionMatricula.Text;
+            estudiante.Etnia = cbEtniaMatricula.Text;
+            estudiante.ComunidadIndigena = txtComunidadIndigenaMatricula.Text;
+            estudiante.TerritorioIndigena = txtTerritorioIndigenaMatricula.Text;
+            estudiante.Discapacidad = txtDiscapacidadMatricula.Text;
+            estudiante.Lengua = txtLenguaMaternaMatricula.Text;
+
+            var resultNombre = estudiante.ValidarNombres();
+            if (!resultNombre.result)
+            {
+                MessageBox.Show(resultNombre.message);
+                return;
+            }
+
+            var resultApellido = estudiante.ValidarApellidos();
+            if (!resultApellido.result)
+            {
+                MessageBox.Show(resultApellido.message);
+                return;
+            }
+            var resultCedula = estudiante.ValidarCedula();
+            if (!resultCedula.result)
+            {
+                MessageBox.Show(resultCedula.message);
+                return;
+            }
         }
 
         private void Matrícula_Load(object sender, EventArgs e)
