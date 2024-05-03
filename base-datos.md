@@ -86,7 +86,6 @@
 - id_lengua **(FK)**
 - id_discapacidad **(FK)**
 - id_txe **(FK)**
-- codigo_estudiante **(FK)**
 
 ### datos_academicos
 - codigo_estudiante **(PK)**
@@ -98,6 +97,7 @@
 - id_grado **(FK)**
 - id_seccion **(FK)**
 - id_turno **(FK)**
+- id_estudiante **(FK)**
 
 ### traslados
 - id_traslado **(PK)**
@@ -122,6 +122,7 @@
 - Un **_dato-academico_** le pertenece a un **_centro_** **(1:N)**
 - Un **_dato-academico_** pertenece a una **_seccion_** **(1:N)**
 - Un **_dato-academico_** está en un **_grado_** **(1:N)**
+- Un **_dato-academico_** le pertenece a un **_estudiante_** **(1:N)**
 - Un **_traslado_** es hecho por un **_estudiante_** **(1:1)**
 - Un **_traslado_** esta hecho en un **_periodo_** **(1:N)**
 - Un **_traslado_** viene de un **_centro_** **(1:N)**
