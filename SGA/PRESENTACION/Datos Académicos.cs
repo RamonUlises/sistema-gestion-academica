@@ -43,5 +43,22 @@ namespace SGA.PRESENTACION
         {
 
         }
+
+        private void panel2_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mbButton1_Click(object sender, EventArgs e)
+        {
+            comprobante frm = new comprobante();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

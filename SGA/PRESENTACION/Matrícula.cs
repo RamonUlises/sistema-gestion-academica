@@ -46,6 +46,11 @@ namespace SGA
             PanelHelper.SetRoundPanel(panel24, 25);
             PanelHelper.SetRoundPanel(panel25, 25);
             PanelHelper.SetRoundPanel(panel26, 25);
+            PanelHelper.SetRoundPanel(panel27, 25);
+            PanelHelper.SetRoundPanel(panel28, 25);
+            PanelHelper.SetRoundPanel(panel29, 25);
+            PanelHelper.SetRoundPanel(panel30, 25);
+
         }
         //private void OpenChildForm(Form childForm)
         //{
@@ -380,11 +385,6 @@ namespace SGA
         }
 
         private void mbTexbox9__TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint_1(object sender, PaintEventArgs e)
         {
 
         }

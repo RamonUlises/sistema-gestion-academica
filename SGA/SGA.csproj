@@ -74,6 +74,12 @@
     <Compile Include="Clases\ClassEstudiantes.cs" />
     <Compile Include="Clases\ValidarResultados.cs" />
     <Compile Include="MBControl\panelRounded.cs" />
+    <Compile Include="PRESENTACION\comprobante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\comprobante.Designer.cs">
+      <DependentUpon>comprobante.cs</DependentUpon>
+    </Compile>
     <Compile Include="PRESENTACION\Estudiantes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     <Compile Include="PRESENTACION\Traslado.Designer.cs">
       <DependentUpon>Traslado.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PRESENTACION\comprobante.resx">
+      <DependentUpon>comprobante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PRESENTACION\Estudiantes.resx">
       <DependentUpon>Estudiantes.cs</DependentUpon>
     </EmbeddedResource>

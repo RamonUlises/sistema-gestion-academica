@@ -13,6 +13,7 @@
 ### departamentos
 - id_departamento **(PK)**
 - departamento
+- id_pais **(FK)**
 
 ### municipios
 - id_municipio **(PK)**
@@ -22,6 +23,7 @@
 ### nacionalidades
 - id_nacionalidad **(PK)**
 - nacionalidad
+- id_pais **(FK)**
 
 ### etnias
 - id_etnia **(PK)**

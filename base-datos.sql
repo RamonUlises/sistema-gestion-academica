@@ -15,6 +15,8 @@ CREATE TABLE paises(
 CREATE TABLE departamentos(
     id_departamento INT PRIMARY KEY AUTO_INCREMENT,
     departamento VARCHAR(50) NOT NULL
+    id_pais INT,
+    FOREIGN KEY (id_pais) REFERENCES paises(id_pais)
 );
 
 CREATE TABLE municipios(
@@ -26,7 +28,9 @@ CREATE TABLE municipios(
 
 CREATE TABLE nacionalidades(
     id_nacionalidad INT PRIMARY KEY AUTO_INCREMENT,
-    nacionalidad VARCHAR(50) NOT NULL
+    nacionalidad VARCHAR(50) NOT NULL,
+    id_pais INT,
+    FOREIGN KEY (id_pais) REFERENCES paises(id_pais)
 );
 
 CREATE TABLE etnias(
@@ -87,10 +91,12 @@ CREATE TABLE datos_academicos (
     id_seccion INT,
     id_turno INT,
     id_centro INT,
+    id_estudiante INT,
     FOREIGN KEY (id_grado) REFERENCES grados(id_grado),
     FOREIGN KEY (id_seccion) REFERENCES secciones(id_seccion),
     FOREIGN KEY (id_turno) REFERENCES turnos(id_turno),
-    FOREIGN KEY (id_centro) REFERENCES centros(id_centro)
+    FOREIGN KEY (id_centro) REFERENCES centros(id_centro),
+    FOREIGN KEY (id_estudiante) REFERENCES estudiantes(id_estudiante)
 );
 
 CREATE TABLE estudiantes(
@@ -192,3 +198,135 @@ BEGIN
 END;
 
 // DELIMITER;
+
+// Agregar sexos a la tabla sexo
+
+INSERT INTO sexos VALUES 
+("Masculino"),
+("Femenino");
+
+// Agregar pais a la tabla paises
+
+INSERT INTO paises VALUES 
+("Guatemala"),
+("Honduras"),
+("El Salvador"),
+("Nicaragua"),
+("Costa Rica"),
+("Panamá");
+
+// Agregar departamentos de Guatemala a la tabla departamentos
+
+INSERT INTO departamentos (id_pais, departamento) VALUES 
+(1, "Alta Verapaz"),
+(1, "Baja Verapaz"),
+(1, "Chimaltenango"),
+(1, "Chiquimula"),
+(1, "El Progreso"),
+(1, "Escuintla"),
+(1, "Guatemala"),
+(1, "Huehuetenango"),
+(1, "Izabal"),
+(1, "Jalapa"),
+(1, "Jutiapa"),
+(1, "Petén"),
+(1, "Quetzaltenango"),
+(1, "Quiché"),
+(1, "Retalhuleu"),
+(1, "Sacatepéquez"),
+(1, "San Marcos"),
+(1, "Sacatepéquez"),
+(1, "Santa Rosa"),
+(1, "Sololá"),
+(1, "Suchitepéquez"),
+(1, "Totonicapán"),
+(1, "Zacapa");
+
+// Agregar departamentos de Honduras a la tabla departamentos
+
+INSERT INTO departamentos (id_pais, departamento) VALUES 
+(2, "Atlántida"),
+(2, "Choluteca"),
+(2, "Colón"),
+(2, "Comayagua"),
+(2, "Copán"),
+(2, "Cortés"),
+(2, "El Paraíso"),
+(2, "Francisco Morazán"),
+(2, "Gracias a Dios"),
+(2, "Intibucá"),
+(2, "Islas de la Bahía"),
+(2, "La Paz"),
+(2, "Lempira"),
+(2, "Ocotepeque"),
+(2, "Olancho"),
+(2, "Santa Bárbara"),
+(2, "Valle"),
+(2, "Yoro");
+
+// Agregar departamentos de El Salvador a la tabla departamentos
+
+INSERT INTO departamentos (id_pais, departamento) VALUES 
+(3, "Ahuachapán"),
+(3, "Cabañas"),
+(3, "Chalatenango"),
+(3, "Cuscatlán"),
+(3, "La Libertad"),
+(3, "La Paz"),
+(3, "La Unión"),
+(3, "Morazán"),
+(3, "San Miguel"),
+(3, "San Salvador"),
+(3, "San Vicente"),
+(3, "Santa Ana"),
+(3, "Sonsonate"),
+(3, "Usulután");
+
+// Agregar departamentos de Nicaragua a la tabla departamentos
+
+INSERT INTO departamentos (id_pais, departamento) VALUES 
+(4, "Boaco"),
+(4, "Carazo"),
+(4, "Chinandega"),
+(4, "Chontales"),
+(4, "Estelí"),
+(4, "Granada"),
+(4, "Jinotega"),
+(4, "León"),
+(4, "Madriz"),
+(4, "Managua"),
+(4, "Masaya"),
+(4, "Matagalpa"),
+(4, "Nueva Segovia"),
+(4, "Río San Juan"),
+(4, "Rivas"),
+(4, "RAAN"),
+(4, "RAAS");
+
+// Agregar departamentos de Costa Rica a la tabla departamentos
+
+INSERT INTO departamentos (id_pais, departamento) VALUES 
+(5, "Alajuela"),
+(5, "Cartago"),
+(5, "Guanacaste"),
+(5, "Heredia"),
+(5, "Limón"),
+(5, "Puntarenas"),
+(5, "San José");
+
+// Agregar departamentos de Panamá a la tabla departamentos
+
+INSERT INTO departamentos (id_pais, departamento) VALUES 
+(6, "Bocas del Toro"),
+(6, "Coclé"),
+(6, "Colón"),
+(6, "Chiriquí"),
+(6, "Darién"),
+(6, "Herrera"),
+(6, "Los Santos"),
+(6, "Panamá"),
+(6, "Veraguas"),
+(6, "Panamá Oeste"),
+(6, "Emberá-Wounaan"),
+(6, "Guna Yala"),
+(6, "Ngäbe-Buglé");
