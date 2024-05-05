@@ -14,7 +14,7 @@ CREATE TABLE paises(
 
 CREATE TABLE departamentos(
     id_departamento INT PRIMARY KEY AUTO_INCREMENT,
-    departamento VARCHAR(50) NOT NULL
+    departamento VARCHAR(50) NOT NULL,
     id_pais INT,
     FOREIGN KEY (id_pais) REFERENCES paises(id_pais)
 );
@@ -78,25 +78,7 @@ CREATE TABLE tutores_x_estudiantes(
     nombres VARCHAR(255) NOT NULL,
     apellidos VARCHAR(255) NOT NULL,
     cedula VARCHAR(16) NOT NULL,
-    telefono VARCHAR(9) NOT NULL,
-);
-
-CREATE TABLE datos_academicos (
-    codigo_estudiante VARCHAR(20) PRIMARY KEY,
-    fecha_matricula DATE NOT NULL,
-    nivel_educativo VARCHAR(255) NOT NULL,
-    modalidad VARCHAR(255) NOT NULL,
-    repitente BOOLEAN DEFAULT FALSE,
-    id_grado INT,
-    id_seccion INT,
-    id_turno INT,
-    id_centro INT,
-    id_estudiante INT,
-    FOREIGN KEY (id_grado) REFERENCES grados(id_grado),
-    FOREIGN KEY (id_seccion) REFERENCES secciones(id_seccion),
-    FOREIGN KEY (id_turno) REFERENCES turnos(id_turno),
-    FOREIGN KEY (id_centro) REFERENCES centros(id_centro),
-    FOREIGN KEY (id_estudiante) REFERENCES estudiantes(id_estudiante)
+    telefono VARCHAR(9) NOT NULL
 );
 
 CREATE TABLE estudiantes(
@@ -134,6 +116,24 @@ CREATE TABLE estudiantes(
     FOREIGN KEY (id_tutor_x_estudiante) REFERENCES tutores_x_estudiantes(id_tutor_x_estudiante)
 );
 
+CREATE TABLE datos_academicos (
+    codigo_estudiante VARCHAR(20) PRIMARY KEY,
+    fecha_matricula DATE NOT NULL,
+    nivel_educativo VARCHAR(255) NOT NULL,
+    modalidad VARCHAR(255) NOT NULL,
+    repitente BOOLEAN DEFAULT FALSE,
+    id_grado INT,
+    id_seccion INT,
+    id_turno INT,
+    id_centro INT,
+    id_estudiante INT,
+    FOREIGN KEY (id_grado) REFERENCES grados(id_grado),
+    FOREIGN KEY (id_seccion) REFERENCES secciones(id_seccion),
+    FOREIGN KEY (id_turno) REFERENCES turnos(id_turno),
+    FOREIGN KEY (id_centro) REFERENCES centros(id_centro),
+    FOREIGN KEY (id_estudiante) REFERENCES estudiantes(id_estudiante)
+);
+
 CREATE TABLE traslados (
     id_traslado INT PRIMARY KEY AUTO_INCREMENT,
     motivo_traslado VARCHAR(255) NOT NULL,
@@ -142,13 +142,13 @@ CREATE TABLE traslados (
     id_centro INT,
     id_periodo INT,
     id_estudiante INT,
-    FOREIGN KEY (codigo_estudiante) REFERENCES estudiantes(codigo_estudiante),
+    FOREIGN KEY (codigo_estudiante) REFERENCES datos_academicos(codigo_estudiante),
     FOREIGN KEY (id_centro) REFERENCES centros(id_centro),
     FOREIGN KEY (id_periodo) REFERENCES periodos(id_periodo),
     FOREIGN KEY (id_estudiante) REFERENCES estudiantes(id_estudiante)
 );
 
-// DELIMITER
+DELIMITER //
 
 CREATE TRIGGER trigger_datos_academicos
 BEFORE INSERT ON datos_academicos
@@ -163,7 +163,7 @@ END;
 
 DELIMITER;
 
-// DELIMITER
+DELIMITER //
 
 CREATE TRIGGER trigger_estudiantes
 BEFORE INSERT ON estudiantes
@@ -181,7 +181,7 @@ END;
 
 // DELIMITER;
 
-// DELIMITER
+DELIMITER //
 
 CREATE TRIGGER trigger_tutores_x_estudiantes
 BEFORE INSERT ON tutores_x_estudiantes
@@ -199,15 +199,19 @@ END;
 
 // DELIMITER;
 
+// REINICIE LA TERMINAL DE MYSQL PARA HACER LOS INSERTS
+
+USE sistema_gestion_academica;
+
 // Agregar sexos a la tabla sexo
 
-INSERT INTO sexos VALUES 
+INSERT INTO sexos (sexo) VALUES 
 ("Masculino"),
 ("Femenino");
 
 // Agregar pais a la tabla paises
 
-INSERT INTO paises VALUES 
+INSERT INTO paises (pais) VALUES 
 ("Guatemala"),
 ("Honduras"),
 ("El Salvador"),
