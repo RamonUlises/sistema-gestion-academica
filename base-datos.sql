@@ -334,3 +334,65 @@ INSERT INTO departamentos (id_pais, departamento) VALUES
 (6, "Emberá-Wounaan"),
 (6, "Guna Yala"),
 (6, "Ngäbe-Buglé");
+
+// Agregar nacionalidades a la tabla nacionalidades
+
+INSERT INTO nacionalidades (nacionalidad, id_pais) VALUES 
+("Guatemalteco", 1),
+("Hondureño", 2),
+("Salvadoreño", 3),
+("Nicaragüense", 4),
+("Costarricense", 5),
+("Panameño", 6);
+
+// Agregar etnias a la tabla etnias
+
+INSERT INTO etnias (etnia) VALUES 
+("Mestizo"),
+("Ladino"),
+("Indígena"),
+("Afrodescendiente"),
+("Garífuna"),
+("Xinca");
+
+// Agregar lenguas a la tabla lenguas
+
+INSERT INTO lenguas (lengua) VALUES 
+("Español"),
+("Inglés"),
+("Francés"),
+("Alemán"),
+("Italiano"),
+("Portugués"),
+("Chino"),
+("Japonés"),
+("Coreano");
+
+// Agregar discapacidades a la tabla discapacidades
+
+INSERT INTO discapacidades (discapacidad) VALUES 
+("Física"),
+("Auditiva"),
+("Visual"),
+("Mental"),
+("Intelectual"),
+("Síndrome de Down"),
+("Autismo"),
+("Asperger"),
+("TGD"),
+("TDAH");
+
+// Agregar turnos a la tabla turnos
+
+INSERT INTO turnos (turno) VALUES 
+("Matutino"),
+("Vespertino"),
+("Nocturno");
+
+// Agregar periodos a la tabla periodos
+
+INSERT INTO periodos (periodo) VALUES 
+("Primer Semestre"),
+("Segundo Semestre"),
+("Tercer Semestre"),
+("Cuarto Semestre");
