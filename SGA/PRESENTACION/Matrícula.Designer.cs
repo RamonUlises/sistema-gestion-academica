@@ -47,7 +47,7 @@
             this.label52 = new System.Windows.Forms.Label();
             this.btnGuardarMatricula = new SGA.MBControl.MBButton();
             this.panel26 = new System.Windows.Forms.Panel();
-            this.mbTexbox4 = new SGA.MBControl.MBTexbox();
+            this.txtFechaNacimientoMatricula = new SGA.MBControl.MBTexbox();
             this.panel23 = new System.Windows.Forms.Panel();
             this.label31 = new System.Windows.Forms.Label();
             this.cbNacionalidadMatricula = new SGA.MBControl.MBComboBox();
@@ -178,7 +178,7 @@
             this.panel1.Controls.Add(this.panel44);
             this.panel1.Controls.Add(this.btnGuardarMatricula);
             this.panel1.Controls.Add(this.panel26);
-            this.panel1.Controls.Add(this.mbTexbox4);
+            this.panel1.Controls.Add(this.txtFechaNacimientoMatricula);
             this.panel1.Controls.Add(this.panel23);
             this.panel1.Controls.Add(this.cbNacionalidadMatricula);
             this.panel1.Controls.Add(this.txt2ApellidoMatricula);
@@ -467,26 +467,27 @@
             this.panel26.Size = new System.Drawing.Size(200, 621);
             this.panel26.TabIndex = 63;
             // 
-            // mbTexbox4
+            // txtFechaNacimientoMatricula
             // 
-            this.mbTexbox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox4.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox4.BorderRadius = 25;
-            this.mbTexbox4.BorderSize = 1;
-            this.mbTexbox4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox4.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox4.Location = new System.Drawing.Point(1215, 544);
-            this.mbTexbox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox4.Multiline = false;
-            this.mbTexbox4.Name = "mbTexbox4";
-            this.mbTexbox4.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox4.PasswordChar = false;
-            this.mbTexbox4.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox4.PlaceholderText = "";
-            this.mbTexbox4.Size = new System.Drawing.Size(175, 38);
-            this.mbTexbox4.TabIndex = 62;
-            this.mbTexbox4.UnderlineStyle = false;
+            this.txtFechaNacimientoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtFechaNacimientoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtFechaNacimientoMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtFechaNacimientoMatricula.BorderRadius = 25;
+            this.txtFechaNacimientoMatricula.BorderSize = 1;
+            this.txtFechaNacimientoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFechaNacimientoMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtFechaNacimientoMatricula.Location = new System.Drawing.Point(1215, 544);
+            this.txtFechaNacimientoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtFechaNacimientoMatricula.Multiline = false;
+            this.txtFechaNacimientoMatricula.Name = "txtFechaNacimientoMatricula";
+            this.txtFechaNacimientoMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtFechaNacimientoMatricula.PasswordChar = false;
+            this.txtFechaNacimientoMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtFechaNacimientoMatricula.PlaceholderText = "";
+            this.txtFechaNacimientoMatricula.Size = new System.Drawing.Size(175, 38);
+            this.txtFechaNacimientoMatricula.TabIndex = 62;
+            this.txtFechaNacimientoMatricula.UnderlineStyle = false;
+            this.txtFechaNacimientoMatricula._TextChanged += new System.EventHandler(this.mbTexbox4__TextChanged_1);
             // 
             // panel23
             // 
@@ -516,6 +517,9 @@
             this.cbNacionalidadMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbNacionalidadMatricula.ForeColor = System.Drawing.Color.Black;
             this.cbNacionalidadMatricula.IconColor = System.Drawing.Color.Black;
+            this.cbNacionalidadMatricula.Items.AddRange(new object[] {
+            "Guatemalteco",
+            "Nicaragüense"});
             this.cbNacionalidadMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbNacionalidadMatricula.ListTextColor = System.Drawing.Color.Black;
             this.cbNacionalidadMatricula.Location = new System.Drawing.Point(803, 675);
@@ -556,6 +560,9 @@
             this.cbPaisNacimentoMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbPaisNacimentoMatricula.ForeColor = System.Drawing.Color.Black;
             this.cbPaisNacimentoMatricula.IconColor = System.Drawing.Color.Black;
+            this.cbPaisNacimentoMatricula.Items.AddRange(new object[] {
+            "Guatemala",
+            "Nicaragua"});
             this.cbPaisNacimentoMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbPaisNacimentoMatricula.ListTextColor = System.Drawing.Color.Black;
             this.cbPaisNacimentoMatricula.Location = new System.Drawing.Point(401, 675);
@@ -818,6 +825,8 @@
             this.cbEtniaMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbEtniaMatricula.ForeColor = System.Drawing.Color.Black;
             this.cbEtniaMatricula.IconColor = System.Drawing.Color.Black;
+            this.cbEtniaMatricula.Items.AddRange(new object[] {
+            "Mestizo"});
             this.cbEtniaMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbEtniaMatricula.ListTextColor = System.Drawing.Color.Black;
             this.cbEtniaMatricula.Location = new System.Drawing.Point(451, 860);
@@ -1751,7 +1760,7 @@
         private MBControl.MBTexbox mbTexbox20;
         private MBControl.MBComboBox cbNacionalidadMatricula;
         private MBControl.MBComboBox cbPaisNacimentoMatricula;
-        private MBControl.MBTexbox mbTexbox4;
+        private MBControl.MBTexbox txtFechaNacimientoMatricula;
         private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Label label31;
         private MBControl.MBTexbox txt2ApellidoMatricula;

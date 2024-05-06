@@ -112,20 +112,60 @@ namespace SGA
         }
         private void btnGuardarMatricula_Click(object sender, EventArgs e)
         {
-            string resPart = checkedPartidaNacimiento();
-            if (resPart == "error") return;
-            string resSexo = checkedSexo();
-            if(resSexo == "") return;
             ClassEstudiantes estudiante = new ClassEstudiantes();
-            
+
+            // VALIDACION DE CEDULA
+            estudiante.Cedula = txtCedulaMatricula.Text;
+
+            var resultCedula = estudiante.ValidarCedula();
+            if (!resultCedula.result)
+            {
+                MessageBox.Show(resultCedula.message);
+                return;
+            }
+
+            // VALIDACIONES DE NOMBRES Y APELLIDOS
             estudiante.Nombre1 = txt1NombreMatricula.Text;
             estudiante.Nombre2 = txt2NombreMatricula.Text;
+
+            var resultNombre = estudiante.ValidarNombres();
+            if (!resultNombre.result)
+            {
+                MessageBox.Show(resultNombre.message);
+                return;
+            }
+
             estudiante.Apellido1 = txt1ApellidoMatricula.Text;
             estudiante.Apellido2 = txt2ApellidoMatricula.Text;
-            estudiante.Cedula = txtCedulaMatricula.Text;
-            estudiante.PartidaNacimiento = resPart == "true";
-            estudiante.Sexo = checkedSexo();
 
+            var resultApellido = estudiante.ValidarApellidos();
+            if (!resultApellido.result)
+            {
+                MessageBox.Show(resultApellido.message);
+                return;
+            }
+
+            // VALIDACION DE PARTIDA DE NACIMIENTO
+            string resPart = checkedPartidaNacimiento();
+            if (resPart == "error") return;
+            estudiante.PartidaNacimiento = resPart == "true";
+
+            // VALIDACION DE FECHA DE NACIMIENTO
+            estudiante.fechaNacimiento = txtFechaNacimientoMatricula.Text;
+
+            var resultFecha = estudiante.ValidarFechaNacimiento();
+            if (!resultFecha.result)
+            {
+                MessageBox.Show(resultFecha.message);
+                return;
+            }
+
+            // VALIDACION DE SEXO
+            string resSexo = checkedSexo();
+            if(resSexo == "") return;
+            estudiante.Sexo = checkedSexo();
+            
+            // VALIDACION DE PESO Y TALLA
             string pattern = @"^\d+(\.\d+)?$";
 
             if(!Regex.IsMatch(txtPesoMatricula.Text, pattern))
@@ -133,14 +173,18 @@ namespace SGA
                 MessageBox.Show("El peso debe ser un número");
                 return;
             }
-            estudiante.Peso = Double.Parse(txtPesoMatricula.Text);
 
             if (!Regex.IsMatch(txtTallaMatricula.Text, pattern))
             {
                 MessageBox.Show("La talla debe ser un número");
                 return;
             }
+
+            estudiante.Peso = Double.Parse(txtPesoMatricula.Text);
             estudiante.Talla = Double.Parse(txtTallaMatricula.Text);
+
+            // VALIDAR ESPACIOS VACIOS
+
             estudiante.Pais = cbPaisNacimentoMatricula.Text;
             estudiante.Nacionalidad = cbNacionalidadMatricula.Text;
             estudiante.Telefono = txtTelefonoMatricula.Text;
@@ -154,25 +198,41 @@ namespace SGA
             estudiante.Discapacidad = txtDiscapacidadMatricula.Text;
             estudiante.Lengua = txtLenguaMaternaMatricula.Text;
 
-            var resultNombre = estudiante.ValidarNombres();
-            if (!resultNombre.result)
+            var res = estudiante.ValidarEspacios();
+            if (!res.result)
             {
-                MessageBox.Show(resultNombre.message);
+                MessageBox.Show(res.message);
                 return;
             }
 
-            var resultApellido = estudiante.ValidarApellidos();
-            if (!resultApellido.result)
+            // VALIDAR NOMBERS DEL TUTOR
+
+            var resultNombreTutor = estudiante.ValidarNombresTutor();
+            if (!resultNombreTutor.result)
             {
-                MessageBox.Show(resultApellido.message);
+                MessageBox.Show(resultNombreTutor.message);
                 return;
             }
-            var resultCedula = estudiante.ValidarCedula();
-            if (!resultCedula.result)
+
+            // VALIDAR CEDULA DEL TUTOR
+            
+            var resultCedulaTutor = estudiante.ValidarCedulaTutor();
+            if (!resultCedulaTutor.result)
             {
-                MessageBox.Show(resultCedula.message);
+                MessageBox.Show(resultCedulaTutor.message);
                 return;
             }
+
+            // VALIDAR TELEFONO DEL TUTOR
+
+            var resultTelefonoTutor = estudiante.ValidarTelefono();
+            if (!resultTelefonoTutor.result)
+            {
+                MessageBox.Show(resultTelefonoTutor.message);
+                return;
+            }
+            
+            MessageBox.Show("Estudiante matriculado correctamente");
         }
 
         private void Matrícula_Load(object sender, EventArgs e)
@@ -639,6 +699,11 @@ namespace SGA
 
 
             
+        }
+
+        private void mbTexbox4__TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

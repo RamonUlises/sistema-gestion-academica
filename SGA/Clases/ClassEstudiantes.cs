@@ -16,6 +16,7 @@ namespace SGA.Clases
         public string Apellido2 { get; set; } // ya
         public string Cedula { get; set; } // ya
         public bool PartidaNacimiento { get; set; } // ya
+        public string fechaNacimiento { get; set; } // ya
         public string Telefono { get; set; } // ya
         public string Direccion { get; set; } // ya
         public string FechaMatricula { get; set; } // ya
@@ -39,9 +40,14 @@ namespace SGA.Clases
         // Validación de nombres
         public ValidarResultados ValidarNombres()
         {
-            string pattern = @"^[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+$";
-            Regex regex = new Regex(pattern, RegexOptions.Compiled | RegexOptions.IgnoreCase);
-            if(regex.IsMatch(this.Nombre1) && regex.IsMatch(this.Nombre2))
+
+            if (this.Nombre1.Length == 0 || this.Nombre2.Length == 0) {
+                return Validation(false, "Los nombres son requeridos");
+            }
+
+            string pattern = @"^(?:[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+(?:\s|$)){1,5}$";
+
+            if (Regex.IsMatch(this.Nombre1, pattern) && Regex.IsMatch(this.Nombre2, pattern))
             {
                 return Validation(true, "Correcto");
             }
@@ -50,9 +56,14 @@ namespace SGA.Clases
         // Validación de apellidos
         public ValidarResultados ValidarApellidos()
         {
+
+            if (this.Apellido1.Length == 0 || this.Apellido2.Length == 0)
+            {
+                return Validation(false, "Los apellidos son requeridos");
+            }
+
             string pattern = @"^[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+$";
-            Regex regex = new Regex(pattern, RegexOptions.Compiled | RegexOptions.IgnoreCase);
-            if (regex.IsMatch(this.Apellido1) && regex.IsMatch(this.Apellido2))
+            if (Regex.IsMatch(this.Apellido1, pattern) == true && Regex.IsMatch(this.Apellido2, pattern) == true)
             {
                 return Validation(true, "Correcto");
             }
@@ -62,9 +73,9 @@ namespace SGA.Clases
         public ValidarResultados ValidarCedula()
         {
             if(this.Cedula.Length == 0) return new ValidarResultados { result = true, message = "GG" };
-            string pattern = @"^[0-9]{3}-[0-9]{6}-[0-9]{4}[A-Z]{1}$";
-            Regex regex = new Regex(pattern, RegexOptions.Compiled | RegexOptions.IgnoreCase);
-            if (regex.IsMatch(this.Cedula) == false)
+            string pattern = "^[0-9]{3}-[0-9]{6}-[0-9]{4}[A-Z]{1}$";
+            
+            if(!Regex.IsMatch(this.Cedula, pattern))
             {
                 return Validation(false, "La cédula es inválida");
             }
@@ -75,53 +86,70 @@ namespace SGA.Clases
         {
             if(this.Telefono.Length == 0) return Validation(true, "gg");
             string pattern = @"^[0-9]{4}-[0-9]{4}$";
-            Regex regex = new Regex(pattern, RegexOptions.Compiled | RegexOptions.IgnoreCase);
-            if(regex.IsMatch(this.Telefono) == false)
+            
+            if(!Regex.IsMatch(this.Telefono, pattern))
             {
-                return Validation(false, "El número de teléfono en inválido");
+                return Validation(false, "El formato del teléfono debe ser 0000-000");
             }
             return Validation(true, "gg");
         }
         public ValidarResultados ValidarEspacios()
         {
-            if (this.Direccion.Length != 0)
+            if(this.Pais.Length == 0)
+            {
+                return Validation(false, "El pais es requerido");
+            }
+
+            if(this.Telefono.Length == 0)
+            {
+                return Validation(false, "El teléfono es requerido");
+            }
+
+            if (this.Departamento.Length == 0)
+            {
+                return Validation(false, "El departamento es requerido");
+            }
+
+            if (this.Municipio.Length == 0)
+            {
+                return Validation(false, "El municipio es requerido");
+            }
+            
+            if (this.Barrio.Length == 0)
+            {
+               return Validation(false, "El barrio es requerida");
+            } 
+
+            if (this.Direccion.Length == 0)
             {
                 return Validation(false, "La dirección es requerida");
             }
-            else if (this.Barrio.Length != 0)
-            {
-                return Validation(false, "El barrio es requerida");
-            } else if(this.Sexo.Length != 0)
-            {
-                return Validation(false, "El sexo es requerido");
-            } else if(this.Pais.Length != 0)
-            {
-                return Validation(false, "El pais es requerido");
-            } else if(this.Departamento.Length != 0)
-            {
-                return Validation(false, "El departamento es requerido");
-            } else if(this.Municipio.Length != 0)
-            {
-                return Validation(false, "El municipio es requerido");
-            } else if(this.Nacionalidad.Length != 0)
-            {
-                return Validation(false, "La nacionalidad es requerida");
-            } else if (this.Etnia.Length != 0)
+            
+            if (this.Etnia.Length == 0)
             {
                 return Validation(false, "La etnia es requerida");
-            } else if(this.Lengua.Length != 0)
+            }
+            
+            if (this.Lengua.Length == 0)
             {
                 return Validation(false, "La lengua es requerida");
-            } else if(this.NombresTutor.Length != 0)
+            }
+
+            if (this.NombresTutor.Length == 0)
             {
                 return Validation(false, "El nombre del tutor es requerido");
-            } else if(this.CedulaTutor.Length != 0)
+            }
+            
+            if (this.CedulaTutor.Length == 0)
             {
                 return Validation(false, "La cédula del tutor es requerida");
-            } else if(this.TelefonoTutor.Length != 0)
+            }
+            
+            if (this.TelefonoTutor.Length == 0)
             {
                 return Validation(false, "El teléfono del tutor es requerido");
             }
+
             return Validation(true, "GG");
         }
 
@@ -134,6 +162,40 @@ namespace SGA.Clases
             if(this.Talla == 0) {
                 return Validation(false, "La talla es requerida");
             } 
+            return Validation(true, "GG");
+        }
+
+        public ValidarResultados ValidarFechaNacimiento()
+        {
+            string pattern = @"^[0-9]{2}-[0-9]{2}-[0-9]{4}$";
+            
+            if(!Regex.IsMatch(this.fechaNacimiento, pattern))
+            {
+                return Validation(false, "El formato de la fecha de nacimiento es dd-mm-yyyy");
+            }
+            return Validation(true, "GG");
+        }
+
+        public ValidarResultados ValidarNombresTutor()
+        {
+            string pattern = @"^(?:[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+(?:\s|$)){1,5}$";
+            
+            if(!Regex.IsMatch(this.NombresTutor, pattern))
+            {
+                return Validation(false, "El nombre del tutor es inválido");
+            }
+
+            return Validation(true, "GG");
+        }
+
+        public ValidarResultados ValidarCedulaTutor()
+        {
+            string pattern = @"^[0-9]{3}-[0-9]{6}-[0-9]{4}[A-Z]{1}$";
+            
+            if(!Regex.IsMatch(this.CedulaTutor, pattern))
+            {
+                return Validation(false, "La cédula del tutor es inválida");
+            }
             return Validation(true, "GG");
         }
 
