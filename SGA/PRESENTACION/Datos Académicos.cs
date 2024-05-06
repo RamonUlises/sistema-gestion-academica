@@ -8,7 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
+
 
 namespace SGA.PRESENTACION
 {
@@ -17,8 +19,11 @@ namespace SGA.PRESENTACION
         public Datos_académicos()
         {
             InitializeComponent();
-        }
+            
 
+        }
+        
+      
         private void panelEscritorio_Paint(object sender, PaintEventArgs e)
         {
 
@@ -56,9 +61,17 @@ namespace SGA.PRESENTACION
 
         private void mbButton1_Click(object sender, EventArgs e)
         {
-            comprobante frm = new comprobante();
-            frm.Show();
-            this.Hide();
+           
+        }
+
+        private void mbButton2_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
