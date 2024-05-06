@@ -19,11 +19,50 @@ namespace SGA.PRESENTACION
         public Datos_académicos()
         {
             InitializeComponent();
+            customizarDiseno();
+            PanelHelper.SetRoundPanel(panel2, 25);
+            PanelHelper.SetRoundPanel(panel3, 25);
+            PanelHelper.SetRoundPanel(panel4, 25);
+            PanelHelper.SetRoundPanel(panel4, 25);
+            PanelHelper.SetRoundPanel(panel5, 25);
+            PanelHelper.SetRoundPanel(panel6, 25);
+            PanelHelper.SetRoundPanel(panel7, 25);
+            PanelHelper.SetRoundPanel(panel8, 25);
+            PanelHelper.SetRoundPanel(panel9, 25);
+            PanelHelper.SetRoundPanel(panel10, 25);
+            PanelHelper.SetRoundPanel(panel11, 25);
+            PanelHelper.SetRoundPanel(panel12, 25);
+            PanelHelper.SetRoundPanel(panel13, 25);
+            PanelHelper.SetRoundPanel(panel14, 10);
+            PanelHelper.SetRoundPanel(panel15, 10);
+            PanelHelper.SetRoundPanel(panel16, 10);
+            PanelHelper.SetRoundPanel(panel17, 10);
+
+
             
 
         }
-        
-      
+        private void customizarDiseno()
+        {
+            panel12.Visible = false;
+        }
+        private void hideSubMenu()
+        {
+            if (panel12.Visible == true)
+                panel12.Visible = false;
+        }
+        private void showSubMenu(System.Windows.Forms.Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                hideSubMenu();
+                subMenu.Visible = true;
+            }
+            else
+                subMenu.Visible = false;
+        }
+
+
         private void panelEscritorio_Paint(object sender, PaintEventArgs e)
         {
 
@@ -61,15 +100,30 @@ namespace SGA.PRESENTACION
 
         private void mbButton1_Click(object sender, EventArgs e)
         {
-           
+          showSubMenu(panel12);
         }
 
         private void mbButton2_Click(object sender, EventArgs e)
         {
-          
+          hideSubMenu();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel13_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel12_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
         {
 
         }
