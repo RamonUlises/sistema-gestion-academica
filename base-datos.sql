@@ -396,3 +396,22 @@ INSERT INTO periodos (periodo) VALUES
 ("Segundo Semestre"),
 ("Tercer Semestre"),
 ("Cuarto Semestre");
+
+// Agregar grados a la tabla grados
+
+INSERT INTO grados (grado) VALUES
+(7),
+(8),
+(9),
+(10),
+(11);
+
+// Agregar secciones a la tabla secciones
+
+INSERT INTO secciones (seccion) VALUES
+("A"),
+("B"),
+("C"),
+("D"),
+("E"),
+("F");
