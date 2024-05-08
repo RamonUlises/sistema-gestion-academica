@@ -16,7 +16,7 @@ namespace SGA.Clases
         public string Apellido2 { get; set; } // ya
         public string Cedula { get; set; } // ya
         public bool PartidaNacimiento { get; set; } // ya
-        public string fechaNacimiento { get; set; } // ya
+        public string FechaNacimiento { get; set; } // ya
         public string Telefono { get; set; } // ya
         public string Direccion { get; set; } // ya
         public string FechaMatricula { get; set; } // ya
@@ -169,7 +169,7 @@ namespace SGA.Clases
         {
             string pattern = @"^[0-9]{2}-[0-9]{2}-[0-9]{4}$";
             
-            if(!Regex.IsMatch(this.fechaNacimiento, pattern))
+            if(!Regex.IsMatch(this.FechaNacimiento, pattern))
             {
                 return Validation(false, "El formato de la fecha de nacimiento es dd-mm-yyyy");
             }
@@ -198,11 +198,11 @@ namespace SGA.Clases
             }
             return Validation(true, "GG");
         }
-
         public ValidarResultados Validation(bool result, string message)
         {
             return new ValidarResultados { result = result, message = message };
         }
+
     }
 }
 
