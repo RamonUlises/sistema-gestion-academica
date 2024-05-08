@@ -153,7 +153,7 @@ namespace SGA
             estudiante.PartidaNacimiento = resPart == "true";
 
             // VALIDACION DE FECHA DE NACIMIENTO
-            estudiante.fechaNacimiento = txtFechaNacimientoMatricula.Text;
+            estudiante.FechaNacimiento = txtFechaNacimientoMatricula.Text;
 
             var resultFecha = estudiante.ValidarFechaNacimiento();
             if (!resultFecha.result)
