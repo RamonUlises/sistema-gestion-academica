@@ -74,6 +74,9 @@
     <Compile Include="Clases\ClassEstudiantes.cs" />
     <Compile Include="Clases\ClassDatosAcademicos.cs" />
     <Compile Include="Clases\ValidarResultados.cs" />
+    <Compile Include="MBControl\panelOpacity.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="MBControl\panelRounded.cs" />
     <Compile Include="PRESENTACION\Estudiantes.cs">
       <SubType>Form</SubType>

@@ -50,6 +50,8 @@ namespace SGA
             PanelHelper.SetRoundPanel(panel28, 25);
             PanelHelper.SetRoundPanel(panel29, 25);
             PanelHelper.SetRoundPanel(panel30, 25);
+            PanelHelper.SetRoundPanel(panel44, 25);
+
 
         }
         //private void OpenChildForm(Form childForm)

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MiAplicacion;
+using SGA.MBControl;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,23 @@ namespace SGA
         public Informacion()
         {
             InitializeComponent();
+            PanelHelper.SetRoundPanel(panel2, 20);
+            // Establecer el color de fondo del panel con una transparencia
+         panel3.BackColor = Color.FromArgb(128, Color.Black); // Opacidad al 50%
+            PanelHelper.SetRoundPanel(panel4, 10);
+            panel4.BackColor = Color.FromArgb(128, Color.Black); // Opacidad al 50%
+        }
+
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
