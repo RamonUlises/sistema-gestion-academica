@@ -130,7 +130,7 @@
             this.txt1NombreMatricula = new SGA.MBControl.MBTexbox();
             this.txtCedulaMatricula = new SGA.MBControl.MBTexbox();
             this.mbTexbox20 = new SGA.MBControl.MBTexbox();
-            this.mbTexbox1 = new SGA.MBControl.MBTexbox();
+            this.txtFechaMatricula = new SGA.MBControl.MBTexbox();
             this.panel1.SuspendLayout();
             this.panel30.SuspendLayout();
             this.panel29.SuspendLayout();
@@ -228,7 +228,7 @@
             this.panel1.Controls.Add(this.txtCedulaMatricula);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.mbTexbox1);
+            this.panel1.Controls.Add(this.txtFechaMatricula);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.panel2);
@@ -902,6 +902,7 @@
             this.label4.Size = new System.Drawing.Size(572, 23);
             this.label4.TabIndex = 0;
             this.label4.Text = "I. DATOS PERSONALES DEL ESTUDIANTE DE NUEVO INGRESO (Catálogo)";
+            this.label4.Click += new System.EventHandler(this.label4_Click_1);
             // 
             // label30
             // 
@@ -1587,26 +1588,27 @@
             this.mbTexbox20.TabIndex = 5;
             this.mbTexbox20.UnderlineStyle = false;
             // 
-            // mbTexbox1
+            // txtFechaMatricula
             // 
-            this.mbTexbox1.BackColor = System.Drawing.SystemColors.Window;
-            this.mbTexbox1.BorderColor = System.Drawing.Color.Black;
-            this.mbTexbox1.BorderFocusColor = System.Drawing.Color.Black;
-            this.mbTexbox1.BorderRadius = 20;
-            this.mbTexbox1.BorderSize = 1;
-            this.mbTexbox1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox1.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox1.Location = new System.Drawing.Point(1234, 374);
-            this.mbTexbox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox1.Multiline = false;
-            this.mbTexbox1.Name = "mbTexbox1";
-            this.mbTexbox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox1.PasswordChar = false;
-            this.mbTexbox1.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox1.PlaceholderText = "Fecha de llenado";
-            this.mbTexbox1.Size = new System.Drawing.Size(250, 40);
-            this.mbTexbox1.TabIndex = 5;
-            this.mbTexbox1.UnderlineStyle = false;
+            this.txtFechaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtFechaMatricula.BorderColor = System.Drawing.Color.Black;
+            this.txtFechaMatricula.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtFechaMatricula.BorderRadius = 20;
+            this.txtFechaMatricula.BorderSize = 1;
+            this.txtFechaMatricula.Enabled = false;
+            this.txtFechaMatricula.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFechaMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtFechaMatricula.Location = new System.Drawing.Point(1234, 374);
+            this.txtFechaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtFechaMatricula.Multiline = false;
+            this.txtFechaMatricula.Name = "txtFechaMatricula";
+            this.txtFechaMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtFechaMatricula.PasswordChar = false;
+            this.txtFechaMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtFechaMatricula.PlaceholderText = "Fecha de llenado";
+            this.txtFechaMatricula.Size = new System.Drawing.Size(250, 43);
+            this.txtFechaMatricula.TabIndex = 5;
+            this.txtFechaMatricula.UnderlineStyle = false;
             // 
             // Matrícula
             // 
@@ -1689,7 +1691,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private MBControl.MBTexbox mbTexbox1;
+        private MBControl.MBTexbox txtFechaMatricula;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;

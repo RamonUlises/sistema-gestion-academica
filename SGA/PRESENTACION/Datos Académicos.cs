@@ -37,6 +37,19 @@ namespace SGA.PRESENTACION
             PanelHelper.SetRoundPanel(panel15, 10);
             PanelHelper.SetRoundPanel(panel16, 10);
             PanelHelper.SetRoundPanel(panel17, 10);
+            PanelHelper.SetRoundPanel(panel18, 25);
+            PanelHelper.SetRoundPanel(panel19, 25);
+            PanelHelper.SetRoundPanel(panel20, 25);
+            PanelHelper.SetRoundPanel(panel21, 25);
+            PanelHelper.SetRoundPanel(panel22, 25);
+            PanelHelper.SetRoundPanel(panel23, 25);
+            PanelHelper.SetRoundPanel(panel24, 25);
+            PanelHelper.SetRoundPanel(panel25, 25);
+            PanelHelper.SetRoundPanel(panel26, 25);
+            PanelHelper.SetRoundPanel(panel27, 25);
+            PanelHelper.SetRoundPanel(panel28, 25);
+            PanelHelper.SetRoundPanel(panel29, 25);
+
 
 
             

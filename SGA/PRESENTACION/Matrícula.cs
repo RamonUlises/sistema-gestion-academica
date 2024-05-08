@@ -52,25 +52,10 @@ namespace SGA
             PanelHelper.SetRoundPanel(panel30, 25);
             PanelHelper.SetRoundPanel(panel44, 25);
 
+            DateTime fecha = DateTime.Now;
+            txtFechaMatricula.Text = fecha.ToString("dd-MM-yyyy");
 
         }
-        //private void OpenChildForm(Form childForm)
-        //{
-        //    if (currentChildForm != null)
-        //    {
-        //        currentChildForm.Close();
-        //    }
-        //    currentChildForm = childForm;
-        //    childForm.TopLevel = false;
-        //    childForm.FormBorderStyle = FormBorderStyle.None;
-        //    childForm.Dock = DockStyle.Fill;
-        //    panel1.Controls.Add(childForm);
-        //    panel1.Tag = childForm;
-        //    childForm.BringToFront();
-        //    childForm.Show();
-        //    tituloFormulario.Text = childForm.Text;
-            
-        //}
         public string checkedPartidaNacimiento()
         {
             if (chPartidaNacimeintoSi.Checked == true && ChParitdaNacimientoNo.Checked == true) 
@@ -721,6 +706,11 @@ namespace SGA
         }
 
         private void mbTexbox4__TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click_1(object sender, EventArgs e)
         {
 
         }

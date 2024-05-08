@@ -20,8 +20,7 @@ namespace SGA
             PanelHelper.SetRoundPanel(panel2, 20);
             // Establecer el color de fondo del panel con una transparencia
          panel3.BackColor = Color.FromArgb(128, Color.Black); // Opacidad al 50%
-            PanelHelper.SetRoundPanel(panel4, 10);
-            panel4.BackColor = Color.FromArgb(128, Color.Black); // Opacidad al 50%
+           
         }
 
 
