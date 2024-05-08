@@ -112,6 +112,8 @@ namespace SGA
         }
         private void btnGuardarMatricula_Click(object sender, EventArgs e)
         {
+
+            
             ClassEstudiantes estudiante = new ClassEstudiantes();
 
             // VALIDACION DE CEDULA
@@ -183,20 +185,31 @@ namespace SGA
             estudiante.Peso = Double.Parse(txtPesoMatricula.Text);
             estudiante.Talla = Double.Parse(txtTallaMatricula.Text);
 
-            // VALIDAR ESPACIOS VACIOS
+            // VALIDACION DE TELEFONO
 
-            estudiante.Pais = cbPaisNacimentoMatricula.Text;
-            estudiante.Nacionalidad = cbNacionalidadMatricula.Text;
             estudiante.Telefono = txtTelefonoMatricula.Text;
+            var resTelefono = estudiante.ValidarTelefono();
+            if (!resTelefono.result)
+            {
+                MessageBox.Show(resTelefono.message);
+                return;
+            }
+
+            // VALIDAR ESPACIOS VACIOS
+            estudiante.Pais = cbPaisNacimentoMatricula.Texts;
+            estudiante.Nacionalidad = cbNacionalidadMatricula.Texts;
             estudiante.Departamento = txtDepartamentoMatricula.Text;
             estudiante.Municipio = txtMuniciopioMatricula.Text;
             estudiante.Barrio = txtBarrioMatricula.Text;
             estudiante.Direccion = TxtDireccionMatricula.Text;
-            estudiante.Etnia = cbEtniaMatricula.Text;
+            estudiante.Etnia = cbEtniaMatricula.Texts;
             estudiante.ComunidadIndigena = txtComunidadIndigenaMatricula.Text;
             estudiante.TerritorioIndigena = txtTerritorioIndigenaMatricula.Text;
             estudiante.Discapacidad = txtDiscapacidadMatricula.Text;
             estudiante.Lengua = txtLenguaMaternaMatricula.Text;
+            estudiante.NombresTutor = txtNombresApellidosTutorMatricula.Text;
+            estudiante.CedulaTutor = txtCedulaTutorMatricula.Text;
+            estudiante.TelefonoTutor = txtTelefonoTutorMatricula.Text;
 
             var res = estudiante.ValidarEspacios();
             if (!res.result)
@@ -205,7 +218,9 @@ namespace SGA
                 return;
             }
 
+
             // VALIDAR NOMBERS DEL TUTOR
+
 
             var resultNombreTutor = estudiante.ValidarNombresTutor();
             if (!resultNombreTutor.result)
@@ -216,6 +231,7 @@ namespace SGA
 
             // VALIDAR CEDULA DEL TUTOR
             
+
             var resultCedulaTutor = estudiante.ValidarCedulaTutor();
             if (!resultCedulaTutor.result)
             {
@@ -224,6 +240,7 @@ namespace SGA
             }
 
             // VALIDAR TELEFONO DEL TUTOR
+            
 
             var resultTelefonoTutor = estudiante.ValidarTelefono();
             if (!resultTelefonoTutor.result)

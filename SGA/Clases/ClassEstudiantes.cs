@@ -77,7 +77,7 @@ namespace SGA.Clases
             
             if(!Regex.IsMatch(this.Cedula, pattern))
             {
-                return Validation(false, "La cédula es inválida");
+                return Validation(false, "El formato de la cédula debe ser 000-000000-0000X");
             }
                 return Validation(true, "GG");
         }
@@ -89,7 +89,7 @@ namespace SGA.Clases
             
             if(!Regex.IsMatch(this.Telefono, pattern))
             {
-                return Validation(false, "El formato del teléfono debe ser 0000-000");
+                return Validation(false, "El formato del teléfono debe ser 0000-0000");
             }
             return Validation(true, "gg");
         }
@@ -98,11 +98,6 @@ namespace SGA.Clases
             if(this.Pais.Length == 0)
             {
                 return Validation(false, "El pais es requerido");
-            }
-
-            if(this.Telefono.Length == 0)
-            {
-                return Validation(false, "El teléfono es requerido");
             }
 
             if (this.Departamento.Length == 0)
