@@ -1845,7 +1845,21 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (89, "Distrito de Sambú"),
-(89, "Cémaco");
+(89, "Distrito de Cémaco");
+
+//Agregar municipios de Guna Yala a la tabla municipios
+
+INSERT INTO municipios (id_departamento, municipio) VALUES 
+(90, "Distrito de Guna Yala");
+
+//Agregar municipios de Ngäbe-Buglé a la tabla municipios
+
+INSERT INTO municipios (id_departamento, municipio) VALUES 
+(91, "Distrito de Kusapín"),
+(91, "Distrito de Mironó"),
+(91, "Distrito de Müna"),
+(91, "Distrito de Nole Duima"),
+(91, "Distrito de Ñürüm");
 
 // Agregar nacionalidades a la tabla nacionalidades
 INSERT INTO nacionalidades (nacionalidad, id_pais) VALUES 
