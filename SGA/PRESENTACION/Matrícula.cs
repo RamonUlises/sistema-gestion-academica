@@ -714,5 +714,325 @@ namespace SGA
         {
 
         }
+
+        private void panel2_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtCodigoEstudianteSINFOMtricula__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel30_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label38_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTelefonoTutorMatricula__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel29_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label37_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCedulaTutorMatricula__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel28_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label36_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel27_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label28_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label34_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label35_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombresApellidosTutorMatricula__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel44_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label52_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel26_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel23_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label31_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbNacionalidadMatricula_OnSelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt2ApellidoMatricula__TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbPaisNacimentoMatricula_OnSelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel24_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label32_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt2NombreMatricula__TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel25_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label33_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel11_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label15_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel12_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label16_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel13_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label17_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTallaMatricula__TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel10_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label14_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chSexoMasMatricula_CheckedChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPesoMatricula__TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel8_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label12_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mbTexbox7__TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label13_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label11_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt1ApellidoMatricula__TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label10_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt1NombreMatricula__TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label9_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCedulaMatricula__TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label7_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label6_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label30_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label29_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mbTexbox20__TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFechaMatricula__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

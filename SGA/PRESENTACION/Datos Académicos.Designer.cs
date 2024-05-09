@@ -289,7 +289,7 @@
             this.txtFechaFirmaComprobante.BorderSize = 1;
             this.txtFechaFirmaComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFechaFirmaComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txtFechaFirmaComprobante.Location = new System.Drawing.Point(858, 837);
+            this.txtFechaFirmaComprobante.Location = new System.Drawing.Point(858, 886);
             this.txtFechaFirmaComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFechaFirmaComprobante.Multiline = false;
             this.txtFechaFirmaComprobante.Name = "txtFechaFirmaComprobante";
@@ -305,7 +305,7 @@
             // 
             this.panel29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel29.Controls.Add(this.label24);
-            this.panel29.Location = new System.Drawing.Point(724, 830);
+            this.panel29.Location = new System.Drawing.Point(724, 879);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(108, 45);
             this.panel29.TabIndex = 45;
@@ -325,7 +325,7 @@
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.label23.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(817, 785);
+            this.label23.Location = new System.Drawing.Point(817, 834);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(182, 20);
             this.label23.TabIndex = 1;
@@ -342,7 +342,7 @@
             this.mbTexbox3.Enabled = false;
             this.mbTexbox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mbTexbox3.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox3.Location = new System.Drawing.Point(724, 746);
+            this.mbTexbox3.Location = new System.Drawing.Point(724, 795);
             this.mbTexbox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mbTexbox3.Multiline = false;
             this.mbTexbox3.Name = "mbTexbox3";
@@ -365,7 +365,7 @@
             this.mbButton3.FlatAppearance.BorderSize = 0;
             this.mbButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mbButton3.ForeColor = System.Drawing.Color.Black;
-            this.mbButton3.Location = new System.Drawing.Point(691, 726);
+            this.mbButton3.Location = new System.Drawing.Point(691, 775);
             this.mbButton3.Name = "mbButton3";
             this.mbButton3.Size = new System.Drawing.Size(422, 176);
             this.mbButton3.TabIndex = 43;

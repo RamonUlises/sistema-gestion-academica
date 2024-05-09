@@ -29,67 +29,90 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtCodigoEstudianteSINFOMtricula = new SGA.MBControl.MBTexbox();
             this.panel30 = new System.Windows.Forms.Panel();
             this.label38 = new System.Windows.Forms.Label();
+            this.txtTelefonoTutorMatricula = new SGA.MBControl.MBTexbox();
             this.panel29 = new System.Windows.Forms.Panel();
             this.label37 = new System.Windows.Forms.Label();
+            this.txtCedulaTutorMatricula = new SGA.MBControl.MBTexbox();
             this.panel28 = new System.Windows.Forms.Panel();
             this.label36 = new System.Windows.Forms.Label();
             this.panel27 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
+            this.txtNombresApellidosTutorMatricula = new SGA.MBControl.MBTexbox();
             this.panel44 = new System.Windows.Forms.Panel();
             this.label52 = new System.Windows.Forms.Label();
+            this.btnGuardarMatricula = new SGA.MBControl.MBButton();
             this.panel26 = new System.Windows.Forms.Panel();
+            this.txtFechaNacimientoMatricula = new SGA.MBControl.MBTexbox();
             this.panel23 = new System.Windows.Forms.Panel();
             this.label31 = new System.Windows.Forms.Label();
+            this.cbNacionalidadMatricula = new SGA.MBControl.MBComboBox();
+            this.txt2ApellidoMatricula = new SGA.MBControl.MBTexbox();
+            this.cbPaisNacimentoMatricula = new SGA.MBControl.MBComboBox();
             this.panel24 = new System.Windows.Forms.Panel();
             this.label32 = new System.Windows.Forms.Label();
+            this.txt2NombreMatricula = new SGA.MBControl.MBTexbox();
             this.panel25 = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
+            this.txtComunidadIndigenaMatricula = new SGA.MBControl.MBTexbox();
             this.panel21 = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
+            this.txtTerritorioIndigenaMatricula = new SGA.MBControl.MBTexbox();
             this.panel19 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
+            this.cbEtniaMatricula = new SGA.MBControl.MBComboBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
+            this.TxtDireccionMatricula = new SGA.MBControl.MBTexbox();
             this.panel17 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
+            this.txtBarrioMatricula = new SGA.MBControl.MBTexbox();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
+            this.txtTelefonoMatricula = new SGA.MBControl.MBTexbox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
+            this.txtTallaMatricula = new SGA.MBControl.MBTexbox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.chSexoMasMatricula = new System.Windows.Forms.CheckBox();
             this.chSexoFemMatricula = new System.Windows.Forms.CheckBox();
+            this.txtPesoMatricula = new SGA.MBControl.MBTexbox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
+            this.mbTexbox7 = new SGA.MBControl.MBTexbox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.ChParitdaNacimientoNo = new System.Windows.Forms.CheckBox();
             this.chPartidaNacimeintoSi = new System.Windows.Forms.CheckBox();
+            this.mbTexbox5 = new SGA.MBControl.MBTexbox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
+            this.txt1ApellidoMatricula = new SGA.MBControl.MBTexbox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
+            this.txt1NombreMatricula = new SGA.MBControl.MBTexbox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.txtCedulaMatricula = new SGA.MBControl.MBTexbox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -97,40 +120,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.mbTexbox20 = new SGA.MBControl.MBTexbox();
+            this.txtFechaMatricula = new SGA.MBControl.MBTexbox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtCodigoEstudianteSINFOMtricula = new SGA.MBControl.MBTexbox();
-            this.txtTelefonoTutorMatricula = new SGA.MBControl.MBTexbox();
-            this.txtCedulaTutorMatricula = new SGA.MBControl.MBTexbox();
-            this.txtNombresApellidosTutorMatricula = new SGA.MBControl.MBTexbox();
-            this.btnGuardarMatricula = new SGA.MBControl.MBButton();
-            this.txtFechaNacimientoMatricula = new SGA.MBControl.MBTexbox();
-            this.cbNacionalidadMatricula = new SGA.MBControl.MBComboBox();
-            this.txt2ApellidoMatricula = new SGA.MBControl.MBTexbox();
-            this.cbPaisNacimentoMatricula = new SGA.MBControl.MBComboBox();
-            this.txt2NombreMatricula = new SGA.MBControl.MBTexbox();
-            this.txtDiscapacidadMatricula = new SGA.MBControl.MBTexbox();
-            this.txtComunidadIndigenaMatricula = new SGA.MBControl.MBTexbox();
-            this.txtLenguaMaternaMatricula = new SGA.MBControl.MBTexbox();
-            this.txtTerritorioIndigenaMatricula = new SGA.MBControl.MBTexbox();
-            this.cbEtniaMatricula = new SGA.MBControl.MBComboBox();
-            this.TxtDireccionMatricula = new SGA.MBControl.MBTexbox();
-            this.txtBarrioMatricula = new SGA.MBControl.MBTexbox();
-            this.txtMuniciopioMatricula = new SGA.MBControl.MBTexbox();
-            this.txtDepartamentoMatricula = new SGA.MBControl.MBTexbox();
-            this.txtTelefonoMatricula = new SGA.MBControl.MBTexbox();
-            this.txtTallaMatricula = new SGA.MBControl.MBTexbox();
-            this.txtPesoMatricula = new SGA.MBControl.MBTexbox();
-            this.mbTexbox7 = new SGA.MBControl.MBTexbox();
-            this.mbTexbox5 = new SGA.MBControl.MBTexbox();
-            this.txt1ApellidoMatricula = new SGA.MBControl.MBTexbox();
-            this.txt1NombreMatricula = new SGA.MBControl.MBTexbox();
-            this.txtCedulaMatricula = new SGA.MBControl.MBTexbox();
-            this.mbTexbox20 = new SGA.MBControl.MBTexbox();
-            this.txtFechaMatricula = new SGA.MBControl.MBTexbox();
+            this.txtLenguaMaternaMatricula = new SGA.MBControl.MBComboBox();
+            this.txtMuniciopioMatricula = new SGA.MBControl.MBComboBox();
+            this.txtDepartamentoMatricula = new SGA.MBControl.MBComboBox();
+            this.txtDiscapacidadMatricula = new SGA.MBControl.MBComboBox();
             this.panel1.SuspendLayout();
             this.panel30.SuspendLayout();
             this.panel29.SuspendLayout();
@@ -167,6 +167,10 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.txtDiscapacidadMatricula);
+            this.panel1.Controls.Add(this.txtDepartamentoMatricula);
+            this.panel1.Controls.Add(this.txtMuniciopioMatricula);
+            this.panel1.Controls.Add(this.txtLenguaMaternaMatricula);
             this.panel1.Controls.Add(this.txtCodigoEstudianteSINFOMtricula);
             this.panel1.Controls.Add(this.panel30);
             this.panel1.Controls.Add(this.txtTelefonoTutorMatricula);
@@ -186,11 +190,9 @@
             this.panel1.Controls.Add(this.panel24);
             this.panel1.Controls.Add(this.txt2NombreMatricula);
             this.panel1.Controls.Add(this.panel25);
-            this.panel1.Controls.Add(this.txtDiscapacidadMatricula);
             this.panel1.Controls.Add(this.panel22);
             this.panel1.Controls.Add(this.txtComunidadIndigenaMatricula);
             this.panel1.Controls.Add(this.panel21);
-            this.panel1.Controls.Add(this.txtLenguaMaternaMatricula);
             this.panel1.Controls.Add(this.panel20);
             this.panel1.Controls.Add(this.txtTerritorioIndigenaMatricula);
             this.panel1.Controls.Add(this.panel19);
@@ -200,9 +202,7 @@
             this.panel1.Controls.Add(this.panel17);
             this.panel1.Controls.Add(this.txtBarrioMatricula);
             this.panel1.Controls.Add(this.panel14);
-            this.panel1.Controls.Add(this.txtMuniciopioMatricula);
             this.panel1.Controls.Add(this.panel15);
-            this.panel1.Controls.Add(this.txtDepartamentoMatricula);
             this.panel1.Controls.Add(this.panel16);
             this.panel1.Controls.Add(this.txtTelefonoMatricula);
             this.panel1.Controls.Add(this.panel11);
@@ -238,6 +238,28 @@
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // txtCodigoEstudianteSINFOMtricula
+            // 
+            this.txtCodigoEstudianteSINFOMtricula.BackColor = System.Drawing.Color.White;
+            this.txtCodigoEstudianteSINFOMtricula.BorderColor = System.Drawing.Color.Black;
+            this.txtCodigoEstudianteSINFOMtricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtCodigoEstudianteSINFOMtricula.BorderRadius = 25;
+            this.txtCodigoEstudianteSINFOMtricula.BorderSize = 1;
+            this.txtCodigoEstudianteSINFOMtricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigoEstudianteSINFOMtricula.ForeColor = System.Drawing.Color.Black;
+            this.txtCodigoEstudianteSINFOMtricula.Location = new System.Drawing.Point(561, 1328);
+            this.txtCodigoEstudianteSINFOMtricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCodigoEstudianteSINFOMtricula.Multiline = false;
+            this.txtCodigoEstudianteSINFOMtricula.Name = "txtCodigoEstudianteSINFOMtricula";
+            this.txtCodigoEstudianteSINFOMtricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCodigoEstudianteSINFOMtricula.PasswordChar = false;
+            this.txtCodigoEstudianteSINFOMtricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtCodigoEstudianteSINFOMtricula.PlaceholderText = "";
+            this.txtCodigoEstudianteSINFOMtricula.Size = new System.Drawing.Size(532, 38);
+            this.txtCodigoEstudianteSINFOMtricula.TabIndex = 138;
+            this.txtCodigoEstudianteSINFOMtricula.UnderlineStyle = false;
+            this.txtCodigoEstudianteSINFOMtricula._TextChanged += new System.EventHandler(this.txtCodigoEstudianteSINFOMtricula__TextChanged);
+            // 
             // panel30
             // 
             this.panel30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
@@ -246,6 +268,7 @@
             this.panel30.Name = "panel30";
             this.panel30.Size = new System.Drawing.Size(342, 45);
             this.panel30.TabIndex = 137;
+            this.panel30.Paint += new System.Windows.Forms.PaintEventHandler(this.panel30_Paint);
             // 
             // label38
             // 
@@ -256,6 +279,29 @@
             this.label38.Size = new System.Drawing.Size(299, 20);
             this.label38.TabIndex = 0;
             this.label38.Text = "Código de Estudiante generado por SINFO";
+            this.label38.Click += new System.EventHandler(this.label38_Click);
+            // 
+            // txtTelefonoTutorMatricula
+            // 
+            this.txtTelefonoTutorMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTelefonoTutorMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTelefonoTutorMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTelefonoTutorMatricula.BorderRadius = 25;
+            this.txtTelefonoTutorMatricula.BorderSize = 1;
+            this.txtTelefonoTutorMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefonoTutorMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtTelefonoTutorMatricula.Location = new System.Drawing.Point(1104, 1261);
+            this.txtTelefonoTutorMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTelefonoTutorMatricula.Multiline = false;
+            this.txtTelefonoTutorMatricula.Name = "txtTelefonoTutorMatricula";
+            this.txtTelefonoTutorMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTelefonoTutorMatricula.PasswordChar = false;
+            this.txtTelefonoTutorMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtTelefonoTutorMatricula.PlaceholderText = "";
+            this.txtTelefonoTutorMatricula.Size = new System.Drawing.Size(228, 38);
+            this.txtTelefonoTutorMatricula.TabIndex = 136;
+            this.txtTelefonoTutorMatricula.UnderlineStyle = false;
+            this.txtTelefonoTutorMatricula._TextChanged += new System.EventHandler(this.txtTelefonoTutorMatricula__TextChanged);
             // 
             // panel29
             // 
@@ -265,6 +311,7 @@
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(187, 45);
             this.panel29.TabIndex = 135;
+            this.panel29.Paint += new System.Windows.Forms.PaintEventHandler(this.panel29_Paint);
             // 
             // label37
             // 
@@ -275,6 +322,29 @@
             this.label37.Size = new System.Drawing.Size(138, 20);
             this.label37.TabIndex = 0;
             this.label37.Text = "Télefono del Tutor:";
+            this.label37.Click += new System.EventHandler(this.label37_Click);
+            // 
+            // txtCedulaTutorMatricula
+            // 
+            this.txtCedulaTutorMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtCedulaTutorMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtCedulaTutorMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtCedulaTutorMatricula.BorderRadius = 25;
+            this.txtCedulaTutorMatricula.BorderSize = 1;
+            this.txtCedulaTutorMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCedulaTutorMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtCedulaTutorMatricula.Location = new System.Drawing.Point(491, 1268);
+            this.txtCedulaTutorMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCedulaTutorMatricula.Multiline = false;
+            this.txtCedulaTutorMatricula.Name = "txtCedulaTutorMatricula";
+            this.txtCedulaTutorMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCedulaTutorMatricula.PasswordChar = false;
+            this.txtCedulaTutorMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtCedulaTutorMatricula.PlaceholderText = "";
+            this.txtCedulaTutorMatricula.Size = new System.Drawing.Size(414, 38);
+            this.txtCedulaTutorMatricula.TabIndex = 134;
+            this.txtCedulaTutorMatricula.UnderlineStyle = false;
+            this.txtCedulaTutorMatricula._TextChanged += new System.EventHandler(this.txtCedulaTutorMatricula__TextChanged);
             // 
             // panel28
             // 
@@ -284,6 +354,7 @@
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(279, 45);
             this.panel28.TabIndex = 133;
+            this.panel28.Paint += new System.Windows.Forms.PaintEventHandler(this.panel28_Paint);
             // 
             // label36
             // 
@@ -294,6 +365,7 @@
             this.label36.Size = new System.Drawing.Size(206, 20);
             this.label36.TabIndex = 0;
             this.label36.Text = "Número de cédula del Tutor:";
+            this.label36.Click += new System.EventHandler(this.label36_Click);
             // 
             // panel27
             // 
@@ -305,6 +377,7 @@
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(1247, 60);
             this.panel27.TabIndex = 132;
+            this.panel27.Paint += new System.Windows.Forms.PaintEventHandler(this.panel27_Paint);
             // 
             // label28
             // 
@@ -315,6 +388,7 @@
             this.label28.Size = new System.Drawing.Size(302, 17);
             this.label28.TabIndex = 3;
             this.label28.Text = "(No. de cédula obligatoria, al menos uno de ellos)";
+            this.label28.Click += new System.EventHandler(this.label28_Click_1);
             // 
             // label34
             // 
@@ -325,6 +399,7 @@
             this.label34.Size = new System.Drawing.Size(69, 17);
             this.label34.TabIndex = 2;
             this.label34.Text = "(Catálogo)";
+            this.label34.Click += new System.EventHandler(this.label34_Click);
             // 
             // label35
             // 
@@ -335,6 +410,29 @@
             this.label35.Size = new System.Drawing.Size(360, 23);
             this.label35.TabIndex = 0;
             this.label35.Text = "II. DATOS PERSONALES DEL PADRE O TUTOR ";
+            this.label35.Click += new System.EventHandler(this.label35_Click);
+            // 
+            // txtNombresApellidosTutorMatricula
+            // 
+            this.txtNombresApellidosTutorMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtNombresApellidosTutorMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtNombresApellidosTutorMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtNombresApellidosTutorMatricula.BorderRadius = 25;
+            this.txtNombresApellidosTutorMatricula.BorderSize = 1;
+            this.txtNombresApellidosTutorMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombresApellidosTutorMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtNombresApellidosTutorMatricula.Location = new System.Drawing.Point(491, 1207);
+            this.txtNombresApellidosTutorMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNombresApellidosTutorMatricula.Multiline = false;
+            this.txtNombresApellidosTutorMatricula.Name = "txtNombresApellidosTutorMatricula";
+            this.txtNombresApellidosTutorMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNombresApellidosTutorMatricula.PasswordChar = false;
+            this.txtNombresApellidosTutorMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtNombresApellidosTutorMatricula.PlaceholderText = "";
+            this.txtNombresApellidosTutorMatricula.Size = new System.Drawing.Size(687, 38);
+            this.txtNombresApellidosTutorMatricula.TabIndex = 99;
+            this.txtNombresApellidosTutorMatricula.UnderlineStyle = false;
+            this.txtNombresApellidosTutorMatricula._TextChanged += new System.EventHandler(this.txtNombresApellidosTutorMatricula__TextChanged);
             // 
             // panel44
             // 
@@ -344,6 +442,7 @@
             this.panel44.Name = "panel44";
             this.panel44.Size = new System.Drawing.Size(279, 45);
             this.panel44.TabIndex = 98;
+            this.panel44.Paint += new System.Windows.Forms.PaintEventHandler(this.panel44_Paint);
             // 
             // label52
             // 
@@ -354,6 +453,28 @@
             this.label52.Size = new System.Drawing.Size(225, 20);
             this.label52.TabIndex = 0;
             this.label52.Text = "Nombres y  Apellidos del Tutor:";
+            this.label52.Click += new System.EventHandler(this.label52_Click);
+            // 
+            // btnGuardarMatricula
+            // 
+            this.btnGuardarMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnGuardarMatricula.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnGuardarMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnGuardarMatricula.BorderRadius = 40;
+            this.btnGuardarMatricula.BorderSize = 1;
+            this.btnGuardarMatricula.FlatAppearance.BorderSize = 0;
+            this.btnGuardarMatricula.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnGuardarMatricula.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnGuardarMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarMatricula.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarMatricula.Location = new System.Drawing.Point(796, 1465);
+            this.btnGuardarMatricula.Name = "btnGuardarMatricula";
+            this.btnGuardarMatricula.Size = new System.Drawing.Size(172, 55);
+            this.btnGuardarMatricula.TabIndex = 64;
+            this.btnGuardarMatricula.Text = "Guardar";
+            this.btnGuardarMatricula.TextColor = System.Drawing.Color.White;
+            this.btnGuardarMatricula.UseVisualStyleBackColor = false;
+            this.btnGuardarMatricula.Click += new System.EventHandler(this.btnGuardarMatricula_Click);
             // 
             // panel26
             // 
@@ -361,6 +482,29 @@
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(200, 621);
             this.panel26.TabIndex = 63;
+            this.panel26.Paint += new System.Windows.Forms.PaintEventHandler(this.panel26_Paint_1);
+            // 
+            // txtFechaNacimientoMatricula
+            // 
+            this.txtFechaNacimientoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtFechaNacimientoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtFechaNacimientoMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtFechaNacimientoMatricula.BorderRadius = 25;
+            this.txtFechaNacimientoMatricula.BorderSize = 1;
+            this.txtFechaNacimientoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFechaNacimientoMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtFechaNacimientoMatricula.Location = new System.Drawing.Point(1208, 602);
+            this.txtFechaNacimientoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtFechaNacimientoMatricula.Multiline = false;
+            this.txtFechaNacimientoMatricula.Name = "txtFechaNacimientoMatricula";
+            this.txtFechaNacimientoMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtFechaNacimientoMatricula.PasswordChar = false;
+            this.txtFechaNacimientoMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtFechaNacimientoMatricula.PlaceholderText = "";
+            this.txtFechaNacimientoMatricula.Size = new System.Drawing.Size(175, 38);
+            this.txtFechaNacimientoMatricula.TabIndex = 62;
+            this.txtFechaNacimientoMatricula.UnderlineStyle = false;
+            this.txtFechaNacimientoMatricula._TextChanged += new System.EventHandler(this.mbTexbox4__TextChanged_1);
             // 
             // panel23
             // 
@@ -370,6 +514,7 @@
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(182, 45);
             this.panel23.TabIndex = 19;
+            this.panel23.Paint += new System.Windows.Forms.PaintEventHandler(this.panel23_Paint_1);
             // 
             // label31
             // 
@@ -380,6 +525,75 @@
             this.label31.Size = new System.Drawing.Size(133, 20);
             this.label31.TabIndex = 0;
             this.label31.Text = "Fecha nacimiento:";
+            this.label31.Click += new System.EventHandler(this.label31_Click_1);
+            // 
+            // cbNacionalidadMatricula
+            // 
+            this.cbNacionalidadMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbNacionalidadMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbNacionalidadMatricula.BorderSize = 1;
+            this.cbNacionalidadMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cbNacionalidadMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cbNacionalidadMatricula.ForeColor = System.Drawing.Color.Black;
+            this.cbNacionalidadMatricula.IconColor = System.Drawing.Color.Black;
+            this.cbNacionalidadMatricula.Items.AddRange(new object[] {
+            "Guatemalteco",
+            "Nicaragüense"});
+            this.cbNacionalidadMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbNacionalidadMatricula.ListTextColor = System.Drawing.Color.Black;
+            this.cbNacionalidadMatricula.Location = new System.Drawing.Point(796, 733);
+            this.cbNacionalidadMatricula.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cbNacionalidadMatricula.Name = "cbNacionalidadMatricula";
+            this.cbNacionalidadMatricula.Padding = new System.Windows.Forms.Padding(1);
+            this.cbNacionalidadMatricula.Size = new System.Drawing.Size(200, 30);
+            this.cbNacionalidadMatricula.TabIndex = 61;
+            this.cbNacionalidadMatricula.Texts = "";
+            this.cbNacionalidadMatricula.OnSelectedIndexChanged += new System.EventHandler(this.cbNacionalidadMatricula_OnSelectedIndexChanged_1);
+            // 
+            // txt2ApellidoMatricula
+            // 
+            this.txt2ApellidoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt2ApellidoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt2ApellidoMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt2ApellidoMatricula.BorderRadius = 25;
+            this.txt2ApellidoMatricula.BorderSize = 1;
+            this.txt2ApellidoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt2ApellidoMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txt2ApellidoMatricula.Location = new System.Drawing.Point(784, 609);
+            this.txt2ApellidoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt2ApellidoMatricula.Multiline = false;
+            this.txt2ApellidoMatricula.Name = "txt2ApellidoMatricula";
+            this.txt2ApellidoMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txt2ApellidoMatricula.PasswordChar = false;
+            this.txt2ApellidoMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txt2ApellidoMatricula.PlaceholderText = "";
+            this.txt2ApellidoMatricula.Size = new System.Drawing.Size(221, 38);
+            this.txt2ApellidoMatricula.TabIndex = 18;
+            this.txt2ApellidoMatricula.UnderlineStyle = false;
+            this.txt2ApellidoMatricula._TextChanged += new System.EventHandler(this.txt2ApellidoMatricula__TextChanged_1);
+            // 
+            // cbPaisNacimentoMatricula
+            // 
+            this.cbPaisNacimentoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbPaisNacimentoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbPaisNacimentoMatricula.BorderSize = 1;
+            this.cbPaisNacimentoMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cbPaisNacimentoMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cbPaisNacimentoMatricula.ForeColor = System.Drawing.Color.Black;
+            this.cbPaisNacimentoMatricula.IconColor = System.Drawing.Color.Black;
+            this.cbPaisNacimentoMatricula.Items.AddRange(new object[] {
+            "Guatemala",
+            "Nicaragua"});
+            this.cbPaisNacimentoMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbPaisNacimentoMatricula.ListTextColor = System.Drawing.Color.Black;
+            this.cbPaisNacimentoMatricula.Location = new System.Drawing.Point(394, 733);
+            this.cbPaisNacimentoMatricula.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cbPaisNacimentoMatricula.Name = "cbPaisNacimentoMatricula";
+            this.cbPaisNacimentoMatricula.Padding = new System.Windows.Forms.Padding(1);
+            this.cbPaisNacimentoMatricula.Size = new System.Drawing.Size(200, 30);
+            this.cbPaisNacimentoMatricula.TabIndex = 60;
+            this.cbPaisNacimentoMatricula.Texts = "";
+            this.cbPaisNacimentoMatricula.OnSelectedIndexChanged += new System.EventHandler(this.cbPaisNacimentoMatricula_OnSelectedIndexChanged_1);
             // 
             // panel24
             // 
@@ -389,6 +603,7 @@
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(152, 45);
             this.panel24.TabIndex = 17;
+            this.panel24.Paint += new System.Windows.Forms.PaintEventHandler(this.panel24_Paint_1);
             // 
             // label32
             // 
@@ -399,6 +614,29 @@
             this.label32.Size = new System.Drawing.Size(95, 20);
             this.label32.TabIndex = 0;
             this.label32.Text = "2er.Apellido:";
+            this.label32.Click += new System.EventHandler(this.label32_Click_1);
+            // 
+            // txt2NombreMatricula
+            // 
+            this.txt2NombreMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt2NombreMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt2NombreMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt2NombreMatricula.BorderRadius = 25;
+            this.txt2NombreMatricula.BorderSize = 1;
+            this.txt2NombreMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt2NombreMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txt2NombreMatricula.Location = new System.Drawing.Point(373, 611);
+            this.txt2NombreMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt2NombreMatricula.Multiline = false;
+            this.txt2NombreMatricula.Name = "txt2NombreMatricula";
+            this.txt2NombreMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txt2NombreMatricula.PasswordChar = false;
+            this.txt2NombreMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txt2NombreMatricula.PlaceholderText = "";
+            this.txt2NombreMatricula.Size = new System.Drawing.Size(221, 38);
+            this.txt2NombreMatricula.TabIndex = 16;
+            this.txt2NombreMatricula.UnderlineStyle = false;
+            this.txt2NombreMatricula._TextChanged += new System.EventHandler(this.txt2NombreMatricula__TextChanged_1);
             // 
             // panel25
             // 
@@ -408,6 +646,7 @@
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(152, 45);
             this.panel25.TabIndex = 15;
+            this.panel25.Paint += new System.Windows.Forms.PaintEventHandler(this.panel25_Paint_1);
             // 
             // label33
             // 
@@ -418,6 +657,7 @@
             this.label33.Size = new System.Drawing.Size(95, 20);
             this.label33.TabIndex = 0;
             this.label33.Text = "2er.Nombre:";
+            this.label33.Click += new System.EventHandler(this.label33_Click_1);
             // 
             // panel22
             // 
@@ -451,6 +691,28 @@
             this.label26.TabIndex = 0;
             this.label26.Text = "Discapacidad: \r\n\r\n";
             this.label26.Click += new System.EventHandler(this.label26_Click);
+            // 
+            // txtComunidadIndigenaMatricula
+            // 
+            this.txtComunidadIndigenaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtComunidadIndigenaMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtComunidadIndigenaMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtComunidadIndigenaMatricula.BorderRadius = 25;
+            this.txtComunidadIndigenaMatricula.BorderSize = 1;
+            this.txtComunidadIndigenaMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtComunidadIndigenaMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtComunidadIndigenaMatricula.Location = new System.Drawing.Point(974, 918);
+            this.txtComunidadIndigenaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtComunidadIndigenaMatricula.Multiline = false;
+            this.txtComunidadIndigenaMatricula.Name = "txtComunidadIndigenaMatricula";
+            this.txtComunidadIndigenaMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtComunidadIndigenaMatricula.PasswordChar = false;
+            this.txtComunidadIndigenaMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtComunidadIndigenaMatricula.PlaceholderText = "";
+            this.txtComunidadIndigenaMatricula.Size = new System.Drawing.Size(251, 38);
+            this.txtComunidadIndigenaMatricula.TabIndex = 55;
+            this.txtComunidadIndigenaMatricula.UnderlineStyle = false;
+            this.txtComunidadIndigenaMatricula._TextChanged += new System.EventHandler(this.mbTexbox18__TextChanged_1);
             // 
             // panel21
             // 
@@ -494,6 +756,28 @@
             this.label24.Text = "Lengua Materna:";
             this.label24.Click += new System.EventHandler(this.label24_Click);
             // 
+            // txtTerritorioIndigenaMatricula
+            // 
+            this.txtTerritorioIndigenaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTerritorioIndigenaMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTerritorioIndigenaMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTerritorioIndigenaMatricula.BorderRadius = 25;
+            this.txtTerritorioIndigenaMatricula.BorderSize = 1;
+            this.txtTerritorioIndigenaMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTerritorioIndigenaMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtTerritorioIndigenaMatricula.Location = new System.Drawing.Point(468, 991);
+            this.txtTerritorioIndigenaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTerritorioIndigenaMatricula.Multiline = false;
+            this.txtTerritorioIndigenaMatricula.Name = "txtTerritorioIndigenaMatricula";
+            this.txtTerritorioIndigenaMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTerritorioIndigenaMatricula.PasswordChar = false;
+            this.txtTerritorioIndigenaMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtTerritorioIndigenaMatricula.PlaceholderText = "";
+            this.txtTerritorioIndigenaMatricula.Size = new System.Drawing.Size(218, 38);
+            this.txtTerritorioIndigenaMatricula.TabIndex = 45;
+            this.txtTerritorioIndigenaMatricula.UnderlineStyle = false;
+            this.txtTerritorioIndigenaMatricula._TextChanged += new System.EventHandler(this.mbTexbox16__TextChanged);
+            // 
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
@@ -514,6 +798,27 @@
             this.label23.TabIndex = 0;
             this.label23.Text = "El es estudiante pertenece a un\n territorio indígena. ¿Cuál?";
             this.label23.Click += new System.EventHandler(this.label23_Click);
+            // 
+            // cbEtniaMatricula
+            // 
+            this.cbEtniaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbEtniaMatricula.BorderColor = System.Drawing.Color.Black;
+            this.cbEtniaMatricula.BorderSize = 0;
+            this.cbEtniaMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cbEtniaMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cbEtniaMatricula.ForeColor = System.Drawing.Color.Black;
+            this.cbEtniaMatricula.IconColor = System.Drawing.Color.Black;
+            this.cbEtniaMatricula.Items.AddRange(new object[] {
+            "Mestizo"});
+            this.cbEtniaMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbEtniaMatricula.ListTextColor = System.Drawing.Color.Black;
+            this.cbEtniaMatricula.Location = new System.Drawing.Point(444, 918);
+            this.cbEtniaMatricula.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cbEtniaMatricula.Name = "cbEtniaMatricula";
+            this.cbEtniaMatricula.Size = new System.Drawing.Size(242, 38);
+            this.cbEtniaMatricula.TabIndex = 43;
+            this.cbEtniaMatricula.Texts = "";
+            this.cbEtniaMatricula.OnSelectedIndexChanged += new System.EventHandler(this.mbComboBox1_OnSelectedIndexChanged_1);
             // 
             // panel18
             // 
@@ -536,6 +841,28 @@
             this.label22.Text = "Pueblo Indígena,\r\nÁfrodescendiente o étnico:";
             this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
+            // TxtDireccionMatricula
+            // 
+            this.TxtDireccionMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.TxtDireccionMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.TxtDireccionMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.TxtDireccionMatricula.BorderRadius = 25;
+            this.TxtDireccionMatricula.BorderSize = 1;
+            this.TxtDireccionMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDireccionMatricula.ForeColor = System.Drawing.Color.Black;
+            this.TxtDireccionMatricula.Location = new System.Drawing.Point(427, 853);
+            this.TxtDireccionMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TxtDireccionMatricula.Multiline = false;
+            this.TxtDireccionMatricula.Name = "TxtDireccionMatricula";
+            this.TxtDireccionMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.TxtDireccionMatricula.PasswordChar = false;
+            this.TxtDireccionMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.TxtDireccionMatricula.PlaceholderText = "";
+            this.TxtDireccionMatricula.Size = new System.Drawing.Size(629, 38);
+            this.TxtDireccionMatricula.TabIndex = 41;
+            this.TxtDireccionMatricula.UnderlineStyle = false;
+            this.TxtDireccionMatricula._TextChanged += new System.EventHandler(this.mbTexbox15__TextChanged);
+            // 
             // panel17
             // 
             this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
@@ -556,6 +883,28 @@
             this.label21.TabIndex = 0;
             this.label21.Text = "Dirección domiciliar:";
             this.label21.Click += new System.EventHandler(this.label21_Click);
+            // 
+            // txtBarrioMatricula
+            // 
+            this.txtBarrioMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtBarrioMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtBarrioMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtBarrioMatricula.BorderRadius = 25;
+            this.txtBarrioMatricula.BorderSize = 1;
+            this.txtBarrioMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBarrioMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtBarrioMatricula.Location = new System.Drawing.Point(1162, 785);
+            this.txtBarrioMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBarrioMatricula.Multiline = false;
+            this.txtBarrioMatricula.Name = "txtBarrioMatricula";
+            this.txtBarrioMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtBarrioMatricula.PasswordChar = false;
+            this.txtBarrioMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtBarrioMatricula.PlaceholderText = "";
+            this.txtBarrioMatricula.Size = new System.Drawing.Size(221, 38);
+            this.txtBarrioMatricula.TabIndex = 39;
+            this.txtBarrioMatricula.UnderlineStyle = false;
+            this.txtBarrioMatricula._TextChanged += new System.EventHandler(this.mbTexbox12__TextChanged);
             // 
             // panel14
             // 
@@ -582,7 +931,7 @@
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel15.Controls.Add(this.label19);
-            this.panel15.Location = new System.Drawing.Point(679, 781);
+            this.panel15.Location = new System.Drawing.Point(630, 779);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(182, 45);
             this.panel15.TabIndex = 36;
@@ -620,6 +969,28 @@
             this.label20.Text = "Departamento reside:";
             this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
+            // txtTelefonoMatricula
+            // 
+            this.txtTelefonoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTelefonoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTelefonoMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTelefonoMatricula.BorderRadius = 25;
+            this.txtTelefonoMatricula.BorderSize = 1;
+            this.txtTelefonoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefonoMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtTelefonoMatricula.Location = new System.Drawing.Point(1185, 727);
+            this.txtTelefonoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTelefonoMatricula.Multiline = false;
+            this.txtTelefonoMatricula.Name = "txtTelefonoMatricula";
+            this.txtTelefonoMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTelefonoMatricula.PasswordChar = false;
+            this.txtTelefonoMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtTelefonoMatricula.PlaceholderText = "";
+            this.txtTelefonoMatricula.Size = new System.Drawing.Size(198, 38);
+            this.txtTelefonoMatricula.TabIndex = 33;
+            this.txtTelefonoMatricula.UnderlineStyle = false;
+            this.txtTelefonoMatricula._TextChanged += new System.EventHandler(this.mbTexbox9__TextChanged);
+            // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
@@ -628,6 +999,7 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(126, 45);
             this.panel11.TabIndex = 32;
+            this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint_1);
             // 
             // label15
             // 
@@ -638,6 +1010,7 @@
             this.label15.Size = new System.Drawing.Size(72, 20);
             this.label15.TabIndex = 0;
             this.label15.Text = "Teléfono:";
+            this.label15.Click += new System.EventHandler(this.label15_Click_1);
             // 
             // panel12
             // 
@@ -647,6 +1020,7 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(158, 45);
             this.panel12.TabIndex = 28;
+            this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint_1);
             // 
             // label16
             // 
@@ -657,6 +1031,7 @@
             this.label16.Size = new System.Drawing.Size(104, 20);
             this.label16.TabIndex = 0;
             this.label16.Text = "Nacionalidad:";
+            this.label16.Click += new System.EventHandler(this.label16_Click_1);
             // 
             // panel13
             // 
@@ -666,6 +1041,7 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(176, 45);
             this.panel13.TabIndex = 26;
+            this.panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.panel13_Paint_1);
             // 
             // label17
             // 
@@ -676,6 +1052,29 @@
             this.label17.Size = new System.Drawing.Size(141, 20);
             this.label17.TabIndex = 0;
             this.label17.Text = "Pais de nacimiento:";
+            this.label17.Click += new System.EventHandler(this.label17_Click_1);
+            // 
+            // txtTallaMatricula
+            // 
+            this.txtTallaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTallaMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTallaMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTallaMatricula.BorderRadius = 25;
+            this.txtTallaMatricula.BorderSize = 1;
+            this.txtTallaMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTallaMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtTallaMatricula.Location = new System.Drawing.Point(1162, 668);
+            this.txtTallaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTallaMatricula.Multiline = false;
+            this.txtTallaMatricula.Name = "txtTallaMatricula";
+            this.txtTallaMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTallaMatricula.PasswordChar = false;
+            this.txtTallaMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtTallaMatricula.PlaceholderText = "";
+            this.txtTallaMatricula.Size = new System.Drawing.Size(221, 38);
+            this.txtTallaMatricula.TabIndex = 25;
+            this.txtTallaMatricula.UnderlineStyle = false;
+            this.txtTallaMatricula._TextChanged += new System.EventHandler(this.txtTallaMatricula__TextChanged_1);
             // 
             // panel10
             // 
@@ -685,6 +1084,7 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(136, 45);
             this.panel10.TabIndex = 24;
+            this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint_1);
             // 
             // label14
             // 
@@ -695,6 +1095,7 @@
             this.label14.Size = new System.Drawing.Size(80, 20);
             this.label14.TabIndex = 0;
             this.label14.Text = "Talla (Cm):";
+            this.label14.Click += new System.EventHandler(this.label14_Click_1);
             // 
             // chSexoMasMatricula
             // 
@@ -707,6 +1108,7 @@
             this.chSexoMasMatricula.TabIndex = 23;
             this.chSexoMasMatricula.Text = "Masculino";
             this.chSexoMasMatricula.UseVisualStyleBackColor = false;
+            this.chSexoMasMatricula.CheckedChanged += new System.EventHandler(this.chSexoMasMatricula_CheckedChanged_1);
             // 
             // chSexoFemMatricula
             // 
@@ -721,6 +1123,28 @@
             this.chSexoFemMatricula.UseVisualStyleBackColor = false;
             this.chSexoFemMatricula.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
+            // txtPesoMatricula
+            // 
+            this.txtPesoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtPesoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtPesoMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtPesoMatricula.BorderRadius = 25;
+            this.txtPesoMatricula.BorderSize = 1;
+            this.txtPesoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPesoMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtPesoMatricula.Location = new System.Drawing.Point(852, 668);
+            this.txtPesoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPesoMatricula.Multiline = false;
+            this.txtPesoMatricula.Name = "txtPesoMatricula";
+            this.txtPesoMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtPesoMatricula.PasswordChar = false;
+            this.txtPesoMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtPesoMatricula.PlaceholderText = "";
+            this.txtPesoMatricula.Size = new System.Drawing.Size(153, 38);
+            this.txtPesoMatricula.TabIndex = 21;
+            this.txtPesoMatricula.UnderlineStyle = false;
+            this.txtPesoMatricula._TextChanged += new System.EventHandler(this.txtPesoMatricula__TextChanged_1);
+            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
@@ -729,6 +1153,7 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(128, 45);
             this.panel8.TabIndex = 20;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint_1);
             // 
             // label12
             // 
@@ -739,6 +1164,29 @@
             this.label12.Size = new System.Drawing.Size(76, 20);
             this.label12.TabIndex = 0;
             this.label12.Text = "Peso (Kg):";
+            this.label12.Click += new System.EventHandler(this.label12_Click_1);
+            // 
+            // mbTexbox7
+            // 
+            this.mbTexbox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.mbTexbox7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.mbTexbox7.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.mbTexbox7.BorderRadius = 25;
+            this.mbTexbox7.BorderSize = 1;
+            this.mbTexbox7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mbTexbox7.ForeColor = System.Drawing.Color.Black;
+            this.mbTexbox7.Location = new System.Drawing.Point(373, 668);
+            this.mbTexbox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.mbTexbox7.Multiline = false;
+            this.mbTexbox7.Name = "mbTexbox7";
+            this.mbTexbox7.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.mbTexbox7.PasswordChar = false;
+            this.mbTexbox7.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.mbTexbox7.PlaceholderText = "";
+            this.mbTexbox7.Size = new System.Drawing.Size(331, 38);
+            this.mbTexbox7.TabIndex = 19;
+            this.mbTexbox7.UnderlineStyle = false;
+            this.mbTexbox7._TextChanged += new System.EventHandler(this.mbTexbox7__TextChanged_1);
             // 
             // panel9
             // 
@@ -748,6 +1196,7 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(152, 45);
             this.panel9.TabIndex = 18;
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint_1);
             // 
             // label13
             // 
@@ -758,6 +1207,7 @@
             this.label13.Size = new System.Drawing.Size(46, 20);
             this.label13.TabIndex = 0;
             this.label13.Text = "Sexo:";
+            this.label13.Click += new System.EventHandler(this.label13_Click_1);
             // 
             // ChParitdaNacimientoNo
             // 
@@ -783,6 +1233,29 @@
             this.chPartidaNacimeintoSi.UseVisualStyleBackColor = true;
             this.chPartidaNacimeintoSi.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
             // 
+            // mbTexbox5
+            // 
+            this.mbTexbox5.BackColor = System.Drawing.Color.White;
+            this.mbTexbox5.BorderColor = System.Drawing.Color.Black;
+            this.mbTexbox5.BorderFocusColor = System.Drawing.Color.Black;
+            this.mbTexbox5.BorderRadius = 25;
+            this.mbTexbox5.BorderSize = 1;
+            this.mbTexbox5.Enabled = false;
+            this.mbTexbox5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mbTexbox5.ForeColor = System.Drawing.Color.Black;
+            this.mbTexbox5.Location = new System.Drawing.Point(1217, 549);
+            this.mbTexbox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.mbTexbox5.Multiline = false;
+            this.mbTexbox5.Name = "mbTexbox5";
+            this.mbTexbox5.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.mbTexbox5.PasswordChar = false;
+            this.mbTexbox5.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.mbTexbox5.PlaceholderText = "";
+            this.mbTexbox5.Size = new System.Drawing.Size(166, 38);
+            this.mbTexbox5.TabIndex = 15;
+            this.mbTexbox5.UnderlineStyle = false;
+            this.mbTexbox5._TextChanged += new System.EventHandler(this.mbTexbox5__TextChanged);
+            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
@@ -791,6 +1264,7 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(182, 45);
             this.panel7.TabIndex = 14;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint_1);
             // 
             // label11
             // 
@@ -801,6 +1275,29 @@
             this.label11.Size = new System.Drawing.Size(142, 20);
             this.label11.TabIndex = 0;
             this.label11.Text = "Partida nacimiento:";
+            this.label11.Click += new System.EventHandler(this.label11_Click_1);
+            // 
+            // txt1ApellidoMatricula
+            // 
+            this.txt1ApellidoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt1ApellidoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt1ApellidoMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt1ApellidoMatricula.BorderRadius = 25;
+            this.txt1ApellidoMatricula.BorderSize = 1;
+            this.txt1ApellidoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt1ApellidoMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txt1ApellidoMatricula.Location = new System.Drawing.Point(784, 554);
+            this.txt1ApellidoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt1ApellidoMatricula.Multiline = false;
+            this.txt1ApellidoMatricula.Name = "txt1ApellidoMatricula";
+            this.txt1ApellidoMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txt1ApellidoMatricula.PasswordChar = false;
+            this.txt1ApellidoMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txt1ApellidoMatricula.PlaceholderText = "";
+            this.txt1ApellidoMatricula.Size = new System.Drawing.Size(221, 38);
+            this.txt1ApellidoMatricula.TabIndex = 13;
+            this.txt1ApellidoMatricula.UnderlineStyle = false;
+            this.txt1ApellidoMatricula._TextChanged += new System.EventHandler(this.txt1ApellidoMatricula__TextChanged_1);
             // 
             // panel6
             // 
@@ -810,6 +1307,7 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(152, 45);
             this.panel6.TabIndex = 12;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint_1);
             // 
             // label10
             // 
@@ -820,6 +1318,29 @@
             this.label10.Size = new System.Drawing.Size(93, 20);
             this.label10.TabIndex = 0;
             this.label10.Text = "1er.Apellido:";
+            this.label10.Click += new System.EventHandler(this.label10_Click_1);
+            // 
+            // txt1NombreMatricula
+            // 
+            this.txt1NombreMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt1NombreMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt1NombreMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txt1NombreMatricula.BorderRadius = 25;
+            this.txt1NombreMatricula.BorderSize = 1;
+            this.txt1NombreMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt1NombreMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txt1NombreMatricula.Location = new System.Drawing.Point(373, 556);
+            this.txt1NombreMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt1NombreMatricula.Multiline = false;
+            this.txt1NombreMatricula.Name = "txt1NombreMatricula";
+            this.txt1NombreMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txt1NombreMatricula.PasswordChar = false;
+            this.txt1NombreMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txt1NombreMatricula.PlaceholderText = "";
+            this.txt1NombreMatricula.Size = new System.Drawing.Size(221, 38);
+            this.txt1NombreMatricula.TabIndex = 11;
+            this.txt1NombreMatricula.UnderlineStyle = false;
+            this.txt1NombreMatricula._TextChanged += new System.EventHandler(this.txt1NombreMatricula__TextChanged_1);
             // 
             // panel5
             // 
@@ -829,6 +1350,7 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(152, 45);
             this.panel5.TabIndex = 10;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint_1);
             // 
             // label9
             // 
@@ -839,6 +1361,7 @@
             this.label9.Size = new System.Drawing.Size(93, 20);
             this.label9.TabIndex = 0;
             this.label9.Text = "1er.Nombre:";
+            this.label9.Click += new System.EventHandler(this.label9_Click_1);
             // 
             // label8
             // 
@@ -849,6 +1372,29 @@
             this.label8.Size = new System.Drawing.Size(117, 17);
             this.label8.TabIndex = 9;
             this.label8.Text = "(Si ya tiene cédula)";
+            this.label8.Click += new System.EventHandler(this.label8_Click_1);
+            // 
+            // txtCedulaMatricula
+            // 
+            this.txtCedulaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtCedulaMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtCedulaMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtCedulaMatricula.BorderRadius = 25;
+            this.txtCedulaMatricula.BorderSize = 1;
+            this.txtCedulaMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCedulaMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtCedulaMatricula.Location = new System.Drawing.Point(427, 502);
+            this.txtCedulaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCedulaMatricula.Multiline = false;
+            this.txtCedulaMatricula.Name = "txtCedulaMatricula";
+            this.txtCedulaMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCedulaMatricula.PasswordChar = false;
+            this.txtCedulaMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtCedulaMatricula.PlaceholderText = "";
+            this.txtCedulaMatricula.Size = new System.Drawing.Size(595, 38);
+            this.txtCedulaMatricula.TabIndex = 8;
+            this.txtCedulaMatricula.UnderlineStyle = false;
+            this.txtCedulaMatricula._TextChanged += new System.EventHandler(this.txtCedulaMatricula__TextChanged_1);
             // 
             // panel4
             // 
@@ -858,6 +1404,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 45);
             this.panel4.TabIndex = 7;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint_1);
             // 
             // label7
             // 
@@ -868,6 +1415,7 @@
             this.label7.Size = new System.Drawing.Size(140, 20);
             this.label7.TabIndex = 0;
             this.label7.Text = "Número de cédula:";
+            this.label7.Click += new System.EventHandler(this.label7_Click_1);
             // 
             // panel3
             // 
@@ -882,6 +1430,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1278, 59);
             this.panel3.TabIndex = 6;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint_1);
             // 
             // label6
             // 
@@ -892,6 +1441,7 @@
             this.label6.Size = new System.Drawing.Size(187, 17);
             this.label6.TabIndex = 1;
             this.label6.Text = "(Datos de llenado Obligatorio)";
+            this.label6.Click += new System.EventHandler(this.label6_Click_1);
             // 
             // label4
             // 
@@ -915,6 +1465,7 @@
             this.label30.TabIndex = 4;
             this.label30.Text = "_________________________________________________________________________________" +
     "____________________________________________________________________________";
+            this.label30.Click += new System.EventHandler(this.label30_Click_1);
             // 
             // label29
             // 
@@ -927,6 +1478,52 @@
             this.label29.TabIndex = 3;
             this.label29.Text = "_________________________________________________________________________________" +
     "____________________________________________________________________________";
+            this.label29.Click += new System.EventHandler(this.label29_Click_1);
+            // 
+            // mbTexbox20
+            // 
+            this.mbTexbox20.BackColor = System.Drawing.SystemColors.Window;
+            this.mbTexbox20.BorderColor = System.Drawing.Color.Black;
+            this.mbTexbox20.BorderFocusColor = System.Drawing.Color.Black;
+            this.mbTexbox20.BorderRadius = 20;
+            this.mbTexbox20.BorderSize = 1;
+            this.mbTexbox20.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mbTexbox20.ForeColor = System.Drawing.Color.Black;
+            this.mbTexbox20.Location = new System.Drawing.Point(995, -49);
+            this.mbTexbox20.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.mbTexbox20.Multiline = false;
+            this.mbTexbox20.Name = "mbTexbox20";
+            this.mbTexbox20.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.mbTexbox20.PasswordChar = false;
+            this.mbTexbox20.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.mbTexbox20.PlaceholderText = "Fecha de llenado";
+            this.mbTexbox20.Size = new System.Drawing.Size(250, 40);
+            this.mbTexbox20.TabIndex = 5;
+            this.mbTexbox20.UnderlineStyle = false;
+            this.mbTexbox20._TextChanged += new System.EventHandler(this.mbTexbox20__TextChanged_1);
+            // 
+            // txtFechaMatricula
+            // 
+            this.txtFechaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtFechaMatricula.BorderColor = System.Drawing.Color.Black;
+            this.txtFechaMatricula.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtFechaMatricula.BorderRadius = 20;
+            this.txtFechaMatricula.BorderSize = 1;
+            this.txtFechaMatricula.Enabled = false;
+            this.txtFechaMatricula.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFechaMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtFechaMatricula.Location = new System.Drawing.Point(1234, 374);
+            this.txtFechaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtFechaMatricula.Multiline = false;
+            this.txtFechaMatricula.Name = "txtFechaMatricula";
+            this.txtFechaMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtFechaMatricula.PasswordChar = false;
+            this.txtFechaMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtFechaMatricula.PlaceholderText = "Fecha de llenado";
+            this.txtFechaMatricula.Size = new System.Drawing.Size(250, 43);
+            this.txtFechaMatricula.TabIndex = 5;
+            this.txtFechaMatricula.UnderlineStyle = false;
+            this.txtFechaMatricula._TextChanged += new System.EventHandler(this.txtFechaMatricula__TextChanged);
             // 
             // label3
             // 
@@ -939,6 +1536,7 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "_________________________________________________________________________________" +
     "_____________________________________________________________";
+            this.label3.Click += new System.EventHandler(this.label3_Click_1);
             // 
             // label2
             // 
@@ -963,6 +1561,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1281, 178);
             this.panel2.TabIndex = 2;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint_1);
             // 
             // label5
             // 
@@ -973,6 +1572,7 @@
             this.label5.Size = new System.Drawing.Size(590, 32);
             this.label5.TabIndex = 1;
             this.label5.Text = "HOJA DE  NUEVO INGRESO DE ESTUDIANTES 2024";
+            this.label5.Click += new System.EventHandler(this.label5_Click_1);
             // 
             // label1
             // 
@@ -986,629 +1586,93 @@
     "UCATIVAS\r\n\r\n\r\n";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // txtCodigoEstudianteSINFOMtricula
-            // 
-            this.txtCodigoEstudianteSINFOMtricula.BackColor = System.Drawing.Color.White;
-            this.txtCodigoEstudianteSINFOMtricula.BorderColor = System.Drawing.Color.Black;
-            this.txtCodigoEstudianteSINFOMtricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCodigoEstudianteSINFOMtricula.BorderRadius = 25;
-            this.txtCodigoEstudianteSINFOMtricula.BorderSize = 1;
-            this.txtCodigoEstudianteSINFOMtricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigoEstudianteSINFOMtricula.ForeColor = System.Drawing.Color.Black;
-            this.txtCodigoEstudianteSINFOMtricula.Location = new System.Drawing.Point(561, 1328);
-            this.txtCodigoEstudianteSINFOMtricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCodigoEstudianteSINFOMtricula.Multiline = false;
-            this.txtCodigoEstudianteSINFOMtricula.Name = "txtCodigoEstudianteSINFOMtricula";
-            this.txtCodigoEstudianteSINFOMtricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtCodigoEstudianteSINFOMtricula.PasswordChar = false;
-            this.txtCodigoEstudianteSINFOMtricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtCodigoEstudianteSINFOMtricula.PlaceholderText = "";
-            this.txtCodigoEstudianteSINFOMtricula.Size = new System.Drawing.Size(532, 38);
-            this.txtCodigoEstudianteSINFOMtricula.TabIndex = 138;
-            this.txtCodigoEstudianteSINFOMtricula.UnderlineStyle = false;
-            // 
-            // txtTelefonoTutorMatricula
-            // 
-            this.txtTelefonoTutorMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtTelefonoTutorMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtTelefonoTutorMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtTelefonoTutorMatricula.BorderRadius = 25;
-            this.txtTelefonoTutorMatricula.BorderSize = 1;
-            this.txtTelefonoTutorMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefonoTutorMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtTelefonoTutorMatricula.Location = new System.Drawing.Point(1104, 1261);
-            this.txtTelefonoTutorMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtTelefonoTutorMatricula.Multiline = false;
-            this.txtTelefonoTutorMatricula.Name = "txtTelefonoTutorMatricula";
-            this.txtTelefonoTutorMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtTelefonoTutorMatricula.PasswordChar = false;
-            this.txtTelefonoTutorMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtTelefonoTutorMatricula.PlaceholderText = "";
-            this.txtTelefonoTutorMatricula.Size = new System.Drawing.Size(228, 38);
-            this.txtTelefonoTutorMatricula.TabIndex = 136;
-            this.txtTelefonoTutorMatricula.UnderlineStyle = false;
-            // 
-            // txtCedulaTutorMatricula
-            // 
-            this.txtCedulaTutorMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCedulaTutorMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCedulaTutorMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCedulaTutorMatricula.BorderRadius = 25;
-            this.txtCedulaTutorMatricula.BorderSize = 1;
-            this.txtCedulaTutorMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCedulaTutorMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtCedulaTutorMatricula.Location = new System.Drawing.Point(491, 1268);
-            this.txtCedulaTutorMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCedulaTutorMatricula.Multiline = false;
-            this.txtCedulaTutorMatricula.Name = "txtCedulaTutorMatricula";
-            this.txtCedulaTutorMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtCedulaTutorMatricula.PasswordChar = false;
-            this.txtCedulaTutorMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtCedulaTutorMatricula.PlaceholderText = "";
-            this.txtCedulaTutorMatricula.Size = new System.Drawing.Size(414, 38);
-            this.txtCedulaTutorMatricula.TabIndex = 134;
-            this.txtCedulaTutorMatricula.UnderlineStyle = false;
-            // 
-            // txtNombresApellidosTutorMatricula
-            // 
-            this.txtNombresApellidosTutorMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtNombresApellidosTutorMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtNombresApellidosTutorMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtNombresApellidosTutorMatricula.BorderRadius = 25;
-            this.txtNombresApellidosTutorMatricula.BorderSize = 1;
-            this.txtNombresApellidosTutorMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombresApellidosTutorMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtNombresApellidosTutorMatricula.Location = new System.Drawing.Point(491, 1207);
-            this.txtNombresApellidosTutorMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtNombresApellidosTutorMatricula.Multiline = false;
-            this.txtNombresApellidosTutorMatricula.Name = "txtNombresApellidosTutorMatricula";
-            this.txtNombresApellidosTutorMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNombresApellidosTutorMatricula.PasswordChar = false;
-            this.txtNombresApellidosTutorMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtNombresApellidosTutorMatricula.PlaceholderText = "";
-            this.txtNombresApellidosTutorMatricula.Size = new System.Drawing.Size(687, 38);
-            this.txtNombresApellidosTutorMatricula.TabIndex = 99;
-            this.txtNombresApellidosTutorMatricula.UnderlineStyle = false;
-            // 
-            // btnGuardarMatricula
-            // 
-            this.btnGuardarMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.btnGuardarMatricula.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.btnGuardarMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.btnGuardarMatricula.BorderRadius = 40;
-            this.btnGuardarMatricula.BorderSize = 1;
-            this.btnGuardarMatricula.FlatAppearance.BorderSize = 0;
-            this.btnGuardarMatricula.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnGuardarMatricula.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnGuardarMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarMatricula.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarMatricula.Location = new System.Drawing.Point(796, 1465);
-            this.btnGuardarMatricula.Name = "btnGuardarMatricula";
-            this.btnGuardarMatricula.Size = new System.Drawing.Size(172, 55);
-            this.btnGuardarMatricula.TabIndex = 64;
-            this.btnGuardarMatricula.Text = "Guardar";
-            this.btnGuardarMatricula.TextColor = System.Drawing.Color.White;
-            this.btnGuardarMatricula.UseVisualStyleBackColor = false;
-            this.btnGuardarMatricula.Click += new System.EventHandler(this.btnGuardarMatricula_Click);
-            // 
-            // txtFechaNacimientoMatricula
-            // 
-            this.txtFechaNacimientoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtFechaNacimientoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtFechaNacimientoMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtFechaNacimientoMatricula.BorderRadius = 25;
-            this.txtFechaNacimientoMatricula.BorderSize = 1;
-            this.txtFechaNacimientoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFechaNacimientoMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtFechaNacimientoMatricula.Location = new System.Drawing.Point(1208, 602);
-            this.txtFechaNacimientoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtFechaNacimientoMatricula.Multiline = false;
-            this.txtFechaNacimientoMatricula.Name = "txtFechaNacimientoMatricula";
-            this.txtFechaNacimientoMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtFechaNacimientoMatricula.PasswordChar = false;
-            this.txtFechaNacimientoMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtFechaNacimientoMatricula.PlaceholderText = "";
-            this.txtFechaNacimientoMatricula.Size = new System.Drawing.Size(175, 38);
-            this.txtFechaNacimientoMatricula.TabIndex = 62;
-            this.txtFechaNacimientoMatricula.UnderlineStyle = false;
-            this.txtFechaNacimientoMatricula._TextChanged += new System.EventHandler(this.mbTexbox4__TextChanged_1);
-            // 
-            // cbNacionalidadMatricula
-            // 
-            this.cbNacionalidadMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.cbNacionalidadMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.cbNacionalidadMatricula.BorderSize = 1;
-            this.cbNacionalidadMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cbNacionalidadMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cbNacionalidadMatricula.ForeColor = System.Drawing.Color.Black;
-            this.cbNacionalidadMatricula.IconColor = System.Drawing.Color.Black;
-            this.cbNacionalidadMatricula.Items.AddRange(new object[] {
-            "Guatemalteco",
-            "Nicaragüense"});
-            this.cbNacionalidadMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.cbNacionalidadMatricula.ListTextColor = System.Drawing.Color.Black;
-            this.cbNacionalidadMatricula.Location = new System.Drawing.Point(796, 733);
-            this.cbNacionalidadMatricula.MinimumSize = new System.Drawing.Size(200, 30);
-            this.cbNacionalidadMatricula.Name = "cbNacionalidadMatricula";
-            this.cbNacionalidadMatricula.Padding = new System.Windows.Forms.Padding(1);
-            this.cbNacionalidadMatricula.Size = new System.Drawing.Size(200, 30);
-            this.cbNacionalidadMatricula.TabIndex = 61;
-            this.cbNacionalidadMatricula.Texts = "";
-            // 
-            // txt2ApellidoMatricula
-            // 
-            this.txt2ApellidoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txt2ApellidoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txt2ApellidoMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txt2ApellidoMatricula.BorderRadius = 25;
-            this.txt2ApellidoMatricula.BorderSize = 1;
-            this.txt2ApellidoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt2ApellidoMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txt2ApellidoMatricula.Location = new System.Drawing.Point(784, 609);
-            this.txt2ApellidoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt2ApellidoMatricula.Multiline = false;
-            this.txt2ApellidoMatricula.Name = "txt2ApellidoMatricula";
-            this.txt2ApellidoMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txt2ApellidoMatricula.PasswordChar = false;
-            this.txt2ApellidoMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txt2ApellidoMatricula.PlaceholderText = "";
-            this.txt2ApellidoMatricula.Size = new System.Drawing.Size(221, 38);
-            this.txt2ApellidoMatricula.TabIndex = 18;
-            this.txt2ApellidoMatricula.UnderlineStyle = false;
-            // 
-            // cbPaisNacimentoMatricula
-            // 
-            this.cbPaisNacimentoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.cbPaisNacimentoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.cbPaisNacimentoMatricula.BorderSize = 1;
-            this.cbPaisNacimentoMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cbPaisNacimentoMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cbPaisNacimentoMatricula.ForeColor = System.Drawing.Color.Black;
-            this.cbPaisNacimentoMatricula.IconColor = System.Drawing.Color.Black;
-            this.cbPaisNacimentoMatricula.Items.AddRange(new object[] {
-            "Guatemala",
-            "Nicaragua"});
-            this.cbPaisNacimentoMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.cbPaisNacimentoMatricula.ListTextColor = System.Drawing.Color.Black;
-            this.cbPaisNacimentoMatricula.Location = new System.Drawing.Point(394, 733);
-            this.cbPaisNacimentoMatricula.MinimumSize = new System.Drawing.Size(200, 30);
-            this.cbPaisNacimentoMatricula.Name = "cbPaisNacimentoMatricula";
-            this.cbPaisNacimentoMatricula.Padding = new System.Windows.Forms.Padding(1);
-            this.cbPaisNacimentoMatricula.Size = new System.Drawing.Size(200, 30);
-            this.cbPaisNacimentoMatricula.TabIndex = 60;
-            this.cbPaisNacimentoMatricula.Texts = "";
-            // 
-            // txt2NombreMatricula
-            // 
-            this.txt2NombreMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txt2NombreMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txt2NombreMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txt2NombreMatricula.BorderRadius = 25;
-            this.txt2NombreMatricula.BorderSize = 1;
-            this.txt2NombreMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt2NombreMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txt2NombreMatricula.Location = new System.Drawing.Point(373, 611);
-            this.txt2NombreMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt2NombreMatricula.Multiline = false;
-            this.txt2NombreMatricula.Name = "txt2NombreMatricula";
-            this.txt2NombreMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txt2NombreMatricula.PasswordChar = false;
-            this.txt2NombreMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txt2NombreMatricula.PlaceholderText = "";
-            this.txt2NombreMatricula.Size = new System.Drawing.Size(221, 38);
-            this.txt2NombreMatricula.TabIndex = 16;
-            this.txt2NombreMatricula.UnderlineStyle = false;
-            // 
-            // txtDiscapacidadMatricula
-            // 
-            this.txtDiscapacidadMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtDiscapacidadMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtDiscapacidadMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtDiscapacidadMatricula.BorderRadius = 25;
-            this.txtDiscapacidadMatricula.BorderSize = 1;
-            this.txtDiscapacidadMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiscapacidadMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtDiscapacidadMatricula.Location = new System.Drawing.Point(974, 991);
-            this.txtDiscapacidadMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtDiscapacidadMatricula.Multiline = false;
-            this.txtDiscapacidadMatricula.Name = "txtDiscapacidadMatricula";
-            this.txtDiscapacidadMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtDiscapacidadMatricula.PasswordChar = false;
-            this.txtDiscapacidadMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtDiscapacidadMatricula.PlaceholderText = "";
-            this.txtDiscapacidadMatricula.Size = new System.Drawing.Size(251, 38);
-            this.txtDiscapacidadMatricula.TabIndex = 57;
-            this.txtDiscapacidadMatricula.UnderlineStyle = false;
-            this.txtDiscapacidadMatricula._TextChanged += new System.EventHandler(this.mbTexbox19__TextChanged);
-            // 
-            // txtComunidadIndigenaMatricula
-            // 
-            this.txtComunidadIndigenaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtComunidadIndigenaMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtComunidadIndigenaMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtComunidadIndigenaMatricula.BorderRadius = 25;
-            this.txtComunidadIndigenaMatricula.BorderSize = 1;
-            this.txtComunidadIndigenaMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtComunidadIndigenaMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtComunidadIndigenaMatricula.Location = new System.Drawing.Point(974, 918);
-            this.txtComunidadIndigenaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtComunidadIndigenaMatricula.Multiline = false;
-            this.txtComunidadIndigenaMatricula.Name = "txtComunidadIndigenaMatricula";
-            this.txtComunidadIndigenaMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtComunidadIndigenaMatricula.PasswordChar = false;
-            this.txtComunidadIndigenaMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtComunidadIndigenaMatricula.PlaceholderText = "";
-            this.txtComunidadIndigenaMatricula.Size = new System.Drawing.Size(251, 38);
-            this.txtComunidadIndigenaMatricula.TabIndex = 55;
-            this.txtComunidadIndigenaMatricula.UnderlineStyle = false;
-            this.txtComunidadIndigenaMatricula._TextChanged += new System.EventHandler(this.mbTexbox18__TextChanged_1);
-            // 
             // txtLenguaMaternaMatricula
             // 
             this.txtLenguaMaternaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.txtLenguaMaternaMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtLenguaMaternaMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtLenguaMaternaMatricula.BorderRadius = 25;
             this.txtLenguaMaternaMatricula.BorderSize = 1;
-            this.txtLenguaMaternaMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLenguaMaternaMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.txtLenguaMaternaMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtLenguaMaternaMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtLenguaMaternaMatricula.Location = new System.Drawing.Point(390, 1056);
-            this.txtLenguaMaternaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtLenguaMaternaMatricula.Multiline = false;
+            this.txtLenguaMaternaMatricula.IconColor = System.Drawing.Color.Black;
+            this.txtLenguaMaternaMatricula.Items.AddRange(new object[] {
+            "Guatemala",
+            "Nicaragua"});
+            this.txtLenguaMaternaMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtLenguaMaternaMatricula.ListTextColor = System.Drawing.Color.Black;
+            this.txtLenguaMaternaMatricula.Location = new System.Drawing.Point(384, 1063);
+            this.txtLenguaMaternaMatricula.MinimumSize = new System.Drawing.Size(200, 30);
             this.txtLenguaMaternaMatricula.Name = "txtLenguaMaternaMatricula";
-            this.txtLenguaMaternaMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtLenguaMaternaMatricula.PasswordChar = false;
-            this.txtLenguaMaternaMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtLenguaMaternaMatricula.PlaceholderText = "";
-            this.txtLenguaMaternaMatricula.Size = new System.Drawing.Size(296, 38);
-            this.txtLenguaMaternaMatricula.TabIndex = 53;
-            this.txtLenguaMaternaMatricula.UnderlineStyle = false;
-            this.txtLenguaMaternaMatricula._TextChanged += new System.EventHandler(this.mbTexbox17__TextChanged);
-            // 
-            // txtTerritorioIndigenaMatricula
-            // 
-            this.txtTerritorioIndigenaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtTerritorioIndigenaMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtTerritorioIndigenaMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtTerritorioIndigenaMatricula.BorderRadius = 25;
-            this.txtTerritorioIndigenaMatricula.BorderSize = 1;
-            this.txtTerritorioIndigenaMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTerritorioIndigenaMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtTerritorioIndigenaMatricula.Location = new System.Drawing.Point(468, 991);
-            this.txtTerritorioIndigenaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtTerritorioIndigenaMatricula.Multiline = false;
-            this.txtTerritorioIndigenaMatricula.Name = "txtTerritorioIndigenaMatricula";
-            this.txtTerritorioIndigenaMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtTerritorioIndigenaMatricula.PasswordChar = false;
-            this.txtTerritorioIndigenaMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtTerritorioIndigenaMatricula.PlaceholderText = "";
-            this.txtTerritorioIndigenaMatricula.Size = new System.Drawing.Size(218, 38);
-            this.txtTerritorioIndigenaMatricula.TabIndex = 45;
-            this.txtTerritorioIndigenaMatricula.UnderlineStyle = false;
-            this.txtTerritorioIndigenaMatricula._TextChanged += new System.EventHandler(this.mbTexbox16__TextChanged);
-            // 
-            // cbEtniaMatricula
-            // 
-            this.cbEtniaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.cbEtniaMatricula.BorderColor = System.Drawing.Color.Black;
-            this.cbEtniaMatricula.BorderSize = 0;
-            this.cbEtniaMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cbEtniaMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cbEtniaMatricula.ForeColor = System.Drawing.Color.Black;
-            this.cbEtniaMatricula.IconColor = System.Drawing.Color.Black;
-            this.cbEtniaMatricula.Items.AddRange(new object[] {
-            "Mestizo"});
-            this.cbEtniaMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.cbEtniaMatricula.ListTextColor = System.Drawing.Color.Black;
-            this.cbEtniaMatricula.Location = new System.Drawing.Point(444, 918);
-            this.cbEtniaMatricula.MinimumSize = new System.Drawing.Size(200, 30);
-            this.cbEtniaMatricula.Name = "cbEtniaMatricula";
-            this.cbEtniaMatricula.Size = new System.Drawing.Size(242, 38);
-            this.cbEtniaMatricula.TabIndex = 43;
-            this.cbEtniaMatricula.Texts = "";
-            this.cbEtniaMatricula.OnSelectedIndexChanged += new System.EventHandler(this.mbComboBox1_OnSelectedIndexChanged_1);
-            // 
-            // TxtDireccionMatricula
-            // 
-            this.TxtDireccionMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.TxtDireccionMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.TxtDireccionMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.TxtDireccionMatricula.BorderRadius = 25;
-            this.TxtDireccionMatricula.BorderSize = 1;
-            this.TxtDireccionMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDireccionMatricula.ForeColor = System.Drawing.Color.Black;
-            this.TxtDireccionMatricula.Location = new System.Drawing.Point(427, 853);
-            this.TxtDireccionMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.TxtDireccionMatricula.Multiline = false;
-            this.TxtDireccionMatricula.Name = "TxtDireccionMatricula";
-            this.TxtDireccionMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.TxtDireccionMatricula.PasswordChar = false;
-            this.TxtDireccionMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.TxtDireccionMatricula.PlaceholderText = "";
-            this.TxtDireccionMatricula.Size = new System.Drawing.Size(629, 38);
-            this.TxtDireccionMatricula.TabIndex = 41;
-            this.TxtDireccionMatricula.UnderlineStyle = false;
-            this.TxtDireccionMatricula._TextChanged += new System.EventHandler(this.mbTexbox15__TextChanged);
-            // 
-            // txtBarrioMatricula
-            // 
-            this.txtBarrioMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtBarrioMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtBarrioMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtBarrioMatricula.BorderRadius = 25;
-            this.txtBarrioMatricula.BorderSize = 1;
-            this.txtBarrioMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBarrioMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtBarrioMatricula.Location = new System.Drawing.Point(1162, 785);
-            this.txtBarrioMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtBarrioMatricula.Multiline = false;
-            this.txtBarrioMatricula.Name = "txtBarrioMatricula";
-            this.txtBarrioMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtBarrioMatricula.PasswordChar = false;
-            this.txtBarrioMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtBarrioMatricula.PlaceholderText = "";
-            this.txtBarrioMatricula.Size = new System.Drawing.Size(221, 38);
-            this.txtBarrioMatricula.TabIndex = 39;
-            this.txtBarrioMatricula.UnderlineStyle = false;
-            this.txtBarrioMatricula._TextChanged += new System.EventHandler(this.mbTexbox12__TextChanged);
+            this.txtLenguaMaternaMatricula.Padding = new System.Windows.Forms.Padding(1);
+            this.txtLenguaMaternaMatricula.Size = new System.Drawing.Size(200, 30);
+            this.txtLenguaMaternaMatricula.TabIndex = 139;
+            this.txtLenguaMaternaMatricula.Texts = "";
             // 
             // txtMuniciopioMatricula
             // 
             this.txtMuniciopioMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.txtMuniciopioMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtMuniciopioMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtMuniciopioMatricula.BorderRadius = 25;
             this.txtMuniciopioMatricula.BorderSize = 1;
-            this.txtMuniciopioMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMuniciopioMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.txtMuniciopioMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtMuniciopioMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtMuniciopioMatricula.Location = new System.Drawing.Point(878, 785);
-            this.txtMuniciopioMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtMuniciopioMatricula.Multiline = false;
+            this.txtMuniciopioMatricula.IconColor = System.Drawing.Color.Black;
+            this.txtMuniciopioMatricula.Items.AddRange(new object[] {
+            "Guatemala",
+            "Nicaragua"});
+            this.txtMuniciopioMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtMuniciopioMatricula.ListTextColor = System.Drawing.Color.Black;
+            this.txtMuniciopioMatricula.Location = new System.Drawing.Point(822, 785);
+            this.txtMuniciopioMatricula.MinimumSize = new System.Drawing.Size(200, 30);
             this.txtMuniciopioMatricula.Name = "txtMuniciopioMatricula";
-            this.txtMuniciopioMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtMuniciopioMatricula.PasswordChar = false;
-            this.txtMuniciopioMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtMuniciopioMatricula.PlaceholderText = "";
-            this.txtMuniciopioMatricula.Size = new System.Drawing.Size(156, 38);
-            this.txtMuniciopioMatricula.TabIndex = 37;
-            this.txtMuniciopioMatricula.UnderlineStyle = false;
-            this.txtMuniciopioMatricula._TextChanged += new System.EventHandler(this.mbTexbox13__TextChanged);
+            this.txtMuniciopioMatricula.Padding = new System.Windows.Forms.Padding(1);
+            this.txtMuniciopioMatricula.Size = new System.Drawing.Size(200, 30);
+            this.txtMuniciopioMatricula.TabIndex = 140;
+            this.txtMuniciopioMatricula.Texts = "";
             // 
             // txtDepartamentoMatricula
             // 
             this.txtDepartamentoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.txtDepartamentoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtDepartamentoMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtDepartamentoMatricula.BorderRadius = 25;
             this.txtDepartamentoMatricula.BorderSize = 1;
-            this.txtDepartamentoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDepartamentoMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.txtDepartamentoMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtDepartamentoMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtDepartamentoMatricula.Location = new System.Drawing.Point(427, 788);
-            this.txtDepartamentoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtDepartamentoMatricula.Multiline = false;
+            this.txtDepartamentoMatricula.IconColor = System.Drawing.Color.Black;
+            this.txtDepartamentoMatricula.Items.AddRange(new object[] {
+            "Guatemala",
+            "Nicaragua"});
+            this.txtDepartamentoMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtDepartamentoMatricula.ListTextColor = System.Drawing.Color.Black;
+            this.txtDepartamentoMatricula.Location = new System.Drawing.Point(412, 791);
+            this.txtDepartamentoMatricula.MinimumSize = new System.Drawing.Size(200, 30);
             this.txtDepartamentoMatricula.Name = "txtDepartamentoMatricula";
-            this.txtDepartamentoMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtDepartamentoMatricula.PasswordChar = false;
-            this.txtDepartamentoMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtDepartamentoMatricula.PlaceholderText = "";
-            this.txtDepartamentoMatricula.Size = new System.Drawing.Size(231, 38);
-            this.txtDepartamentoMatricula.TabIndex = 35;
-            this.txtDepartamentoMatricula.UnderlineStyle = false;
-            this.txtDepartamentoMatricula._TextChanged += new System.EventHandler(this.mbTexbox14__TextChanged);
+            this.txtDepartamentoMatricula.Padding = new System.Windows.Forms.Padding(1);
+            this.txtDepartamentoMatricula.Size = new System.Drawing.Size(200, 30);
+            this.txtDepartamentoMatricula.TabIndex = 141;
+            this.txtDepartamentoMatricula.Texts = "";
             // 
-            // txtTelefonoMatricula
+            // txtDiscapacidadMatricula
             // 
-            this.txtTelefonoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtTelefonoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtTelefonoMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtTelefonoMatricula.BorderRadius = 25;
-            this.txtTelefonoMatricula.BorderSize = 1;
-            this.txtTelefonoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefonoMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtTelefonoMatricula.Location = new System.Drawing.Point(1185, 727);
-            this.txtTelefonoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtTelefonoMatricula.Multiline = false;
-            this.txtTelefonoMatricula.Name = "txtTelefonoMatricula";
-            this.txtTelefonoMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtTelefonoMatricula.PasswordChar = false;
-            this.txtTelefonoMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtTelefonoMatricula.PlaceholderText = "";
-            this.txtTelefonoMatricula.Size = new System.Drawing.Size(198, 38);
-            this.txtTelefonoMatricula.TabIndex = 33;
-            this.txtTelefonoMatricula.UnderlineStyle = false;
-            this.txtTelefonoMatricula._TextChanged += new System.EventHandler(this.mbTexbox9__TextChanged);
-            // 
-            // txtTallaMatricula
-            // 
-            this.txtTallaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtTallaMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtTallaMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtTallaMatricula.BorderRadius = 25;
-            this.txtTallaMatricula.BorderSize = 1;
-            this.txtTallaMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTallaMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtTallaMatricula.Location = new System.Drawing.Point(1162, 668);
-            this.txtTallaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtTallaMatricula.Multiline = false;
-            this.txtTallaMatricula.Name = "txtTallaMatricula";
-            this.txtTallaMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtTallaMatricula.PasswordChar = false;
-            this.txtTallaMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtTallaMatricula.PlaceholderText = "";
-            this.txtTallaMatricula.Size = new System.Drawing.Size(221, 38);
-            this.txtTallaMatricula.TabIndex = 25;
-            this.txtTallaMatricula.UnderlineStyle = false;
-            // 
-            // txtPesoMatricula
-            // 
-            this.txtPesoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtPesoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtPesoMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtPesoMatricula.BorderRadius = 25;
-            this.txtPesoMatricula.BorderSize = 1;
-            this.txtPesoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPesoMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtPesoMatricula.Location = new System.Drawing.Point(852, 668);
-            this.txtPesoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtPesoMatricula.Multiline = false;
-            this.txtPesoMatricula.Name = "txtPesoMatricula";
-            this.txtPesoMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtPesoMatricula.PasswordChar = false;
-            this.txtPesoMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtPesoMatricula.PlaceholderText = "";
-            this.txtPesoMatricula.Size = new System.Drawing.Size(153, 38);
-            this.txtPesoMatricula.TabIndex = 21;
-            this.txtPesoMatricula.UnderlineStyle = false;
-            // 
-            // mbTexbox7
-            // 
-            this.mbTexbox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox7.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox7.BorderRadius = 25;
-            this.mbTexbox7.BorderSize = 1;
-            this.mbTexbox7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox7.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox7.Location = new System.Drawing.Point(373, 668);
-            this.mbTexbox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox7.Multiline = false;
-            this.mbTexbox7.Name = "mbTexbox7";
-            this.mbTexbox7.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox7.PasswordChar = false;
-            this.mbTexbox7.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox7.PlaceholderText = "";
-            this.mbTexbox7.Size = new System.Drawing.Size(331, 38);
-            this.mbTexbox7.TabIndex = 19;
-            this.mbTexbox7.UnderlineStyle = false;
-            // 
-            // mbTexbox5
-            // 
-            this.mbTexbox5.BackColor = System.Drawing.Color.White;
-            this.mbTexbox5.BorderColor = System.Drawing.Color.Black;
-            this.mbTexbox5.BorderFocusColor = System.Drawing.Color.Black;
-            this.mbTexbox5.BorderRadius = 25;
-            this.mbTexbox5.BorderSize = 1;
-            this.mbTexbox5.Enabled = false;
-            this.mbTexbox5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox5.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox5.Location = new System.Drawing.Point(1217, 549);
-            this.mbTexbox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox5.Multiline = false;
-            this.mbTexbox5.Name = "mbTexbox5";
-            this.mbTexbox5.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox5.PasswordChar = false;
-            this.mbTexbox5.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox5.PlaceholderText = "";
-            this.mbTexbox5.Size = new System.Drawing.Size(166, 38);
-            this.mbTexbox5.TabIndex = 15;
-            this.mbTexbox5.UnderlineStyle = false;
-            this.mbTexbox5._TextChanged += new System.EventHandler(this.mbTexbox5__TextChanged);
-            // 
-            // txt1ApellidoMatricula
-            // 
-            this.txt1ApellidoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txt1ApellidoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txt1ApellidoMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txt1ApellidoMatricula.BorderRadius = 25;
-            this.txt1ApellidoMatricula.BorderSize = 1;
-            this.txt1ApellidoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt1ApellidoMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txt1ApellidoMatricula.Location = new System.Drawing.Point(784, 554);
-            this.txt1ApellidoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt1ApellidoMatricula.Multiline = false;
-            this.txt1ApellidoMatricula.Name = "txt1ApellidoMatricula";
-            this.txt1ApellidoMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txt1ApellidoMatricula.PasswordChar = false;
-            this.txt1ApellidoMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txt1ApellidoMatricula.PlaceholderText = "";
-            this.txt1ApellidoMatricula.Size = new System.Drawing.Size(221, 38);
-            this.txt1ApellidoMatricula.TabIndex = 13;
-            this.txt1ApellidoMatricula.UnderlineStyle = false;
-            // 
-            // txt1NombreMatricula
-            // 
-            this.txt1NombreMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txt1NombreMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txt1NombreMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txt1NombreMatricula.BorderRadius = 25;
-            this.txt1NombreMatricula.BorderSize = 1;
-            this.txt1NombreMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt1NombreMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txt1NombreMatricula.Location = new System.Drawing.Point(373, 556);
-            this.txt1NombreMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt1NombreMatricula.Multiline = false;
-            this.txt1NombreMatricula.Name = "txt1NombreMatricula";
-            this.txt1NombreMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txt1NombreMatricula.PasswordChar = false;
-            this.txt1NombreMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txt1NombreMatricula.PlaceholderText = "";
-            this.txt1NombreMatricula.Size = new System.Drawing.Size(221, 38);
-            this.txt1NombreMatricula.TabIndex = 11;
-            this.txt1NombreMatricula.UnderlineStyle = false;
-            // 
-            // txtCedulaMatricula
-            // 
-            this.txtCedulaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCedulaMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCedulaMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCedulaMatricula.BorderRadius = 25;
-            this.txtCedulaMatricula.BorderSize = 1;
-            this.txtCedulaMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCedulaMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtCedulaMatricula.Location = new System.Drawing.Point(427, 502);
-            this.txtCedulaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCedulaMatricula.Multiline = false;
-            this.txtCedulaMatricula.Name = "txtCedulaMatricula";
-            this.txtCedulaMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtCedulaMatricula.PasswordChar = false;
-            this.txtCedulaMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtCedulaMatricula.PlaceholderText = "";
-            this.txtCedulaMatricula.Size = new System.Drawing.Size(595, 38);
-            this.txtCedulaMatricula.TabIndex = 8;
-            this.txtCedulaMatricula.UnderlineStyle = false;
-            // 
-            // mbTexbox20
-            // 
-            this.mbTexbox20.BackColor = System.Drawing.SystemColors.Window;
-            this.mbTexbox20.BorderColor = System.Drawing.Color.Black;
-            this.mbTexbox20.BorderFocusColor = System.Drawing.Color.Black;
-            this.mbTexbox20.BorderRadius = 20;
-            this.mbTexbox20.BorderSize = 1;
-            this.mbTexbox20.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox20.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox20.Location = new System.Drawing.Point(995, -49);
-            this.mbTexbox20.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox20.Multiline = false;
-            this.mbTexbox20.Name = "mbTexbox20";
-            this.mbTexbox20.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox20.PasswordChar = false;
-            this.mbTexbox20.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox20.PlaceholderText = "Fecha de llenado";
-            this.mbTexbox20.Size = new System.Drawing.Size(250, 40);
-            this.mbTexbox20.TabIndex = 5;
-            this.mbTexbox20.UnderlineStyle = false;
-            // 
-            // txtFechaMatricula
-            // 
-            this.txtFechaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtFechaMatricula.BorderColor = System.Drawing.Color.Black;
-            this.txtFechaMatricula.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtFechaMatricula.BorderRadius = 20;
-            this.txtFechaMatricula.BorderSize = 1;
-            this.txtFechaMatricula.Enabled = false;
-            this.txtFechaMatricula.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFechaMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtFechaMatricula.Location = new System.Drawing.Point(1234, 374);
-            this.txtFechaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtFechaMatricula.Multiline = false;
-            this.txtFechaMatricula.Name = "txtFechaMatricula";
-            this.txtFechaMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtFechaMatricula.PasswordChar = false;
-            this.txtFechaMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtFechaMatricula.PlaceholderText = "Fecha de llenado";
-            this.txtFechaMatricula.Size = new System.Drawing.Size(250, 43);
-            this.txtFechaMatricula.TabIndex = 5;
-            this.txtFechaMatricula.UnderlineStyle = false;
+            this.txtDiscapacidadMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtDiscapacidadMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtDiscapacidadMatricula.BorderSize = 1;
+            this.txtDiscapacidadMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.txtDiscapacidadMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtDiscapacidadMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtDiscapacidadMatricula.IconColor = System.Drawing.Color.Black;
+            this.txtDiscapacidadMatricula.Items.AddRange(new object[] {
+            "Guatemala",
+            "Nicaragua"});
+            this.txtDiscapacidadMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtDiscapacidadMatricula.ListTextColor = System.Drawing.Color.Black;
+            this.txtDiscapacidadMatricula.Location = new System.Drawing.Point(982, 999);
+            this.txtDiscapacidadMatricula.MinimumSize = new System.Drawing.Size(200, 30);
+            this.txtDiscapacidadMatricula.Name = "txtDiscapacidadMatricula";
+            this.txtDiscapacidadMatricula.Padding = new System.Windows.Forms.Padding(1);
+            this.txtDiscapacidadMatricula.Size = new System.Drawing.Size(243, 30);
+            this.txtDiscapacidadMatricula.TabIndex = 142;
+            this.txtDiscapacidadMatricula.Texts = "";
             // 
             // Matrícula
             // 
@@ -1732,10 +1796,8 @@
         private MBControl.MBTexbox txtBarrioMatricula;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Label label18;
-        private MBControl.MBTexbox txtMuniciopioMatricula;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label19;
-        private MBControl.MBTexbox txtDepartamentoMatricula;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label label20;
         private MBControl.MBTexbox TxtDireccionMatricula;
@@ -1750,10 +1812,8 @@
         private MBControl.MBTexbox txtComunidadIndigenaMatricula;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Label label25;
-        private MBControl.MBTexbox txtLenguaMaternaMatricula;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Label label24;
-        private MBControl.MBTexbox txtDiscapacidadMatricula;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
@@ -1789,5 +1849,9 @@
         private MBControl.MBTexbox txtCodigoEstudianteSINFOMtricula;
         private System.Windows.Forms.Panel panel30;
         private System.Windows.Forms.Label label38;
+        private MBControl.MBComboBox txtDiscapacidadMatricula;
+        private MBControl.MBComboBox txtDepartamentoMatricula;
+        private MBControl.MBComboBox txtMuniciopioMatricula;
+        private MBControl.MBComboBox txtLenguaMaternaMatricula;
     }
 }
