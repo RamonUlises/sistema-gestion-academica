@@ -26,6 +26,37 @@ namespace SGA.Clases
             {
                 return Validation(false, "El código del estudiante es requerido");
             }
+
+            if (this.NombreCentroEducativo.Length == 0)
+            {
+                return Validation(false, "El nombre del centro educativo es requerido");
+            }
+
+            if (this.NivelEducativo.Length == 0)
+            {
+                return Validation(false, "El nivel educativo es requerido");
+            }
+
+            if (this.Modalidad.Length == 0)
+            {
+                return Validation(false, "La modalidad es requerida");
+            }
+
+            if (this.Turno.Length == 0)
+            {
+                return Validation(false, "El turno es requerido");
+            }
+
+            if (this.Grado.Length == 0)
+            {
+                return Validation(false, "El grado es requerido");
+            }
+
+            if (this.Seccion.Length == 0)
+            {
+                return Validation(false, "La sección es requerida");
+            }
+
             return Validation(true, "Correcto");
         }
 
