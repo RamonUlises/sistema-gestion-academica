@@ -129,9 +129,12 @@
 - Un **_traslado_** esta hecho en un **_periodo_** **(1:N)**
 - Un **_traslado_** viene de un **_centro_** **(1:N)**
 - Un **_municipio_** le pertencen a un **_departameno_** **(1:N)**
+- UN **_pais_** le pertenece a un **_departamento_** **(1:N)**
+
+
 
 ## Modelo relacional
-![modelo-relacional](./public/modelo-relacional.png)
+![modelo-relacional](./public/modelo_relacional.png)
 
 ## Diccionario de datos 
 [Diccionario de datos](https://1drv.ms/x/s!AnehkfZvtSTvp25FRPQTkPpqNL5r?e=8wDpue)
