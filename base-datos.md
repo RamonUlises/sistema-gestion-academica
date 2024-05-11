@@ -128,7 +128,7 @@
 - Un **_traslado_** es hecho por un **_estudiante_** **(1:1)**
 - Un **_traslado_** esta hecho en un **_periodo_** **(1:N)**
 - Un **_traslado_** viene de un **_centro_** **(1:N)**
-- Un **_municipio_** le pertencen a un **_departameno_** **(1:N)**
+- Un **_municipio_** le pertencen a un **_departamento_** **(1:N)**
 - UN **_pais_** le pertenece a un **_departamento_** **(1:N)**
 
 
