@@ -17,6 +17,7 @@ namespace SGA
         {
             InitializeComponent();
             customizarDiseno();
+         
             PanelHelper.SetRoundPanel(panel2, 20);
             PanelHelper.SetRoundPanel(panel3, 20);
             PanelHelper.SetRoundPanel(panel4, 20);
@@ -33,16 +34,19 @@ namespace SGA
             if (panel7.Visible == true)
                 panel7.Visible = false;
         }
+       
         private void showSubMenu(System.Windows.Forms.Panel subMenu)
         {
             if (subMenu.Visible == false)
             {
                 hideSubMenu();
+             
                 subMenu.Visible = true;
             }
             else
                 subMenu.Visible = false;
         }
+      
 
         private void Traslado_Load(object sender, EventArgs e)
         {
@@ -87,6 +91,8 @@ namespace SGA
         private void mbButton2_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            mbComboBox1.Visible = true;
+            panel43.Visible = true;
         }
 
         private void btnComprobanteTraslado_Click_1(object sender, EventArgs e)
@@ -103,6 +109,16 @@ namespace SGA
         private void btnComprobanteTraslado_Click_3(object sender, EventArgs e)
         {
             showSubMenu(panel7);
+            mbComboBox1.Visible = false;
+            panel43.Visible = false;
+
         }
+
+        private void btnBuscarCodigoUnicoTraslado_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+     
     }
 }

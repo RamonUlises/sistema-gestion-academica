@@ -147,6 +147,7 @@ namespace SGA
         {
             ActivateButton(sender, RGBColors.color4);
             OpenChildForm(new Traslado());
+           
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
