@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtDiscapacidadMatricula = new SGA.MBControl.MBComboBox();
+            this.txtDepartamentoMatricula = new SGA.MBControl.MBComboBox();
+            this.txtMuniciopioMatricula = new SGA.MBControl.MBComboBox();
+            this.txtLenguaMaternaMatricula = new SGA.MBControl.MBComboBox();
             this.txtCodigoEstudianteSINFOMtricula = new SGA.MBControl.MBTexbox();
             this.panel30 = new System.Windows.Forms.Panel();
             this.label38 = new System.Windows.Forms.Label();
@@ -127,10 +131,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtLenguaMaternaMatricula = new SGA.MBControl.MBComboBox();
-            this.txtMuniciopioMatricula = new SGA.MBControl.MBComboBox();
-            this.txtDepartamentoMatricula = new SGA.MBControl.MBComboBox();
-            this.txtDiscapacidadMatricula = new SGA.MBControl.MBComboBox();
             this.panel1.SuspendLayout();
             this.panel30.SuspendLayout();
             this.panel29.SuspendLayout();
@@ -237,6 +237,94 @@
             this.panel1.Size = new System.Drawing.Size(1682, 949);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txtDiscapacidadMatricula
+            // 
+            this.txtDiscapacidadMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtDiscapacidadMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtDiscapacidadMatricula.BorderSize = 1;
+            this.txtDiscapacidadMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.txtDiscapacidadMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtDiscapacidadMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtDiscapacidadMatricula.IconColor = System.Drawing.Color.Black;
+            this.txtDiscapacidadMatricula.Items.AddRange(new object[] {
+            "Guatemala",
+            "Nicaragua"});
+            this.txtDiscapacidadMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtDiscapacidadMatricula.ListTextColor = System.Drawing.Color.Black;
+            this.txtDiscapacidadMatricula.Location = new System.Drawing.Point(982, 999);
+            this.txtDiscapacidadMatricula.MinimumSize = new System.Drawing.Size(200, 30);
+            this.txtDiscapacidadMatricula.Name = "txtDiscapacidadMatricula";
+            this.txtDiscapacidadMatricula.Padding = new System.Windows.Forms.Padding(1);
+            this.txtDiscapacidadMatricula.Size = new System.Drawing.Size(243, 30);
+            this.txtDiscapacidadMatricula.TabIndex = 142;
+            this.txtDiscapacidadMatricula.Texts = "";
+            // 
+            // txtDepartamentoMatricula
+            // 
+            this.txtDepartamentoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtDepartamentoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtDepartamentoMatricula.BorderSize = 1;
+            this.txtDepartamentoMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.txtDepartamentoMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtDepartamentoMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtDepartamentoMatricula.IconColor = System.Drawing.Color.Black;
+            this.txtDepartamentoMatricula.Items.AddRange(new object[] {
+            "Guatemala",
+            "Nicaragua"});
+            this.txtDepartamentoMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtDepartamentoMatricula.ListTextColor = System.Drawing.Color.Black;
+            this.txtDepartamentoMatricula.Location = new System.Drawing.Point(412, 791);
+            this.txtDepartamentoMatricula.MinimumSize = new System.Drawing.Size(200, 30);
+            this.txtDepartamentoMatricula.Name = "txtDepartamentoMatricula";
+            this.txtDepartamentoMatricula.Padding = new System.Windows.Forms.Padding(1);
+            this.txtDepartamentoMatricula.Size = new System.Drawing.Size(200, 30);
+            this.txtDepartamentoMatricula.TabIndex = 141;
+            this.txtDepartamentoMatricula.Texts = "";
+            // 
+            // txtMuniciopioMatricula
+            // 
+            this.txtMuniciopioMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtMuniciopioMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtMuniciopioMatricula.BorderSize = 1;
+            this.txtMuniciopioMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.txtMuniciopioMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtMuniciopioMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtMuniciopioMatricula.IconColor = System.Drawing.Color.Black;
+            this.txtMuniciopioMatricula.Items.AddRange(new object[] {
+            "Guatemala",
+            "Nicaragua"});
+            this.txtMuniciopioMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtMuniciopioMatricula.ListTextColor = System.Drawing.Color.Black;
+            this.txtMuniciopioMatricula.Location = new System.Drawing.Point(822, 785);
+            this.txtMuniciopioMatricula.MinimumSize = new System.Drawing.Size(200, 30);
+            this.txtMuniciopioMatricula.Name = "txtMuniciopioMatricula";
+            this.txtMuniciopioMatricula.Padding = new System.Windows.Forms.Padding(1);
+            this.txtMuniciopioMatricula.Size = new System.Drawing.Size(200, 30);
+            this.txtMuniciopioMatricula.TabIndex = 140;
+            this.txtMuniciopioMatricula.Texts = "";
+            // 
+            // txtLenguaMaternaMatricula
+            // 
+            this.txtLenguaMaternaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtLenguaMaternaMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtLenguaMaternaMatricula.BorderSize = 1;
+            this.txtLenguaMaternaMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.txtLenguaMaternaMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtLenguaMaternaMatricula.ForeColor = System.Drawing.Color.Black;
+            this.txtLenguaMaternaMatricula.IconColor = System.Drawing.Color.Black;
+            this.txtLenguaMaternaMatricula.Items.AddRange(new object[] {
+            "Guatemala",
+            "Nicaragua"});
+            this.txtLenguaMaternaMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtLenguaMaternaMatricula.ListTextColor = System.Drawing.Color.Black;
+            this.txtLenguaMaternaMatricula.Location = new System.Drawing.Point(384, 1063);
+            this.txtLenguaMaternaMatricula.MinimumSize = new System.Drawing.Size(200, 30);
+            this.txtLenguaMaternaMatricula.Name = "txtLenguaMaternaMatricula";
+            this.txtLenguaMaternaMatricula.Padding = new System.Windows.Forms.Padding(1);
+            this.txtLenguaMaternaMatricula.Size = new System.Drawing.Size(200, 30);
+            this.txtLenguaMaternaMatricula.TabIndex = 139;
+            this.txtLenguaMaternaMatricula.Texts = "";
             // 
             // txtCodigoEstudianteSINFOMtricula
             // 
@@ -1569,9 +1657,9 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(359, 100);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(590, 32);
+            this.label5.Size = new System.Drawing.Size(583, 32);
             this.label5.TabIndex = 1;
-            this.label5.Text = "HOJA DE  NUEVO INGRESO DE ESTUDIANTES 2024";
+            this.label5.Text = "HOJA DE NUEVO INGRESO DE ESTUDIANTES 2024";
             this.label5.Click += new System.EventHandler(this.label5_Click_1);
             // 
             // label1
@@ -1582,97 +1670,9 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(527, 128);
             this.label1.TabIndex = 0;
-            this.label1.Text = "                  MINISTERIO DE EDUCACION \r\n          DIVISIÓN DE ESTADÍSTICAS ED" +
+            this.label1.Text = "                  MINISTERIO DE EDUCACIÓN \r\n          DIVISIÓN DE ESTADÍSTICAS ED" +
     "UCATIVAS\r\n\r\n\r\n";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // txtLenguaMaternaMatricula
-            // 
-            this.txtLenguaMaternaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtLenguaMaternaMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtLenguaMaternaMatricula.BorderSize = 1;
-            this.txtLenguaMaternaMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.txtLenguaMaternaMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtLenguaMaternaMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtLenguaMaternaMatricula.IconColor = System.Drawing.Color.Black;
-            this.txtLenguaMaternaMatricula.Items.AddRange(new object[] {
-            "Guatemala",
-            "Nicaragua"});
-            this.txtLenguaMaternaMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtLenguaMaternaMatricula.ListTextColor = System.Drawing.Color.Black;
-            this.txtLenguaMaternaMatricula.Location = new System.Drawing.Point(384, 1063);
-            this.txtLenguaMaternaMatricula.MinimumSize = new System.Drawing.Size(200, 30);
-            this.txtLenguaMaternaMatricula.Name = "txtLenguaMaternaMatricula";
-            this.txtLenguaMaternaMatricula.Padding = new System.Windows.Forms.Padding(1);
-            this.txtLenguaMaternaMatricula.Size = new System.Drawing.Size(200, 30);
-            this.txtLenguaMaternaMatricula.TabIndex = 139;
-            this.txtLenguaMaternaMatricula.Texts = "";
-            // 
-            // txtMuniciopioMatricula
-            // 
-            this.txtMuniciopioMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtMuniciopioMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtMuniciopioMatricula.BorderSize = 1;
-            this.txtMuniciopioMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.txtMuniciopioMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtMuniciopioMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtMuniciopioMatricula.IconColor = System.Drawing.Color.Black;
-            this.txtMuniciopioMatricula.Items.AddRange(new object[] {
-            "Guatemala",
-            "Nicaragua"});
-            this.txtMuniciopioMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtMuniciopioMatricula.ListTextColor = System.Drawing.Color.Black;
-            this.txtMuniciopioMatricula.Location = new System.Drawing.Point(822, 785);
-            this.txtMuniciopioMatricula.MinimumSize = new System.Drawing.Size(200, 30);
-            this.txtMuniciopioMatricula.Name = "txtMuniciopioMatricula";
-            this.txtMuniciopioMatricula.Padding = new System.Windows.Forms.Padding(1);
-            this.txtMuniciopioMatricula.Size = new System.Drawing.Size(200, 30);
-            this.txtMuniciopioMatricula.TabIndex = 140;
-            this.txtMuniciopioMatricula.Texts = "";
-            // 
-            // txtDepartamentoMatricula
-            // 
-            this.txtDepartamentoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtDepartamentoMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtDepartamentoMatricula.BorderSize = 1;
-            this.txtDepartamentoMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.txtDepartamentoMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtDepartamentoMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtDepartamentoMatricula.IconColor = System.Drawing.Color.Black;
-            this.txtDepartamentoMatricula.Items.AddRange(new object[] {
-            "Guatemala",
-            "Nicaragua"});
-            this.txtDepartamentoMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtDepartamentoMatricula.ListTextColor = System.Drawing.Color.Black;
-            this.txtDepartamentoMatricula.Location = new System.Drawing.Point(412, 791);
-            this.txtDepartamentoMatricula.MinimumSize = new System.Drawing.Size(200, 30);
-            this.txtDepartamentoMatricula.Name = "txtDepartamentoMatricula";
-            this.txtDepartamentoMatricula.Padding = new System.Windows.Forms.Padding(1);
-            this.txtDepartamentoMatricula.Size = new System.Drawing.Size(200, 30);
-            this.txtDepartamentoMatricula.TabIndex = 141;
-            this.txtDepartamentoMatricula.Texts = "";
-            // 
-            // txtDiscapacidadMatricula
-            // 
-            this.txtDiscapacidadMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtDiscapacidadMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtDiscapacidadMatricula.BorderSize = 1;
-            this.txtDiscapacidadMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.txtDiscapacidadMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtDiscapacidadMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtDiscapacidadMatricula.IconColor = System.Drawing.Color.Black;
-            this.txtDiscapacidadMatricula.Items.AddRange(new object[] {
-            "Guatemala",
-            "Nicaragua"});
-            this.txtDiscapacidadMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtDiscapacidadMatricula.ListTextColor = System.Drawing.Color.Black;
-            this.txtDiscapacidadMatricula.Location = new System.Drawing.Point(982, 999);
-            this.txtDiscapacidadMatricula.MinimumSize = new System.Drawing.Size(200, 30);
-            this.txtDiscapacidadMatricula.Name = "txtDiscapacidadMatricula";
-            this.txtDiscapacidadMatricula.Padding = new System.Windows.Forms.Padding(1);
-            this.txtDiscapacidadMatricula.Size = new System.Drawing.Size(243, 30);
-            this.txtDiscapacidadMatricula.TabIndex = 142;
-            this.txtDiscapacidadMatricula.Texts = "";
             // 
             // Matrícula
             // 

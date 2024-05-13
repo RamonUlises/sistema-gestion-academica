@@ -93,5 +93,15 @@ namespace SGA
         {
             hideSubMenu();
         }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mbComboBox2_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -716,7 +716,7 @@
             this.mbButton1.Name = "mbButton1";
             this.mbButton1.Size = new System.Drawing.Size(172, 55);
             this.mbButton1.TabIndex = 181;
-            this.mbButton1.Text = "Inprimir";
+            this.mbButton1.Text = "Imprimir";
             this.mbButton1.TextColor = System.Drawing.Color.White;
             this.mbButton1.UseVisualStyleBackColor = false;
             this.mbButton1.Click += new System.EventHandler(this.mbButton1_Click);
@@ -1922,11 +1922,11 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(359, 100);
+            this.label19.Location = new System.Drawing.Point(377, 101);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(565, 32);
+            this.label19.Size = new System.Drawing.Size(558, 32);
             this.label19.TabIndex = 1;
-            this.label19.Text = "HOJA  DE TRASLADO/CAMBIO DE CENTRO 2024\r\n";
+            this.label19.Text = "HOJA DE TRASLADO/CAMBIO DE CENTRO 2024\r\n";
             // 
             // label20
             // 
@@ -1936,7 +1936,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(527, 128);
             this.label20.TabIndex = 0;
-            this.label20.Text = "                  MINISTERIO DE EDUCACION \r\n          DIVISIÓN DE ESTADÍSTICAS ED" +
+            this.label20.Text = "                  MINISTERIO DE EDUCACIÓN \r\n          DIVISIÓN DE ESTADÍSTICAS ED" +
     "UCATIVAS\r\n\r\n\r\n";
             // 
             // txtCentroOrigenTraslado

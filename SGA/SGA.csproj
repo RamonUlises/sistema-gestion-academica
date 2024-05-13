@@ -140,6 +140,9 @@
     <Compile Include="PRESENTACION\Traslado.Designer.cs">
       <DependentUpon>Traslado.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MBControl\MBComboBox.resx">
+      <DependentUpon>MBComboBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PRESENTACION\Estudiantes.resx">
       <DependentUpon>Estudiantes.cs</DependentUpon>
     </EmbeddedResource>

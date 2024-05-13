@@ -40,6 +40,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.PictureBox();
             this.panelBarraTitulo = new System.Windows.Forms.Panel();
+            this.iconPictureBox7 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
@@ -50,12 +51,12 @@
             this.iconformulario = new FontAwesome.Sharp.IconPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelEscritorio = new System.Windows.Forms.Panel();
-            this.iconPictureBox7 = new FontAwesome.Sharp.IconPictureBox();
             this.panelMenu.SuspendLayout();
             this.panelSubMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.panelBarraTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
@@ -63,7 +64,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconformulario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -260,6 +260,20 @@
             this.panelBarraTitulo.TabIndex = 1;
             this.panelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraTitulo_MouseDown);
             // 
+            // iconPictureBox7
+            // 
+            this.iconPictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.iconPictureBox7.ForeColor = System.Drawing.Color.MediumPurple;
+            this.iconPictureBox7.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconPictureBox7.IconColor = System.Drawing.Color.MediumPurple;
+            this.iconPictureBox7.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox7.Location = new System.Drawing.Point(1571, 62);
+            this.iconPictureBox7.Name = "iconPictureBox7";
+            this.iconPictureBox7.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox7.TabIndex = 5;
+            this.iconPictureBox7.TabStop = false;
+            this.iconPictureBox7.Click += new System.EventHandler(this.iconPictureBox7_Click);
+            // 
             // iconPictureBox6
             // 
             this.iconPictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -391,20 +405,6 @@
             this.panelEscritorio.TabIndex = 3;
             this.panelEscritorio.Paint += new System.Windows.Forms.PaintEventHandler(this.panelEscritorio_Paint);
             // 
-            // iconPictureBox7
-            // 
-            this.iconPictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.iconPictureBox7.ForeColor = System.Drawing.Color.MediumPurple;
-            this.iconPictureBox7.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.iconPictureBox7.IconColor = System.Drawing.Color.MediumPurple;
-            this.iconPictureBox7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox7.Location = new System.Drawing.Point(1571, 62);
-            this.iconPictureBox7.Name = "iconPictureBox7";
-            this.iconPictureBox7.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox7.TabIndex = 5;
-            this.iconPictureBox7.TabStop = false;
-            this.iconPictureBox7.Click += new System.EventHandler(this.iconPictureBox7_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -424,6 +424,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.panelBarraTitulo.ResumeLayout(false);
             this.panelBarraTitulo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
@@ -431,7 +432,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconformulario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }

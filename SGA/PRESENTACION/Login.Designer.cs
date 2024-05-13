@@ -47,8 +47,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -59,7 +58,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label1);
@@ -76,6 +75,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(26, 423);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(618, 38);
@@ -98,6 +98,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(189, 199);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(455, 108);
@@ -106,7 +107,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel3.Controls.Add(this.mbButton2);
             this.panel3.Controls.Add(this.mbTexbox2);
             this.panel3.Controls.Add(this.mbTexbox1);
@@ -119,21 +120,22 @@
             // 
             // mbButton2
             // 
-            this.mbButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.mbButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.mbButton2.BackColor = System.Drawing.Color.SeaShell;
+            this.mbButton2.BackgroundColor = System.Drawing.Color.SeaShell;
             this.mbButton2.BorderColor = System.Drawing.Color.Transparent;
             this.mbButton2.BorderRadius = 10;
             this.mbButton2.BorderSize = 1;
             this.mbButton2.FlatAppearance.BorderSize = 0;
             this.mbButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mbButton2.ForeColor = System.Drawing.Color.White;
+            this.mbButton2.ForeColor = System.Drawing.Color.Black;
             this.mbButton2.Location = new System.Drawing.Point(110, 313);
             this.mbButton2.Name = "mbButton2";
             this.mbButton2.Size = new System.Drawing.Size(158, 40);
             this.mbButton2.TabIndex = 3;
             this.mbButton2.Text = "Iniciar ";
-            this.mbButton2.TextColor = System.Drawing.Color.White;
+            this.mbButton2.TextColor = System.Drawing.Color.Black;
             this.mbButton2.UseVisualStyleBackColor = false;
+            this.mbButton2.Click += new System.EventHandler(this.mbButton2_Click);
             // 
             // mbTexbox2
             // 

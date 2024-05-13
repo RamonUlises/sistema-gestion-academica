@@ -20,10 +20,10 @@ namespace SGA.PRESENTACION
             PanelHelper.SetRoundPanel(panel3, 20);
 
             // Establecer el color de fondo del panel con una transparencia
-            panel2.BackColor = Color.FromArgb(50, Color.FromArgb(102, 0, 102)); // Opacidad al 50%
+            //panel2.BackColor = Color.FromArgb(50, Color.FromArgb(102, 0, 102)); // Opacidad al 50%
 
-            panel3.BackColor = Color.FromArgb(100, Color.White); // Opacidad al 50%
-            mbButton2.BackColor = Color.FromArgb(150, Color.FromArgb(34, 33, 74));
+            //panel3.BackColor = Color.FromArgb(20, Color.FromArgb(34, 33, 74)); // Opacidad al 50%
+            //mbButton2.BackColor = Color.FromArgb(150, Color.FromArgb(34, 33, 74));
       
 
         }
@@ -58,6 +58,11 @@ namespace SGA.PRESENTACION
         private void mbTexbox1__TextChanged_1(object sender, EventArgs e)
         {
  
+        }
+
+        private void mbButton2_Click(object sender, EventArgs e)
+        {
+        
         }
     }
 }

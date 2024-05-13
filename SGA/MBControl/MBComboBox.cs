@@ -329,6 +329,23 @@ namespace SGA.MBControl
             base.OnResize(e);
             AdjustComboBoxDimensions();
         }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // MBComboBox
+            // 
+            this.Name = "MBComboBox";
+            this.Load += new System.EventHandler(this.MBComboBox_Load);
+            this.ResumeLayout(false);
+
+        }
+
+        private void MBComboBox_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
