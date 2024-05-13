@@ -18,11 +18,50 @@ namespace SGA
             InitializeComponent();
             customizarDiseno();
          
-            PanelHelper.SetRoundPanel(panel2, 20);
-            PanelHelper.SetRoundPanel(panel3, 20);
-            PanelHelper.SetRoundPanel(panel4, 20);
-            PanelHelper.SetRoundPanel(panel5, 20);
-            PanelHelper.SetRoundPanel(panel6, 20);
+            PanelHelper.SetRoundPanel(panel2, 10);
+            PanelHelper.SetRoundPanel(panel3, 10);
+            PanelHelper.SetRoundPanel(panel4, 10);
+            PanelHelper.SetRoundPanel(panel5, 10);
+            PanelHelper.SetRoundPanel(panel6, 10);
+            PanelHelper.SetRoundPanel(panel7, 10);
+            PanelHelper.SetRoundPanel(panel8, 10);
+            PanelHelper.SetRoundPanel(panel9, 10);
+            PanelHelper.SetRoundPanel(panel10, 10);
+            PanelHelper.SetRoundPanel(panel11, 10);
+            PanelHelper.SetRoundPanel(panel12, 10);
+            PanelHelper.SetRoundPanel(panel13, 10);
+            PanelHelper.SetRoundPanel(panel14, 10);
+            PanelHelper.SetRoundPanel(panel15, 10);
+            PanelHelper.SetRoundPanel(panel16, 10);
+            PanelHelper.SetRoundPanel(panel17, 10);
+            PanelHelper.SetRoundPanel(panel18, 10);
+            PanelHelper.SetRoundPanel(panel19, 10);
+            PanelHelper.SetRoundPanel(panel20, 10);
+            PanelHelper.SetRoundPanel(panel21, 10);
+            PanelHelper.SetRoundPanel(panel22, 10);
+            PanelHelper.SetRoundPanel(panel23, 10);
+            PanelHelper.SetRoundPanel(panel24, 10);
+            PanelHelper.SetRoundPanel(panel25, 10);
+            PanelHelper.SetRoundPanel(panel26, 10);
+            PanelHelper.SetRoundPanel(panel27, 10);
+            PanelHelper.SetRoundPanel(panel28, 10);
+            PanelHelper.SetRoundPanel(panel29, 10);
+            PanelHelper.SetRoundPanel(panel30, 10);
+            PanelHelper.SetRoundPanel(panel31, 10);
+            PanelHelper.SetRoundPanel(panel32, 10);
+            PanelHelper.SetRoundPanel(panel33, 10);
+            PanelHelper.SetRoundPanel(panel34, 10);
+            PanelHelper.SetRoundPanel(panel35, 10);
+            PanelHelper.SetRoundPanel(panel36, 10);
+            PanelHelper.SetRoundPanel(panel37, 10);
+            PanelHelper.SetRoundPanel(panel38, 10);
+            PanelHelper.SetRoundPanel(panel39, 10);
+            PanelHelper.SetRoundPanel(panel40, 10);
+            PanelHelper.SetRoundPanel(panel41, 10);
+            PanelHelper.SetRoundPanel(panel42, 10);
+            PanelHelper.SetRoundPanel(panel43, 10);
+
+           
 
         }
         private void customizarDiseno()

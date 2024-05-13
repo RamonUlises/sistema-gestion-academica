@@ -18,6 +18,18 @@ namespace SGA
         {
             InitializeComponent();
             PanelHelper.SetRoundPanel(panel2, 20);
+            PanelHelper.SetRoundPanel(panel3, 20);
+            PanelHelper.SetRoundPanel(panel4, 20);
+            PanelHelper.SetRoundPanel(panel5, 20);
+            PanelHelper.SetRoundPanel(panel6, 20);
+            PanelHelper.SetRoundPanel(panel7, 20);
+            PanelHelper.SetRoundPanel(panel8, 20);
+            PanelHelper.SetRoundPanel(panel9, 20);
+            PanelHelper.SetRoundPanel(panel10, 20);
+            PanelHelper.SetRoundPanel(panel11, 20);
+            PanelHelper.SetRoundPanel(panel12, 20);
+            PanelHelper.SetRoundPanel(panel13, 20);
+
             // Establecer el color de fondo del panel con una transparencia
          panel3.BackColor = Color.FromArgb(128, Color.Black); // Opacidad al 50%
            
@@ -31,6 +43,16 @@ namespace SGA
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
         {
 
         }

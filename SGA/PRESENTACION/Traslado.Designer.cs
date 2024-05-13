@@ -257,7 +257,7 @@
             this.mbComboBox1.IconColor = System.Drawing.Color.Black;
             this.mbComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.mbComboBox1.ListTextColor = System.Drawing.Color.Black;
-            this.mbComboBox1.Location = new System.Drawing.Point(721, 629);
+            this.mbComboBox1.Location = new System.Drawing.Point(712, 549);
             this.mbComboBox1.MinimumSize = new System.Drawing.Size(200, 30);
             this.mbComboBox1.Name = "mbComboBox1";
             this.mbComboBox1.Padding = new System.Windows.Forms.Padding(1);
@@ -269,7 +269,7 @@
             // 
             this.panel43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel43.Controls.Add(this.label51);
-            this.panel43.Location = new System.Drawing.Point(428, 620);
+            this.panel43.Location = new System.Drawing.Point(419, 540);
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(279, 45);
             this.panel43.TabIndex = 152;
@@ -363,9 +363,9 @@
             this.panel7.Controls.Add(this.label17);
             this.panel7.Controls.Add(this.label18);
             this.panel7.Controls.Add(this.panel17);
-            this.panel7.Location = new System.Drawing.Point(148, 140);
+            this.panel7.Location = new System.Drawing.Point(148, 38);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1391, 2219);
+            this.panel7.Size = new System.Drawing.Size(1391, 2321);
             this.panel7.TabIndex = 145;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
@@ -1948,7 +1948,7 @@
             this.txtCentroOrigenTraslado.BorderSize = 1;
             this.txtCentroOrigenTraslado.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCentroOrigenTraslado.ForeColor = System.Drawing.Color.Black;
-            this.txtCentroOrigenTraslado.Location = new System.Drawing.Point(721, 504);
+            this.txtCentroOrigenTraslado.Location = new System.Drawing.Point(712, 424);
             this.txtCentroOrigenTraslado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCentroOrigenTraslado.Multiline = false;
             this.txtCentroOrigenTraslado.Name = "txtCentroOrigenTraslado";
@@ -1964,7 +1964,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel6.Controls.Add(this.label3);
-            this.panel6.Location = new System.Drawing.Point(429, 504);
+            this.panel6.Location = new System.Drawing.Point(420, 424);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(278, 45);
             this.panel6.TabIndex = 143;
@@ -1988,7 +1988,7 @@
             this.txtMotivoTaslado.BorderSize = 1;
             this.txtMotivoTaslado.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMotivoTaslado.ForeColor = System.Drawing.Color.Black;
-            this.txtMotivoTaslado.Location = new System.Drawing.Point(721, 444);
+            this.txtMotivoTaslado.Location = new System.Drawing.Point(712, 364);
             this.txtMotivoTaslado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMotivoTaslado.Multiline = false;
             this.txtMotivoTaslado.Name = "txtMotivoTaslado";
@@ -2004,7 +2004,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(429, 444);
+            this.panel2.Location = new System.Drawing.Point(420, 364);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(278, 45);
             this.panel2.TabIndex = 141;
@@ -2031,7 +2031,7 @@
             this.btnBuscarCodigoUnicoTraslado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnBuscarCodigoUnicoTraslado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarCodigoUnicoTraslado.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarCodigoUnicoTraslado.Location = new System.Drawing.Point(1022, 263);
+            this.btnBuscarCodigoUnicoTraslado.Location = new System.Drawing.Point(1013, 183);
             this.btnBuscarCodigoUnicoTraslado.Name = "btnBuscarCodigoUnicoTraslado";
             this.btnBuscarCodigoUnicoTraslado.Size = new System.Drawing.Size(141, 38);
             this.btnBuscarCodigoUnicoTraslado.TabIndex = 140;
@@ -2052,7 +2052,7 @@
             this.btnComprobanteTraslado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnComprobanteTraslado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnComprobanteTraslado.ForeColor = System.Drawing.Color.White;
-            this.btnComprobanteTraslado.Location = new System.Drawing.Point(820, 714);
+            this.btnComprobanteTraslado.Location = new System.Drawing.Point(811, 634);
             this.btnComprobanteTraslado.Name = "btnComprobanteTraslado";
             this.btnComprobanteTraslado.Size = new System.Drawing.Size(172, 55);
             this.btnComprobanteTraslado.TabIndex = 138;
@@ -2073,7 +2073,7 @@
             this.btnGuardartraslado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnGuardartraslado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardartraslado.ForeColor = System.Drawing.Color.White;
-            this.btnGuardartraslado.Location = new System.Drawing.Point(627, 714);
+            this.btnGuardartraslado.Location = new System.Drawing.Point(618, 634);
             this.btnGuardartraslado.Name = "btnGuardartraslado";
             this.btnGuardartraslado.Size = new System.Drawing.Size(172, 55);
             this.btnGuardartraslado.TabIndex = 137;
@@ -2092,7 +2092,7 @@
             this.cbPeriodoTraslado.IconColor = System.Drawing.Color.Black;
             this.cbPeriodoTraslado.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbPeriodoTraslado.ListTextColor = System.Drawing.Color.Black;
-            this.cbPeriodoTraslado.Location = new System.Drawing.Point(721, 574);
+            this.cbPeriodoTraslado.Location = new System.Drawing.Point(712, 494);
             this.cbPeriodoTraslado.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbPeriodoTraslado.Name = "cbPeriodoTraslado";
             this.cbPeriodoTraslado.Padding = new System.Windows.Forms.Padding(1);
@@ -2104,7 +2104,7 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel10.Controls.Add(this.label8);
-            this.panel10.Location = new System.Drawing.Point(428, 565);
+            this.panel10.Location = new System.Drawing.Point(419, 485);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(279, 45);
             this.panel10.TabIndex = 131;
@@ -2128,7 +2128,7 @@
             this.txtFechaTraslado.BorderSize = 1;
             this.txtFechaTraslado.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFechaTraslado.ForeColor = System.Drawing.Color.Black;
-            this.txtFechaTraslado.Location = new System.Drawing.Point(721, 382);
+            this.txtFechaTraslado.Location = new System.Drawing.Point(712, 302);
             this.txtFechaTraslado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFechaTraslado.Multiline = false;
             this.txtFechaTraslado.Name = "txtFechaTraslado";
@@ -2144,7 +2144,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(429, 382);
+            this.panel3.Location = new System.Drawing.Point(420, 302);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(278, 45);
             this.panel3.TabIndex = 123;
@@ -2168,7 +2168,7 @@
             this.txtNombresEstudianteTraslado.BorderSize = 1;
             this.txtNombresEstudianteTraslado.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombresEstudianteTraslado.ForeColor = System.Drawing.Color.Black;
-            this.txtNombresEstudianteTraslado.Location = new System.Drawing.Point(721, 320);
+            this.txtNombresEstudianteTraslado.Location = new System.Drawing.Point(712, 240);
             this.txtNombresEstudianteTraslado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombresEstudianteTraslado.Multiline = false;
             this.txtNombresEstudianteTraslado.Name = "txtNombresEstudianteTraslado";
@@ -2184,7 +2184,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel5.Controls.Add(this.label9);
-            this.panel5.Location = new System.Drawing.Point(429, 320);
+            this.panel5.Location = new System.Drawing.Point(420, 240);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(278, 45);
             this.panel5.TabIndex = 118;
@@ -2208,7 +2208,7 @@
             this.txtCodigoUnicoEstudianteTraslado.BorderSize = 1;
             this.txtCodigoUnicoEstudianteTraslado.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoUnicoEstudianteTraslado.ForeColor = System.Drawing.Color.Black;
-            this.txtCodigoUnicoEstudianteTraslado.Location = new System.Drawing.Point(721, 263);
+            this.txtCodigoUnicoEstudianteTraslado.Location = new System.Drawing.Point(712, 183);
             this.txtCodigoUnicoEstudianteTraslado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCodigoUnicoEstudianteTraslado.Multiline = false;
             this.txtCodigoUnicoEstudianteTraslado.Name = "txtCodigoUnicoEstudianteTraslado";
@@ -2224,7 +2224,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel4.Controls.Add(this.label7);
-            this.panel4.Location = new System.Drawing.Point(429, 263);
+            this.panel4.Location = new System.Drawing.Point(420, 183);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(278, 45);
             this.panel4.TabIndex = 116;

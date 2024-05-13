@@ -50,6 +50,7 @@
             this.iconformulario = new FontAwesome.Sharp.IconPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelEscritorio = new System.Windows.Forms.Panel();
+            this.iconPictureBox7 = new FontAwesome.Sharp.IconPictureBox();
             this.panelMenu.SuspendLayout();
             this.panelSubMenu.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -62,6 +63,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconformulario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -242,6 +244,7 @@
             // panelBarraTitulo
             // 
             this.panelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.panelBarraTitulo.Controls.Add(this.iconPictureBox7);
             this.panelBarraTitulo.Controls.Add(this.iconPictureBox6);
             this.panelBarraTitulo.Controls.Add(this.iconPictureBox3);
             this.panelBarraTitulo.Controls.Add(this.iconPictureBox5);
@@ -253,7 +256,7 @@
             this.panelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBarraTitulo.Location = new System.Drawing.Point(220, 0);
             this.panelBarraTitulo.Name = "panelBarraTitulo";
-            this.panelBarraTitulo.Size = new System.Drawing.Size(1682, 75);
+            this.panelBarraTitulo.Size = new System.Drawing.Size(1682, 114);
             this.panelBarraTitulo.TabIndex = 1;
             this.panelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraTitulo_MouseDown);
             // 
@@ -348,7 +351,7 @@
             // 
             this.tituloFormulario.AutoSize = true;
             this.tituloFormulario.ForeColor = System.Drawing.Color.White;
-            this.tituloFormulario.Location = new System.Drawing.Point(66, 30);
+            this.tituloFormulario.Location = new System.Drawing.Point(68, 70);
             this.tituloFormulario.Name = "tituloFormulario";
             this.tituloFormulario.Size = new System.Drawing.Size(44, 16);
             this.tituloFormulario.TabIndex = 1;
@@ -362,7 +365,7 @@
             this.iconformulario.IconChar = FontAwesome.Sharp.IconChar.House;
             this.iconformulario.IconColor = System.Drawing.Color.MediumPurple;
             this.iconformulario.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconformulario.Location = new System.Drawing.Point(31, 23);
+            this.iconformulario.Location = new System.Drawing.Point(30, 62);
             this.iconformulario.Name = "iconformulario";
             this.iconformulario.Size = new System.Drawing.Size(32, 32);
             this.iconformulario.TabIndex = 0;
@@ -373,7 +376,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(220, 75);
+            this.panel1.Location = new System.Drawing.Point(220, 114);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1682, 9);
             this.panel1.TabIndex = 2;
@@ -382,10 +385,25 @@
             // 
             this.panelEscritorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panelEscritorio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelEscritorio.Location = new System.Drawing.Point(220, 84);
+            this.panelEscritorio.Location = new System.Drawing.Point(220, 123);
             this.panelEscritorio.Name = "panelEscritorio";
-            this.panelEscritorio.Size = new System.Drawing.Size(1682, 949);
+            this.panelEscritorio.Size = new System.Drawing.Size(1682, 910);
             this.panelEscritorio.TabIndex = 3;
+            this.panelEscritorio.Paint += new System.Windows.Forms.PaintEventHandler(this.panelEscritorio_Paint);
+            // 
+            // iconPictureBox7
+            // 
+            this.iconPictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.iconPictureBox7.ForeColor = System.Drawing.Color.MediumPurple;
+            this.iconPictureBox7.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconPictureBox7.IconColor = System.Drawing.Color.MediumPurple;
+            this.iconPictureBox7.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox7.Location = new System.Drawing.Point(1571, 62);
+            this.iconPictureBox7.Name = "iconPictureBox7";
+            this.iconPictureBox7.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox7.TabIndex = 5;
+            this.iconPictureBox7.TabStop = false;
+            this.iconPictureBox7.Click += new System.EventHandler(this.iconPictureBox7_Click);
             // 
             // Form1
             // 
@@ -413,6 +431,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconformulario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -440,6 +459,7 @@
         private FontAwesome.Sharp.IconButton iconButton5;
         private System.Windows.Forms.Panel panelSubMenu;
         private FontAwesome.Sharp.IconButton iconButton6;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox7;
     }
 }
 

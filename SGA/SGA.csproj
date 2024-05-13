@@ -102,6 +102,12 @@
     <Compile Include="PRESENTACION\Datos Académicos.Designer.cs">
       <DependentUpon>Datos Académicos.cs</DependentUpon>
     </Compile>
+    <Compile Include="PRESENTACION\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="PRESENTACION\Matrícula.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PRESENTACION\Datos Académicos.resx">
       <DependentUpon>Datos Académicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRESENTACION\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PRESENTACION\Matrícula.resx">
       <DependentUpon>Matrícula.cs</DependentUpon>
