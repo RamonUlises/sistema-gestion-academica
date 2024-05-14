@@ -243,7 +243,7 @@ namespace SGA
 
         private void panelEscritorio_Paint(object sender, PaintEventArgs e)
         {
-
+             
         }
 
         private void iconPictureBox7_Click(object sender, EventArgs e)
