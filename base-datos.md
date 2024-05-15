@@ -136,5 +136,11 @@
 ## Modelo relacional
 ![modelo-relacional](./public/ModeloRelacional.png)
 
+## Diagrama de Clases
+![Diagrama-de-Clases](./public/DiagramaClases.png)
+
+## Diagrama de Objetos
+![Diagrama-de-Objetos](./public/DiagramaObjetos.png)
+
 ## Diccionario de datos 
 [Diccionario de datos](https://1drv.ms/x/s!AnehkfZvtSTvp25FRPQTkPpqNL5r?e=8wDpue)
