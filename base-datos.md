@@ -134,7 +134,7 @@
 
 
 ## Modelo relacional
-![modelo-relacional](./public/modelo_relacional.png)
+![modelo-relacional](./public/ModeloRelacional.png)
 
 ## Diccionario de datos 
 [Diccionario de datos](https://1drv.ms/x/s!AnehkfZvtSTvp25FRPQTkPpqNL5r?e=8wDpue)
