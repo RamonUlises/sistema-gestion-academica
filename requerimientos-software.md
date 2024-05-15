@@ -13,14 +13,7 @@
     - Cada integrante creará su propio frame.
     - Debe tener la barra de navegación.
     - Guardar los tipos de letras, colores, entre otras tipografías que se vayan a usar.
-- ❌ Creación de interfaces en C#.
-    - Inicio sesión **(Moises)**
-    - Estudiantes **(Maykeling)**
-    - Matrícula **(Moises)**
-    - Manual de uso **(Roberto)**
-    - Traslado **(Ramón)**
-    - Mostrar traslados **(Ramón)**
-    - Reingreso **(Maykeling)**
+- ✅ Creación de interfaces en C#. **_12-05-24_**
 - ✅ Creación de base de datos en MySQL. **_16/04/24_**
 - ❌ Creación de clases en C#.
 - ❌ Creación de validaciónes en la entrada de datos y salida de datos.
