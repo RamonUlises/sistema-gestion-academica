@@ -233,7 +233,7 @@
             // btnHome
             // 
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
-            this.btnHome.Location = new System.Drawing.Point(0, 0);
+            this.btnHome.Location = new System.Drawing.Point(3, 0);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(220, 124);
             this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
