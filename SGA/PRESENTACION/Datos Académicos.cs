@@ -1,4 +1,5 @@
-﻿using SGA.MBControl;
+﻿using SGA.Clases;
+using SGA.MBControl;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,9 +51,9 @@ namespace SGA.PRESENTACION
             PanelHelper.SetRoundPanel(panel28, 25);
             PanelHelper.SetRoundPanel(panel29, 25);
 
-
-
-            
+            DateTime fecha = DateTime.Now;
+            txtFechaMatriculaEstudianteDatosAcademicos.Text = fecha.ToString("dd-MM-yyyy");
+            txtFechaMatriculaEstudianteDatosAcademicos.Enabled = false;
 
         }
         private void customizarDiseno()
@@ -139,6 +140,61 @@ namespace SGA.PRESENTACION
         private void label18_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnGuardarDatosAcademicos_Click(object sender, EventArgs e)
+        {
+            ClassDatosAcademicos datosAcademicos = new ClassDatosAcademicos();
+            datosAcademicos.FechaMatricula = txtFechaMatriculaEstudianteDatosAcademicos.Text;
+            datosAcademicos.CodigoEstudiante = txtCodigoEstudianteDatosAcademicos.Text;
+            datosAcademicos.NombreCentroEducativo = txtNombreCentroDatosAcademicos.Text;
+            datosAcademicos.NivelEducativo = txtNivelEducativoDatosAcademicos.Text;
+            datosAcademicos.Modalidad = cbModalidadDatosAcademicos.Texts;
+            datosAcademicos.Turno = cbTurnoDatosAcademicos.Texts;
+            datosAcademicos.Grado = cbGradoDatosAcademicos.Text;
+            datosAcademicos.Seccion = cbSeccionDatosAcademicos.Text;
+
+            ValidarResultados validarResultados = datosAcademicos.ValidarCamposVacios();
+            if (validarResultados != null)
+            {
+                MessageBox.Show(validarResultados.message);
+                return;
+            }
+
+            string repitente = repitenteValidation();
+            if (repitente == "Error")
+            {
+                return;
+            }
+
+            datosAcademicos.Repitente = repitente == "Si";
+
+            MessageBox.Show("Datos guardados correctamente");
+        }
+
+        public string repitenteValidation()
+        {
+            if(chRepitenteSiDatosAcademicos.Checked == true && chRepitenteNODatosAcademicos.Checked == true)
+            {
+                MessageBox.Show("Seleccione solo una opción de repitente");
+                return "Error";
+            }
+            if(chRepitenteSiDatosAcademicos.Checked == false && chRepitenteNODatosAcademicos.Checked == false)
+            {
+                MessageBox.Show("Seleccione una opción de repitente");
+                return "Error";
+            }
+            if(chRepitenteSiDatosAcademicos.Checked == true)
+            {
+                return "Si";
+            }
+            if(chRepitenteNODatosAcademicos.Checked == true)
+            {
+                return "No";
+            }
+            
+            
+            return "Error";
         }
     }
 }

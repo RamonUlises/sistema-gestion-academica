@@ -34,6 +34,10 @@
             this.txtFechaMatriculaEstudianteDatosAcademicos = new SGA.MBControl.MBTexbox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.txtTurnoComprobante = new SGA.MBControl.MBTexbox();
+            this.txtSeccionComprobante = new SGA.MBControl.MBTexbox();
+            this.txtMunicipioComprobante = new SGA.MBControl.MBTexbox();
+            this.txtGradoComprobante = new SGA.MBControl.MBTexbox();
             this.btnImprimirComprobante = new SGA.MBControl.MBButton();
             this.txtFechaFirmaComprobante = new SGA.MBControl.MBTexbox();
             this.panel29 = new System.Windows.Forms.Panel();
@@ -81,7 +85,7 @@
             this.mbTexbox20 = new SGA.MBControl.MBTexbox();
             this.mbButton2 = new SGA.MBControl.MBButton();
             this.mbButton1 = new SGA.MBControl.MBButton();
-            this.btnGuardarMatricula = new SGA.MBControl.MBButton();
+            this.btnGuardarDatosAcademicos = new SGA.MBControl.MBButton();
             this.chRepitenteNODatosAcademicos = new System.Windows.Forms.CheckBox();
             this.chRepitenteSiDatosAcademicos = new System.Windows.Forms.CheckBox();
             this.mbTexbox5 = new SGA.MBControl.MBTexbox();
@@ -111,10 +115,6 @@
             this.txtCodigoEstudianteDatosAcademicos = new SGA.MBControl.MBTexbox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtGradoComprobante = new SGA.MBControl.MBTexbox();
-            this.txtMunicipioComprobante = new SGA.MBControl.MBTexbox();
-            this.txtSeccionComprobante = new SGA.MBControl.MBTexbox();
-            this.txtTurnoComprobante = new SGA.MBControl.MBTexbox();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -188,7 +188,7 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.panel12);
             this.panel1.Controls.Add(this.mbButton1);
-            this.panel1.Controls.Add(this.btnGuardarMatricula);
+            this.panel1.Controls.Add(this.btnGuardarDatosAcademicos);
             this.panel1.Controls.Add(this.chRepitenteNODatosAcademicos);
             this.panel1.Controls.Add(this.chRepitenteSiDatosAcademicos);
             this.panel1.Controls.Add(this.mbTexbox5);
@@ -256,9 +256,93 @@
             this.panel12.Controls.Add(this.mbButton2);
             this.panel12.Location = new System.Drawing.Point(86, 27);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(1481, 1049);
+            this.panel12.Size = new System.Drawing.Size(1473, 1049);
             this.panel12.TabIndex = 1;
             this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
+            // 
+            // txtTurnoComprobante
+            // 
+            this.txtTurnoComprobante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTurnoComprobante.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTurnoComprobante.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTurnoComprobante.BorderRadius = 25;
+            this.txtTurnoComprobante.BorderSize = 1;
+            this.txtTurnoComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTurnoComprobante.ForeColor = System.Drawing.Color.Black;
+            this.txtTurnoComprobante.Location = new System.Drawing.Point(453, 669);
+            this.txtTurnoComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTurnoComprobante.Multiline = false;
+            this.txtTurnoComprobante.Name = "txtTurnoComprobante";
+            this.txtTurnoComprobante.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTurnoComprobante.PasswordChar = false;
+            this.txtTurnoComprobante.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtTurnoComprobante.PlaceholderText = "";
+            this.txtTurnoComprobante.Size = new System.Drawing.Size(211, 38);
+            this.txtTurnoComprobante.TabIndex = 69;
+            this.txtTurnoComprobante.UnderlineStyle = false;
+            // 
+            // txtSeccionComprobante
+            // 
+            this.txtSeccionComprobante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtSeccionComprobante.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtSeccionComprobante.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtSeccionComprobante.BorderRadius = 25;
+            this.txtSeccionComprobante.BorderSize = 1;
+            this.txtSeccionComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSeccionComprobante.ForeColor = System.Drawing.Color.Black;
+            this.txtSeccionComprobante.Location = new System.Drawing.Point(453, 729);
+            this.txtSeccionComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSeccionComprobante.Multiline = false;
+            this.txtSeccionComprobante.Name = "txtSeccionComprobante";
+            this.txtSeccionComprobante.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSeccionComprobante.PasswordChar = false;
+            this.txtSeccionComprobante.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtSeccionComprobante.PlaceholderText = "";
+            this.txtSeccionComprobante.Size = new System.Drawing.Size(211, 38);
+            this.txtSeccionComprobante.TabIndex = 68;
+            this.txtSeccionComprobante.UnderlineStyle = false;
+            // 
+            // txtMunicipioComprobante
+            // 
+            this.txtMunicipioComprobante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtMunicipioComprobante.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtMunicipioComprobante.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtMunicipioComprobante.BorderRadius = 25;
+            this.txtMunicipioComprobante.BorderSize = 1;
+            this.txtMunicipioComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMunicipioComprobante.ForeColor = System.Drawing.Color.Black;
+            this.txtMunicipioComprobante.Location = new System.Drawing.Point(695, 381);
+            this.txtMunicipioComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtMunicipioComprobante.Multiline = false;
+            this.txtMunicipioComprobante.Name = "txtMunicipioComprobante";
+            this.txtMunicipioComprobante.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtMunicipioComprobante.PasswordChar = false;
+            this.txtMunicipioComprobante.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtMunicipioComprobante.PlaceholderText = "";
+            this.txtMunicipioComprobante.Size = new System.Drawing.Size(415, 38);
+            this.txtMunicipioComprobante.TabIndex = 67;
+            this.txtMunicipioComprobante.UnderlineStyle = false;
+            // 
+            // txtGradoComprobante
+            // 
+            this.txtGradoComprobante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtGradoComprobante.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtGradoComprobante.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtGradoComprobante.BorderRadius = 25;
+            this.txtGradoComprobante.BorderSize = 1;
+            this.txtGradoComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGradoComprobante.ForeColor = System.Drawing.Color.Black;
+            this.txtGradoComprobante.Location = new System.Drawing.Point(858, 665);
+            this.txtGradoComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtGradoComprobante.Multiline = false;
+            this.txtGradoComprobante.Name = "txtGradoComprobante";
+            this.txtGradoComprobante.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtGradoComprobante.PasswordChar = false;
+            this.txtGradoComprobante.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtGradoComprobante.PlaceholderText = "";
+            this.txtGradoComprobante.Size = new System.Drawing.Size(252, 38);
+            this.txtGradoComprobante.TabIndex = 66;
+            this.txtGradoComprobante.UnderlineStyle = false;
             // 
             // btnImprimirComprobante
             // 
@@ -871,25 +955,26 @@
             this.mbButton1.UseVisualStyleBackColor = false;
             this.mbButton1.Click += new System.EventHandler(this.mbButton1_Click);
             // 
-            // btnGuardarMatricula
+            // btnGuardarDatosAcademicos
             // 
-            this.btnGuardarMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.btnGuardarMatricula.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.btnGuardarMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.btnGuardarMatricula.BorderRadius = 40;
-            this.btnGuardarMatricula.BorderSize = 1;
-            this.btnGuardarMatricula.FlatAppearance.BorderSize = 0;
-            this.btnGuardarMatricula.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnGuardarMatricula.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnGuardarMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarMatricula.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarMatricula.Location = new System.Drawing.Point(643, 528);
-            this.btnGuardarMatricula.Name = "btnGuardarMatricula";
-            this.btnGuardarMatricula.Size = new System.Drawing.Size(172, 55);
-            this.btnGuardarMatricula.TabIndex = 114;
-            this.btnGuardarMatricula.Text = "Guardar";
-            this.btnGuardarMatricula.TextColor = System.Drawing.Color.White;
-            this.btnGuardarMatricula.UseVisualStyleBackColor = false;
+            this.btnGuardarDatosAcademicos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnGuardarDatosAcademicos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnGuardarDatosAcademicos.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnGuardarDatosAcademicos.BorderRadius = 40;
+            this.btnGuardarDatosAcademicos.BorderSize = 1;
+            this.btnGuardarDatosAcademicos.FlatAppearance.BorderSize = 0;
+            this.btnGuardarDatosAcademicos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnGuardarDatosAcademicos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnGuardarDatosAcademicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarDatosAcademicos.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarDatosAcademicos.Location = new System.Drawing.Point(643, 528);
+            this.btnGuardarDatosAcademicos.Name = "btnGuardarDatosAcademicos";
+            this.btnGuardarDatosAcademicos.Size = new System.Drawing.Size(172, 55);
+            this.btnGuardarDatosAcademicos.TabIndex = 114;
+            this.btnGuardarDatosAcademicos.Text = "Guardar";
+            this.btnGuardarDatosAcademicos.TextColor = System.Drawing.Color.White;
+            this.btnGuardarDatosAcademicos.UseVisualStyleBackColor = false;
+            this.btnGuardarDatosAcademicos.Click += new System.EventHandler(this.btnGuardarDatosAcademicos_Click);
             // 
             // chRepitenteNODatosAcademicos
             // 
@@ -1258,90 +1343,6 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "Código del Estudiante:";
             // 
-            // txtGradoComprobante
-            // 
-            this.txtGradoComprobante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtGradoComprobante.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtGradoComprobante.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtGradoComprobante.BorderRadius = 25;
-            this.txtGradoComprobante.BorderSize = 1;
-            this.txtGradoComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGradoComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txtGradoComprobante.Location = new System.Drawing.Point(858, 665);
-            this.txtGradoComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtGradoComprobante.Multiline = false;
-            this.txtGradoComprobante.Name = "txtGradoComprobante";
-            this.txtGradoComprobante.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtGradoComprobante.PasswordChar = false;
-            this.txtGradoComprobante.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtGradoComprobante.PlaceholderText = "";
-            this.txtGradoComprobante.Size = new System.Drawing.Size(252, 38);
-            this.txtGradoComprobante.TabIndex = 66;
-            this.txtGradoComprobante.UnderlineStyle = false;
-            // 
-            // txtMunicipioComprobante
-            // 
-            this.txtMunicipioComprobante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtMunicipioComprobante.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtMunicipioComprobante.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtMunicipioComprobante.BorderRadius = 25;
-            this.txtMunicipioComprobante.BorderSize = 1;
-            this.txtMunicipioComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMunicipioComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txtMunicipioComprobante.Location = new System.Drawing.Point(695, 381);
-            this.txtMunicipioComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtMunicipioComprobante.Multiline = false;
-            this.txtMunicipioComprobante.Name = "txtMunicipioComprobante";
-            this.txtMunicipioComprobante.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtMunicipioComprobante.PasswordChar = false;
-            this.txtMunicipioComprobante.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtMunicipioComprobante.PlaceholderText = "";
-            this.txtMunicipioComprobante.Size = new System.Drawing.Size(415, 38);
-            this.txtMunicipioComprobante.TabIndex = 67;
-            this.txtMunicipioComprobante.UnderlineStyle = false;
-            // 
-            // txtSeccionComprobante
-            // 
-            this.txtSeccionComprobante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtSeccionComprobante.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtSeccionComprobante.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtSeccionComprobante.BorderRadius = 25;
-            this.txtSeccionComprobante.BorderSize = 1;
-            this.txtSeccionComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSeccionComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txtSeccionComprobante.Location = new System.Drawing.Point(453, 729);
-            this.txtSeccionComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSeccionComprobante.Multiline = false;
-            this.txtSeccionComprobante.Name = "txtSeccionComprobante";
-            this.txtSeccionComprobante.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtSeccionComprobante.PasswordChar = false;
-            this.txtSeccionComprobante.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtSeccionComprobante.PlaceholderText = "";
-            this.txtSeccionComprobante.Size = new System.Drawing.Size(211, 38);
-            this.txtSeccionComprobante.TabIndex = 68;
-            this.txtSeccionComprobante.UnderlineStyle = false;
-            // 
-            // txtTurnoComprobante
-            // 
-            this.txtTurnoComprobante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtTurnoComprobante.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtTurnoComprobante.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtTurnoComprobante.BorderRadius = 25;
-            this.txtTurnoComprobante.BorderSize = 1;
-            this.txtTurnoComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTurnoComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txtTurnoComprobante.Location = new System.Drawing.Point(453, 669);
-            this.txtTurnoComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtTurnoComprobante.Multiline = false;
-            this.txtTurnoComprobante.Name = "txtTurnoComprobante";
-            this.txtTurnoComprobante.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtTurnoComprobante.PasswordChar = false;
-            this.txtTurnoComprobante.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtTurnoComprobante.PlaceholderText = "";
-            this.txtTurnoComprobante.Size = new System.Drawing.Size(211, 38);
-            this.txtTurnoComprobante.TabIndex = 69;
-            this.txtTurnoComprobante.UnderlineStyle = false;
-            // 
             // Datos_académicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1442,7 +1443,7 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label11;
         private MBControl.MBButton mbButton1;
-        private MBControl.MBButton btnGuardarMatricula;
+        private MBControl.MBButton btnGuardarDatosAcademicos;
         private System.Windows.Forms.Panel panel12;
         private MBControl.MBButton btnImprimirComprobante;
         private MBControl.MBTexbox txtFechaFirmaComprobante;
