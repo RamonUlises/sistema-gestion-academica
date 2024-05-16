@@ -55,6 +55,27 @@ namespace SGA.PRESENTACION
             txtFechaMatriculaEstudianteDatosAcademicos.Text = fecha.ToString("dd-MM-yyyy");
             txtFechaMatriculaEstudianteDatosAcademicos.Enabled = false;
 
+
+            cbGradoDatosAcademicos.Items.Add("7");
+            cbGradoDatosAcademicos.Items.Add("8");
+            cbGradoDatosAcademicos.Items.Add("9");
+            cbGradoDatosAcademicos.Items.Add("10");
+            cbGradoDatosAcademicos.Items.Add("11");
+
+            cbSeccionDatosAcademicos.Items.Add("A");
+            cbSeccionDatosAcademicos.Items.Add("B");
+            cbSeccionDatosAcademicos.Items.Add("C");
+            cbSeccionDatosAcademicos.Items.Add("D");
+            cbSeccionDatosAcademicos.Items.Add("E");
+            cbSeccionDatosAcademicos.Items.Add("F");
+
+            cbTurnoDatosAcademicos.Items.Add("Matutino");
+            cbTurnoDatosAcademicos.Items.Add("Vespertino");
+            cbTurnoDatosAcademicos.Items.Add("Nocturno");
+            cbTurnoDatosAcademicos.Items.Add("Sabatino");
+            cbTurnoDatosAcademicos.Items.Add("Dominical");
+            cbTurnoDatosAcademicos.Items.Add("Diurno");
+            cbTurnoDatosAcademicos.Items.Add("Quincenal");
         }
         private void customizarDiseno()
         {
