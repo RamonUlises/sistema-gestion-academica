@@ -73,6 +73,7 @@
   <ItemGroup>
     <Compile Include="Clases\ClassEstudiantes.cs" />
     <Compile Include="Clases\ClassDatosAcademicos.cs" />
+    <Compile Include="Clases\ClassReingreso.cs" />
     <Compile Include="Clases\ValidarResultados.cs" />
     <Compile Include="MBControl\panelOpacity.cs">
       <SubType>Component</SubType>

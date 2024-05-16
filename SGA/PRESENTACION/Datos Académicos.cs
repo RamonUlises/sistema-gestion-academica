@@ -76,6 +76,9 @@ namespace SGA.PRESENTACION
             cbTurnoDatosAcademicos.Items.Add("Dominical");
             cbTurnoDatosAcademicos.Items.Add("Diurno");
             cbTurnoDatosAcademicos.Items.Add("Quincenal");
+
+            cbModalidadDatosAcademicos.Items.Add("Presencial");
+            cbModalidadDatosAcademicos.Items.Add("Virtual");
         }
         private void customizarDiseno()
         {
@@ -216,6 +219,11 @@ namespace SGA.PRESENTACION
             
             
             return "Error";
+        }
+
+        private void panel18_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

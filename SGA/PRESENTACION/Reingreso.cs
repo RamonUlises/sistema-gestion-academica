@@ -45,6 +45,12 @@ namespace SGA
             PanelHelper.SetRoundPanel(panel26, 10);
             customizarDiseno();
 
+            btnGuardarReingreso.Cursor = Cursors.Hand;
+            btnBuscarCodigoAlumnoReingreso.Cursor = Cursors.Hand;
+        }
+        private void btnGuardarReingreso_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Reingreso Exitoso");
         }
         private void customizarDiseno()
         {
@@ -103,5 +109,12 @@ namespace SGA
         {
 
         }
+
+        private void panel22_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
     }
 }
