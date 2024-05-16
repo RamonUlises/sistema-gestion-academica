@@ -30,9 +30,7 @@ namespace SGA.PRESENTACION
 
         private void btnGuardarMatricula_Click(object sender, EventArgs e)
         {
-            Form1 frm = new Form1();
-            frm.Show();
-            this.Hide();
+
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -52,7 +50,9 @@ namespace SGA.PRESENTACION
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
-
+            // Dibuja un borde personalizado alrededor del Panel
+            ControlPaint.DrawBorder(e.Graphics, panel3.ClientRectangle, Color.Orange, ButtonBorderStyle.Solid);
+           
         }
 
         private void mbTexbox1__TextChanged_1(object sender, EventArgs e)
@@ -63,6 +63,16 @@ namespace SGA.PRESENTACION
         private void mbButton2_Click(object sender, EventArgs e)
         {
         
+        }
+
+        private void mbButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mbTexbox2__TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
