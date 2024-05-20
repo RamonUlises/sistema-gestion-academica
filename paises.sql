@@ -1,4 +1,3 @@
-// Agregar paises a la tabla paises
 
 INSERT INTO paises (pais) VALUES 
 ("Guatemala"),
@@ -8,7 +7,6 @@ INSERT INTO paises (pais) VALUES
 ("Costa Rica"),
 ("Panamá");
 
-// Agregar departamentos de Guatemala a la tabla departamentos
 
 INSERT INTO departamentos (id_pais, departamento) VALUES 
 (1, "Alta Verapaz"),
@@ -35,7 +33,6 @@ INSERT INTO departamentos (id_pais, departamento) VALUES
 (1, "Totonicapán"),
 (1, "Zacapa");
 
-// Agregar municipios de Alta Verapaz a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (1, "Cobán"),
@@ -60,7 +57,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (1, "Santa María Cahabón"),
 (1, "Fray Bartolomé de las Casas");
 
-// Agregar municipios de Baja Verapaz a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (2, "Salamá"),
@@ -72,7 +68,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (2, "San Miguel Chicaj");
 (2, "Rabinal");
 
-// Agregar municipios de Chimaltenango a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (3, "Chimaltenango"),
@@ -89,7 +84,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (3, "Yepocapa"),
 (3, "San Pedro Yepocapa");
 
-// Agregar municipios de Chiquimula a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (4, "Chiquimula"),
@@ -101,7 +95,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (4, "Esquipulas"),
 (4, "Quezaltepeque");
 
-// Agregar municipios de El Progreso a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (5, "Guastatoya"),
@@ -111,7 +104,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (5, "El Jícaro"),
 (5, "Sansare"),
 
-// Agregar municipios de Escuintla a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (6, "Escuintla"),
@@ -127,7 +119,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (6, "Nueva Concepciòn");
 (6, "Siquinalá");
 
-// Agregar municipios de Guatemala a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (7, "Guatemala"),
@@ -148,7 +139,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (7, "Villa Canales"),
 (7, "Petapa");
 
-// Agregar municipios de Huehuetenango a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (8, "Huehuetenango"),
@@ -184,7 +174,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (8, "Santa Ana Huista"),
 (8, "Unión Cantinil");
 
-// Agregar municipios de Izabal a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (9, "Puerto Barrios"),
@@ -193,7 +182,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (9, "Morales"),
 (9, "Los Amates");
 
-// Agregar municipios de Jalapa a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (10, "Jalapa"),
@@ -203,7 +191,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (10, "San Carlos Alzatate"),
 (10, "Monjas");
 
-// Agregar municipios de Jutiapa a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (11, "Jutiapa"),
@@ -224,7 +211,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (11, "San José Acatempa"),
 (11, "Quesada");
 
-// Agregar municipios de Petén a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (12, "Flores"),
@@ -241,7 +227,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (12, "Poptún"),
 (12, "Las Cruces");
 
-// Agregar municipios de Quetzaltenango a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (13, "Quetzaltenango"),
@@ -269,7 +254,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (13, "La Esperanza"),
 (13, "Palestina de Los Altos");
 
-// Agregar municipios de Quiché a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (14, "Santa Cruz del Quiché"),
@@ -293,7 +277,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (14, "Chicamán"),
 (14, "Pachalum");
 
-// Agregar municipios de Retalhuleu a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (15, "Retalhuleu"),
@@ -306,7 +289,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (15, "Nuevo San Carlos"),
 (15, "El Asintal");
 
-// Agregar municipios de Sacatepéquez a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (16, "Antigua Guatemala"),
@@ -323,7 +305,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (16, "Ciudad Vieja"),
 (16, "San Miguel Dueñas");
 
-// Agregar municipios de San Marcos a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (17, "San Marcos"),
@@ -356,7 +337,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (17, "Sipacapa"),
 (17, "Esquipulas Palo Gordo");
 
-// Agregar municipios de Santa Rosa a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (18, "Cuilapa"),
@@ -371,7 +351,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (18, "Santa María Ixhuatán"),
 (18, "Guazacapán");
 
-// Agregar municipios de Sololá a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (19, "Sololá"),
@@ -394,7 +373,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (19, "San Pedro La Laguna"),
 (19, "Santiago Atitlán");
 
-// Agregar municipios de Suchitepéquez a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (20, "Mazatenango"),
@@ -416,7 +394,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (20, "Santo Tomás La Unión"),
 (20, "Zunilito");
 
-// Agregar municipios de Totonicapán a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (21, "Totonicapán"),
@@ -428,7 +405,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (21, "Santa Lucía La Reforma"),
 (21, "San Bartolo");
 
-// Agregar municipios de Zacapa a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (22, "Zacapa"),
@@ -443,7 +419,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (22, "La Unión");
 
 
-// Agregar departamentos de Honduras a la tabla departamentos
 
 INSERT INTO departamentos (id_pais, departamento) VALUES 
 (2, "Atlántida"),
@@ -465,7 +440,6 @@ INSERT INTO departamentos (id_pais, departamento) VALUES
 (2, "Valle"),
 (2, "Yoro");
 
-//Agregar municipios de Atlántida a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (23, "La Ceiba"),
@@ -476,7 +450,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (23, "San Francisco"),
 (23, "Tela");
 
-//Agregar municipios de Choluteca a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (24, "Choluteca"),
@@ -492,7 +465,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (24, "Pespire"),
 (24, "San Antonio de Flores");
 
-//Agregar municipios de Colón a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (25, "Trujillo"),
@@ -505,7 +477,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (25, "Sonaguera"),
 (25, "Tocoa");
 
-//Agregar municipios de Comayagua a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (26, "Comayagua"),
@@ -529,7 +500,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (26, "Taulabé"),
 (26, "Villa de San Antonio");
 
-//Agregar municipios de Copán a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (27, "Santa Rosa de Copán"),
@@ -555,7 +525,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (27, "Santa Rita"),
 (27, "Trinidad de Copán");
 
-//Agregar municipios de Cortés a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (28, "San Pedro Sula"),
@@ -570,7 +539,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (28, "Santa Cruz de Yojoa"),
 (28, "Villanueva");
 
-//Agregar municipios de El Paraíso a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (29, "Yuscarán"),
@@ -591,7 +559,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (29, "Texiguat"),
 (29, "Vado Ancho");
 
-//Agregar municipios de Francisco Morazán a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (30, "Tegucigalpa"),
@@ -621,7 +588,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (30, "Valle de Ángeles"),
 (30, "Villa de San Francisco");
 
-//Agregar municipios de Gracias a Dios a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (31, "Puerto Lempira"),
@@ -630,7 +596,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (31, "Juan Francisco Bulnes"),
 (31, "Ramón Villeda Morales");
 
-//Agregar municipios de Intibucá a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (32, "La Esperanza"),
@@ -654,13 +619,11 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (32, "Yamaranguila"),
 (32, "San Juan de Opoa");
 
-//Agregar municipios de Islas de la Bahía a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (33, "Roatán"),
 (33, "Utila");
 
-//Agregar municipios de La Paz a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (34, "La Paz"),
@@ -683,7 +646,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (34, "Santiago de Puringla"),
 (34, "Yarula");
 
-//Agregar municipios de Lempira a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (35, "Gracias"),
@@ -714,7 +676,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (35, "Tomalá"),
 (35, "Valladolid");
 
-//Agregar municipios de Ocotepeque a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (36, "Nueva Ocotepeque"),
@@ -733,7 +694,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (36, "Santa Fe"),
 (36, "Sensenti");
 
-//Agregar municipios de Olancho a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (37, "Juticalpa"),
@@ -759,7 +719,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (37, "Silca");
 (37, "Yocón");
 
-//Agregar municipios de Santa Bárbara a la tabla municipios 
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (38, "Santa Bárbara"),
@@ -789,7 +748,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (38, "Santa Rita"),
 (38, "Trinidad");
 
-//Agregar municipios de Valle a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (39, "Nacaome"),
@@ -803,7 +761,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (39, "San Lorenzo"),
 (39, "San Marcos de Colón");
 
-//Agregar municipios de Yoro a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (40, "Yoro"),
@@ -819,7 +776,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (40, "Yorito");
 
 
-// Agregar departamentos de El Salvador a la tabla departamentos
 
 INSERT INTO departamentos (id_pais, departamento) VALUES 
 (3, "Ahuachapán"),
@@ -837,7 +793,6 @@ INSERT INTO departamentos (id_pais, departamento) VALUES
 (3, "Sonsonate"),
 (3, "Usulután");
 
-//Agregar municipios de Ahuachapán a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (41, "Ahuachapán"),
@@ -853,7 +808,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (41, "Tacuba"),
 (41, "Turín");
 
-//Agregar municipios de Cabañas a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (42, "Sensuntepeque"),
@@ -866,7 +820,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (42, "Tejutepeque"),
 (42, "Victoria");
 
-//Agregar municipios de Chalatenango a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (43, "Chalatenango"),
@@ -902,7 +855,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (43, "Santa Rita"),
 (43, "Tejutla");
 
-//Agregar municipios de Cuscatlán a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (44, "Cojutepeque"),
@@ -922,7 +874,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (44, "Suchitoto"),
 (44, "Tenancingo");
 
-//Agregar municipios de La Libertad a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (45, "Santa Tecla"),
@@ -948,7 +899,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (45, "Tepecoyo"),
 (45, "Zaragoza");
 
-//Agregar municipios de La Paz a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (46, "Zacatecoluca"),
@@ -974,7 +924,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (46, "Santiago Nonualco"),
 (46, "Tapalhuaca");
 
-//Agregar municipios de La Unión a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (47, "La Unión"),
@@ -996,7 +945,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (47, "Yayantique"),
 (47, "Yucuaiquín");
 
-//Agregar municipios de Morazán a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (48, "San Francisco Gotera"),
@@ -1026,7 +974,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (48, "Yamabal"),
 (48, "Yoloaiquín");
 
-//Agregar municipios de San Miguel a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (49, "San Miguel"),
@@ -1050,7 +997,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (49, "Sesori"),
 (49, "Uluazapa");
 
-//Agregar municipios de San Salvador a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (50, "San Salvador"),
@@ -1073,7 +1019,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (50, "Soyapango"),
 (50, "Tonacatepeque");
 
-//Agregar municipios de San Vicente a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (51, "San Vicente"),
@@ -1090,7 +1035,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (51, "Tepetitán"),
 (51, "Verapaz");
 
-//Agregar municipios de Santa Ana a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (52, "Santa Ana"),
@@ -1107,7 +1051,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (52, "Santiago de la Frontera"),
 (52, "Texistepeque");
 
-//Agregar municipios de Sonsonate a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (53, "Sonsonate"),
@@ -1127,7 +1070,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (53, "Santo Domingo de Guzmán"),
 (53, "Sonzacate");
 
-//Agregar municipios de Usulután a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (54, "Usulután"),
@@ -1152,7 +1094,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (54, "Santa Elena"),
 (54, "Santa María");
 
-// Agregar departamentos de Nicaragua a la tabla departamentos
 
 INSERT INTO departamentos (id_pais, departamento) VALUES 
 (4, "Boaco"),
@@ -1173,7 +1114,6 @@ INSERT INTO departamentos (id_pais, departamento) VALUES
 (4, "RAAN"),
 (4, "RAAS");
 
-//Agregar municipios de Boaco a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (55, "Boaco"),
@@ -1183,7 +1123,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (55, "Santa Lucía"),
 (55, "Teustepe");
 
-//Agregar municipios de Carazo a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (56, "Jinotepe"),
@@ -1195,7 +1134,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (56, "San Marcos"),
 (56, "Santa Teresa");
 
-//Agregar municipios de Chinandega a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (57, "Chinandega"),
@@ -1211,7 +1149,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (57, "Somotillo"),
 (57, "Villa Nueva");
 
-//Agregar municipios de Chontales a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (58, "Juigalpa"),
@@ -1224,7 +1161,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (58, "Santo Tomás"),
 (58, "Villa Sandino");
 
-//Agregar municipios de Estelí a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (59, "Estelí"),
@@ -1234,7 +1170,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (59, "San Nicolás"),
 (59, "Pueblo Nuevo");
 
-//Agregar municipios de Granada a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (60, "Granada"),
@@ -1242,7 +1177,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (60, "Diriomo"),
 (60, "Nandaime")
 
-//Agregar municipios de Jinotega a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (61, "Jinotega"),
@@ -1253,7 +1187,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (61, "Santa María de Pantasma"),
 (61, "Wiwilí de Jinotega");
 
-//Agregar municipios de León a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (62, "León"),
@@ -1265,7 +1198,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (62, "Santa Rosa del Peñón"),
 (62, "Telica");
 
-//Agregar municipios de Madriz a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (63, "Somoto"),
@@ -1276,7 +1208,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (63, "San Lucas"),
 (63, "San Juan del Río Coco");
 
-//Agregar municipios de Managua a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (64, "Managua"),
@@ -1288,7 +1219,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (64, "Ticuantepe"),
 (64, "Villa El Carmen");
 
-//Agregar municipios de Masaya a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (65, "Masaya"),
@@ -1300,7 +1230,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (65, "San Juan de Oriente"),
 (65, "Tisma");
 
-//Agregar municipios de Matagalpa a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (66, "Matagalpa"),
@@ -1317,7 +1246,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (66, "Terrabona"),
 (66, "Tuma-La Dalia");
 
-//Agregar municipios de Nueva Segovia a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (67, "Ocotal"),
@@ -1332,7 +1260,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (67, "Santa María"),
 (67, "Wiwilí de Nueva Segovia");
 
-//Agregar municipios de Río San Juan a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (68, "San Carlos"),
@@ -1340,7 +1267,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (68, "Morrito"),
 (68, "San Juan del Norte");
 
-//Agregar municipios de Rivas a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (69, "Rivas"),
@@ -1354,7 +1280,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (69, "San Juan del Sur"),
 (69, "Tola");
 
-//Agregar municipios de RAAN a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (70, "Bilwi"),
@@ -1365,7 +1290,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (70, "Siuna"),
 (70, "Waslala");
 
-//Agregar municipios de RAAS a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (71, "Bluefields"),
@@ -1381,7 +1305,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (71, "Río Blanco"),
 (71, "San Juan del Norte");
 
-// Agregar departamentos de Costa Rica a la tabla departamentos
 
 INSERT INTO departamentos (id_pais, departamento) VALUES 
 (5, "Alajuela"),
@@ -1392,7 +1315,6 @@ INSERT INTO departamentos (id_pais, departamento) VALUES
 (5, "Puntarenas"),
 (5, "San José");
 
-//Agregar municipios de Alajuela a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (72, "Alajuela"),
@@ -1410,7 +1332,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (72, "Upala"),
 (72, "Zarcero");
 
-//Agregar municipios de Cartago a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (73, "Cartago"),
@@ -1422,7 +1343,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (73, "Paraíso"),
 (73, "Turrialba");
 
-//Agregar municipios de Guanacaste a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (74, "Liberia"),
@@ -1437,7 +1357,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (74, "Santa Cruz"),
 (74, "Tilarán");
 
-//Agregar municipios de Heredia a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (75, "Heredia"),
@@ -1451,7 +1370,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (75, "Santo Domingo"),
 (75, "Sarapiquí");
 
-//Agregar municipios de Limón a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (76, "Limón"),
@@ -1461,7 +1379,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (76, "Siquirres"),
 (76, "Talamanca");
 
-//Agregar municipios de Puntarenas a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (77, "Puntarenas"),
@@ -1477,7 +1394,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (77, "Parrita"),
 (77, "Quepos");
 
-//Agregar municipios de San José a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (78, "San José"),
@@ -1500,7 +1416,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (78, "Turrubares"),
 (78, "Vásquez de Coronado");
 
-// Agregar departamentos de Panamá a la tabla departamentos
 
 INSERT INTO departamentos (id_pais, departamento) VALUES 
 (6, "Bocas del Toro"),
@@ -1517,7 +1432,6 @@ INSERT INTO departamentos (id_pais, departamento) VALUES
 (6, "Guna Yala"),
 (6, "Ngäbe-Buglé");
 
-//Agregar municipios de Bocas del Toro a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (79, "Bocas del Toro"),
@@ -1529,7 +1443,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (79, "Isla Carenero"),
 (79, "Isla Solarte");
 
-//Agregar municipios de Coclé a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (80, "Penonomé"),
@@ -1539,7 +1452,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (80, "Olá"),
 (80, "Aguadulce");
 
-//Agregar municipios de Colón a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (81, "Colón"),
@@ -1548,7 +1460,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (81, "Portobelo"),
 (81, "Santa Isabel");
 
-//Agregar municipios de Chiriquí a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (82, "David"),
@@ -1565,7 +1476,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (82, "San Lorenzo"),
 (82, "Tierras Altas");
 
-//Agregar municipios de Darién a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (83, "La Palma"),
@@ -1574,7 +1484,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (83, "Santa Fe"),
 (83, "Yaviza");
 
-//Agregar municipios de Herrera a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (84, "Chitré"),
@@ -1585,7 +1494,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (84, "Pesé"),
 (84, "Santa María");
 
-//Agregar municipios de Los Santos a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (85, "Las Tablas"),
@@ -1596,7 +1504,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (85, "Pocrí"),
 (85, "Tonosí");
 
-//Agregar municipios de Panamá a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (86, "Panamá"),
@@ -1606,7 +1513,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (86, "San Miguelito"),
 (86, "Taboga");
 
-//Agregar municipios de Veraguas a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (87, "Santiago"),
@@ -1621,7 +1527,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (87, "Santa Fe"),
 (87, "Sona");
 
-//Agregar municipios de Panamá Oeste a la tabla municipios  
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (88, "La Chorrera"),
@@ -1630,18 +1535,15 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (88, "Chame"),
 (88, "San Carlos");
 
-//Agregar municipios de Emberá-Wounaan a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (89, "Distrito de Sambú"),
 (89, "Distrito de Cémaco");
 
-//Agregar municipios de Guna Yala a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (90, "Distrito de Guna Yala");
 
-//Agregar municipios de Ngäbe-Buglé a la tabla municipios
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (91, "Distrito de Kusapín"),

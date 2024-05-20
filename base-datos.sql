@@ -234,7 +234,7 @@ INSERT INTO etnias (etnia) VALUES
 ("Chorotega"),
 ("Nahoa-Niquirano"),
 ("Xia-Sutiaba"),
-("Meztizo Pacífico Central Norte")
+("Meztizo Pacífico Central Norte"),
 ("Otra");
 
 // Agregar lenguas a la tabla lenguas
@@ -306,3 +306,15 @@ INSERT INTO secciones (seccion) VALUES
 
 INSERT INTO centros (centro) VALUES 
 ("Instituto Nacional Reino de Suecia");
+
+// Agregar tutores a la tabla tutores_x_estudiantes
+
+INSERT INTO tutores_x_estudiantes (nombres, apellidos, cedula, telefono) VALUES 
+("Juan", "Perez", "123-456789-0000A", "1234-5678"),
+("Maria", "Gonzalez", "987-654321-0000A", "8765-4321");
+
+// Agregar estudiantes a la tabla estudiantes
+
+INSERT INTO estudiantes (nombres, apellidos, cedula, fecha_nacimiento, direccion, telefono, partida_nacimiento, fecha_matricula, barrio, peso, talla, territorio_indigena, comunidad_indigena, id_sexo, id_pais, id_departamento, id_municipio, id_nacionalidad, id_etnia, id_lengua, id_discapacidad, id_tutor_x_estudiante) VALUES 
+("Carlos David", "Gonzalez Briones", "123-456789-0000A", "2000-01-01", "Barrio San Judas", "1234-5678", "Partida de Nacimiento", "2020-01-01", "Barrio San Judas", 50, 1.70, "Territorio Indigena", "Comunidad Indigena", 1, 1, 1, 1, 1, 1, 1, 1, 1),
+("Maria José", "Perez Estrada", "987-654321-0000A", "2000-01-01", "Barrio San Judas", "1234-5678", "Partida de Nacimiento", "2020-01-01", "Barrio San Judas", 50, 1.70, "Territorio Indigena", "Comunidad Indigena", 2, 2, 2, 2, 2, 2, 2, 2, 2);
