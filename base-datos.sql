@@ -73,6 +73,11 @@ CREATE TABLE secciones (
     seccion CHAR(1) NOT NULL
 );
 
+CREATE TABLE modalidades (
+    id_modalidad INT PRIMARY KEY AUTO_INCREMENT,
+    modalidad VARCHAR(100) NOT NULL
+);
+
 CREATE TABLE tutores_x_estudiantes(
     id_tutor_x_estudiante INT PRIMARY KEY AUTO_INCREMENT,
     nombres VARCHAR(255) NOT NULL,
@@ -120,13 +125,14 @@ CREATE TABLE datos_academicos (
     codigo_estudiante VARCHAR(20) PRIMARY KEY,
     fecha_matricula DATE NOT NULL,
     nivel_educativo VARCHAR(255) NOT NULL,
-    modalidad VARCHAR(255) NOT NULL,
     repitente BOOLEAN DEFAULT FALSE,
+    modalidad INT,
     id_grado INT,
     id_seccion INT,
     id_turno INT,
     id_centro INT,
     id_estudiante INT,
+    FOREIGN KEY (modalidad) REFERENCES modalidades(id_modalidad),
     FOREIGN KEY (id_grado) REFERENCES grados(id_grado),
     FOREIGN KEY (id_seccion) REFERENCES secciones(id_seccion),
     FOREIGN KEY (id_turno) REFERENCES turnos(id_turno),
@@ -307,6 +313,12 @@ INSERT INTO secciones (seccion) VALUES
 INSERT INTO centros (centro) VALUES 
 ("Instituto Nacional Reino de Suecia");
 
+// Agregar modalidades a la tabla modalidades
+
+INSERT INTO modalidades (modalidad) VALUES 
+("Presencial"),
+("Virtual");
+
 // Agregar tutores a la tabla tutores_x_estudiantes
 
 INSERT INTO tutores_x_estudiantes (nombres, apellidos, cedula, telefono) VALUES 
@@ -318,3 +330,15 @@ INSERT INTO tutores_x_estudiantes (nombres, apellidos, cedula, telefono) VALUES
 INSERT INTO estudiantes (nombres, apellidos, cedula, fecha_nacimiento, direccion, telefono, partida_nacimiento, fecha_matricula, barrio, peso, talla, territorio_indigena, comunidad_indigena, id_sexo, id_pais, id_departamento, id_municipio, id_nacionalidad, id_etnia, id_lengua, id_discapacidad, id_tutor_x_estudiante) VALUES 
 ("Carlos David", "Gonzalez Briones", "123-456789-0000A", "2000-01-01", "Barrio San Judas", "1234-5678", 1, "2020-01-01", "Barrio San Judas", 50, 1.70, "Territorio Indigena", "Comunidad Indigena", 1, 1, 1, 1, 1, 1, 1, 1, 1),
 ("Maria José", "Perez Estrada", "987-654321-0000A", "2000-01-01", "Barrio San Judas", "1234-5678", 0, "2020-01-01", "Barrio San Judas", 50, 1.70, "Territorio Indigena", "Comunidad Indigena", 2, 2, 2, 2, 2, 2, 2, 2, 2);
+
+// Agregar datos academicos a la tabla datos_academicos
+
+INSERT INTO datos_academicos (codigo_estudiante, fecha_matricula, nivel_educativo, repitente, modalidad, id_grado, id_seccion, id_turno, id_centro, id_estudiante) VALUES 
+("1234567890000A20000101", "2020-01-01", "Secundaria", 0, 1, 1, 1, 1, 1, 1),
+("9876543210000A20000101", "2020-01-01", "Secundaria", 0, 1, 1, 1, 1, 1, 2);
+
+// Agregar traslados a la tabla traslados
+
+INSERT INTO traslados (motivo_traslado, fecha_traslado, codigo_estudiante, id_centro, id_periodo, id_estudiante) VALUES 
+("Cambio de Centro", "2020-01-01", "1234567890000A20000101", 1, 1, 1),
+("Cambio de Centro", "2020-01-01", "9876543210000A20000101", 1, 1, 2);
