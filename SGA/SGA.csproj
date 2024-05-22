@@ -79,40 +79,40 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="MBControl\panelRounded.cs" />
-    <Compile Include="PRESENTACION\Estudiantes.cs">
+    <Compile Include="Presentation\Estudiantes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PRESENTACION\Estudiantes.Designer.cs">
+    <Compile Include="Presentation\Estudiantes.Designer.cs">
       <DependentUpon>Estudiantes.cs</DependentUpon>
     </Compile>
-    <Compile Include="PRESENTACION\Form1.cs">
+    <Compile Include="Presentation\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PRESENTACION\Form1.Designer.cs">
+    <Compile Include="Presentation\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="PRESENTACION\Informacion.cs">
+    <Compile Include="Presentation\Informacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PRESENTACION\Informacion.Designer.cs">
+    <Compile Include="Presentation\Informacion.Designer.cs">
       <DependentUpon>Informacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="PRESENTACION\Datos Académicos.cs">
+    <Compile Include="Presentation\Datos Académicos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PRESENTACION\Datos Académicos.Designer.cs">
+    <Compile Include="Presentation\Datos Académicos.Designer.cs">
       <DependentUpon>Datos Académicos.cs</DependentUpon>
     </Compile>
-    <Compile Include="PRESENTACION\Login.cs">
+    <Compile Include="Presentation\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PRESENTACION\Login.Designer.cs">
+    <Compile Include="Presentation\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="PRESENTACION\Matrícula.cs">
+    <Compile Include="Presentation\Matrícula.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PRESENTACION\Matrícula.Designer.cs">
+    <Compile Include="Presentation\Matrícula.Designer.cs">
       <DependentUpon>Matrícula.cs</DependentUpon>
     </Compile>
     <Compile Include="MBControl\MBButton.cs">
@@ -129,37 +129,37 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PRESENTACION\Reingreso.cs">
+    <Compile Include="Presentation\Reingreso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PRESENTACION\Reingreso.Designer.cs">
+    <Compile Include="Presentation\Reingreso.Designer.cs">
       <DependentUpon>Reingreso.cs</DependentUpon>
     </Compile>
-    <Compile Include="PRESENTACION\Traslado.cs">
+    <Compile Include="Presentation\Traslado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PRESENTACION\Traslado.Designer.cs">
+    <Compile Include="Presentation\Traslado.Designer.cs">
       <DependentUpon>Traslado.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="MBControl\MBComboBox.resx">
       <DependentUpon>MBComboBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PRESENTACION\Estudiantes.resx">
+    <EmbeddedResource Include="Presentation\Estudiantes.resx">
       <DependentUpon>Estudiantes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PRESENTACION\Form1.resx">
+    <EmbeddedResource Include="Presentation\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PRESENTACION\Informacion.resx">
+    <EmbeddedResource Include="Presentation\Informacion.resx">
       <DependentUpon>Informacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PRESENTACION\Datos Académicos.resx">
+    <EmbeddedResource Include="Presentation\Datos Académicos.resx">
       <DependentUpon>Datos Académicos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PRESENTACION\Login.resx">
+    <EmbeddedResource Include="Presentation\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PRESENTACION\Matrícula.resx">
+    <EmbeddedResource Include="Presentation\Matrícula.resx">
       <DependentUpon>Matrícula.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MBControl\MBTexbox.resx">
@@ -175,10 +175,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="PRESENTACION\Reingreso.resx">
+    <EmbeddedResource Include="Presentation\Reingreso.resx">
       <DependentUpon>Reingreso.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PRESENTACION\Traslado.resx">
+    <EmbeddedResource Include="Presentation\Traslado.resx">
       <DependentUpon>Traslado.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -212,6 +212,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\OIP-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Connection\" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
