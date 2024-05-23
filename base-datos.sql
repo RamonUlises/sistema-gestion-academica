@@ -334,11 +334,11 @@ INSERT INTO estudiantes (nombres, apellidos, cedula, fecha_nacimiento, direccion
 // Agregar datos academicos a la tabla datos_academicos
 
 INSERT INTO datos_academicos (codigo_estudiante, fecha_matricula, nivel_educativo, repitente, modalidad, id_grado, id_seccion, id_turno, id_centro, id_estudiante) VALUES 
-("1234567890000A20000101", "2020-01-01", "Secundaria", 0, 1, 1, 1, 1, 1, 1),
-("9876543210000A20000101", "2020-01-01", "Secundaria", 0, 1, 1, 1, 1, 1, 2);
+("1234567890000A200001", "2020-01-01", "Secundaria", 0, 1, 1, 1, 1, 1, 1),
+("9876543210000A200001", "2020-01-01", "Secundaria", 0, 1, 1, 1, 1, 1, 2);
 
 // Agregar traslados a la tabla traslados
 
 INSERT INTO traslados (motivo_traslado, fecha_traslado, codigo_estudiante, id_centro, id_periodo, id_estudiante) VALUES 
-("Cambio de Centro", "2020-01-01", "1234567890000A20000101", 1, 1, 1),
-("Cambio de Centro", "2020-01-01", "9876543210000A20000101", 1, 1, 2);
+("Cambio de Centro", "2020-01-01", "1234567890000A200001", 1, 1, 1),
+("Cambio de Centro", "2020-01-01", "9876543210000A200001", 1, 1, 2);
