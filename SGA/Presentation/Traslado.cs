@@ -60,6 +60,7 @@ namespace SGA
             PanelHelper.SetRoundPanel(panel41, 10);
             PanelHelper.SetRoundPanel(panel42, 10);
             PanelHelper.SetRoundPanel(panel43, 10);
+            PanelHelper.SetRoundPanel(panel44, 10);
 
            
 
@@ -130,7 +131,7 @@ namespace SGA
         private void mbButton2_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            mbComboBox1.Visible = true;
+            cbTipotraslado.Visible = true;
             panel43.Visible = true;
         }
 
@@ -148,7 +149,7 @@ namespace SGA
         private void btnComprobanteTraslado_Click_3(object sender, EventArgs e)
         {
             showSubMenu(panel7);
-            mbComboBox1.Visible = false;
+            cbTipotraslado.Visible = false;
             panel43.Visible = false;
 
         }
@@ -158,6 +159,15 @@ namespace SGA
           
         }
 
-     
+        private void mbButton3_Click(object sender, EventArgs e)
+        {
+            txtCodigoUnicoEstudianteTraslado.Text = "";
+            txtNombresEstudianteTraslado.Text = "";
+            txtCentroOrigenTraslado.Text = "";
+            txtFechaTraslado.Text = "";
+            txtMotivoTaslado.Text = "";
+            cbPeriodoTraslado.SelectedItem = null;
+            cbTipotraslado.SelectedItem = null; 
+        }
     }
 }

@@ -1034,5 +1034,38 @@ namespace SGA
         {
 
         }
+
+        private void mbButton1_Click(object sender, EventArgs e)
+        {
+            txtCedulaMatricula.Text = "";
+            txt1NombreMatricula.Text = "";
+            txt2NombreMatricula.Text = "";
+            txt1ApellidoMatricula.Text = "";
+            txt2ApellidoMatricula.Text = "";
+            txtFechaNacimientoMatricula.Text = "";
+            chPartidaNacimeintoSi.Checked = false;
+            ChParitdaNacimientoNo.Checked = false;
+            chSexoFemMatricula.Checked = false;
+            chSexoMasMatricula.Checked = false;
+            txtPesoMatricula.Text = "";
+            txtTallaMatricula.Text = "";
+            txtTelefonoMatricula.Text = "";
+            cbPaisNacimentoMatricula.SelectedItem = null;
+            cbNacionalidadMatricula.SelectedItem = null;
+            txtDepartamentoMatricula.SelectedItem = null;
+            txtMuniciopioMatricula.SelectedItem = null;
+            txtBarrioMatricula.Text = "";
+            TxtDireccionMatricula.Text = "";
+            cbEtniaMatricula.SelectedItem = null;
+            txtComunidadIndigenaMatricula.Text = "";
+            txtTerritorioIndigenaMatricula.Text = "";
+            txtDiscapacidadMatricula.SelectedItem = null;
+            txtLenguaMaternaMatricula.SelectedItem = null;
+            txtNombresApellidosTutorMatricula.Text = "";
+            txtCedulaTutorMatricula.Text = "";
+            txtTelefonoTutorMatricula.Text = "";
+            txtCodigoEstudianteSINFOMtricula.Text = "";
+
+        }
     }
 }

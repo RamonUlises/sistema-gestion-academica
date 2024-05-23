@@ -138,5 +138,19 @@ namespace SGA
         {
 
         }
+
+        private void mbButton2_Click(object sender, EventArgs e)
+        {
+            txtCodigoAlumnoReingreso.Text = "";
+            txtNombresAlumnoReingreso.Text = "";
+            txtCodigoUnicoReingreso.Text = "";
+            txtCodigoCentroReingreso.Text = "";
+            txtCentroReingreso.Text = "";
+            mbModalidadReingreso.SelectedItem = null;
+            cbTurnoReingreso.SelectedItem = null;
+            cbGradoReingreso.SelectedItem = null;
+            cbSeccionReingreso.SelectedItem = null;
+
+        }
     }
 }

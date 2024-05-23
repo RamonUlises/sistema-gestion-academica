@@ -61,6 +61,7 @@ namespace SGA.PRESENTACION
             cbGradoDatosAcademicos.Items.Add("9");
             cbGradoDatosAcademicos.Items.Add("10");
             cbGradoDatosAcademicos.Items.Add("11");
+          
 
             cbSeccionDatosAcademicos.Items.Add("A");
             cbSeccionDatosAcademicos.Items.Add("B");
@@ -68,6 +69,7 @@ namespace SGA.PRESENTACION
             cbSeccionDatosAcademicos.Items.Add("D");
             cbSeccionDatosAcademicos.Items.Add("E");
             cbSeccionDatosAcademicos.Items.Add("F");
+        
 
             cbTurnoDatosAcademicos.Items.Add("Matutino");
             cbTurnoDatosAcademicos.Items.Add("Vespertino");
@@ -76,9 +78,11 @@ namespace SGA.PRESENTACION
             cbTurnoDatosAcademicos.Items.Add("Dominical");
             cbTurnoDatosAcademicos.Items.Add("Diurno");
             cbTurnoDatosAcademicos.Items.Add("Quincenal");
+         
 
             cbModalidadDatosAcademicos.Items.Add("Presencial");
             cbModalidadDatosAcademicos.Items.Add("Virtual");
+          
         }
         private void customizarDiseno()
         {
@@ -223,6 +227,21 @@ namespace SGA.PRESENTACION
 
         private void panel18_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void mbButton4_Click(object sender, EventArgs e)
+        {
+         
+            txtCodigoEstudianteDatosAcademicos.Text = "";
+            txtNombreCentroDatosAcademicos.Text = "";
+            txtNivelEducativoDatosAcademicos.Text = "";
+            cbModalidadDatosAcademicos.SelectedItem = null;
+            cbTurnoDatosAcademicos.SelectedItem = null;
+            cbGradoDatosAcademicos.SelectedItem = null;
+            cbSeccionDatosAcademicos.SelectedItem = null;
+            chRepitenteSiDatosAcademicos.Checked = false;
+            chRepitenteNODatosAcademicos.Checked = false;
 
         }
     }

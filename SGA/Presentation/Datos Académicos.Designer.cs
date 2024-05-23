@@ -115,6 +115,7 @@
             this.txtCodigoEstudianteDatosAcademicos = new SGA.MBControl.MBTexbox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
+            this.mbButton4 = new SGA.MBControl.MBButton();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -210,6 +211,7 @@
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.txtFechaMatriculaEstudianteDatosAcademicos);
             this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.mbButton4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -254,9 +256,9 @@
             this.panel12.Controls.Add(this.panel14);
             this.panel12.Controls.Add(this.panel13);
             this.panel12.Controls.Add(this.mbButton2);
-            this.panel12.Location = new System.Drawing.Point(86, 27);
+            this.panel12.Location = new System.Drawing.Point(86, 3);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(1473, 1049);
+            this.panel12.Size = new System.Drawing.Size(1473, 1073);
             this.panel12.TabIndex = 1;
             this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
             // 
@@ -947,7 +949,7 @@
             this.mbButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.mbButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mbButton1.ForeColor = System.Drawing.Color.White;
-            this.mbButton1.Location = new System.Drawing.Point(836, 528);
+            this.mbButton1.Location = new System.Drawing.Point(913, 524);
             this.mbButton1.Name = "mbButton1";
             this.mbButton1.Size = new System.Drawing.Size(172, 55);
             this.mbButton1.TabIndex = 115;
@@ -968,7 +970,7 @@
             this.btnGuardarDatosAcademicos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnGuardarDatosAcademicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarDatosAcademicos.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarDatosAcademicos.Location = new System.Drawing.Point(643, 528);
+            this.btnGuardarDatosAcademicos.Location = new System.Drawing.Point(720, 524);
             this.btnGuardarDatosAcademicos.Name = "btnGuardarDatosAcademicos";
             this.btnGuardarDatosAcademicos.Size = new System.Drawing.Size(172, 55);
             this.btnGuardarDatosAcademicos.TabIndex = 114;
@@ -1344,6 +1346,27 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "Código del Estudiante:";
             // 
+            // mbButton4
+            // 
+            this.mbButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.mbButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.mbButton4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.mbButton4.BorderRadius = 40;
+            this.mbButton4.BorderSize = 1;
+            this.mbButton4.FlatAppearance.BorderSize = 0;
+            this.mbButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.mbButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.mbButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mbButton4.ForeColor = System.Drawing.Color.White;
+            this.mbButton4.Location = new System.Drawing.Point(524, 524);
+            this.mbButton4.Name = "mbButton4";
+            this.mbButton4.Size = new System.Drawing.Size(172, 55);
+            this.mbButton4.TabIndex = 116;
+            this.mbButton4.Text = "Limpiar";
+            this.mbButton4.TextColor = System.Drawing.Color.White;
+            this.mbButton4.UseVisualStyleBackColor = false;
+            this.mbButton4.Click += new System.EventHandler(this.mbButton4_Click);
+            // 
             // Datos_académicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1496,5 +1519,6 @@
         private MBControl.MBTexbox txtTurnoComprobante;
         private MBControl.MBTexbox txtSeccionComprobante;
         private MBControl.MBTexbox txtMunicipioComprobante;
+        private MBControl.MBButton mbButton4;
     }
 }
