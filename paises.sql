@@ -64,8 +64,8 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (2, "Cubulco"),
 (2, "Granados"),
 (2, "Santa CRuz el Chol"),
-(2, "Santa Marìa Visitaciòn");
-(2, "San Miguel Chicaj");
+(2, "Santa Marìa Visitaciòn"),
+(2, "San Miguel Chicaj"),
 (2, "Rabinal");
 
 
@@ -102,7 +102,7 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (5, "San Agustín Acasaguastlán"),
 (5, "San Cristóbal Acasaguastlán"),
 (5, "El Jícaro"),
-(5, "Sansare"),
+(5, "Sansare");
 
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
@@ -115,8 +115,8 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (6, "Guanagazapa"),
 (6, "San José"),
 (6, "Palín"),
-(6, "San Vicente Pacaya");
-(6, "Nueva Concepciòn");
+(6, "San Vicente Pacaya"),
+(6, "Nueva Concepciòn"),
 (6, "Siquinalá");
 
 
@@ -716,7 +716,7 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (37, "San Francisco de Becerra"),
 (37, "San Francisco de la Paz"),
 (37, "Santa María del Real"),
-(37, "Silca");
+(37, "Silca"),
 (37, "Yocón");
 
 
@@ -1175,7 +1175,7 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (60, "Granada"),
 (60, "Diriá"),
 (60, "Diriomo"),
-(60, "Nandaime")
+(60, "Nandaime");
 
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
