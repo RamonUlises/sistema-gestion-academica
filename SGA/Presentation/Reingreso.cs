@@ -50,7 +50,26 @@ namespace SGA
         }
         private void btnGuardarReingreso_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Reingreso Exitoso");
+            ClassReingreso reingreso = new ClassReingreso();
+            reingreso.CodigoAlumno = txtCodigoAlumnoReingreso.Text;
+            reingreso.NombreAlumno = txtNombresAlumnoReingreso.Text;
+            reingreso.CodigoUnico = txtCodigoUnicoReingreso.Text;
+            reingreso.CodigoCentro = txtCodigoCentroReingreso.Text;
+            reingreso.Centro = txtCentroReingreso.Text;
+            reingreso.Modalidad = mbModalidadReingreso.Texts;
+            reingreso.Turno = cbTurnoReingreso.Texts;
+            reingreso.Grado = cbGradoReingreso.Texts;
+            reingreso.Seccion = cbSeccionReingreso.Texts;
+
+            var validacion = reingreso.ValidarEspacios();
+
+            if (!validacion.result)
+            {
+                MessageBox.Show(validacion.message);
+                return;
+            }
+            
+            MessageBox.Show("Reingreso Exioso");
         }
         private void customizarDiseno()
         {
@@ -115,6 +134,9 @@ namespace SGA
 
         }
 
+        private void mbButton4_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

@@ -112,7 +112,7 @@ namespace SGA.Clases
             
             if (this.Barrio.Length == 0)
             {
-               return Validation(false, "El barrio es requerida");
+               return Validation(false, "El barrio es requerido");
             } 
 
             if (this.Direccion.Length == 0)

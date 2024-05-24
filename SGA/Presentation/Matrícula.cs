@@ -185,15 +185,15 @@ namespace SGA
             // VALIDAR ESPACIOS VACIOS
             estudiante.Pais = cbPaisNacimentoMatricula.Texts;
             estudiante.Nacionalidad = cbNacionalidadMatricula.Texts;
-            estudiante.Departamento = txtDepartamentoMatricula.Text;
-            estudiante.Municipio = txtMuniciopioMatricula.Text;
+            estudiante.Departamento = txtDepartamentoMatricula.Texts;
+            estudiante.Municipio = txtMuniciopioMatricula.Texts;
             estudiante.Barrio = txtBarrioMatricula.Text;
             estudiante.Direccion = TxtDireccionMatricula.Text;
             estudiante.Etnia = cbEtniaMatricula.Texts;
             estudiante.ComunidadIndigena = txtComunidadIndigenaMatricula.Text;
             estudiante.TerritorioIndigena = txtTerritorioIndigenaMatricula.Text;
-            estudiante.Discapacidad = txtDiscapacidadMatricula.Text;
-            estudiante.Lengua = txtLenguaMaternaMatricula.Text;
+            estudiante.Discapacidad = txtDiscapacidadMatricula.Texts;
+            estudiante.Lengua = txtLenguaMaternaMatricula.Texts;
             estudiante.NombresTutor = txtNombresApellidosTutorMatricula.Text;
             estudiante.CedulaTutor = txtCedulaTutorMatricula.Text;
             estudiante.TelefonoTutor = txtTelefonoTutorMatricula.Text;

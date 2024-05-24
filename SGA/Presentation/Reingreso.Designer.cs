@@ -89,7 +89,6 @@
             this.cbGradoReingreso = new SGA.MBControl.MBComboBox();
             this.cbSeccionReingreso = new SGA.MBControl.MBComboBox();
             this.cbTurnoReingreso = new SGA.MBControl.MBComboBox();
-            this.txtModalidadreingreso = new SGA.MBControl.MBTexbox();
             this.txtCentroReingreso = new SGA.MBControl.MBTexbox();
             this.txtCodigoCentroReingreso = new SGA.MBControl.MBTexbox();
             this.btnBuscarCodigoAlumnoReingreso = new SGA.MBControl.MBButton();
@@ -98,6 +97,7 @@
             this.txtCodigoUnicoReingreso = new SGA.MBControl.MBTexbox();
             this.txtNombresAlumnoReingreso = new SGA.MBControl.MBTexbox();
             this.txtCodigoAlumnoReingreso = new SGA.MBControl.MBTexbox();
+            this.mbModalidadReingreso = new SGA.MBControl.MBComboBox();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -130,7 +130,6 @@
             this.panel1.Controls.Add(this.panel12);
             this.panel1.Controls.Add(this.cbTurnoReingreso);
             this.panel1.Controls.Add(this.panel9);
-            this.panel1.Controls.Add(this.txtModalidadreingreso);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.txtCentroReingreso);
             this.panel1.Controls.Add(this.panel7);
@@ -147,6 +146,7 @@
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.txtCodigoAlumnoReingreso);
             this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.mbModalidadReingreso);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -183,7 +183,7 @@
             this.panel11.Controls.Add(this.panel22);
             this.panel11.Location = new System.Drawing.Point(105, 12);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1427, 754);
+            this.panel11.Size = new System.Drawing.Size(1434, 754);
             this.panel11.TabIndex = 151;
             // 
             // panel26
@@ -761,6 +761,7 @@
             this.mbButton4.Text = "Imprimir";
             this.mbButton4.TextColor = System.Drawing.Color.White;
             this.mbButton4.UseVisualStyleBackColor = false;
+            this.mbButton4.Click += new System.EventHandler(this.mbButton4_Click);
             // 
             // mbTexbox4
             // 
@@ -881,27 +882,6 @@
             this.cbTurnoReingreso.Size = new System.Drawing.Size(200, 30);
             this.cbTurnoReingreso.TabIndex = 147;
             this.cbTurnoReingreso.Texts = "";
-            // 
-            // txtModalidadreingreso
-            // 
-            this.txtModalidadreingreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtModalidadreingreso.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtModalidadreingreso.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtModalidadreingreso.BorderRadius = 25;
-            this.txtModalidadreingreso.BorderSize = 1;
-            this.txtModalidadreingreso.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtModalidadreingreso.ForeColor = System.Drawing.Color.Black;
-            this.txtModalidadreingreso.Location = new System.Drawing.Point(596, 440);
-            this.txtModalidadreingreso.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtModalidadreingreso.Multiline = false;
-            this.txtModalidadreingreso.Name = "txtModalidadreingreso";
-            this.txtModalidadreingreso.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtModalidadreingreso.PasswordChar = false;
-            this.txtModalidadreingreso.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtModalidadreingreso.PlaceholderText = "";
-            this.txtModalidadreingreso.Size = new System.Drawing.Size(167, 38);
-            this.txtModalidadreingreso.TabIndex = 145;
-            this.txtModalidadreingreso.UnderlineStyle = false;
             // 
             // txtCentroReingreso
             // 
@@ -1070,6 +1050,25 @@
             this.txtCodigoAlumnoReingreso.TabIndex = 117;
             this.txtCodigoAlumnoReingreso.UnderlineStyle = false;
             // 
+            // mbModalidadReingreso
+            // 
+            this.mbModalidadReingreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.mbModalidadReingreso.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.mbModalidadReingreso.BorderSize = 1;
+            this.mbModalidadReingreso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.mbModalidadReingreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.mbModalidadReingreso.ForeColor = System.Drawing.Color.Black;
+            this.mbModalidadReingreso.IconColor = System.Drawing.Color.Black;
+            this.mbModalidadReingreso.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.mbModalidadReingreso.ListTextColor = System.Drawing.Color.Black;
+            this.mbModalidadReingreso.Location = new System.Drawing.Point(596, 445);
+            this.mbModalidadReingreso.MinimumSize = new System.Drawing.Size(200, 30);
+            this.mbModalidadReingreso.Name = "mbModalidadReingreso";
+            this.mbModalidadReingreso.Padding = new System.Windows.Forms.Padding(1);
+            this.mbModalidadReingreso.Size = new System.Drawing.Size(218, 30);
+            this.mbModalidadReingreso.TabIndex = 152;
+            this.mbModalidadReingreso.Texts = "";
+            // 
             // Reingreso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1137,7 +1136,6 @@
         private MBControl.MBComboBox cbTurnoReingreso;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label6;
-        private MBControl.MBTexbox txtModalidadreingreso;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label5;
         private MBControl.MBTexbox txtCentroReingreso;
@@ -1198,5 +1196,6 @@
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Label label20;
         private MBControl.MBButton mbButton5;
+        private MBControl.MBComboBox mbModalidadReingreso;
     }
 }
