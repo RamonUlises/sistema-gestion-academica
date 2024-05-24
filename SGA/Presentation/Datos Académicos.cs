@@ -175,11 +175,11 @@ namespace SGA.PRESENTACION
             datosAcademicos.NivelEducativo = txtNivelEducativoDatosAcademicos.Text;
             datosAcademicos.Modalidad = cbModalidadDatosAcademicos.Texts;
             datosAcademicos.Turno = cbTurnoDatosAcademicos.Texts;
-            datosAcademicos.Grado = cbGradoDatosAcademicos.Text;
-            datosAcademicos.Seccion = cbSeccionDatosAcademicos.Text;
+            datosAcademicos.Grado = cbGradoDatosAcademicos.Texts;
+            datosAcademicos.Seccion = cbSeccionDatosAcademicos.Texts;
 
-            ValidarResultados validarResultados = datosAcademicos.ValidarCamposVacios();
-            if (validarResultados != null)
+            var validarResultados = datosAcademicos.ValidarCamposVacios();
+            if (validarResultados.result == false)
             {
                 MessageBox.Show(validarResultados.message);
                 return;
