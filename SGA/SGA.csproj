@@ -126,6 +126,7 @@
     <Compile Include="Clases\ClassEstudiantes.cs" />
     <Compile Include="Clases\ClassDatosAcademicos.cs" />
     <Compile Include="Clases\ClassReingreso.cs" />
+    <Compile Include="Clases\ClassTraslado.cs" />
     <Compile Include="Clases\ValidarResultados.cs" />
     <Compile Include="Connection\DB_Connection.cs" />
     <Compile Include="MBControl\panelOpacity.cs">
