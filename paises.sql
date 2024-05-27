@@ -30,9 +30,7 @@ INSERT INTO departamentos (id_pais, departamento) VALUES
 (1, "Santa Rosa"),
 (1, "Sololá"),
 (1, "Suchitepéquez"),
-(1, "Totonicapán"),
-(1, "Zacapa");
-
+(1, "Totonicapán");
 
 INSERT INTO municipios (id_departamento, municipio) VALUES 
 (1, "Cobán"),
@@ -417,8 +415,6 @@ INSERT INTO municipios (id_departamento, municipio) VALUES
 (22, "Huite"),
 (22, "San Diego"),
 (22, "La Unión");
-
-
 
 INSERT INTO departamentos (id_pais, departamento) VALUES 
 (2, "Atlántida"),
