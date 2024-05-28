@@ -1,4 +1,5 @@
-﻿using SGA.MBControl;
+﻿using SGA.Clases;
+using SGA.MBControl;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -168,6 +169,27 @@ namespace SGA
             txtMotivoTaslado.Text = "";
             cbPeriodoTraslado.SelectedItem = null;
             cbTipotraslado.SelectedItem = null; 
+        }
+
+
+        private void btnGuardartraslado_Click_1(object sender, EventArgs e)
+        {
+            ClassTraslado traslado = new ClassTraslado();
+            traslado.CodigoEstudiante = txtCodigoUnicoEstudianteTraslado.Text;
+            traslado.NombresEstudiante = txtNombresEstudianteTraslado.Text;
+            traslado.FechaTraslado = txtFechaTraslado.Text;
+            traslado.CentroOrigen = txtCentroOrigenTraslado.Text;
+            traslado.PeriodoTraslado = cbPeriodoTraslado.Text;
+
+            var response = traslado.ValidarCampos();
+
+            if (!response.result)
+            {
+                MessageBox.Show(response.message);
+                return;
+            }
+
+            MessageBox.Show("Traslado guardado correctamente");
         }
     }
 }

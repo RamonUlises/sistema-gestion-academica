@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Traslado));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel43 = new System.Windows.Forms.Panel();
-            this.label51 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label50 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
@@ -125,7 +123,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.mbButton3 = new SGA.MBControl.MBButton();
+            this.panel43 = new System.Windows.Forms.Panel();
+            this.label51 = new System.Windows.Forms.Label();
+            this.panel44 = new System.Windows.Forms.Panel();
+            this.label52 = new System.Windows.Forms.Label();
             this.mbButton2 = new SGA.MBControl.MBButton();
             this.mbTexbox23 = new SGA.MBControl.MBTexbox();
             this.mbTexbox22 = new SGA.MBControl.MBTexbox();
@@ -173,10 +174,8 @@
             this.txtNombresEstudianteTraslado = new SGA.MBControl.MBTexbox();
             this.txtCodigoUnicoEstudianteTraslado = new SGA.MBControl.MBTexbox();
             this.cbTipotraslado = new SGA.MBControl.MBComboBox();
-            this.panel44 = new System.Windows.Forms.Panel();
-            this.label52 = new System.Windows.Forms.Label();
+            this.mbButton3 = new SGA.MBControl.MBButton();
             this.panel1.SuspendLayout();
-            this.panel43.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel41.SuspendLayout();
             this.panel42.SuspendLayout();
@@ -218,6 +217,7 @@
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel43.SuspendLayout();
             this.panel44.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -251,25 +251,6 @@
             this.panel1.Size = new System.Drawing.Size(1664, 902);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // panel43
-            // 
-            this.panel43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel43.Controls.Add(this.label51);
-            this.panel43.Location = new System.Drawing.Point(419, 540);
-            this.panel43.Name = "panel43";
-            this.panel43.Size = new System.Drawing.Size(279, 45);
-            this.panel43.TabIndex = 152;
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(20, 9);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(125, 20);
-            this.label51.TabIndex = 0;
-            this.label51.Text = "Tipo de Traslado:";
             // 
             // panel7
             // 
@@ -350,9 +331,9 @@
             this.panel7.Controls.Add(this.label17);
             this.panel7.Controls.Add(this.label18);
             this.panel7.Controls.Add(this.panel17);
-            this.panel7.Location = new System.Drawing.Point(148, 35);
+            this.panel7.Location = new System.Drawing.Point(148, 695);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1391, 2324);
+            this.panel7.Size = new System.Drawing.Size(1391, 1664);
             this.panel7.TabIndex = 145;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
@@ -1256,26 +1237,43 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Código único de Estudiante:";
             // 
-            // mbButton3
+            // panel43
             // 
-            this.mbButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.mbButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.mbButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.mbButton3.BorderRadius = 40;
-            this.mbButton3.BorderSize = 1;
-            this.mbButton3.FlatAppearance.BorderSize = 0;
-            this.mbButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.mbButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.mbButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mbButton3.ForeColor = System.Drawing.Color.White;
-            this.mbButton3.Location = new System.Drawing.Point(513, 634);
-            this.mbButton3.Name = "mbButton3";
-            this.mbButton3.Size = new System.Drawing.Size(172, 55);
-            this.mbButton3.TabIndex = 154;
-            this.mbButton3.Text = "Limpiar";
-            this.mbButton3.TextColor = System.Drawing.Color.White;
-            this.mbButton3.UseVisualStyleBackColor = false;
-            this.mbButton3.Click += new System.EventHandler(this.mbButton3_Click);
+            this.panel43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel43.Controls.Add(this.label51);
+            this.panel43.Location = new System.Drawing.Point(419, 540);
+            this.panel43.Name = "panel43";
+            this.panel43.Size = new System.Drawing.Size(279, 45);
+            this.panel43.TabIndex = 152;
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(20, 9);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(125, 20);
+            this.label51.TabIndex = 0;
+            this.label51.Text = "Tipo de Traslado:";
+            // 
+            // panel44
+            // 
+            this.panel44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel44.Controls.Add(this.label52);
+            this.panel44.Location = new System.Drawing.Point(148, 91);
+            this.panel44.Name = "panel44";
+            this.panel44.Size = new System.Drawing.Size(1278, 60);
+            this.panel44.TabIndex = 156;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(532, 19);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(257, 23);
+            this.label52.TabIndex = 0;
+            this.label52.Text = "Datos de traslado del Estudiante";
             // 
             // mbButton2
             // 
@@ -2164,6 +2162,7 @@
             this.btnGuardartraslado.Text = "Guardar";
             this.btnGuardartraslado.TextColor = System.Drawing.Color.White;
             this.btnGuardartraslado.UseVisualStyleBackColor = false;
+            this.btnGuardartraslado.Click += new System.EventHandler(this.btnGuardartraslado_Click_1);
             // 
             // cbPeriodoTraslado
             // 
@@ -2266,24 +2265,26 @@
             this.cbTipotraslado.TabIndex = 153;
             this.cbTipotraslado.Texts = "";
             // 
-            // panel44
+            // mbButton3
             // 
-            this.panel44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel44.Controls.Add(this.label52);
-            this.panel44.Location = new System.Drawing.Point(148, 91);
-            this.panel44.Name = "panel44";
-            this.panel44.Size = new System.Drawing.Size(1278, 60);
-            this.panel44.TabIndex = 156;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(532, 19);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(257, 23);
-            this.label52.TabIndex = 0;
-            this.label52.Text = "Datos de traslado del Estudiante";
+            this.mbButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.mbButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.mbButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.mbButton3.BorderRadius = 40;
+            this.mbButton3.BorderSize = 1;
+            this.mbButton3.FlatAppearance.BorderSize = 0;
+            this.mbButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.mbButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.mbButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mbButton3.ForeColor = System.Drawing.Color.White;
+            this.mbButton3.Location = new System.Drawing.Point(513, 634);
+            this.mbButton3.Name = "mbButton3";
+            this.mbButton3.Size = new System.Drawing.Size(172, 55);
+            this.mbButton3.TabIndex = 154;
+            this.mbButton3.Text = "Limpiar";
+            this.mbButton3.TextColor = System.Drawing.Color.White;
+            this.mbButton3.UseVisualStyleBackColor = false;
+            this.mbButton3.Click += new System.EventHandler(this.mbButton3_Click);
             // 
             // Traslado
             // 
@@ -2296,8 +2297,6 @@
             this.Text = "Traslado";
             this.Load += new System.EventHandler(this.Traslado_Load);
             this.panel1.ResumeLayout(false);
-            this.panel43.ResumeLayout(false);
-            this.panel43.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel41.ResumeLayout(false);
@@ -2380,6 +2379,8 @@
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel43.ResumeLayout(false);
+            this.panel43.PerformLayout();
             this.panel44.ResumeLayout(false);
             this.panel44.PerformLayout();
             this.ResumeLayout(false);

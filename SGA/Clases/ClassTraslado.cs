@@ -16,19 +16,19 @@ namespace SGA.Clases
 
         public ValidarResultados ValidarCampos(){
             if(CodigoEstudiante.Length == 0){
-                return Validation(false, "El campo Codigo Estudiante no puede estar vacio");
+                return Validation(false, "El campo codigo estudiante no puede estar vacio");
             }
             if(NombresEstudiante.Length == 0){
-                return Validation(false, "El campo Nombres Estudiante no puede estar vacio");
+                return Validation(false, "El campo nombres estudiante no puede estar vacio");
             }
             if(FechaTraslado.Length == 0){
-                return Validation(false, "El campo Fecha Traslado no puede estar vacio");
+                return Validation(false, "El campo fecha traslado no puede estar vacio");
             }
             if(CentroOrigen.Length == 0){
-                return Validation(false, "El campo Centro Origen no puede estar vacio");
+                return Validation(false, "El campo centro origen no puede estar vacio");
             }
             if(PeriodoTraslado.Length == 0){
-                return Validation(false, "El campo Periodo Traslado no puede estar vacio");
+                return Validation(false, "El campo periodo Traslado no puede estar vacio");
             }
 
             return Validation(true, "Campos validados correctamente");
