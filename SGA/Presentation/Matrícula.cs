@@ -1,4 +1,5 @@
 ﻿using SGA.Clases;
+using SGA.Connection;
 using SGA.MBControl;
 using SGA.PRESENTACION;
 using System;
@@ -12,6 +13,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using MySql.Data.MySqlClient;
 
 namespace SGA
 {
@@ -55,6 +57,182 @@ namespace SGA
             DateTime fecha = DateTime.Now;
             txtFechaMatricula.Text = fecha.ToString("dd-MM-yyyy");
 
+            LlenarPaises();
+
+            cbPaisNacimentoMatricula.OnSelectedIndexChanged += new EventHandler(cbPaisNacimentoMatricula_SelectedIndexChanged);
+
+            txtDepartamentoMatricula.Enabled = false;
+            txtDepartamentoMatricula.Items.Clear();
+
+            txtDepartamentoMatricula.OnSelectedIndexChanged += new EventHandler(txtDepartamentoMatricula_SelectedIndexChanged);
+
+            txtMuniciopioMatricula.Enabled = false;
+            txtMuniciopioMatricula.Items.Clear();
+        }
+
+        public void txtDepartamentoMatricula_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DB_Connection connection = new DB_Connection();
+            try
+            {
+                using (MySqlConnection conn = connection.GetConnection())
+                {
+                    string departamentoSelect = txtDepartamentoMatricula.Texts;
+                    string query = "SELECT id_departamento FROM departamentos WHERE departamento = '" + departamentoSelect + "'";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        reader.Read();
+                        int departamento = int.Parse(reader["id_departamento"].ToString());
+
+                        LlenarMunicipios(departamento);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los municipios: " + ex.Message);
+            }
+            finally
+            {
+                connection.CloseConnection();
+            }
+        }
+
+        public void LlenarMunicipios(int departamento)
+        {
+            DB_Connection connection = new DB_Connection();
+            try
+            {
+                using (MySqlConnection conn = connection.GetConnection())
+                {
+                    string query = "SELECT municipio FROM municipios WHERE id_departamento = '" + departamento + "'";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        txtMuniciopioMatricula.Items.Clear();
+                        while (reader.Read())
+                        {
+                            txtMuniciopioMatricula.Items.Add(reader["municipio"].ToString());
+                            txtMuniciopioMatricula.Enabled = true;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los municipios: " + ex.Message);
+            }
+            finally
+            {
+                connection.CloseConnection();
+            }
+        }
+
+        public void cbPaisNacimentoMatricula_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DB_Connection connection = new DB_Connection();
+            try
+            {
+                using (MySqlConnection conn = connection.GetConnection())
+                {
+                    int pais = ObtenerPais();
+                    LlenarDepartamentos(pais);
+                    LlenarNacionalidad(pais);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar las nacionalidades: " + ex.Message);
+            }
+            finally
+            {
+                connection.CloseConnection();
+            }
+        }   
+        public void LlenarDepartamentos(int pais)
+        {
+            DB_Connection connection = new DB_Connection();
+            try
+            {
+                using (MySqlConnection conn = connection.GetConnection())
+                {
+                    string query = "SELECT departamento FROM departamentos WHERE id_pais = '" + pais + "'";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        txtDepartamentoMatricula.Items.Clear();
+                        while (reader.Read())
+                        {
+                            txtDepartamentoMatricula.Items.Add(reader["departamento"].ToString());
+                            txtDepartamentoMatricula.Enabled = true;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los departamentos: " + ex.Message);
+            }
+            finally
+            {
+                connection.CloseConnection();
+            }
+        }
+        public void LlenarNacionalidad(int pais)
+        {
+            DB_Connection connection = new DB_Connection();
+            try
+            {
+                using (MySqlConnection conn = connection.GetConnection())
+                {
+                    string query = "SELECT nacionalidad FROM nacionalidades WHERE id_pais = '" + pais + "'";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        reader.Read();
+                        cbNacionalidadMatricula.Texts = reader["nacionalidad"].ToString();                  
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar las nacionalidades: " + ex.Message);
+            }
+            finally
+            {
+                connection.CloseConnection();
+            }
+        }       
+        public void LlenarPaises()
+        {
+           DB_Connection connection = new DB_Connection();
+            try
+            {
+                using (MySqlConnection conn = connection.GetConnection())
+                {
+                string query = "SELECT * FROM paises";
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            cbPaisNacimentoMatricula.Items.Add(reader["pais"].ToString());
+                        }
+                    }
+                }
+            } catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los paises: " + ex.Message);
+            } finally
+            {
+                connection.CloseConnection();
+            }
         }
         public string checkedPartidaNacimiento()
         {
@@ -239,6 +417,33 @@ namespace SGA
             MessageBox.Show("Estudiante matriculado correctamente");
         }
 
+        public int ObtenerPais()
+        {
+            DB_Connection connection = new DB_Connection();
+
+            try
+            {
+                using(MySqlConnection conn = connection.GetConnection())
+                {
+                    string paisSelect = cbPaisNacimentoMatricula.Texts;
+                    string query = "SELECT id_pais FROM paises WHERE pais = '" + paisSelect + "'";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                    using(MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        reader.Read();
+                        return int.Parse(reader["id_pais"].ToString());
+                    }
+                }   
+            } catch (Exception ex)
+            {
+                MessageBox.Show("Error al obtener el país: " + ex.Message);
+                return 0;
+            } finally
+            {
+                connection.CloseConnection();
+            }
+        }
         private void Matrícula_Load(object sender, EventArgs e)
         {
 
@@ -827,7 +1032,7 @@ namespace SGA
 
         private void cbPaisNacimentoMatricula_OnSelectedIndexChanged_1(object sender, EventArgs e)
         {
-
+            
         }
 
         private void panel24_Paint_1(object sender, PaintEventArgs e)

@@ -29,67 +29,95 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.mbButton1 = new SGA.MBControl.MBButton();
+            this.txtDiscapacidadMatricula = new SGA.MBControl.MBComboBox();
+            this.txtDepartamentoMatricula = new SGA.MBControl.MBComboBox();
+            this.txtMuniciopioMatricula = new SGA.MBControl.MBComboBox();
+            this.txtLenguaMaternaMatricula = new SGA.MBControl.MBComboBox();
+            this.txtCodigoEstudianteSINFOMtricula = new SGA.MBControl.MBTexbox();
             this.panel30 = new System.Windows.Forms.Panel();
             this.label38 = new System.Windows.Forms.Label();
+            this.txtTelefonoTutorMatricula = new SGA.MBControl.MBTexbox();
             this.panel29 = new System.Windows.Forms.Panel();
             this.label37 = new System.Windows.Forms.Label();
+            this.txtCedulaTutorMatricula = new SGA.MBControl.MBTexbox();
             this.panel28 = new System.Windows.Forms.Panel();
             this.label36 = new System.Windows.Forms.Label();
             this.panel27 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
+            this.txtNombresApellidosTutorMatricula = new SGA.MBControl.MBTexbox();
             this.panel44 = new System.Windows.Forms.Panel();
             this.label52 = new System.Windows.Forms.Label();
+            this.btnGuardarMatricula = new SGA.MBControl.MBButton();
             this.panel26 = new System.Windows.Forms.Panel();
+            this.txtFechaNacimientoMatricula = new SGA.MBControl.MBTexbox();
             this.panel23 = new System.Windows.Forms.Panel();
             this.label31 = new System.Windows.Forms.Label();
+            this.cbNacionalidadMatricula = new SGA.MBControl.MBComboBox();
+            this.txt2ApellidoMatricula = new SGA.MBControl.MBTexbox();
+            this.cbPaisNacimentoMatricula = new SGA.MBControl.MBComboBox();
             this.panel24 = new System.Windows.Forms.Panel();
             this.label32 = new System.Windows.Forms.Label();
+            this.txt2NombreMatricula = new SGA.MBControl.MBTexbox();
             this.panel25 = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
+            this.txtComunidadIndigenaMatricula = new SGA.MBControl.MBTexbox();
             this.panel21 = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
+            this.txtTerritorioIndigenaMatricula = new SGA.MBControl.MBTexbox();
             this.panel19 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
+            this.cbEtniaMatricula = new SGA.MBControl.MBComboBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
+            this.TxtDireccionMatricula = new SGA.MBControl.MBTexbox();
             this.panel17 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
+            this.txtBarrioMatricula = new SGA.MBControl.MBTexbox();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
+            this.txtTelefonoMatricula = new SGA.MBControl.MBTexbox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
+            this.txtTallaMatricula = new SGA.MBControl.MBTexbox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.chSexoMasMatricula = new System.Windows.Forms.CheckBox();
             this.chSexoFemMatricula = new System.Windows.Forms.CheckBox();
+            this.txtPesoMatricula = new SGA.MBControl.MBTexbox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
+            this.mbTexbox7 = new SGA.MBControl.MBTexbox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.ChParitdaNacimientoNo = new System.Windows.Forms.CheckBox();
             this.chPartidaNacimeintoSi = new System.Windows.Forms.CheckBox();
+            this.mbTexbox5 = new SGA.MBControl.MBTexbox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
+            this.txt1ApellidoMatricula = new SGA.MBControl.MBTexbox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
+            this.txt1NombreMatricula = new SGA.MBControl.MBTexbox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.txtCedulaMatricula = new SGA.MBControl.MBTexbox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -97,41 +125,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.mbTexbox20 = new SGA.MBControl.MBTexbox();
+            this.txtFechaMatricula = new SGA.MBControl.MBTexbox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.mbButton1 = new SGA.MBControl.MBButton();
-            this.txtDiscapacidadMatricula = new SGA.MBControl.MBComboBox();
-            this.txtDepartamentoMatricula = new SGA.MBControl.MBComboBox();
-            this.txtMuniciopioMatricula = new SGA.MBControl.MBComboBox();
-            this.txtLenguaMaternaMatricula = new SGA.MBControl.MBComboBox();
-            this.txtCodigoEstudianteSINFOMtricula = new SGA.MBControl.MBTexbox();
-            this.txtTelefonoTutorMatricula = new SGA.MBControl.MBTexbox();
-            this.txtCedulaTutorMatricula = new SGA.MBControl.MBTexbox();
-            this.txtNombresApellidosTutorMatricula = new SGA.MBControl.MBTexbox();
-            this.btnGuardarMatricula = new SGA.MBControl.MBButton();
-            this.txtFechaNacimientoMatricula = new SGA.MBControl.MBTexbox();
-            this.cbNacionalidadMatricula = new SGA.MBControl.MBComboBox();
-            this.txt2ApellidoMatricula = new SGA.MBControl.MBTexbox();
-            this.cbPaisNacimentoMatricula = new SGA.MBControl.MBComboBox();
-            this.txt2NombreMatricula = new SGA.MBControl.MBTexbox();
-            this.txtComunidadIndigenaMatricula = new SGA.MBControl.MBTexbox();
-            this.txtTerritorioIndigenaMatricula = new SGA.MBControl.MBTexbox();
-            this.cbEtniaMatricula = new SGA.MBControl.MBComboBox();
-            this.TxtDireccionMatricula = new SGA.MBControl.MBTexbox();
-            this.txtBarrioMatricula = new SGA.MBControl.MBTexbox();
-            this.txtTelefonoMatricula = new SGA.MBControl.MBTexbox();
-            this.txtTallaMatricula = new SGA.MBControl.MBTexbox();
-            this.txtPesoMatricula = new SGA.MBControl.MBTexbox();
-            this.mbTexbox7 = new SGA.MBControl.MBTexbox();
-            this.mbTexbox5 = new SGA.MBControl.MBTexbox();
-            this.txt1ApellidoMatricula = new SGA.MBControl.MBTexbox();
-            this.txt1NombreMatricula = new SGA.MBControl.MBTexbox();
-            this.txtCedulaMatricula = new SGA.MBControl.MBTexbox();
-            this.mbTexbox20 = new SGA.MBControl.MBTexbox();
-            this.txtFechaMatricula = new SGA.MBControl.MBTexbox();
             this.panel1.SuspendLayout();
             this.panel30.SuspendLayout();
             this.panel29.SuspendLayout();
@@ -239,802 +239,6 @@
             this.panel1.Size = new System.Drawing.Size(1682, 949);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // panel30
-            // 
-            this.panel30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel30.Controls.Add(this.label38);
-            this.panel30.Location = new System.Drawing.Point(206, 2174);
-            this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(342, 45);
-            this.panel30.TabIndex = 137;
-            this.panel30.Paint += new System.Windows.Forms.PaintEventHandler(this.panel30_Paint);
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(29, 11);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(299, 20);
-            this.label38.TabIndex = 0;
-            this.label38.Text = "Código de Estudiante generado por SINFO";
-            this.label38.Click += new System.EventHandler(this.label38_Click);
-            // 
-            // panel29
-            // 
-            this.panel29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel29.Controls.Add(this.label37);
-            this.panel29.Location = new System.Drawing.Point(911, 2109);
-            this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(187, 45);
-            this.panel29.TabIndex = 135;
-            this.panel29.Paint += new System.Windows.Forms.PaintEventHandler(this.panel29_Paint);
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(29, 11);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(138, 20);
-            this.label37.TabIndex = 0;
-            this.label37.Text = "Télefono del Tutor:";
-            this.label37.Click += new System.EventHandler(this.label37_Click);
-            // 
-            // panel28
-            // 
-            this.panel28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel28.Controls.Add(this.label36);
-            this.panel28.Location = new System.Drawing.Point(206, 2116);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(279, 45);
-            this.panel28.TabIndex = 133;
-            this.panel28.Paint += new System.Windows.Forms.PaintEventHandler(this.panel28_Paint);
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(29, 11);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(206, 20);
-            this.label36.TabIndex = 0;
-            this.label36.Text = "Número de cédula del Tutor:";
-            this.label36.Click += new System.EventHandler(this.label36_Click);
-            // 
-            // panel27
-            // 
-            this.panel27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel27.Controls.Add(this.label28);
-            this.panel27.Controls.Add(this.label34);
-            this.panel27.Controls.Add(this.label35);
-            this.panel27.Location = new System.Drawing.Point(204, 1972);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(1247, 60);
-            this.panel27.TabIndex = 132;
-            this.panel27.Paint += new System.Windows.Forms.PaintEventHandler(this.panel27_Paint);
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(800, 26);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(302, 17);
-            this.label28.TabIndex = 3;
-            this.label28.Text = "(No. de cédula obligatoria, al menos uno de ellos)";
-            this.label28.Click += new System.EventHandler(this.label28_Click_1);
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(725, 26);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(69, 17);
-            this.label34.TabIndex = 2;
-            this.label34.Text = "(Catálogo)";
-            this.label34.Click += new System.EventHandler(this.label34_Click);
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(359, 22);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(360, 23);
-            this.label35.TabIndex = 0;
-            this.label35.Text = "II. DATOS PERSONALES DEL PADRE O TUTOR ";
-            this.label35.Click += new System.EventHandler(this.label35_Click);
-            // 
-            // panel44
-            // 
-            this.panel44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel44.Controls.Add(this.label52);
-            this.panel44.Location = new System.Drawing.Point(206, 2055);
-            this.panel44.Name = "panel44";
-            this.panel44.Size = new System.Drawing.Size(279, 45);
-            this.panel44.TabIndex = 98;
-            this.panel44.Paint += new System.Windows.Forms.PaintEventHandler(this.panel44_Paint);
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(29, 11);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(225, 20);
-            this.label52.TabIndex = 0;
-            this.label52.Text = "Nombres y  Apellidos del Tutor:";
-            this.label52.Click += new System.EventHandler(this.label52_Click);
-            // 
-            // panel26
-            // 
-            this.panel26.Location = new System.Drawing.Point(978, 2450);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(200, 621);
-            this.panel26.TabIndex = 63;
-            this.panel26.Paint += new System.Windows.Forms.PaintEventHandler(this.panel26_Paint_1);
-            // 
-            // panel23
-            // 
-            this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel23.Controls.Add(this.label31);
-            this.panel23.Location = new System.Drawing.Point(1020, 1450);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(182, 45);
-            this.panel23.TabIndex = 19;
-            this.panel23.Paint += new System.Windows.Forms.PaintEventHandler(this.panel23_Paint_1);
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(29, 11);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(133, 20);
-            this.label31.TabIndex = 0;
-            this.label31.Text = "Fecha nacimiento:";
-            this.label31.Click += new System.EventHandler(this.label31_Click_1);
-            // 
-            // panel24
-            // 
-            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel24.Controls.Add(this.label32);
-            this.panel24.Location = new System.Drawing.Point(617, 1455);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(152, 45);
-            this.panel24.TabIndex = 17;
-            this.panel24.Paint += new System.Windows.Forms.PaintEventHandler(this.panel24_Paint_1);
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(29, 11);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(95, 20);
-            this.label32.TabIndex = 0;
-            this.label32.Text = "2er.Apellido:";
-            this.label32.Click += new System.EventHandler(this.label32_Click_1);
-            // 
-            // panel25
-            // 
-            this.panel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel25.Controls.Add(this.label33);
-            this.panel25.Location = new System.Drawing.Point(206, 1457);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(152, 45);
-            this.panel25.TabIndex = 15;
-            this.panel25.Paint += new System.Windows.Forms.PaintEventHandler(this.panel25_Paint_1);
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(29, 11);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(95, 20);
-            this.label33.TabIndex = 0;
-            this.label33.Text = "2er.Nombre:";
-            this.label33.Click += new System.EventHandler(this.label33_Click_1);
-            // 
-            // panel22
-            // 
-            this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel22.Controls.Add(this.label27);
-            this.panel22.Controls.Add(this.label26);
-            this.panel22.Location = new System.Drawing.Point(713, 1830);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(255, 64);
-            this.panel22.TabIndex = 56;
-            this.panel22.Paint += new System.Windows.Forms.PaintEventHandler(this.panel22_Paint);
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(37, 32);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(171, 17);
-            this.label27.TabIndex = 1;
-            this.label27.Text = "(Según diagnóstico médico)";
-            this.label27.Click += new System.EventHandler(this.label27_Click);
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(67, 13);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(107, 40);
-            this.label26.TabIndex = 0;
-            this.label26.Text = "Discapacidad: \r\n\r\n";
-            this.label26.Click += new System.EventHandler(this.label26_Click);
-            // 
-            // panel21
-            // 
-            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel21.Controls.Add(this.label25);
-            this.panel21.Location = new System.Drawing.Point(713, 1753);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(255, 64);
-            this.panel21.TabIndex = 54;
-            this.panel21.Paint += new System.Windows.Forms.PaintEventHandler(this.panel21_Paint_1);
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(20, 11);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(202, 40);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "El es estudiante habita en  \ncomunidad indígena. ¿Cuál?";
-            this.label25.Click += new System.EventHandler(this.label25_Click);
-            // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel20.Controls.Add(this.label24);
-            this.panel20.Location = new System.Drawing.Point(207, 1902);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(169, 45);
-            this.panel20.TabIndex = 52;
-            this.panel20.Paint += new System.Windows.Forms.PaintEventHandler(this.panel20_Paint);
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(17, 11);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(125, 20);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Lengua Materna:";
-            this.label24.Click += new System.EventHandler(this.label24_Click);
-            // 
-            // panel19
-            // 
-            this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel19.Controls.Add(this.label23);
-            this.panel19.Location = new System.Drawing.Point(207, 1826);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(255, 64);
-            this.panel19.TabIndex = 44;
-            this.panel19.Paint += new System.Windows.Forms.PaintEventHandler(this.panel19_Paint);
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(17, 11);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(220, 40);
-            this.label23.TabIndex = 0;
-            this.label23.Text = "El es estudiante pertenece a un\n territorio indígena. ¿Cuál?";
-            this.label23.Click += new System.EventHandler(this.label23_Click);
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel18.Controls.Add(this.label22);
-            this.panel18.Location = new System.Drawing.Point(206, 1753);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(232, 64);
-            this.panel18.TabIndex = 42;
-            this.panel18.Paint += new System.Windows.Forms.PaintEventHandler(this.panel18_Paint);
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(25, 11);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(192, 40);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "Pueblo Indígena,\r\nÁfrodescendiente o étnico:";
-            this.label22.Click += new System.EventHandler(this.label22_Click);
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel17.Controls.Add(this.label21);
-            this.panel17.Location = new System.Drawing.Point(206, 1696);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(200, 45);
-            this.panel17.TabIndex = 40;
-            this.panel17.Paint += new System.Windows.Forms.PaintEventHandler(this.panel17_Paint);
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(20, 11);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(151, 20);
-            this.label21.TabIndex = 0;
-            this.label21.Text = "Dirección domiciliar:";
-            this.label21.Click += new System.EventHandler(this.label21_Click);
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel14.Controls.Add(this.label18);
-            this.panel14.Location = new System.Drawing.Point(1053, 1628);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(103, 45);
-            this.panel14.TabIndex = 38;
-            this.panel14.Paint += new System.Windows.Forms.PaintEventHandler(this.panel14_Paint);
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(26, 11);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(55, 20);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "Barrio:";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel15.Controls.Add(this.label19);
-            this.panel15.Location = new System.Drawing.Point(630, 1627);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(182, 45);
-            this.panel15.TabIndex = 36;
-            this.panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.panel15_Paint);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(22, 11);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(138, 20);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "Municipio/Distrito:";
-            this.label19.Click += new System.EventHandler(this.label19_Click);
-            // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel16.Controls.Add(this.label20);
-            this.panel16.Location = new System.Drawing.Point(206, 1631);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(200, 45);
-            this.panel16.TabIndex = 34;
-            this.panel16.Paint += new System.Windows.Forms.PaintEventHandler(this.panel16_Paint);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(20, 11);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(157, 20);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "Departamento reside:";
-            this.label20.Click += new System.EventHandler(this.label20_Click);
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel11.Controls.Add(this.label15);
-            this.panel11.Location = new System.Drawing.Point(1053, 1570);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(126, 45);
-            this.panel11.TabIndex = 32;
-            this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint_1);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(29, 11);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(72, 20);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Teléfono:";
-            this.label15.Click += new System.EventHandler(this.label15_Click_1);
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel12.Controls.Add(this.label16);
-            this.panel12.Location = new System.Drawing.Point(632, 1571);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(158, 45);
-            this.panel12.TabIndex = 28;
-            this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint_1);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(29, 11);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(104, 20);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Nacionalidad:";
-            this.label16.Click += new System.EventHandler(this.label16_Click_1);
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel13.Controls.Add(this.label17);
-            this.panel13.Location = new System.Drawing.Point(206, 1573);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(176, 45);
-            this.panel13.TabIndex = 26;
-            this.panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.panel13_Paint_1);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(18, 11);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(141, 20);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Pais de nacimiento:";
-            this.label17.Click += new System.EventHandler(this.label17_Click_1);
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel10.Controls.Add(this.label14);
-            this.panel10.Location = new System.Drawing.Point(1020, 1511);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(136, 45);
-            this.panel10.TabIndex = 24;
-            this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint_1);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(29, 11);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(80, 20);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Talla (Cm):";
-            this.label14.Click += new System.EventHandler(this.label14_Click_1);
-            // 
-            // chSexoMasMatricula
-            // 
-            this.chSexoMasMatricula.AutoSize = true;
-            this.chSexoMasMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.chSexoMasMatricula.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chSexoMasMatricula.Location = new System.Drawing.Point(440, 1525);
-            this.chSexoMasMatricula.Name = "chSexoMasMatricula";
-            this.chSexoMasMatricula.Size = new System.Drawing.Size(91, 21);
-            this.chSexoMasMatricula.TabIndex = 23;
-            this.chSexoMasMatricula.Text = "Masculino";
-            this.chSexoMasMatricula.UseVisualStyleBackColor = false;
-            this.chSexoMasMatricula.CheckedChanged += new System.EventHandler(this.chSexoMasMatricula_CheckedChanged_1);
-            // 
-            // chSexoFemMatricula
-            // 
-            this.chSexoFemMatricula.AutoSize = true;
-            this.chSexoFemMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.chSexoFemMatricula.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chSexoFemMatricula.Location = new System.Drawing.Point(554, 1525);
-            this.chSexoFemMatricula.Name = "chSexoFemMatricula";
-            this.chSexoFemMatricula.Size = new System.Drawing.Size(90, 21);
-            this.chSexoFemMatricula.TabIndex = 22;
-            this.chSexoFemMatricula.Text = "Femenino";
-            this.chSexoFemMatricula.UseVisualStyleBackColor = false;
-            this.chSexoFemMatricula.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel8.Controls.Add(this.label12);
-            this.panel8.Location = new System.Drawing.Point(717, 1512);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(128, 45);
-            this.panel8.TabIndex = 20;
-            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint_1);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(29, 11);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(76, 20);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Peso (Kg):";
-            this.label12.Click += new System.EventHandler(this.label12_Click_1);
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel9.Controls.Add(this.label13);
-            this.panel9.Location = new System.Drawing.Point(206, 1514);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(152, 45);
-            this.panel9.TabIndex = 18;
-            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint_1);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(52, 11);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(46, 20);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Sexo:";
-            this.label13.Click += new System.EventHandler(this.label13_Click_1);
-            // 
-            // ChParitdaNacimientoNo
-            // 
-            this.ChParitdaNacimientoNo.AutoSize = true;
-            this.ChParitdaNacimientoNo.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChParitdaNacimientoNo.Location = new System.Drawing.Point(1246, 1406);
-            this.ChParitdaNacimientoNo.Name = "ChParitdaNacimientoNo";
-            this.ChParitdaNacimientoNo.Size = new System.Drawing.Size(48, 21);
-            this.ChParitdaNacimientoNo.TabIndex = 17;
-            this.ChParitdaNacimientoNo.Text = "No";
-            this.ChParitdaNacimientoNo.UseVisualStyleBackColor = true;
-            this.ChParitdaNacimientoNo.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
-            // 
-            // chPartidaNacimeintoSi
-            // 
-            this.chPartidaNacimeintoSi.AutoSize = true;
-            this.chPartidaNacimeintoSi.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chPartidaNacimeintoSi.Location = new System.Drawing.Point(1312, 1407);
-            this.chPartidaNacimeintoSi.Name = "chPartidaNacimeintoSi";
-            this.chPartidaNacimeintoSi.Size = new System.Drawing.Size(40, 21);
-            this.chPartidaNacimeintoSi.TabIndex = 16;
-            this.chPartidaNacimeintoSi.Text = "Si";
-            this.chPartidaNacimeintoSi.UseVisualStyleBackColor = true;
-            this.chPartidaNacimeintoSi.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel7.Controls.Add(this.label11);
-            this.panel7.Location = new System.Drawing.Point(1020, 1395);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(182, 45);
-            this.panel7.TabIndex = 14;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint_1);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(29, 11);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(142, 20);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Partida nacimiento:";
-            this.label11.Click += new System.EventHandler(this.label11_Click_1);
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel6.Controls.Add(this.label10);
-            this.panel6.Location = new System.Drawing.Point(617, 1400);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(152, 45);
-            this.panel6.TabIndex = 12;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint_1);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(29, 11);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(93, 20);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "1er.Apellido:";
-            this.label10.Click += new System.EventHandler(this.label10_Click_1);
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel5.Controls.Add(this.label9);
-            this.panel5.Location = new System.Drawing.Point(206, 1402);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(152, 45);
-            this.panel5.TabIndex = 10;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint_1);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(29, 11);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(93, 20);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "1er.Nombre:";
-            this.label9.Click += new System.EventHandler(this.label9_Click_1);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1028, 1359);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(117, 17);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "(Si ya tiene cédula)";
-            this.label8.Click += new System.EventHandler(this.label8_Click_1);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Location = new System.Drawing.Point(206, 1345);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 45);
-            this.panel4.TabIndex = 7;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint_1);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(29, 11);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(140, 20);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Número de cédula:";
-            this.label7.Click += new System.EventHandler(this.label7_Click_1);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.label30);
-            this.panel3.Controls.Add(this.label29);
-            this.panel3.Controls.Add(this.mbTexbox20);
-            this.panel3.Location = new System.Drawing.Point(206, 1271);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1278, 59);
-            this.panel3.TabIndex = 6;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint_1);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(884, 19);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(187, 17);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "(Datos de llenado Obligatorio)";
-            this.label6.Click += new System.EventHandler(this.label6_Click_1);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(315, 15);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(572, 23);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "I. DATOS PERSONALES DEL ESTUDIANTE DE NUEVO INGRESO (Catálogo)";
-            this.label4.Click += new System.EventHandler(this.label4_Click_1);
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.BackColor = System.Drawing.Color.Transparent;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(-104, -83);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(1263, 16);
-            this.label30.TabIndex = 4;
-            this.label30.Text = "_________________________________________________________________________________" +
-    "____________________________________________________________________________";
-            this.label30.Click += new System.EventHandler(this.label30_Click_1);
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.BackColor = System.Drawing.Color.Transparent;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(-104, -102);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(1263, 16);
-            this.label29.TabIndex = 3;
-            this.label29.Text = "_________________________________________________________________________________" +
-    "____________________________________________________________________________";
-            this.label29.Click += new System.EventHandler(this.label29_Click_1);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(207, 1176);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1143, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "_________________________________________________________________________________" +
-    "_____________________________________________________________";
-            this.label3.Click += new System.EventHandler(this.label3_Click_1);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(207, 1150);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1143, 16);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "_________________________________________________________________________________" +
-    "_____________________________________________________________";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(210, 966);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1281, 178);
-            this.panel2.TabIndex = 2;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint_1);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(359, 100);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(583, 32);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "HOJA DE NUEVO INGRESO DE ESTUDIANTES 2024";
-            this.label5.Click += new System.EventHandler(this.label5_Click_1);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(361, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(527, 128);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "                  MINISTERIO DE EDUCACIÓN \r\n          DIVISIÓN DE ESTADÍSTICAS ED" +
-    "UCATIVAS\r\n\r\n\r\n";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // mbButton1
             // 
@@ -1167,6 +371,27 @@
             this.txtCodigoEstudianteSINFOMtricula.UnderlineStyle = false;
             this.txtCodigoEstudianteSINFOMtricula._TextChanged += new System.EventHandler(this.txtCodigoEstudianteSINFOMtricula__TextChanged);
             // 
+            // panel30
+            // 
+            this.panel30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel30.Controls.Add(this.label38);
+            this.panel30.Location = new System.Drawing.Point(206, 2174);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(342, 45);
+            this.panel30.TabIndex = 137;
+            this.panel30.Paint += new System.Windows.Forms.PaintEventHandler(this.panel30_Paint);
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(29, 11);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(299, 20);
+            this.label38.TabIndex = 0;
+            this.label38.Text = "Código de Estudiante generado por SINFO";
+            this.label38.Click += new System.EventHandler(this.label38_Click);
+            // 
             // txtTelefonoTutorMatricula
             // 
             this.txtTelefonoTutorMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
@@ -1188,6 +413,27 @@
             this.txtTelefonoTutorMatricula.TabIndex = 136;
             this.txtTelefonoTutorMatricula.UnderlineStyle = false;
             this.txtTelefonoTutorMatricula._TextChanged += new System.EventHandler(this.txtTelefonoTutorMatricula__TextChanged);
+            // 
+            // panel29
+            // 
+            this.panel29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel29.Controls.Add(this.label37);
+            this.panel29.Location = new System.Drawing.Point(911, 2109);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(187, 45);
+            this.panel29.TabIndex = 135;
+            this.panel29.Paint += new System.Windows.Forms.PaintEventHandler(this.panel29_Paint);
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(29, 11);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(138, 20);
+            this.label37.TabIndex = 0;
+            this.label37.Text = "Télefono del Tutor:";
+            this.label37.Click += new System.EventHandler(this.label37_Click);
             // 
             // txtCedulaTutorMatricula
             // 
@@ -1211,6 +457,72 @@
             this.txtCedulaTutorMatricula.UnderlineStyle = false;
             this.txtCedulaTutorMatricula._TextChanged += new System.EventHandler(this.txtCedulaTutorMatricula__TextChanged);
             // 
+            // panel28
+            // 
+            this.panel28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel28.Controls.Add(this.label36);
+            this.panel28.Location = new System.Drawing.Point(206, 2116);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(279, 45);
+            this.panel28.TabIndex = 133;
+            this.panel28.Paint += new System.Windows.Forms.PaintEventHandler(this.panel28_Paint);
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(29, 11);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(206, 20);
+            this.label36.TabIndex = 0;
+            this.label36.Text = "Número de cédula del Tutor:";
+            this.label36.Click += new System.EventHandler(this.label36_Click);
+            // 
+            // panel27
+            // 
+            this.panel27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel27.Controls.Add(this.label28);
+            this.panel27.Controls.Add(this.label34);
+            this.panel27.Controls.Add(this.label35);
+            this.panel27.Location = new System.Drawing.Point(204, 1972);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(1247, 60);
+            this.panel27.TabIndex = 132;
+            this.panel27.Paint += new System.Windows.Forms.PaintEventHandler(this.panel27_Paint);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(800, 26);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(302, 17);
+            this.label28.TabIndex = 3;
+            this.label28.Text = "(No. de cédula obligatoria, al menos uno de ellos)";
+            this.label28.Click += new System.EventHandler(this.label28_Click_1);
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(725, 26);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(69, 17);
+            this.label34.TabIndex = 2;
+            this.label34.Text = "(Catálogo)";
+            this.label34.Click += new System.EventHandler(this.label34_Click);
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(359, 22);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(360, 23);
+            this.label35.TabIndex = 0;
+            this.label35.Text = "II. DATOS PERSONALES DEL PADRE O TUTOR ";
+            this.label35.Click += new System.EventHandler(this.label35_Click);
+            // 
             // txtNombresApellidosTutorMatricula
             // 
             this.txtNombresApellidosTutorMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
@@ -1233,6 +545,27 @@
             this.txtNombresApellidosTutorMatricula.UnderlineStyle = false;
             this.txtNombresApellidosTutorMatricula._TextChanged += new System.EventHandler(this.txtNombresApellidosTutorMatricula__TextChanged);
             // 
+            // panel44
+            // 
+            this.panel44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel44.Controls.Add(this.label52);
+            this.panel44.Location = new System.Drawing.Point(206, 2055);
+            this.panel44.Name = "panel44";
+            this.panel44.Size = new System.Drawing.Size(279, 45);
+            this.panel44.TabIndex = 98;
+            this.panel44.Paint += new System.Windows.Forms.PaintEventHandler(this.panel44_Paint);
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(29, 11);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(225, 20);
+            this.label52.TabIndex = 0;
+            this.label52.Text = "Nombres y  Apellidos del Tutor:";
+            this.label52.Click += new System.EventHandler(this.label52_Click);
+            // 
             // btnGuardarMatricula
             // 
             this.btnGuardarMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
@@ -1253,6 +586,14 @@
             this.btnGuardarMatricula.TextColor = System.Drawing.Color.White;
             this.btnGuardarMatricula.UseVisualStyleBackColor = false;
             this.btnGuardarMatricula.Click += new System.EventHandler(this.btnGuardarMatricula_Click);
+            // 
+            // panel26
+            // 
+            this.panel26.Location = new System.Drawing.Point(978, 2450);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(200, 621);
+            this.panel26.TabIndex = 63;
+            this.panel26.Paint += new System.Windows.Forms.PaintEventHandler(this.panel26_Paint_1);
             // 
             // txtFechaNacimientoMatricula
             // 
@@ -1276,12 +617,34 @@
             this.txtFechaNacimientoMatricula.UnderlineStyle = false;
             this.txtFechaNacimientoMatricula._TextChanged += new System.EventHandler(this.mbTexbox4__TextChanged_1);
             // 
+            // panel23
+            // 
+            this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel23.Controls.Add(this.label31);
+            this.panel23.Location = new System.Drawing.Point(1020, 1450);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(182, 45);
+            this.panel23.TabIndex = 19;
+            this.panel23.Paint += new System.Windows.Forms.PaintEventHandler(this.panel23_Paint_1);
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(29, 11);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(133, 20);
+            this.label31.TabIndex = 0;
+            this.label31.Text = "Fecha nacimiento:";
+            this.label31.Click += new System.EventHandler(this.label31_Click_1);
+            // 
             // cbNacionalidadMatricula
             // 
             this.cbNacionalidadMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbNacionalidadMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbNacionalidadMatricula.BorderSize = 1;
             this.cbNacionalidadMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cbNacionalidadMatricula.Enabled = false;
             this.cbNacionalidadMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbNacionalidadMatricula.ForeColor = System.Drawing.Color.Black;
             this.cbNacionalidadMatricula.IconColor = System.Drawing.Color.Black;
@@ -1330,9 +693,6 @@
             this.cbPaisNacimentoMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbPaisNacimentoMatricula.ForeColor = System.Drawing.Color.Black;
             this.cbPaisNacimentoMatricula.IconColor = System.Drawing.Color.Black;
-            this.cbPaisNacimentoMatricula.Items.AddRange(new object[] {
-            "Guatemala",
-            "Nicaragua"});
             this.cbPaisNacimentoMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbPaisNacimentoMatricula.ListTextColor = System.Drawing.Color.Black;
             this.cbPaisNacimentoMatricula.Location = new System.Drawing.Point(394, 1581);
@@ -1343,6 +703,27 @@
             this.cbPaisNacimentoMatricula.TabIndex = 60;
             this.cbPaisNacimentoMatricula.Texts = "";
             this.cbPaisNacimentoMatricula.OnSelectedIndexChanged += new System.EventHandler(this.cbPaisNacimentoMatricula_OnSelectedIndexChanged_1);
+            // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel24.Controls.Add(this.label32);
+            this.panel24.Location = new System.Drawing.Point(617, 1455);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(152, 45);
+            this.panel24.TabIndex = 17;
+            this.panel24.Paint += new System.Windows.Forms.PaintEventHandler(this.panel24_Paint_1);
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(29, 11);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(95, 20);
+            this.label32.TabIndex = 0;
+            this.label32.Text = "2er.Apellido:";
+            this.label32.Click += new System.EventHandler(this.label32_Click_1);
             // 
             // txt2NombreMatricula
             // 
@@ -1366,6 +747,60 @@
             this.txt2NombreMatricula.UnderlineStyle = false;
             this.txt2NombreMatricula._TextChanged += new System.EventHandler(this.txt2NombreMatricula__TextChanged_1);
             // 
+            // panel25
+            // 
+            this.panel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel25.Controls.Add(this.label33);
+            this.panel25.Location = new System.Drawing.Point(206, 1457);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(152, 45);
+            this.panel25.TabIndex = 15;
+            this.panel25.Paint += new System.Windows.Forms.PaintEventHandler(this.panel25_Paint_1);
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(29, 11);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(95, 20);
+            this.label33.TabIndex = 0;
+            this.label33.Text = "2er.Nombre:";
+            this.label33.Click += new System.EventHandler(this.label33_Click_1);
+            // 
+            // panel22
+            // 
+            this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel22.Controls.Add(this.label27);
+            this.panel22.Controls.Add(this.label26);
+            this.panel22.Location = new System.Drawing.Point(713, 1830);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(255, 64);
+            this.panel22.TabIndex = 56;
+            this.panel22.Paint += new System.Windows.Forms.PaintEventHandler(this.panel22_Paint);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(37, 32);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(171, 17);
+            this.label27.TabIndex = 1;
+            this.label27.Text = "(Según diagnóstico médico)";
+            this.label27.Click += new System.EventHandler(this.label27_Click);
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(67, 13);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(107, 40);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "Discapacidad: \r\n\r\n";
+            this.label26.Click += new System.EventHandler(this.label26_Click);
+            // 
             // txtComunidadIndigenaMatricula
             // 
             this.txtComunidadIndigenaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
@@ -1387,6 +822,48 @@
             this.txtComunidadIndigenaMatricula.TabIndex = 55;
             this.txtComunidadIndigenaMatricula.UnderlineStyle = false;
             this.txtComunidadIndigenaMatricula._TextChanged += new System.EventHandler(this.mbTexbox18__TextChanged_1);
+            // 
+            // panel21
+            // 
+            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel21.Controls.Add(this.label25);
+            this.panel21.Location = new System.Drawing.Point(713, 1753);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(255, 64);
+            this.panel21.TabIndex = 54;
+            this.panel21.Paint += new System.Windows.Forms.PaintEventHandler(this.panel21_Paint_1);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(20, 11);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(202, 40);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "El es estudiante habita en  \ncomunidad indígena. ¿Cuál?";
+            this.label25.Click += new System.EventHandler(this.label25_Click);
+            // 
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel20.Controls.Add(this.label24);
+            this.panel20.Location = new System.Drawing.Point(207, 1902);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(169, 45);
+            this.panel20.TabIndex = 52;
+            this.panel20.Paint += new System.Windows.Forms.PaintEventHandler(this.panel20_Paint);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(17, 11);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(125, 20);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Lengua Materna:";
+            this.label24.Click += new System.EventHandler(this.label24_Click);
             // 
             // txtTerritorioIndigenaMatricula
             // 
@@ -1410,6 +887,27 @@
             this.txtTerritorioIndigenaMatricula.UnderlineStyle = false;
             this.txtTerritorioIndigenaMatricula._TextChanged += new System.EventHandler(this.mbTexbox16__TextChanged);
             // 
+            // panel19
+            // 
+            this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel19.Controls.Add(this.label23);
+            this.panel19.Location = new System.Drawing.Point(207, 1826);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(255, 64);
+            this.panel19.TabIndex = 44;
+            this.panel19.Paint += new System.Windows.Forms.PaintEventHandler(this.panel19_Paint);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(17, 11);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(220, 40);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "El es estudiante pertenece a un\n territorio indígena. ¿Cuál?";
+            this.label23.Click += new System.EventHandler(this.label23_Click);
+            // 
             // cbEtniaMatricula
             // 
             this.cbEtniaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
@@ -1430,6 +928,27 @@
             this.cbEtniaMatricula.TabIndex = 43;
             this.cbEtniaMatricula.Texts = "";
             this.cbEtniaMatricula.OnSelectedIndexChanged += new System.EventHandler(this.mbComboBox1_OnSelectedIndexChanged_1);
+            // 
+            // panel18
+            // 
+            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel18.Controls.Add(this.label22);
+            this.panel18.Location = new System.Drawing.Point(206, 1753);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(232, 64);
+            this.panel18.TabIndex = 42;
+            this.panel18.Paint += new System.Windows.Forms.PaintEventHandler(this.panel18_Paint);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(25, 11);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(192, 40);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "Pueblo Indígena,\r\nÁfrodescendiente o étnico:";
+            this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // TxtDireccionMatricula
             // 
@@ -1453,6 +972,27 @@
             this.TxtDireccionMatricula.UnderlineStyle = false;
             this.TxtDireccionMatricula._TextChanged += new System.EventHandler(this.mbTexbox15__TextChanged);
             // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel17.Controls.Add(this.label21);
+            this.panel17.Location = new System.Drawing.Point(206, 1696);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(200, 45);
+            this.panel17.TabIndex = 40;
+            this.panel17.Paint += new System.Windows.Forms.PaintEventHandler(this.panel17_Paint);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(20, 11);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(151, 20);
+            this.label21.TabIndex = 0;
+            this.label21.Text = "Dirección domiciliar:";
+            this.label21.Click += new System.EventHandler(this.label21_Click);
+            // 
             // txtBarrioMatricula
             // 
             this.txtBarrioMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
@@ -1474,6 +1014,69 @@
             this.txtBarrioMatricula.TabIndex = 39;
             this.txtBarrioMatricula.UnderlineStyle = false;
             this.txtBarrioMatricula._TextChanged += new System.EventHandler(this.mbTexbox12__TextChanged);
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel14.Controls.Add(this.label18);
+            this.panel14.Location = new System.Drawing.Point(1053, 1628);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(103, 45);
+            this.panel14.TabIndex = 38;
+            this.panel14.Paint += new System.Windows.Forms.PaintEventHandler(this.panel14_Paint);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(26, 11);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(55, 20);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "Barrio:";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel15.Controls.Add(this.label19);
+            this.panel15.Location = new System.Drawing.Point(630, 1627);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(182, 45);
+            this.panel15.TabIndex = 36;
+            this.panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.panel15_Paint);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(22, 11);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(138, 20);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "Municipio/Distrito:";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel16.Controls.Add(this.label20);
+            this.panel16.Location = new System.Drawing.Point(206, 1631);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(200, 45);
+            this.panel16.TabIndex = 34;
+            this.panel16.Paint += new System.Windows.Forms.PaintEventHandler(this.panel16_Paint);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(20, 11);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(157, 20);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "Departamento reside:";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // txtTelefonoMatricula
             // 
@@ -1497,6 +1100,69 @@
             this.txtTelefonoMatricula.UnderlineStyle = false;
             this.txtTelefonoMatricula._TextChanged += new System.EventHandler(this.mbTexbox9__TextChanged);
             // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel11.Controls.Add(this.label15);
+            this.panel11.Location = new System.Drawing.Point(1053, 1570);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(126, 45);
+            this.panel11.TabIndex = 32;
+            this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint_1);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(29, 11);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(72, 20);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Teléfono:";
+            this.label15.Click += new System.EventHandler(this.label15_Click_1);
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel12.Controls.Add(this.label16);
+            this.panel12.Location = new System.Drawing.Point(632, 1571);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(158, 45);
+            this.panel12.TabIndex = 28;
+            this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint_1);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(29, 11);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(104, 20);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Nacionalidad:";
+            this.label16.Click += new System.EventHandler(this.label16_Click_1);
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel13.Controls.Add(this.label17);
+            this.panel13.Location = new System.Drawing.Point(206, 1573);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(176, 45);
+            this.panel13.TabIndex = 26;
+            this.panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.panel13_Paint_1);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(18, 11);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(141, 20);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Pais de nacimiento:";
+            this.label17.Click += new System.EventHandler(this.label17_Click_1);
+            // 
             // txtTallaMatricula
             // 
             this.txtTallaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
@@ -1518,6 +1184,53 @@
             this.txtTallaMatricula.TabIndex = 25;
             this.txtTallaMatricula.UnderlineStyle = false;
             this.txtTallaMatricula._TextChanged += new System.EventHandler(this.txtTallaMatricula__TextChanged_1);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel10.Controls.Add(this.label14);
+            this.panel10.Location = new System.Drawing.Point(1020, 1511);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(136, 45);
+            this.panel10.TabIndex = 24;
+            this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint_1);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(29, 11);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(80, 20);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Talla (Cm):";
+            this.label14.Click += new System.EventHandler(this.label14_Click_1);
+            // 
+            // chSexoMasMatricula
+            // 
+            this.chSexoMasMatricula.AutoSize = true;
+            this.chSexoMasMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.chSexoMasMatricula.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chSexoMasMatricula.Location = new System.Drawing.Point(440, 1525);
+            this.chSexoMasMatricula.Name = "chSexoMasMatricula";
+            this.chSexoMasMatricula.Size = new System.Drawing.Size(91, 21);
+            this.chSexoMasMatricula.TabIndex = 23;
+            this.chSexoMasMatricula.Text = "Masculino";
+            this.chSexoMasMatricula.UseVisualStyleBackColor = false;
+            this.chSexoMasMatricula.CheckedChanged += new System.EventHandler(this.chSexoMasMatricula_CheckedChanged_1);
+            // 
+            // chSexoFemMatricula
+            // 
+            this.chSexoFemMatricula.AutoSize = true;
+            this.chSexoFemMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.chSexoFemMatricula.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chSexoFemMatricula.Location = new System.Drawing.Point(554, 1525);
+            this.chSexoFemMatricula.Name = "chSexoFemMatricula";
+            this.chSexoFemMatricula.Size = new System.Drawing.Size(90, 21);
+            this.chSexoFemMatricula.TabIndex = 22;
+            this.chSexoFemMatricula.Text = "Femenino";
+            this.chSexoFemMatricula.UseVisualStyleBackColor = false;
+            this.chSexoFemMatricula.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // txtPesoMatricula
             // 
@@ -1541,6 +1254,27 @@
             this.txtPesoMatricula.UnderlineStyle = false;
             this.txtPesoMatricula._TextChanged += new System.EventHandler(this.txtPesoMatricula__TextChanged_1);
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel8.Controls.Add(this.label12);
+            this.panel8.Location = new System.Drawing.Point(717, 1512);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(128, 45);
+            this.panel8.TabIndex = 20;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint_1);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(29, 11);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(76, 20);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Peso (Kg):";
+            this.label12.Click += new System.EventHandler(this.label12_Click_1);
+            // 
             // mbTexbox7
             // 
             this.mbTexbox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
@@ -1562,6 +1296,51 @@
             this.mbTexbox7.TabIndex = 19;
             this.mbTexbox7.UnderlineStyle = false;
             this.mbTexbox7._TextChanged += new System.EventHandler(this.mbTexbox7__TextChanged_1);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel9.Controls.Add(this.label13);
+            this.panel9.Location = new System.Drawing.Point(206, 1514);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(152, 45);
+            this.panel9.TabIndex = 18;
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint_1);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(52, 11);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(46, 20);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Sexo:";
+            this.label13.Click += new System.EventHandler(this.label13_Click_1);
+            // 
+            // ChParitdaNacimientoNo
+            // 
+            this.ChParitdaNacimientoNo.AutoSize = true;
+            this.ChParitdaNacimientoNo.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChParitdaNacimientoNo.Location = new System.Drawing.Point(1246, 1406);
+            this.ChParitdaNacimientoNo.Name = "ChParitdaNacimientoNo";
+            this.ChParitdaNacimientoNo.Size = new System.Drawing.Size(48, 21);
+            this.ChParitdaNacimientoNo.TabIndex = 17;
+            this.ChParitdaNacimientoNo.Text = "No";
+            this.ChParitdaNacimientoNo.UseVisualStyleBackColor = true;
+            this.ChParitdaNacimientoNo.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // chPartidaNacimeintoSi
+            // 
+            this.chPartidaNacimeintoSi.AutoSize = true;
+            this.chPartidaNacimeintoSi.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chPartidaNacimeintoSi.Location = new System.Drawing.Point(1312, 1407);
+            this.chPartidaNacimeintoSi.Name = "chPartidaNacimeintoSi";
+            this.chPartidaNacimeintoSi.Size = new System.Drawing.Size(40, 21);
+            this.chPartidaNacimeintoSi.TabIndex = 16;
+            this.chPartidaNacimeintoSi.Text = "Si";
+            this.chPartidaNacimeintoSi.UseVisualStyleBackColor = true;
+            this.chPartidaNacimeintoSi.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
             // 
             // mbTexbox5
             // 
@@ -1586,6 +1365,27 @@
             this.mbTexbox5.UnderlineStyle = false;
             this.mbTexbox5._TextChanged += new System.EventHandler(this.mbTexbox5__TextChanged);
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel7.Controls.Add(this.label11);
+            this.panel7.Location = new System.Drawing.Point(1020, 1395);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(182, 45);
+            this.panel7.TabIndex = 14;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint_1);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(29, 11);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(142, 20);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Partida nacimiento:";
+            this.label11.Click += new System.EventHandler(this.label11_Click_1);
+            // 
             // txt1ApellidoMatricula
             // 
             this.txt1ApellidoMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
@@ -1607,6 +1407,27 @@
             this.txt1ApellidoMatricula.TabIndex = 13;
             this.txt1ApellidoMatricula.UnderlineStyle = false;
             this.txt1ApellidoMatricula._TextChanged += new System.EventHandler(this.txt1ApellidoMatricula__TextChanged_1);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel6.Controls.Add(this.label10);
+            this.panel6.Location = new System.Drawing.Point(617, 1400);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(152, 45);
+            this.panel6.TabIndex = 12;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint_1);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(29, 11);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(93, 20);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "1er.Apellido:";
+            this.label10.Click += new System.EventHandler(this.label10_Click_1);
             // 
             // txt1NombreMatricula
             // 
@@ -1630,6 +1451,38 @@
             this.txt1NombreMatricula.UnderlineStyle = false;
             this.txt1NombreMatricula._TextChanged += new System.EventHandler(this.txt1NombreMatricula__TextChanged_1);
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel5.Controls.Add(this.label9);
+            this.panel5.Location = new System.Drawing.Point(206, 1402);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(152, 45);
+            this.panel5.TabIndex = 10;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint_1);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(29, 11);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(93, 20);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "1er.Nombre:";
+            this.label9.Click += new System.EventHandler(this.label9_Click_1);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(1028, 1359);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(117, 17);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "(Si ya tiene cédula)";
+            this.label8.Click += new System.EventHandler(this.label8_Click_1);
+            // 
             // txtCedulaMatricula
             // 
             this.txtCedulaMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
@@ -1651,6 +1504,90 @@
             this.txtCedulaMatricula.TabIndex = 8;
             this.txtCedulaMatricula.UnderlineStyle = false;
             this.txtCedulaMatricula._TextChanged += new System.EventHandler(this.txtCedulaMatricula__TextChanged_1);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Location = new System.Drawing.Point(206, 1345);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 45);
+            this.panel4.TabIndex = 7;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint_1);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(29, 11);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(140, 20);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Número de cédula:";
+            this.label7.Click += new System.EventHandler(this.label7_Click_1);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.label30);
+            this.panel3.Controls.Add(this.label29);
+            this.panel3.Controls.Add(this.mbTexbox20);
+            this.panel3.Location = new System.Drawing.Point(206, 1271);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1278, 59);
+            this.panel3.TabIndex = 6;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint_1);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(884, 19);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(187, 17);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "(Datos de llenado Obligatorio)";
+            this.label6.Click += new System.EventHandler(this.label6_Click_1);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(315, 15);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(572, 23);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "I. DATOS PERSONALES DEL ESTUDIANTE DE NUEVO INGRESO (Catálogo)";
+            this.label4.Click += new System.EventHandler(this.label4_Click_1);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.BackColor = System.Drawing.Color.Transparent;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(-104, -83);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(1263, 16);
+            this.label30.TabIndex = 4;
+            this.label30.Text = "_________________________________________________________________________________" +
+    "____________________________________________________________________________";
+            this.label30.Click += new System.EventHandler(this.label30_Click_1);
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(-104, -102);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(1263, 16);
+            this.label29.TabIndex = 3;
+            this.label29.Text = "_________________________________________________________________________________" +
+    "____________________________________________________________________________";
+            this.label29.Click += new System.EventHandler(this.label29_Click_1);
             // 
             // mbTexbox20
             // 
@@ -1696,6 +1633,67 @@
             this.txtFechaMatricula.TabIndex = 5;
             this.txtFechaMatricula.UnderlineStyle = false;
             this.txtFechaMatricula._TextChanged += new System.EventHandler(this.txtFechaMatricula__TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(207, 1176);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(1143, 16);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "_________________________________________________________________________________" +
+    "_____________________________________________________________";
+            this.label3.Click += new System.EventHandler(this.label3_Click_1);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(207, 1150);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(1143, 16);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "_________________________________________________________________________________" +
+    "_____________________________________________________________";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(210, 966);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1281, 178);
+            this.panel2.TabIndex = 2;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint_1);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(359, 100);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(583, 32);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "HOJA DE NUEVO INGRESO DE ESTUDIANTES 2024";
+            this.label5.Click += new System.EventHandler(this.label5_Click_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(361, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(527, 128);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "                  MINISTERIO DE EDUCACIÓN \r\n          DIVISIÓN DE ESTADÍSTICAS ED" +
+    "UCATIVAS\r\n\r\n\r\n";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Matrícula
             // 
