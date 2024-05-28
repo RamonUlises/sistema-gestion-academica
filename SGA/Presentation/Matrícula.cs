@@ -58,6 +58,9 @@ namespace SGA
             txtFechaMatricula.Text = fecha.ToString("dd-MM-yyyy");
 
             LlenarPaises();
+            LlenarEtnias();
+            LlenarLenguas();
+            LlenarDiscapacidades();
 
             cbPaisNacimentoMatricula.OnSelectedIndexChanged += new EventHandler(cbPaisNacimentoMatricula_SelectedIndexChanged);
 
@@ -69,169 +72,145 @@ namespace SGA
             txtMuniciopioMatricula.Enabled = false;
             txtMuniciopioMatricula.Items.Clear();
         }
-
-        public void txtDepartamentoMatricula_SelectedIndexChanged(object sender, EventArgs e)
+        public void LlenarDiscapacidades()
         {
-            DB_Connection connection = new DB_Connection();
-            try
-            {
-                using (MySqlConnection conn = connection.GetConnection())
-                {
-                    string departamentoSelect = txtDepartamentoMatricula.Texts;
-                    string query = "SELECT id_departamento FROM departamentos WHERE departamento = '" + departamentoSelect + "'";
-                    MySqlCommand cmd = new MySqlCommand(query, conn);
+            Controllers.ControllerDiscapacidad controller = new Controllers.ControllerDiscapacidad();
 
-                    using (MySqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        reader.Read();
-                        int departamento = int.Parse(reader["id_departamento"].ToString());
+            string[] discapacidades = controller.ObtenerDiscapacidades();
 
-                        LlenarMunicipios(departamento);
-                    }
-                }
-            }
-            catch (Exception ex)
+            if (discapacidades.Length == 0)
             {
-                MessageBox.Show("Error al cargar los municipios: " + ex.Message);
+                MessageBox.Show("Error al cargar las discapacidades: " + discapacidades[0]);
+                return;
             }
-            finally
+
+            txtDiscapacidadMatricula.Items.Clear();
+            foreach (string discapacidad in discapacidades)
             {
-                connection.CloseConnection();
+                txtDiscapacidadMatricula.Items.Add(discapacidad);
             }
+        }
+        public void LlenarLenguas()
+        {
+            Controllers.ControllerLenguaMaterna controller = new Controllers.ControllerLenguaMaterna();
+
+            string[] lenguas = controller.ObtenerLenguas();
+
+            if (lenguas.Length == 0)
+            {
+                MessageBox.Show("Error al cargar las lenguas: " + lenguas[0]);
+                return;
+            }
+
+            txtLenguaMaternaMatricula.Items.Clear();
+            foreach (string lengua in lenguas)
+            {
+                txtLenguaMaternaMatricula.Items.Add(lengua);
+            }
+        }
+        public void LlenarEtnias()
+        {
+            Controllers.ControllerEtnias controller = new Controllers.ControllerEtnias();
+
+            string[] etnias = controller.ObtenerEtnias();
+
+            if (etnias.Length == 0)
+            {
+                MessageBox.Show("Error al cargar las etnias: " + etnias[0]);
+                return;
+            }
+
+            cbEtniaMatricula.Items.Clear();
+            foreach (string etnia in etnias)
+            {
+                cbEtniaMatricula.Items.Add(etnia);
+            }
+        }
+        public void txtDepartamentoMatricula_SelectedIndexChanged(object sender, EventArgs e)
+        {     
+            Controllers.ControllerDepartamentos controller = new Controllers.ControllerDepartamentos();
+
+            int departamento = controller.ObtenerIdDepartamento(txtDepartamentoMatricula.Texts);
+            LlenarMunicipios(departamento);                
         }
 
         public void LlenarMunicipios(int departamento)
         {
-            DB_Connection connection = new DB_Connection();
-            try
-            {
-                using (MySqlConnection conn = connection.GetConnection())
-                {
-                    string query = "SELECT municipio FROM municipios WHERE id_departamento = '" + departamento + "'";
-                    MySqlCommand cmd = new MySqlCommand(query, conn);
+            Controllers.ControllerMunicipios controller = new Controllers.ControllerMunicipios();
 
-                    using (MySqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        txtMuniciopioMatricula.Items.Clear();
-                        while (reader.Read())
-                        {
-                            txtMuniciopioMatricula.Items.Add(reader["municipio"].ToString());
-                            txtMuniciopioMatricula.Enabled = true;
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
+            string[] municipios = controller.ObtenerMunicipios(departamento);
+
+            if (municipios.Length == 0)
             {
-                MessageBox.Show("Error al cargar los municipios: " + ex.Message);
+                MessageBox.Show("Error al cargar los municipios: " + municipios[0]);
+                return;
             }
-            finally
+
+            txtMuniciopioMatricula.Items.Clear();
+            txtMuniciopioMatricula.Enabled = true;
+
+            foreach (string municipio in municipios)
             {
-                connection.CloseConnection();
+                txtMuniciopioMatricula.Items.Add(municipio);
             }
         }
 
         public void cbPaisNacimentoMatricula_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DB_Connection connection = new DB_Connection();
-            try
-            {
-                using (MySqlConnection conn = connection.GetConnection())
-                {
-                    int pais = ObtenerPais();
-                    LlenarDepartamentos(pais);
-                    LlenarNacionalidad(pais);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al cargar las nacionalidades: " + ex.Message);
-            }
-            finally
-            {
-                connection.CloseConnection();
-            }
+            Controllers.ControllerPais controller = new Controllers.ControllerPais();
+            int pais = controller.ObtenerPaisPorNombre(cbPaisNacimentoMatricula.Texts);
+            LlenarDepartamentos(pais);
+            LlenarNacionalidad(pais);        
         }   
         public void LlenarDepartamentos(int pais)
         {
-            DB_Connection connection = new DB_Connection();
-            try
-            {
-                using (MySqlConnection conn = connection.GetConnection())
-                {
-                    string query = "SELECT departamento FROM departamentos WHERE id_pais = '" + pais + "'";
-                    MySqlCommand cmd = new MySqlCommand(query, conn);
+            Controllers.ControllerDepartamentos controller = new Controllers.ControllerDepartamentos();
 
-                    using (MySqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        txtDepartamentoMatricula.Items.Clear();
-                        while (reader.Read())
-                        {
-                            txtDepartamentoMatricula.Items.Add(reader["departamento"].ToString());
-                            txtDepartamentoMatricula.Enabled = true;
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
+            string[] departamentos = controller.ObtenerDepartamentos(pais);
+
+            if (departamentos.Length == 0)
             {
-                MessageBox.Show("Error al cargar los departamentos: " + ex.Message);
+                MessageBox.Show("Error al cargar los departamentos: " + departamentos[0]);
+                return;
             }
-            finally
+
+            txtDepartamentoMatricula.Items.Clear();
+            txtDepartamentoMatricula.Enabled = true;
+            foreach (string departamento in departamentos)
             {
-                connection.CloseConnection();
+                txtDepartamentoMatricula.Items.Add(departamento);
             }
         }
         public void LlenarNacionalidad(int pais)
         {
-            DB_Connection connection = new DB_Connection();
-            try
-            {
-                using (MySqlConnection conn = connection.GetConnection())
-                {
-                    string query = "SELECT nacionalidad FROM nacionalidades WHERE id_pais = '" + pais + "'";
-                    MySqlCommand cmd = new MySqlCommand(query, conn);
+            Controllers.ControllerPais controller = new Controllers.ControllerPais();
 
-                    using (MySqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        reader.Read();
-                        cbNacionalidadMatricula.Texts = reader["nacionalidad"].ToString();                  
-                    }
-                }
-            }
-            catch (Exception ex)
+            string nacionalidad = controller.ObtenerNacionalidad(pais);
+
+            if (nacionalidad == "")
             {
-                MessageBox.Show("Error al cargar las nacionalidades: " + ex.Message);
+                MessageBox.Show("Error al cargar la nacionalidad: " + nacionalidad);
+                return;
             }
-            finally
-            {
-                connection.CloseConnection();
-            }
+
+            cbNacionalidadMatricula.Texts = nacionalidad;
         }       
         public void LlenarPaises()
         {
-           DB_Connection connection = new DB_Connection();
-            try
-            {
-                using (MySqlConnection conn = connection.GetConnection())
-                {
-                string query = "SELECT * FROM paises";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
+           Controllers.ControllerPais controller = new Controllers.ControllerPais();
 
-                    using (MySqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            cbPaisNacimentoMatricula.Items.Add(reader["pais"].ToString());
-                        }
-                    }
-                }
-            } catch (Exception ex)
+            string[] paises = controller.ObtenerPaises();
+
+            if (paises.Length == 1)
             {
-                MessageBox.Show("Error al cargar los paises: " + ex.Message);
-            } finally
+                MessageBox.Show("Error al cargar los paises: " + paises[0]);
+                return;
+            }
+
+            cbPaisNacimentoMatricula.Items.Clear();
+            foreach (string pais in paises)
             {
-                connection.CloseConnection();
+                cbPaisNacimentoMatricula.Items.Add(pais);
             }
         }
         public string checkedPartidaNacimiento()
@@ -417,33 +396,6 @@ namespace SGA
             MessageBox.Show("Estudiante matriculado correctamente");
         }
 
-        public int ObtenerPais()
-        {
-            DB_Connection connection = new DB_Connection();
-
-            try
-            {
-                using(MySqlConnection conn = connection.GetConnection())
-                {
-                    string paisSelect = cbPaisNacimentoMatricula.Texts;
-                    string query = "SELECT id_pais FROM paises WHERE pais = '" + paisSelect + "'";
-                    MySqlCommand cmd = new MySqlCommand(query, conn);
-
-                    using(MySqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        reader.Read();
-                        return int.Parse(reader["id_pais"].ToString());
-                    }
-                }   
-            } catch (Exception ex)
-            {
-                MessageBox.Show("Error al obtener el país: " + ex.Message);
-                return 0;
-            } finally
-            {
-                connection.CloseConnection();
-            }
-        }
         private void Matrícula_Load(object sender, EventArgs e)
         {
 

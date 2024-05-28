@@ -129,6 +129,12 @@
     <Compile Include="Clases\ClassTraslado.cs" />
     <Compile Include="Clases\ValidarResultados.cs" />
     <Compile Include="Connection\DB_Connection.cs" />
+    <Compile Include="Controllers\ControllerDepartamentos.cs" />
+    <Compile Include="Controllers\ControllerDiscapacidad.cs" />
+    <Compile Include="Controllers\ControllerEtnias.cs" />
+    <Compile Include="Controllers\ControllerLenguaMaterna.cs" />
+    <Compile Include="Controllers\ControllerMunicipios.cs" />
+    <Compile Include="Controllers\ControllerPais.cs" />
     <Compile Include="MBControl\panelOpacity.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -267,8 +273,6 @@
   <ItemGroup>
     <None Include="Resources\OIP-removebg-preview.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
