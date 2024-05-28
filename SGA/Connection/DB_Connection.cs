@@ -26,10 +26,36 @@ namespace SGA.Connection
             if(conexion == null)
             {
                 conexion = new MySqlConnection(cadenaConnection);
-                conexion.Open();
+                try
+                {
+                    conexion.Open();
+                    Console.WriteLine("Conexión exitosa");
+                } catch (MySqlException ex)
+                {
+                    Console.WriteLine("Error: " + ex.Message);
+                    throw;
+                }
+            } else if(conexion.State == System.Data.ConnectionState.Closed)
+            {
+                try
+                {
+                    conexion.Open();
+                } catch (MySqlException ex)
+                {
+                    Console.WriteLine("Error: " + ex.Message);
+                    throw;
+                }
             }
 
+
             return conexion;
+        }
+        public void CloseConnection()
+        {
+            if(conexion != null && conexion.State == System.Data.ConnectionState.Open)
+            {
+                conexion.Close();
+            }
         }
     }
 }
