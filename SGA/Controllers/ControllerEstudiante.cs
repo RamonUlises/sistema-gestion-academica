@@ -30,11 +30,17 @@ namespace SGA.Controllers
                     // Asegúrate de que las propiedades de tipo string no sean null
                     string nombres = estudiante.Nombre1 + " " + estudiante.Nombre2;
                     string apellidos = estudiante.Apellido1 + " " + estudiante.Apellido2;
-                    string cedula = estudiante.Cedula ?? string.Empty;
+                    string cedula = estudiante.Cedula == "" || estudiante.Cedula == null ? "000-000000-0000X" : estudiante.Cedula;
                     string telefono = estudiante.Telefono ?? string.Empty;
                     string territorioIndigena = estudiante.TerritorioIndigena ?? string.Empty;
                     string comunidadIndigena = estudiante.ComunidadIndigena ?? string.Empty;
 
+                    bool resEstudent = ValidarEstudiante(cedula);
+
+                    if (resEstudent)
+                    {
+                        return "La cédula del estudiantes ya se encuentra registrada";
+                    }
 
                     int idSexo = (estudiante.Sexo == "Masculino") ? 1 : 2;
 
@@ -46,6 +52,11 @@ namespace SGA.Controllers
                     int idLengua = controllerLenguaMaterna.ObtenerIdLengua(estudiante.Lengua);
                     int idDiscapacidad = controllerDiscapacidad.ObtenerIdDiscapacidad(estudiante.Discapacidad);
                     int idTutor = controllerTutorEstudiante.ValidarTutor(estudiante);
+
+                    if(idTutor == 0)
+                    {
+                        return "La cédula del tutor ya se encuentra registrada con diferentes nombres";
+                    }
 
                     DateTime fechaConvertida = DateTime.ParseExact(estudiante.FechaNacimiento, "dd-MM-yyyy", CultureInfo.InvariantCulture);
                     string fechaSql = fechaConvertida.ToString("yyyy-MM-dd");
@@ -101,6 +112,42 @@ namespace SGA.Controllers
             } catch (Exception ex)
             {
                 return ex.Message;
+            } finally
+            {
+                connection.CloseConnection();
+            }
+        }
+
+        public bool ValidarEstudiante(string cedula)
+        {
+            DB_Connection connection = new DB_Connection();
+
+            if(cedula == "000-000000-0000X")
+            {
+                return false;
+            }
+
+            try
+            {
+                using (MySqlConnection conn = connection.GetConnection())
+                {
+                    string query = "SELECT * FROM estudiantes WHERE cedula = @cedula";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@cedula", cedula);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.HasRows)
+                        {
+                            return true;
+                        }
+
+                        return false;
+                    }
+                }
+            } catch (Exception)
+            {
+                return false;
             } finally
             {
                 connection.CloseConnection();

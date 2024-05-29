@@ -71,6 +71,8 @@ namespace SGA
 
             txtMuniciopioMatricula.Enabled = false;
             txtMuniciopioMatricula.Items.Clear();
+
+            LlenarFormularioPrueba();
         }
         public void LlenarFormularioPrueba()
         {
