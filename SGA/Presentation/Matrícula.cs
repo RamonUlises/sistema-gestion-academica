@@ -71,8 +71,6 @@ namespace SGA
 
             txtMuniciopioMatricula.Enabled = false;
             txtMuniciopioMatricula.Items.Clear();
-
-            LlenarFormularioPrueba();
         }
         public void LlenarFormularioPrueba()
         {
@@ -437,6 +435,7 @@ namespace SGA
 
             string result = controller.AgregarEstudinante(estudiante);
             MessageBox.Show(result);
+            LimpiarCampos();
         }
 
         private void Matrícula_Load(object sender, EventArgs e)
@@ -1235,7 +1234,7 @@ namespace SGA
 
         }
 
-        private void mbButton1_Click(object sender, EventArgs e)
+        public void LimpiarCampos()
         {
             txtCedulaMatricula.Text = "";
             txt1NombreMatricula.Text = "";
@@ -1265,7 +1264,12 @@ namespace SGA
             txtCedulaTutorMatricula.Text = "";
             txtTelefonoTutorMatricula.Text = "";
             txtCodigoEstudianteSINFOMtricula.Text = "";
+        }
 
+        private void mbButton1_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
+            txt1NombreMatricula.Focus();
         }
     }
 }
