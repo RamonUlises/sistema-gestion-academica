@@ -40,5 +40,34 @@ namespace SGA.Controllers
                 connection.CloseConnection();
             }
         }
+
+        public int ObtenerIdMunicipio(string municipio)
+        {
+            DB_Connection connection = new DB_Connection();
+            try
+            {
+                using (MySqlConnection conn = connection.GetConnection())
+                {
+                    string query = "SELECT id_municipio FROM municipios WHERE municipio = '" + municipio + "'";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        reader.Read();
+                        return Convert.ToInt32(reader["id_municipio"]);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return 0;
+            }
+            finally
+            {
+                connection.CloseConnection();
+            }
+        }
+
+
     }
 }

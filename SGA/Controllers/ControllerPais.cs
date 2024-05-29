@@ -10,7 +10,7 @@ namespace SGA.Controllers
 {
     class ControllerPais
     {
-        public string[] ObtenerPaises() 
+        public string[] ObtenerPaises()
         {
             DB_Connection connection = new DB_Connection();
             try
@@ -69,7 +69,7 @@ namespace SGA.Controllers
             }
         }
 
-        public string ObtenerNacionalidad(int pais)
+        public string  ObtenerNacionalidad(int pais)
         {
             DB_Connection connection = new DB_Connection();
             try
@@ -95,5 +95,36 @@ namespace SGA.Controllers
                 connection.CloseConnection();
             }
         }
+
+        public  int ObtenerIdNacionalidad(string nacionalidad)
+        {
+            DB_Connection connection = new DB_Connection();
+            try
+            {
+                using (MySqlConnection conn = connection.GetConnection())
+                {
+                    string query = "SELECT id_nacionalidad FROM nacionalidades WHERE nacionalidad = '" + nacionalidad + "'";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        reader.Read();
+                        return int.Parse(reader["id_nacionalidad"].ToString());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return 0;
+            }
+            finally
+            {
+                connection.CloseConnection();
+            }
+        }
+
+        
+      
+        
      }
 }

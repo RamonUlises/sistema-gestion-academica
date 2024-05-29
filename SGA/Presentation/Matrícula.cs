@@ -128,6 +128,10 @@ namespace SGA
         }
         public void txtDepartamentoMatricula_SelectedIndexChanged(object sender, EventArgs e)
         {     
+            if (txtDepartamentoMatricula.Texts == "" || txtDepartamentoMatricula.Texts == null)
+            {
+                return;
+            }
             Controllers.ControllerDepartamentos controller = new Controllers.ControllerDepartamentos();
 
             int departamento = controller.ObtenerIdDepartamento(txtDepartamentoMatricula.Texts);
@@ -157,6 +161,10 @@ namespace SGA
 
         public void cbPaisNacimentoMatricula_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if(cbPaisNacimentoMatricula.Texts == "" || cbPaisNacimentoMatricula.Texts == null)
+            {
+                return;
+            }
             Controllers.ControllerPais controller = new Controllers.ControllerPais();
             int pais = controller.ObtenerPaisPorNombre(cbPaisNacimentoMatricula.Texts);
             LlenarDepartamentos(pais);
@@ -168,23 +176,30 @@ namespace SGA
 
             string[] departamentos = controller.ObtenerDepartamentos(pais);
 
-            if (departamentos.Length == 0)
-            {
-                MessageBox.Show("Error al cargar los departamentos: " + departamentos[0]);
-                return;
-            }
 
-            txtDepartamentoMatricula.Items.Clear();
-            txtDepartamentoMatricula.Enabled = true;
-            foreach (string departamento in departamentos)
-            {
-                txtDepartamentoMatricula.Items.Add(departamento);
-            }
+                if (departamentos.Length == 0)
+                {
+                    MessageBox.Show("Error al cargar los departamentos: " + departamentos[0]);
+                    return;
+                }
+
+                txtDepartamentoMatricula.Items.Clear();
+                txtDepartamentoMatricula.Enabled = true;
+                foreach (string departamento in departamentos)
+                {
+                    txtDepartamentoMatricula.Items.Add(departamento);
+                }
+
         }
         public void LlenarNacionalidad(int pais)
         {
             Controllers.ControllerPais controller = new Controllers.ControllerPais();
 
+            if(pais == 0)
+            {
+                MessageBox.Show("Error al cargar la nacionalidad: " + pais);
+                return;
+            }
             string nacionalidad = controller.ObtenerNacionalidad(pais);
 
             if (nacionalidad == "")
@@ -257,7 +272,7 @@ namespace SGA
         private void btnGuardarMatricula_Click(object sender, EventArgs e)
         {
 
-            
+
             ClassEstudiantes estudiante = new ClassEstudiantes();
 
             // VALIDACION DE CEDULA
@@ -308,13 +323,13 @@ namespace SGA
 
             // VALIDACION DE SEXO
             string resSexo = checkedSexo();
-            if(resSexo == "") return;
+            if (resSexo == "") return;
             estudiante.Sexo = checkedSexo();
-            
+
             // VALIDACION DE PESO Y TALLA
             string pattern = @"^\d+(\.\d+)?$";
 
-            if(!Regex.IsMatch(txtPesoMatricula.Text, pattern))
+            if (!Regex.IsMatch(txtPesoMatricula.Text, pattern))
             {
                 MessageBox.Show("El peso debe ser un número");
                 return;
@@ -374,7 +389,7 @@ namespace SGA
             }
 
             // VALIDAR CEDULA DEL TUTOR
-            
+
 
             var resultCedulaTutor = estudiante.ValidarCedulaTutor();
             if (!resultCedulaTutor.result)
@@ -384,7 +399,7 @@ namespace SGA
             }
 
             // VALIDAR TELEFONO DEL TUTOR
-            
+
 
             var resultTelefonoTutor = estudiante.ValidarTelefono();
             if (!resultTelefonoTutor.result)
@@ -392,8 +407,11 @@ namespace SGA
                 MessageBox.Show(resultTelefonoTutor.message);
                 return;
             }
-            
-            MessageBox.Show("Estudiante matriculado correctamente");
+
+            Controllers.ControllerEstudiante controller = new Controllers.ControllerEstudiante();
+
+            string result = controller.AgregarEstudinante(estudiante);
+            MessageBox.Show(result);
         }
 
         private void Matrícula_Load(object sender, EventArgs e)
@@ -1208,9 +1226,9 @@ namespace SGA
             txtTallaMatricula.Text = "";
             txtTelefonoMatricula.Text = "";
             cbPaisNacimentoMatricula.SelectedItem = null;
-            cbNacionalidadMatricula.SelectedItem = null;
             txtDepartamentoMatricula.SelectedItem = null;
             txtMuniciopioMatricula.SelectedItem = null;
+            cbNacionalidadMatricula.Texts = "";
             txtBarrioMatricula.Text = "";
             TxtDireccionMatricula.Text = "";
             cbEtniaMatricula.SelectedItem = null;
