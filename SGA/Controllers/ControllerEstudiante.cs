@@ -35,6 +35,7 @@ namespace SGA.Controllers
                     string territorioIndigena = estudiante.TerritorioIndigena ?? string.Empty;
                     string comunidadIndigena = estudiante.ComunidadIndigena ?? string.Empty;
 
+
                     int idSexo = (estudiante.Sexo == "Masculino") ? 1 : 2;
 
                     int idPais = controllerPaises.ObtenerPaisPorNombre(estudiante.Pais);

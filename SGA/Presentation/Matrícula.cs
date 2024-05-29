@@ -71,6 +71,28 @@ namespace SGA
 
             txtMuniciopioMatricula.Enabled = false;
             txtMuniciopioMatricula.Items.Clear();
+
+            LlenarFormularioPrueba();
+        }
+        public void LlenarFormularioPrueba()
+        {
+            txt1NombreMatricula.Text = "Ramón";
+            txt2NombreMatricula.Text = "Ulises";
+            txt1ApellidoMatricula.Text = "Hernández";
+            txt2ApellidoMatricula.Text = "Talavera";
+            txtCedulaMatricula.Text = "161-230505-1003V";
+            txtFechaNacimientoMatricula.Text = "23-05-2005";
+            txtPesoMatricula.Text = "50";
+            txtTallaMatricula.Text = "160";
+            txtTelefonoMatricula.Text = "5781-0634";
+            txtBarrioMatricula.Text = "Betania";
+            TxtDireccionMatricula.Text = "Monasterio, 2c al oeste";
+            chPartidaNacimeintoSi.Checked = true;
+            chSexoMasMatricula.Checked = true;
+
+            txtNombresApellidosTutorMatricula.Text = "Ruth Carmen Talavera Centeno";
+            txtCedulaTutorMatricula.Text = "161-230505-1007V";
+            txtTelefonoTutorMatricula.Text = "8708-8407";
         }
         public void LlenarDiscapacidades()
         {
@@ -407,6 +429,9 @@ namespace SGA
                 MessageBox.Show(resultTelefonoTutor.message);
                 return;
             }
+
+            DateTime fecha = DateTime.Now;
+            estudiante.FechaMatricula = fecha.ToString("dd-MM-yyyy");
 
             Controllers.ControllerEstudiante controller = new Controllers.ControllerEstudiante();
 

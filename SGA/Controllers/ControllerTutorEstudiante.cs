@@ -19,16 +19,20 @@ namespace SGA.Controllers
                 using (MySqlConnection conn = connection.GetConnection())
                 {
                     string[] nombresYApellidos = tutor.NombresTutor.Split(' ');
-                    string nombres = nombresYApellidos[0] + " " + nombresYApellidos[1];
-                    string apellidos = nombresYApellidos[2] + " " + nombresYApellidos[3];
+                    string nombres = nombresYApellidos[0] + " " + (nombresYApellidos.Length > 1 ? nombresYApellidos[1] : "");
+                    string apellidos = (nombresYApellidos.Length > 2 ? nombresYApellidos[2] : "") + " " + (nombresYApellidos.Length > 3 ? nombresYApellidos[3] : "");
 
-                    string query = "INSERT INTO tutor_x_estudiante (nombres, apellidos, cedula, telefono, ) VALUES" +
-                        " ('" + nombres + ", " + apellidos + ", " + tutor.CedulaTutor + "', '" + tutor.TelefonoTutor + "', '";
+                    // La consulta SQL con parámetros
+                    string query = "INSERT INTO tutores_x_estudiantes (nombres, apellidos, cedula, telefono) VALUES (@nombres, @apellidos, @cedula, @telefono); SELECT LAST_INSERT_ID();";
 
                     MySqlCommand cmd = new MySqlCommand(query, conn);
-                    
-                    int idGenerado = Convert.ToInt32(cmd.ExecuteScalar());
+                    cmd.Parameters.AddWithValue("@nombres", nombres);
+                    cmd.Parameters.AddWithValue("@apellidos", apellidos);
+                    cmd.Parameters.AddWithValue("@cedula", tutor.CedulaTutor);
+                    cmd.Parameters.AddWithValue("@telefono", tutor.TelefonoTutor);
 
+                    // Ejecuta la consulta y obtiene el ID generado
+                    int idGenerado = Convert.ToInt32(cmd.ExecuteScalar());
                     return idGenerado;
                 }
             }
@@ -51,17 +55,17 @@ namespace SGA.Controllers
             {
                 using (MySqlConnection conn = connection.GetConnection())
                 {
-                    string query = "SELECT * FROM tutor_x_estudiante WHERE cedula = '" + tutor.CedulaTutor + "'";
+                    string query = "SELECT COUNT(*) FROM tutores_x_estudiantes WHERE cedula = @cedula";
                     MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@cedula", tutor.CedulaTutor);
 
                     int count = Convert.ToInt32(cmd.ExecuteScalar());
-                     if (count > 0)
+                    if (count > 0)
                     {
                         return BuscarTutor(tutor.CedulaTutor);
-                        
                     }
 
-                     int idTutor = AgregarTutor(tutor);
+                    int idTutor = AgregarTutor(tutor);
                     return idTutor;
                 }
             }
@@ -82,13 +86,20 @@ namespace SGA.Controllers
             {
                 using (MySqlConnection conn = connection.GetConnection())
                 {
-                    string query = "SELECT * FROM tutor_x_estudiante WHERE cedula = '" + cedula + "'";
+                    string query = "SELECT id_tutor_x_estudiante FROM tutores_x_estudiantes WHERE cedula = @cedula";
                     MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@cedula", cedula);
 
                     using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
-                        reader.Read();
-                        return int.Parse(reader["id_tutor_x_estudiante"].ToString());
+                        if (reader.Read())
+                        {
+                            return int.Parse(reader["id_tutor_x_estudiante"].ToString());
+                        }
+                        else
+                        {
+                            return 0;
+                        }
                     }
                 }
             }
