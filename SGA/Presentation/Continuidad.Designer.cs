@@ -1102,7 +1102,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Continuidad";
-            this.Text = "Reingreso";
+            this.Text = "Continuidad";
             this.Load += new System.EventHandler(this.Reingreso_Load);
             this.panel1.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
