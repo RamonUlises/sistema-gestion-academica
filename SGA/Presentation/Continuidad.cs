@@ -47,6 +47,56 @@ namespace SGA
 
             btnGuardarReingreso.Cursor = Cursors.Hand;
             btnBuscarCodigoAlumnoReingreso.Cursor = Cursors.Hand;
+
+            LlenarModalidad();
+            LlenarGrados();
+            LlenarTurnos();
+            LenarSecciones();
+        }
+
+        public void LenarSecciones()
+        {
+            Controllers.ControllerSecciones controllerSecciones = new Controllers.ControllerSecciones();
+
+            string[] secciones = controllerSecciones.ObtenerSecciones();
+
+            foreach (string seccion in secciones)
+            {
+                cbSeccionReingreso.Items.Add(seccion);
+            }
+        }
+        public void LlenarTurnos()
+        {
+            Controllers.ControllerTurnos controllerTurnos = new Controllers.ControllerTurnos();
+
+            string[] turnos = controllerTurnos.ObtenerTurnos();
+
+            foreach (string turno in turnos)
+            {
+                cbTurnoReingreso.Items.Add(turno);
+            }
+        }
+        public void LlenarGrados()
+        {
+            Controllers.ControllerGrado controllerGrado = new Controllers.ControllerGrado();
+
+            string[] grados = controllerGrado.ObtenerGrados();
+
+            foreach (string grado in grados)
+            {
+                cbGradoReingreso.Items.Add(grado);
+            }
+        }
+        public void LlenarModalidad()
+        {
+            Controllers.ControllerModalidad controllerModalidad = new Controllers.ControllerModalidad();
+
+            string[] modalidades = controllerModalidad.ObtenerModalidades();
+
+            foreach (string modalidad in modalidades)
+            {
+                mbModalidadReingreso.Items.Add(modalidad);
+            }
         }
         private void btnGuardarReingreso_Click(object sender, EventArgs e)
         {
@@ -154,6 +204,11 @@ namespace SGA
         }
 
         private void panel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel20_Paint(object sender, PaintEventArgs e)
         {
 
         }

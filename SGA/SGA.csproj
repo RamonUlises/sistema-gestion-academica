@@ -133,9 +133,14 @@
     <Compile Include="Controllers\ControllerDiscapacidad.cs" />
     <Compile Include="Controllers\ControllerEstudiante.cs" />
     <Compile Include="Controllers\ControllerEtnias.cs" />
+    <Compile Include="Controllers\ControllerGrado.cs" />
     <Compile Include="Controllers\ControllerLenguaMaterna.cs" />
+    <Compile Include="Controllers\ControllerModalidad.cs" />
     <Compile Include="Controllers\ControllerMunicipios.cs" />
     <Compile Include="Controllers\ControllerPais.cs" />
+    <Compile Include="Controllers\ControllerPeriodos.cs" />
+    <Compile Include="Controllers\ControllerSecciones.cs" />
+    <Compile Include="Controllers\ControllerTurnos.cs" />
     <Compile Include="Controllers\ControllerTutorEstudiante.cs" />
     <Compile Include="MBControl\panelOpacity.cs">
       <SubType>Component</SubType>

@@ -1783,6 +1783,7 @@
             this.label16.Size = new System.Drawing.Size(559, 23);
             this.label16.TabIndex = 0;
             this.label16.Text = "I. DATOS PROPORCIONADOS POR EL CENTRO EDUCATIVO DE ORIGEN\r\n";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // label30
             // 
