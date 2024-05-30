@@ -231,7 +231,7 @@ namespace SGA
                 return;
             }
 
-            cbNacionalidadMatricula.Texts = nacionalidad;
+            cbNacionalidadMatricula.Text = nacionalidad;
         }       
         public void LlenarPaises()
         {
@@ -379,7 +379,7 @@ namespace SGA
 
             // VALIDAR ESPACIOS VACIOS
             estudiante.Pais = cbPaisNacimentoMatricula.Texts;
-            estudiante.Nacionalidad = cbNacionalidadMatricula.Texts;
+            estudiante.Nacionalidad = cbNacionalidadMatricula.Text;
             estudiante.Departamento = txtDepartamentoMatricula.Texts;
             estudiante.Municipio = txtMuniciopioMatricula.Texts;
             estudiante.Barrio = txtBarrioMatricula.Text;
@@ -1255,7 +1255,7 @@ namespace SGA
             cbPaisNacimentoMatricula.SelectedItem = null;
             txtDepartamentoMatricula.SelectedItem = null;
             txtMuniciopioMatricula.SelectedItem = null;
-            cbNacionalidadMatricula.Texts = "";
+            cbNacionalidadMatricula.Text = "";
             txtBarrioMatricula.Text = "";
             TxtDireccionMatricula.Text = "";
             cbEtniaMatricula.SelectedItem = null;

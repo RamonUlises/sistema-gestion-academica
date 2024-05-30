@@ -55,7 +55,6 @@
             this.txtFechaNacimientoMatricula = new SGA.MBControl.MBTexbox();
             this.panel23 = new System.Windows.Forms.Panel();
             this.label31 = new System.Windows.Forms.Label();
-            this.cbNacionalidadMatricula = new SGA.MBControl.MBComboBox();
             this.txt2ApellidoMatricula = new SGA.MBControl.MBTexbox();
             this.cbPaisNacimentoMatricula = new SGA.MBControl.MBComboBox();
             this.panel24 = new System.Windows.Forms.Panel();
@@ -132,6 +131,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.cbNacionalidadMatricula = new SGA.MBControl.MBTexbox();
             this.panel1.SuspendLayout();
             this.panel30.SuspendLayout();
             this.panel29.SuspendLayout();
@@ -168,6 +168,7 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.cbNacionalidadMatricula);
             this.panel1.Controls.Add(this.mbButton1);
             this.panel1.Controls.Add(this.txtDiscapacidadMatricula);
             this.panel1.Controls.Add(this.txtDepartamentoMatricula);
@@ -186,7 +187,6 @@
             this.panel1.Controls.Add(this.panel26);
             this.panel1.Controls.Add(this.txtFechaNacimientoMatricula);
             this.panel1.Controls.Add(this.panel23);
-            this.panel1.Controls.Add(this.cbNacionalidadMatricula);
             this.panel1.Controls.Add(this.txt2ApellidoMatricula);
             this.panel1.Controls.Add(this.cbPaisNacimentoMatricula);
             this.panel1.Controls.Add(this.panel24);
@@ -637,30 +637,6 @@
             this.label31.TabIndex = 0;
             this.label31.Text = "Fecha nacimiento:";
             this.label31.Click += new System.EventHandler(this.label31_Click_1);
-            // 
-            // cbNacionalidadMatricula
-            // 
-            this.cbNacionalidadMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.cbNacionalidadMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.cbNacionalidadMatricula.BorderSize = 1;
-            this.cbNacionalidadMatricula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cbNacionalidadMatricula.Enabled = false;
-            this.cbNacionalidadMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cbNacionalidadMatricula.ForeColor = System.Drawing.Color.Black;
-            this.cbNacionalidadMatricula.IconColor = System.Drawing.Color.Black;
-            this.cbNacionalidadMatricula.Items.AddRange(new object[] {
-            "Guatemalteco",
-            "Nicaragüense"});
-            this.cbNacionalidadMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.cbNacionalidadMatricula.ListTextColor = System.Drawing.Color.Black;
-            this.cbNacionalidadMatricula.Location = new System.Drawing.Point(818, 706);
-            this.cbNacionalidadMatricula.MinimumSize = new System.Drawing.Size(200, 30);
-            this.cbNacionalidadMatricula.Name = "cbNacionalidadMatricula";
-            this.cbNacionalidadMatricula.Padding = new System.Windows.Forms.Padding(1);
-            this.cbNacionalidadMatricula.Size = new System.Drawing.Size(200, 30);
-            this.cbNacionalidadMatricula.TabIndex = 61;
-            this.cbNacionalidadMatricula.Texts = "";
-            this.cbNacionalidadMatricula.OnSelectedIndexChanged += new System.EventHandler(this.cbNacionalidadMatricula_OnSelectedIndexChanged_1);
             // 
             // txt2ApellidoMatricula
             // 
@@ -1695,6 +1671,27 @@
     "UCATIVAS\r\n\r\n\r\n";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // cbNacionalidadMatricula
+            // 
+            this.cbNacionalidadMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbNacionalidadMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbNacionalidadMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbNacionalidadMatricula.BorderRadius = 25;
+            this.cbNacionalidadMatricula.BorderSize = 1;
+            this.cbNacionalidadMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbNacionalidadMatricula.ForeColor = System.Drawing.Color.Black;
+            this.cbNacionalidadMatricula.Location = new System.Drawing.Point(818, 702);
+            this.cbNacionalidadMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbNacionalidadMatricula.Multiline = false;
+            this.cbNacionalidadMatricula.Name = "cbNacionalidadMatricula";
+            this.cbNacionalidadMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.cbNacionalidadMatricula.PasswordChar = false;
+            this.cbNacionalidadMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.cbNacionalidadMatricula.PlaceholderText = "";
+            this.cbNacionalidadMatricula.Size = new System.Drawing.Size(226, 38);
+            this.cbNacionalidadMatricula.TabIndex = 144;
+            this.cbNacionalidadMatricula.UnderlineStyle = false;
+            // 
             // Matrícula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1841,7 +1838,6 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
         private MBControl.MBTexbox mbTexbox20;
-        private MBControl.MBComboBox cbNacionalidadMatricula;
         private MBControl.MBComboBox cbPaisNacimentoMatricula;
         private MBControl.MBTexbox txtFechaNacimientoMatricula;
         private System.Windows.Forms.Panel panel23;
@@ -1875,5 +1871,6 @@
         private MBControl.MBComboBox txtMuniciopioMatricula;
         private MBControl.MBComboBox txtLenguaMaternaMatricula;
         private MBControl.MBButton mbButton1;
+        private MBControl.MBTexbox cbNacionalidadMatricula;
     }
 }
