@@ -17,18 +17,18 @@ namespace SGA
         public Informacion()
         {
             InitializeComponent();
-            PanelHelper.SetRoundPanel(panel2, 20);
-            PanelHelper.SetRoundPanel(panel3, 20);
-            PanelHelper.SetRoundPanel(panel4, 20);
-            PanelHelper.SetRoundPanel(panel5, 20);
-            PanelHelper.SetRoundPanel(panel6, 20);
-            PanelHelper.SetRoundPanel(panel7, 20);
-            PanelHelper.SetRoundPanel(panel8, 20);
-            PanelHelper.SetRoundPanel(panel9, 20);
-            PanelHelper.SetRoundPanel(panel10, 20);
-            PanelHelper.SetRoundPanel(panel11, 20);
-            PanelHelper.SetRoundPanel(panel12, 20);
-            PanelHelper.SetRoundPanel(panel13, 20);
+            PanelHelper.SetRoundPanel(panel2, 10);
+            PanelHelper.SetRoundPanel(panel3, 10);
+            PanelHelper.SetRoundPanel(panel4, 10);
+            PanelHelper.SetRoundPanel(panel5, 10);
+            PanelHelper.SetRoundPanel(panel6, 10);
+            PanelHelper.SetRoundPanel(panel7, 10);
+            PanelHelper.SetRoundPanel(panel8, 10);
+            PanelHelper.SetRoundPanel(panel9, 10);
+            PanelHelper.SetRoundPanel(panel10, 10);
+            PanelHelper.SetRoundPanel(panel11, 10);
+            PanelHelper.SetRoundPanel(panel12, 10);
+            PanelHelper.SetRoundPanel(panel13, 10);
 
             // Establecer el color de fondo del panel con una transparencia
          panel3.BackColor = Color.FromArgb(128, Color.Black); // Opacidad al 50%

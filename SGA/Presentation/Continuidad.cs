@@ -14,9 +14,9 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 namespace SGA
 {
-    public partial class Reingreso : Form
+    public partial class Continuidad : Form
     {
-        public Reingreso()
+        public Continuidad()
         {
             InitializeComponent();
             PanelHelper.SetRoundPanel(panel2, 10);
@@ -150,6 +150,11 @@ namespace SGA
             cbTurnoReingreso.SelectedItem = null;
             cbGradoReingreso.SelectedItem = null;
             cbSeccionReingreso.SelectedItem = null;
+
+        }
+
+        private void panel11_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

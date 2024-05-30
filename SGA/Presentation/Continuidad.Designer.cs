@@ -1,6 +1,6 @@
 ﻿namespace SGA
 {
-    partial class Reingreso
+    partial class Continuidad
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reingreso));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Continuidad));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.mbButton5 = new SGA.MBControl.MBButton();
@@ -183,10 +183,11 @@
             this.panel11.Controls.Add(this.panel21);
             this.panel11.Controls.Add(this.mbTexbox6);
             this.panel11.Controls.Add(this.panel22);
-            this.panel11.Location = new System.Drawing.Point(105, 12);
+            this.panel11.Location = new System.Drawing.Point(105, 56);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1434, 754);
+            this.panel11.Size = new System.Drawing.Size(1434, 710);
             this.panel11.TabIndex = 151;
+            this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
             // 
             // mbButton5
             // 
@@ -552,9 +553,9 @@
             this.label18.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(532, 19);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(267, 23);
+            this.label18.Size = new System.Drawing.Size(287, 23);
             this.label18.TabIndex = 0;
-            this.label18.Text = "Datos de reingreso del Estudiante";
+            this.label18.Text = "Datos de continuidad del Estudiante";
             // 
             // mbTexbox5
             // 
@@ -967,9 +968,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(532, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(267, 23);
+            this.label1.Size = new System.Drawing.Size(287, 23);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Datos de reingreso del Estudiante";
+            this.label1.Text = "Datos de continuidad del Estudiante";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtNombresAlumnoReingreso
@@ -1092,7 +1093,7 @@
             this.mbButton2.UseVisualStyleBackColor = false;
             this.mbButton2.Click += new System.EventHandler(this.mbButton2_Click);
             // 
-            // Reingreso
+            // Continuidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1100,7 +1101,7 @@
             this.ClientSize = new System.Drawing.Size(1682, 949);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Reingreso";
+            this.Name = "Continuidad";
             this.Text = "Reingreso";
             this.Load += new System.EventHandler(this.Reingreso_Load);
             this.panel1.ResumeLayout(false);

@@ -16,8 +16,8 @@ namespace SGA.PRESENTACION
         public Login()
         {
             InitializeComponent();
-            PanelHelper.SetRoundPanel(panel2, 20);
-            PanelHelper.SetRoundPanel(panel3, 20);
+            PanelHelper.SetRoundPanel(panel2, 10);
+            PanelHelper.SetRoundPanel(panel3, 10);
 
             // Establecer el color de fondo del panel con una transparencia
             //panel2.BackColor = Color.FromArgb(50, Color.FromArgb(102, 0, 102)); // Opacidad al 50%

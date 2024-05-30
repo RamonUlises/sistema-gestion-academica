@@ -120,7 +120,7 @@ namespace SGA
         private void iconButton3_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new Reingreso());
+            OpenChildForm(new Continuidad());
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -150,7 +150,7 @@
             this.iconButton3.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconButton3.Size = new System.Drawing.Size(220, 60);
             this.iconButton3.TabIndex = 3;
-            this.iconButton3.Text = "Reingreso";
+            this.iconButton3.Text = "Continuidad";
             this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton3.UseVisualStyleBackColor = true;
