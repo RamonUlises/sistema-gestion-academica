@@ -256,9 +256,9 @@
             this.panel12.Controls.Add(this.panel14);
             this.panel12.Controls.Add(this.panel13);
             this.panel12.Controls.Add(this.mbButton2);
-            this.panel12.Location = new System.Drawing.Point(86, 3);
+            this.panel12.Location = new System.Drawing.Point(86, 28);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(1459, 1073);
+            this.panel12.Size = new System.Drawing.Size(1459, 1048);
             this.panel12.TabIndex = 1;
             this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
             // 
