@@ -185,7 +185,7 @@
             this.panel11.Controls.Add(this.panel22);
             this.panel11.Location = new System.Drawing.Point(105, 56);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1434, 710);
+            this.panel11.Size = new System.Drawing.Size(1432, 710);
             this.panel11.TabIndex = 151;
             this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
             // 
@@ -546,6 +546,7 @@
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(1278, 60);
             this.panel20.TabIndex = 155;
+            this.panel20.Paint += new System.Windows.Forms.PaintEventHandler(this.panel20_Paint);
             // 
             // label18
             // 

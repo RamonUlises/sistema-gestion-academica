@@ -63,8 +63,19 @@ namespace SGA
             PanelHelper.SetRoundPanel(panel43, 10);
             PanelHelper.SetRoundPanel(panel44, 10);
 
-           
+            LlenarPeriodos();
 
+        }
+
+        private void LlenarPeriodos()
+        {
+            Controllers.ControllerPeriodos controllerPeriodos = new Controllers.ControllerPeriodos();
+            string[] periodos = controllerPeriodos.ObtenerPeriodos();
+
+            foreach (string periodo in periodos)
+            {
+                cbPeriodoTraslado.Items.Add(periodo);
+            }
         }
         private void customizarDiseno()
         {
@@ -190,6 +201,11 @@ namespace SGA
             }
 
             MessageBox.Show("Traslado guardado correctamente");
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
