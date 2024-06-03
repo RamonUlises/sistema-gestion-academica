@@ -10,9 +10,6 @@ namespace SGA.Clases
     {
         public string CodigoAlumno { get; set; }
         public string NombreAlumno { get; set; }
-        public string CodigoUnico { get; set; }
-        public string CodigoCentro { get; set; }
-        public string Centro { get; set; }
         public string Modalidad { get; set; }
         public string Turno { get; set; }
         public string Grado { get; set; }
@@ -28,21 +25,6 @@ namespace SGA.Clases
             if(this.NombreAlumno.Length == 0)
             {
                 return Validation(false, "El nombre del alumno es requerido");
-            }
-
-            if(this.CodigoUnico.Length == 0)
-            {
-                return Validation(false, "El código único es requerido");
-            }
-
-            if(this.CodigoCentro.Length == 0)
-            {
-                return Validation(false, "El código del centro es requerido");
-            }
-
-            if(this.Centro.Length == 0)
-            {
-                return Validation(false, "El nombre del centro es requerido");
             }
 
             if(this.Modalidad.Length == 0)

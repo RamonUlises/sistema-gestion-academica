@@ -75,20 +75,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtCentroReingreso = new SGA.MBControl.MBTexbox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtCodigoCentroReingreso = new SGA.MBControl.MBTexbox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.btnBuscarCodigoAlumnoReingreso = new SGA.MBControl.MBButton();
-            this.mbButton1 = new SGA.MBControl.MBButton();
             this.btnGuardarReingreso = new SGA.MBControl.MBButton();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtCodigoUnicoReingreso = new SGA.MBControl.MBTexbox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombresAlumnoReingreso = new SGA.MBControl.MBTexbox();
@@ -114,10 +104,7 @@
             this.panel12.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.panel10.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -132,16 +119,9 @@
             this.panel1.Controls.Add(this.cbTurnoReingreso);
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Controls.Add(this.panel8);
-            this.panel1.Controls.Add(this.txtCentroReingreso);
-            this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.txtCodigoCentroReingreso);
-            this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.btnBuscarCodigoAlumnoReingreso);
-            this.panel1.Controls.Add(this.mbButton1);
             this.panel1.Controls.Add(this.btnGuardarReingreso);
             this.panel1.Controls.Add(this.panel10);
-            this.panel1.Controls.Add(this.txtCodigoUnicoReingreso);
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.txtNombresAlumnoReingreso);
             this.panel1.Controls.Add(this.panel5);
@@ -185,7 +165,7 @@
             this.panel11.Controls.Add(this.panel22);
             this.panel11.Location = new System.Drawing.Point(105, 56);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1443, 710);
+            this.panel11.Size = new System.Drawing.Size(1427, 710);
             this.panel11.TabIndex = 151;
             this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
             // 
@@ -651,7 +631,7 @@
             this.cbGradoReingreso.IconColor = System.Drawing.Color.Black;
             this.cbGradoReingreso.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbGradoReingreso.ListTextColor = System.Drawing.Color.Black;
-            this.cbGradoReingreso.Location = new System.Drawing.Point(545, 501);
+            this.cbGradoReingreso.Location = new System.Drawing.Point(545, 380);
             this.cbGradoReingreso.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbGradoReingreso.Name = "cbGradoReingreso";
             this.cbGradoReingreso.Padding = new System.Windows.Forms.Padding(1);
@@ -670,7 +650,7 @@
             this.cbSeccionReingreso.IconColor = System.Drawing.Color.Black;
             this.cbSeccionReingreso.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbSeccionReingreso.ListTextColor = System.Drawing.Color.Black;
-            this.cbSeccionReingreso.Location = new System.Drawing.Point(1036, 502);
+            this.cbSeccionReingreso.Location = new System.Drawing.Point(1036, 381);
             this.cbSeccionReingreso.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbSeccionReingreso.Name = "cbSeccionReingreso";
             this.cbSeccionReingreso.Padding = new System.Windows.Forms.Padding(1);
@@ -682,7 +662,7 @@
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel12.Controls.Add(this.label10);
-            this.panel12.Location = new System.Drawing.Point(921, 497);
+            this.panel12.Location = new System.Drawing.Point(921, 376);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(109, 45);
             this.panel12.TabIndex = 148;
@@ -708,7 +688,7 @@
             this.cbTurnoReingreso.IconColor = System.Drawing.Color.Black;
             this.cbTurnoReingreso.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbTurnoReingreso.ListTextColor = System.Drawing.Color.Black;
-            this.cbTurnoReingreso.Location = new System.Drawing.Point(1036, 445);
+            this.cbTurnoReingreso.Location = new System.Drawing.Point(1036, 324);
             this.cbTurnoReingreso.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbTurnoReingreso.Name = "cbTurnoReingreso";
             this.cbTurnoReingreso.Padding = new System.Windows.Forms.Padding(1);
@@ -720,7 +700,7 @@
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel9.Controls.Add(this.label6);
-            this.panel9.Location = new System.Drawing.Point(921, 440);
+            this.panel9.Location = new System.Drawing.Point(921, 319);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(109, 45);
             this.panel9.TabIndex = 146;
@@ -739,7 +719,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel8.Controls.Add(this.label5);
-            this.panel8.Location = new System.Drawing.Point(419, 440);
+            this.panel8.Location = new System.Drawing.Point(419, 319);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(157, 45);
             this.panel8.TabIndex = 144;
@@ -753,86 +733,6 @@
             this.label5.Size = new System.Drawing.Size(87, 20);
             this.label5.TabIndex = 0;
             this.label5.Text = "Modalidad:";
-            // 
-            // txtCentroReingreso
-            // 
-            this.txtCentroReingreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCentroReingreso.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCentroReingreso.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCentroReingreso.BorderRadius = 25;
-            this.txtCentroReingreso.BorderSize = 1;
-            this.txtCentroReingreso.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCentroReingreso.ForeColor = System.Drawing.Color.Black;
-            this.txtCentroReingreso.Location = new System.Drawing.Point(596, 379);
-            this.txtCentroReingreso.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCentroReingreso.Multiline = false;
-            this.txtCentroReingreso.Name = "txtCentroReingreso";
-            this.txtCentroReingreso.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtCentroReingreso.PasswordChar = false;
-            this.txtCentroReingreso.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtCentroReingreso.PlaceholderText = "";
-            this.txtCentroReingreso.Size = new System.Drawing.Size(640, 38);
-            this.txtCentroReingreso.TabIndex = 143;
-            this.txtCentroReingreso.UnderlineStyle = false;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel7.Controls.Add(this.label4);
-            this.panel7.Location = new System.Drawing.Point(419, 379);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(157, 45);
-            this.panel7.TabIndex = 142;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(20, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 20);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Centro:";
-            // 
-            // txtCodigoCentroReingreso
-            // 
-            this.txtCodigoCentroReingreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCodigoCentroReingreso.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCodigoCentroReingreso.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCodigoCentroReingreso.BorderRadius = 25;
-            this.txtCodigoCentroReingreso.BorderSize = 1;
-            this.txtCodigoCentroReingreso.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigoCentroReingreso.ForeColor = System.Drawing.Color.Black;
-            this.txtCodigoCentroReingreso.Location = new System.Drawing.Point(1012, 317);
-            this.txtCodigoCentroReingreso.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCodigoCentroReingreso.Multiline = false;
-            this.txtCodigoCentroReingreso.Name = "txtCodigoCentroReingreso";
-            this.txtCodigoCentroReingreso.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtCodigoCentroReingreso.PasswordChar = false;
-            this.txtCodigoCentroReingreso.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtCodigoCentroReingreso.PlaceholderText = "";
-            this.txtCodigoCentroReingreso.Size = new System.Drawing.Size(224, 38);
-            this.txtCodigoCentroReingreso.TabIndex = 141;
-            this.txtCodigoCentroReingreso.UnderlineStyle = false;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel6.Controls.Add(this.label3);
-            this.panel6.Location = new System.Drawing.Point(835, 317);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(157, 45);
-            this.panel6.TabIndex = 140;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(20, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Código centro:";
             // 
             // btnBuscarCodigoAlumnoReingreso
             // 
@@ -855,27 +755,6 @@
             this.btnBuscarCodigoAlumnoReingreso.UseVisualStyleBackColor = false;
             this.btnBuscarCodigoAlumnoReingreso.Click += new System.EventHandler(this.btnBuscarCodigoAlumnoReingreso_Click);
             // 
-            // mbButton1
-            // 
-            this.mbButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.mbButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.mbButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.mbButton1.BorderRadius = 40;
-            this.mbButton1.BorderSize = 1;
-            this.mbButton1.FlatAppearance.BorderSize = 0;
-            this.mbButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.mbButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.mbButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mbButton1.ForeColor = System.Drawing.Color.White;
-            this.mbButton1.Location = new System.Drawing.Point(966, 607);
-            this.mbButton1.Name = "mbButton1";
-            this.mbButton1.Size = new System.Drawing.Size(172, 55);
-            this.mbButton1.TabIndex = 138;
-            this.mbButton1.Text = "Comprobante";
-            this.mbButton1.TextColor = System.Drawing.Color.White;
-            this.mbButton1.UseVisualStyleBackColor = false;
-            this.mbButton1.Click += new System.EventHandler(this.mbButton1_Click);
-            // 
             // btnGuardarReingreso
             // 
             this.btnGuardarReingreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
@@ -888,7 +767,7 @@
             this.btnGuardarReingreso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnGuardarReingreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarReingreso.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarReingreso.Location = new System.Drawing.Point(788, 607);
+            this.btnGuardarReingreso.Location = new System.Drawing.Point(788, 486);
             this.btnGuardarReingreso.Name = "btnGuardarReingreso";
             this.btnGuardarReingreso.Size = new System.Drawing.Size(172, 55);
             this.btnGuardarReingreso.TabIndex = 137;
@@ -901,7 +780,7 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel10.Controls.Add(this.label8);
-            this.panel10.Location = new System.Drawing.Point(420, 497);
+            this.panel10.Location = new System.Drawing.Point(420, 376);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(109, 45);
             this.panel10.TabIndex = 131;
@@ -915,46 +794,6 @@
             this.label8.Size = new System.Drawing.Size(55, 20);
             this.label8.TabIndex = 0;
             this.label8.Text = "Grado:";
-            // 
-            // txtCodigoUnicoReingreso
-            // 
-            this.txtCodigoUnicoReingreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCodigoUnicoReingreso.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCodigoUnicoReingreso.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCodigoUnicoReingreso.BorderRadius = 25;
-            this.txtCodigoUnicoReingreso.BorderSize = 1;
-            this.txtCodigoUnicoReingreso.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigoUnicoReingreso.ForeColor = System.Drawing.Color.Black;
-            this.txtCodigoUnicoReingreso.Location = new System.Drawing.Point(596, 317);
-            this.txtCodigoUnicoReingreso.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCodigoUnicoReingreso.Multiline = false;
-            this.txtCodigoUnicoReingreso.Name = "txtCodigoUnicoReingreso";
-            this.txtCodigoUnicoReingreso.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtCodigoUnicoReingreso.PasswordChar = false;
-            this.txtCodigoUnicoReingreso.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtCodigoUnicoReingreso.PlaceholderText = "";
-            this.txtCodigoUnicoReingreso.Size = new System.Drawing.Size(224, 38);
-            this.txtCodigoUnicoReingreso.TabIndex = 124;
-            this.txtCodigoUnicoReingreso.UnderlineStyle = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(419, 317);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(157, 45);
-            this.panel3.TabIndex = 123;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(20, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Código único:";
             // 
             // panel2
             // 
@@ -1067,7 +906,7 @@
             this.mbModalidadReingreso.IconColor = System.Drawing.Color.Black;
             this.mbModalidadReingreso.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.mbModalidadReingreso.ListTextColor = System.Drawing.Color.Black;
-            this.mbModalidadReingreso.Location = new System.Drawing.Point(596, 445);
+            this.mbModalidadReingreso.Location = new System.Drawing.Point(596, 324);
             this.mbModalidadReingreso.MinimumSize = new System.Drawing.Size(200, 30);
             this.mbModalidadReingreso.Name = "mbModalidadReingreso";
             this.mbModalidadReingreso.Padding = new System.Windows.Forms.Padding(1);
@@ -1087,7 +926,7 @@
             this.mbButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.mbButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mbButton2.ForeColor = System.Drawing.Color.White;
-            this.mbButton2.Location = new System.Drawing.Point(610, 607);
+            this.mbButton2.Location = new System.Drawing.Point(610, 486);
             this.mbButton2.Name = "mbButton2";
             this.mbButton2.Size = new System.Drawing.Size(172, 55);
             this.mbButton2.TabIndex = 153;
@@ -1135,14 +974,8 @@
             this.panel9.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -1165,20 +998,10 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label5;
-        private MBControl.MBTexbox txtCentroReingreso;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label4;
-        private MBControl.MBTexbox txtCodigoCentroReingreso;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label3;
         private MBControl.MBButton btnBuscarCodigoAlumnoReingreso;
-        private MBControl.MBButton mbButton1;
         private MBControl.MBButton btnGuardarReingreso;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label8;
-        private MBControl.MBTexbox txtCodigoUnicoReingreso;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private MBControl.MBTexbox txtNombresAlumnoReingreso;

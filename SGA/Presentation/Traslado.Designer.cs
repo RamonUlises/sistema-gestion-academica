@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Traslado));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtCentroOrigenTraslado = new SGA.MBControl.MBComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.mbButton2 = new SGA.MBControl.MBButton();
             this.label50 = new System.Windows.Forms.Label();
@@ -154,7 +155,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnBuscarCodigoUnicoTraslado = new SGA.MBControl.MBButton();
-            this.btnComprobanteTraslado = new SGA.MBControl.MBButton();
             this.btnGuardartraslado = new SGA.MBControl.MBButton();
             this.cbPeriodoTraslado = new SGA.MBControl.MBComboBox();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -168,13 +168,9 @@
             this.txtCodigoUnicoEstudianteTraslado = new SGA.MBControl.MBTexbox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.panel43 = new System.Windows.Forms.Panel();
-            this.label51 = new System.Windows.Forms.Label();
-            this.cbTipotraslado = new SGA.MBControl.MBComboBox();
             this.mbButton3 = new SGA.MBControl.MBButton();
             this.panel44 = new System.Windows.Forms.Panel();
             this.label52 = new System.Windows.Forms.Label();
-            this.txtCentroOrigenTraslado = new SGA.MBControl.MBComboBox();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel41.SuspendLayout();
@@ -217,7 +213,6 @@
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel43.SuspendLayout();
             this.panel44.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -225,13 +220,11 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.txtCentroOrigenTraslado);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.txtMotivoTaslado);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.btnBuscarCodigoUnicoTraslado);
-            this.panel1.Controls.Add(this.btnComprobanteTraslado);
             this.panel1.Controls.Add(this.btnGuardartraslado);
             this.panel1.Controls.Add(this.cbPeriodoTraslado);
             this.panel1.Controls.Add(this.panel10);
@@ -241,16 +234,34 @@
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.txtCodigoUnicoEstudianteTraslado);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel43);
-            this.panel1.Controls.Add(this.cbTipotraslado);
             this.panel1.Controls.Add(this.mbButton3);
             this.panel1.Controls.Add(this.panel44);
+            this.panel1.Controls.Add(this.txtCentroOrigenTraslado);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1664, 902);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txtCentroOrigenTraslado
+            // 
+            this.txtCentroOrigenTraslado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtCentroOrigenTraslado.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtCentroOrigenTraslado.BorderSize = 1;
+            this.txtCentroOrigenTraslado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.txtCentroOrigenTraslado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtCentroOrigenTraslado.ForeColor = System.Drawing.Color.Black;
+            this.txtCentroOrigenTraslado.IconColor = System.Drawing.Color.Black;
+            this.txtCentroOrigenTraslado.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtCentroOrigenTraslado.ListTextColor = System.Drawing.Color.Black;
+            this.txtCentroOrigenTraslado.Location = new System.Drawing.Point(712, 433);
+            this.txtCentroOrigenTraslado.MinimumSize = new System.Drawing.Size(200, 30);
+            this.txtCentroOrigenTraslado.Name = "txtCentroOrigenTraslado";
+            this.txtCentroOrigenTraslado.Padding = new System.Windows.Forms.Padding(1);
+            this.txtCentroOrigenTraslado.Size = new System.Drawing.Size(442, 30);
+            this.txtCentroOrigenTraslado.TabIndex = 157;
+            this.txtCentroOrigenTraslado.Texts = "";
             // 
             // panel7
             // 
@@ -333,7 +344,7 @@
             this.panel7.Controls.Add(this.panel17);
             this.panel7.Location = new System.Drawing.Point(148, 12);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1393, 2347);
+            this.panel7.Size = new System.Drawing.Size(1389, 2347);
             this.panel7.TabIndex = 145;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
@@ -1863,6 +1874,7 @@
             this.label17.TabIndex = 65;
             this.label17.Text = "_________________________________________________________________________________" +
     "_____________________________________________________________";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label18
             // 
@@ -1988,27 +2000,6 @@
             this.btnBuscarCodigoUnicoTraslado.UseVisualStyleBackColor = false;
             this.btnBuscarCodigoUnicoTraslado.Click += new System.EventHandler(this.btnBuscarCodigoUnicoTraslado_Click);
             // 
-            // btnComprobanteTraslado
-            // 
-            this.btnComprobanteTraslado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.btnComprobanteTraslado.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.btnComprobanteTraslado.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.btnComprobanteTraslado.BorderRadius = 40;
-            this.btnComprobanteTraslado.BorderSize = 1;
-            this.btnComprobanteTraslado.FlatAppearance.BorderSize = 0;
-            this.btnComprobanteTraslado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnComprobanteTraslado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnComprobanteTraslado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnComprobanteTraslado.ForeColor = System.Drawing.Color.White;
-            this.btnComprobanteTraslado.Location = new System.Drawing.Point(874, 634);
-            this.btnComprobanteTraslado.Name = "btnComprobanteTraslado";
-            this.btnComprobanteTraslado.Size = new System.Drawing.Size(172, 55);
-            this.btnComprobanteTraslado.TabIndex = 138;
-            this.btnComprobanteTraslado.Text = "Comprobante";
-            this.btnComprobanteTraslado.TextColor = System.Drawing.Color.White;
-            this.btnComprobanteTraslado.UseVisualStyleBackColor = false;
-            this.btnComprobanteTraslado.Click += new System.EventHandler(this.btnComprobanteTraslado_Click_3);
-            // 
             // btnGuardartraslado
             // 
             this.btnGuardartraslado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
@@ -2021,7 +2012,7 @@
             this.btnGuardartraslado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnGuardartraslado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardartraslado.ForeColor = System.Drawing.Color.White;
-            this.btnGuardartraslado.Location = new System.Drawing.Point(691, 634);
+            this.btnGuardartraslado.Location = new System.Drawing.Point(811, 578);
             this.btnGuardartraslado.Name = "btnGuardartraslado";
             this.btnGuardartraslado.Size = new System.Drawing.Size(172, 55);
             this.btnGuardartraslado.TabIndex = 137;
@@ -2188,44 +2179,6 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Código único de Estudiante:";
             // 
-            // panel43
-            // 
-            this.panel43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel43.Controls.Add(this.label51);
-            this.panel43.Location = new System.Drawing.Point(419, 540);
-            this.panel43.Name = "panel43";
-            this.panel43.Size = new System.Drawing.Size(279, 45);
-            this.panel43.TabIndex = 152;
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(20, 9);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(125, 20);
-            this.label51.TabIndex = 0;
-            this.label51.Text = "Tipo de Traslado:";
-            // 
-            // cbTipotraslado
-            // 
-            this.cbTipotraslado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.cbTipotraslado.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.cbTipotraslado.BorderSize = 1;
-            this.cbTipotraslado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cbTipotraslado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cbTipotraslado.ForeColor = System.Drawing.Color.Black;
-            this.cbTipotraslado.IconColor = System.Drawing.Color.Black;
-            this.cbTipotraslado.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.cbTipotraslado.ListTextColor = System.Drawing.Color.Black;
-            this.cbTipotraslado.Location = new System.Drawing.Point(712, 549);
-            this.cbTipotraslado.MinimumSize = new System.Drawing.Size(200, 30);
-            this.cbTipotraslado.Name = "cbTipotraslado";
-            this.cbTipotraslado.Padding = new System.Windows.Forms.Padding(1);
-            this.cbTipotraslado.Size = new System.Drawing.Size(442, 30);
-            this.cbTipotraslado.TabIndex = 153;
-            this.cbTipotraslado.Texts = "";
-            // 
             // mbButton3
             // 
             this.mbButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
@@ -2238,7 +2191,7 @@
             this.mbButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.mbButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mbButton3.ForeColor = System.Drawing.Color.White;
-            this.mbButton3.Location = new System.Drawing.Point(513, 634);
+            this.mbButton3.Location = new System.Drawing.Point(633, 578);
             this.mbButton3.Name = "mbButton3";
             this.mbButton3.Size = new System.Drawing.Size(172, 55);
             this.mbButton3.TabIndex = 154;
@@ -2265,25 +2218,6 @@
             this.label52.Size = new System.Drawing.Size(257, 23);
             this.label52.TabIndex = 0;
             this.label52.Text = "Datos de traslado del Estudiante";
-            // 
-            // txtCentroOrigenTraslado
-            // 
-            this.txtCentroOrigenTraslado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCentroOrigenTraslado.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCentroOrigenTraslado.BorderSize = 1;
-            this.txtCentroOrigenTraslado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.txtCentroOrigenTraslado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtCentroOrigenTraslado.ForeColor = System.Drawing.Color.Black;
-            this.txtCentroOrigenTraslado.IconColor = System.Drawing.Color.Black;
-            this.txtCentroOrigenTraslado.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCentroOrigenTraslado.ListTextColor = System.Drawing.Color.Black;
-            this.txtCentroOrigenTraslado.Location = new System.Drawing.Point(712, 433);
-            this.txtCentroOrigenTraslado.MinimumSize = new System.Drawing.Size(200, 30);
-            this.txtCentroOrigenTraslado.Name = "txtCentroOrigenTraslado";
-            this.txtCentroOrigenTraslado.Padding = new System.Windows.Forms.Padding(1);
-            this.txtCentroOrigenTraslado.Size = new System.Drawing.Size(442, 30);
-            this.txtCentroOrigenTraslado.TabIndex = 157;
-            this.txtCentroOrigenTraslado.Texts = "";
             // 
             // Traslado
             // 
@@ -2378,8 +2312,6 @@
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel43.ResumeLayout(false);
-            this.panel43.PerformLayout();
             this.panel44.ResumeLayout(false);
             this.panel44.PerformLayout();
             this.ResumeLayout(false);
@@ -2389,7 +2321,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private MBControl.MBButton btnComprobanteTraslado;
         private MBControl.MBButton btnGuardartraslado;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;
@@ -2527,9 +2458,6 @@
         private MBControl.MBTexbox mbTexbox22;
         private MBControl.MBButton mbButton1;
         private MBControl.MBButton mbButton2;
-        private MBControl.MBComboBox cbTipotraslado;
-        private System.Windows.Forms.Panel panel43;
-        private System.Windows.Forms.Label label51;
         private MBControl.MBButton mbButton3;
         private System.Windows.Forms.Panel panel44;
         private System.Windows.Forms.Label label52;

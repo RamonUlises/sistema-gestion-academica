@@ -60,7 +60,6 @@ namespace SGA
             PanelHelper.SetRoundPanel(panel40, 10);
             PanelHelper.SetRoundPanel(panel41, 10);
             PanelHelper.SetRoundPanel(panel42, 10);
-            PanelHelper.SetRoundPanel(panel43, 10);
             PanelHelper.SetRoundPanel(panel44, 10);
 
             LlenarPeriodos();
@@ -160,8 +159,6 @@ namespace SGA
         private void mbButton2_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            cbTipotraslado.Visible = true;
-            panel43.Visible = true;
         }
 
         private void btnComprobanteTraslado_Click_1(object sender, EventArgs e)
@@ -178,8 +175,6 @@ namespace SGA
         private void btnComprobanteTraslado_Click_3(object sender, EventArgs e)
         {
             showSubMenu(panel7);
-            cbTipotraslado.Visible = false;
-            panel43.Visible = false;
 
         }
 
@@ -213,11 +208,10 @@ namespace SGA
         {
             txtCodigoUnicoEstudianteTraslado.Text = "";
             txtNombresEstudianteTraslado.Text = "";
-            txtCentroOrigenTraslado.Text = "";
+            txtCentroOrigenTraslado.Texts = null;
             txtFechaTraslado.Text = "";
             txtMotivoTaslado.Text = "";
             cbPeriodoTraslado.SelectedItem = null;
-            cbTipotraslado.SelectedItem = null; 
 
             txtCodigoUnicoEstudianteTraslado.Enabled = true;
             txtNombresEstudianteTraslado.Enabled = false;
@@ -263,11 +257,22 @@ namespace SGA
 
             string result = controllerTraslados.AgregarTraslado(traslado);
 
-            MessageBox.Show(result);
+            bool resss = MessageBox.Show("¿Desea imprimir el comprobante", result, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes;
+
+            if (resss)
+            {
+                showSubMenu(panel7);
+            }
+
             LimpiarCampos();
         }
 
         private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
         {
 
         }

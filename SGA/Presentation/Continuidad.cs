@@ -20,11 +20,8 @@ namespace SGA
         {
             InitializeComponent();
             PanelHelper.SetRoundPanel(panel2, 10);
-            PanelHelper.SetRoundPanel(panel3, 10);
             PanelHelper.SetRoundPanel(panel4, 10);
             PanelHelper.SetRoundPanel(panel5, 10);
-            PanelHelper.SetRoundPanel(panel6, 10);
-            PanelHelper.SetRoundPanel(panel7, 10);
             PanelHelper.SetRoundPanel(panel8, 10);
             PanelHelper.SetRoundPanel(panel9, 10);
             PanelHelper.SetRoundPanel(panel10, 10);
@@ -109,9 +106,6 @@ namespace SGA
             ClassReingreso reingreso = new ClassReingreso();
             reingreso.CodigoAlumno = txtCodigoAlumnoReingreso.Text;
             reingreso.NombreAlumno = txtNombresAlumnoReingreso.Text;
-            reingreso.CodigoUnico = txtCodigoUnicoReingreso.Text;
-            reingreso.CodigoCentro = txtCodigoCentroReingreso.Text;
-            reingreso.Centro = txtCentroReingreso.Text;
             reingreso.Modalidad = mbModalidadReingreso.Texts;
             reingreso.Turno = cbTurnoReingreso.Texts;
             reingreso.Grado = cbGradoReingreso.Texts;
@@ -124,12 +118,13 @@ namespace SGA
                 MessageBox.Show(validacion.message);
                 return;
             }
-            
-            MessageBox.Show(reingreso.Modalidad);
 
             string mensaje = new Controllers.ControllerContinuidad().RealizarReingreso(reingreso);
 
-            MessageBox.Show(mensaje);
+            if (MessageBox.Show("¿Desea imprimir el comprobante?", mensaje, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                showSubMenu(panel11);
+            }
             LimpiarCajas();
         }
         private void customizarDiseno()
@@ -204,9 +199,6 @@ namespace SGA
         {
             txtCodigoAlumnoReingreso.Text = "";
             txtNombresAlumnoReingreso.Text = "";
-            txtCodigoUnicoReingreso.Text = "";
-            txtCodigoCentroReingreso.Text = "";
-            txtCentroReingreso.Text = "";
             mbModalidadReingreso.SelectedItem = null;
             cbTurnoReingreso.SelectedItem = null;
             cbGradoReingreso.SelectedItem = null;
