@@ -130,6 +130,7 @@
     <Compile Include="Clases\ValidarResultados.cs" />
     <Compile Include="Connection\DB_Connection.cs" />
     <Compile Include="Controllers\ControllerCentros.cs" />
+    <Compile Include="Controllers\ControllerDatosAcademicos.cs" />
     <Compile Include="Controllers\ControllerDepartamentos.cs" />
     <Compile Include="Controllers\ControllerDiscapacidad.cs" />
     <Compile Include="Controllers\ControllerEstudiante.cs" />

@@ -54,6 +54,11 @@ namespace SGA.Controllers
                         string nombres = "";
                         string apellidos = "";
 
+                        if(!reader.HasRows)
+                        {
+                            return "Estudiante no encontrado";
+                        }
+
                         reader.Read();
                         nombres = reader["nombres"].ToString();
                         apellidos = reader["apellidos"].ToString();
@@ -195,17 +200,17 @@ namespace SGA.Controllers
                     int rowsAffected = cmd.ExecuteNonQuery();
                     if (rowsAffected > 0)
                     {
-                        int idGenerado = Convert.ToInt32(cmd.ExecuteScalar());
-                        return "El código temporal del estudiante es: " + idGenerado;
+                        
+                        return "El código temporal del estudiante es:";
                     }
                     else
                     {
-                        return "No se pudo agregar el estudiante";
+                        return "No se agregó el estudiante";
                     }
                 }
             } catch (Exception ex)
             {
-                return ex.Message;
+                return "No se agregó el estudiante";
             } finally
             {
                 connection.CloseConnection();

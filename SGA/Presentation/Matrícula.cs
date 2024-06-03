@@ -438,7 +438,14 @@ namespace SGA
 
             string result = controller.AgregarEstudinante(estudiante);
             MessageBox.Show(result);
-            LimpiarCampos();
+
+            string patternnn = @"\b" + Regex.Escape("código temporal del estudiante") + @"\b";
+
+            if(Regex.IsMatch(result, patternnn))
+            {
+                LimpiarCampos();
+            }
+
         }
 
         private void Matrícula_Load(object sender, EventArgs e)

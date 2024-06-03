@@ -56,33 +56,79 @@ namespace SGA.PRESENTACION
             txtFechaMatriculaEstudianteDatosAcademicos.Enabled = false;
 
 
-            cbGradoDatosAcademicos.Items.Add("7");
-            cbGradoDatosAcademicos.Items.Add("8");
-            cbGradoDatosAcademicos.Items.Add("9");
-            cbGradoDatosAcademicos.Items.Add("10");
-            cbGradoDatosAcademicos.Items.Add("11");
-          
+            LlenarModalidades();
+            LlenarTurno();
+            LlenarGrados();
+            LlenarSecciones();
+            LlenarCentros();
+            CamposEnable(false);
+        }
+        private void LlenarCentros()
+        {
+            Controllers.ControllerCentros controller = new Controllers.ControllerCentros();
 
-            cbSeccionDatosAcademicos.Items.Add("A");
-            cbSeccionDatosAcademicos.Items.Add("B");
-            cbSeccionDatosAcademicos.Items.Add("C");
-            cbSeccionDatosAcademicos.Items.Add("D");
-            cbSeccionDatosAcademicos.Items.Add("E");
-            cbSeccionDatosAcademicos.Items.Add("F");
-        
+            string[] centros = controller.ObtenerCentros();
 
-            cbTurnoDatosAcademicos.Items.Add("Matutino");
-            cbTurnoDatosAcademicos.Items.Add("Vespertino");
-            cbTurnoDatosAcademicos.Items.Add("Nocturno");
-            cbTurnoDatosAcademicos.Items.Add("Sabatino");
-            cbTurnoDatosAcademicos.Items.Add("Dominical");
-            cbTurnoDatosAcademicos.Items.Add("Diurno");
-            cbTurnoDatosAcademicos.Items.Add("Quincenal");
-         
+            foreach (string centro in centros)
+            {
+                txtNombreCentroDatosAcademicos.Items.Add(centro);
+            }
+        }
+        private void CamposEnable(bool res)
+        {
+            txtCodigoEstudianteDatosAcademicos.Enabled = res;
+            txtNombreCentroDatosAcademicos.Enabled = res;
+            txtNivelEducativoDatosAcademicos.Enabled = res;
+            cbModalidadDatosAcademicos.Enabled = res;
+            cbTurnoDatosAcademicos.Enabled = res;
+            cbGradoDatosAcademicos.Enabled = res;
+            cbSeccionDatosAcademicos.Enabled = res;
+            chRepitenteSiDatosAcademicos.Enabled = res;
+            chRepitenteNODatosAcademicos.Enabled = res;
+        }
+        private void LlenarSecciones()
+        {
+            Controllers.ControllerSecciones controller = new Controllers.ControllerSecciones();
 
-            cbModalidadDatosAcademicos.Items.Add("Presencial");
-            cbModalidadDatosAcademicos.Items.Add("Virtual");
-          
+            string[] secciones = controller.ObtenerSecciones();
+
+            foreach (string seccion in secciones)
+            {
+                cbSeccionDatosAcademicos.Items.Add(seccion);
+            }
+        }
+        private void LlenarGrados()
+        {
+            Controllers.ControllerGrado controller = new Controllers.ControllerGrado();
+
+            string[] grados = controller.ObtenerGrados();
+
+            foreach (string grado in grados)
+            {
+                cbGradoDatosAcademicos.Items.Add(grado);
+            }
+        }
+        private void LlenarTurno()
+        {
+            Controllers.ControllerTurnos controller = new Controllers.ControllerTurnos();
+
+            string[] turnos = controller.ObtenerTurnos();
+
+            foreach (string turno in turnos)
+            {
+                cbTurnoDatosAcademicos.Items.Add(turno);
+            }
+        }
+        private void LlenarModalidades()
+        {
+            Controllers.ControllerModalidad controller = new Controllers.ControllerModalidad();
+
+            string[] modalidades = controller.ObtenerModalidades();
+
+            foreach (string modalidad in modalidades)
+            {
+                cbModalidadDatosAcademicos.Items.Add(modalidad);
+            }
         }
         private void customizarDiseno()
         {
@@ -175,7 +221,7 @@ namespace SGA.PRESENTACION
             ClassDatosAcademicos datosAcademicos = new ClassDatosAcademicos();
             datosAcademicos.FechaMatricula = txtFechaMatriculaEstudianteDatosAcademicos.Text;
             datosAcademicos.CodigoEstudiante = txtCodigoEstudianteDatosAcademicos.Text;
-            datosAcademicos.NombreCentroEducativo = txtNombreCentroDatosAcademicos.Text;
+            datosAcademicos.NombreCentroEducativo = txtNombreCentroDatosAcademicos.Texts;
             datosAcademicos.NivelEducativo = txtNivelEducativoDatosAcademicos.Text;
             datosAcademicos.Modalidad = cbModalidadDatosAcademicos.Texts;
             datosAcademicos.Turno = cbTurnoDatosAcademicos.Texts;
@@ -197,7 +243,25 @@ namespace SGA.PRESENTACION
 
             datosAcademicos.Repitente = repitente == "Si";
 
-            MessageBox.Show("Datos guardados correctamente");
+            Controllers.ControllerDatosAcademicos controller = new Controllers.ControllerDatosAcademicos();
+
+            string resultado = controller.AgregarDatosAcademicos(datosAcademicos, Convert.ToInt32(txtCodigoTemporalEstudiante.Text));
+
+            if(resultado == "Datos académicos agregados correctamente")
+            {
+                bool res = MessageBox.Show("Desea imprimir el comprobante", resultado, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes;
+
+                if (res)
+                {
+                    showSubMenu(panel12);
+                }
+                LimpiarCajas();
+                CamposEnable(false);
+            }
+            else
+            {
+                MessageBox.Show(resultado);
+            }
         }
 
         public string repitenteValidation()
@@ -230,11 +294,10 @@ namespace SGA.PRESENTACION
 
         }
 
-        private void mbButton4_Click(object sender, EventArgs e)
+        private void LimpiarCajas()
         {
-         
             txtCodigoEstudianteDatosAcademicos.Text = "";
-            txtNombreCentroDatosAcademicos.Text = "";
+            txtNombreCentroDatosAcademicos.SelectedItem = null;
             txtNivelEducativoDatosAcademicos.Text = "";
             cbModalidadDatosAcademicos.SelectedItem = null;
             cbTurnoDatosAcademicos.SelectedItem = null;
@@ -242,6 +305,142 @@ namespace SGA.PRESENTACION
             cbSeccionDatosAcademicos.SelectedItem = null;
             chRepitenteSiDatosAcademicos.Checked = false;
             chRepitenteNODatosAcademicos.Checked = false;
+            txtCodigoTemporalEstudiante.Text = "";
+            txtNombresDelEstudiante.Text = "";
+            
+            txtCodigoTemporalEstudiante.Enabled = true;
+        }
+        private void mbButton4_Click(object sender, EventArgs e)
+        {
+            LimpiarCajas();
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cbTurnoDatosAcademicos_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtCodigoEstudianteDatosAcademicos__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbModalidadDatosAcademicos_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbGradoDatosAcademicos_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mbTexbox5__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNivelEducativoDatosAcademicos__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbSeccionDatosAcademicos_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombreCentroDatosAcademicos__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void chRepitenteNODatosAcademicos_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void chRepitenteSiDatosAcademicos_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label25_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mbBuscarEstudiante_Click(object sender, EventArgs e)
+        {
+            txtNombresDelEstudiante.Text = "";
+            if(txtCodigoTemporalEstudiante.Text == "")
+            {
+                MessageBox.Show("Ingrese un código de estudiante");
+                return;
+            }
+
+            Controllers.ControllerEstudiante controller = new Controllers.ControllerEstudiante();
+
+            string pattern = @"^\d+(\.\d+)?$";
+
+            if (!Regex.IsMatch(txtCodigoTemporalEstudiante.Text, pattern))
+            {
+                MessageBox.Show("El código temporal debe ser un número");
+                return;
+            }
+
+            string nombresEstudiantes = controller.obtenerNombresEstudiante(Convert.ToInt32(txtCodigoTemporalEstudiante.Text));
+
+            if(nombresEstudiantes == "Estudiante no encontrado")
+            {
+                MessageBox.Show("Estudiante no encontrado");
+                return;
+            }
+
+            txtNombresDelEstudiante.Text = nombresEstudiantes;
+            txtCodigoTemporalEstudiante.Enabled = false;
+
+            CamposEnable(true);
 
         }
     }
