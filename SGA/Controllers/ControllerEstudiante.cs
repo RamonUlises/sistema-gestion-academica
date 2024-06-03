@@ -11,6 +11,32 @@ namespace SGA.Controllers
 {
     class ControllerEstudiante
     {
+        public int ObtenerIdPorCodigo(string codigo)
+        {
+            DB_Connection connection = new DB_Connection();
+
+            try
+            {
+                using (MySqlConnection conn = connection.GetConnection())
+                {
+                    string query = "SELECT id_estudiante FROM datos_academicos WHERE codigo_estudiante = @codigo";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@codigo", codigo);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        reader.Read();
+                        return Convert.ToInt32(reader["id_estudiante"]);
+                    }
+                }
+            } catch (Exception)
+            {
+                return -1;
+            } finally
+            {
+                connection.CloseConnection();
+            }
+        }
         public string obtenerNombresEstudiante(int id)
         {
             DB_Connection connection = new DB_Connection();

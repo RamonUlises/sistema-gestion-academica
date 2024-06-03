@@ -64,7 +64,24 @@ namespace SGA
             PanelHelper.SetRoundPanel(panel44, 10);
 
             LlenarPeriodos();
+            LlenarCentros();
 
+            txtNombresEstudianteTraslado.Enabled = false;
+            txtCentroOrigenTraslado.Enabled = false;
+            txtFechaTraslado.Enabled = false;
+            txtMotivoTaslado.Enabled = false;
+            cbPeriodoTraslado.Enabled = false;
+        }
+
+        private void LlenarCentros()
+        {
+            Controllers.ControllerCentros controllerCentros = new Controllers.ControllerCentros();
+            string[] centros = controllerCentros.ObtenerCentros();
+
+            foreach (string centro in centros)
+            {
+                txtCentroOrigenTraslado.Items.Add(centro);
+            }
         }
 
         private void LlenarPeriodos()
@@ -168,10 +185,31 @@ namespace SGA
 
         private void btnBuscarCodigoUnicoTraslado_Click(object sender, EventArgs e)
         {
-          
-        }
+            if(txtCodigoUnicoEstudianteTraslado.Text == "")
+            {
+                MessageBox.Show("Por favor ingrese el código único del estudiante");
+                return;
+            }
 
-        private void mbButton3_Click(object sender, EventArgs e)
+            Controllers.ControllerEstudiante controllerEstudiante = new Controllers.ControllerEstudiante();
+
+            string result = controllerEstudiante.ObtenerDatosEstudiante(txtCodigoUnicoEstudianteTraslado.Text);
+
+            if (result == "Estudiante no encontrado")
+            {
+                MessageBox.Show(result);
+                return;
+            }
+
+            txtNombresEstudianteTraslado.Text = result;
+
+            txtCentroOrigenTraslado.Enabled = true;
+            txtFechaTraslado.Enabled = true;
+            txtMotivoTaslado.Enabled = true;
+            cbPeriodoTraslado.Enabled = true;
+            txtCodigoUnicoEstudianteTraslado.Enabled = false;
+        }
+        public void LimpiarCampos()
         {
             txtCodigoUnicoEstudianteTraslado.Text = "";
             txtNombresEstudianteTraslado.Text = "";
@@ -180,6 +218,19 @@ namespace SGA
             txtMotivoTaslado.Text = "";
             cbPeriodoTraslado.SelectedItem = null;
             cbTipotraslado.SelectedItem = null; 
+
+            txtCodigoUnicoEstudianteTraslado.Enabled = true;
+            txtNombresEstudianteTraslado.Enabled = false;
+            txtCentroOrigenTraslado.Enabled = false;
+            txtFechaTraslado.Enabled = false;
+            txtMotivoTaslado.Enabled = false;
+            cbPeriodoTraslado.Enabled = false;
+
+        }
+
+        private void mbButton3_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
         }
 
 
@@ -187,10 +238,10 @@ namespace SGA
         {
             ClassTraslado traslado = new ClassTraslado();
             traslado.CodigoEstudiante = txtCodigoUnicoEstudianteTraslado.Text;
-            traslado.NombresEstudiante = txtNombresEstudianteTraslado.Text;
+            traslado.MotivoTraslado = txtMotivoTaslado.Text;
             traslado.FechaTraslado = txtFechaTraslado.Text;
-            traslado.CentroOrigen = txtCentroOrigenTraslado.Text;
-            traslado.PeriodoTraslado = cbPeriodoTraslado.Text;
+            traslado.CentroOrigen = txtCentroOrigenTraslado.Texts;
+            traslado.PeriodoTraslado = cbPeriodoTraslado.Texts;
 
             var response = traslado.ValidarCampos();
 
@@ -200,7 +251,20 @@ namespace SGA
                 return;
             }
 
-            MessageBox.Show("Traslado guardado correctamente");
+            var res = traslado.ValidarFecha();
+
+            if (!res.result)
+            {
+                MessageBox.Show(res.message);
+                return;
+            }
+
+            Controllers.ControllerTraslados controllerTraslados = new Controllers.ControllerTraslados();
+
+            string result = controllerTraslados.AgregarTraslado(traslado);
+
+            MessageBox.Show(result);
+            LimpiarCampos();
         }
 
         private void label16_Click(object sender, EventArgs e)

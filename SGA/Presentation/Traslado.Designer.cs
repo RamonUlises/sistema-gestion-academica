@@ -148,7 +148,6 @@
             this.panel17 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.txtCentroOrigenTraslado = new SGA.MBControl.MBTexbox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.txtMotivoTaslado = new SGA.MBControl.MBTexbox();
@@ -175,6 +174,7 @@
             this.mbButton3 = new SGA.MBControl.MBButton();
             this.panel44 = new System.Windows.Forms.Panel();
             this.label52 = new System.Windows.Forms.Label();
+            this.txtCentroOrigenTraslado = new SGA.MBControl.MBComboBox();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel41.SuspendLayout();
@@ -225,8 +225,8 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.txtCentroOrigenTraslado);
+            this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.txtMotivoTaslado);
             this.panel1.Controls.Add(this.panel2);
@@ -333,7 +333,7 @@
             this.panel7.Controls.Add(this.panel17);
             this.panel7.Location = new System.Drawing.Point(148, 12);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1391, 2347);
+            this.panel7.Size = new System.Drawing.Size(1393, 2347);
             this.panel7.TabIndex = 145;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
@@ -1908,27 +1908,6 @@
             this.label20.Text = "                  MINISTERIO DE EDUCACIÓN \r\n          DIVISIÓN DE ESTADÍSTICAS ED" +
     "UCATIVAS\r\n\r\n\r\n";
             // 
-            // txtCentroOrigenTraslado
-            // 
-            this.txtCentroOrigenTraslado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCentroOrigenTraslado.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCentroOrigenTraslado.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCentroOrigenTraslado.BorderRadius = 25;
-            this.txtCentroOrigenTraslado.BorderSize = 1;
-            this.txtCentroOrigenTraslado.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCentroOrigenTraslado.ForeColor = System.Drawing.Color.Black;
-            this.txtCentroOrigenTraslado.Location = new System.Drawing.Point(712, 424);
-            this.txtCentroOrigenTraslado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCentroOrigenTraslado.Multiline = false;
-            this.txtCentroOrigenTraslado.Name = "txtCentroOrigenTraslado";
-            this.txtCentroOrigenTraslado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtCentroOrigenTraslado.PasswordChar = false;
-            this.txtCentroOrigenTraslado.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtCentroOrigenTraslado.PlaceholderText = "";
-            this.txtCentroOrigenTraslado.Size = new System.Drawing.Size(442, 38);
-            this.txtCentroOrigenTraslado.TabIndex = 144;
-            this.txtCentroOrigenTraslado.UnderlineStyle = false;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
@@ -2287,6 +2266,25 @@
             this.label52.TabIndex = 0;
             this.label52.Text = "Datos de traslado del Estudiante";
             // 
+            // txtCentroOrigenTraslado
+            // 
+            this.txtCentroOrigenTraslado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtCentroOrigenTraslado.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtCentroOrigenTraslado.BorderSize = 1;
+            this.txtCentroOrigenTraslado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.txtCentroOrigenTraslado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtCentroOrigenTraslado.ForeColor = System.Drawing.Color.Black;
+            this.txtCentroOrigenTraslado.IconColor = System.Drawing.Color.Black;
+            this.txtCentroOrigenTraslado.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtCentroOrigenTraslado.ListTextColor = System.Drawing.Color.Black;
+            this.txtCentroOrigenTraslado.Location = new System.Drawing.Point(712, 433);
+            this.txtCentroOrigenTraslado.MinimumSize = new System.Drawing.Size(200, 30);
+            this.txtCentroOrigenTraslado.Name = "txtCentroOrigenTraslado";
+            this.txtCentroOrigenTraslado.Padding = new System.Windows.Forms.Padding(1);
+            this.txtCentroOrigenTraslado.Size = new System.Drawing.Size(442, 30);
+            this.txtCentroOrigenTraslado.TabIndex = 157;
+            this.txtCentroOrigenTraslado.Texts = "";
+            // 
             // Traslado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2394,7 +2392,6 @@
         private MBControl.MBButton btnComprobanteTraslado;
         private MBControl.MBButton btnGuardartraslado;
         private System.Windows.Forms.Panel panel7;
-        private MBControl.MBTexbox txtCentroOrigenTraslado;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label3;
         private MBControl.MBTexbox txtMotivoTaslado;
@@ -2536,5 +2533,6 @@
         private MBControl.MBButton mbButton3;
         private System.Windows.Forms.Panel panel44;
         private System.Windows.Forms.Label label52;
+        private MBControl.MBComboBox txtCentroOrigenTraslado;
     }
 }
