@@ -195,7 +195,8 @@ namespace SGA.Controllers
                     int rowsAffected = cmd.ExecuteNonQuery();
                     if (rowsAffected > 0)
                     {
-                        return "Estudiante agregado correctamente";
+                        int idGenerado = Convert.ToInt32(cmd.ExecuteScalar());
+                        return "El código temporal del estudiante es: " + idGenerado;
                     }
                     else
                     {

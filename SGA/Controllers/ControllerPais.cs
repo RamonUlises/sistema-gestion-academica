@@ -49,8 +49,10 @@ namespace SGA.Controllers
                 using (MySqlConnection conn = connection.GetConnection())
                 {
                     string paisSelect = pais;
-                    string query = "SELECT id_pais FROM paises WHERE pais = '" + paisSelect + "'";
+                    string query = "SELECT id_pais FROM paises WHERE pais = @pais";
                     MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                    cmd.Parameters.AddWithValue("@pais", paisSelect);
 
                     using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
@@ -103,8 +105,10 @@ namespace SGA.Controllers
             {
                 using (MySqlConnection conn = connection.GetConnection())
                 {
-                    string query = "SELECT id_nacionalidad FROM nacionalidades WHERE nacionalidad = '" + nacionalidad + "'";
+                    string query = "SELECT id_nacionalidad FROM nacionalidades WHERE nacionalidad = @nacionalidad";
                     MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                    cmd.Parameters.AddWithValue("@nacionalidad", nacionalidad);
 
                     using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
