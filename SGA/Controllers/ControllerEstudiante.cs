@@ -11,6 +11,73 @@ namespace SGA.Controllers
 {
     class ControllerEstudiante
     {
+        public string obtenerNombresEstudiante(int id)
+        {
+            DB_Connection connection = new DB_Connection();
+
+            try
+            {
+                using (MySqlConnection conn = connection.GetConnection())
+                {
+                    string query = "SELECT nombres, apellidos FROM estudiantes WHERE id_estudiante = @id";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        string nombres = "";
+                        string apellidos = "";
+
+                        reader.Read();
+                        nombres = reader["nombres"].ToString();
+                        apellidos = reader["apellidos"].ToString();
+
+                        return nombres + " " + apellidos;
+
+                    }
+                }
+            } catch (Exception)
+            {
+                return "";
+            } finally
+            {
+                connection.CloseConnection();
+            }
+        }
+        public string ObtenerDatosEstudiante(string id)
+        {
+            DB_Connection connection = new DB_Connection();
+
+            try
+            {
+                using(MySqlConnection con = connection.GetConnection())
+                {
+                    string query = "SELECT id_estudiante FROM datos_academicos WHERE codigo_estudiante = @id";
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    using(MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        reader.Read();
+                        
+                        if(!reader.HasRows)
+                        {
+                            return "Estudiante no encontrado";
+                        }
+
+                        int idEstudiante = int.Parse(reader["id_estudiante"].ToString());
+
+                        return obtenerNombresEstudiante(idEstudiante);
+                    }
+                }
+            } catch (Exception ex)
+            {
+                return ex.Message;
+            } finally
+            {
+                connection.CloseConnection();
+            }
+        }
         public string AgregarEstudinante(Clases.ClassEstudiantes estudiante)
         {
             DB_Connection connection = new DB_Connection();

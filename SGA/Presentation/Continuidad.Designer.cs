@@ -185,7 +185,7 @@
             this.panel11.Controls.Add(this.panel22);
             this.panel11.Location = new System.Drawing.Point(105, 56);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1432, 710);
+            this.panel11.Size = new System.Drawing.Size(1443, 710);
             this.panel11.TabIndex = 151;
             this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
             // 
@@ -597,6 +597,7 @@
             this.label19.Size = new System.Drawing.Size(126, 20);
             this.label19.TabIndex = 0;
             this.label19.Text = "Nombre alumno:";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // mbTexbox6
             // 
@@ -852,6 +853,7 @@
             this.btnBuscarCodigoAlumnoReingreso.Text = "Buscar";
             this.btnBuscarCodigoAlumnoReingreso.TextColor = System.Drawing.Color.White;
             this.btnBuscarCodigoAlumnoReingreso.UseVisualStyleBackColor = false;
+            this.btnBuscarCodigoAlumnoReingreso.Click += new System.EventHandler(this.btnBuscarCodigoAlumnoReingreso_Click);
             // 
             // mbButton1
             // 

@@ -139,6 +139,7 @@
     <Compile Include="Controllers\ControllerMunicipios.cs" />
     <Compile Include="Controllers\ControllerPais.cs" />
     <Compile Include="Controllers\ControllerPeriodos.cs" />
+    <Compile Include="Controllers\ControllerContinuidad.cs" />
     <Compile Include="Controllers\ControllerSecciones.cs" />
     <Compile Include="Controllers\ControllerTurnos.cs" />
     <Compile Include="Controllers\ControllerTutorEstudiante.cs" />

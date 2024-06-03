@@ -10,6 +10,35 @@ namespace SGA.Controllers
 {
     class ControllerSecciones
     {
+        public int ObtenerIdSeccion(string seccion)
+        {
+            DB_Connection connection = new DB_Connection();
+            try
+            {
+                using (MySqlConnection con = connection.GetConnection())
+                {
+                    string query = "SELECT id_seccion FROM secciones WHERE seccion = @seccion";
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@seccion", seccion);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return reader.GetInt32("id_seccion");
+                        }
+
+                        return 0;
+                    }
+                }
+            } catch (Exception ex)
+            {
+                return 0;
+            } finally
+            {
+                connection.CloseConnection();
+            }
+        }
         public string[] ObtenerSecciones()
         {
             DB_Connection conection = new DB_Connection();

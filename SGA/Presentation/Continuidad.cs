@@ -52,6 +52,12 @@ namespace SGA
             LlenarGrados();
             LlenarTurnos();
             LenarSecciones();
+
+            txtNombresAlumnoReingreso.Enabled = false;
+            cbGradoReingreso.Enabled = false;
+            cbSeccionReingreso.Enabled = false;
+            cbTurnoReingreso.Enabled = false;
+            mbModalidadReingreso.Enabled = false;
         }
 
         public void LenarSecciones()
@@ -119,7 +125,12 @@ namespace SGA
                 return;
             }
             
-            MessageBox.Show("Reingreso Exioso");
+            MessageBox.Show(reingreso.Modalidad);
+
+            string mensaje = new Controllers.ControllerContinuidad().RealizarReingreso(reingreso);
+
+            MessageBox.Show(mensaje);
+            LimpiarCajas();
         }
         private void customizarDiseno()
         {
@@ -189,7 +200,7 @@ namespace SGA
 
         }
 
-        private void mbButton2_Click(object sender, EventArgs e)
+        public void LimpiarCajas()
         {
             txtCodigoAlumnoReingreso.Text = "";
             txtNombresAlumnoReingreso.Text = "";
@@ -201,6 +212,15 @@ namespace SGA
             cbGradoReingreso.SelectedItem = null;
             cbSeccionReingreso.SelectedItem = null;
 
+            txtCodigoAlumnoReingreso.Enabled = true;
+            cbGradoReingreso.Enabled = false;
+            cbSeccionReingreso.Enabled = false;
+            cbTurnoReingreso.Enabled = false;
+            mbModalidadReingreso.Enabled = false;
+        }
+        private void mbButton2_Click(object sender, EventArgs e)
+        {
+            LimpiarCajas();
         }
 
         private void panel11_Paint(object sender, PaintEventArgs e)
@@ -209,6 +229,38 @@ namespace SGA
         }
 
         private void panel20_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnBuscarCodigoAlumnoReingreso_Click(object sender, EventArgs e)
+        {
+            if (txtCodigoAlumnoReingreso.Text == "")
+            {
+                MessageBox.Show("Ingrese el código del alumno");
+                return;
+            }
+
+            Controllers.ControllerEstudiante controllerEstudiante = new Controllers.ControllerEstudiante();
+
+            string nombreEstudiante = controllerEstudiante.ObtenerDatosEstudiante(txtCodigoAlumnoReingreso.Text);
+
+            if (nombreEstudiante == "Estudiante no encontrado")
+            {
+                MessageBox.Show(nombreEstudiante);
+                return;
+            }
+
+            txtNombresAlumnoReingreso.Text = nombreEstudiante;
+            txtCodigoAlumnoReingreso.Enabled = false;
+            cbGradoReingreso.Enabled = true;
+            cbSeccionReingreso.Enabled = true;
+            cbTurnoReingreso.Enabled = true;
+            mbModalidadReingreso.Enabled = true;
+            
+        }
+
+        private void label19_Click(object sender, EventArgs e)
         {
 
         }
