@@ -11,6 +11,39 @@ namespace SGA.Controllers
 {
     class ControllerDatosAcademicos
     {
+        public bool TieneDatos(int id)
+        {
+            DB_Connection connection = new DB_Connection();
+
+            try
+            {
+                using (MySqlConnection conn = connection.GetConnection())
+                {
+                    string query = "SELECT * FROM datos_academicos WHERE id_estudiante = @id";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            } catch (Exception e)
+            {
+                return false;
+            } finally
+            {
+                connection.CloseConnection();
+            }
+        }
         public string[] ObtenerDatosPorId (int id)
         {
             DB_Connection connection = new DB_Connection();
@@ -18,7 +51,7 @@ namespace SGA.Controllers
             {
                 using (MySqlConnection conn = connection.GetConnection())
                 {
-                    string query = "SELECT codigo_estudiante, fecha_matricula, nivel_educativo, repitente, modalidad, id_grado, id_seccion, id_turno, id_centro FROM datos_academicos WHERE id_datos_academicos = @id";
+                    string query = "SELECT codigo_estudiante, fecha_matricula, nivel_educativo, repitente, modalidad, id_grado, id_seccion, id_turno, id_centro FROM datos_academicos WHERE id_estudiante = @id";
                     MySqlCommand cmd = new MySqlCommand(query, conn);
 
                     cmd.Parameters.AddWithValue("@id", id);

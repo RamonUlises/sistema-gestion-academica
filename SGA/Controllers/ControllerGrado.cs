@@ -25,7 +25,7 @@ namespace SGA.Controllers
                     {
                         if (reader.Read())
                         {
-                            return reader.GetString("grado");
+                            return reader["grado"].ToString();
                         }
 
                         return null;

@@ -30,7 +30,7 @@ namespace SGA.Controllers
                         {
                             Clases.ClassGetEstudiantes estudiante = new Clases.ClassGetEstudiantes();
 
-                            string nombres = reader["nombres"].ToString() + reader["apellidos"].ToString();
+                            string nombres = reader["nombres"].ToString() + " " + reader["apellidos"].ToString();
                             string partidaNacimiento = reader["partida_nacimiento"].ToString();
                             string sexo = new ControllerSexos().ObtenerSexo(Convert.ToInt32(reader["id_sexo"].ToString()));
                             string pais = new ControllerPais().ObtenerPaisPorId(Convert.ToInt32(reader["id_pais"].ToString()));
@@ -41,8 +41,33 @@ namespace SGA.Controllers
                             string lengua = new ControllerLenguaMaterna().ObtenerLenguaPorId(Convert.ToInt32(reader["id_lengua"].ToString()));
                             string discapacidad = new ControllerDiscapacidad().ObtenerDiscapacidadPorId(Convert.ToInt32(reader["id_discapacidad"].ToString()));
                             string[] tutor = new ControllerTutorEstudiante().ObtenerDatosPorId(Convert.ToInt32(reader["id_tutor_x_estudiante"]));
-                            string[] datosAcademicos = new ControllerDatosAcademicos().ObtenerDatosPorId(Convert.ToInt32(reader["id_estudiante"]));
-                            bool repitente = (datosAcademicos[3] == "1");
+
+                            bool poseeDatos = new ControllerDatosAcademicos().TieneDatos(Convert.ToInt32(reader["id_estudiante"]));
+
+                            string codigoEstudiante = "No definido";
+                            string FechaMatriculaAcademica = "No definido";
+                            string nivelEducativo = "No definido";
+                            bool repitente = false;
+                            string modalidad = "No definido";
+                            string grado = "No definido";
+                            string seccion = "No definido";
+                            string turno = "No definido";
+                            string centroEducativo = "No definido";
+
+                            if(poseeDatos == true)
+                            {
+                                string[] datosAcademicos = new ControllerDatosAcademicos().ObtenerDatosPorId(Convert.ToInt32(reader["id_estudiante"]));
+
+                                codigoEstudiante = datosAcademicos[0];
+                                FechaMatriculaAcademica = datosAcademicos[1];
+                                nivelEducativo = datosAcademicos[2];
+                                repitente = (datosAcademicos[3] == "1");
+                                modalidad = datosAcademicos[4];
+                                grado = datosAcademicos[5];
+                                seccion = datosAcademicos[6];
+                                turno = datosAcademicos[7];
+                                centroEducativo = datosAcademicos[8];
+                            }
 
                             estudiante.Id = Convert.ToInt32(reader["id_estudiante"]);
                             estudiante.Nombres = nombres;
@@ -68,15 +93,15 @@ namespace SGA.Controllers
                             estudiante.NombresTutor = tutor[0];
                             estudiante.CedulaTutor = tutor[1];
                             estudiante.TelefonoTutor = tutor[2];
-                            estudiante.CodigoEstudiante = datosAcademicos[0];
-                            estudiante.FechaMatriculaAcademica = datosAcademicos[1];
-                            estudiante.NivelEducativo = datosAcademicos[2];
+                            estudiante.CodigoEstudiante = codigoEstudiante;
+                            estudiante.FechaMatriculaAcademica = FechaMatriculaAcademica;
+                            estudiante.NivelEducativo = nivelEducativo;
                             estudiante.Repitente = repitente;
-                            estudiante.Modalidad = datosAcademicos[4];
-                            estudiante.Grado = datosAcademicos[5];
-                            estudiante.Seccion = datosAcademicos[6];
-                            estudiante.Turno = datosAcademicos[7];
-                            estudiante.CentroEducativo = datosAcademicos[8];
+                            estudiante.Modalidad = modalidad;
+                            estudiante.Grado = grado;
+                            estudiante.Seccion = seccion;
+                            estudiante.Turno = turno;
+                            estudiante.CentroEducativo = centroEducativo;
                            
                             estudiantes.Add(estudiante);
                         }

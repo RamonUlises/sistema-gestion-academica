@@ -13,10 +13,16 @@ namespace SGA
 {
     public partial class Estudiantes : Form
     {
+        List<Clases.ClassGetEstudiantes> estudiantes = new List<Clases.ClassGetEstudiantes>();
+
         public Estudiantes()
         {
+            Controllers.ControllerEstudiante controllerEstudiantes = new Controllers.ControllerEstudiante();
             InitializeComponent();
-            
+
+            estudiantes = controllerEstudiantes.ObtenerEstudiantes();
+
+            MessageBox.Show(estudiantes[1].Grado);
         }
 
         private void Estudiantes_Load(object sender, EventArgs e)
