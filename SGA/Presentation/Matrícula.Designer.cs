@@ -29,14 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbNacionalidadMatricula = new SGA.MBControl.MBTexbox();
             this.mbButton1 = new SGA.MBControl.MBButton();
             this.txtDiscapacidadMatricula = new SGA.MBControl.MBComboBox();
             this.txtDepartamentoMatricula = new SGA.MBControl.MBComboBox();
             this.txtMuniciopioMatricula = new SGA.MBControl.MBComboBox();
             this.txtLenguaMaternaMatricula = new SGA.MBControl.MBComboBox();
-            this.txtCodigoEstudianteSINFOMtricula = new SGA.MBControl.MBTexbox();
-            this.panel30 = new System.Windows.Forms.Panel();
-            this.label38 = new System.Windows.Forms.Label();
             this.txtTelefonoTutorMatricula = new SGA.MBControl.MBTexbox();
             this.panel29 = new System.Windows.Forms.Panel();
             this.label37 = new System.Windows.Forms.Label();
@@ -131,9 +129,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbNacionalidadMatricula = new SGA.MBControl.MBTexbox();
             this.panel1.SuspendLayout();
-            this.panel30.SuspendLayout();
             this.panel29.SuspendLayout();
             this.panel28.SuspendLayout();
             this.panel27.SuspendLayout();
@@ -174,8 +170,6 @@
             this.panel1.Controls.Add(this.txtDepartamentoMatricula);
             this.panel1.Controls.Add(this.txtMuniciopioMatricula);
             this.panel1.Controls.Add(this.txtLenguaMaternaMatricula);
-            this.panel1.Controls.Add(this.txtCodigoEstudianteSINFOMtricula);
-            this.panel1.Controls.Add(this.panel30);
             this.panel1.Controls.Add(this.txtTelefonoTutorMatricula);
             this.panel1.Controls.Add(this.panel29);
             this.panel1.Controls.Add(this.txtCedulaTutorMatricula);
@@ -240,6 +234,27 @@
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // cbNacionalidadMatricula
+            // 
+            this.cbNacionalidadMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbNacionalidadMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbNacionalidadMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.cbNacionalidadMatricula.BorderRadius = 25;
+            this.cbNacionalidadMatricula.BorderSize = 1;
+            this.cbNacionalidadMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbNacionalidadMatricula.ForeColor = System.Drawing.Color.Black;
+            this.cbNacionalidadMatricula.Location = new System.Drawing.Point(818, 702);
+            this.cbNacionalidadMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbNacionalidadMatricula.Multiline = false;
+            this.cbNacionalidadMatricula.Name = "cbNacionalidadMatricula";
+            this.cbNacionalidadMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.cbNacionalidadMatricula.PasswordChar = false;
+            this.cbNacionalidadMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.cbNacionalidadMatricula.PlaceholderText = "";
+            this.cbNacionalidadMatricula.Size = new System.Drawing.Size(226, 38);
+            this.cbNacionalidadMatricula.TabIndex = 144;
+            this.cbNacionalidadMatricula.UnderlineStyle = false;
+            // 
             // mbButton1
             // 
             this.mbButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
@@ -252,7 +267,7 @@
             this.mbButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.mbButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mbButton1.ForeColor = System.Drawing.Color.White;
-            this.mbButton1.Location = new System.Drawing.Point(619, 1435);
+            this.mbButton1.Location = new System.Drawing.Point(619, 1356);
             this.mbButton1.Name = "mbButton1";
             this.mbButton1.Size = new System.Drawing.Size(172, 55);
             this.mbButton1.TabIndex = 143;
@@ -348,49 +363,6 @@
             this.txtLenguaMaternaMatricula.Size = new System.Drawing.Size(200, 30);
             this.txtLenguaMaternaMatricula.TabIndex = 139;
             this.txtLenguaMaternaMatricula.Texts = "";
-            // 
-            // txtCodigoEstudianteSINFOMtricula
-            // 
-            this.txtCodigoEstudianteSINFOMtricula.BackColor = System.Drawing.Color.White;
-            this.txtCodigoEstudianteSINFOMtricula.BorderColor = System.Drawing.Color.Black;
-            this.txtCodigoEstudianteSINFOMtricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCodigoEstudianteSINFOMtricula.BorderRadius = 25;
-            this.txtCodigoEstudianteSINFOMtricula.BorderSize = 1;
-            this.txtCodigoEstudianteSINFOMtricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigoEstudianteSINFOMtricula.ForeColor = System.Drawing.Color.Black;
-            this.txtCodigoEstudianteSINFOMtricula.Location = new System.Drawing.Point(583, 1301);
-            this.txtCodigoEstudianteSINFOMtricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCodigoEstudianteSINFOMtricula.Multiline = false;
-            this.txtCodigoEstudianteSINFOMtricula.Name = "txtCodigoEstudianteSINFOMtricula";
-            this.txtCodigoEstudianteSINFOMtricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtCodigoEstudianteSINFOMtricula.PasswordChar = false;
-            this.txtCodigoEstudianteSINFOMtricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtCodigoEstudianteSINFOMtricula.PlaceholderText = "";
-            this.txtCodigoEstudianteSINFOMtricula.Size = new System.Drawing.Size(532, 38);
-            this.txtCodigoEstudianteSINFOMtricula.TabIndex = 138;
-            this.txtCodigoEstudianteSINFOMtricula.UnderlineStyle = false;
-            this.txtCodigoEstudianteSINFOMtricula._TextChanged += new System.EventHandler(this.txtCodigoEstudianteSINFOMtricula__TextChanged);
-            // 
-            // panel30
-            // 
-            this.panel30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel30.Controls.Add(this.label38);
-            this.panel30.Location = new System.Drawing.Point(228, 1299);
-            this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(342, 45);
-            this.panel30.TabIndex = 137;
-            this.panel30.Paint += new System.Windows.Forms.PaintEventHandler(this.panel30_Paint);
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(29, 11);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(299, 20);
-            this.label38.TabIndex = 0;
-            this.label38.Text = "Código de Estudiante generado por SINFO";
-            this.label38.Click += new System.EventHandler(this.label38_Click);
             // 
             // txtTelefonoTutorMatricula
             // 
@@ -578,7 +550,7 @@
             this.btnGuardarMatricula.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnGuardarMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarMatricula.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarMatricula.Location = new System.Drawing.Point(818, 1435);
+            this.btnGuardarMatricula.Location = new System.Drawing.Point(818, 1356);
             this.btnGuardarMatricula.Name = "btnGuardarMatricula";
             this.btnGuardarMatricula.Size = new System.Drawing.Size(172, 55);
             this.btnGuardarMatricula.TabIndex = 64;
@@ -1671,27 +1643,6 @@
     "UCATIVAS\r\n\r\n\r\n";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // cbNacionalidadMatricula
-            // 
-            this.cbNacionalidadMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.cbNacionalidadMatricula.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.cbNacionalidadMatricula.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.cbNacionalidadMatricula.BorderRadius = 25;
-            this.cbNacionalidadMatricula.BorderSize = 1;
-            this.cbNacionalidadMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbNacionalidadMatricula.ForeColor = System.Drawing.Color.Black;
-            this.cbNacionalidadMatricula.Location = new System.Drawing.Point(818, 702);
-            this.cbNacionalidadMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cbNacionalidadMatricula.Multiline = false;
-            this.cbNacionalidadMatricula.Name = "cbNacionalidadMatricula";
-            this.cbNacionalidadMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.cbNacionalidadMatricula.PasswordChar = false;
-            this.cbNacionalidadMatricula.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.cbNacionalidadMatricula.PlaceholderText = "";
-            this.cbNacionalidadMatricula.Size = new System.Drawing.Size(226, 38);
-            this.cbNacionalidadMatricula.TabIndex = 144;
-            this.cbNacionalidadMatricula.UnderlineStyle = false;
-            // 
             // Matrícula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1704,8 +1655,6 @@
             this.Load += new System.EventHandler(this.Matrícula_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel30.ResumeLayout(false);
-            this.panel30.PerformLayout();
             this.panel29.ResumeLayout(false);
             this.panel29.PerformLayout();
             this.panel28.ResumeLayout(false);
@@ -1863,9 +1812,6 @@
         private MBControl.MBTexbox txtTelefonoTutorMatricula;
         private System.Windows.Forms.Panel panel29;
         private System.Windows.Forms.Label label37;
-        private MBControl.MBTexbox txtCodigoEstudianteSINFOMtricula;
-        private System.Windows.Forms.Panel panel30;
-        private System.Windows.Forms.Label label38;
         private MBControl.MBComboBox txtDiscapacidadMatricula;
         private MBControl.MBComboBox txtDepartamentoMatricula;
         private MBControl.MBComboBox txtMuniciopioMatricula;

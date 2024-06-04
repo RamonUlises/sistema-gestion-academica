@@ -51,7 +51,6 @@ namespace SGA
             PanelHelper.SetRoundPanel(panel27, 10);
             PanelHelper.SetRoundPanel(panel28, 10);
             PanelHelper.SetRoundPanel(panel29, 10);
-            PanelHelper.SetRoundPanel(panel30, 10);
             PanelHelper.SetRoundPanel(panel44, 10);
 
             DateTime fecha = DateTime.Now;
@@ -1271,7 +1270,6 @@ namespace SGA
             txtNombresApellidosTutorMatricula.Text = "";
             txtCedulaTutorMatricula.Text = "";
             txtTelefonoTutorMatricula.Text = "";
-            txtCodigoEstudianteSINFOMtricula.Text = "";
         }
 
         private void mbButton1_Click(object sender, EventArgs e)
