@@ -66,6 +66,35 @@ namespace SGA.Controllers
             {
                 connection.CloseConnection();
             }
-        }   
+        }  
+        
+        public string ObtenerDepartamentoPorId(int id_departamento)
+        {
+            DB_Connection connection = new DB_Connection();
+            try
+            {
+                using (MySqlConnection conn = connection.GetConnection())
+                {
+                    string query = "SELECT departamento FROM departamentos WHERE id_departamento = @id";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@id", id_departamento);
+
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        reader.Read();
+                        return reader["departamento"].ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return "";
+            }
+            finally
+            {
+                connection.CloseConnection();
+            }
+        }
     }
 }

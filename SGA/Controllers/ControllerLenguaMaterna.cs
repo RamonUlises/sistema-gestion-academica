@@ -64,5 +64,36 @@ namespace SGA.Controllers
                 connection.CloseConnection();
             }
         }
+        public string ObtenerLenguaPorId(int id)
+        {
+            DB_Connection connection = new DB_Connection();
+
+            try
+            {
+                using(MySqlConnection conn = connection.GetConnection())
+                {
+                    string query = "SELECT lengua FROM lenguas WHERE id_lengua = @id";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return reader["lengua"].ToString();
+                        } else
+                        {
+                            return "Error";
+                        }
+                    }
+                }
+            } catch (Exception e)
+            {
+                return "Error";
+            } finally
+            {
+                connection.CloseConnection();
+            }
+        }
     }
 }

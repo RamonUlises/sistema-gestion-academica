@@ -11,6 +11,48 @@ namespace SGA.Controllers
 {
     class ControllerDatosAcademicos
     {
+        public string[] ObtenerDatosPorId (int id)
+        {
+            DB_Connection connection = new DB_Connection();
+            try
+            {
+                using (MySqlConnection conn = connection.GetConnection())
+                {
+                    string query = "SELECT codigo_estudiante, fecha_matricula, nivel_educativo, repitente, modalidad, id_grado, id_seccion, id_turno, id_centro FROM datos_academicos WHERE id_datos_academicos = @id";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            string codigo = reader["codigo_estudiante"].ToString();
+                            string fecha = reader["fecha_matricula"].ToString();
+                            string nivel = reader["nivel_educativo"].ToString();
+                            string repitente = reader["repitente"].ToString();
+                            string modalidad = new ControllerModalidad().ObtenerModalidadPorId(Convert.ToInt32(reader["modalidad"]));
+                            string grado = new ControllerGrado().ObtenerGradoPorId(Convert.ToInt32(reader["id_grado"]));
+                            string seccion = new ControllerSecciones().ObtenerSeccionPorId(Convert.ToInt32(reader["id_seccion"]));
+                            string turno = new ControllerTurnos().ObtenerTurnoPorId(Convert.ToInt32(reader["id_turno"]));
+                            string centro = new ControllerCentros().ObtenerCentroPorId(Convert.ToInt32(reader["id_centro"]));
+
+                            return new string[] { codigo, fecha, nivel, repitente, modalidad, grado, seccion, turno, centro };
+                        }
+                        else
+                        {
+                            return null;
+                        }
+                    }
+                }
+            } catch (Exception e)
+            {
+                return null;
+            } finally
+            {
+                connection.CloseConnection();
+            }
+        }
         public string AgregarDatosAcademicos(Clases.ClassDatosAcademicos datosAcademicos, int idEstudiante)
         {
             DB_Connection connection = new DB_Connection();

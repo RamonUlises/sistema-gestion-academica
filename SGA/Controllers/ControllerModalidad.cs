@@ -10,6 +10,35 @@ namespace SGA.Controllers
 {
     class ControllerModalidad
     {
+        public string ObtenerModalidadPorId(int id)
+        {
+            DB_Connection connection = new DB_Connection();
+            try
+            {
+                using (MySqlConnection con = connection.GetConnection())
+                {
+                    string query = "SELECT modalidad FROM modalidades WHERE id_modalidad = @id";
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return reader.GetString("modalidad");
+                        }
+
+                        return null;
+                    }
+                }
+            } catch (Exception ex)
+            {
+                return null;
+            } finally
+            {
+                connection.CloseConnection();
+            }
+        }
         public int ObtenerIdModalidad(string modalidad)
         {
             DB_Connection connection = new DB_Connection();
@@ -69,5 +98,6 @@ namespace SGA.Controllers
                 connection.CloseConnection();
             }
         }
+        
     }
 }

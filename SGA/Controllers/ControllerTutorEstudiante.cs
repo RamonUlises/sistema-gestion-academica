@@ -11,6 +11,47 @@ namespace SGA.Controllers
 {
     class ControllerTutorEstudiante
     {
+        public string[] ObtenerDatosPorId(int id)
+        {
+            DB_Connection connection = new DB_Connection();
+            try
+            {
+                using (MySqlConnection conn = connection.GetConnection())
+                {
+                    string query = "SELECT nombres, apellidos, cedula, telefono FROM tutores_x_estudiantes WHERE id_tutor_x_estudiante = @id";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            string nombres = reader["nombres"].ToString();
+                            string apellidos = reader["apellidos"].ToString();
+                            string cedula = reader["cedula"].ToString();
+                            string telefono = reader["telefono"].ToString();
+
+                            string nombresApellidos = nombres + " " + apellidos;
+
+                            return new string[] { nombresApellidos, cedula, telefono };
+                        }
+                        else
+                        {
+                            return null;
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+            finally
+            {
+                connection.CloseConnection();
+            }
+        }
         public int AgregarTutor (Clases.ClassEstudiantes tutor)
         {
             DB_Connection connection = new DB_Connection();

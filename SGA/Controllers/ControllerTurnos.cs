@@ -10,6 +10,35 @@ namespace SGA.Controllers
 {
     class ControllerTurnos
     {
+        public string ObtenerTurnoPorId(int id)
+        {
+            DB_Connection connection = new DB_Connection();
+            try
+            {
+                using (MySqlConnection con = connection.GetConnection())
+                {
+                    string query = "SELECT turno FROM turnos WHERE id_turno = @id";
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return reader.GetString("turno");
+                        }
+
+                        return null;
+                    }
+                }
+            } catch (Exception ex)
+            {
+                return null;
+            } finally
+            {
+                connection.CloseConnection();
+            }
+        }
         public int ObtenerIdTurno(string turno)
         {
             DB_Connection connection = new DB_Connection();

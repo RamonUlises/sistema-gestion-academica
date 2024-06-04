@@ -65,5 +65,30 @@ namespace SGA.Controllers
                 connection.CloseConnection();
             }
         }
+        public string ObtenerEtniaPorId (int id)
+        {
+            DB_Connection connection = new DB_Connection();
+            try
+            {
+                using (MySqlConnection conn = connection.GetConnection())
+                {
+                    string query = "SELECT etnia FROM etnias WHERE id_etnia = @id";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        reader.Read();
+                        return reader["etnia"].ToString();
+                    }
+                }
+            } catch (Exception e)
+            {
+                return "Error";
+            } finally
+            {
+                connection.CloseConnection();
+            }
+        }
     }
 }

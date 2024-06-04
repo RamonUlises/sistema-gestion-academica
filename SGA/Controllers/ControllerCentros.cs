@@ -10,6 +10,37 @@ namespace SGA.Controllers
 {
     class ControllerCentros
     {
+        public string ObtenerCentroPorId(int id)
+        {
+            DB_Connection connection = new DB_Connection();
+
+            try
+            {
+                using (MySqlConnection con = connection.GetConnection())
+                {
+                    string query = "SELECT centro FROM centros WHERE id_centro = @id";
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    using(MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return reader.GetString("centro");
+                        } else
+                        {
+                            return null;
+                        }
+                    }
+                }
+            } catch (Exception)
+            {
+                return null;
+            } finally
+            {
+                connection.CloseConnection();
+            }
+        }
         public int ObtenerIdCentro(string centro)
         {
             DB_Connection connection = new DB_Connection();

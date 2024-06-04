@@ -145,6 +145,7 @@
     <Compile Include="Controllers\ControllerPeriodos.cs" />
     <Compile Include="Controllers\ControllerContinuidad.cs" />
     <Compile Include="Controllers\ControllerSecciones.cs" />
+    <Compile Include="Controllers\ControllerSexos.cs" />
     <Compile Include="Controllers\ControllerTraslados.cs" />
     <Compile Include="Controllers\ControllerTurnos.cs" />
     <Compile Include="Controllers\ControllerTutorEstudiante.cs" />

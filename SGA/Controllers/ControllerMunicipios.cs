@@ -48,8 +48,9 @@ namespace SGA.Controllers
             {
                 using (MySqlConnection conn = connection.GetConnection())
                 {
-                    string query = "SELECT id_municipio FROM municipios WHERE municipio = '" + municipio + "'";
+                    string query = "SELECT id_municipio FROM municipios WHERE municipio = @municipio";
                     MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@municipio", municipio);
 
                     using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
@@ -68,6 +69,33 @@ namespace SGA.Controllers
             }
         }
 
+        public string ObtenerMunicipioPorId(int id_municipio)
+        {
+            DB_Connection connection = new DB_Connection();
+            try
+            {
+                using (MySqlConnection conn = connection.GetConnection())
+                {
+                    string query = "SELECT municipio FROM municipios WHERE id_municipio = @id";
+                    MySqlCommand cmd = new MySqlCommand(query, conn); 
+                    cmd.Parameters.AddWithValue("@id", id_municipio);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        reader.Read();
+                        return reader["municipio"].ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return "";
+            }
+            finally
+            {
+                connection.CloseConnection();
+            }
+        }
 
     }
 }

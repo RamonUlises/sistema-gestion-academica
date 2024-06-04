@@ -10,6 +10,35 @@ namespace SGA.Controllers
 {
     class ControllerGrado
     {
+        public string ObtenerGradoPorId(int id)
+        {
+            DB_Connection connection = new DB_Connection();
+            try
+            {
+                using (MySqlConnection con = connection.GetConnection())
+                {
+                    string query = "SELECT grado FROM grados WHERE id_grado = @id";
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return reader.GetString("grado");
+                        }
+
+                        return null;
+                    }
+                }
+            } catch (Exception ex)
+            {
+                return null;
+            } finally
+            {
+                connection.CloseConnection();
+            }
+        }
         public int ObtenerIdGrado(string grado)
         {
             DB_Connection connection = new DB_Connection();

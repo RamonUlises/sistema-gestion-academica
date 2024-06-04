@@ -64,5 +64,32 @@ namespace SGA.Controllers
                 connection.CloseConnection();
             }
         }
+
+        public string ObtenerDiscapacidadPorId(int id)
+        {
+            DB_Connection connection = new DB_Connection();
+            try
+            {
+                using (MySqlConnection conn = connection.GetConnection())
+                {
+                    string query = "SELECT discapacidad FROM discapacidades WHERE id_discapacidad =  @id";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@id", id);
+
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        reader.Read();
+                        return reader["discapacidad"].ToString();
+                    }
+                }
+            } catch (Exception e)
+            {
+                return "Error";
+            } finally
+            {
+                connection.CloseConnection();
+            }
+        }
     }
 }
