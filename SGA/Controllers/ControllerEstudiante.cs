@@ -200,8 +200,8 @@ namespace SGA.Controllers
                     int rowsAffected = cmd.ExecuteNonQuery();
                     if (rowsAffected > 0)
                     {
-                        
-                        return "El código temporal del estudiante es:";
+                        long idEstudiante = cmd.LastInsertedId;
+                        return "El código temporal del estudiante es: " + idEstudiante;
                     }
                     else
                     {
