@@ -17,14 +17,55 @@ namespace SGA
 
         public Estudiantes()
         {
-            Controllers.ControllerEstudiante controllerEstudiantes = new Controllers.ControllerEstudiante();
             InitializeComponent();
 
-            estudiantes = controllerEstudiantes.ObtenerEstudiantes();
-
-            MessageBox.Show(estudiantes[1].Grado);
+            MostrarEstudiantes();
         }
 
+        public void MostrarEstudiantes()
+        {
+            estudiantes = new Controllers.ControllerEstudiante().ObtenerEstudiantes();
+
+            foreach(Clases.ITEstudiantes estudiante in estudiantes)
+            {
+                Panel Card = CrearCard(estudiante);
+                flowLayoutPanel1.Controls.Add(Card);
+            }
+        }
+
+        public Panel CrearCard(Clases.ITEstudiantes estudiante)
+        {
+            Panel panel = new Panel()
+            {
+                Width = 750,
+                Height = 600,
+                BorderStyle = BorderStyle.None,
+                Margin = new Padding(10),
+                BackColor  = Color.FromArgb (235, 239, 242) ,  
+            };
+            
+            
+
+            PanelHelper.SetRoundPanel(panel, 10);
+
+            Label nombreLabel = new Label
+            {
+                Text = $"Nombres: {estudiante.Nombres}",
+                Location = new Point(10, 15),
+                AutoSize = true
+            };
+
+            Label cedulanombre = new Label
+            {
+                Text = $"Cedula: {estudiante.Cedula}",
+                Location = new Point(10, 40),
+                AutoSize = true
+            };
+            panel.Controls.Add(nombreLabel);
+            panel.Controls.Add(cedulanombre);
+
+            return panel;
+        }
         private void Estudiantes_Load(object sender, EventArgs e)
         {
 
@@ -77,6 +118,11 @@ namespace SGA
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
