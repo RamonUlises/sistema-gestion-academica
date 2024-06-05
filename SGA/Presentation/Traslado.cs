@@ -262,9 +262,15 @@ namespace SGA
             if (resss)
             {
                 showSubMenu(panel7);
+                LlenarComprobante(traslado.CodigoEstudiante);
             }
 
             LimpiarCampos();
+        }
+
+        public void LlenarComprobante(string codigo)
+        {
+            
         }
 
         private void label16_Click(object sender, EventArgs e)

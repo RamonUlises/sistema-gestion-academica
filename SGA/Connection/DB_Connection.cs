@@ -13,7 +13,7 @@ namespace SGA.Connection
         private string server = "localhost";
         private string database = "sistema_gestion_academica";
         private string user = "root";
-        private string password = "57810634rrr";
+        private string password = "57632768";
         private string cadenaConnection;
 
         public DB_Connection()

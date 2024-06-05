@@ -124,9 +124,11 @@ namespace SGA
             if (MessageBox.Show("¿Desea imprimir el comprobante?", mensaje, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 showSubMenu(panel11);
+                // LlenarComprobante(reingreso);
             }
             LimpiarCajas();
         }
+        
         private void customizarDiseno()
         {
             panel11.Visible = false;
@@ -253,6 +255,11 @@ namespace SGA
         }
 
         private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mbTexbox7__TextChanged(object sender, EventArgs e)
         {
 
         }
