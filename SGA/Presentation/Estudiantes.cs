@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,13 +16,71 @@ namespace SGA
     {
         List<Clases.ClassGetEstudiantes> estudiantes = new List<Clases.ClassGetEstudiantes>();
 
+        private Timer typingTimer;
         public Estudiantes()
         {
             InitializeComponent();
-
             MostrarEstudiantes();
+
+            typingTimer = new Timer();
+            typingTimer.Interval = 2000;
+            typingTimer.Tick += TypingTimer_Tick;
+
+            txtBuscarEstudiantes._TextChanged += new EventHandler(this.txtBuscarEstudiantes_TextChanged);
         }
 
+        public void txtBuscarEstudiantes_TextChanged(object sender, EventArgs e)
+        {
+            typingTimer.Stop();
+            typingTimer.Start();
+        }
+
+        public void TypingTimer_Tick(object sender, EventArgs e)
+        {
+            typingTimer.Stop();
+
+            BuscarEstudiantes(txtBuscarEstudiantes.Text);
+        }
+
+        public void BuscarEstudiantes(string texto)
+        {
+            flowLayoutPanel1.Controls.Clear();
+
+            if(texto == "")
+            {
+                MostrarEstudiantes();
+                return;
+            }
+
+            bool response = ContainsNumber(texto);
+
+            if(response == true)
+            {
+                estudiantes = new Controllers.ControllerDatosAcademicos().BuscarEstudiantesIndex(texto);
+            } else
+            {
+                estudiantes = new Controllers.ControllerEstudiante().BuscarEstudiantesIndex(texto);
+            }
+
+
+            if(estudiantes.Count == 0)
+            {
+                MessageBox.Show("No se encontraron resultados");
+                return;
+            }
+
+            foreach (Clases.ITEstudiantes estudiante in estudiantes)
+            {
+                Panel Card = CrearCard(estudiante);
+                flowLayoutPanel1.Controls.Add(Card);
+            }
+        }
+        public bool ContainsNumber(string input)
+        {
+            string pattern = @"\d";
+            Regex regex = new Regex(pattern);
+            return regex.IsMatch(input);
+        }
         public void MostrarEstudiantes()
         {
             estudiantes = new Controllers.ControllerEstudiante().ObtenerEstudiantes();
@@ -391,6 +450,11 @@ namespace SGA
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtBuscarEstudiantes__TextChanged(object sender, EventArgs e)
         {
 
         }

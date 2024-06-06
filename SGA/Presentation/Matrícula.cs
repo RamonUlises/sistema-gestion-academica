@@ -63,7 +63,6 @@ namespace SGA
 
             cbPaisNacimentoMatricula.OnSelectedIndexChanged += new EventHandler(cbPaisNacimentoMatricula_SelectedIndexChanged);
 
-            txtDepartamentoMatricula.Enabled = false;
             txtDepartamentoMatricula.Items.Clear();
 
             txtDepartamentoMatricula.OnSelectedIndexChanged += new EventHandler(txtDepartamentoMatricula_SelectedIndexChanged);
@@ -71,6 +70,7 @@ namespace SGA
             txtMuniciopioMatricula.Enabled = false;
             txtMuniciopioMatricula.Items.Clear();
 
+            LlenarDepartamentos(4);
         }
         public void LlenarFormularioPrueba()
         {
@@ -187,7 +187,6 @@ namespace SGA
             }
             Controllers.ControllerPais controller = new Controllers.ControllerPais();
             int pais = controller.ObtenerPaisPorNombre(cbPaisNacimentoMatricula.Texts);
-            LlenarDepartamentos(pais);
             LlenarNacionalidad(pais);        
         }   
         public void LlenarDepartamentos(int pais)

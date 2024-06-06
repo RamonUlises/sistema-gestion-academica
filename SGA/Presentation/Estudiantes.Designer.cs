@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.mbTexbox1 = new SGA.MBControl.MBTexbox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtBuscarEstudiantes = new SGA.MBControl.MBTexbox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -48,15 +48,6 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.mbTexbox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1664, 150);
-            this.panel2.TabIndex = 0;
-            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
@@ -66,29 +57,39 @@
             this.flowLayoutPanel1.TabIndex = 1;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
-            // mbTexbox1
+            // panel2
             // 
-            this.mbTexbox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panel2.Controls.Add(this.txtBuscarEstudiantes);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1664, 150);
+            this.panel2.TabIndex = 0;
+            // 
+            // txtBuscarEstudiantes
+            // 
+            this.txtBuscarEstudiantes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.mbTexbox1.BackColor = System.Drawing.SystemColors.Window;
-            this.mbTexbox1.BorderColor = System.Drawing.Color.Black;
-            this.mbTexbox1.BorderFocusColor = System.Drawing.Color.Black;
-            this.mbTexbox1.BorderRadius = 20;
-            this.mbTexbox1.BorderSize = 1;
-            this.mbTexbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox1.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox1.Location = new System.Drawing.Point(470, 52);
-            this.mbTexbox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox1.Multiline = false;
-            this.mbTexbox1.Name = "mbTexbox1";
-            this.mbTexbox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox1.PasswordChar = false;
-            this.mbTexbox1.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox1.PlaceholderText = "Buscar...";
-            this.mbTexbox1.Size = new System.Drawing.Size(854, 35);
-            this.mbTexbox1.TabIndex = 0;
-            this.mbTexbox1.UnderlineStyle = false;
+            this.txtBuscarEstudiantes.BackColor = System.Drawing.SystemColors.Window;
+            this.txtBuscarEstudiantes.BorderColor = System.Drawing.Color.Black;
+            this.txtBuscarEstudiantes.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtBuscarEstudiantes.BorderRadius = 20;
+            this.txtBuscarEstudiantes.BorderSize = 1;
+            this.txtBuscarEstudiantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarEstudiantes.ForeColor = System.Drawing.Color.Black;
+            this.txtBuscarEstudiantes.Location = new System.Drawing.Point(470, 52);
+            this.txtBuscarEstudiantes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBuscarEstudiantes.Multiline = false;
+            this.txtBuscarEstudiantes.Name = "txtBuscarEstudiantes";
+            this.txtBuscarEstudiantes.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtBuscarEstudiantes.PasswordChar = false;
+            this.txtBuscarEstudiantes.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtBuscarEstudiantes.PlaceholderText = "Buscar...";
+            this.txtBuscarEstudiantes.Size = new System.Drawing.Size(854, 35);
+            this.txtBuscarEstudiantes.TabIndex = 0;
+            this.txtBuscarEstudiantes.UnderlineStyle = false;
+            this.txtBuscarEstudiantes._TextChanged += new System.EventHandler(this.txtBuscarEstudiantes__TextChanged);
             // 
             // Estudiantes
             // 
@@ -110,7 +111,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private MBControl.MBTexbox mbTexbox1;
+        private MBControl.MBTexbox txtBuscarEstudiantes;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
