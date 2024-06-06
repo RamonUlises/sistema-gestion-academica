@@ -156,21 +156,6 @@ CREATE TABLE traslados (
 
 DELIMITER //
 
-CREATE TRIGGER trigger_datos_academicos
-BEFORE INSERT ON datos_academicos
-FOR EACH ROW
-BEGIN
-    IF CHAR_LENGTH(NEW.codigo_estudiante) != 20 THEN
-        SIGNAL SQLSTATE '45000'
-        SET MESSAGE_TEXT = 'El código del estudiante tiene el que tener 20 caracteres';
-    END IF;
-END;
-//
-
-DELIMITER;
-
-DELIMITER //
-
 CREATE TRIGGER trigger_estudiantes
 BEFORE INSERT ON estudiantes
 FOR EACH ROW
