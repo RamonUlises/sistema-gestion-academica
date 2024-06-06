@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -128,7 +129,7 @@ namespace SGA
             }
             LimpiarCajas();
         }
-        
+
         public void LlenarComprobante(ClassReingreso reingreso)
         {
             txtCodigoComprobante.Enabled = false;
@@ -185,7 +186,7 @@ namespace SGA
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
 
         private void mbButton1_Click(object sender, EventArgs e)
@@ -213,10 +214,50 @@ namespace SGA
 
         }
 
+        public Bitmap CaptureFormImage()
+        {
+            Bitmap bm = new Bitmap(this.Width, this.Height);
+            this.DrawToBitmap(bm, new Rectangle(0, 0, this.Width, this.Height));
+            return bm;
+        }
+
+        private Bitmap formImage;
+
+        private void Imprimir(object sender, PrintPageEventArgs e)
+        {
+            if (formImage != null)
+            {
+                float aspectRatio = (float)formImage.Width / formImage.Height;
+                int printWidth = e.PageBounds.Width;
+                int printHeight = (int)(e.PageBounds.Width / aspectRatio);
+
+                if (printHeight > e.PageBounds.Height)
+                {
+                    printHeight = e.PageBounds.Height;
+                    printWidth = (int)(e.PageBounds.Height * aspectRatio);
+                }
+
+                int x = (e.PageBounds.Width - printWidth) / 2;
+                int y = (e.PageBounds.Height - printHeight) / 2;
+                e.Graphics.DrawImage(formImage, x, y, printWidth, printHeight);
+            }
+        }
         private void mbButton4_Click(object sender, EventArgs e)
         {
+            formImage = CaptureFormImage();
 
+            PrintDocument printDocument1 = new PrintDocument();
+
+            printDocument1 = new PrintDocument();
+            printDocument1.DefaultPageSettings.Landscape = true;
+            PrinterSettings ps = new PrinterSettings();
+
+            printDocument1.PrinterSettings = ps;
+            printDocument1.PrintPage += Imprimir;
+            printDocument1.Print();
+                  
         }
+
 
         public void LimpiarCajas()
         {
@@ -276,7 +317,7 @@ namespace SGA
             cbSeccionReingreso.Enabled = true;
             cbTurnoReingreso.Enabled = true;
             mbModalidadReingreso.Enabled = true;
-            
+
         }
 
         private void label19_Click(object sender, EventArgs e)
@@ -285,6 +326,11 @@ namespace SGA
         }
 
         private void mbTexbox7__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
 
         }
