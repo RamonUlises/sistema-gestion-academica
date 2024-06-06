@@ -435,6 +435,7 @@ namespace SGA
             string result = controller.AgregarEstudinante(estudiante);
             MessageBox.Show(result);
 
+
             string patternnn = @"\b" + Regex.Escape("código temporal del estudiante") + @"\b";
 
             if(Regex.IsMatch(result, patternnn))

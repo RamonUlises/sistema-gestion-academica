@@ -11,17 +11,17 @@ namespace SGA.Controllers
 {
     class ControllerEstudiante
     {
-        public List<Clases.ClassGetEstudiantes> BuscarEstudiantesIndex(string busqueda)
+        public List<int> BuscarEstudiantesIndex(string busqueda)
         {
             DB_Connection connection = new DB_Connection();
-
-            List<Clases.ClassGetEstudiantes> estudiantes = new List<Clases.ClassGetEstudiantes>();
 
             try
             {
                 using (MySqlConnection con = connection.GetConnection())
                 {
-                    string query = "SELECT * FROM estudiantes WHERE " +
+                    List<int> ids = new List<int>();
+
+                    string query = "SELECT id_estudiante FROM estudiantes WHERE " +
                         "LOWER(nombres) LIKE LOWER(CONCAT('%', @busqueda, '%')) OR " +
                         "LOWER(apellidos) LIKE LOWER(CONCAT('%', @busqueda, '%'))";
 
@@ -33,96 +33,21 @@ namespace SGA.Controllers
                     {
                         while (reader.Read())
                         {
-                            Clases.ClassGetEstudiantes estudiante = new Clases.ClassGetEstudiantes();
-
-                            string nombres = reader["nombres"].ToString() + " " + reader["apellidos"].ToString();
-                            string partidaNacimiento = reader["partida_nacimiento"].ToString();
-                            string sexo = new ControllerSexos().ObtenerSexo(Convert.ToInt32(reader["id_sexo"].ToString()));
-                            string pais = new ControllerPais().ObtenerPaisPorId(Convert.ToInt32(reader["id_pais"].ToString()));
-                            string departamento = new ControllerDepartamentos().ObtenerDepartamentoPorId(Convert.ToInt32(reader["id_departamento"].ToString()));
-                            string municipio = new ControllerMunicipios().ObtenerMunicipioPorId(Convert.ToInt32(reader["id_municipio"].ToString()));
-                            string nacionalidad = new ControllerPais().ObtenerNacionalidadPorId(Convert.ToInt32(reader["id_nacionalidad"].ToString()));
-                            string etnia = new ControllerEtnias().ObtenerEtniaPorId(Convert.ToInt32(reader["id_etnia"].ToString()));
-                            string lengua = new ControllerLenguaMaterna().ObtenerLenguaPorId(Convert.ToInt32(reader["id_lengua"].ToString()));
-                            string discapacidad = new ControllerDiscapacidad().ObtenerDiscapacidadPorId(Convert.ToInt32(reader["id_discapacidad"].ToString()));
-                            string[] tutor = new ControllerTutorEstudiante().ObtenerDatosPorId(Convert.ToInt32(reader["id_tutor_x_estudiante"]));
-
-                            bool poseeDatos = new ControllerDatosAcademicos().TieneDatos(Convert.ToInt32(reader["id_estudiante"]));
-
-                            string codigoEstudiante = "No definido";
-                            string FechaMatriculaAcademica = "No definido";
-                            string nivelEducativo = "No definido";
-                            bool repitente = false;
-                            string modalidad = "No definido";
-                            string grado = "No definido";
-                            string seccion = "No definido";
-                            string turno = "No definido";
-                            string centroEducativo = "No definido";
-
-                            if (poseeDatos == true)
-                            {
-                                string[] datosAcademicos = new ControllerDatosAcademicos().ObtenerDatosPorId(Convert.ToInt32(reader["id_estudiante"]));
-
-                                codigoEstudiante = datosAcademicos[0];
-                                FechaMatriculaAcademica = datosAcademicos[1];
-                                nivelEducativo = datosAcademicos[2];
-                                repitente = (datosAcademicos[3] == "1");
-                                modalidad = datosAcademicos[4];
-                                grado = datosAcademicos[5];
-                                seccion = datosAcademicos[6];
-                                turno = datosAcademicos[7];
-                                centroEducativo = datosAcademicos[8];
-                            }
-
-                            estudiante.Id = Convert.ToInt32(reader["id_estudiante"]);
-                            estudiante.Nombres = nombres;
-                            estudiante.Cedula = reader["cedula"].ToString();
-                            estudiante.FechaNacimiento = reader["fecha_nacimiento"].ToString();
-                            estudiante.Direccion = reader["direccion"].ToString();
-                            estudiante.Telefono = reader["telefono"].ToString();
-                            estudiante.PartidaNacimiento = (partidaNacimiento == "1");
-                            estudiante.FechaMatricula = reader["fecha_matricula"].ToString();
-                            estudiante.Barrio = reader["barrio"].ToString();
-                            estudiante.Peso = Convert.ToDouble(reader["peso"]);
-                            estudiante.Talla = Convert.ToDouble(reader["talla"]);
-                            estudiante.TerritorioIndigena = reader["territorio_indigena"].ToString();
-                            estudiante.ComunidadIndigena = reader["comunidad_indigena"].ToString();
-                            estudiante.Sexo = sexo;
-                            estudiante.Pais = pais;
-                            estudiante.Departamento = departamento;
-                            estudiante.Municipio = municipio;
-                            estudiante.Nacionalidad = nacionalidad;
-                            estudiante.Etnia = etnia;
-                            estudiante.LenguaMaterna = lengua;
-                            estudiante.Discapacidad = discapacidad;
-                            estudiante.NombresTutor = tutor[0];
-                            estudiante.CedulaTutor = tutor[1];
-                            estudiante.TelefonoTutor = tutor[2];
-                            estudiante.CodigoEstudiante = codigoEstudiante;
-                            estudiante.FechaMatriculaAcademica = FechaMatriculaAcademica;
-                            estudiante.NivelEducativo = nivelEducativo;
-                            estudiante.Repitente = repitente;
-                            estudiante.Modalidad = modalidad;
-                            estudiante.Grado = grado;
-                            estudiante.Seccion = seccion;
-                            estudiante.Turno = turno;
-                            estudiante.CentroEducativo = centroEducativo;
-
-                            estudiantes.Add(estudiante);
+                            ids.Add(Convert.ToInt32(reader["id_estudiante"]));
                         }
+
+                        return ids;
                     }
                 }
             }
             catch (Exception)
             {
-                Console.WriteLine("Error al obtener los estudiantes");
+                return null;
             }
             finally
             {
                 connection.CloseConnection();
             }
-
-            return estudiantes;
         }
         public List<Clases.ClassGetEstudiantes> ObtenerEstudiantes()
         {

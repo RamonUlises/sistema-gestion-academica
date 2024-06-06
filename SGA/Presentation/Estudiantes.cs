@@ -52,16 +52,7 @@ namespace SGA
                 return;
             }
 
-            bool response = ContainsNumber(texto);
-
-            if(response == true)
-            {
-                estudiantes = new Controllers.ControllerDatosAcademicos().BuscarEstudiantesIndex(texto);
-            } else
-            {
-                estudiantes = new Controllers.ControllerEstudiante().BuscarEstudiantesIndex(texto);
-            }
-
+            estudiantes = new Controllers.ControllerDatosAcademicos().BuscarEstudiantesIndex(texto);
 
             if(estudiantes.Count == 0)
             {
@@ -74,12 +65,6 @@ namespace SGA
                 Panel Card = CrearCard(estudiante);
                 flowLayoutPanel1.Controls.Add(Card);
             }
-        }
-        public bool ContainsNumber(string input)
-        {
-            string pattern = @"\d";
-            Regex regex = new Regex(pattern);
-            return regex.IsMatch(input);
         }
         public void MostrarEstudiantes()
         {
@@ -308,10 +293,12 @@ namespace SGA
                 AutoSize = true
             };
 
+            string repite = (estudiante.Repitente == false) ? "No" : "Si";
+
             Label repitente = new Label
             {
                 Location = new Point(10, 335),
-                Text = $"Repitente: {estudiante.Repitente}",
+                Text = $"Repitente: {repite}",
                 AutoSize = true
             };
 

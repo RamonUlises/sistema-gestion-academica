@@ -18,7 +18,7 @@ namespace SGA.Controllers
             {
                 using (MySqlConnection con = connection.GetConnection())
                 {
-                    string query = "SELECT sexo FROM sexos WHERE id = @id";
+                    string query = "SELECT sexo FROM sexos WHERE id_sexo = @id";
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     
                     cmd.Parameters.AddWithValue("@id", id);

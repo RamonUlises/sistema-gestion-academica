@@ -85,7 +85,7 @@
             this.txtBuscarEstudiantes.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtBuscarEstudiantes.PasswordChar = false;
             this.txtBuscarEstudiantes.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtBuscarEstudiantes.PlaceholderText = "Buscar...";
+            this.txtBuscarEstudiantes.PlaceholderText = "Buscar por nombres, apellidos o código de estudiante...";
             this.txtBuscarEstudiantes.Size = new System.Drawing.Size(854, 35);
             this.txtBuscarEstudiantes.TabIndex = 0;
             this.txtBuscarEstudiantes.UnderlineStyle = false;

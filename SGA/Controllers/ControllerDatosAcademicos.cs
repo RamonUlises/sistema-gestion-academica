@@ -20,7 +20,19 @@ namespace SGA.Controllers
             {
                 using (MySqlConnection con = connection.GetConnection())
                 {
-                    List<int> ids = ExtraerEstudiantesBusqueda(busqueda);
+                    ControllerEstudiante controllerEstudiante = new ControllerEstudiante();
+
+                    List<int> ids = new List<int>();
+
+                    List<int> idsDatos = ExtraerEstudiantesBusqueda(busqueda);
+                    List<int> idsEstudiantes = controllerEstudiante.BuscarEstudiantesIndex(busqueda);
+
+                    HashSet<int> hashSet = new HashSet<int>();
+
+                    hashSet.UnionWith(idsDatos);
+                    hashSet.UnionWith(idsEstudiantes);
+
+                    ids = hashSet.ToList();
 
                     if (ids.Count == 0)
                     {

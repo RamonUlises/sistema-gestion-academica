@@ -235,6 +235,10 @@ namespace SGA
         }
         private void mbButton2_Click(object sender, EventArgs e)
         {
+            bool res = MessageBox.Show("¿Desea eliminar los datos de las cajas?", "Limpiar cajas", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes;
+
+            if (!res) return;
+
             LimpiarCajas();
         }
 
