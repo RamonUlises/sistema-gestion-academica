@@ -60,6 +60,18 @@ namespace SGA.Clases
             return Validation(true, "Correcto");
         }
 
+        public ValidarResultados ValidarCodigoEstudiante()
+        {
+            if (this.CodigoEstudiante.Length <= 16)
+            {
+                return Validation(false, "El código del estudiante debe tener al menos 16 caracteres");
+            }
+            if(this.CodigoEstudiante.Length > 20)
+            {
+                return Validation(false, "El código del estudiante debe tener menos de 20 caracteres");
+            }
+            return Validation(true, "Correcto");
+        }
         public ValidarResultados Validation(bool result, string message)
         {
             return new ValidarResultados { result = result, message = message };

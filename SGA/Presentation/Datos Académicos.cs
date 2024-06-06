@@ -235,6 +235,13 @@ namespace SGA.PRESENTACION
                 return;
             }
 
+            var resultado2 = datosAcademicos.ValidarCodigoEstudiante();
+            if(resultado2.result == false)
+            {
+                MessageBox.Show(resultado2.message);
+                return;
+            }
+
             string repitente = repitenteValidation();
             if (repitente == "Error")
             {
