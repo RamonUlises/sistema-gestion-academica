@@ -96,249 +96,51 @@ namespace SGA
                 Height = 600,
                 BorderStyle = BorderStyle.None,
                 Margin = new Padding(10),
-                BackColor  = Color.FromArgb (235, 239, 242),
-                
-                
+                BackColor  = Color.FromArgb (235, 239, 242),             
             };
             
             panel.Controls.Add(panelBorde);
-            
-
-
-            Label nombreLabel = new Label
-            {
-                Text = $"Nombres: {estudiante.Nombres}",
-                Location = new Point(10, 10),
-                AutoSize = true,
-               
-                
-            };
-
             PanelHelper.SetRoundPanel(panel, 10);
-            Label cedulanombre = new Label
-            {
-                Text = $"Cedula: {estudiante.Cedula}",
-                Location = new Point(400, 10),
-                AutoSize = true
-            };
-
-            estudiante.FechaNacimiento = ConvertirFecha(estudiante.FechaNacimiento);
-
-            Label fechanacimineto = new Label
-            {
-                Text = $"Fecha Nacimineto: {estudiante.FechaNacimiento}",
-                Location = new Point(10, 35),
-                AutoSize = true
-            };
-
-            Label direccion = new Label
-            {
-                Location = new Point(400, 35),
-                Text = $"Dirección: {estudiante.Direccion}",
-                AutoSize = true
-            };
-
-             Label telefono = new Label
-             {
-                Location = new Point(10, 60),
-                Text = $"Telefono: {estudiante.Telefono}",
-                AutoSize = true
-             };
-
-            Label partidanacimiento = new Label
-            {
-                Location = new Point(400, 60),
-                Text = $"Partida de Nacimiento: {estudiante.PartidaNacimiento}",
-                AutoSize = true
-            };
-
-            Label fechamatricula = new Label
-            {
-                Location = new Point(10, 85),
-                Text = $"Fecha de Matricula: {ConvertirFecha(estudiante.FechaMatricula)}",
-                AutoSize = true
-            };
             
-
-            Label barrio = new Label
-            {
-                Location = new Point(400, 85),
-                Text = $"Barrio: {estudiante.Barrio}",
-                AutoSize = true
-            };
-
-            Label peso = new Label
-            {
-                Location = new Point(10, 110),
-                Text = $"Peso: {estudiante.Peso}Kg",
-                AutoSize = true
-            };
-
-            Label talla = new Label
-            {
-                Location = new Point(400, 110),
-                Text = $"Talla: {estudiante.Talla}m",
-                AutoSize = true
-            };
-
-            Label territorioindigena = new Label
-            {
-                Location = new Point(10, 135),
-                Text = $"Territorio Indigena: {estudiante.TerritorioIndigena}",
-                AutoSize = true
-            };
-
-            Label comunidadindigena = new Label
-            {
-                Location = new Point(400, 135),
-                Text = $"Comunidad Indigena: {estudiante.ComunidadIndigena}",
-                AutoSize = true
-            };
-
-            Label sexo = new Label
-            {
-                Location = new Point(10, 160),
-                Text = $"Sexo: {estudiante.Sexo}",
-                AutoSize = true
-            };
-
-            Label pais = new Label
-            {
-                Location = new Point(400, 160),
-                Text = $"Pais: {estudiante.Pais}",
-                AutoSize = true
-            };
-
-            Label departamento = new Label
-            {
-                Location = new Point(10, 185),
-                Text = $"Departamento: {estudiante.Departamento}",
-                AutoSize = true
-            };
-
-            Label municipio = new Label
-            {
-                Location = new Point(400, 185),
-                Text = $"Municipio: {estudiante.Municipio}",
-                AutoSize = true
-            };
-
-            Label nacionalidad = new Label
-            {
-                Location = new Point(10, 210),
-                Text = $"Nacionalidad: {estudiante.Nacionalidad}",
-                AutoSize = true
-            };
-
-            Label etnia = new Label
-            {
-                Location = new Point(400, 210),
-                Text = $"Etnia: {estudiante.Etnia}",
-                AutoSize = true
-            };
-
-            Label lengua = new Label
-            {
-                Location = new Point(10, 235),
-                Text = $"Lengua Materna: {estudiante.LenguaMaterna}",
-                AutoSize = true
-            };
-
-            Label discapacidad = new Label
-            {
-                Location = new Point(400, 235),
-                Text = $"Discapacidad: {estudiante.Discapacidad}",
-                AutoSize = true
-            };
-
-            Label tutor = new Label
-            {
-                Location = new Point(10, 260),
-                Text = $"Tutor: {estudiante.NombresTutor}",
-                AutoSize = true
-            };
-
-            Label cedulatutor = new Label
-            {
-                Location = new Point(400, 260),
-                Text = $"Cedula Tutor: {estudiante.CedulaTutor}",
-                AutoSize = true
-            };
-
-            Label telefonotutor = new Label
-            {
-                Location = new Point(10, 285),
-                Text = $"Telefono Tutor: {estudiante.TelefonoTutor}",
-                AutoSize = true
-            };
-
-            Label codigoestudiante = new Label
-            {
-                Location = new Point(400, 285),
-                Text = $"Codigo Estudiante: {estudiante.CodigoEstudiante}",
-                AutoSize = true
-            };
-
-            Label fechamatriculaacademica = new Label
-            {
-                Location = new Point(10, 310),
-                Text = $"Fecha Matricula Academica: {ConvertirFecha(estudiante.FechaMatriculaAcademica)}",
-                AutoSize = true
-            };
-
-            Label niveleducativo = new Label
-            {
-                Location = new Point(400, 310),
-                Text = $"Nivel Educativo: {estudiante.NivelEducativo}",
-                AutoSize = true
-            };
-
+            estudiante.FechaNacimiento = ConvertirFecha(estudiante.FechaNacimiento);
+            string PartidaNacimiento = (estudiante.PartidaNacimiento == true) ? "Si" : "No";
             string repite = (estudiante.Repitente == false) ? "No" : "Si";
 
-            Label repitente = new Label
-            {
-                Location = new Point(10, 335),
-                Text = $"Repitente: {repite}",
-                AutoSize = true
-            };
+            Label nombreEstudiante = CrearLabel(10, 10, "Nombre", estudiante.Nombres);
+            Label cedula = CrearLabel(400, 10, "Cedula", estudiante.Cedula);
+            Label fechanacimineto = CrearLabel(10, 35, "Fecha Nacimineto", estudiante.FechaNacimiento);
+            Label direccion = CrearLabel(400, 35, "Direccion", estudiante.Direccion);
+            Label telefono = CrearLabel(10, 60, "Telefono", estudiante.Telefono);
+            Label partidanacimiento = CrearLabel(400, 60, "Partida de Nacimiento", PartidaNacimiento);
+            Label fechamatricula = CrearLabel(10, 85, "Fecha de Matricula", ConvertirFecha(estudiante.FechaMatricula));
+            Label barrio = CrearLabel(400, 85, "Barrio", estudiante.Barrio);
+            Label peso = CrearLabel(10, 110, "Peso", estudiante.Peso + "Kg");
+            Label talla = CrearLabel(400, 110, "Talla", estudiante.Talla + "m");
+            Label territorioindigena = CrearLabel(10, 135, "Territorio Indigena", estudiante.TerritorioIndigena);
+            Label comunidadindigena = CrearLabel(400, 135, "Comunidad Indigena", estudiante.ComunidadIndigena);
+            Label sexo = CrearLabel(10, 160, "Sexo", estudiante.Sexo);
+            Label pais = CrearLabel(400, 160, "Pais", estudiante.Pais);
+            Label departamento = CrearLabel(10, 185, "Departamento", estudiante.Departamento);
+            Label municipio = CrearLabel(400, 185, "Municipio", estudiante.Municipio);
+            Label nacionalidad = CrearLabel(10, 210, "Nacionalidad", estudiante.Nacionalidad);
+            Label etnia = CrearLabel(400, 210, "Etnia", estudiante.Etnia);
+            Label lengua = CrearLabel(10, 235, "Lengua Materna", estudiante.LenguaMaterna);
+            Label discapacidad = CrearLabel(400, 235, "Discapacidad", estudiante.Discapacidad);
+            Label tutor = CrearLabel(10, 260, "Tutor", estudiante.NombresTutor);
+            Label cedulatutor = CrearLabel(400, 260, "Cedula Tutor", estudiante.CedulaTutor);
+            Label telefonotutor = CrearLabel(10, 285, "Telefono Tutor", estudiante.TelefonoTutor);
+            Label codigoestudiante = CrearLabel(400, 285, "Codigo Estudiante", estudiante.CodigoEstudiante);
+            Label fechamatriculaacademica = CrearLabel(10, 310, "Fecha Matricula Academica", ConvertirFecha(estudiante.FechaMatriculaAcademica));
+            Label niveleducativo = CrearLabel(400, 310, "Nivel Educativo", estudiante.NivelEducativo);
+            Label repitente = CrearLabel(10, 335, "Repitente", repite);
+            Label modalidad = CrearLabel(400, 335, "Modalidad", estudiante.Modalidad);
+            Label grado = CrearLabel(10, 360, "Grado", estudiante.Grado);
+            Label seccion = CrearLabel(400, 360, "Seccion", estudiante.Seccion);
+            Label turno = CrearLabel(10, 385, "Turno", estudiante.Turno);
+            Label centroeducativo = CrearLabel(10, 415, "Centro Educativo", estudiante.CentroEducativo);
 
-            Label modalidad = new Label
-            {
-                Location = new Point(400, 335),
-                Text = $"Modalidad: {estudiante.Modalidad}",
-                AutoSize = true
-            };
-
-            Label grado = new Label
-            {
-                Location = new Point(10, 360),
-                Text = $"Grado: {estudiante.Grado}",
-                AutoSize = true
-            };
-
-            Label seccion = new Label
-            {
-                Location = new Point(400, 360),
-                Text = $"Seccion: {estudiante.Seccion}",
-                AutoSize = true
-            };
-
-            Label turno = new Label
-            {
-                Location = new Point(10, 385),
-                Text = $"Turno: {estudiante.Turno}",
-                AutoSize = true
-            };
-
-            Label centroeducativo = new Label
-            {
-                Location = new Point(10, 415),
-                Text = $"Centro Educativo: {estudiante.CentroEducativo}",
-                AutoSize = true
-            };
-
-         panel.Controls.Add(nombreLabel);
-            panel.Controls.Add(cedulanombre);
+            panel.Controls.Add(nombreEstudiante);
+            panel.Controls.Add(cedula);
             panel.Controls.Add(fechanacimineto);
             panel.Controls.Add(direccion);
             panel.Controls.Add(telefono);
@@ -364,16 +166,27 @@ namespace SGA
             panel.Controls.Add(fechamatriculaacademica);
             panel.Controls.Add(niveleducativo);
             panel.Controls.Add(repitente);
-                panel.Controls.Add(modalidad);
+            panel.Controls.Add(modalidad);
             panel.Controls.Add(grado);
             panel.Controls.Add(seccion);
             panel.Controls.Add(turno);
             panel.Controls.Add(centroeducativo);
             
-
             return panel;
-            
         }
+
+        public Label CrearLabel(int x, int y, string nombre, string texto)
+        {
+            Label label = new Label
+            {
+                Location = new Point(x, y),
+                Text = $"{nombre}: {texto}",
+                AutoSize = true
+            };
+
+            return label;
+        }
+
         public string ConvertirFecha(string fecha)
         {
             string[] fechaArray = fecha.Split(' ');
