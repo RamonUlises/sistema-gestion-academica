@@ -124,11 +124,32 @@ namespace SGA
             if (MessageBox.Show("¿Desea imprimir el comprobante?", mensaje, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 showSubMenu(panel11);
-                // LlenarComprobante(reingreso);
+                LlenarComprobante(reingreso);
             }
             LimpiarCajas();
         }
         
+        public void LlenarComprobante(ClassReingreso reingreso)
+        {
+            txtCodigoComprobante.Enabled = false;
+            txtNombreAlumnoComprobante.Enabled = false;
+            txtModalidadComprobante.Enabled = false;
+            txtTurnoComprobante.Enabled = false;
+            txtGradoComprobante.Enabled = false;
+            txtSeccionComprobante.Enabled = false;
+            txtCentroComprobante.Enabled = false;
+            txtCodigoCentroComprobante.Enabled = false;
+
+
+            txtCodigoComprobante.Text = reingreso.CodigoAlumno;
+            txtNombreAlumnoComprobante.Text = reingreso.NombreAlumno;
+            txtModalidadComprobante.Text = reingreso.Modalidad;
+            txtTurnoComprobante.Text = reingreso.Turno;
+            txtGradoComprobante.Text = reingreso.Grado;
+            txtSeccionComprobante.Text = reingreso.Seccion;
+            txtCentroComprobante.Text = "Instituto Nacional Reino de Suecia";
+            txtCodigoCentroComprobante.Text = "9841";
+        }
         private void customizarDiseno()
         {
             panel11.Visible = false;

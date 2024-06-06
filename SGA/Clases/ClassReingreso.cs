@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SGA.Clases
 {
-    internal class ClassReingreso
+    public class ClassReingreso
     {
         public string CodigoAlumno { get; set; }
         public string NombreAlumno { get; set; }

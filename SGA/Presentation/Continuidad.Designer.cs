@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Continuidad));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.txtGradoComprobante = new SGA.MBControl.MBTexbox();
+            this.txtTurnoComprobante = new SGA.MBControl.MBTexbox();
+            this.txtSeccionComprobante = new SGA.MBControl.MBTexbox();
             this.mbButton5 = new SGA.MBControl.MBButton();
             this.panel26 = new System.Windows.Forms.Panel();
             this.panel25 = new System.Windows.Forms.Panel();
@@ -52,7 +55,9 @@
             this.mbButton4 = new SGA.MBControl.MBButton();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
+            this.mbTexbox4 = new SGA.MBControl.MBTexbox();
             this.panel19 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.txtNombreAlumnoComprobante = new SGA.MBControl.MBTexbox();
@@ -84,11 +89,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.mbModalidadReingreso = new SGA.MBControl.MBComboBox();
             this.mbButton2 = new SGA.MBControl.MBButton();
-            this.mbTexbox7 = new SGA.MBControl.MBTexbox();
-            this.txtTurnoComprobante = new SGA.MBControl.MBTexbox();
-            this.mbTexbox9 = new SGA.MBControl.MBTexbox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.mbTexbox4 = new SGA.MBControl.MBTexbox();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -138,9 +138,9 @@
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.mbTexbox9);
+            this.panel11.Controls.Add(this.txtGradoComprobante);
             this.panel11.Controls.Add(this.txtTurnoComprobante);
-            this.panel11.Controls.Add(this.mbTexbox7);
+            this.panel11.Controls.Add(this.txtSeccionComprobante);
             this.panel11.Controls.Add(this.mbButton5);
             this.panel11.Controls.Add(this.panel26);
             this.panel11.Controls.Add(this.panel25);
@@ -168,6 +168,70 @@
             this.panel11.Size = new System.Drawing.Size(1427, 710);
             this.panel11.TabIndex = 151;
             this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
+            // 
+            // txtGradoComprobante
+            // 
+            this.txtGradoComprobante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtGradoComprobante.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtGradoComprobante.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtGradoComprobante.BorderRadius = 25;
+            this.txtGradoComprobante.BorderSize = 1;
+            this.txtGradoComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGradoComprobante.ForeColor = System.Drawing.Color.Black;
+            this.txtGradoComprobante.Location = new System.Drawing.Point(420, 464);
+            this.txtGradoComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtGradoComprobante.Multiline = false;
+            this.txtGradoComprobante.Name = "txtGradoComprobante";
+            this.txtGradoComprobante.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtGradoComprobante.PasswordChar = false;
+            this.txtGradoComprobante.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtGradoComprobante.PlaceholderText = "";
+            this.txtGradoComprobante.Size = new System.Drawing.Size(224, 38);
+            this.txtGradoComprobante.TabIndex = 201;
+            this.txtGradoComprobante.UnderlineStyle = false;
+            // 
+            // txtTurnoComprobante
+            // 
+            this.txtTurnoComprobante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTurnoComprobante.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTurnoComprobante.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtTurnoComprobante.BorderRadius = 25;
+            this.txtTurnoComprobante.BorderSize = 1;
+            this.txtTurnoComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTurnoComprobante.ForeColor = System.Drawing.Color.Black;
+            this.txtTurnoComprobante.Location = new System.Drawing.Point(917, 407);
+            this.txtTurnoComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTurnoComprobante.Multiline = false;
+            this.txtTurnoComprobante.Name = "txtTurnoComprobante";
+            this.txtTurnoComprobante.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTurnoComprobante.PasswordChar = false;
+            this.txtTurnoComprobante.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtTurnoComprobante.PlaceholderText = "";
+            this.txtTurnoComprobante.Size = new System.Drawing.Size(224, 38);
+            this.txtTurnoComprobante.TabIndex = 200;
+            this.txtTurnoComprobante.UnderlineStyle = false;
+            // 
+            // txtSeccionComprobante
+            // 
+            this.txtSeccionComprobante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtSeccionComprobante.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtSeccionComprobante.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.txtSeccionComprobante.BorderRadius = 25;
+            this.txtSeccionComprobante.BorderSize = 1;
+            this.txtSeccionComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSeccionComprobante.ForeColor = System.Drawing.Color.Black;
+            this.txtSeccionComprobante.Location = new System.Drawing.Point(917, 463);
+            this.txtSeccionComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSeccionComprobante.Multiline = false;
+            this.txtSeccionComprobante.Name = "txtSeccionComprobante";
+            this.txtSeccionComprobante.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSeccionComprobante.PasswordChar = false;
+            this.txtSeccionComprobante.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtSeccionComprobante.PlaceholderText = "";
+            this.txtSeccionComprobante.Size = new System.Drawing.Size(224, 38);
+            this.txtSeccionComprobante.TabIndex = 199;
+            this.txtSeccionComprobante.UnderlineStyle = false;
+            this.txtSeccionComprobante._TextChanged += new System.EventHandler(this.mbTexbox7__TextChanged);
             // 
             // mbButton5
             // 
@@ -420,6 +484,27 @@
             this.label16.TabIndex = 0;
             this.label16.Text = "Grado:";
             // 
+            // mbTexbox4
+            // 
+            this.mbTexbox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.mbTexbox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.mbTexbox4.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.mbTexbox4.BorderRadius = 25;
+            this.mbTexbox4.BorderSize = 1;
+            this.mbTexbox4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mbTexbox4.ForeColor = System.Drawing.Color.Black;
+            this.mbTexbox4.Location = new System.Drawing.Point(477, 280);
+            this.mbTexbox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.mbTexbox4.Multiline = false;
+            this.mbTexbox4.Name = "mbTexbox4";
+            this.mbTexbox4.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.mbTexbox4.PasswordChar = false;
+            this.mbTexbox4.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.mbTexbox4.PlaceholderText = "";
+            this.mbTexbox4.Size = new System.Drawing.Size(224, 38);
+            this.mbTexbox4.TabIndex = 157;
+            this.mbTexbox4.UnderlineStyle = false;
+            // 
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
@@ -428,6 +513,16 @@
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(157, 45);
             this.panel19.TabIndex = 156;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(20, 9);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(104, 20);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Código único:";
             // 
             // panel20
             // 
@@ -846,101 +941,6 @@
             this.mbButton2.UseVisualStyleBackColor = false;
             this.mbButton2.Click += new System.EventHandler(this.mbButton2_Click);
             // 
-            // mbTexbox7
-            // 
-            this.mbTexbox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox7.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox7.BorderRadius = 25;
-            this.mbTexbox7.BorderSize = 1;
-            this.mbTexbox7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox7.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox7.Location = new System.Drawing.Point(917, 463);
-            this.mbTexbox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox7.Multiline = false;
-            this.mbTexbox7.Name = "mbTexbox7";
-            this.mbTexbox7.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox7.PasswordChar = false;
-            this.mbTexbox7.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox7.PlaceholderText = "";
-            this.mbTexbox7.Size = new System.Drawing.Size(224, 38);
-            this.mbTexbox7.TabIndex = 199;
-            this.mbTexbox7.UnderlineStyle = false;
-            this.mbTexbox7._TextChanged += new System.EventHandler(this.mbTexbox7__TextChanged);
-            // 
-            // txtTurnoComprobante
-            // 
-            this.txtTurnoComprobante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtTurnoComprobante.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtTurnoComprobante.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtTurnoComprobante.BorderRadius = 25;
-            this.txtTurnoComprobante.BorderSize = 1;
-            this.txtTurnoComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTurnoComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txtTurnoComprobante.Location = new System.Drawing.Point(917, 407);
-            this.txtTurnoComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtTurnoComprobante.Multiline = false;
-            this.txtTurnoComprobante.Name = "txtTurnoComprobante";
-            this.txtTurnoComprobante.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtTurnoComprobante.PasswordChar = false;
-            this.txtTurnoComprobante.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtTurnoComprobante.PlaceholderText = "";
-            this.txtTurnoComprobante.Size = new System.Drawing.Size(224, 38);
-            this.txtTurnoComprobante.TabIndex = 200;
-            this.txtTurnoComprobante.UnderlineStyle = false;
-            // 
-            // mbTexbox9
-            // 
-            this.mbTexbox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox9.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox9.BorderRadius = 25;
-            this.mbTexbox9.BorderSize = 1;
-            this.mbTexbox9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox9.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox9.Location = new System.Drawing.Point(420, 464);
-            this.mbTexbox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox9.Multiline = false;
-            this.mbTexbox9.Name = "mbTexbox9";
-            this.mbTexbox9.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox9.PasswordChar = false;
-            this.mbTexbox9.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox9.PlaceholderText = "";
-            this.mbTexbox9.Size = new System.Drawing.Size(224, 38);
-            this.mbTexbox9.TabIndex = 201;
-            this.mbTexbox9.UnderlineStyle = false;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(20, 9);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(104, 20);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Código único:";
-            // 
-            // mbTexbox4
-            // 
-            this.mbTexbox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox4.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.mbTexbox4.BorderRadius = 25;
-            this.mbTexbox4.BorderSize = 1;
-            this.mbTexbox4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox4.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox4.Location = new System.Drawing.Point(477, 280);
-            this.mbTexbox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox4.Multiline = false;
-            this.mbTexbox4.Name = "mbTexbox4";
-            this.mbTexbox4.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox4.PasswordChar = false;
-            this.mbTexbox4.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.mbTexbox4.PlaceholderText = "";
-            this.mbTexbox4.Size = new System.Drawing.Size(224, 38);
-            this.mbTexbox4.TabIndex = 157;
-            this.mbTexbox4.UnderlineStyle = false;
-            // 
             // Continuidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1049,9 +1049,9 @@
         private MBControl.MBButton mbButton5;
         private MBControl.MBComboBox mbModalidadReingreso;
         private MBControl.MBButton mbButton2;
-        private MBControl.MBTexbox mbTexbox9;
+        private MBControl.MBTexbox txtGradoComprobante;
         private MBControl.MBTexbox txtTurnoComprobante;
-        private MBControl.MBTexbox mbTexbox7;
+        private MBControl.MBTexbox txtSeccionComprobante;
         private MBControl.MBTexbox mbTexbox4;
         private System.Windows.Forms.Label label17;
     }
