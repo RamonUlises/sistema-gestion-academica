@@ -1230,6 +1230,7 @@
             this.mbTexbox7.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.mbTexbox7.BorderRadius = 25;
             this.mbTexbox7.BorderSize = 1;
+            this.mbTexbox7.Enabled = false;
             this.mbTexbox7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mbTexbox7.ForeColor = System.Drawing.Color.Black;
             this.mbTexbox7.Location = new System.Drawing.Point(395, 641);

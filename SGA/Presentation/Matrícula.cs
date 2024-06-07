@@ -71,7 +71,21 @@ namespace SGA
             txtMuniciopioMatricula.Items.Clear();
 
             LlenarDepartamentos(4);
+
+            this.KeyPreview = true;
+
+            this.KeyDown += new KeyEventHandler(EnterText_KeyPress);
         }
+
+        private void EnterText_KeyPress(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                SendKeys.Send("{TAB}");
+
+            }
+        }
+
         public void LlenarFormularioPrueba()
         {
             txt1NombreMatricula.Text = "Ramón";

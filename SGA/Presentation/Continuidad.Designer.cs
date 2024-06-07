@@ -163,9 +163,9 @@
             this.panel11.Controls.Add(this.panel21);
             this.panel11.Controls.Add(this.txtCodigoComprobante);
             this.panel11.Controls.Add(this.panel22);
-            this.panel11.Location = new System.Drawing.Point(105, 56);
+            this.panel11.Location = new System.Drawing.Point(105, 328);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1427, 710);
+            this.panel11.Size = new System.Drawing.Size(1427, 438);
             this.panel11.TabIndex = 151;
             this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
             // 
@@ -717,6 +717,7 @@
             this.mbTexbox4.Size = new System.Drawing.Size(224, 38);
             this.mbTexbox4.TabIndex = 157;
             this.mbTexbox4.UnderlineStyle = false;
+            this.mbTexbox4._TextChanged += new System.EventHandler(this.mbTexbox4__TextChanged);
             // 
             // txtNombreAlumnoComprobante
             // 
@@ -738,6 +739,7 @@
             this.txtNombreAlumnoComprobante.Size = new System.Drawing.Size(589, 38);
             this.txtNombreAlumnoComprobante.TabIndex = 154;
             this.txtNombreAlumnoComprobante.UnderlineStyle = false;
+            this.txtNombreAlumnoComprobante._TextChanged += new System.EventHandler(this.txtNombreAlumnoComprobante__TextChanged);
             // 
             // txtCodigoComprobante
             // 

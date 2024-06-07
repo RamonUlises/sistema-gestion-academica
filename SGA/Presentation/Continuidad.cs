@@ -56,6 +56,18 @@ namespace SGA
             cbSeccionReingreso.Enabled = false;
             cbTurnoReingreso.Enabled = false;
             mbModalidadReingreso.Enabled = false;
+
+            this.KeyPreview = true;
+
+            this.KeyDown += new KeyEventHandler(Continuidad_KeyDown);
+        }
+
+        private void Continuidad_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                BuscarCodigoAlumno();
+            }   
         }
 
         public void LenarSecciones()
@@ -104,6 +116,7 @@ namespace SGA
         }
         private void btnGuardarReingreso_Click(object sender, EventArgs e)
         {
+
             ClassReingreso reingreso = new ClassReingreso();
             reingreso.CodigoAlumno = txtCodigoAlumnoReingreso.Text;
             reingreso.NombreAlumno = txtNombresAlumnoReingreso.Text;
@@ -273,6 +286,9 @@ namespace SGA
             cbSeccionReingreso.Enabled = false;
             cbTurnoReingreso.Enabled = false;
             mbModalidadReingreso.Enabled = false;
+
+            txtCodigoAlumnoReingreso.Focus();
+
         }
         private void mbButton2_Click(object sender, EventArgs e)
         {
@@ -293,7 +309,7 @@ namespace SGA
 
         }
 
-        private void btnBuscarCodigoAlumnoReingreso_Click(object sender, EventArgs e)
+        private void BuscarCodigoAlumno()
         {
             if (txtCodigoAlumnoReingreso.Text == "")
             {
@@ -317,7 +333,11 @@ namespace SGA
             cbSeccionReingreso.Enabled = true;
             cbTurnoReingreso.Enabled = true;
             mbModalidadReingreso.Enabled = true;
+        }
 
+        private void btnBuscarCodigoAlumnoReingreso_Click(object sender, EventArgs e)
+        {
+            BuscarCodigoAlumno();
         }
 
         private void label19_Click(object sender, EventArgs e)
@@ -331,6 +351,16 @@ namespace SGA
         }
 
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
+        {
+
+        }
+
+        private void mbTexbox4__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombreAlumnoComprobante__TextChanged(object sender, EventArgs e)
         {
 
         }
