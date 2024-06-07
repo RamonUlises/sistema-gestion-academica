@@ -247,9 +247,9 @@
             this.panel12.Controls.Add(this.panel14);
             this.panel12.Controls.Add(this.panel13);
             this.panel12.Controls.Add(this.mbButton2);
-            this.panel12.Location = new System.Drawing.Point(86, 12);
+            this.panel12.Location = new System.Drawing.Point(86, 36);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(1459, 1064);
+            this.panel12.Size = new System.Drawing.Size(1459, 1040);
             this.panel12.TabIndex = 1;
             this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
             // 
@@ -1181,7 +1181,7 @@
             this.txtNivelEducativoDatosAcademicos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.txtNivelEducativoDatosAcademicos.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.txtNivelEducativoDatosAcademicos.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtNivelEducativoDatosAcademicos.BorderRadius = 25;
+            this.txtNivelEducativoDatosAcademicos.BorderRadius = 5;
             this.txtNivelEducativoDatosAcademicos.BorderSize = 1;
             this.txtNivelEducativoDatosAcademicos.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNivelEducativoDatosAcademicos.ForeColor = System.Drawing.Color.Black;
@@ -1275,7 +1275,7 @@
             this.txtCodigoEstudianteDatosAcademicos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.txtCodigoEstudianteDatosAcademicos.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.txtCodigoEstudianteDatosAcademicos.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCodigoEstudianteDatosAcademicos.BorderRadius = 25;
+            this.txtCodigoEstudianteDatosAcademicos.BorderRadius = 5;
             this.txtCodigoEstudianteDatosAcademicos.BorderSize = 1;
             this.txtCodigoEstudianteDatosAcademicos.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoEstudianteDatosAcademicos.ForeColor = System.Drawing.Color.Black;
@@ -1317,7 +1317,7 @@
             this.txtFechaMatriculaEstudianteDatosAcademicos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.txtFechaMatriculaEstudianteDatosAcademicos.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.txtFechaMatriculaEstudianteDatosAcademicos.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtFechaMatriculaEstudianteDatosAcademicos.BorderRadius = 25;
+            this.txtFechaMatriculaEstudianteDatosAcademicos.BorderRadius = 5;
             this.txtFechaMatriculaEstudianteDatosAcademicos.BorderSize = 1;
             this.txtFechaMatriculaEstudianteDatosAcademicos.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFechaMatriculaEstudianteDatosAcademicos.ForeColor = System.Drawing.Color.Black;
@@ -1419,7 +1419,7 @@
             this.txtNombresDelEstudiante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.txtNombresDelEstudiante.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.txtNombresDelEstudiante.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtNombresDelEstudiante.BorderRadius = 25;
+            this.txtNombresDelEstudiante.BorderRadius = 5;
             this.txtNombresDelEstudiante.BorderSize = 1;
             this.txtNombresDelEstudiante.Enabled = false;
             this.txtNombresDelEstudiante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1441,7 +1441,7 @@
             this.txtCodigoTemporalEstudiante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.txtCodigoTemporalEstudiante.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.txtCodigoTemporalEstudiante.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.txtCodigoTemporalEstudiante.BorderRadius = 25;
+            this.txtCodigoTemporalEstudiante.BorderRadius = 5;
             this.txtCodigoTemporalEstudiante.BorderSize = 1;
             this.txtCodigoTemporalEstudiante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoTemporalEstudiante.ForeColor = System.Drawing.Color.Black;
