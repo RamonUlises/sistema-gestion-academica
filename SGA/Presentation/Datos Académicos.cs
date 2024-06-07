@@ -62,7 +62,28 @@ namespace SGA.PRESENTACION
             LlenarSecciones();
             LlenarCentros();
             CamposEnable(false);
+
+            this.KeyPreview = true;
+
+            this.KeyDown += new KeyEventHandler(EnterText_KeyPress);
+            this.KeyDown += new KeyEventHandler(DatosAcademicos_KeyDown);
         }
+        private void DatosAcademicos_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode != Keys.Enter)
+            {
+                return;
+            }
+            BuscarEstudiante();
+        }
+        private void EnterText_KeyPress(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Tab)
+            {
+                SendKeys.Send("{TAB}");
+            }
+        }
+
         private void LlenarCentros()
         {
             Controllers.ControllerCentros controller = new Controllers.ControllerCentros();
@@ -210,6 +231,7 @@ namespace SGA.PRESENTACION
         {
 
         }
+
 
         private void label18_Click(object sender, EventArgs e)
         {
@@ -417,10 +439,10 @@ namespace SGA.PRESENTACION
 
         }
 
-        private void mbBuscarEstudiante_Click(object sender, EventArgs e)
+        public void BuscarEstudiante()
         {
             txtNombresDelEstudiante.Text = "";
-            if(txtCodigoTemporalEstudiante.Text == "")
+            if (txtCodigoTemporalEstudiante.Text == "")
             {
                 MessageBox.Show("Ingrese un código de estudiante");
                 return;
@@ -438,7 +460,7 @@ namespace SGA.PRESENTACION
 
             string nombresEstudiantes = controller.obtenerNombresEstudiante(Convert.ToInt32(txtCodigoTemporalEstudiante.Text));
 
-            if(nombresEstudiantes == "Estudiante no encontrado")
+            if (nombresEstudiantes == "Estudiante no encontrado")
             {
                 MessageBox.Show("Estudiante no encontrado");
                 return;
@@ -447,8 +469,14 @@ namespace SGA.PRESENTACION
             txtNombresDelEstudiante.Text = nombresEstudiantes;
             txtCodigoTemporalEstudiante.Enabled = false;
 
-            CamposEnable(true);
+            txtCodigoEstudianteDatosAcademicos.Focus();
 
+            CamposEnable(true);
+        }
+
+        private void mbBuscarEstudiante_Click(object sender, EventArgs e)
+        {
+            BuscarEstudiante();
         }
     }
 }
