@@ -139,6 +139,23 @@ namespace SGA
             Label turno = CrearLabel(10, 385, "Turno", estudiante.Turno);
             Label centroeducativo = CrearLabel(10, 415, "Centro Educativo", estudiante.CentroEducativo);
 
+            MBButton btnEditar = new MBButton()
+            {
+                Text = "Editar",
+                Size = new Size(100, 40),
+                Location = new Point(10, 450),
+                BackgroundColor = Color.FromArgb(1, 111, 185),
+                TextColor = Color.White,
+                BorderRadius = 10
+            };
+
+            btnEditar.Click += (sender, e) =>
+            {
+                MostrarComprobanteTraslado(estudiante.Id);
+            };
+
+            panel.Controls.Add(btnEditar);
+
             panel.Controls.Add(nombreEstudiante);
             panel.Controls.Add(cedula);
             panel.Controls.Add(fechanacimineto);
@@ -174,7 +191,10 @@ namespace SGA
             
             return panel;
         }
-
+        public void MostrarComprobanteTraslado(int id)
+        {
+            
+        }
         public Label CrearLabel(int x, int y, string nombre, string texto)
         {
             Label label = new Label
