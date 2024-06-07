@@ -149,6 +149,12 @@
     <Compile Include="Controllers\ControllerTraslados.cs" />
     <Compile Include="Controllers\ControllerTurnos.cs" />
     <Compile Include="Controllers\ControllerTutorEstudiante.cs" />
+    <Compile Include="MBControl\CustomMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MBControl\CustomMessageBox.Designer.cs">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="MBControl\panelOpacity.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -215,6 +221,9 @@
     <Compile Include="Presentation\Traslado.Designer.cs">
       <DependentUpon>Traslado.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MBControl\CustomMessageBox.resx">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MBControl\MBComboBox.resx">
       <DependentUpon>MBComboBox.cs</DependentUpon>
     </EmbeddedResource>
