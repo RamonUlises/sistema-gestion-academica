@@ -59,7 +59,7 @@ namespace SGA.Controllers
             {
                 using (MySqlConnection con = connection.GetConnection())
                 {
-                    string query = "SELECT * FROM estudiantes";
+                    string query = "SELECT * FROM estudiantes LIMIT 10";
                     MySqlCommand cmd = new MySqlCommand(query, con);
 
                     using (MySqlDataReader reader = cmd.ExecuteReader())
