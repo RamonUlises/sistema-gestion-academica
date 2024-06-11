@@ -20,6 +20,7 @@ namespace SGA
         public Estudiantes()
         {
             InitializeComponent();
+            customizarDiseno();
             MostrarEstudiantes();
 
             typingTimer = new Timer();
@@ -84,10 +85,10 @@ namespace SGA
                 Height = 600,
                 BorderStyle = BorderStyle.None,
                 Margin = new Padding(10),
-                BackColor = Color.FromArgb(235, 239, 242)
+                BackColor = Color.FromArgb(235, 239, 242),
+                Location = new Point(500, 50)   // Bordes del panel (opcional)
             };
 
-            // Bordes del panel (opcional)
             Panel panelBorde4 = new Panel
             {
                 Width = 975,
@@ -137,56 +138,97 @@ namespace SGA
             string repite = (estudiante.Repitente == false) ? "No" : "Si";
 
             // Agregar las etiquetas al panel
-            panel.Controls.Add(CrearRichLabel(100, 30, "Nombre", estudiante.Nombres));
-            panel.Controls.Add(CrearRichLabel(550, 30, "Cedula", estudiante.Cedula));
-            panel.Controls.Add(CrearRichLabel(100, 55, "Fecha Nacimiento", estudiante.FechaNacimiento));
-            panel.Controls.Add(CrearRichLabel(550, 55, "Direccion", estudiante.Direccion));
-            panel.Controls.Add(CrearRichLabel(100, 80, "Telefono", estudiante.Telefono));
-            panel.Controls.Add(CrearRichLabel(550, 80, "Partida de Nacimiento", PartidaNacimiento));
-            panel.Controls.Add(CrearRichLabel(100, 105, "Fecha de Matricula", ConvertirFecha(estudiante.FechaMatricula)));
-            panel.Controls.Add(CrearRichLabel(550, 105, "Barrio", estudiante.Barrio));
-            panel.Controls.Add(CrearRichLabel(100, 130, "Peso", estudiante.Peso + "Kg"));
-            panel.Controls.Add(CrearRichLabel(550, 130, "Talla", estudiante.Talla + "m"));
-            panel.Controls.Add(CrearRichLabel(100, 155, "Territorio Indigena", estudiante.TerritorioIndigena));
-            panel.Controls.Add(CrearRichLabel(550, 155, "Comunidad Indigena", estudiante.ComunidadIndigena));
-            panel.Controls.Add(CrearRichLabel(100, 180, "Sexo", estudiante.Sexo));
-            panel.Controls.Add(CrearRichLabel(550, 180, "Pais", estudiante.Pais));
-            panel.Controls.Add(CrearRichLabel(100, 205, "Departamento", estudiante.Departamento));
-            panel.Controls.Add(CrearRichLabel(550, 205, "Municipio", estudiante.Municipio));
-            panel.Controls.Add(CrearRichLabel(100, 230, "Nacionalidad", estudiante.Nacionalidad));
-            panel.Controls.Add(CrearRichLabel(550, 230, "Etnia", estudiante.Etnia));
-            panel.Controls.Add(CrearRichLabel(100, 255, "Lengua Materna", estudiante.LenguaMaterna));
-            panel.Controls.Add(CrearRichLabel(550, 255, "Discapacidad", estudiante.Discapacidad));
-            panel.Controls.Add(CrearRichLabel(100, 280, "Tutor", estudiante.NombresTutor));
-            panel.Controls.Add(CrearRichLabel(550, 280, "Cedula Tutor", estudiante.CedulaTutor));
-            panel.Controls.Add(CrearRichLabel(100, 305, "Telefono Tutor", estudiante.TelefonoTutor));
-            panel.Controls.Add(CrearRichLabel(550, 305, "Codigo Estudiante", estudiante.CodigoEstudiante));
-            panel.Controls.Add(CrearRichLabel(100, 330, "Fecha Matricula Academica", ConvertirFecha(estudiante.FechaMatriculaAcademica)));
-            panel.Controls.Add(CrearRichLabel(550, 330, "Nivel Educativo", estudiante.NivelEducativo));
-            panel.Controls.Add(CrearRichLabel(100, 355, "Repitente", repite));
-            panel.Controls.Add(CrearRichLabel(550, 355, "Modalidad", estudiante.Modalidad));
-            panel.Controls.Add(CrearRichLabel(100, 380, "Grado", estudiante.Grado));
-            panel.Controls.Add(CrearRichLabel(550, 380, "Seccion", estudiante.Seccion));
-            panel.Controls.Add(CrearRichLabel(100, 405, "Turno", estudiante.Turno));
-            panel.Controls.Add(CrearRichLabel(100, 435, "Centro Educativo", estudiante.CentroEducativo));
+            panel.Controls.Add(CrearRichLabel(100, 60, "Nombre", estudiante.Nombres));
+            panel.Controls.Add(CrearRichLabel(550, 60, "Cedula", estudiante.Cedula));
+            panel.Controls.Add(CrearRichLabel(100, 85, "Fecha Nacimiento", estudiante.FechaNacimiento));
+            panel.Controls.Add(CrearRichLabel(550, 85, "Direccion", estudiante.Direccion));
+            panel.Controls.Add(CrearRichLabel(100, 110, "Telefono", estudiante.Telefono));
+            panel.Controls.Add(CrearRichLabel(550, 110, "Partida de Nacimiento", PartidaNacimiento));
+            panel.Controls.Add(CrearRichLabel(100, 135, "Fecha de Matricula", ConvertirFecha(estudiante.FechaMatricula)));
+            panel.Controls.Add(CrearRichLabel(550, 135, "Barrio", estudiante.Barrio));
+            panel.Controls.Add(CrearRichLabel(100, 160, "Peso", estudiante.Peso + "Kg"));
+            panel.Controls.Add(CrearRichLabel(550, 160, "Talla", estudiante.Talla + "m"));
+            panel.Controls.Add(CrearRichLabel(100, 185, "Territorio Indigena", estudiante.TerritorioIndigena));
+            panel.Controls.Add(CrearRichLabel(550, 185, "Comunidad Indigena", estudiante.ComunidadIndigena));
+            panel.Controls.Add(CrearRichLabel(100, 210, "Sexo", estudiante.Sexo));
+            panel.Controls.Add(CrearRichLabel(550, 210, "Pais", estudiante.Pais));
+            panel.Controls.Add(CrearRichLabel(100, 235, "Departamento", estudiante.Departamento));
+            panel.Controls.Add(CrearRichLabel(550, 235, "Municipio", estudiante.Municipio));
+            panel.Controls.Add(CrearRichLabel(100, 260, "Nacionalidad", estudiante.Nacionalidad));
+            panel.Controls.Add(CrearRichLabel(550, 260, "Etnia", estudiante.Etnia));
+            panel.Controls.Add(CrearRichLabel(100, 285, "Lengua Materna", estudiante.LenguaMaterna));
+            panel.Controls.Add(CrearRichLabel(550, 285, "Discapacidad", estudiante.Discapacidad));
+            panel.Controls.Add(CrearRichLabel(100, 310, "Tutor", estudiante.NombresTutor));
+            panel.Controls.Add(CrearRichLabel(550, 310, "Cedula Tutor", estudiante.CedulaTutor));
+            panel.Controls.Add(CrearRichLabel(100, 335, "Telefono Tutor", estudiante.TelefonoTutor));
+            panel.Controls.Add(CrearRichLabel(550, 335, "Codigo Estudiante", estudiante.CodigoEstudiante));
+            panel.Controls.Add(CrearRichLabel(100, 360, "Fecha Matricula Academica", ConvertirFecha(estudiante.FechaMatriculaAcademica)));
+            panel.Controls.Add(CrearRichLabel(550, 360, "Nivel Educativo", estudiante.NivelEducativo));
+            panel.Controls.Add(CrearRichLabel(100, 385, "Repitente", repite));
+            panel.Controls.Add(CrearRichLabel(550, 385, "Modalidad", estudiante.Modalidad));
+            panel.Controls.Add(CrearRichLabel(100, 410, "Grado", estudiante.Grado));
+            panel.Controls.Add(CrearRichLabel(550, 410, "Seccion", estudiante.Seccion));
+            panel.Controls.Add(CrearRichLabel(100, 435, "Turno", estudiante.Turno));
+            panel.Controls.Add(CrearRichLabel(100, 465, "Centro Educativo", estudiante.CentroEducativo));
 
-            MBButton btnEditar = new MBButton()
+            
+            PictureBox btnEditar = new PictureBox
             {
-                Text = "Editar",
-                Size = new Size(120, 50),
-                Location = new Point(420, 500),
-                BackgroundColor = Color.FromArgb(1, 111, 185),
-                TextColor = Color.White,
-                BorderRadius = 15
+                Image = Properties.Resources.avatar_de_usuario, 
+                Size = new Size(35, 35),
+                Location = new Point(860, 25),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+
+            PictureBox btneliminar = new PictureBox
+            {
+                Image = Properties.Resources.eliminar_amigo, 
+                Size = new Size(30, 30),
+                Location = new Point(910, 30),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+
+            PictureBox btntraslado = new PictureBox
+            {
+                Image = Properties.Resources.traslados, 
+                Size = new Size(35, 35),
+                Location = new Point(810, 25),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+
+
+            btntraslado.Click += (sender, e) =>
+            {
+                bool response = MessageBox.Show($"¿Deseas realizar el traslado ", "Trasladar estudiante", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes;
+
+                if (response)
+
+                {
+                    MessageBox.Show("Traslado realizado con exito");
+                }
+
+            };
+
+            btneliminar.Click += (sender, e) =>
+            {
+                string nombre = estudiante.Nombres.Split(' ')[0];
+                bool response = MessageBox.Show($"¿Deseas eliminar a {nombre}", "Eliminar estudiante", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes;
+
+                if (response)
+                {
+
+
+                }
             };
 
             btnEditar.Click += (sender, e) =>
             {
-                MostrarComprobanteTraslado(estudiante.Id);
                 
             };
 
             panel.Controls.Add(btnEditar);
+            panel.Controls.Add(btneliminar);
+            panel.Controls.Add(btntraslado);
 
             return panel;
         }
@@ -226,20 +268,30 @@ namespace SGA
         {
 
         }
-      
+        private void customizarDiseno()
+        {
+            panel7.Visible = false;
+        }
+        private void hideSubMenu()
+        {
+            if (panel7.Visible == true)
+                panel7.Visible = false;
+        }
+
+        private void showSubMenu(System.Windows.Forms.Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                hideSubMenu();
+
+                subMenu.Visible = true;
+            }
+            else
+                subMenu.Visible = false;
+        }
+
         private void Estudiantes_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void mbButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void mbTexbox2__TextChanged(object sender, EventArgs e)
-        {
-          
 
         }
 
@@ -247,6 +299,7 @@ namespace SGA
         {
 
         }
+
 
         private void mbComboBox1_OnSelectedIndexChanged_1(object sender, EventArgs e)
         {
@@ -289,6 +342,21 @@ namespace SGA
         }
 
         private void txtBuscarEstudiantes__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void mbButton2_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
         {
 
         }

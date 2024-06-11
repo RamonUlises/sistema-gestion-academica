@@ -11,6 +11,39 @@ namespace SGA.Controllers
 {
     class ControllerDatosAcademicos
     {
+        public string BorrarDatos(string id)
+        {
+            DB_Connection connection = new DB_Connection();
+
+            try
+            {
+                using (MySqlConnection con = connection.GetConnection())
+                {
+                    string query = "DELETE FROM datos_academicos WHERE id_estudiante = @id";
+
+
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    int rowsAfeccted = cmd.ExecuteNonQuery();
+
+                    if (rowsAfeccted > 0)
+                    {
+                        return "Eliminado";
+                    }
+                    return "Error";
+                }
+            }
+            catch
+            {
+                return "Error";
+            }
+            finally
+            {
+                connection.CloseConnection();
+            }
+        }
         public List<Clases.ClassGetEstudiantes> BuscarEstudiantesIndex(string busqueda)
         {
             DB_Connection connection = new DB_Connection();

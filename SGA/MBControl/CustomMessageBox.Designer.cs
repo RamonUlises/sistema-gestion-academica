@@ -60,7 +60,7 @@
             this.btnNo.FlatAppearance.BorderSize = 2;
             this.btnNo.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnNo.ForeColor = System.Drawing.Color.Black;
-            this.btnNo.Location = new System.Drawing.Point(245, 10);
+            this.btnNo.Location = new System.Drawing.Point(124, 4);
             this.btnNo.Name = "btnNo";
             this.btnNo.Size = new System.Drawing.Size(112, 40);
             this.btnNo.TabIndex = 1;
@@ -79,7 +79,7 @@
             this.btnYes.FlatAppearance.BorderSize = 0;
             this.btnYes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnYes.ForeColor = System.Drawing.Color.White;
-            this.btnYes.Location = new System.Drawing.Point(363, 10);
+            this.btnYes.Location = new System.Drawing.Point(242, 4);
             this.btnYes.Name = "btnYes";
             this.btnYes.Size = new System.Drawing.Size(112, 40);
             this.btnYes.TabIndex = 0;
@@ -91,9 +91,9 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(25, 19);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(153, 29);
@@ -102,7 +102,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel1.Controls.Add(this.lblTitle);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -111,7 +111,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel2.Controls.Add(this.btnYes);
             this.panel2.Controls.Add(this.btnNo);
             this.panel2.Location = new System.Drawing.Point(0, 181);

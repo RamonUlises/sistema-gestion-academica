@@ -296,6 +296,17 @@
   <ItemGroup>
     <None Include="Resources\OIP-removebg-preview.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\editar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar-de-usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar-amigo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\traslados.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
