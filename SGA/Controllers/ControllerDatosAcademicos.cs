@@ -19,7 +19,7 @@ namespace SGA.Controllers
             {
                 using (MySqlConnection con = connection.GetConnection())
                 {
-                    string query = "DELETE FROM datos_academicos WHERE id_estudiante = @id";
+                    string query = "DELETE FROM datos_academicos WHERE codigo_estudiante = @id";
 
 
                     MySqlCommand cmd = new MySqlCommand(query, con);

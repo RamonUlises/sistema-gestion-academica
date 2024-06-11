@@ -11,6 +11,39 @@ namespace SGA.Controllers
 {
     class ControllerTraslados
     {
+        public string BorrarTraslado(string id)
+        {
+            DB_Connection connection = new DB_Connection();
+
+            try
+            {
+                using (MySqlConnection con = connection.GetConnection())
+                {
+                    string query = "DELETE FROM traslados WHERE codigo_estudiante = @id";
+
+
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    int rowsAfeccted = cmd.ExecuteNonQuery();
+
+                    if (rowsAfeccted > 0)
+                    {
+                        return "Eliminado";
+                    }
+                    return "Error";
+                }
+            }
+            catch
+            {
+                return "Error";
+            }
+            finally
+            {
+                connection.CloseConnection();
+            }
+        }
         public string AgregarTraslado(Clases.ClassTraslado traslado)
         {
             DB_Connection connection = new DB_Connection();

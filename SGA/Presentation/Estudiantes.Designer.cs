@@ -30,9 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Estudiantes));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.txtBuscarEstudiantes = new SGA.MBControl.MBTexbox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.mbButton2 = new SGA.MBControl.MBButton();
             this.label50 = new System.Windows.Forms.Label();
@@ -151,8 +148,10 @@
             this.panel17 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtBuscarEstudiantes = new SGA.MBControl.MBTexbox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel41.SuspendLayout();
             this.panel42.SuspendLayout();
@@ -188,10 +187,12 @@
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel17.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.flowLayoutPanel1);
@@ -202,50 +203,6 @@
             this.panel1.Size = new System.Drawing.Size(1664, 902);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 156);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1640, 734);
-            this.flowLayoutPanel1.TabIndex = 1;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.txtBuscarEstudiantes);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1664, 150);
-            this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // txtBuscarEstudiantes
-            // 
-            this.txtBuscarEstudiantes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBuscarEstudiantes.BackColor = System.Drawing.SystemColors.Window;
-            this.txtBuscarEstudiantes.BorderColor = System.Drawing.Color.Black;
-            this.txtBuscarEstudiantes.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtBuscarEstudiantes.BorderRadius = 20;
-            this.txtBuscarEstudiantes.BorderSize = 1;
-            this.txtBuscarEstudiantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarEstudiantes.ForeColor = System.Drawing.Color.Black;
-            this.txtBuscarEstudiantes.Location = new System.Drawing.Point(470, 52);
-            this.txtBuscarEstudiantes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtBuscarEstudiantes.Multiline = false;
-            this.txtBuscarEstudiantes.Name = "txtBuscarEstudiantes";
-            this.txtBuscarEstudiantes.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtBuscarEstudiantes.PasswordChar = false;
-            this.txtBuscarEstudiantes.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.txtBuscarEstudiantes.PlaceholderText = "Buscar por nombres, apellidos o código de estudiante...";
-            this.txtBuscarEstudiantes.Size = new System.Drawing.Size(854, 35);
-            this.txtBuscarEstudiantes.TabIndex = 0;
-            this.txtBuscarEstudiantes.UnderlineStyle = false;
-            this.txtBuscarEstudiantes._TextChanged += new System.EventHandler(this.txtBuscarEstudiantes__TextChanged);
             // 
             // panel7
             // 
@@ -326,9 +283,9 @@
             this.panel7.Controls.Add(this.label17);
             this.panel7.Controls.Add(this.label18);
             this.panel7.Controls.Add(this.panel17);
-            this.panel7.Location = new System.Drawing.Point(12, 156);
+            this.panel7.Location = new System.Drawing.Point(92, 156);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1389, 2326);
+            this.panel7.Size = new System.Drawing.Size(1389, 2398);
             this.panel7.TabIndex = 146;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
@@ -1899,6 +1856,50 @@
             this.label20.Text = "                  MINISTERIO DE EDUCACIÓN \r\n          DIVISIÓN DE ESTADÍSTICAS ED" +
     "UCATIVAS\r\n\r\n\r\n";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 156);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1622, 2564);
+            this.flowLayoutPanel1.TabIndex = 1;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.txtBuscarEstudiantes);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1643, 150);
+            this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // txtBuscarEstudiantes
+            // 
+            this.txtBuscarEstudiantes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBuscarEstudiantes.BackColor = System.Drawing.SystemColors.Window;
+            this.txtBuscarEstudiantes.BorderColor = System.Drawing.Color.Black;
+            this.txtBuscarEstudiantes.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtBuscarEstudiantes.BorderRadius = 20;
+            this.txtBuscarEstudiantes.BorderSize = 1;
+            this.txtBuscarEstudiantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarEstudiantes.ForeColor = System.Drawing.Color.Black;
+            this.txtBuscarEstudiantes.Location = new System.Drawing.Point(470, 52);
+            this.txtBuscarEstudiantes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBuscarEstudiantes.Multiline = false;
+            this.txtBuscarEstudiantes.Name = "txtBuscarEstudiantes";
+            this.txtBuscarEstudiantes.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtBuscarEstudiantes.PasswordChar = false;
+            this.txtBuscarEstudiantes.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.txtBuscarEstudiantes.PlaceholderText = "Buscar por nombres, apellidos o código de estudiante...";
+            this.txtBuscarEstudiantes.Size = new System.Drawing.Size(833, 35);
+            this.txtBuscarEstudiantes.TabIndex = 0;
+            this.txtBuscarEstudiantes.UnderlineStyle = false;
+            this.txtBuscarEstudiantes._TextChanged += new System.EventHandler(this.txtBuscarEstudiantes__TextChanged);
+            // 
             // Estudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1910,7 +1911,6 @@
             this.Text = "Estudiantes";
             this.Load += new System.EventHandler(this.Estudiantes_Load);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel41.ResumeLayout(false);
@@ -1981,6 +1981,7 @@
             this.panel16.PerformLayout();
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

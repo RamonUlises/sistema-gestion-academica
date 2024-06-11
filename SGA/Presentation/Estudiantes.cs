@@ -84,9 +84,9 @@ namespace SGA
                 Width = 1000,
                 Height = 600,
                 BorderStyle = BorderStyle.None,
-                Margin = new Padding(10),
+                Margin = new Padding(300, 50, 10, 10),
                 BackColor = Color.FromArgb(235, 239, 242),
-                Location = new Point(500, 50)   // Bordes del panel (opcional)
+                Location = new Point(500, 50)   
             };
 
             Panel panelBorde4 = new Panel
@@ -204,7 +204,9 @@ namespace SGA
                 if (response)
 
                 {
-                    MessageBox.Show("Traslado realizado con exito");
+                    showSubMenu(panel7);
+                 
+
                 }
 
             };
@@ -216,8 +218,19 @@ namespace SGA
 
                 if (response)
                 {
+                    new Controllers.ControllerTraslados().BorrarTraslado(estudiante.CodigoEstudiante);
+                    new Controllers.ControllerDatosAcademicos().BorrarDatos(estudiante.CodigoEstudiante);
+                    new Controllers.ControllerEstudiante().BorrarEstudiante(estudiante.Id);
 
-
+                    
+                    flowLayoutPanel1.Controls.Clear();
+                    if (txtBuscarEstudiantes.Text.Length > 0)
+                    {
+                        BuscarEstudiantes(txtBuscarEstudiantes.Text);
+                    } else
+                    {
+                        MostrarEstudiantes();
+                    }
                 }
             };
 
