@@ -41,16 +41,27 @@ namespace SGA.Clases
         public ValidarResultados ValidarNombres()
         {
 
-            if (this.Nombre1.Length == 0 || this.Nombre2.Length == 0) {
-                return Validation(false, "Los nombres son requeridos");
+            if (this.Nombre1.Length == 0) {
+                return Validation(false, "El nombre es requerido");
             }
 
             string pattern = @"^(?:[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+(?:\s|$)){1,5}$";
 
-            if (Regex.IsMatch(this.Nombre1, pattern) && Regex.IsMatch(this.Nombre2, pattern))
+            if (Regex.IsMatch(this.Nombre1, pattern) && this.Nombre2.Length == 0)
             {
                 return Validation(true, "Correcto");
             }
+
+            if(this.Nombre2.Length > 0 && !Regex.IsMatch(this.Nombre2, pattern))
+            {
+                return Validation(false, "Los nombres son inválidos");
+            }
+
+            if(Regex.IsMatch(this.Nombre1, pattern) && Regex.IsMatch(this.Nombre2, pattern))
+            {
+                return Validation(true, "Correcto");
+            }
+
             return Validation(false, "Los nombres son inválidos");
         }
         // Validación de apellidos
