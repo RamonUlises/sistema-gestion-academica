@@ -246,6 +246,12 @@ namespace SGA
 
        public void LlenarHojaTraslado(Clases.ITEstudiantes estudiante)
        {
+
+            DateTime fecha = DateTime.Now;
+            txtFechaComprobante.Text = fecha.ToString("dd-MM-yyyy");
+
+            cbPeriodoTraslado.Texts = null;
+            txtMotivoComprobante.Text = "";
             LlenarPeriodosTraslado();
             txtCodigoComprobante.Enabled = false;
             txtCedulaComprobante.Enabled = false;
