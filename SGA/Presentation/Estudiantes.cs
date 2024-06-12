@@ -95,7 +95,7 @@ namespace SGA
                 Height = 10,
                 BorderStyle = BorderStyle.None,
                 Margin = new Padding(10),
-                BackColor = Color.Black,
+                BackColor = Color.FromArgb(26, 25, 62),
                 Location = new Point(10, 580)
             };
             Panel panelBorder3 = new Panel
@@ -104,7 +104,7 @@ namespace SGA
                 Height = 10,
                 BorderStyle = BorderStyle.None,
                 Margin = new Padding(10),
-                BackColor = Color.Black,
+                BackColor = Color.FromArgb(26, 25, 62),
                 Location = new Point(10, 10)
             };
             Panel panelBorde2 = new Panel
@@ -113,7 +113,7 @@ namespace SGA
                 Height = 580,
                 BorderStyle = BorderStyle.None,
                 Margin = new Padding(10),
-                BackColor = Color.Black,
+                BackColor = Color.FromArgb(26, 25, 62),
                 Location = new Point(975, 10)
             };
             Panel panelBorde = new Panel
@@ -122,7 +122,7 @@ namespace SGA
                 Height = 580,
                 BorderStyle = BorderStyle.None,
                 Margin = new Padding(10),
-                BackColor = Color.Black,
+                BackColor = Color.FromArgb(26, 25, 62),
                 Location = new Point(10, 10)
             };
 
@@ -177,25 +177,40 @@ namespace SGA
                 Image = Properties.Resources.avatar_de_usuario, 
                 Size = new Size(35, 35),
                 Location = new Point(860, 25),
-                SizeMode = PictureBoxSizeMode.StretchImage
+                SizeMode = PictureBoxSizeMode.StretchImage,
+                Cursor = Cursors.Hand
             };
+
+
+            ToolTip toolTip1 = new ToolTip();
+            toolTip1.SetToolTip(btnEditar, "Editar estudiante");
+            toolTip1.ReshowDelay = 0;
 
             PictureBox btneliminar = new PictureBox
             {
                 Image = Properties.Resources.eliminar_amigo, 
                 Size = new Size(30, 30),
                 Location = new Point(910, 30),
-                SizeMode = PictureBoxSizeMode.StretchImage
+                SizeMode = PictureBoxSizeMode.StretchImage,
+                Cursor = Cursors.Hand
             };
+
+            ToolTip toolTip2 = new ToolTip();
+            toolTip2.SetToolTip(btneliminar, "Eliminar estudiante");
+            toolTip2.ReshowDelay = 0;
 
             PictureBox btntraslado = new PictureBox
             {
                 Image = Properties.Resources.traslados, 
                 Size = new Size(35, 35),
                 Location = new Point(810, 25),
-                SizeMode = PictureBoxSizeMode.StretchImage
+                SizeMode = PictureBoxSizeMode.StretchImage,
+                Cursor = Cursors.Hand
             };
 
+            ToolTip toolTip3 = new ToolTip();
+            toolTip3.SetToolTip(btntraslado, "Trasladar estudiante");
+            toolTip3.ReshowDelay = 0;
 
             btntraslado.Click += (sender, e) =>
             {

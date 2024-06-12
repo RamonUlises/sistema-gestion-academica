@@ -41,7 +41,7 @@ namespace SGA.Clases
 
             if (!Regex.IsMatch(this.FechaTraslado, pattern))
             {
-                return Validation(false, "El formato de la fecha de nacimiento es dd-mm-yyyy");
+                return Validation(false, "El formato de la fecha de traslado es dd-mm-yyyy");
             }
             return Validation(true, "GG");
         }

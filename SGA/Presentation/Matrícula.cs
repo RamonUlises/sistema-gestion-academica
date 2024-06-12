@@ -69,12 +69,15 @@ namespace SGA
 
             txtMuniciopioMatricula.Enabled = false;
             txtMuniciopioMatricula.Items.Clear();
+            cbNacionalidadMatricula.Enabled = false;
 
             LlenarDepartamentos(4);
 
             this.KeyPreview = true;
 
             this.KeyDown += new KeyEventHandler(EnterText_KeyPress);
+
+            //LlenarFormularioPrueba();
         }
 
         private void EnterText_KeyPress(object sender, KeyEventArgs e)
@@ -374,6 +377,16 @@ namespace SGA
                 return;
             }
 
+            if(txtPesoMatricula.Text.Length > 4)
+            {
+                MessageBox.Show("El peso no puede ser mayor a 4 digitos");
+            }
+
+            if (txtTallaMatricula.Text.Length > 4)
+            {
+                MessageBox.Show("La talla no puede ser mayor a 4 digitos");
+            }
+
             estudiante.Peso = Double.Parse(txtPesoMatricula.Text);
             estudiante.Talla = Double.Parse(txtTallaMatricula.Text);
 
@@ -402,6 +415,30 @@ namespace SGA
             estudiante.NombresTutor = txtNombresApellidosTutorMatricula.Text;
             estudiante.CedulaTutor = txtCedulaTutorMatricula.Text;
             estudiante.TelefonoTutor = txtTelefonoTutorMatricula.Text;
+
+            if(TxtDireccionMatricula.Text.Length > 250)
+            {
+                MessageBox.Show("La dirección no puede ser mayor a 250 caracteres");
+                return;
+            }
+
+            if(txtBarrioMatricula.Text.Length > 50)
+            {
+                MessageBox.Show("El barrio no puede ser mayor a 50 caracteres");
+                return;
+            }
+
+            if(txtComunidadIndigenaMatricula.Text.Length > 50)
+            {
+                MessageBox.Show("La comunidad indigena no puede ser mayor a 50 caracteres");
+                return;
+            }
+
+            if(txtTerritorioIndigenaMatricula.Text.Length > 50)
+            {
+                MessageBox.Show("El territorio indigena no puede ser mayor a 50 caracteres");
+                return;
+            }
 
             var res = estudiante.ValidarEspacios();
             if (!res.result)

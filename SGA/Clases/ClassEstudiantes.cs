@@ -179,6 +179,14 @@ namespace SGA.Clases
             {
                 return Validation(false, "El formato de la fecha de nacimiento es dd-mm-yyyy");
             }
+
+            string pattern2 = @"^[0-3]{1}[0-9]{1}-[0-1]{1}[0-9]{1}-[1-2]{1}[0-9]{3}$";
+
+            if(!Regex.IsMatch(this.FechaNacimiento, pattern2))
+            {
+                return Validation(false, "La fecha de nacimiento es inválida");
+            }
+
             return Validation(true, "GG");
         }
 
