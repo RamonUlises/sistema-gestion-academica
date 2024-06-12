@@ -199,14 +199,12 @@ namespace SGA
 
             btntraslado.Click += (sender, e) =>
             {
-                bool response = MessageBox.Show($"¿Deseas realizar el traslado ", "Trasladar estudiante", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes;
+                bool response = MessageBox.Show($"¿Deseas realizar el traslado?", "Trasladar estudiante", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes;
 
                 if (response)
-
                 {
                     showSubMenu(panel7);
-                 
-
+                    LlenarHojaTraslado(estudiante);
                 }
 
             };
@@ -246,7 +244,52 @@ namespace SGA
             return panel;
         }
 
-       
+       public void LlenarHojaTraslado(Clases.ITEstudiantes estudiante)
+       {
+            LlenarPeriodosTraslado();
+            txtCodigoComprobante.Enabled = false;
+            txtCedulaComprobante.Enabled = false;
+            txt1NombreComprobante.Enabled = false;
+            txt2NombreComprobante.Enabled = false;
+            txt1ApellidoComprobante.Enabled = false;
+            txt2ApellidoComprobante.Enabled = false;
+            txtFechaNacimientoComprobante.Enabled = false;
+            txtDireccionComprobante.Enabled = false;
+            txtDepartamentoComprobante.Enabled = false;
+            txtMunicipioComprobante.Enabled = false;
+            txtNivelEducativoComprobante.Enabled = false;
+            txtModalidadComprobante.Enabled = false;
+            txtGradoComprobante.Enabled = false;
+
+            txtNombreCentroComprobante.Enabled = false;
+
+            txtCodigoComprobante.Text = estudiante.CodigoEstudiante;
+            txtCedulaComprobante.Text = estudiante.Cedula;
+            txt1NombreComprobante.Text = estudiante.Nombres.Split(' ')[0];
+            txt2NombreComprobante.Text = estudiante.Nombres.Split(' ')[1];
+            txt1ApellidoComprobante.Text = estudiante.Nombres.Split(' ')[2];
+            txt2ApellidoComprobante.Text = estudiante.Nombres.Split(' ')[3];
+            txtFechaNacimientoComprobante.Text = ConvertirFecha(estudiante.FechaNacimiento);
+            txtDireccionComprobante.Text = estudiante.Direccion;
+            txtDepartamentoComprobante.Text = estudiante.Departamento;
+            txtMunicipioComprobante.Text = estudiante.Municipio;
+            txtNivelEducativoComprobante.Text = estudiante.NivelEducativo;
+            txtModalidadComprobante.Text = estudiante.Modalidad;
+            txtGradoComprobante.Text = estudiante.Grado;
+
+            txtNombreCentroComprobante.Text = estudiante.CentroEducativo;
+
+       }
+
+        public void LlenarPeriodosTraslado()
+        {
+            string[] periodos = new Controllers.ControllerPeriodos().ObtenerPeriodos();
+
+            foreach (string periodo in periodos)
+            {
+                cbPeriodoTraslado.Items.Add(periodo);
+            }
+        }
 
         public RichTextBox CrearRichLabel(int x, int y, string nombre, string texto)
         {
@@ -275,11 +318,6 @@ namespace SGA
             string[] fechaArray = fecha.Split(' ');
 
             return fechaArray[0];
-        }
-      
-        public void MostrarComprobanteTraslado(int id)
-        {
-
         }
         private void customizarDiseno()
         {

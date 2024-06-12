@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SGA.Clases
 {
-    class ClassGetEstudiantes:Clases.ITEstudiantes
+    public class ClassGetEstudiantes:Clases.ITEstudiantes
     {
         public int Id { get; set; }
         public string Nombres { get; set; }
