@@ -1,4 +1,5 @@
-﻿using SGA.MBControl;
+﻿using Org.BouncyCastle.Pqc.Crypto.Frodo;
+using SGA.MBControl;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -62,7 +63,10 @@ namespace SGA.PRESENTACION
 
         private void mbButton2_Click(object sender, EventArgs e)
         {
-        
+            Form1 frmPrincipal = new Form1();
+            frmPrincipal.Show();
+            this.Hide();
+
         }
 
         private void mbButton1_Click(object sender, EventArgs e)

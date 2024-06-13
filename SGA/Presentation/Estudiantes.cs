@@ -249,7 +249,13 @@ namespace SGA
 
             btnEditar.Click += (sender, e) =>
             {
+                string nombre = estudiante.Nombres.Split(' ')[0];
+                bool response = MessageBox.Show($"¿Deseas editar a {estudiante.Nombres.Split(' ')[0]}", "Editar estudiante", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes;
                 
+                if (response)
+                {                
+                     showSubMenu(panel3);
+                }
             };
 
             panel.Controls.Add(btnEditar);
@@ -343,24 +349,31 @@ namespace SGA
         private void customizarDiseno()
         {
             panel7.Visible = false;
+            panel3.Visible = false;
+            
         }
-        private void hideSubMenu()
+        private void hideSubMenu(Panel subMenu)
         {
-            if (panel7.Visible == true)
-                panel7.Visible = false;
+            if (subMenu.Visible == true)
+                subMenu.Visible = false;
         }
+        
+       
 
-        private void showSubMenu(System.Windows.Forms.Panel subMenu)
+        private void showSubMenu(Panel subMenu)
         {
             if (subMenu.Visible == false)
             {
-                hideSubMenu();
+                //hideSubMenu(subMenu);        
 
                 subMenu.Visible = true;
             }
             else
+            {
                 subMenu.Visible = false;
+            }
         }
+       
 
         private void Estudiantes_Load(object sender, EventArgs e)
         {
@@ -372,11 +385,6 @@ namespace SGA
 
         }
 
-
-        private void mbComboBox1_OnSelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
-        }
 
         private void mbComboBox1_OnSelectedIndexChanged_2(object sender, EventArgs e)
         {
@@ -394,11 +402,6 @@ namespace SGA
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint_1(object sender, PaintEventArgs e)
         {
 
         }
@@ -425,12 +428,22 @@ namespace SGA
 
         private void mbButton2_Click(object sender, EventArgs e)
         {
-            hideSubMenu();
+            hideSubMenu(panel7);
         }
 
         private void panel7_Paint(object sender, PaintEventArgs e)
         {
+            
+        }
 
+        private void panel3_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void mbButton3_Click(object sender, EventArgs e)
+        {
+           hideSubMenu(panel3);
         }
     }
 }
