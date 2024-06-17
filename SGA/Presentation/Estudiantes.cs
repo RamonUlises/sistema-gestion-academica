@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -17,6 +18,13 @@ namespace SGA
         List<Clases.ClassGetEstudiantes> estudiantes = new List<Clases.ClassGetEstudiantes>();
 
         private Timer typingTimer;
+
+        PrintDocument printDocument;
+        Panel panelToPrint;
+
+        private readonly int marginX = 1;
+        private readonly int marginY = 1;
+
         public Estudiantes()
         {
             InitializeComponent();
@@ -28,6 +36,67 @@ namespace SGA
             typingTimer.Tick += TypingTimer_Tick;
 
             txtBuscarEstudiantes._TextChanged += new EventHandler(this.txtBuscarEstudiantes_TextChanged);
+
+            // Crear el documento de impresion
+            printDocument = new PrintDocument();
+
+            // Asignar el evento de impresion
+            printDocument.PrintPage += new PrintPageEventHandler(PrintDocument1_PrintPage);
+
+            // Configurar la impresión en orientación horizontal
+            //printDocument.DefaultPageSettings.Landscape = true;
+
+            panelToPrint = pnlTraslado;
+        }
+
+        private void PrintDocument1_PrintPage(Object sender, PrintPageEventArgs e)
+        {
+            int captureWidth = panelToPrint.Width - 2 * marginX;
+            int captureHeight = panelToPrint.Height - marginY;
+
+            // Capturar el contenido del panel en una imagen
+            Bitmap bitmap = new Bitmap(captureWidth, captureHeight);
+            using (Graphics graphics = Graphics.FromImage(bitmap))
+            {
+                graphics.CopyFromScreen(panelToPrint.PointToScreen(new Point(marginX, 10)), new Point(0, 0), bitmap.Size);
+            }
+
+            // Ajustar la imagen al tamaño de la página manteniendo la relación de aspecto
+            float panelAspectRatio = (float)bitmap.Width / bitmap.Height;
+            float pageAspectRatio = (float)e.PageBounds.Width / e.PageBounds.Height;
+
+            float scaleWidth, scaleHeight;
+
+            if (panelAspectRatio > pageAspectRatio)
+            {
+                scaleWidth = e.PageBounds.Width;
+                scaleHeight = e.PageBounds.Width / panelAspectRatio;
+            }
+            else
+            {
+                scaleWidth = e.PageBounds.Height * panelAspectRatio;
+                scaleHeight = e.PageBounds.Height;
+            }
+
+            // Centrar la imagen en la página
+            float offsetX = (e.PageBounds.Width - scaleWidth) / 2;
+            float offsetY = (e.PageBounds.Height - scaleHeight) / 2;
+
+            // Dibujar la imagen en el documento de impresión
+            e.Graphics.DrawImage(bitmap, offsetX, offsetY, scaleWidth, scaleHeight);
+        }
+        private void mbButton1_Click(object sender, EventArgs e)
+        {
+            // Mostrar el diálogo de impresión
+            PrintDialog printDialog = new PrintDialog
+            {
+                Document = printDocument
+            };
+
+            if (printDialog.ShowDialog() == DialogResult.OK)
+            {
+                printDocument.Print();
+            }
         }
 
         public void txtBuscarEstudiantes_TextChanged(object sender, EventArgs e)
@@ -218,7 +287,7 @@ namespace SGA
 
                 if (response)
                 {
-                    showSubMenu(panel7);
+                    showSubMenu(pnlTraslado);
                     LlenarHojaTraslado(estudiante);
                 }
 
@@ -254,7 +323,7 @@ namespace SGA
                 
                 if (response)
                 {                
-                     showSubMenu(panel3);
+                     showSubMenu(pnlEditar);
                 }
             };
 
@@ -348,8 +417,8 @@ namespace SGA
         }
         private void customizarDiseno()
         {
-            panel7.Visible = false;
-            panel3.Visible = false;
+            pnlTraslado.Visible = false;
+            pnlEditar.Visible = false;
             
         }
         private void hideSubMenu(Panel subMenu)
@@ -428,7 +497,7 @@ namespace SGA
 
         private void mbButton2_Click(object sender, EventArgs e)
         {
-            hideSubMenu(panel7);
+            hideSubMenu(pnlTraslado);
         }
 
         private void panel7_Paint(object sender, PaintEventArgs e)
@@ -443,7 +512,8 @@ namespace SGA
 
         private void mbButton3_Click(object sender, EventArgs e)
         {
-           hideSubMenu(panel3);
+           hideSubMenu(pnlEditar);
         }
+
     }
 }
