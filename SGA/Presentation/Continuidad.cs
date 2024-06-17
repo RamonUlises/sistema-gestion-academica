@@ -17,6 +17,12 @@ namespace SGA
 {
     public partial class Continuidad : Form
     {
+
+        private PrintDocument printDocument;
+        private Panel panelToPrint;
+
+        private int marginX = 55;
+        private int marginY = 160;
         public Continuidad()
         {
             InitializeComponent();
@@ -60,6 +66,16 @@ namespace SGA
             this.KeyPreview = true;
 
             this.KeyDown += new KeyEventHandler(Continuidad_KeyDown);
+
+            // Asignar el panel que deseas imprimir (reemplaza 'panel11' con el nombre de tu panel)
+            panelToPrint = panel11;
+
+            // Inicializar PrintDocument
+            printDocument = new PrintDocument();
+            printDocument.PrintPage += new PrintPageEventHandler(PrintDocument1_PrintPage);
+
+            // Configurar la impresión en orientación horizontal
+            printDocument.DefaultPageSettings.Landscape = true; ;
         }
 
         private void Continuidad_KeyDown(object sender, KeyEventArgs e)
@@ -226,52 +242,62 @@ namespace SGA
         {
 
         }
-
-        public Bitmap CaptureFormImage()
+        //private void CapturePanelScreen()
+        //{
+        //    memoryImage = new Bitmap(panel11.Width, panel11.Height);
+        //    panel11.DrawToBitmap(memoryImage, new Rectangle(0, 0, panel11.Width, panel11.Height));
+        //}
+        private void PrintDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
-            Bitmap bm = new Bitmap(this.Width, this.Height);
-            this.DrawToBitmap(bm, new Rectangle(0, 0, this.Width, this.Height));
-            return bm;
-        }
+            // Ajustar las dimensiones para capturar solo la parte del panel que deseas imprimir
+            int captureWidth = panelToPrint.Width - 2 * marginX;
+            int captureHeight = panelToPrint.Height - marginY;
 
-        private Bitmap formImage;
-
-        private void Imprimir(object sender, PrintPageEventArgs e)
-        {
-            if (formImage != null)
+            // Capturar el contenido del panel en una imagen
+            Bitmap bitmap = new Bitmap(captureWidth, captureHeight);
+            using (Graphics graphics = Graphics.FromImage(bitmap))
             {
-                float aspectRatio = (float)formImage.Width / formImage.Height;
-                int printWidth = e.PageBounds.Width;
-                int printHeight = (int)(e.PageBounds.Width / aspectRatio);
-
-                if (printHeight > e.PageBounds.Height)
-                {
-                    printHeight = e.PageBounds.Height;
-                    printWidth = (int)(e.PageBounds.Height * aspectRatio);
-                }
-
-                int x = (e.PageBounds.Width - printWidth) / 2;
-                int y = (e.PageBounds.Height - printHeight) / 2;
-                e.Graphics.DrawImage(formImage, x, y, printWidth, printHeight);
+                graphics.CopyFromScreen(panelToPrint.PointToScreen(new Point(marginX, 10)), new Point(0, 0), bitmap.Size);
             }
+
+            // Ajustar la imagen al tamaño de la página manteniendo la relación de aspecto
+            float panelAspectRatio = (float)bitmap.Width / bitmap.Height;
+            float pageAspectRatio = (float)e.PageBounds.Width / e.PageBounds.Height;
+
+            float scaleWidth, scaleHeight;
+
+            if (panelAspectRatio > pageAspectRatio)
+            {
+                scaleWidth = e.PageBounds.Width;
+                scaleHeight = e.PageBounds.Width / panelAspectRatio;
+            }
+            else
+            {
+                scaleWidth = e.PageBounds.Height * panelAspectRatio;
+                scaleHeight = e.PageBounds.Height;
+            }
+
+            // Centrar la imagen en la página
+            float offsetX = (e.PageBounds.Width - scaleWidth) / 2;
+            float offsetY = (e.PageBounds.Height - scaleHeight) / 2;
+
+            // Dibujar la imagen en el documento de impresión
+            e.Graphics.DrawImage(bitmap, offsetX, offsetY, scaleWidth, scaleHeight);
+        
         }
         private void mbButton4_Click(object sender, EventArgs e)
         {
-            formImage = CaptureFormImage();
+            // Mostrar el diálogo de impresión
+            PrintDialog printDialog = new PrintDialog
+            {
+                Document = printDocument
+            };
 
-            PrintDocument printDocument1 = new PrintDocument();
-
-            printDocument1 = new PrintDocument();
-            printDocument1.DefaultPageSettings.Landscape = true;
-            PrinterSettings ps = new PrinterSettings();
-
-            printDocument1.PrinterSettings = ps;
-            printDocument1.PrintPage += Imprimir;
-            printDocument1.Print();
-                  
+            if (printDialog.ShowDialog() == DialogResult.OK)
+            {
+                printDocument.Print();
+            }
         }
-
-
         public void LimpiarCajas()
         {
             txtCodigoAlumnoReingreso.Text = "";
@@ -346,11 +372,6 @@ namespace SGA
         }
 
         private void mbTexbox7__TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
 
         }
