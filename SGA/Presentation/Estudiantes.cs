@@ -1,4 +1,5 @@
 ﻿using SGA.MBControl;
+using SGA.Presentation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -288,7 +289,7 @@ namespace SGA
                 if (response)
                 {
                     txtBuscarEstudiantes.Visible = false;
-
+                    flowLayoutPanel1.Controls.Clear();
                     showSubMenu(pnlTraslado);
                     LlenarHojaTraslado(estudiante);
                 }
@@ -325,8 +326,10 @@ namespace SGA
                 
                 if (response)
                 {
-                    txtBuscarEstudiantes.Visible = false;
+                    //txtBuscarEstudiantes.Visible = false;
                     //showSubMenu(pnlEditar);
+
+                    new Editar_Estudiante(estudiante).ShowDialog();
                 }
             };
 
@@ -502,6 +505,14 @@ namespace SGA
         {
             hideSubMenu(pnlTraslado);
             txtBuscarEstudiantes.Visible = true;
+
+            if(txtBuscarEstudiantes.Text == "")
+            {
+                MostrarEstudiantes();
+            } else
+            {
+                BuscarEstudiantes(txtBuscarEstudiantes.Text);
+            }
         }
 
         private void panel7_Paint(object sender, PaintEventArgs e)
