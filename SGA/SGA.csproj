@@ -159,6 +159,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="MBControl\panelRounded.cs" />
+    <Compile Include="Presentation\Editar Estudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Editar Estudiante.Designer.cs">
+      <DependentUpon>Editar Estudiante.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\Estudiantes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MBControl\MBComboBox.resx">
       <DependentUpon>MBComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Editar Estudiante.resx">
+      <DependentUpon>Editar Estudiante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Estudiantes.resx">
       <DependentUpon>Estudiantes.cs</DependentUpon>

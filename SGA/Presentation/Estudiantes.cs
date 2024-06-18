@@ -287,6 +287,8 @@ namespace SGA
 
                 if (response)
                 {
+                    txtBuscarEstudiantes.Visible = false;
+
                     showSubMenu(pnlTraslado);
                     LlenarHojaTraslado(estudiante);
                 }
@@ -319,11 +321,12 @@ namespace SGA
             btnEditar.Click += (sender, e) =>
             {
                 string nombre = estudiante.Nombres.Split(' ')[0];
-                bool response = MessageBox.Show($"¿Deseas editar a {estudiante.Nombres.Split(' ')[0]}", "Editar estudiante", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes;
+                bool response = MessageBox.Show($"¿Deseas editar a {estudiante.Nombres.Split(' ')[0]}?", "Editar estudiante", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes;
                 
                 if (response)
-                {                
-                     showSubMenu(pnlEditar);
+                {
+                    txtBuscarEstudiantes.Visible = false;
+                    //showSubMenu(pnlEditar);
                 }
             };
 
@@ -418,7 +421,7 @@ namespace SGA
         private void customizarDiseno()
         {
             pnlTraslado.Visible = false;
-            pnlEditar.Visible = false;
+            //pnlEditar.Visible = false;
             
         }
         private void hideSubMenu(Panel subMenu)
@@ -498,6 +501,7 @@ namespace SGA
         private void mbButton2_Click(object sender, EventArgs e)
         {
             hideSubMenu(pnlTraslado);
+            txtBuscarEstudiantes.Visible = true;
         }
 
         private void panel7_Paint(object sender, PaintEventArgs e)
@@ -512,7 +516,8 @@ namespace SGA
 
         private void mbButton3_Click(object sender, EventArgs e)
         {
-           hideSubMenu(pnlEditar);
+           //hideSubMenu(pnlEditar);
+            txtBuscarEstudiantes.Visible = true;
         }
 
     }
