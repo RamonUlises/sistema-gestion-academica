@@ -28,9 +28,213 @@ namespace SGA.Presentation
 
         private void LlenarEstudiante(Clases.ITEstudiantes estudiante)
         {
-            MessageBox.Show(estudiante.Nombres);
+            string[] nombres = estudiante.Nombres.Split(' ');
+            txtCedula.Text = estudiante.Cedula;
+            txtNombre1.Text = nombres[0];
+            txtNombre2.Text = nombres[1];
+            txtApellido1.Text = nombres[2];
+            txtApellido2.Text = nombres[3];
+            txtFechaNacimiento.Text = estudiante.FechaNacimiento;
+            txtDireccion.Text = estudiante.Direccion;
+            txtTelefono.Text = estudiante.Telefono;
+            txtPeso.Text = estudiante.Peso.ToString();
+            txtTalla.Text = estudiante.Talla.ToString();
+            txtTerritorioIndigena.Text = estudiante.TerritorioIndigena;
+            txtComunidadIndigena.Text = estudiante.ComunidadIndigena;
+            txtNacionalidad.Text = estudiante.Nacionalidad;
+            txtBarrio.Text = estudiante.Barrio;
+            txtCodigoEstudiante.Text = estudiante.CodigoEstudiante;
+            txtNivelEducativo.Text = estudiante.NivelEducativo;
+
+            LlenarPartidaNacimiento(estudiante.PartidaNacimiento);
+            LlenarSexoEstudiante(estudiante.Sexo);
+            LlenarRepitente(estudiante.Repitente);
+
+            cbPaisNacimento.Texts = estudiante.Pais;
+            cbDepartamento.Texts = estudiante.Departamento;
+            cbMunicipio.Texts = estudiante.Municipio;
+            cbEtnia.Texts = estudiante.Etnia;
+            cbDiscapacidad.Texts = estudiante.Discapacidad;
+            cbLenguaMaterna.Texts = estudiante.LenguaMaterna;
+            cbGrado.Texts = estudiante.Grado;
+            cbSeccion.Texts = estudiante.Seccion;
+            cbTurno.Texts = estudiante.Turno;
+            cbModalidad.Texts = estudiante.Modalidad;
+            cbCentroEducativo.Texts = estudiante.CentroEducativo;
+            cbTurno.Texts = estudiante.Turno;
+
+            LimpiarItemsComboBox();
+            LlenarItemsComboBox();
+        }
+        private void LlenarItemsComboBox()
+        {
+            LlenarPais();
+            LlenarDepartamento(4);
+            //LlenarMunicipio();
+            LlenarEtnia();
+            LlenarDiscapacidad();
+            LlenarLenguaMaterna();
+            LlenarGrado();
+            LlenarSeccion();
+            LlenarTurno();
+            LlenarModalidad();
+            LlenarCentroEducativo();
+            LlenarTurno();
+        }
+        private void LlenarPais()
+        {
+            string[] paises = new Controllers.ControllerPais().ObtenerPaises();
+
+            foreach (string pais in paises)
+            {
+                cbPaisNacimento.Items.Add(pais);
+            }
+        }
+        private void LlenarDepartamento(int id)
+        {
+            string[] departamentos = new Controllers.ControllerDepartamentos().ObtenerDepartamentos(id);
+
+            foreach (string departamento in departamentos)
+            {
+                cbDepartamento.Items.Add(departamento);
+            }
+        }
+        private void LlenarMunicipio(int id)
+        {
+            string[] municipios = new Controllers.ControllerMunicipios().ObtenerMunicipios(id);
+
+            foreach (string municipio in municipios)
+            {
+                cbMunicipio.Items.Add(municipio);
+            }
+        }
+        private void LlenarEtnia()
+        {
+            string[] etnias = new Controllers.ControllerEtnias().ObtenerEtnias();
+
+            foreach (string etnia in etnias)
+            {
+                cbEtnia.Items.Add(etnia);
+            }
+        }
+        private void LlenarDiscapacidad()
+        {
+            string[] discapacidades = new Controllers.ControllerDiscapacidad().ObtenerDiscapacidades();
+
+            foreach (string discapacidad in discapacidades)
+            {
+                cbDiscapacidad.Items.Add(discapacidad);
+            }
+        }
+        private void LlenarLenguaMaterna()
+        {
+            string[] lenguas = new Controllers.ControllerLenguaMaterna().ObtenerLenguas();
+
+            foreach (string lengua in lenguas)
+            {
+                cbLenguaMaterna.Items.Add(lengua);
+            }
+        }
+        private void LlenarGrado()
+        {
+            string[] grados = new Controllers.ControllerGrado().ObtenerGrados();
+
+            foreach (string grado in grados)
+            {
+                cbGrado.Items.Add(grado);
+            }
+        }
+        private void LlenarSeccion()
+        {
+            string[] secciones = new Controllers.ControllerSecciones().ObtenerSecciones();
+
+            foreach (string seccion in secciones)
+            {
+                cbSeccion.Items.Add(seccion);
+            }
+        }
+        private void LlenarTurno()
+        {
+            string[] turnos = new Controllers.ControllerTurnos().ObtenerTurnos();
+
+            foreach (string turno in turnos)
+            {
+                cbTurno.Items.Add(turno);
+            }
+        }
+        private void LlenarModalidad()
+        {
+            string[] modalidades = new Controllers.ControllerModalidad().ObtenerModalidades();
+
+            foreach (string modalidad in modalidades)
+            {
+                cbModalidad.Items.Add(modalidad);
+            }
+        }
+        private void LlenarCentroEducativo()
+        {
+            string[] centros = new Controllers.ControllerCentros().ObtenerCentros();
+
+            foreach (string centro in centros)
+            {
+                cbCentroEducativo.Items.Add(centro);
+            }
+        }
+        private void LimpiarItemsComboBox()
+        {
+            cbPaisNacimento.Items.Clear();
+            cbDepartamento.Items.Clear();
+            cbMunicipio.Items.Clear();
+            cbEtnia.Items.Clear();
+            cbDiscapacidad.Items.Clear();
+            cbLenguaMaterna.Items.Clear();
+            cbGrado.Items.Clear();
+            cbSeccion.Items.Clear();
+            cbTurno.Items.Clear();
+            cbModalidad.Items.Clear();
+            cbCentroEducativo.Items.Clear();
+            cbTurno.Items.Clear();
         }
 
+        public void LlenarRepitente(bool repitente)
+        {
+            if (repitente)
+            {
+                chRepitenteSi.Checked = true;
+                chRepitenteNo.Checked = false;
+            }
+            else
+            {
+                chRepitenteSi.Checked = false;
+                chRepitenteNo.Checked = true;
+            }
+        }
+        public void LlenarSexoEstudiante(string sexo)
+        {
+            if (sexo == "Masculino")
+            {
+                chSexoMas.Checked = true;
+                chSexoFem.Checked = false;
+            }
+            else
+            {
+                chSexoMas.Checked = false;
+                chSexoFem.Checked = true;
+            }
+        }
+        public void LlenarPartidaNacimiento(bool partidaNacimiento)
+        {
+            if (partidaNacimiento)
+            {
+                chPartidaNacimeintoSi.Checked = true;
+                ChParitdaNacimientoNo.Checked = false;
+            }
+            else
+            {
+                chPartidaNacimeintoSi.Checked = false;
+                ChParitdaNacimientoNo.Checked = true;
+            }
+        }
         private void DrawRoundedRectangle(object sender, PaintEventArgs e)
         {
             ControlPaint.DrawBorder(e.Graphics, this.pnlEditar.ClientRectangle, Color.White, ButtonBorderStyle.Solid);

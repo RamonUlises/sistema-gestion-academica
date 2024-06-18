@@ -20,7 +20,6 @@ namespace SGA.PRESENTACION
         public Datos_académicos()
         {
             InitializeComponent();
-            customizarDiseno();
             PanelHelper.SetRoundPanel(panel2, 10);
             PanelHelper.SetRoundPanel(panel3, 10);
             PanelHelper.SetRoundPanel(panel4, 10);
@@ -32,24 +31,6 @@ namespace SGA.PRESENTACION
             PanelHelper.SetRoundPanel(panel9, 10);
             PanelHelper.SetRoundPanel(panel10, 10);
             PanelHelper.SetRoundPanel(panel11, 10);
-            PanelHelper.SetRoundPanel(panel12, 10);
-            PanelHelper.SetRoundPanel(panel13, 10);
-            PanelHelper.SetRoundPanel(panel14, 10);
-            PanelHelper.SetRoundPanel(panel15, 10);
-            PanelHelper.SetRoundPanel(panel16, 10);
-            PanelHelper.SetRoundPanel(panel17, 10);
-            PanelHelper.SetRoundPanel(panel18, 10);
-            PanelHelper.SetRoundPanel(panel19, 10);
-            PanelHelper.SetRoundPanel(panel20, 10);
-            PanelHelper.SetRoundPanel(panel21, 10);
-            PanelHelper.SetRoundPanel(panel22, 10);
-            PanelHelper.SetRoundPanel(panel23, 10);
-            PanelHelper.SetRoundPanel(panel24, 10);
-            PanelHelper.SetRoundPanel(panel25, 10);
-            PanelHelper.SetRoundPanel(panel26, 10);
-            PanelHelper.SetRoundPanel(panel27, 10);
-            PanelHelper.SetRoundPanel(panel28, 10);
-            PanelHelper.SetRoundPanel(panel29, 10);
 
             DateTime fecha = DateTime.Now;
             txtFechaMatriculaEstudianteDatosAcademicos.Text = fecha.ToString("dd-MM-yyyy");
@@ -151,20 +132,11 @@ namespace SGA.PRESENTACION
                 cbModalidadDatosAcademicos.Items.Add(modalidad);
             }
         }
-        private void customizarDiseno()
-        {
-            panel12.Visible = false;
-        }
-        private void hideSubMenu()
-        {
-            if (panel12.Visible == true)
-                panel12.Visible = false;
-        }
         private void showSubMenu(System.Windows.Forms.Panel subMenu)
         {
             if (subMenu.Visible == false)
             {
-                hideSubMenu();
+                
                 subMenu.Visible = true;
             }
             else
@@ -209,12 +181,12 @@ namespace SGA.PRESENTACION
 
         private void mbButton1_Click(object sender, EventArgs e)
         {
-          showSubMenu(panel12);
+          
         }
 
         private void mbButton2_Click(object sender, EventArgs e)
         {
-          hideSubMenu();
+          
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -278,12 +250,8 @@ namespace SGA.PRESENTACION
 
             if(resultado == "Datos académicos agregados correctamente")
             {
-                bool res = MessageBox.Show("Desea imprimir el comprobante", resultado, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes;
+                MessageBox.Show(resultado, "Exito");
 
-                if (res)
-                {
-                    showSubMenu(panel12);
-                }
                 LimpiarCajas();
                 CamposEnable(false);
             }

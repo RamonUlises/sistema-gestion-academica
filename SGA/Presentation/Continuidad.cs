@@ -266,7 +266,7 @@ namespace SGA
             float pageAspectRatio = (float)e.PageBounds.Width / e.PageBounds.Height;
 
             float scaleWidth, scaleHeight;
-
+            
             if (panelAspectRatio > pageAspectRatio)
             {
                 scaleWidth = e.PageBounds.Width;
