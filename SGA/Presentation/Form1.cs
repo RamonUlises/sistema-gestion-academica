@@ -33,6 +33,8 @@ namespace SGA
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             customizarDiseno();
 
+            // mostrar form en toda la pantalla
+            this.WindowState = FormWindowState.Maximized;
         }
         private void customizarDiseno()
         {
@@ -249,6 +251,11 @@ namespace SGA
         private void iconPictureBox7_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Login());
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
