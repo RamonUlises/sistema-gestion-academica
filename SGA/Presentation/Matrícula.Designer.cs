@@ -228,6 +228,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.panel2);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1682, 949);
@@ -1158,6 +1159,7 @@
             // 
             this.chSexoMasMatricula.AutoSize = true;
             this.chSexoMasMatricula.BackColor = System.Drawing.Color.White;
+            this.chSexoMasMatricula.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chSexoMasMatricula.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chSexoMasMatricula.Location = new System.Drawing.Point(462, 650);
             this.chSexoMasMatricula.Name = "chSexoMasMatricula";
@@ -1171,6 +1173,7 @@
             // 
             this.chSexoFemMatricula.AutoSize = true;
             this.chSexoFemMatricula.BackColor = System.Drawing.Color.White;
+            this.chSexoFemMatricula.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chSexoFemMatricula.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chSexoFemMatricula.Location = new System.Drawing.Point(576, 650);
             this.chSexoFemMatricula.Name = "chSexoFemMatricula";
@@ -1270,6 +1273,7 @@
             // ChParitdaNacimientoNo
             // 
             this.ChParitdaNacimientoNo.AutoSize = true;
+            this.ChParitdaNacimientoNo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ChParitdaNacimientoNo.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChParitdaNacimientoNo.Location = new System.Drawing.Point(1268, 531);
             this.ChParitdaNacimientoNo.Name = "ChParitdaNacimientoNo";
@@ -1282,6 +1286,7 @@
             // chPartidaNacimeintoSi
             // 
             this.chPartidaNacimeintoSi.AutoSize = true;
+            this.chPartidaNacimeintoSi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chPartidaNacimeintoSi.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chPartidaNacimeintoSi.Location = new System.Drawing.Point(1334, 532);
             this.chPartidaNacimeintoSi.Name = "chPartidaNacimeintoSi";

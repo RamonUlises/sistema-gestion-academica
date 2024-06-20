@@ -150,6 +150,7 @@
             this.btnGuardarDatosAcademicos.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnGuardarDatosAcademicos.BorderRadius = 40;
             this.btnGuardarDatosAcademicos.BorderSize = 1;
+            this.btnGuardarDatosAcademicos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardarDatosAcademicos.FlatAppearance.BorderSize = 0;
             this.btnGuardarDatosAcademicos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnGuardarDatosAcademicos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -555,6 +556,7 @@
             this.mbButton4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.mbButton4.BorderRadius = 40;
             this.mbButton4.BorderSize = 1;
+            this.mbButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mbButton4.FlatAppearance.BorderSize = 0;
             this.mbButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.mbButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -615,6 +617,7 @@
             this.mbBuscarEstudiante.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.mbBuscarEstudiante.BorderRadius = 20;
             this.mbBuscarEstudiante.BorderSize = 1;
+            this.mbBuscarEstudiante.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mbBuscarEstudiante.FlatAppearance.BorderSize = 0;
             this.mbBuscarEstudiante.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.mbBuscarEstudiante.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -697,6 +700,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1682, 949);
             this.Controls.Add(this.panel1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Datos_académicos";
             this.Text = "Datos académicos";

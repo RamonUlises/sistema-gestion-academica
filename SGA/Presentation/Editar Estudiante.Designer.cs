@@ -906,6 +906,7 @@
             // 
             this.chSexoMas.AutoSize = true;
             this.chSexoMas.BackColor = System.Drawing.Color.White;
+            this.chSexoMas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chSexoMas.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chSexoMas.Location = new System.Drawing.Point(474, 868);
             this.chSexoMas.Name = "chSexoMas";
@@ -919,6 +920,7 @@
             // 
             this.chSexoFem.AutoSize = true;
             this.chSexoFem.BackColor = System.Drawing.Color.White;
+            this.chSexoFem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chSexoFem.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chSexoFem.Location = new System.Drawing.Point(588, 868);
             this.chSexoFem.Name = "chSexoFem";
@@ -1018,6 +1020,7 @@
             // ChParitdaNacimientoNo
             // 
             this.ChParitdaNacimientoNo.AutoSize = true;
+            this.ChParitdaNacimientoNo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ChParitdaNacimientoNo.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChParitdaNacimientoNo.Location = new System.Drawing.Point(793, 754);
             this.ChParitdaNacimientoNo.Name = "ChParitdaNacimientoNo";
@@ -1030,6 +1033,7 @@
             // chPartidaNacimeintoSi
             // 
             this.chPartidaNacimeintoSi.AutoSize = true;
+            this.chPartidaNacimeintoSi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chPartidaNacimeintoSi.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chPartidaNacimeintoSi.Location = new System.Drawing.Point(859, 755);
             this.chPartidaNacimeintoSi.Name = "chPartidaNacimeintoSi";
@@ -1880,6 +1884,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1832, 987);
             this.Controls.Add(this.pnlEditar);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "Editar_Estudiante";
             this.Text = "Editar_Estudiante";
             this.Load += new System.EventHandler(this.Editar_Estudiante_Load);

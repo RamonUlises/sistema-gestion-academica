@@ -163,9 +163,9 @@
             this.panel11.Controls.Add(this.panel21);
             this.panel11.Controls.Add(this.txtCodigoComprobante);
             this.panel11.Controls.Add(this.panel22);
-            this.panel11.Location = new System.Drawing.Point(105, 59);
+            this.panel11.Location = new System.Drawing.Point(105, 48);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1427, 707);
+            this.panel11.Size = new System.Drawing.Size(1427, 718);
             this.panel11.TabIndex = 151;
             this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
             // 
@@ -451,6 +451,7 @@
             this.btnImprimirContinuidad.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnImprimirContinuidad.BorderRadius = 40;
             this.btnImprimirContinuidad.BorderSize = 1;
+            this.btnImprimirContinuidad.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImprimirContinuidad.FlatAppearance.BorderSize = 0;
             this.btnImprimirContinuidad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnImprimirContinuidad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -749,6 +750,7 @@
             this.btnBuscarCodigoAlumnoReingreso.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnBuscarCodigoAlumnoReingreso.BorderRadius = 38;
             this.btnBuscarCodigoAlumnoReingreso.BorderSize = 1;
+            this.btnBuscarCodigoAlumnoReingreso.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscarCodigoAlumnoReingreso.FlatAppearance.BorderSize = 0;
             this.btnBuscarCodigoAlumnoReingreso.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnBuscarCodigoAlumnoReingreso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -770,6 +772,7 @@
             this.btnGuardarReingreso.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnGuardarReingreso.BorderRadius = 40;
             this.btnGuardarReingreso.BorderSize = 1;
+            this.btnGuardarReingreso.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardarReingreso.FlatAppearance.BorderSize = 0;
             this.btnGuardarReingreso.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnGuardarReingreso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -929,6 +932,7 @@
             this.mbButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.mbButton2.BorderRadius = 40;
             this.mbButton2.BorderSize = 1;
+            this.mbButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mbButton2.FlatAppearance.BorderSize = 0;
             this.mbButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.mbButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));

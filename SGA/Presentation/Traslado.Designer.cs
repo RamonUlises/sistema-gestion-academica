@@ -323,9 +323,10 @@
             this.panel7.Controls.Add(this.label17);
             this.panel7.Controls.Add(this.label18);
             this.panel7.Controls.Add(this.panel17);
-            this.panel7.Location = new System.Drawing.Point(148, 33);
+            this.panel7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel7.Location = new System.Drawing.Point(148, 12);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1389, 2326);
+            this.panel7.Size = new System.Drawing.Size(1389, 2347);
             this.panel7.TabIndex = 145;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
@@ -667,6 +668,7 @@
             this.mbButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.mbButton1.BorderRadius = 40;
             this.mbButton1.BorderSize = 1;
+            this.mbButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mbButton1.FlatAppearance.BorderSize = 0;
             this.mbButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.mbButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -684,6 +686,7 @@
             // chRepitenteNODatosAcademicos
             // 
             this.chRepitenteNODatosAcademicos.AutoSize = true;
+            this.chRepitenteNODatosAcademicos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chRepitenteNODatosAcademicos.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chRepitenteNODatosAcademicos.Location = new System.Drawing.Point(241, 1599);
             this.chRepitenteNODatosAcademicos.Name = "chRepitenteNODatosAcademicos";
@@ -695,6 +698,7 @@
             // chRepitenteSiDatosAcademicos
             // 
             this.chRepitenteSiDatosAcademicos.AutoSize = true;
+            this.chRepitenteSiDatosAcademicos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chRepitenteSiDatosAcademicos.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chRepitenteSiDatosAcademicos.Location = new System.Drawing.Point(307, 1600);
             this.chRepitenteSiDatosAcademicos.Name = "chRepitenteSiDatosAcademicos";
@@ -1968,6 +1972,7 @@
             this.btnBuscarCodigoUnicoTraslado.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnBuscarCodigoUnicoTraslado.BorderRadius = 38;
             this.btnBuscarCodigoUnicoTraslado.BorderSize = 1;
+            this.btnBuscarCodigoUnicoTraslado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscarCodigoUnicoTraslado.FlatAppearance.BorderSize = 0;
             this.btnBuscarCodigoUnicoTraslado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnBuscarCodigoUnicoTraslado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -1989,6 +1994,7 @@
             this.btnGuardartraslado.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnGuardartraslado.BorderRadius = 40;
             this.btnGuardartraslado.BorderSize = 1;
+            this.btnGuardartraslado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardartraslado.FlatAppearance.BorderSize = 0;
             this.btnGuardartraslado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnGuardartraslado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -2168,6 +2174,7 @@
             this.mbButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.mbButton3.BorderRadius = 40;
             this.mbButton3.BorderSize = 1;
+            this.mbButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mbButton3.FlatAppearance.BorderSize = 0;
             this.mbButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.mbButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
