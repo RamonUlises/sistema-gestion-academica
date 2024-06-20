@@ -22,6 +22,9 @@ namespace SGA.Presentation
             this.StartPosition = FormStartPosition.CenterScreen;
             // crearle un sombreado al borde del formulario
             this.pnlEditar.Paint += new PaintEventHandler(DrawRoundedRectangle);
+            // formulario del tamaño de la pantalla
+            this.Size = new Size(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
+
 
             LlenarEstudiante(estudiante);
         }
