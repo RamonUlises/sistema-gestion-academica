@@ -77,6 +77,8 @@ namespace SGA
 
             // Configurar la impresión en orientación horizontal
             printDocument.DefaultPageSettings.Landscape = true;
+
+            txtCodigoAlumnoReingreso.Focus();
         }
 
         private void Continuidad_KeyDown(object sender, KeyEventArgs e)

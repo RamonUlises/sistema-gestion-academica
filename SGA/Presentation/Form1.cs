@@ -34,6 +34,8 @@ namespace SGA
             customizarDiseno();
 
             // mostrar form en toda la pantalla
+
+            new Login().ShowDialog();
             this.WindowState = FormWindowState.Maximized;
         }
         private void customizarDiseno()
@@ -254,6 +256,11 @@ namespace SGA
         }
 
         private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelBarraTitulo_Paint(object sender, PaintEventArgs e)
         {
 
         }

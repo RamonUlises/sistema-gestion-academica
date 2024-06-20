@@ -305,8 +305,8 @@ namespace SGA.Controllers
                     string apellidos = estudiante.Apellido1 + " " + estudiante.Apellido2;
                     string cedula = estudiante.Cedula == "" || estudiante.Cedula == null ? "000-000000-0000X" : estudiante.Cedula;
                     string telefono = estudiante.Telefono ?? string.Empty;
-                    string territorioIndigena = estudiante.TerritorioIndigena ?? string.Empty;
-                    string comunidadIndigena = estudiante.ComunidadIndigena ?? string.Empty;
+                    string territorioIndigena = (estudiante.TerritorioIndigena != "") ? estudiante.TerritorioIndigena : "Ninguna";
+                    string comunidadIndigena = (estudiante.ComunidadIndigena != "") ? estudiante.ComunidadIndigena : "Ninguna";
 
                     bool resEstudent = ValidarEstudiante(cedula);
 

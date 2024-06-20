@@ -14,11 +14,13 @@ namespace SGA.PRESENTACION
 {
     public partial class Login : Form
     {
+       public string contrasena = "123456789";
+        public string usuario = "admin";
         public Login()
         {
             InitializeComponent();
-            PanelHelper.SetRoundPanel(panel2, 10);
-            PanelHelper.SetRoundPanel(panel3, 10);
+            //PanelHelper.SetRoundPanel(panel2, 10);
+            //PanelHelper.SetRoundPanel(panel3, 10);
 
             // Establecer el color de fondo del panel con una transparencia
             //panel2.BackColor = Color.FromArgb(50, Color.FromArgb(102, 0, 102)); // Opacidad al 50%
@@ -26,6 +28,9 @@ namespace SGA.PRESENTACION
             //panel3.BackColor = Color.FromArgb(20, Color.FromArgb(34, 33, 74)); // Opacidad al 50%
             //mbButton2.BackColor = Color.FromArgb(150, Color.FromArgb(34, 33, 74));
       
+
+            // poner el formulario en el centro de la pantalla
+                this.StartPosition = FormStartPosition.CenterScreen;
 
         }
 
@@ -52,7 +57,7 @@ namespace SGA.PRESENTACION
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
             // Dibuja un borde personalizado alrededor del Panel
-            ControlPaint.DrawBorder(e.Graphics, panel3.ClientRectangle, Color.Orange, ButtonBorderStyle.Solid);
+            //ControlPaint.DrawBorder(e.Graphics, panel3.ClientRectangle, Color.Orange, ButtonBorderStyle.Solid);
            
         }
 
@@ -75,6 +80,23 @@ namespace SGA.PRESENTACION
         }
 
         private void mbTexbox2__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mbButton1_Click_1(object sender, EventArgs e)
+        {
+            //Validar usuario y contraseña
+            if (txtcontrasenaLogin.Text != contrasena || txtUsuarioLogin.Text != usuario)
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            //cerrar formulario
+            this.Close();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
         {
 
         }

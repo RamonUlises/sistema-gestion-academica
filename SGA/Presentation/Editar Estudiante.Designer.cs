@@ -259,7 +259,7 @@
             this.pnlEditar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlEditar.Location = new System.Drawing.Point(0, 0);
             this.pnlEditar.Name = "pnlEditar";
-            this.pnlEditar.Size = new System.Drawing.Size(1790, 1828);
+            this.pnlEditar.Size = new System.Drawing.Size(1811, 1828);
             this.pnlEditar.TabIndex = 200;
             this.pnlEditar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlEditar_Paint);
             // 
@@ -1878,7 +1878,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1811, 987);
+            this.ClientSize = new System.Drawing.Size(1832, 987);
             this.Controls.Add(this.pnlEditar);
             this.Name = "Editar_Estudiante";
             this.Text = "Editar_Estudiante";

@@ -70,6 +70,8 @@ namespace SGA
             txtFechaTraslado.Enabled = false;
             txtMotivoTaslado.Enabled = false;
             cbPeriodoTraslado.Enabled = false;
+
+            txtCodigoUnicoEstudianteTraslado.Focus();
         }
 
         private void LlenarCentros()
@@ -220,6 +222,7 @@ namespace SGA
             txtMotivoTaslado.Enabled = false;
             cbPeriodoTraslado.Enabled = false;
 
+            txtCodigoUnicoEstudianteTraslado.Focus();
         }
 
         private void mbButton3_Click(object sender, EventArgs e)

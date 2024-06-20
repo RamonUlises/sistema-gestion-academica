@@ -28,212 +28,162 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.mbButton2 = new SGA.MBControl.MBButton();
-            this.mbTexbox2 = new SGA.MBControl.MBTexbox();
-            this.mbTexbox1 = new SGA.MBControl.MBTexbox();
-            this.mbButton1 = new SGA.MBControl.MBButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtcontrasenaLogin = new SGA.MBControl.MBTexbox();
+            this.txtUsuarioLogin = new SGA.MBControl.MBTexbox();
+            this.btnIniciar = new SGA.MBControl.MBButton();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1682, 910);
+            this.panel1.Size = new System.Drawing.Size(388, 723);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.ForeColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(257, 75);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1169, 658);
-            this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(6, 424);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(663, 76);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "¡Bienvenido al Sistema de Control de Matrículas! \r\nSCM\r\n";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(189, 199);
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(592, 129);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(455, 108);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Instituto Nacional\nReino de Suecia - Estelí";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Size = new System.Drawing.Size(105, 61);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "SCM";
             // 
-            // panel3
+            // label2
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.panel3.Controls.Add(this.mbButton2);
-            this.panel3.Controls.Add(this.mbTexbox2);
-            this.panel3.Controls.Add(this.mbTexbox1);
-            this.panel3.Controls.Add(this.mbButton1);
-            this.panel3.Location = new System.Drawing.Point(672, 136);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(403, 434);
-            this.panel3.TabIndex = 1;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(514, 324);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 20);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Usuario";
             // 
-            // mbButton2
+            // label3
             // 
-            this.mbButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(116)))), ((int)(((byte)(5)))));
-            this.mbButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(116)))), ((int)(((byte)(5)))));
-            this.mbButton2.BorderColor = System.Drawing.Color.Transparent;
-            this.mbButton2.BorderRadius = 10;
-            this.mbButton2.BorderSize = 1;
-            this.mbButton2.FlatAppearance.BorderSize = 0;
-            this.mbButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mbButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbButton2.ForeColor = System.Drawing.Color.Transparent;
-            this.mbButton2.Location = new System.Drawing.Point(127, 312);
-            this.mbButton2.Name = "mbButton2";
-            this.mbButton2.Size = new System.Drawing.Size(158, 40);
-            this.mbButton2.TabIndex = 3;
-            this.mbButton2.Text = "Iniciar ";
-            this.mbButton2.TextColor = System.Drawing.Color.Transparent;
-            this.mbButton2.UseVisualStyleBackColor = false;
-            this.mbButton2.Click += new System.EventHandler(this.mbButton2_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(514, 405);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 20);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Contraseña";
             // 
-            // mbTexbox2
+            // label4
             // 
-            this.mbTexbox2.BackColor = System.Drawing.Color.White;
-            this.mbTexbox2.BorderColor = System.Drawing.Color.Black;
-            this.mbTexbox2.BorderFocusColor = System.Drawing.Color.Black;
-            this.mbTexbox2.BorderRadius = 10;
-            this.mbTexbox2.BorderSize = 1;
-            this.mbTexbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox2.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox2.Location = new System.Drawing.Point(44, 202);
-            this.mbTexbox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox2.Multiline = false;
-            this.mbTexbox2.Name = "mbTexbox2";
-            this.mbTexbox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox2.PasswordChar = false;
-            this.mbTexbox2.PlaceholderColor = System.Drawing.Color.Black;
-            this.mbTexbox2.PlaceholderText = "Contraseña";
-            this.mbTexbox2.Size = new System.Drawing.Size(301, 35);
-            this.mbTexbox2.TabIndex = 2;
-            this.mbTexbox2.UnderlineStyle = false;
-            this.mbTexbox2._TextChanged += new System.EventHandler(this.mbTexbox2__TextChanged);
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(524, 190);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(234, 26);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Sistema Control de Matrícula";
             // 
-            // mbTexbox1
+            // txtcontrasenaLogin
             // 
-            this.mbTexbox1.BackColor = System.Drawing.Color.White;
-            this.mbTexbox1.BorderColor = System.Drawing.Color.Black;
-            this.mbTexbox1.BorderFocusColor = System.Drawing.Color.Black;
-            this.mbTexbox1.BorderRadius = 10;
-            this.mbTexbox1.BorderSize = 1;
-            this.mbTexbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbTexbox1.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox1.Location = new System.Drawing.Point(44, 136);
-            this.mbTexbox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mbTexbox1.Multiline = true;
-            this.mbTexbox1.Name = "mbTexbox1";
-            this.mbTexbox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.mbTexbox1.PasswordChar = false;
-            this.mbTexbox1.PlaceholderColor = System.Drawing.Color.Black;
-            this.mbTexbox1.PlaceholderText = "Usuario";
-            this.mbTexbox1.Size = new System.Drawing.Size(301, 35);
-            this.mbTexbox1.TabIndex = 1;
-            this.mbTexbox1.UnderlineStyle = false;
-            this.mbTexbox1._TextChanged += new System.EventHandler(this.mbTexbox1__TextChanged_1);
+            this.txtcontrasenaLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(186)))), ((int)(((byte)(195)))));
+            this.txtcontrasenaLogin.BorderColor = System.Drawing.Color.Black;
+            this.txtcontrasenaLogin.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtcontrasenaLogin.BorderRadius = 15;
+            this.txtcontrasenaLogin.BorderSize = 2;
+            this.txtcontrasenaLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcontrasenaLogin.ForeColor = System.Drawing.Color.DimGray;
+            this.txtcontrasenaLogin.Location = new System.Drawing.Point(508, 366);
+            this.txtcontrasenaLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtcontrasenaLogin.Multiline = false;
+            this.txtcontrasenaLogin.Name = "txtcontrasenaLogin";
+            this.txtcontrasenaLogin.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtcontrasenaLogin.PasswordChar = true;
+            this.txtcontrasenaLogin.PlaceholderColor = System.Drawing.Color.Black;
+            this.txtcontrasenaLogin.PlaceholderText = "";
+            this.txtcontrasenaLogin.Size = new System.Drawing.Size(250, 35);
+            this.txtcontrasenaLogin.TabIndex = 4;
+            this.txtcontrasenaLogin.UnderlineStyle = true;
             // 
-            // mbButton1
+            // txtUsuarioLogin
             // 
-            this.mbButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(116)))), ((int)(((byte)(5)))));
-            this.mbButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(116)))), ((int)(((byte)(5)))));
-            this.mbButton1.BorderColor = System.Drawing.Color.SeaShell;
-            this.mbButton1.BorderRadius = 10;
-            this.mbButton1.BorderSize = 1;
-            this.mbButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(116)))), ((int)(((byte)(5)))));
-            this.mbButton1.FlatAppearance.BorderSize = 0;
-            this.mbButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mbButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbButton1.ForeColor = System.Drawing.Color.Transparent;
-            this.mbButton1.Location = new System.Drawing.Point(127, -3);
-            this.mbButton1.Name = "mbButton1";
-            this.mbButton1.Size = new System.Drawing.Size(158, 40);
-            this.mbButton1.TabIndex = 0;
-            this.mbButton1.Text = "Iniciar sesión";
-            this.mbButton1.TextColor = System.Drawing.Color.Transparent;
-            this.mbButton1.UseVisualStyleBackColor = false;
-            this.mbButton1.Click += new System.EventHandler(this.mbButton1_Click);
+            this.txtUsuarioLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(186)))), ((int)(((byte)(195)))));
+            this.txtUsuarioLogin.BorderColor = System.Drawing.Color.Black;
+            this.txtUsuarioLogin.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtUsuarioLogin.BorderRadius = 15;
+            this.txtUsuarioLogin.BorderSize = 2;
+            this.txtUsuarioLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuarioLogin.ForeColor = System.Drawing.Color.DimGray;
+            this.txtUsuarioLogin.Location = new System.Drawing.Point(508, 285);
+            this.txtUsuarioLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtUsuarioLogin.Multiline = false;
+            this.txtUsuarioLogin.Name = "txtUsuarioLogin";
+            this.txtUsuarioLogin.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtUsuarioLogin.PasswordChar = false;
+            this.txtUsuarioLogin.PlaceholderColor = System.Drawing.Color.Black;
+            this.txtUsuarioLogin.PlaceholderText = "";
+            this.txtUsuarioLogin.Size = new System.Drawing.Size(250, 35);
+            this.txtUsuarioLogin.TabIndex = 3;
+            this.txtUsuarioLogin.UnderlineStyle = true;
             // 
-            // pictureBox1
+            // btnIniciar
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::SGA.Properties.Resources.OIP_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 163);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(160, 170);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.btnIniciar.BackColor = System.Drawing.Color.Ivory;
+            this.btnIniciar.BackgroundColor = System.Drawing.Color.Ivory;
+            this.btnIniciar.BorderColor = System.Drawing.Color.Transparent;
+            this.btnIniciar.BorderRadius = 15;
+            this.btnIniciar.BorderSize = 0;
+            this.btnIniciar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnIniciar.FlatAppearance.BorderSize = 0;
+            this.btnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIniciar.ForeColor = System.Drawing.Color.Black;
+            this.btnIniciar.Location = new System.Drawing.Point(561, 482);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(150, 40);
+            this.btnIniciar.TabIndex = 2;
+            this.btnIniciar.Text = "Iniciar sesión";
+            this.btnIniciar.TextColor = System.Drawing.Color.Black;
+            this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.mbButton1_Click_1);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1682, 910);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(186)))), ((int)(((byte)(195)))));
+            this.ClientSize = new System.Drawing.Size(887, 723);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtcontrasenaLogin);
+            this.Controls.Add(this.txtUsuarioLogin);
+            this.Controls.Add(this.btnIniciar);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.Text = "Login";
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private MBControl.MBTexbox mbTexbox1;
-        private MBControl.MBButton mbButton1;
-        private MBControl.MBTexbox mbTexbox2;
         private System.Windows.Forms.Label label1;
+        private MBControl.MBButton btnIniciar;
+        private MBControl.MBTexbox txtUsuarioLogin;
+        private MBControl.MBTexbox txtcontrasenaLogin;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private MBControl.MBButton mbButton2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

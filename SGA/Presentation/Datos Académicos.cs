@@ -48,6 +48,8 @@ namespace SGA.PRESENTACION
 
             this.KeyDown += new KeyEventHandler(EnterText_KeyPress);
             this.KeyDown += new KeyEventHandler(DatosAcademicos_KeyDown);
+
+            txtCodigoTemporalEstudiante.Focus();
         }
         private void DatosAcademicos_KeyDown(object sender, KeyEventArgs e)
         {
@@ -306,6 +308,7 @@ namespace SGA.PRESENTACION
             txtNombresDelEstudiante.Text = "";
             
             txtCodigoTemporalEstudiante.Enabled = true;
+            txtCodigoTemporalEstudiante.Focus();
         }
         private void mbButton4_Click(object sender, EventArgs e)
         {

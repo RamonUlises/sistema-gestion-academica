@@ -78,6 +78,8 @@ namespace SGA
             this.KeyDown += new KeyEventHandler(EnterText_KeyPress);
 
             //LlenarFormularioPrueba();
+
+            txtCedulaMatricula.Focus();
         }
 
         private void EnterText_KeyPress(object sender, KeyEventArgs e)

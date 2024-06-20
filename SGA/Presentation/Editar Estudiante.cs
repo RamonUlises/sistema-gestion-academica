@@ -271,7 +271,7 @@ namespace SGA.Presentation
 
         private void btnGuardarMatricula_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("");
         }
 
         private void txtLenguaMaternaMatricula_OnSelectedIndexChanged(object sender, EventArgs e)
