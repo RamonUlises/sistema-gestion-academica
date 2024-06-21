@@ -227,12 +227,37 @@ namespace SGA
 
         private void mbButton3_Click(object sender, EventArgs e)
         {
+            bool res = MessageBox.Show("¿Desea eliminar los datos de las cajas?", "Limpiar cajas", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes;
+
+            if (!res) return;
+
             LimpiarCampos();
         }
 
+        private bool ValidarMaxLength()
+        {
+            if(txtCodigoUnicoEstudianteTraslado.Text.Length > 20)
+            {
+                MessageBox.Show("El código único del estudiante no puede tener más de 20 caracteres");
+                return false;
+            }
+
+            if (txtMotivoTaslado.Text.Length > 200)
+            {
+                MessageBox.Show("El motivo del traslado no puede tener más de 200 caracteres");
+                return false;
+            }
+
+            return true;
+        }
 
         private void btnGuardartraslado_Click_1(object sender, EventArgs e)
         {
+
+            bool resultLength = ValidarMaxLength();
+
+            if(!resultLength) return;
+
             ClassTraslado traslado = new ClassTraslado();
             traslado.CodigoEstudiante = txtCodigoUnicoEstudianteTraslado.Text;
             traslado.MotivoTraslado = txtMotivoTaslado.Text;

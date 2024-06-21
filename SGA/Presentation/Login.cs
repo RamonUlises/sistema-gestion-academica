@@ -30,10 +30,38 @@ namespace SGA.PRESENTACION
       
 
             // poner el formulario en el centro de la pantalla
-                this.StartPosition = FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
 
+            //Agregar evento al form al toca la tecla Enter
+
+            this.KeyPreview = true;
+
+            this.KeyDown += new KeyEventHandler(Form1_KeyDown);
+
+
+            txtUsuarioLogin.Focus();
         }
 
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                ValidarUsuario();
+            }
+        }
+
+
+        private void ValidarUsuario()
+        {
+            //Validar usuario y contraseña
+            if (txtcontrasenaLogin.Text != contrasena || txtUsuarioLogin.Text != usuario)
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            //cerrar formulario
+            this.Close();
+        }
         private void btnGuardarMatricula_Click(object sender, EventArgs e)
         {
 
@@ -86,14 +114,7 @@ namespace SGA.PRESENTACION
 
         private void mbButton1_Click_1(object sender, EventArgs e)
         {
-            //Validar usuario y contraseña
-            if (txtcontrasenaLogin.Text != contrasena || txtUsuarioLogin.Text != usuario)
-            {
-                MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            //cerrar formulario
-            this.Close();
+            ValidarUsuario();
         }
 
         private void Login_Load(object sender, EventArgs e)

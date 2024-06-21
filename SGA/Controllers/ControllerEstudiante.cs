@@ -11,6 +11,108 @@ namespace SGA.Controllers
 {
     class ControllerEstudiante
     {
+        public string EditarEstudiante(Clases.ClassEstudiantes estudiante, Clases.ClassDatosAcademicos datos, int id)
+        {
+            DB_Connection connection = new DB_Connection();
+
+            try
+            {
+                using (MySqlConnection conn = connection.GetConnection())
+                {
+                    ControllerPais controllerPaises = new ControllerPais();
+                    ControllerDepartamentos controllerDepartamentos = new ControllerDepartamentos();
+                    ControllerMunicipios controllerMunicipios = new ControllerMunicipios();
+                    ControllerEtnias controllerEtnias = new ControllerEtnias();
+                    ControllerLenguaMaterna controllerLenguaMaterna = new ControllerLenguaMaterna();
+                    ControllerDiscapacidad controllerDiscapacidad = new ControllerDiscapacidad();
+                    ControllerTutorEstudiante controllerTutorEstudiante = new ControllerTutorEstudiante();
+
+                    // Asegúrate de que las propiedades de tipo string no sean null
+                    string nombres = estudiante.Nombre1 + " " + estudiante.Nombre2;
+                    string apellidos = estudiante.Apellido1 + " " + estudiante.Apellido2;
+                    string cedula = estudiante.Cedula == "" || estudiante.Cedula == null ? "000-000000-0000X" : estudiante.Cedula;
+                    string telefono = estudiante.Telefono ?? string.Empty;
+                    string territorioIndigena = (estudiante.TerritorioIndigena != "") ? estudiante.TerritorioIndigena : "Ninguna";
+                    string comunidadIndigena = (estudiante.ComunidadIndigena != "") ? estudiante.ComunidadIndigena : "Ninguna";
+
+                    int idSexo = (estudiante.Sexo == "Masculino") ? 1 : 2;
+
+                    int idPais = controllerPaises.ObtenerPaisPorNombre(estudiante.Pais);
+                    int idDepartamento = controllerDepartamentos.ObtenerIdDepartamento(estudiante.Departamento);
+                    int idMunicipio = controllerMunicipios.ObtenerIdMunicipio(estudiante.Municipio);
+                    int idNacionalidad = controllerPaises.ObtenerIdNacionalidad(estudiante.Nacionalidad);
+                    int idEtnia = controllerEtnias.ObtenerIdEtnia(estudiante.Etnia);
+                    int idLengua = controllerLenguaMaterna.ObtenerIdLengua(estudiante.Lengua);
+                    int idDiscapacidad = controllerDiscapacidad.ObtenerIdDiscapacidad(estudiante.Discapacidad);
+                    int idTutor = controllerTutorEstudiante.ValidarTutor(estudiante);
+
+                    if (idTutor == 0)
+                    {
+                        return "La cédula del tutor ya se encuentra registrada con diferentes nombres";
+                    }
+
+                    DateTime fechaConvertida = DateTime.ParseExact(estudiante.FechaNacimiento, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+                    string fechaSql = fechaConvertida.ToString("yyyy-MM-dd");
+
+                    int idPartida = estudiante.PartidaNacimiento ? 1 : 0;
+                        
+                    DateTime fechaMatriculaConvertida = DateTime.ParseExact(estudiante.FechaMatricula, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+                    string fechaMatriculaSql = fechaMatriculaConvertida.ToString("yyyy-MM-dd");
+
+
+                    string query = "UPDATE estudiantes SET nombres = @nombres, apellidos = @apellidos, cedula = @cedula, fecha_nacimiento = @fecha_nacimiento, direccion = @direccion, " +
+                                   "telefono = @telefono, partida_nacimiento = @partida_nacimiento, fecha_matricula = @fecha_matricula, barrio = @barrio, peso = @peso, talla = @talla, " +
+                                   "territorio_indigena = @territorio_indigena, comunidad_indigena = @comunidad_indigena, id_sexo = @id_sexo, id_pais = @id_pais, id_departamento = @id_departamento, " +
+                                   "id_municipio = @id_municipio, id_nacionalidad = @id_nacionalidad, id_etnia = @id_etnia, id_lengua = @id_lengua, id_discapacidad = @id_discapacidad, " +
+                                   "id_tutor_x_estudiante = @id_tutor_x_estudiante WHERE id_estudiante = @id";
+
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    MySqlDataReader reader = cmd.ExecuteReader();
+
+                    // Añadir parámetros
+                    cmd.Parameters.AddWithValue("@nombres", nombres);
+                    cmd.Parameters.AddWithValue("@apellidos", apellidos);
+                    cmd.Parameters.AddWithValue("@cedula", cedula);
+                    cmd.Parameters.AddWithValue("@fecha_nacimiento", fechaSql);
+                    cmd.Parameters.AddWithValue("@direccion", estudiante.Direccion);
+                    cmd.Parameters.AddWithValue("@telefono", telefono);
+                    cmd.Parameters.AddWithValue("@partida_nacimiento", idPartida);
+                    cmd.Parameters.AddWithValue("@fecha_matricula", fechaMatriculaSql);
+                    cmd.Parameters.AddWithValue("@barrio", estudiante.Barrio);
+                    cmd.Parameters.AddWithValue("@peso", estudiante.Peso);
+                    cmd.Parameters.AddWithValue("@talla", estudiante.Talla);
+                    cmd.Parameters.AddWithValue("@territorio_indigena", territorioIndigena);
+                    cmd.Parameters.AddWithValue("@comunidad_indigena", comunidadIndigena);
+                    cmd.Parameters.AddWithValue("@id_sexo", idSexo);
+                    cmd.Parameters.AddWithValue("@id_pais", idPais);
+                    cmd.Parameters.AddWithValue("@id_departamento", idDepartamento);
+                    cmd.Parameters.AddWithValue("@id_municipio", idMunicipio);
+                    cmd.Parameters.AddWithValue("@id_nacionalidad", idNacionalidad);
+                    cmd.Parameters.AddWithValue("@id_etnia", idEtnia);
+                    cmd.Parameters.AddWithValue("@id_lengua", idLengua);
+                    cmd.Parameters.AddWithValue("@id_discapacidad", idDiscapacidad);
+                    cmd.Parameters.AddWithValue("@id_tutor_x_estudiante", idTutor);
+                    cmd.Parameters.AddWithValue("@id", id);
+                        
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    if (rowsAffected > 0)
+                    {
+                        new ControllerDatosAcademicos().EditarDatosAcademicos(datos, id);
+                        return "Estudiante actualizado";
+                    }
+                    else
+                    {
+                        return "No se actualizó el estudiante";
+                    }
+                } 
+            } catch (Exception ex)
+            {
+                return "No se actualizó el estudiante";
+            } finally
+            {
+                connection.CloseConnection();
+            }
+        }
         public string BorrarEstudiante(int id)
         {
             DB_Connection connection = new DB_Connection();

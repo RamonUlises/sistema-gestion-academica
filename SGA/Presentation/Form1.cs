@@ -35,7 +35,7 @@ namespace SGA
 
             // mostrar form en toda la pantalla
 
-            new Login().ShowDialog();
+            //new Login().ShowDialog();
             this.WindowState = FormWindowState.Maximized;
         }
         private void customizarDiseno()

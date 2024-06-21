@@ -135,6 +135,11 @@ namespace SGA
         }
         private void btnGuardarReingreso_Click(object sender, EventArgs e)
         {
+            if(txtCodigoAlumnoReingreso.Text.Length > 20)
+            {
+                MessageBox.Show("El código del alumno no puede tener más de 20 caracteres");
+                return;
+            }
 
             ClassReingreso reingreso = new ClassReingreso();
             reingreso.CodigoAlumno = txtCodigoAlumnoReingreso.Text;

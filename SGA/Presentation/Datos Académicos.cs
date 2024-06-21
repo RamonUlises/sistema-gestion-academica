@@ -214,6 +214,12 @@ namespace SGA.PRESENTACION
 
         private void btnGuardarDatosAcademicos_Click(object sender, EventArgs e)
         {
+            if(txtNivelEducativoDatosAcademicos.Text.Length > 50)
+            {
+                MessageBox.Show("El nivel educativo no puede tener más de 20 caracteres");
+                return;
+            }
+
             ClassDatosAcademicos datosAcademicos = new ClassDatosAcademicos();
             datosAcademicos.FechaMatricula = txtFechaMatriculaEstudianteDatosAcademicos.Text;
             datosAcademicos.CodigoEstudiante = txtCodigoEstudianteDatosAcademicos.Text;

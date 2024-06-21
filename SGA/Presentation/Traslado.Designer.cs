@@ -1970,7 +1970,7 @@
             this.btnBuscarCodigoUnicoTraslado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnBuscarCodigoUnicoTraslado.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnBuscarCodigoUnicoTraslado.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.btnBuscarCodigoUnicoTraslado.BorderRadius = 38;
+            this.btnBuscarCodigoUnicoTraslado.BorderRadius = 30;
             this.btnBuscarCodigoUnicoTraslado.BorderSize = 1;
             this.btnBuscarCodigoUnicoTraslado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscarCodigoUnicoTraslado.FlatAppearance.BorderSize = 0;

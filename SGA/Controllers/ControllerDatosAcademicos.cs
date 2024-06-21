@@ -11,6 +11,53 @@ namespace SGA.Controllers
 {
     class ControllerDatosAcademicos
     {
+        public void EditarDatosAcademicos(Clases.ClassDatosAcademicos datos, int id)
+        {
+
+            DB_Connection connection = new DB_Connection();
+
+            try
+            {
+                using (MySqlConnection con = connection.GetConnection())
+                {
+                    string query = "UPDATE datos_academicos SET codigo_estudiante = @codigo, fecha_matricula = @fecha, nivel_educativo = @nivel, repitente = @repitente, " +
+                        "modalidad = @modalidad, id_grado = @grado, id_seccion = @seccion, id_turno = @turno, id_centro = @centro WHERE id_estudiante = @id";
+
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+
+                    DateTime fechaConvertida = DateTime.ParseExact(datos.FechaMatricula, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+                    string fechaSql = fechaConvertida.ToString("yyyy-MM-dd");
+
+                    int repite = datos.Repitente ? 1 : 0;
+                    int modalidad = new ControllerModalidad().ObtenerIdModalidad(datos.Modalidad);
+                    int grado = new ControllerGrado().ObtenerIdGrado(datos.Grado);
+                    int seccion = new ControllerSecciones().ObtenerIdSeccion(datos.Seccion);
+                    int turno = new ControllerTurnos().ObtenerIdTurno(datos.Turno);
+                    int centro = new ControllerCentros().ObtenerIdCentro(datos.NombreCentroEducativo);
+
+                    cmd.Parameters.AddWithValue("@codigo", datos.CodigoEstudiante);
+                    cmd.Parameters.AddWithValue("@fecha", fechaSql);
+                    cmd.Parameters.AddWithValue("@nivel", datos.NivelEducativo);
+                    cmd.Parameters.AddWithValue("@repitente", repite);
+                    cmd.Parameters.AddWithValue("@modalidad", modalidad);
+                    cmd.Parameters.AddWithValue("@grado", grado);
+                    cmd.Parameters.AddWithValue("@seccion", seccion);
+                    cmd.Parameters.AddWithValue("@turno", turno);
+                    cmd.Parameters.AddWithValue("@centro", centro);
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch
+            {
+                return;
+            }
+            finally
+            {
+                connection.CloseConnection();
+            }
+        }
         public string BorrarDatos(string id)
         {
             DB_Connection connection = new DB_Connection();

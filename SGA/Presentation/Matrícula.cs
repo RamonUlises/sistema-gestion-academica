@@ -77,7 +77,7 @@ namespace SGA
 
             this.KeyDown += new KeyEventHandler(EnterText_KeyPress);
 
-            //LlenarFormularioPrueba();
+            LlenarFormularioPrueba();
 
             txtCedulaMatricula.Focus();
         }
@@ -307,9 +307,100 @@ namespace SGA
                 return "";
             }
         }
+        private bool ValidarLongitud()
+        {
+            if(txtCedulaMatricula.Text.Length > 16)
+            {
+                MessageBox.Show("La cédula no puede ser mayor a 16 caracteres");
+                return false;
+            }
+
+            if(txt1NombreMatricula.Text.Length > 50)
+            {
+                MessageBox.Show("El primer nombre no puede ser mayor a 50 caracteres");
+                return false;
+            }
+
+            if (txt2NombreMatricula.Text.Length > 50)
+            {
+                MessageBox.Show("El segundo nombre no puede ser mayor a 50 caracteres");
+                return false;
+            }
+
+            if (txt1ApellidoMatricula.Text.Length > 50)
+            {
+                MessageBox.Show("El primer apellido no puede ser mayor a 50 caracteres");
+                return false;
+            }
+
+            if (txt2ApellidoMatricula.Text.Length > 50)
+            {
+                MessageBox.Show("El segundo apellido no puede ser mayor a 50 caracteres");
+                return false;
+            }
+
+            if (txtFechaNacimientoMatricula.Text.Length > 10)
+            {
+                MessageBox.Show("La fecha de nacimiento no puede ser mayor a 10 caracteres");
+                return false;
+            }
+
+            if (txtTelefonoMatricula.Text.Length > 9)
+            {
+                MessageBox.Show("El teléfono no puede ser mayor a 8 caracteres");
+                return false;
+            }
+
+            if (txtBarrioMatricula.Text.Length > 150)
+            {
+                MessageBox.Show("El barrio no puede ser mayor a 150 caracteres");
+                return false;
+            }
+
+            if (TxtDireccionMatricula.Text.Length > 250)
+            {
+                MessageBox.Show("La dirección no puede ser mayor a 250 caracteres");
+                return false;
+            }
+
+            if (txtComunidadIndigenaMatricula.Text.Length > 150)
+            {
+                MessageBox.Show("La comunidad indigena no puede ser mayor a 150 caracteres");
+                return false;
+            }
+
+            if (txtTerritorioIndigenaMatricula.Text.Length > 150)
+            {
+                MessageBox.Show("El territorio indigena no puede ser mayor a 150 caracteres");
+                return false;
+            }
+
+            if (txtNombresApellidosTutorMatricula.Text.Length > 100)
+            {
+                MessageBox.Show("El nombre del tutor no puede ser mayor a 100 caracteres");
+                return false;
+            }
+
+            if (txtCedulaTutorMatricula.Text.Length > 16)
+            {
+                MessageBox.Show("La cédula del tutor no puede ser mayor a 16 caracteres");
+                return false;
+            }
+
+            if (txtTelefonoTutorMatricula.Text.Length > 9)
+            {
+                MessageBox.Show("El teléfono del tutor no puede ser mayor a 8 caracteres");
+                return false;
+            }
+
+            return true;
+        }
         private void btnGuardarMatricula_Click(object sender, EventArgs e)
         {
+            bool responseLengt = ValidarLongitud();
 
+            if(!responseLengt) return;
+            
 
             ClassEstudiantes estudiante = new ClassEstudiantes();
 
@@ -1323,12 +1414,17 @@ namespace SGA
             txtNombresApellidosTutorMatricula.Text = "";
             txtCedulaTutorMatricula.Text = "";
             txtTelefonoTutorMatricula.Text = "";
+
+            txt1NombreMatricula.Focus();
         }
 
         private void mbButton1_Click(object sender, EventArgs e)
         {
+            bool res = MessageBox.Show("¿Desea eliminar los datos de las cajas?", "Limpiar cajas", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes;
+
+            if (!res) return;
+
             LimpiarCampos();
-            txt1NombreMatricula.Focus();
         }
     }
 }
