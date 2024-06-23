@@ -30,6 +30,8 @@ namespace SGA
         {
             InitializeComponent();
             customizarDiseno();
+
+            flowLayoutPanel1.Visible = false;
             MostrarEstudiantes();
 
             typingTimer = new Timer();
@@ -131,21 +133,31 @@ namespace SGA
                 return;
             }
 
+            flowLayoutPanel1.Visible = false;
+
+
             foreach (Clases.ITEstudiantes estudiante in estudiantes)
             {
                 Panel Card = CrearCard(estudiante);
                 flowLayoutPanel1.Controls.Add(Card);
             }
+
+            flowLayoutPanel1.Visible = true;
         }
         public void MostrarEstudiantes()
         {
             estudiantes = new Controllers.ControllerEstudiante().ObtenerEstudiantes();
+
+            flowLayoutPanel1.Visible = false;
+            flowLayoutPanel1.Visible = false;
 
             foreach(Clases.ITEstudiantes estudiante in estudiantes)
             {
                 Panel Card = CrearCard(estudiante);
                 flowLayoutPanel1.Controls.Add(Card);
             }
+
+            flowLayoutPanel1.Visible = true;
         }
         public Panel CrearCard(Clases.ITEstudiantes estudiante)
         {
