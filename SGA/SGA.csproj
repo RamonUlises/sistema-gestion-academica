@@ -300,6 +300,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Manual de usuario_SCM.pdf" />
     <None Include="Resources\OIP.jpg" />
   </ItemGroup>
   <ItemGroup>
