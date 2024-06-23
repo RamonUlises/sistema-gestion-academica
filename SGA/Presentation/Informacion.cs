@@ -4,7 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,6 +57,32 @@ namespace SGA
         private void panel7_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnManualUsuario_Click(object sender, EventArgs e)
+        {
+            string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            string pdfFileName = "Manual de usuario_SCM.pdf";
+            string pdfPath = Path.Combine(desktopPath, pdfFileName);
+            try
+            {
+                Process.Start(new ProcessStartInfo(pdfPath)
+                {UseShellExecute = true});
+                }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo abrir el PDF: " + ex.Message);
+            }
         }
     }
 }

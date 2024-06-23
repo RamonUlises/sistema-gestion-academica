@@ -37,10 +37,10 @@ namespace SGA.Controllers
                     {
                         if(reader.RecordsAffected > 0)
                         {
-                            return "Reingreso realizado con éxito";
+                            return "Proceso de continuidad realizado con éxito";
                         }
 
-                        return "No se pudo realizar el reingreso";
+                        return "No se pudo realizar el proceso de continuidad";
                     }
                 }
             } catch (Exception ex)

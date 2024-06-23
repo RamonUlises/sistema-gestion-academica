@@ -80,6 +80,7 @@ namespace SGA
             //LlenarFormularioPrueba();
 
             txtCedulaMatricula.Focus();
+
         }
 
         private void EnterText_KeyPress(object sender, KeyEventArgs e)
