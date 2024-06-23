@@ -47,7 +47,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(388, 723);
+            this.panel1.Size = new System.Drawing.Size(407, 723);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -56,7 +56,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe Print", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(592, 129);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 61);
+            this.label1.Size = new System.Drawing.Size(100, 58);
             this.label1.TabIndex = 1;
             this.label1.Text = "SCM";
             // 
@@ -134,21 +134,21 @@
             // 
             // btnIniciar
             // 
-            this.btnIniciar.BackColor = System.Drawing.Color.Ivory;
-            this.btnIniciar.BackgroundColor = System.Drawing.Color.Ivory;
+            this.btnIniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnIniciar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnIniciar.BorderColor = System.Drawing.Color.Transparent;
             this.btnIniciar.BorderRadius = 15;
             this.btnIniciar.BorderSize = 0;
             this.btnIniciar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIniciar.FlatAppearance.BorderSize = 0;
             this.btnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIniciar.ForeColor = System.Drawing.Color.Black;
+            this.btnIniciar.ForeColor = System.Drawing.Color.White;
             this.btnIniciar.Location = new System.Drawing.Point(561, 482);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(150, 40);
             this.btnIniciar.TabIndex = 2;
             this.btnIniciar.Text = "Iniciar sesión";
-            this.btnIniciar.TextColor = System.Drawing.Color.Black;
+            this.btnIniciar.TextColor = System.Drawing.Color.White;
             this.btnIniciar.UseVisualStyleBackColor = false;
             this.btnIniciar.Click += new System.EventHandler(this.mbButton1_Click_1);
             // 

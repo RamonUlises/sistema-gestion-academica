@@ -244,7 +244,7 @@
             this.cbNacionalidadMatricula.BorderSize = 1;
             this.cbNacionalidadMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbNacionalidadMatricula.ForeColor = System.Drawing.Color.Black;
-            this.cbNacionalidadMatricula.Location = new System.Drawing.Point(818, 702);
+            this.cbNacionalidadMatricula.Location = new System.Drawing.Point(821, 697);
             this.cbNacionalidadMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbNacionalidadMatricula.Multiline = false;
             this.cbNacionalidadMatricula.Name = "cbNacionalidadMatricula";
@@ -291,7 +291,7 @@
             "Nicaragua"});
             this.txtDiscapacidadMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.txtDiscapacidadMatricula.ListTextColor = System.Drawing.Color.Black;
-            this.txtDiscapacidadMatricula.Location = new System.Drawing.Point(1004, 972);
+            this.txtDiscapacidadMatricula.Location = new System.Drawing.Point(1001, 970);
             this.txtDiscapacidadMatricula.MinimumSize = new System.Drawing.Size(200, 30);
             this.txtDiscapacidadMatricula.Name = "txtDiscapacidadMatricula";
             this.txtDiscapacidadMatricula.Padding = new System.Windows.Forms.Padding(1);
@@ -313,7 +313,7 @@
             "Nicaragua"});
             this.txtDepartamentoMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.txtDepartamentoMatricula.ListTextColor = System.Drawing.Color.Black;
-            this.txtDepartamentoMatricula.Location = new System.Drawing.Point(434, 764);
+            this.txtDepartamentoMatricula.Location = new System.Drawing.Point(440, 761);
             this.txtDepartamentoMatricula.MinimumSize = new System.Drawing.Size(200, 30);
             this.txtDepartamentoMatricula.Name = "txtDepartamentoMatricula";
             this.txtDepartamentoMatricula.Padding = new System.Windows.Forms.Padding(1);
@@ -335,7 +335,7 @@
             "Nicaragua"});
             this.txtMuniciopioMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.txtMuniciopioMatricula.ListTextColor = System.Drawing.Color.Black;
-            this.txtMuniciopioMatricula.Location = new System.Drawing.Point(844, 758);
+            this.txtMuniciopioMatricula.Location = new System.Drawing.Point(845, 756);
             this.txtMuniciopioMatricula.MinimumSize = new System.Drawing.Size(200, 30);
             this.txtMuniciopioMatricula.Name = "txtMuniciopioMatricula";
             this.txtMuniciopioMatricula.Padding = new System.Windows.Forms.Padding(1);
@@ -357,7 +357,7 @@
             "Nicaragua"});
             this.txtLenguaMaternaMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.txtLenguaMaternaMatricula.ListTextColor = System.Drawing.Color.Black;
-            this.txtLenguaMaternaMatricula.Location = new System.Drawing.Point(406, 1036);
+            this.txtLenguaMaternaMatricula.Location = new System.Drawing.Point(409, 1034);
             this.txtLenguaMaternaMatricula.MinimumSize = new System.Drawing.Size(200, 30);
             this.txtLenguaMaternaMatricula.Name = "txtLenguaMaternaMatricula";
             this.txtLenguaMaternaMatricula.Padding = new System.Windows.Forms.Padding(1);
@@ -374,7 +374,7 @@
             this.txtTelefonoTutorMatricula.BorderSize = 1;
             this.txtTelefonoTutorMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefonoTutorMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtTelefonoTutorMatricula.Location = new System.Drawing.Point(1126, 1234);
+            this.txtTelefonoTutorMatricula.Location = new System.Drawing.Point(1129, 1234);
             this.txtTelefonoTutorMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTelefonoTutorMatricula.Multiline = false;
             this.txtTelefonoTutorMatricula.Name = "txtTelefonoTutorMatricula";
@@ -417,7 +417,7 @@
             this.txtCedulaTutorMatricula.BorderSize = 1;
             this.txtCedulaTutorMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCedulaTutorMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtCedulaTutorMatricula.Location = new System.Drawing.Point(513, 1241);
+            this.txtCedulaTutorMatricula.Location = new System.Drawing.Point(514, 1241);
             this.txtCedulaTutorMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCedulaTutorMatricula.Multiline = false;
             this.txtCedulaTutorMatricula.Name = "txtCedulaTutorMatricula";
@@ -505,7 +505,7 @@
             this.txtNombresApellidosTutorMatricula.BorderSize = 1;
             this.txtNombresApellidosTutorMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombresApellidosTutorMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtNombresApellidosTutorMatricula.Location = new System.Drawing.Point(513, 1180);
+            this.txtNombresApellidosTutorMatricula.Location = new System.Drawing.Point(515, 1180);
             this.txtNombresApellidosTutorMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombresApellidosTutorMatricula.Multiline = false;
             this.txtNombresApellidosTutorMatricula.Name = "txtNombresApellidosTutorMatricula";
@@ -577,7 +577,7 @@
             this.txtFechaNacimientoMatricula.BorderSize = 1;
             this.txtFechaNacimientoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFechaNacimientoMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtFechaNacimientoMatricula.Location = new System.Drawing.Point(1230, 575);
+            this.txtFechaNacimientoMatricula.Location = new System.Drawing.Point(1233, 575);
             this.txtFechaNacimientoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFechaNacimientoMatricula.Multiline = false;
             this.txtFechaNacimientoMatricula.Name = "txtFechaNacimientoMatricula";
@@ -620,7 +620,7 @@
             this.txt2ApellidoMatricula.BorderSize = 1;
             this.txt2ApellidoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt2ApellidoMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txt2ApellidoMatricula.Location = new System.Drawing.Point(806, 582);
+            this.txt2ApellidoMatricula.Location = new System.Drawing.Point(800, 580);
             this.txt2ApellidoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt2ApellidoMatricula.Multiline = false;
             this.txt2ApellidoMatricula.Name = "txt2ApellidoMatricula";
@@ -644,7 +644,7 @@
             this.cbPaisNacimentoMatricula.IconColor = System.Drawing.Color.Black;
             this.cbPaisNacimentoMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbPaisNacimentoMatricula.ListTextColor = System.Drawing.Color.Black;
-            this.cbPaisNacimentoMatricula.Location = new System.Drawing.Point(416, 706);
+            this.cbPaisNacimentoMatricula.Location = new System.Drawing.Point(415, 703);
             this.cbPaisNacimentoMatricula.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbPaisNacimentoMatricula.Name = "cbPaisNacimentoMatricula";
             this.cbPaisNacimentoMatricula.Padding = new System.Windows.Forms.Padding(1);
@@ -683,7 +683,7 @@
             this.txt2NombreMatricula.BorderSize = 1;
             this.txt2NombreMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt2NombreMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txt2NombreMatricula.Location = new System.Drawing.Point(395, 584);
+            this.txt2NombreMatricula.Location = new System.Drawing.Point(389, 583);
             this.txt2NombreMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt2NombreMatricula.Multiline = false;
             this.txt2NombreMatricula.Name = "txt2NombreMatricula";
@@ -759,7 +759,7 @@
             this.txtComunidadIndigenaMatricula.BorderSize = 1;
             this.txtComunidadIndigenaMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtComunidadIndigenaMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtComunidadIndigenaMatricula.Location = new System.Drawing.Point(996, 891);
+            this.txtComunidadIndigenaMatricula.Location = new System.Drawing.Point(999, 888);
             this.txtComunidadIndigenaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtComunidadIndigenaMatricula.Multiline = false;
             this.txtComunidadIndigenaMatricula.Name = "txtComunidadIndigenaMatricula";
@@ -823,7 +823,7 @@
             this.txtTerritorioIndigenaMatricula.BorderSize = 1;
             this.txtTerritorioIndigenaMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTerritorioIndigenaMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtTerritorioIndigenaMatricula.Location = new System.Drawing.Point(490, 964);
+            this.txtTerritorioIndigenaMatricula.Location = new System.Drawing.Point(494, 963);
             this.txtTerritorioIndigenaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTerritorioIndigenaMatricula.Multiline = false;
             this.txtTerritorioIndigenaMatricula.Name = "txtTerritorioIndigenaMatricula";
@@ -870,7 +870,7 @@
             "Mestizo"});
             this.cbEtniaMatricula.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbEtniaMatricula.ListTextColor = System.Drawing.Color.Black;
-            this.cbEtniaMatricula.Location = new System.Drawing.Point(466, 891);
+            this.cbEtniaMatricula.Location = new System.Drawing.Point(471, 889);
             this.cbEtniaMatricula.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbEtniaMatricula.Name = "cbEtniaMatricula";
             this.cbEtniaMatricula.Size = new System.Drawing.Size(242, 38);
@@ -908,7 +908,7 @@
             this.TxtDireccionMatricula.BorderSize = 1;
             this.TxtDireccionMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDireccionMatricula.ForeColor = System.Drawing.Color.Black;
-            this.TxtDireccionMatricula.Location = new System.Drawing.Point(449, 826);
+            this.TxtDireccionMatricula.Location = new System.Drawing.Point(429, 821);
             this.TxtDireccionMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TxtDireccionMatricula.Multiline = false;
             this.TxtDireccionMatricula.Name = "TxtDireccionMatricula";
@@ -951,7 +951,7 @@
             this.txtBarrioMatricula.BorderSize = 1;
             this.txtBarrioMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBarrioMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtBarrioMatricula.Location = new System.Drawing.Point(1184, 758);
+            this.txtBarrioMatricula.Location = new System.Drawing.Point(1187, 755);
             this.txtBarrioMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBarrioMatricula.Multiline = false;
             this.txtBarrioMatricula.Name = "txtBarrioMatricula";
@@ -1036,7 +1036,7 @@
             this.txtTelefonoMatricula.BorderSize = 1;
             this.txtTelefonoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefonoMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtTelefonoMatricula.Location = new System.Drawing.Point(1207, 700);
+            this.txtTelefonoMatricula.Location = new System.Drawing.Point(1210, 696);
             this.txtTelefonoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTelefonoMatricula.Multiline = false;
             this.txtTelefonoMatricula.Name = "txtTelefonoMatricula";
@@ -1121,7 +1121,7 @@
             this.txtTallaMatricula.BorderSize = 1;
             this.txtTallaMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTallaMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtTallaMatricula.Location = new System.Drawing.Point(1184, 641);
+            this.txtTallaMatricula.Location = new System.Drawing.Point(1187, 639);
             this.txtTallaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTallaMatricula.Multiline = false;
             this.txtTallaMatricula.Name = "txtTallaMatricula";
@@ -1192,7 +1192,7 @@
             this.txtPesoMatricula.BorderSize = 1;
             this.txtPesoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPesoMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtPesoMatricula.Location = new System.Drawing.Point(874, 641);
+            this.txtPesoMatricula.Location = new System.Drawing.Point(875, 640);
             this.txtPesoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPesoMatricula.Multiline = false;
             this.txtPesoMatricula.Name = "txtPesoMatricula";
@@ -1236,7 +1236,7 @@
             this.mbTexbox7.Enabled = false;
             this.mbTexbox7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mbTexbox7.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox7.Location = new System.Drawing.Point(395, 641);
+            this.mbTexbox7.Location = new System.Drawing.Point(389, 641);
             this.mbTexbox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mbTexbox7.Multiline = false;
             this.mbTexbox7.Name = "mbTexbox7";
@@ -1349,7 +1349,7 @@
             this.txt1ApellidoMatricula.BorderSize = 1;
             this.txt1ApellidoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt1ApellidoMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txt1ApellidoMatricula.Location = new System.Drawing.Point(806, 527);
+            this.txt1ApellidoMatricula.Location = new System.Drawing.Point(800, 527);
             this.txt1ApellidoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt1ApellidoMatricula.Multiline = false;
             this.txt1ApellidoMatricula.Name = "txt1ApellidoMatricula";
@@ -1392,7 +1392,7 @@
             this.txt1NombreMatricula.BorderSize = 1;
             this.txt1NombreMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt1NombreMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txt1NombreMatricula.Location = new System.Drawing.Point(395, 529);
+            this.txt1NombreMatricula.Location = new System.Drawing.Point(389, 529);
             this.txt1NombreMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt1NombreMatricula.Multiline = false;
             this.txt1NombreMatricula.Name = "txt1NombreMatricula";
@@ -1446,7 +1446,7 @@
             this.txtCedulaMatricula.BorderSize = 1;
             this.txtCedulaMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCedulaMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtCedulaMatricula.Location = new System.Drawing.Point(449, 475);
+            this.txtCedulaMatricula.Location = new System.Drawing.Point(437, 471);
             this.txtCedulaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCedulaMatricula.Multiline = false;
             this.txtCedulaMatricula.Name = "txtCedulaMatricula";

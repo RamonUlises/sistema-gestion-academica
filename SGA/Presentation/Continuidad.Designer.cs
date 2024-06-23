@@ -163,9 +163,9 @@
             this.panel11.Controls.Add(this.panel21);
             this.panel11.Controls.Add(this.txtCodigoComprobante);
             this.panel11.Controls.Add(this.panel22);
-            this.panel11.Location = new System.Drawing.Point(105, 48);
+            this.panel11.Location = new System.Drawing.Point(105, 83);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1427, 718);
+            this.panel11.Size = new System.Drawing.Size(1427, 683);
             this.panel11.TabIndex = 151;
             this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
             // 
@@ -207,7 +207,7 @@
             this.txtTurnoComprobante.PasswordChar = false;
             this.txtTurnoComprobante.PlaceholderColor = System.Drawing.Color.DimGray;
             this.txtTurnoComprobante.PlaceholderText = "";
-            this.txtTurnoComprobante.Size = new System.Drawing.Size(224, 38);
+            this.txtTurnoComprobante.Size = new System.Drawing.Size(200, 38);
             this.txtTurnoComprobante.TabIndex = 200;
             this.txtTurnoComprobante.UnderlineStyle = false;
             // 
@@ -228,7 +228,7 @@
             this.txtSeccionComprobante.PasswordChar = false;
             this.txtSeccionComprobante.PlaceholderColor = System.Drawing.Color.DimGray;
             this.txtSeccionComprobante.PlaceholderText = "";
-            this.txtSeccionComprobante.Size = new System.Drawing.Size(224, 38);
+            this.txtSeccionComprobante.Size = new System.Drawing.Size(200, 38);
             this.txtSeccionComprobante.TabIndex = 199;
             this.txtSeccionComprobante.UnderlineStyle = false;
             this.txtSeccionComprobante._TextChanged += new System.EventHandler(this.mbTexbox7__TextChanged);
@@ -640,7 +640,7 @@
             this.cbGradoReingreso.IconColor = System.Drawing.Color.Black;
             this.cbGradoReingreso.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbGradoReingreso.ListTextColor = System.Drawing.Color.Black;
-            this.cbGradoReingreso.Location = new System.Drawing.Point(545, 380);
+            this.cbGradoReingreso.Location = new System.Drawing.Point(587, 379);
             this.cbGradoReingreso.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbGradoReingreso.Name = "cbGradoReingreso";
             this.cbGradoReingreso.Padding = new System.Windows.Forms.Padding(1);
@@ -659,7 +659,7 @@
             this.cbSeccionReingreso.IconColor = System.Drawing.Color.Black;
             this.cbSeccionReingreso.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbSeccionReingreso.ListTextColor = System.Drawing.Color.Black;
-            this.cbSeccionReingreso.Location = new System.Drawing.Point(1036, 381);
+            this.cbSeccionReingreso.Location = new System.Drawing.Point(1039, 381);
             this.cbSeccionReingreso.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbSeccionReingreso.Name = "cbSeccionReingreso";
             this.cbSeccionReingreso.Padding = new System.Windows.Forms.Padding(1);
@@ -697,7 +697,7 @@
             this.cbTurnoReingreso.IconColor = System.Drawing.Color.Black;
             this.cbTurnoReingreso.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbTurnoReingreso.ListTextColor = System.Drawing.Color.Black;
-            this.cbTurnoReingreso.Location = new System.Drawing.Point(1036, 324);
+            this.cbTurnoReingreso.Location = new System.Drawing.Point(1040, 324);
             this.cbTurnoReingreso.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbTurnoReingreso.Name = "cbTurnoReingreso";
             this.cbTurnoReingreso.Padding = new System.Windows.Forms.Padding(1);
@@ -793,7 +793,7 @@
             this.panel10.Controls.Add(this.label8);
             this.panel10.Location = new System.Drawing.Point(420, 376);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(109, 45);
+            this.panel10.Size = new System.Drawing.Size(156, 45);
             this.panel10.TabIndex = 131;
             // 
             // label8
@@ -835,7 +835,7 @@
             this.txtNombresAlumnoReingreso.BorderSize = 1;
             this.txtNombresAlumnoReingreso.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombresAlumnoReingreso.ForeColor = System.Drawing.Color.Black;
-            this.txtNombresAlumnoReingreso.Location = new System.Drawing.Point(647, 255);
+            this.txtNombresAlumnoReingreso.Location = new System.Drawing.Point(639, 255);
             this.txtNombresAlumnoReingreso.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombresAlumnoReingreso.Multiline = false;
             this.txtNombresAlumnoReingreso.Name = "txtNombresAlumnoReingreso";
@@ -843,7 +843,7 @@
             this.txtNombresAlumnoReingreso.PasswordChar = false;
             this.txtNombresAlumnoReingreso.PlaceholderColor = System.Drawing.Color.DimGray;
             this.txtNombresAlumnoReingreso.PlaceholderText = "";
-            this.txtNombresAlumnoReingreso.Size = new System.Drawing.Size(589, 38);
+            this.txtNombresAlumnoReingreso.Size = new System.Drawing.Size(592, 38);
             this.txtNombresAlumnoReingreso.TabIndex = 119;
             this.txtNombresAlumnoReingreso.UnderlineStyle = false;
             // 
@@ -875,7 +875,7 @@
             this.txtCodigoAlumnoReingreso.BorderSize = 1;
             this.txtCodigoAlumnoReingreso.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoAlumnoReingreso.ForeColor = System.Drawing.Color.Black;
-            this.txtCodigoAlumnoReingreso.Location = new System.Drawing.Point(647, 198);
+            this.txtCodigoAlumnoReingreso.Location = new System.Drawing.Point(639, 198);
             this.txtCodigoAlumnoReingreso.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCodigoAlumnoReingreso.Multiline = false;
             this.txtCodigoAlumnoReingreso.Name = "txtCodigoAlumnoReingreso";
@@ -917,7 +917,7 @@
             this.mbModalidadReingreso.IconColor = System.Drawing.Color.Black;
             this.mbModalidadReingreso.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.mbModalidadReingreso.ListTextColor = System.Drawing.Color.Black;
-            this.mbModalidadReingreso.Location = new System.Drawing.Point(596, 324);
+            this.mbModalidadReingreso.Location = new System.Drawing.Point(587, 328);
             this.mbModalidadReingreso.MinimumSize = new System.Drawing.Size(200, 30);
             this.mbModalidadReingreso.Name = "mbModalidadReingreso";
             this.mbModalidadReingreso.Padding = new System.Windows.Forms.Padding(1);

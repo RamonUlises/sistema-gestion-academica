@@ -321,7 +321,7 @@
             this.cbPeriodoTraslado.IconColor = System.Drawing.Color.Gray;
             this.cbPeriodoTraslado.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cbPeriodoTraslado.ListTextColor = System.Drawing.Color.DimGray;
-            this.cbPeriodoTraslado.Location = new System.Drawing.Point(223, 1150);
+            this.cbPeriodoTraslado.Location = new System.Drawing.Point(225, 1150);
             this.cbPeriodoTraslado.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbPeriodoTraslado.Name = "cbPeriodoTraslado";
             this.cbPeriodoTraslado.Padding = new System.Windows.Forms.Padding(1);
@@ -424,7 +424,7 @@
             this.txtTallaMatricula.BorderSize = 1;
             this.txtTallaMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTallaMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtTallaMatricula.Location = new System.Drawing.Point(489, 1649);
+            this.txtTallaMatricula.Location = new System.Drawing.Point(495, 1649);
             this.txtTallaMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTallaMatricula.Multiline = false;
             this.txtTallaMatricula.Name = "txtTallaMatricula";
@@ -464,7 +464,7 @@
             this.txtPesoMatricula.BorderSize = 1;
             this.txtPesoMatricula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPesoMatricula.ForeColor = System.Drawing.Color.Black;
-            this.txtPesoMatricula.Location = new System.Drawing.Point(179, 1649);
+            this.txtPesoMatricula.Location = new System.Drawing.Point(183, 1649);
             this.txtPesoMatricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPesoMatricula.Multiline = false;
             this.txtPesoMatricula.Name = "txtPesoMatricula";
@@ -505,7 +505,7 @@
             this.mbTexbox21.Enabled = false;
             this.mbTexbox21.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mbTexbox21.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox21.Location = new System.Drawing.Point(621, 1475);
+            this.mbTexbox21.Location = new System.Drawing.Point(621, 1471);
             this.mbTexbox21.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mbTexbox21.Multiline = false;
             this.mbTexbox21.Name = "mbTexbox21";
@@ -527,7 +527,7 @@
             this.mbTexbox19.Enabled = false;
             this.mbTexbox19.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mbTexbox19.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox19.Location = new System.Drawing.Point(153, 1534);
+            this.mbTexbox19.Location = new System.Drawing.Point(154, 1532);
             this.mbTexbox19.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mbTexbox19.Multiline = false;
             this.mbTexbox19.Name = "mbTexbox19";
@@ -549,7 +549,7 @@
             this.mbTexbox18.Enabled = false;
             this.mbTexbox18.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mbTexbox18.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox18.Location = new System.Drawing.Point(621, 1539);
+            this.mbTexbox18.Location = new System.Drawing.Point(621, 1536);
             this.mbTexbox18.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mbTexbox18.Multiline = false;
             this.mbTexbox18.Name = "mbTexbox18";
@@ -571,7 +571,7 @@
             this.mbTexbox17.Enabled = false;
             this.mbTexbox17.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mbTexbox17.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox17.Location = new System.Drawing.Point(988, 1533);
+            this.mbTexbox17.Location = new System.Drawing.Point(991, 1533);
             this.mbTexbox17.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mbTexbox17.Multiline = false;
             this.mbTexbox17.Name = "mbTexbox17";
@@ -634,7 +634,7 @@
             this.mbTexbox15.Enabled = false;
             this.mbTexbox15.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mbTexbox15.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox15.Location = new System.Drawing.Point(901, 1288);
+            this.mbTexbox15.Location = new System.Drawing.Point(898, 1287);
             this.mbTexbox15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mbTexbox15.Multiline = false;
             this.mbTexbox15.Name = "mbTexbox15";
@@ -912,7 +912,7 @@
             this.txtNombreCentroDatosAcademicos.Enabled = false;
             this.txtNombreCentroDatosAcademicos.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreCentroDatosAcademicos.ForeColor = System.Drawing.Color.Black;
-            this.txtNombreCentroDatosAcademicos.Location = new System.Drawing.Point(1020, 1346);
+            this.txtNombreCentroDatosAcademicos.Location = new System.Drawing.Point(1002, 1348);
             this.txtNombreCentroDatosAcademicos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombreCentroDatosAcademicos.Multiline = false;
             this.txtNombreCentroDatosAcademicos.Name = "txtNombreCentroDatosAcademicos";
@@ -920,7 +920,7 @@
             this.txtNombreCentroDatosAcademicos.PasswordChar = false;
             this.txtNombreCentroDatosAcademicos.PlaceholderColor = System.Drawing.Color.DimGray;
             this.txtNombreCentroDatosAcademicos.PlaceholderText = "";
-            this.txtNombreCentroDatosAcademicos.Size = new System.Drawing.Size(305, 38);
+            this.txtNombreCentroDatosAcademicos.Size = new System.Drawing.Size(278, 38);
             this.txtNombreCentroDatosAcademicos.TabIndex = 164;
             this.txtNombreCentroDatosAcademicos.UnderlineStyle = false;
             // 
@@ -928,9 +928,9 @@
             // 
             this.panel36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel36.Controls.Add(this.label42);
-            this.panel36.Location = new System.Drawing.Point(748, 1344);
+            this.panel36.Location = new System.Drawing.Point(757, 1346);
             this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(257, 45);
+            this.panel36.Size = new System.Drawing.Size(230, 45);
             this.panel36.TabIndex = 163;
             // 
             // label42
@@ -953,7 +953,7 @@
             this.txtCodigoEstudianteDatosAcademicos.Enabled = false;
             this.txtCodigoEstudianteDatosAcademicos.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoEstudianteDatosAcademicos.ForeColor = System.Drawing.Color.Black;
-            this.txtCodigoEstudianteDatosAcademicos.Location = new System.Drawing.Point(388, 1354);
+            this.txtCodigoEstudianteDatosAcademicos.Location = new System.Drawing.Point(390, 1352);
             this.txtCodigoEstudianteDatosAcademicos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCodigoEstudianteDatosAcademicos.Multiline = false;
             this.txtCodigoEstudianteDatosAcademicos.Name = "txtCodigoEstudianteDatosAcademicos";
@@ -994,7 +994,7 @@
             this.txtFechaMatriculaEstudianteDatosAcademicos.Enabled = false;
             this.txtFechaMatriculaEstudianteDatosAcademicos.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFechaMatriculaEstudianteDatosAcademicos.ForeColor = System.Drawing.Color.Black;
-            this.txtFechaMatriculaEstudianteDatosAcademicos.Location = new System.Drawing.Point(279, 1294);
+            this.txtFechaMatriculaEstudianteDatosAcademicos.Location = new System.Drawing.Point(277, 1295);
             this.txtFechaMatriculaEstudianteDatosAcademicos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFechaMatriculaEstudianteDatosAcademicos.Multiline = false;
             this.txtFechaMatriculaEstudianteDatosAcademicos.Name = "txtFechaMatriculaEstudianteDatosAcademicos";
@@ -1053,7 +1053,7 @@
             this.txtMotivoComprobante.BorderSize = 1;
             this.txtMotivoComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMotivoComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txtMotivoComprobante.Location = new System.Drawing.Point(220, 1089);
+            this.txtMotivoComprobante.Location = new System.Drawing.Point(222, 1089);
             this.txtMotivoComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMotivoComprobante.Multiline = false;
             this.txtMotivoComprobante.Name = "txtMotivoComprobante";
@@ -1093,7 +1093,7 @@
             this.txtGradoComprobante.BorderSize = 1;
             this.txtGradoComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGradoComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txtGradoComprobante.Location = new System.Drawing.Point(162, 1035);
+            this.txtGradoComprobante.Location = new System.Drawing.Point(166, 1033);
             this.txtGradoComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtGradoComprobante.Multiline = false;
             this.txtGradoComprobante.Name = "txtGradoComprobante";
@@ -1133,7 +1133,7 @@
             this.txtModalidadComprobante.BorderSize = 1;
             this.txtModalidadComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtModalidadComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txtModalidadComprobante.Location = new System.Drawing.Point(806, 988);
+            this.txtModalidadComprobante.Location = new System.Drawing.Point(810, 986);
             this.txtModalidadComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtModalidadComprobante.Multiline = false;
             this.txtModalidadComprobante.Name = "txtModalidadComprobante";
@@ -1173,7 +1173,7 @@
             this.txtDepartamentoComprobante.BorderSize = 1;
             this.txtDepartamentoComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDepartamentoComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txtDepartamentoComprobante.Location = new System.Drawing.Point(353, 806);
+            this.txtDepartamentoComprobante.Location = new System.Drawing.Point(359, 806);
             this.txtDepartamentoComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDepartamentoComprobante.Multiline = false;
             this.txtDepartamentoComprobante.Name = "txtDepartamentoComprobante";
@@ -1194,7 +1194,7 @@
             this.txtMunicipioComprobante.BorderSize = 1;
             this.txtMunicipioComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMunicipioComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txtMunicipioComprobante.Location = new System.Drawing.Point(969, 806);
+            this.txtMunicipioComprobante.Location = new System.Drawing.Point(973, 805);
             this.txtMunicipioComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMunicipioComprobante.Multiline = false;
             this.txtMunicipioComprobante.Name = "txtMunicipioComprobante";
@@ -1215,7 +1215,7 @@
             this.txtNivelEducativoComprobante.BorderSize = 1;
             this.txtNivelEducativoComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNivelEducativoComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txtNivelEducativoComprobante.Location = new System.Drawing.Point(353, 982);
+            this.txtNivelEducativoComprobante.Location = new System.Drawing.Point(358, 980);
             this.txtNivelEducativoComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNivelEducativoComprobante.Multiline = false;
             this.txtNivelEducativoComprobante.Name = "txtNivelEducativoComprobante";
@@ -1255,7 +1255,7 @@
             this.txtNombreCentroComprobante.BorderSize = 1;
             this.txtNombreCentroComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreCentroComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txtNombreCentroComprobante.Location = new System.Drawing.Point(385, 920);
+            this.txtNombreCentroComprobante.Location = new System.Drawing.Point(387, 920);
             this.txtNombreCentroComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombreCentroComprobante.Multiline = false;
             this.txtNombreCentroComprobante.Name = "txtNombreCentroComprobante";
@@ -1295,7 +1295,7 @@
             this.mbTexbox5.BorderSize = 1;
             this.mbTexbox5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mbTexbox5.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox5.Location = new System.Drawing.Point(969, 860);
+            this.mbTexbox5.Location = new System.Drawing.Point(974, 860);
             this.mbTexbox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mbTexbox5.Multiline = false;
             this.mbTexbox5.Name = "mbTexbox5";
@@ -1335,7 +1335,7 @@
             this.mbTexbox4.BorderSize = 1;
             this.mbTexbox4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mbTexbox4.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox4.Location = new System.Drawing.Point(353, 863);
+            this.mbTexbox4.Location = new System.Drawing.Point(360, 863);
             this.mbTexbox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mbTexbox4.Multiline = false;
             this.mbTexbox4.Name = "mbTexbox4";
@@ -1413,7 +1413,7 @@
             this.txtDireccionComprobante.BorderSize = 1;
             this.txtDireccionComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDireccionComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txtDireccionComprobante.Location = new System.Drawing.Point(353, 744);
+            this.txtDireccionComprobante.Location = new System.Drawing.Point(358, 744);
             this.txtDireccionComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDireccionComprobante.Multiline = false;
             this.txtDireccionComprobante.Name = "txtDireccionComprobante";
@@ -1453,7 +1453,7 @@
             this.txt1ApellidoComprobante.BorderSize = 1;
             this.txt1ApellidoComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt1ApellidoComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txt1ApellidoComprobante.Location = new System.Drawing.Point(746, 571);
+            this.txt1ApellidoComprobante.Location = new System.Drawing.Point(751, 571);
             this.txt1ApellidoComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt1ApellidoComprobante.Multiline = false;
             this.txt1ApellidoComprobante.Name = "txt1ApellidoComprobante";
@@ -1474,7 +1474,7 @@
             this.txt2ApellidoComprobante.BorderSize = 1;
             this.txt2ApellidoComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt2ApellidoComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txt2ApellidoComprobante.Location = new System.Drawing.Point(746, 626);
+            this.txt2ApellidoComprobante.Location = new System.Drawing.Point(751, 626);
             this.txt2ApellidoComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt2ApellidoComprobante.Multiline = false;
             this.txt2ApellidoComprobante.Name = "txt2ApellidoComprobante";
@@ -1505,7 +1505,7 @@
             this.txtCedulaComprobante.BorderSize = 1;
             this.txtCedulaComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCedulaComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txtCedulaComprobante.Location = new System.Drawing.Point(314, 519);
+            this.txtCedulaComprobante.Location = new System.Drawing.Point(318, 517);
             this.txtCedulaComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCedulaComprobante.Multiline = false;
             this.txtCedulaComprobante.Name = "txtCedulaComprobante";
@@ -1545,7 +1545,7 @@
             this.txtFechaNacimientoComprobante.BorderSize = 1;
             this.txtFechaNacimientoComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFechaNacimientoComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txtFechaNacimientoComprobante.Location = new System.Drawing.Point(236, 683);
+            this.txtFechaNacimientoComprobante.Location = new System.Drawing.Point(241, 685);
             this.txtFechaNacimientoComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFechaNacimientoComprobante.Multiline = false;
             this.txtFechaNacimientoComprobante.Name = "txtFechaNacimientoComprobante";
@@ -1604,7 +1604,7 @@
             this.txt2NombreComprobante.BorderSize = 1;
             this.txt2NombreComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt2NombreComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txt2NombreComprobante.Location = new System.Drawing.Point(212, 628);
+            this.txt2NombreComprobante.Location = new System.Drawing.Point(212, 626);
             this.txt2NombreComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt2NombreComprobante.Multiline = false;
             this.txt2NombreComprobante.Name = "txt2NombreComprobante";
@@ -1704,7 +1704,7 @@
             this.txtCodigoComprobante.Enabled = false;
             this.txtCodigoComprobante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoComprobante.ForeColor = System.Drawing.Color.Black;
-            this.txtCodigoComprobante.Location = new System.Drawing.Point(314, 462);
+            this.txtCodigoComprobante.Location = new System.Drawing.Point(317, 460);
             this.txtCodigoComprobante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCodigoComprobante.Multiline = false;
             this.txtCodigoComprobante.Name = "txtCodigoComprobante";

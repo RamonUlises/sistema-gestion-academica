@@ -243,7 +243,7 @@
             this.cbSeccionDatosAcademicos.IconColor = System.Drawing.Color.Black;
             this.cbSeccionDatosAcademicos.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbSeccionDatosAcademicos.ListTextColor = System.Drawing.Color.Black;
-            this.cbSeccionDatosAcademicos.Location = new System.Drawing.Point(1157, 467);
+            this.cbSeccionDatosAcademicos.Location = new System.Drawing.Point(1162, 467);
             this.cbSeccionDatosAcademicos.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbSeccionDatosAcademicos.Name = "cbSeccionDatosAcademicos";
             this.cbSeccionDatosAcademicos.Padding = new System.Windows.Forms.Padding(1);
@@ -323,7 +323,7 @@
             this.cbTurnoDatosAcademicos.IconColor = System.Drawing.Color.Black;
             this.cbTurnoDatosAcademicos.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbTurnoDatosAcademicos.ListTextColor = System.Drawing.Color.Black;
-            this.cbTurnoDatosAcademicos.Location = new System.Drawing.Point(346, 473);
+            this.cbTurnoDatosAcademicos.Location = new System.Drawing.Point(351, 473);
             this.cbTurnoDatosAcademicos.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbTurnoDatosAcademicos.Name = "cbTurnoDatosAcademicos";
             this.cbTurnoDatosAcademicos.Padding = new System.Windows.Forms.Padding(1);
@@ -343,7 +343,7 @@
             this.cbModalidadDatosAcademicos.IconColor = System.Drawing.Color.Black;
             this.cbModalidadDatosAcademicos.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbModalidadDatosAcademicos.ListTextColor = System.Drawing.Color.Black;
-            this.cbModalidadDatosAcademicos.Location = new System.Drawing.Point(821, 412);
+            this.cbModalidadDatosAcademicos.Location = new System.Drawing.Point(819, 412);
             this.cbModalidadDatosAcademicos.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbModalidadDatosAcademicos.Name = "cbModalidadDatosAcademicos";
             this.cbModalidadDatosAcademicos.Padding = new System.Windows.Forms.Padding(1);
@@ -401,7 +401,7 @@
             this.txtNivelEducativoDatosAcademicos.BorderSize = 1;
             this.txtNivelEducativoDatosAcademicos.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNivelEducativoDatosAcademicos.ForeColor = System.Drawing.Color.Black;
-            this.txtNivelEducativoDatosAcademicos.Location = new System.Drawing.Point(416, 405);
+            this.txtNivelEducativoDatosAcademicos.Location = new System.Drawing.Point(412, 405);
             this.txtNivelEducativoDatosAcademicos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNivelEducativoDatosAcademicos.Multiline = false;
             this.txtNivelEducativoDatosAcademicos.Name = "txtNivelEducativoDatosAcademicos";
@@ -495,7 +495,7 @@
             this.txtCodigoEstudianteDatosAcademicos.BorderSize = 1;
             this.txtCodigoEstudianteDatosAcademicos.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoEstudianteDatosAcademicos.ForeColor = System.Drawing.Color.Black;
-            this.txtCodigoEstudianteDatosAcademicos.Location = new System.Drawing.Point(473, 343);
+            this.txtCodigoEstudianteDatosAcademicos.Location = new System.Drawing.Point(464, 343);
             this.txtCodigoEstudianteDatosAcademicos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCodigoEstudianteDatosAcademicos.Multiline = false;
             this.txtCodigoEstudianteDatosAcademicos.Name = "txtCodigoEstudianteDatosAcademicos";
@@ -537,7 +537,7 @@
             this.txtFechaMatriculaEstudianteDatosAcademicos.BorderSize = 1;
             this.txtFechaMatriculaEstudianteDatosAcademicos.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFechaMatriculaEstudianteDatosAcademicos.ForeColor = System.Drawing.Color.Black;
-            this.txtFechaMatriculaEstudianteDatosAcademicos.Location = new System.Drawing.Point(535, 172);
+            this.txtFechaMatriculaEstudianteDatosAcademicos.Location = new System.Drawing.Point(530, 172);
             this.txtFechaMatriculaEstudianteDatosAcademicos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFechaMatriculaEstudianteDatosAcademicos.Multiline = false;
             this.txtFechaMatriculaEstudianteDatosAcademicos.Name = "txtFechaMatriculaEstudianteDatosAcademicos";
@@ -545,7 +545,7 @@
             this.txtFechaMatriculaEstudianteDatosAcademicos.PasswordChar = false;
             this.txtFechaMatriculaEstudianteDatosAcademicos.PlaceholderColor = System.Drawing.Color.DimGray;
             this.txtFechaMatriculaEstudianteDatosAcademicos.PlaceholderText = "";
-            this.txtFechaMatriculaEstudianteDatosAcademicos.Size = new System.Drawing.Size(271, 38);
+            this.txtFechaMatriculaEstudianteDatosAcademicos.Size = new System.Drawing.Size(287, 38);
             this.txtFechaMatriculaEstudianteDatosAcademicos.TabIndex = 63;
             this.txtFechaMatriculaEstudianteDatosAcademicos.UnderlineStyle = false;
             // 
@@ -577,7 +577,7 @@
             this.panel30.Controls.Add(this.label25);
             this.panel30.Location = new System.Drawing.Point(241, 229);
             this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(265, 45);
+            this.panel30.Size = new System.Drawing.Size(280, 45);
             this.panel30.TabIndex = 66;
             // 
             // label25
@@ -623,7 +623,7 @@
             this.mbBuscarEstudiante.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.mbBuscarEstudiante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mbBuscarEstudiante.ForeColor = System.Drawing.Color.White;
-            this.mbBuscarEstudiante.Location = new System.Drawing.Point(843, 234);
+            this.mbBuscarEstudiante.Location = new System.Drawing.Point(843, 226);
             this.mbBuscarEstudiante.Name = "mbBuscarEstudiante";
             this.mbBuscarEstudiante.Size = new System.Drawing.Size(133, 41);
             this.mbBuscarEstudiante.TabIndex = 118;
@@ -642,7 +642,7 @@
             this.txtNombresDelEstudiante.Enabled = false;
             this.txtNombresDelEstudiante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombresDelEstudiante.ForeColor = System.Drawing.Color.Black;
-            this.txtNombresDelEstudiante.Location = new System.Drawing.Point(539, 290);
+            this.txtNombresDelEstudiante.Location = new System.Drawing.Point(518, 286);
             this.txtNombresDelEstudiante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombresDelEstudiante.Multiline = false;
             this.txtNombresDelEstudiante.Name = "txtNombresDelEstudiante";
@@ -663,7 +663,7 @@
             this.txtCodigoTemporalEstudiante.BorderSize = 1;
             this.txtCodigoTemporalEstudiante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoTemporalEstudiante.ForeColor = System.Drawing.Color.Black;
-            this.txtCodigoTemporalEstudiante.Location = new System.Drawing.Point(535, 234);
+            this.txtCodigoTemporalEstudiante.Location = new System.Drawing.Point(530, 230);
             this.txtCodigoTemporalEstudiante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCodigoTemporalEstudiante.Multiline = false;
             this.txtCodigoTemporalEstudiante.Name = "txtCodigoTemporalEstudiante";
@@ -686,7 +686,7 @@
             this.txtNombreCentroDatosAcademicos.IconColor = System.Drawing.Color.Black;
             this.txtNombreCentroDatosAcademicos.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.txtNombreCentroDatosAcademicos.ListTextColor = System.Drawing.Color.Black;
-            this.txtNombreCentroDatosAcademicos.Location = new System.Drawing.Point(1122, 351);
+            this.txtNombreCentroDatosAcademicos.Location = new System.Drawing.Point(1106, 346);
             this.txtNombreCentroDatosAcademicos.MinimumSize = new System.Drawing.Size(200, 30);
             this.txtNombreCentroDatosAcademicos.Name = "txtNombreCentroDatosAcademicos";
             this.txtNombreCentroDatosAcademicos.Padding = new System.Windows.Forms.Padding(1);

@@ -17,50 +17,14 @@ namespace SGA
         public Traslado()
         {
             InitializeComponent();
-            customizarDiseno();
+           
          
             PanelHelper.SetRoundPanel(panel2, 10);
             PanelHelper.SetRoundPanel(panel3, 10);
             PanelHelper.SetRoundPanel(panel4, 10);
             PanelHelper.SetRoundPanel(panel5, 10);
             PanelHelper.SetRoundPanel(panel6, 10);
-            PanelHelper.SetRoundPanel(panel7, 10);
-            PanelHelper.SetRoundPanel(panel8, 10);
-            PanelHelper.SetRoundPanel(panel9, 10);
-            PanelHelper.SetRoundPanel(panel10, 10);
-            PanelHelper.SetRoundPanel(panel11, 10);
-            PanelHelper.SetRoundPanel(panel12, 10);
-            PanelHelper.SetRoundPanel(panel13, 10);
-            PanelHelper.SetRoundPanel(panel14, 10);
-            PanelHelper.SetRoundPanel(panel15, 10);
-            PanelHelper.SetRoundPanel(panel16, 10);
-            PanelHelper.SetRoundPanel(panel17, 10);
-            PanelHelper.SetRoundPanel(panel18, 10);
-            PanelHelper.SetRoundPanel(panel19, 10);
-            PanelHelper.SetRoundPanel(panel20, 10);
-            PanelHelper.SetRoundPanel(panel21, 10);
-            PanelHelper.SetRoundPanel(panel22, 10);
-            PanelHelper.SetRoundPanel(panel23, 10);
-            PanelHelper.SetRoundPanel(panel24, 10);
-            PanelHelper.SetRoundPanel(panel25, 10);
-            PanelHelper.SetRoundPanel(panel26, 10);
-            PanelHelper.SetRoundPanel(panel27, 10);
-            PanelHelper.SetRoundPanel(panel28, 10);
-            PanelHelper.SetRoundPanel(panel29, 10);
-            PanelHelper.SetRoundPanel(panel30, 10);
-            PanelHelper.SetRoundPanel(panel31, 10);
-            PanelHelper.SetRoundPanel(panel32, 10);
-            PanelHelper.SetRoundPanel(panel33, 10);
-            PanelHelper.SetRoundPanel(panel34, 10);
-            PanelHelper.SetRoundPanel(panel35, 10);
-            PanelHelper.SetRoundPanel(panel36, 10);
-            PanelHelper.SetRoundPanel(panel37, 10);
-            PanelHelper.SetRoundPanel(panel38, 10);
-            PanelHelper.SetRoundPanel(panel39, 10);
-            PanelHelper.SetRoundPanel(panel40, 10);
-            PanelHelper.SetRoundPanel(panel41, 10);
-            PanelHelper.SetRoundPanel(panel42, 10);
-            PanelHelper.SetRoundPanel(panel44, 10);
+       
 
             LlenarPeriodos();
             LlenarCentros();
@@ -95,21 +59,13 @@ namespace SGA
                 cbPeriodoTraslado.Items.Add(periodo);
             }
         }
-        private void customizarDiseno()
-        {
-            panel7.Visible = false;
-        }
-        private void hideSubMenu()
-        {
-            if (panel7.Visible == true)
-                panel7.Visible = false;
-        }
+     
        
         private void showSubMenu(System.Windows.Forms.Panel subMenu)
         {
             if (subMenu.Visible == false)
             {
-                hideSubMenu();
+             
              
                 subMenu.Visible = true;
             }
@@ -160,23 +116,23 @@ namespace SGA
 
         private void mbButton2_Click(object sender, EventArgs e)
         {
-            hideSubMenu();
+          
         }
 
         private void btnComprobanteTraslado_Click_1(object sender, EventArgs e)
         {
-            showSubMenu(panel7);
+            
 
         }
 
         private void btnComprobanteTraslado_Click_2(object sender, EventArgs e)
         {
-            showSubMenu(panel7);
+            
         }
 
         private void btnComprobanteTraslado_Click_3(object sender, EventArgs e)
         {
-            showSubMenu(panel7);
+            
 
         }
 
@@ -289,7 +245,7 @@ namespace SGA
 
             if (resss)
             {
-                showSubMenu(panel7);
+               
                 LlenarComprobante(traslado.CodigoEstudiante);
             }
 

@@ -853,5 +853,30 @@ namespace SGA.Presentation
         {
 
         }
+
+        private void cbSeccion_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbTurno_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbCentroEducativo_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbGrado_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbModalidad_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

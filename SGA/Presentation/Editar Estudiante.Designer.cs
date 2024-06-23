@@ -277,13 +277,14 @@
             "Nicaragua"});
             this.cbGrado.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbGrado.ListTextColor = System.Drawing.Color.Black;
-            this.cbGrado.Location = new System.Drawing.Point(800, 1499);
+            this.cbGrado.Location = new System.Drawing.Point(805, 1495);
             this.cbGrado.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbGrado.Name = "cbGrado";
             this.cbGrado.Padding = new System.Windows.Forms.Padding(1);
             this.cbGrado.Size = new System.Drawing.Size(200, 30);
             this.cbGrado.TabIndex = 238;
             this.cbGrado.Texts = "";
+            this.cbGrado.OnSelectedIndexChanged += new System.EventHandler(this.cbGrado_OnSelectedIndexChanged);
             // 
             // cbCentroEducativo
             // 
@@ -299,13 +300,14 @@
             "Nicaragua"});
             this.cbCentroEducativo.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbCentroEducativo.ListTextColor = System.Drawing.Color.Black;
-            this.cbCentroEducativo.Location = new System.Drawing.Point(463, 1606);
+            this.cbCentroEducativo.Location = new System.Drawing.Point(465, 1606);
             this.cbCentroEducativo.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbCentroEducativo.Name = "cbCentroEducativo";
             this.cbCentroEducativo.Padding = new System.Windows.Forms.Padding(1);
             this.cbCentroEducativo.Size = new System.Drawing.Size(573, 30);
             this.cbCentroEducativo.TabIndex = 237;
             this.cbCentroEducativo.Texts = "";
+            this.cbCentroEducativo.OnSelectedIndexChanged += new System.EventHandler(this.cbCentroEducativo_OnSelectedIndexChanged);
             // 
             // cbTurno
             // 
@@ -321,13 +323,14 @@
             "Nicaragua"});
             this.cbTurno.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbTurno.ListTextColor = System.Drawing.Color.Black;
-            this.cbTurno.Location = new System.Drawing.Point(342, 1494);
+            this.cbTurno.Location = new System.Drawing.Point(340, 1490);
             this.cbTurno.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbTurno.Name = "cbTurno";
             this.cbTurno.Padding = new System.Windows.Forms.Padding(1);
             this.cbTurno.Size = new System.Drawing.Size(250, 30);
             this.cbTurno.TabIndex = 236;
             this.cbTurno.Texts = "";
+            this.cbTurno.OnSelectedIndexChanged += new System.EventHandler(this.cbTurno_OnSelectedIndexChanged);
             // 
             // cbSeccion
             // 
@@ -343,13 +346,14 @@
             "Nicaragua"});
             this.cbSeccion.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbSeccion.ListTextColor = System.Drawing.Color.Black;
-            this.cbSeccion.Location = new System.Drawing.Point(1170, 1494);
+            this.cbSeccion.Location = new System.Drawing.Point(1177, 1490);
             this.cbSeccion.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbSeccion.Name = "cbSeccion";
             this.cbSeccion.Padding = new System.Windows.Forms.Padding(1);
             this.cbSeccion.Size = new System.Drawing.Size(200, 30);
             this.cbSeccion.TabIndex = 235;
             this.cbSeccion.Texts = "";
+            this.cbSeccion.OnSelectedIndexChanged += new System.EventHandler(this.cbSeccion_OnSelectedIndexChanged);
             // 
             // cbModalidad
             // 
@@ -365,13 +369,14 @@
             "Nicaragua"});
             this.cbModalidad.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbModalidad.ListTextColor = System.Drawing.Color.Black;
-            this.cbModalidad.Location = new System.Drawing.Point(800, 1432);
+            this.cbModalidad.Location = new System.Drawing.Point(808, 1432);
             this.cbModalidad.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbModalidad.Name = "cbModalidad";
             this.cbModalidad.Padding = new System.Windows.Forms.Padding(1);
             this.cbModalidad.Size = new System.Drawing.Size(200, 30);
             this.cbModalidad.TabIndex = 234;
             this.cbModalidad.Texts = "";
+            this.cbModalidad.OnSelectedIndexChanged += new System.EventHandler(this.cbModalidad_OnSelectedIndexChanged);
             // 
             // mbButton4
             // 
@@ -429,7 +434,7 @@
             "Nicaragua"});
             this.cbLenguaMaterna.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbLenguaMaterna.ListTextColor = System.Drawing.Color.Black;
-            this.cbLenguaMaterna.Location = new System.Drawing.Point(411, 1199);
+            this.cbLenguaMaterna.Location = new System.Drawing.Point(414, 1196);
             this.cbLenguaMaterna.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbLenguaMaterna.Name = "cbLenguaMaterna";
             this.cbLenguaMaterna.Padding = new System.Windows.Forms.Padding(1);
@@ -473,7 +478,7 @@
             "Nicaragua"});
             this.cbDiscapacidad.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbDiscapacidad.ListTextColor = System.Drawing.Color.Black;
-            this.cbDiscapacidad.Location = new System.Drawing.Point(1029, 1133);
+            this.cbDiscapacidad.Location = new System.Drawing.Point(1026, 1132);
             this.cbDiscapacidad.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbDiscapacidad.Name = "cbDiscapacidad";
             this.cbDiscapacidad.Padding = new System.Windows.Forms.Padding(1);
@@ -528,7 +533,7 @@
             "Mestizo"});
             this.cbEtnia.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbEtnia.ListTextColor = System.Drawing.Color.Black;
-            this.cbEtnia.Location = new System.Drawing.Point(474, 1125);
+            this.cbEtnia.Location = new System.Drawing.Point(478, 1123);
             this.cbEtnia.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbEtnia.Name = "cbEtnia";
             this.cbEtnia.Size = new System.Drawing.Size(242, 38);
@@ -567,7 +572,7 @@
             this.txtNacionalidad.Enabled = false;
             this.txtNacionalidad.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNacionalidad.ForeColor = System.Drawing.Color.Black;
-            this.txtNacionalidad.Location = new System.Drawing.Point(827, 999);
+            this.txtNacionalidad.Location = new System.Drawing.Point(830, 996);
             this.txtNacionalidad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNacionalidad.Multiline = false;
             this.txtNacionalidad.Name = "txtNacionalidad";
@@ -594,7 +599,7 @@
             "Nicaragua"});
             this.cbDepartamento.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbDepartamento.ListTextColor = System.Drawing.Color.Black;
-            this.cbDepartamento.Location = new System.Drawing.Point(443, 1061);
+            this.cbDepartamento.Location = new System.Drawing.Point(448, 1059);
             this.cbDepartamento.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbDepartamento.Name = "cbDepartamento";
             this.cbDepartamento.Padding = new System.Windows.Forms.Padding(1);
@@ -617,7 +622,7 @@
             "Nicaragua"});
             this.cbMunicipio.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbMunicipio.ListTextColor = System.Drawing.Color.Black;
-            this.cbMunicipio.Location = new System.Drawing.Point(853, 1055);
+            this.cbMunicipio.Location = new System.Drawing.Point(855, 1055);
             this.cbMunicipio.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbMunicipio.Name = "cbMunicipio";
             this.cbMunicipio.Padding = new System.Windows.Forms.Padding(1);
@@ -637,7 +642,7 @@
             this.cbPaisNacimento.IconColor = System.Drawing.Color.Black;
             this.cbPaisNacimento.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbPaisNacimento.ListTextColor = System.Drawing.Color.Black;
-            this.cbPaisNacimento.Location = new System.Drawing.Point(425, 1003);
+            this.cbPaisNacimento.Location = new System.Drawing.Point(424, 1002);
             this.cbPaisNacimento.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbPaisNacimento.Name = "cbPaisNacimento";
             this.cbPaisNacimento.Padding = new System.Windows.Forms.Padding(1);
@@ -655,7 +660,7 @@
             this.txtBarrio.BorderSize = 1;
             this.txtBarrio.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBarrio.ForeColor = System.Drawing.Color.Black;
-            this.txtBarrio.Location = new System.Drawing.Point(1193, 1055);
+            this.txtBarrio.Location = new System.Drawing.Point(1198, 1053);
             this.txtBarrio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBarrio.Multiline = false;
             this.txtBarrio.Name = "txtBarrio";
@@ -782,7 +787,7 @@
             this.txtComunidadIndigena.BorderSize = 1;
             this.txtComunidadIndigena.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtComunidadIndigena.ForeColor = System.Drawing.Color.Black;
-            this.txtComunidadIndigena.Location = new System.Drawing.Point(1003, 930);
+            this.txtComunidadIndigena.Location = new System.Drawing.Point(1008, 927);
             this.txtComunidadIndigena.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtComunidadIndigena.Multiline = false;
             this.txtComunidadIndigena.Name = "txtComunidadIndigena";
@@ -825,7 +830,7 @@
             this.txtTerritorioIndigena.BorderSize = 1;
             this.txtTerritorioIndigena.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTerritorioIndigena.ForeColor = System.Drawing.Color.Black;
-            this.txtTerritorioIndigena.Location = new System.Drawing.Point(500, 930);
+            this.txtTerritorioIndigena.Location = new System.Drawing.Point(504, 928);
             this.txtTerritorioIndigena.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTerritorioIndigena.Multiline = false;
             this.txtTerritorioIndigena.Name = "txtTerritorioIndigena";
@@ -868,7 +873,7 @@
             this.txtTalla.BorderSize = 1;
             this.txtTalla.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTalla.ForeColor = System.Drawing.Color.Black;
-            this.txtTalla.Location = new System.Drawing.Point(1196, 859);
+            this.txtTalla.Location = new System.Drawing.Point(1191, 856);
             this.txtTalla.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTalla.Multiline = false;
             this.txtTalla.Name = "txtTalla";
@@ -939,7 +944,7 @@
             this.txtPeso.BorderSize = 1;
             this.txtPeso.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPeso.ForeColor = System.Drawing.Color.Black;
-            this.txtPeso.Location = new System.Drawing.Point(886, 859);
+            this.txtPeso.Location = new System.Drawing.Point(881, 857);
             this.txtPeso.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPeso.Multiline = false;
             this.txtPeso.Name = "txtPeso";
@@ -1290,7 +1295,7 @@
             this.txtNivelEducativo.Enabled = false;
             this.txtNivelEducativo.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNivelEducativo.ForeColor = System.Drawing.Color.Black;
-            this.txtNivelEducativo.Location = new System.Drawing.Point(404, 1423);
+            this.txtNivelEducativo.Location = new System.Drawing.Point(402, 1425);
             this.txtNivelEducativo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNivelEducativo.Multiline = false;
             this.txtNivelEducativo.Name = "txtNivelEducativo";
@@ -1354,7 +1359,7 @@
             this.txtCodigoEstudiante.BorderSize = 1;
             this.txtCodigoEstudiante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoEstudiante.ForeColor = System.Drawing.Color.Black;
-            this.txtCodigoEstudiante.Location = new System.Drawing.Point(468, 1356);
+            this.txtCodigoEstudiante.Location = new System.Drawing.Point(465, 1359);
             this.txtCodigoEstudiante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCodigoEstudiante.Multiline = false;
             this.txtCodigoEstudiante.Name = "txtCodigoEstudiante";
@@ -1397,7 +1402,7 @@
             this.txtTelefono.BorderSize = 1;
             this.txtTelefono.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefono.ForeColor = System.Drawing.Color.Black;
-            this.txtTelefono.Location = new System.Drawing.Point(385, 745);
+            this.txtTelefono.Location = new System.Drawing.Point(384, 743);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTelefono.Multiline = false;
             this.txtTelefono.Name = "txtTelefono";
@@ -1440,7 +1445,7 @@
             this.txtDireccion.BorderSize = 1;
             this.txtDireccion.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDireccion.ForeColor = System.Drawing.Color.Black;
-            this.txtDireccion.Location = new System.Drawing.Point(548, 691);
+            this.txtDireccion.Location = new System.Drawing.Point(550, 691);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDireccion.Multiline = false;
             this.txtDireccion.Name = "txtDireccion";
@@ -1483,7 +1488,7 @@
             this.txtApellido1.BorderSize = 1;
             this.txtApellido1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellido1.ForeColor = System.Drawing.Color.Black;
-            this.txtApellido1.Location = new System.Drawing.Point(941, 519);
+            this.txtApellido1.Location = new System.Drawing.Point(943, 519);
             this.txtApellido1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtApellido1.Multiline = false;
             this.txtApellido1.Name = "txtApellido1";
@@ -1505,7 +1510,7 @@
             this.txtApellido2.BorderSize = 1;
             this.txtApellido2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellido2.ForeColor = System.Drawing.Color.Black;
-            this.txtApellido2.Location = new System.Drawing.Point(941, 574);
+            this.txtApellido2.Location = new System.Drawing.Point(944, 574);
             this.txtApellido2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtApellido2.Multiline = false;
             this.txtApellido2.Name = "txtApellido2";
@@ -1538,7 +1543,7 @@
             this.txtCedula.BorderSize = 1;
             this.txtCedula.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCedula.ForeColor = System.Drawing.Color.Black;
-            this.txtCedula.Location = new System.Drawing.Point(509, 467);
+            this.txtCedula.Location = new System.Drawing.Point(511, 464);
             this.txtCedula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCedula.Multiline = false;
             this.txtCedula.Name = "txtCedula";
@@ -1581,7 +1586,7 @@
             this.txtFechaNacimiento.BorderSize = 1;
             this.txtFechaNacimiento.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFechaNacimiento.ForeColor = System.Drawing.Color.Black;
-            this.txtFechaNacimiento.Location = new System.Drawing.Point(431, 631);
+            this.txtFechaNacimiento.Location = new System.Drawing.Point(434, 631);
             this.txtFechaNacimiento.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFechaNacimiento.Multiline = false;
             this.txtFechaNacimiento.Name = "txtFechaNacimiento";
@@ -1645,7 +1650,7 @@
             this.txtNombre2.BorderSize = 1;
             this.txtNombre2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre2.ForeColor = System.Drawing.Color.Black;
-            this.txtNombre2.Location = new System.Drawing.Point(407, 576);
+            this.txtNombre2.Location = new System.Drawing.Point(404, 574);
             this.txtNombre2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombre2.Multiline = false;
             this.txtNombre2.Name = "txtNombre2";
@@ -1709,7 +1714,7 @@
             this.txtNombre1.BorderSize = 1;
             this.txtNombre1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre1.ForeColor = System.Drawing.Color.Black;
-            this.txtNombre1.Location = new System.Drawing.Point(407, 521);
+            this.txtNombre1.Location = new System.Drawing.Point(404, 521);
             this.txtNombre1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombre1.Multiline = false;
             this.txtNombre1.Name = "txtNombre1";

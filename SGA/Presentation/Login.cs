@@ -40,6 +40,14 @@ namespace SGA.PRESENTACION
 
 
             txtUsuarioLogin.Focus();
+
+            LlenarLogin();
+        }
+
+        private void LlenarLogin()
+        {
+            txtUsuarioLogin.Text = "admin";
+            txtcontrasenaLogin.Text = "123456789";
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
