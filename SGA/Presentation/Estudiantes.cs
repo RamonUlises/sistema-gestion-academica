@@ -47,7 +47,7 @@ namespace SGA
             printDocument.PrintPage += new PrintPageEventHandler(PrintDocument1_PrintPage);
 
             // Configurar la impresión en orientación horizontal
-            //printDocument.DefaultPageSettings.Landscape = true;
+            // printDocument.DefaultPageSettings.Landscape = true;
 
             panelToPrint = pnlTraslado;
         }
