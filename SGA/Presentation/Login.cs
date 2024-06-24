@@ -41,7 +41,7 @@ namespace SGA.PRESENTACION
 
             txtUsuarioLogin.Focus();
 
-            LlenarLogin();
+            // LlenarLogin();
         }
 
         private void LlenarLogin()
