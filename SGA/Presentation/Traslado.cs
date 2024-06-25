@@ -241,13 +241,7 @@ namespace SGA
 
             string result = controllerTraslados.AgregarTraslado(traslado);
 
-            bool resss = MessageBox.Show("¿Desea imprimir el comprobante", result, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes;
-
-            if (resss)
-            {
-               
-                LlenarComprobante(traslado.CodigoEstudiante);
-            }
+            MessageBox.Show(result, "Registro exitoso");
 
             LimpiarCampos();
         }
