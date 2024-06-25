@@ -170,7 +170,7 @@
             this.iconButton5.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconButton5.Size = new System.Drawing.Size(220, 60);
             this.iconButton5.TabIndex = 5;
-            this.iconButton5.Text = "Informacion";
+            this.iconButton5.Text = "Información";
             this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton5.UseVisualStyleBackColor = true;
