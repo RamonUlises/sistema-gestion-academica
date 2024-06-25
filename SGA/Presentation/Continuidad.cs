@@ -255,7 +255,7 @@ namespace SGA
         //    memoryImage = new Bitmap(panel11.Width, panel11.Height);
         //    panel11.DrawToBitmap(memoryImage, new Rectangle(0, 0, panel11.Width, panel11.Height));
         //}
-        private void PrintDocument1_PrintPage(object sender, PrintPageEventArgs e)
+        private void PrintDocument1_PrintPage(object sender, PrintPageEventArgs e) 
         {
             // Ajustar las dimensiones para capturar solo la parte del panel que deseas imprimir
             int captureWidth = panelToPrint.Width - 2 * marginX;
@@ -296,6 +296,10 @@ namespace SGA
         private void mbButton4_Click(object sender, EventArgs e)
         {
             // Mostrar el diálogo de impresión
+
+            // esperar 2 segundos despues de la camptura de pantalla
+
+
             PrintDialog printDialog = new PrintDialog
             {
                 Document = printDocument
@@ -303,6 +307,7 @@ namespace SGA
 
             if (printDialog.ShowDialog() == DialogResult.OK)
             {
+            System.Threading.Thread.Sleep(2000);
                 printDocument.Print();
             }
         }
