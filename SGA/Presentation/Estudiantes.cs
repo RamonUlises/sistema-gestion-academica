@@ -1,4 +1,5 @@
-﻿using SGA.MBControl;
+﻿using Google.Protobuf;
+using SGA.MBControl;
 using SGA.Presentation;
 using System;
 using System.Collections.Generic;
@@ -6,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Printing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -216,8 +218,36 @@ namespace SGA
             PanelHelper.SetRoundPanel(panel, 10);
 
             estudiante.FechaNacimiento = ConvertirFecha(estudiante.FechaNacimiento);
+            estudiante.FechaMatricula = ConvertirFecha(estudiante.FechaMatricula);
+            estudiante.FechaMatriculaAcademica = ConvertirFecha(estudiante.FechaMatriculaAcademica);
             string PartidaNacimiento = (estudiante.PartidaNacimiento == true) ? "Si" : "No";
             string repite = (estudiante.Repitente == false) ? "No" : "Si";
+
+            // Cambiar fecha de formato "MM/dd/yyyy" a "dd/MM/yyyy"
+
+            DateTime parsedDate;
+
+            // Parsear la fecha de formato MM/dd/yyyy a DateTime
+            if (DateTime.TryParseExact(estudiante.FechaNacimiento, "M/d/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out parsedDate))
+            {
+                // Convertir la fecha a formato dd/MM/yyyy y asegurar que siempre tenga dos dígitos para día y mes
+                string outputDate = parsedDate.ToString("dd/MM/yyyy");
+                estudiante.FechaNacimiento = outputDate;
+            }
+
+            if(DateTime.TryParseExact(estudiante.FechaMatricula, "M/d/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out parsedDate))
+            {
+                string outputDate = parsedDate.ToString("dd/MM/yyyy");
+                estudiante.FechaMatricula = outputDate;
+            }
+
+            if (DateTime.TryParseExact(estudiante.FechaMatriculaAcademica, "M/d/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out parsedDate))
+            {
+                string outputDate = parsedDate.ToString("dd/MM/yyyy");
+                estudiante.FechaMatriculaAcademica = outputDate;
+            }
+
+
 
             // Agregar las etiquetas al panel
             panel.Controls.Add(CrearRichLabel(100, 60, "Nombre", estudiante.Nombres));
@@ -226,7 +256,7 @@ namespace SGA
             panel.Controls.Add(CrearRichLabel(550, 85, "Direccion", estudiante.Direccion));
             panel.Controls.Add(CrearRichLabel(100, 110, "Telefono", estudiante.Telefono));
             panel.Controls.Add(CrearRichLabel(550, 110, "Partida de Nacimiento", PartidaNacimiento));
-            panel.Controls.Add(CrearRichLabel(100, 135, "Fecha de Matricula", ConvertirFecha(estudiante.FechaMatricula)));
+            panel.Controls.Add(CrearRichLabel(100, 135, "Fecha de Matricula", estudiante.FechaMatricula));
             panel.Controls.Add(CrearRichLabel(550, 135, "Barrio", estudiante.Barrio));
             panel.Controls.Add(CrearRichLabel(100, 160, "Peso", estudiante.Peso + "Kg"));
             panel.Controls.Add(CrearRichLabel(550, 160, "Talla", estudiante.Talla + "m"));
@@ -244,7 +274,7 @@ namespace SGA
             panel.Controls.Add(CrearRichLabel(550, 310, "Cedula Tutor", estudiante.CedulaTutor));
             panel.Controls.Add(CrearRichLabel(100, 335, "Telefono Tutor", estudiante.TelefonoTutor));
             panel.Controls.Add(CrearRichLabel(550, 335, "Codigo Estudiante", estudiante.CodigoEstudiante));
-            panel.Controls.Add(CrearRichLabel(100, 360, "Fecha Matricula Academica", ConvertirFecha(estudiante.FechaMatriculaAcademica)));
+            panel.Controls.Add(CrearRichLabel(100, 360, "Fecha Matricula Academica", estudiante.FechaMatriculaAcademica));
             panel.Controls.Add(CrearRichLabel(550, 360, "Nivel Educativo", estudiante.NivelEducativo));
             panel.Controls.Add(CrearRichLabel(100, 385, "Repitente", repite));
             panel.Controls.Add(CrearRichLabel(550, 385, "Modalidad", estudiante.Modalidad));
@@ -311,7 +341,7 @@ namespace SGA
             btneliminar.Click += (sender, e) =>
             {
                 string nombre = estudiante.Nombres.Split(' ')[0];
-                bool response = MessageBox.Show($"¿Deseas eliminar a {nombre}", "Eliminar estudiante", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes;
+                bool response = MessageBox.Show($"¿Deseas eliminar a {nombre}?", "Eliminar estudiante", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes;
 
                 if (response)
                 {
