@@ -259,7 +259,7 @@
             this.pnlEditar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlEditar.Location = new System.Drawing.Point(0, 0);
             this.pnlEditar.Name = "pnlEditar";
-            this.pnlEditar.Size = new System.Drawing.Size(1811, 1828);
+            this.pnlEditar.Size = new System.Drawing.Size(2021, 1828);
             this.pnlEditar.TabIndex = 200;
             this.pnlEditar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlEditar_Paint);
             // 
@@ -277,7 +277,7 @@
             "Nicaragua"});
             this.cbGrado.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbGrado.ListTextColor = System.Drawing.Color.Black;
-            this.cbGrado.Location = new System.Drawing.Point(805, 1495);
+            this.cbGrado.Location = new System.Drawing.Point(807, 1440);
             this.cbGrado.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbGrado.Name = "cbGrado";
             this.cbGrado.Padding = new System.Windows.Forms.Padding(1);
@@ -300,7 +300,7 @@
             "Nicaragua"});
             this.cbCentroEducativo.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbCentroEducativo.ListTextColor = System.Drawing.Color.Black;
-            this.cbCentroEducativo.Location = new System.Drawing.Point(465, 1606);
+            this.cbCentroEducativo.Location = new System.Drawing.Point(467, 1548);
             this.cbCentroEducativo.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbCentroEducativo.Name = "cbCentroEducativo";
             this.cbCentroEducativo.Padding = new System.Windows.Forms.Padding(1);
@@ -323,7 +323,7 @@
             "Nicaragua"});
             this.cbTurno.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbTurno.ListTextColor = System.Drawing.Color.Black;
-            this.cbTurno.Location = new System.Drawing.Point(340, 1490);
+            this.cbTurno.Location = new System.Drawing.Point(342, 1435);
             this.cbTurno.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbTurno.Name = "cbTurno";
             this.cbTurno.Padding = new System.Windows.Forms.Padding(1);
@@ -346,7 +346,7 @@
             "Nicaragua"});
             this.cbSeccion.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbSeccion.ListTextColor = System.Drawing.Color.Black;
-            this.cbSeccion.Location = new System.Drawing.Point(1177, 1490);
+            this.cbSeccion.Location = new System.Drawing.Point(1179, 1435);
             this.cbSeccion.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbSeccion.Name = "cbSeccion";
             this.cbSeccion.Padding = new System.Windows.Forms.Padding(1);
@@ -369,7 +369,7 @@
             "Nicaragua"});
             this.cbModalidad.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbModalidad.ListTextColor = System.Drawing.Color.Black;
-            this.cbModalidad.Location = new System.Drawing.Point(808, 1432);
+            this.cbModalidad.Location = new System.Drawing.Point(810, 1377);
             this.cbModalidad.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbModalidad.Name = "cbModalidad";
             this.cbModalidad.Padding = new System.Windows.Forms.Padding(1);
@@ -390,7 +390,7 @@
             this.mbButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.mbButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mbButton4.ForeColor = System.Drawing.Color.White;
-            this.mbButton4.Location = new System.Drawing.Point(665, 1695);
+            this.mbButton4.Location = new System.Drawing.Point(667, 1637);
             this.mbButton4.Name = "mbButton4";
             this.mbButton4.Size = new System.Drawing.Size(172, 55);
             this.mbButton4.TabIndex = 233;
@@ -411,7 +411,7 @@
             this.btnGuardarMatricula.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnGuardarMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarMatricula.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarMatricula.Location = new System.Drawing.Point(864, 1695);
+            this.btnGuardarMatricula.Location = new System.Drawing.Point(866, 1637);
             this.btnGuardarMatricula.Name = "btnGuardarMatricula";
             this.btnGuardarMatricula.Size = new System.Drawing.Size(172, 55);
             this.btnGuardarMatricula.TabIndex = 232;
@@ -434,7 +434,7 @@
             "Nicaragua"});
             this.cbLenguaMaterna.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbLenguaMaterna.ListTextColor = System.Drawing.Color.Black;
-            this.cbLenguaMaterna.Location = new System.Drawing.Point(414, 1196);
+            this.cbLenguaMaterna.Location = new System.Drawing.Point(416, 1141);
             this.cbLenguaMaterna.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbLenguaMaterna.Name = "cbLenguaMaterna";
             this.cbLenguaMaterna.Padding = new System.Windows.Forms.Padding(1);
@@ -447,7 +447,7 @@
             // 
             this.panel77.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel77.Controls.Add(this.label93);
-            this.panel77.Location = new System.Drawing.Point(234, 1190);
+            this.panel77.Location = new System.Drawing.Point(236, 1135);
             this.panel77.Name = "panel77";
             this.panel77.Size = new System.Drawing.Size(169, 45);
             this.panel77.TabIndex = 230;
@@ -478,7 +478,7 @@
             "Nicaragua"});
             this.cbDiscapacidad.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbDiscapacidad.ListTextColor = System.Drawing.Color.Black;
-            this.cbDiscapacidad.Location = new System.Drawing.Point(1026, 1132);
+            this.cbDiscapacidad.Location = new System.Drawing.Point(1028, 1077);
             this.cbDiscapacidad.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbDiscapacidad.Name = "cbDiscapacidad";
             this.cbDiscapacidad.Padding = new System.Windows.Forms.Padding(1);
@@ -492,7 +492,7 @@
             this.panel76.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel76.Controls.Add(this.label91);
             this.panel76.Controls.Add(this.label92);
-            this.panel76.Location = new System.Drawing.Point(760, 1116);
+            this.panel76.Location = new System.Drawing.Point(762, 1061);
             this.panel76.Name = "panel76";
             this.panel76.Size = new System.Drawing.Size(255, 64);
             this.panel76.TabIndex = 228;
@@ -533,7 +533,7 @@
             "Mestizo"});
             this.cbEtnia.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbEtnia.ListTextColor = System.Drawing.Color.Black;
-            this.cbEtnia.Location = new System.Drawing.Point(478, 1123);
+            this.cbEtnia.Location = new System.Drawing.Point(480, 1068);
             this.cbEtnia.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbEtnia.Name = "cbEtnia";
             this.cbEtnia.Size = new System.Drawing.Size(242, 38);
@@ -545,7 +545,7 @@
             // 
             this.panel73.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel73.Controls.Add(this.label87);
-            this.panel73.Location = new System.Drawing.Point(236, 1112);
+            this.panel73.Location = new System.Drawing.Point(238, 1057);
             this.panel73.Name = "panel73";
             this.panel73.Size = new System.Drawing.Size(232, 64);
             this.panel73.TabIndex = 226;
@@ -572,7 +572,7 @@
             this.txtNacionalidad.Enabled = false;
             this.txtNacionalidad.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNacionalidad.ForeColor = System.Drawing.Color.Black;
-            this.txtNacionalidad.Location = new System.Drawing.Point(830, 996);
+            this.txtNacionalidad.Location = new System.Drawing.Point(832, 941);
             this.txtNacionalidad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNacionalidad.Multiline = false;
             this.txtNacionalidad.Name = "txtNacionalidad";
@@ -599,7 +599,7 @@
             "Nicaragua"});
             this.cbDepartamento.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbDepartamento.ListTextColor = System.Drawing.Color.Black;
-            this.cbDepartamento.Location = new System.Drawing.Point(448, 1059);
+            this.cbDepartamento.Location = new System.Drawing.Point(450, 1004);
             this.cbDepartamento.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbDepartamento.Name = "cbDepartamento";
             this.cbDepartamento.Padding = new System.Windows.Forms.Padding(1);
@@ -622,7 +622,7 @@
             "Nicaragua"});
             this.cbMunicipio.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbMunicipio.ListTextColor = System.Drawing.Color.Black;
-            this.cbMunicipio.Location = new System.Drawing.Point(855, 1055);
+            this.cbMunicipio.Location = new System.Drawing.Point(857, 1000);
             this.cbMunicipio.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbMunicipio.Name = "cbMunicipio";
             this.cbMunicipio.Padding = new System.Windows.Forms.Padding(1);
@@ -642,7 +642,7 @@
             this.cbPaisNacimento.IconColor = System.Drawing.Color.Black;
             this.cbPaisNacimento.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.cbPaisNacimento.ListTextColor = System.Drawing.Color.Black;
-            this.cbPaisNacimento.Location = new System.Drawing.Point(424, 1002);
+            this.cbPaisNacimento.Location = new System.Drawing.Point(426, 947);
             this.cbPaisNacimento.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbPaisNacimento.Name = "cbPaisNacimento";
             this.cbPaisNacimento.Padding = new System.Windows.Forms.Padding(1);
@@ -660,7 +660,7 @@
             this.txtBarrio.BorderSize = 1;
             this.txtBarrio.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBarrio.ForeColor = System.Drawing.Color.Black;
-            this.txtBarrio.Location = new System.Drawing.Point(1198, 1053);
+            this.txtBarrio.Location = new System.Drawing.Point(1200, 998);
             this.txtBarrio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBarrio.Multiline = false;
             this.txtBarrio.Name = "txtBarrio";
@@ -677,7 +677,7 @@
             // 
             this.panel59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel59.Controls.Add(this.label68);
-            this.panel59.Location = new System.Drawing.Point(1084, 1050);
+            this.panel59.Location = new System.Drawing.Point(1086, 995);
             this.panel59.Name = "panel59";
             this.panel59.Size = new System.Drawing.Size(103, 45);
             this.panel59.TabIndex = 220;
@@ -698,7 +698,7 @@
             // 
             this.panel60.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel60.Controls.Add(this.label69);
-            this.panel60.Location = new System.Drawing.Point(661, 1049);
+            this.panel60.Location = new System.Drawing.Point(663, 994);
             this.panel60.Name = "panel60";
             this.panel60.Size = new System.Drawing.Size(182, 45);
             this.panel60.TabIndex = 219;
@@ -719,7 +719,7 @@
             // 
             this.panel61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel61.Controls.Add(this.label70);
-            this.panel61.Location = new System.Drawing.Point(237, 1053);
+            this.panel61.Location = new System.Drawing.Point(239, 998);
             this.panel61.Name = "panel61";
             this.panel61.Size = new System.Drawing.Size(200, 45);
             this.panel61.TabIndex = 218;
@@ -740,7 +740,7 @@
             // 
             this.panel74.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel74.Controls.Add(this.label89);
-            this.panel74.Location = new System.Drawing.Point(663, 993);
+            this.panel74.Location = new System.Drawing.Point(665, 938);
             this.panel74.Name = "panel74";
             this.panel74.Size = new System.Drawing.Size(158, 45);
             this.panel74.TabIndex = 215;
@@ -761,7 +761,7 @@
             // 
             this.panel75.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel75.Controls.Add(this.label90);
-            this.panel75.Location = new System.Drawing.Point(237, 995);
+            this.panel75.Location = new System.Drawing.Point(239, 940);
             this.panel75.Name = "panel75";
             this.panel75.Size = new System.Drawing.Size(176, 45);
             this.panel75.TabIndex = 214;
@@ -787,7 +787,7 @@
             this.txtComunidadIndigena.BorderSize = 1;
             this.txtComunidadIndigena.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtComunidadIndigena.ForeColor = System.Drawing.Color.Black;
-            this.txtComunidadIndigena.Location = new System.Drawing.Point(1008, 927);
+            this.txtComunidadIndigena.Location = new System.Drawing.Point(1010, 872);
             this.txtComunidadIndigena.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtComunidadIndigena.Multiline = false;
             this.txtComunidadIndigena.Name = "txtComunidadIndigena";
@@ -804,7 +804,7 @@
             // 
             this.panel58.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel58.Controls.Add(this.label67);
-            this.panel58.Location = new System.Drawing.Point(742, 917);
+            this.panel58.Location = new System.Drawing.Point(744, 862);
             this.panel58.Name = "panel58";
             this.panel58.Size = new System.Drawing.Size(255, 64);
             this.panel58.TabIndex = 212;
@@ -830,7 +830,7 @@
             this.txtTerritorioIndigena.BorderSize = 1;
             this.txtTerritorioIndigena.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTerritorioIndigena.ForeColor = System.Drawing.Color.Black;
-            this.txtTerritorioIndigena.Location = new System.Drawing.Point(504, 928);
+            this.txtTerritorioIndigena.Location = new System.Drawing.Point(506, 873);
             this.txtTerritorioIndigena.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTerritorioIndigena.Multiline = false;
             this.txtTerritorioIndigena.Name = "txtTerritorioIndigena";
@@ -847,7 +847,7 @@
             // 
             this.panel57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel57.Controls.Add(this.label66);
-            this.panel57.Location = new System.Drawing.Point(239, 917);
+            this.panel57.Location = new System.Drawing.Point(241, 862);
             this.panel57.Name = "panel57";
             this.panel57.Size = new System.Drawing.Size(255, 64);
             this.panel57.TabIndex = 210;
@@ -873,7 +873,7 @@
             this.txtTalla.BorderSize = 1;
             this.txtTalla.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTalla.ForeColor = System.Drawing.Color.Black;
-            this.txtTalla.Location = new System.Drawing.Point(1191, 856);
+            this.txtTalla.Location = new System.Drawing.Point(1193, 801);
             this.txtTalla.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTalla.Multiline = false;
             this.txtTalla.Name = "txtTalla";
@@ -890,7 +890,7 @@
             // 
             this.panel53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel53.Controls.Add(this.label62);
-            this.panel53.Location = new System.Drawing.Point(1054, 854);
+            this.panel53.Location = new System.Drawing.Point(1056, 799);
             this.panel53.Name = "panel53";
             this.panel53.Size = new System.Drawing.Size(136, 45);
             this.panel53.TabIndex = 208;
@@ -913,7 +913,7 @@
             this.chSexoMas.BackColor = System.Drawing.Color.White;
             this.chSexoMas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chSexoMas.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chSexoMas.Location = new System.Drawing.Point(474, 868);
+            this.chSexoMas.Location = new System.Drawing.Point(476, 813);
             this.chSexoMas.Name = "chSexoMas";
             this.chSexoMas.Size = new System.Drawing.Size(91, 21);
             this.chSexoMas.TabIndex = 207;
@@ -927,7 +927,7 @@
             this.chSexoFem.BackColor = System.Drawing.Color.White;
             this.chSexoFem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chSexoFem.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chSexoFem.Location = new System.Drawing.Point(588, 868);
+            this.chSexoFem.Location = new System.Drawing.Point(590, 813);
             this.chSexoFem.Name = "chSexoFem";
             this.chSexoFem.Size = new System.Drawing.Size(90, 21);
             this.chSexoFem.TabIndex = 206;
@@ -944,7 +944,7 @@
             this.txtPeso.BorderSize = 1;
             this.txtPeso.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPeso.ForeColor = System.Drawing.Color.Black;
-            this.txtPeso.Location = new System.Drawing.Point(881, 857);
+            this.txtPeso.Location = new System.Drawing.Point(883, 802);
             this.txtPeso.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPeso.Multiline = false;
             this.txtPeso.Name = "txtPeso";
@@ -961,7 +961,7 @@
             // 
             this.panel54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel54.Controls.Add(this.label63);
-            this.panel54.Location = new System.Drawing.Point(751, 855);
+            this.panel54.Location = new System.Drawing.Point(753, 800);
             this.panel54.Name = "panel54";
             this.panel54.Size = new System.Drawing.Size(128, 45);
             this.panel54.TabIndex = 204;
@@ -988,7 +988,7 @@
             this.mbTexbox30.Enabled = false;
             this.mbTexbox30.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mbTexbox30.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox30.Location = new System.Drawing.Point(407, 859);
+            this.mbTexbox30.Location = new System.Drawing.Point(409, 804);
             this.mbTexbox30.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mbTexbox30.Multiline = false;
             this.mbTexbox30.Name = "mbTexbox30";
@@ -1005,7 +1005,7 @@
             // 
             this.panel55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel55.Controls.Add(this.label64);
-            this.panel55.Location = new System.Drawing.Point(240, 857);
+            this.panel55.Location = new System.Drawing.Point(242, 802);
             this.panel55.Name = "panel55";
             this.panel55.Size = new System.Drawing.Size(152, 45);
             this.panel55.TabIndex = 202;
@@ -1116,7 +1116,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel5.Controls.Add(this.label7);
-            this.panel5.Location = new System.Drawing.Point(231, 1599);
+            this.panel5.Location = new System.Drawing.Point(233, 1541);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(222, 45);
             this.panel5.TabIndex = 190;
@@ -1137,7 +1137,7 @@
             // 
             this.chRepitenteNo.AutoSize = true;
             this.chRepitenteNo.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chRepitenteNo.Location = new System.Drawing.Point(428, 1553);
+            this.chRepitenteNo.Location = new System.Drawing.Point(430, 1498);
             this.chRepitenteNo.Name = "chRepitenteNo";
             this.chRepitenteNo.Size = new System.Drawing.Size(48, 21);
             this.chRepitenteNo.TabIndex = 179;
@@ -1149,7 +1149,7 @@
             // 
             this.chRepitenteSi.AutoSize = true;
             this.chRepitenteSi.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chRepitenteSi.Location = new System.Drawing.Point(494, 1554);
+            this.chRepitenteSi.Location = new System.Drawing.Point(496, 1499);
             this.chRepitenteSi.Name = "chRepitenteSi";
             this.chRepitenteSi.Size = new System.Drawing.Size(40, 21);
             this.chRepitenteSi.TabIndex = 178;
@@ -1167,7 +1167,7 @@
             this.mbTexbox13.Enabled = false;
             this.mbTexbox13.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mbTexbox13.ForeColor = System.Drawing.Color.Black;
-            this.mbTexbox13.Location = new System.Drawing.Point(399, 1544);
+            this.mbTexbox13.Location = new System.Drawing.Point(401, 1489);
             this.mbTexbox13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mbTexbox13.Multiline = false;
             this.mbTexbox13.Name = "mbTexbox13";
@@ -1184,7 +1184,7 @@
             // 
             this.panel43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel43.Controls.Add(this.label51);
-            this.panel43.Location = new System.Drawing.Point(231, 1540);
+            this.panel43.Location = new System.Drawing.Point(233, 1485);
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(162, 45);
             this.panel43.TabIndex = 176;
@@ -1205,7 +1205,7 @@
             // 
             this.panel44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel44.Controls.Add(this.label52);
-            this.panel44.Location = new System.Drawing.Point(1055, 1485);
+            this.panel44.Location = new System.Drawing.Point(1057, 1430);
             this.panel44.Name = "panel44";
             this.panel44.Size = new System.Drawing.Size(109, 45);
             this.panel44.TabIndex = 174;
@@ -1226,7 +1226,7 @@
             // 
             this.panel45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel45.Controls.Add(this.label53);
-            this.panel45.Location = new System.Drawing.Point(664, 1489);
+            this.panel45.Location = new System.Drawing.Point(666, 1434);
             this.panel45.Name = "panel45";
             this.panel45.Size = new System.Drawing.Size(130, 45);
             this.panel45.TabIndex = 172;
@@ -1247,7 +1247,7 @@
             // 
             this.panel46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel46.Controls.Add(this.label54);
-            this.panel46.Location = new System.Drawing.Point(233, 1485);
+            this.panel46.Location = new System.Drawing.Point(235, 1430);
             this.panel46.Name = "panel46";
             this.panel46.Size = new System.Drawing.Size(95, 45);
             this.panel46.TabIndex = 169;
@@ -1268,7 +1268,7 @@
             // 
             this.panel47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel47.Controls.Add(this.label55);
-            this.panel47.Location = new System.Drawing.Point(664, 1423);
+            this.panel47.Location = new System.Drawing.Point(666, 1368);
             this.panel47.Name = "panel47";
             this.panel47.Size = new System.Drawing.Size(132, 45);
             this.panel47.TabIndex = 168;
@@ -1295,7 +1295,7 @@
             this.txtNivelEducativo.Enabled = false;
             this.txtNivelEducativo.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNivelEducativo.ForeColor = System.Drawing.Color.Black;
-            this.txtNivelEducativo.Location = new System.Drawing.Point(402, 1425);
+            this.txtNivelEducativo.Location = new System.Drawing.Point(404, 1370);
             this.txtNivelEducativo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNivelEducativo.Multiline = false;
             this.txtNivelEducativo.Name = "txtNivelEducativo";
@@ -1312,7 +1312,7 @@
             // 
             this.panel48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel48.Controls.Add(this.label56);
-            this.panel48.Location = new System.Drawing.Point(233, 1423);
+            this.panel48.Location = new System.Drawing.Point(235, 1368);
             this.panel48.Name = "panel48";
             this.panel48.Size = new System.Drawing.Size(157, 45);
             this.panel48.TabIndex = 166;
@@ -1333,7 +1333,7 @@
             // 
             this.panel49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel49.Controls.Add(this.label58);
-            this.panel49.Location = new System.Drawing.Point(234, 1268);
+            this.panel49.Location = new System.Drawing.Point(236, 1213);
             this.panel49.Name = "panel49";
             this.panel49.Size = new System.Drawing.Size(1278, 60);
             this.panel49.TabIndex = 165;
@@ -1359,7 +1359,7 @@
             this.txtCodigoEstudiante.BorderSize = 1;
             this.txtCodigoEstudiante.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoEstudiante.ForeColor = System.Drawing.Color.Black;
-            this.txtCodigoEstudiante.Location = new System.Drawing.Point(465, 1359);
+            this.txtCodigoEstudiante.Location = new System.Drawing.Point(467, 1304);
             this.txtCodigoEstudiante.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCodigoEstudiante.Multiline = false;
             this.txtCodigoEstudiante.Name = "txtCodigoEstudiante";
@@ -1376,7 +1376,7 @@
             // 
             this.panel52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.panel52.Controls.Add(this.label61);
-            this.panel52.Location = new System.Drawing.Point(236, 1356);
+            this.panel52.Location = new System.Drawing.Point(238, 1301);
             this.panel52.Name = "panel52";
             this.panel52.Size = new System.Drawing.Size(218, 45);
             this.panel52.TabIndex = 159;
@@ -1887,7 +1887,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1832, 987);
+            this.ClientSize = new System.Drawing.Size(2042, 987);
             this.Controls.Add(this.pnlEditar);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "Editar_Estudiante";

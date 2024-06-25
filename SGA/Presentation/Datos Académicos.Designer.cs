@@ -653,6 +653,7 @@
             this.txtNombresDelEstudiante.Size = new System.Drawing.Size(731, 38);
             this.txtNombresDelEstudiante.TabIndex = 119;
             this.txtNombresDelEstudiante.UnderlineStyle = false;
+            this.txtNombresDelEstudiante._TextChanged += new System.EventHandler(this.txtNombresDelEstudiante__TextChanged);
             // 
             // txtCodigoTemporalEstudiante
             // 

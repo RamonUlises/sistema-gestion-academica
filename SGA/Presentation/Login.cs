@@ -52,6 +52,12 @@ namespace SGA.PRESENTACION
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
+            if(e.KeyCode == Keys.Enter && txtUsuarioLogin.Text.Length > 0 && txtcontrasenaLogin.Text.Length == 0)
+            {
+                txtcontrasenaLogin.Focus();
+                return;
+            }
+
             if (e.KeyCode == Keys.Enter)
             {
                 ValidarUsuario();

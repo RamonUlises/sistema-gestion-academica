@@ -254,6 +254,11 @@ namespace SGA.PRESENTACION
 
             Controllers.ControllerDatosAcademicos controller = new Controllers.ControllerDatosAcademicos();
 
+            bool res = MessageBox.Show($"¿El código {datosAcademicos.CodigoEstudiante} está correcto?\n" +
+                $"Recuerda que no podrás modificarlo", "Confirmación", MessageBoxButtons.YesNo) == DialogResult.Yes;
+
+            if (!res) return;
+
             string resultado = controller.AgregarDatosAcademicos(datosAcademicos, Convert.ToInt32(txtCodigoTemporalEstudiante.Text));
 
             if(resultado == "Datos académicos agregados correctamente")
@@ -454,6 +459,11 @@ namespace SGA.PRESENTACION
         private void mbBuscarEstudiante_Click(object sender, EventArgs e)
         {
             BuscarEstudiante();
+        }
+
+        private void txtNombresDelEstudiante__TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

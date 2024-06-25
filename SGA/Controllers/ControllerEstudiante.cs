@@ -17,6 +17,11 @@ namespace SGA.Controllers
 
             try
             {
+                if(estudiante.Nombre1 == "No editar")
+                {
+                    string response = new ControllerDatosAcademicos().EditarDatosAcademicos(datos, id);
+                    return response;
+                }
                 using (MySqlConnection conn = connection.GetConnection())
                 {
                     ControllerPais controllerPaises = new ControllerPais();
@@ -44,30 +49,19 @@ namespace SGA.Controllers
                     int idEtnia = controllerEtnias.ObtenerIdEtnia(estudiante.Etnia);
                     int idLengua = controllerLenguaMaterna.ObtenerIdLengua(estudiante.Lengua);
                     int idDiscapacidad = controllerDiscapacidad.ObtenerIdDiscapacidad(estudiante.Discapacidad);
-                    int idTutor = controllerTutorEstudiante.ValidarTutor(estudiante);
-
-                    if (idTutor == 0)
-                    {
-                        return "La cédula del tutor ya se encuentra registrada con diferentes nombres";
-                    }
 
                     DateTime fechaConvertida = DateTime.ParseExact(estudiante.FechaNacimiento, "dd-MM-yyyy", CultureInfo.InvariantCulture);
                     string fechaSql = fechaConvertida.ToString("yyyy-MM-dd");
 
                     int idPartida = estudiante.PartidaNacimiento ? 1 : 0;
-                        
-                    DateTime fechaMatriculaConvertida = DateTime.ParseExact(estudiante.FechaMatricula, "dd-MM-yyyy", CultureInfo.InvariantCulture);
-                    string fechaMatriculaSql = fechaMatriculaConvertida.ToString("yyyy-MM-dd");
-
 
                     string query = "UPDATE estudiantes SET nombres = @nombres, apellidos = @apellidos, cedula = @cedula, fecha_nacimiento = @fecha_nacimiento, direccion = @direccion, " +
-                                   "telefono = @telefono, partida_nacimiento = @partida_nacimiento, fecha_matricula = @fecha_matricula, barrio = @barrio, peso = @peso, talla = @talla, " +
+                                   "telefono = @telefono, partida_nacimiento = @partida_nacimiento, barrio = @barrio, peso = @peso, talla = @talla, " +
                                    "territorio_indigena = @territorio_indigena, comunidad_indigena = @comunidad_indigena, id_sexo = @id_sexo, id_pais = @id_pais, id_departamento = @id_departamento, " +
-                                   "id_municipio = @id_municipio, id_nacionalidad = @id_nacionalidad, id_etnia = @id_etnia, id_lengua = @id_lengua, id_discapacidad = @id_discapacidad, " +
-                                   "id_tutor_x_estudiante = @id_tutor_x_estudiante WHERE id_estudiante = @id";
+                                   "id_municipio = @id_municipio, id_nacionalidad = @id_nacionalidad, id_etnia = @id_etnia, id_lengua = @id_lengua, id_discapacidad = @id_discapacidad " +
+                                   "WHERE id_estudiante = @id";
 
                     MySqlCommand cmd = new MySqlCommand(query, conn);
-                    MySqlDataReader reader = cmd.ExecuteReader();
 
                     // Añadir parámetros
                     cmd.Parameters.AddWithValue("@nombres", nombres);
@@ -77,7 +71,6 @@ namespace SGA.Controllers
                     cmd.Parameters.AddWithValue("@direccion", estudiante.Direccion);
                     cmd.Parameters.AddWithValue("@telefono", telefono);
                     cmd.Parameters.AddWithValue("@partida_nacimiento", idPartida);
-                    cmd.Parameters.AddWithValue("@fecha_matricula", fechaMatriculaSql);
                     cmd.Parameters.AddWithValue("@barrio", estudiante.Barrio);
                     cmd.Parameters.AddWithValue("@peso", estudiante.Peso);
                     cmd.Parameters.AddWithValue("@talla", estudiante.Talla);
@@ -91,14 +84,13 @@ namespace SGA.Controllers
                     cmd.Parameters.AddWithValue("@id_etnia", idEtnia);
                     cmd.Parameters.AddWithValue("@id_lengua", idLengua);
                     cmd.Parameters.AddWithValue("@id_discapacidad", idDiscapacidad);
-                    cmd.Parameters.AddWithValue("@id_tutor_x_estudiante", idTutor);
                     cmd.Parameters.AddWithValue("@id", id);
                         
                     int rowsAffected = cmd.ExecuteNonQuery();
                     if (rowsAffected > 0)
                     {
-                        new ControllerDatosAcademicos().EditarDatosAcademicos(datos, id);
-                        return "Estudiante actualizado";
+                        string resss = new ControllerDatosAcademicos().EditarDatosAcademicos(datos, id);
+                        return resss;
                     }
                     else
                     {
@@ -107,7 +99,7 @@ namespace SGA.Controllers
                 } 
             } catch (Exception ex)
             {
-                return "No se actualizó el estudiante";
+                return ex.ToString();
             } finally
             {
                 connection.CloseConnection();

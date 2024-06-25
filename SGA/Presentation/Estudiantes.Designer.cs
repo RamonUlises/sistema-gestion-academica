@@ -1870,6 +1870,7 @@
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(1281, 178);
             this.panel17.TabIndex = 63;
+            this.panel17.Paint += new System.Windows.Forms.PaintEventHandler(this.panel17_Paint);
             // 
             // label19
             // 

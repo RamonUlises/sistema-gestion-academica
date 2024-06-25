@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,7 +13,7 @@ namespace SGA.Presentation
 {
     public partial class Editar_Estudiante : Form
     {
-
+        int idEstudiante;
         public Editar_Estudiante(Clases.ITEstudiantes estudiante)
         {
             InitializeComponent();
@@ -27,6 +28,9 @@ namespace SGA.Presentation
 
 
             LlenarEstudiante(estudiante);
+            idEstudiante = estudiante.Id;
+
+            txtCodigoEstudiante.Enabled = false;
         }
 
         private void LlenarEstudiante(Clases.ITEstudiantes estudiante)
@@ -37,7 +41,11 @@ namespace SGA.Presentation
             txtNombre2.Text = nombres[1];
             txtApellido1.Text = nombres[2];
             txtApellido2.Text = nombres[3];
-            txtFechaNacimiento.Text = estudiante.FechaNacimiento;
+
+            // Cambiar formato de fecha de / a -
+            string newFecha = estudiante.FechaNacimiento.Replace("/", "-");
+
+            txtFechaNacimiento.Text = newFecha;
             txtDireccion.Text = estudiante.Direccion;
             txtTelefono.Text = estudiante.Telefono;
             txtPeso.Text = estudiante.Peso.ToString();
@@ -268,10 +276,445 @@ namespace SGA.Presentation
         {
 
         }
+        private bool ValidarPartidaNacimiento()
+        {
+            if(chPartidaNacimeintoSi.Checked && ChParitdaNacimientoNo.Checked)
+            {
+                MessageBox.Show("Debe seleccionar solo una opción para la partida de nacimiento", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
 
+            if(chPartidaNacimeintoSi.Checked == false && ChParitdaNacimientoNo.Checked == false)
+            {
+                MessageBox.Show("Debe seleccionar una opción para la partida de nacimiento", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            return true;
+        }
+
+        public bool ValidarSexo()
+        {
+            if(chSexoMas.Checked && chSexoFem.Checked)
+            {
+                MessageBox.Show("Debe seleccionar solo una opción para el sexo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            if(chSexoMas.Checked == false && chSexoFem.Checked == false)
+            {
+                MessageBox.Show("Debe seleccionar una opción para el sexo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            return true;
+        }
+
+        private bool ValidarLongitudEstudiante()
+        {
+            bool res;
+            string pattern = @"^\d+(\.\d+)?$";
+
+
+            if (txtNombre1.Text.Length > 100)
+            {
+                MessageBox.Show("El nombre no puede tener más de 100 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            if (txtNombre2.Text.Length > 100)
+            {
+                MessageBox.Show("El segundo nombre no puede tener más de 100 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            if (txtApellido1.Text.Length > 100)
+            {
+                MessageBox.Show("El primer apellido no puede tener más de 100 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            if (txtApellido2.Text.Length > 100)
+            {
+                MessageBox.Show("El segundo apellido no puede tener más de 100 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            if (txtCedula.Text.Length > 16)
+            {
+                MessageBox.Show("La cédula no puede tener más de 16 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            if(txtFechaNacimiento.Text.Length > 10)
+            {
+                MessageBox.Show("La fecha de nacimiento no puede tener más de 10 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            if (txtDireccion.Text.Length > 200)
+            {
+                MessageBox.Show("La dirección no puede tener más de 200 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            if (txtTelefono.Text.Length > 9)
+            {
+                MessageBox.Show("El teléfono no puede tener más de 9 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            res = ValidarPartidaNacimiento();
+            if(!res) return false;
+
+            res = ValidarSexo();
+            if(!res) return false;
+
+            if (txtPeso.Text.Length > 5)
+            {
+                MessageBox.Show("El peso no puede tener más de 5 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            if (txtTalla.Text.Length > 5)
+            {
+                MessageBox.Show("La talla no puede tener más de 5 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            if (!Regex.IsMatch(txtPeso.Text, pattern))
+            {
+                MessageBox.Show("El peso debe ser un número");
+                return false;
+            }
+
+            if (!Regex.IsMatch(txtTalla.Text, pattern))
+            {
+                MessageBox.Show("La talla debe ser un número");
+                return false;
+            }
+
+            if (txtTerritorioIndigena.Text.Length > 200)
+            {
+                MessageBox.Show("El territorio indígena no puede tener más de 200 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            if (txtComunidadIndigena.Text.Length > 200)
+            {
+                MessageBox.Show("La comunidad indígena no puede tener más de 200 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            if(txtBarrio.Text.Length > 100)
+            {
+                MessageBox.Show("El barrio no puede tener más de 100 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            return true;
+        }
+
+        private bool ValidarEditarEstudiante()
+        {
+            if(txtNombre1.Text.Length > 0)
+            {
+                return true;
+            }
+            if(txtNombre2.Text.Length > 0)
+            {
+                return true;
+            }
+            if(txtApellido1.Text.Length > 0)
+            {
+                return true;
+            }
+            if(txtApellido2.Text.Length > 0)
+            {
+                return true;
+            }
+            if(txtCedula.Text.Length > 0)
+            {
+                return true;
+            }
+            if(txtFechaNacimiento.Text.Length > 0)
+            {
+                return true;
+            }
+            if(txtDireccion.Text.Length > 0)
+            {
+                return true;
+            }
+            if(txtTelefono.Text.Length > 0)
+            {
+                return true;
+            }
+            if(txtPeso.Text.Length > 0)
+            {
+                return true;
+            }
+            if(txtTalla.Text.Length > 0)
+            {
+                return true;
+            }
+            if(txtTerritorioIndigena.Text.Length > 0)
+            {
+                return true;
+            }
+            if(txtComunidadIndigena.Text.Length > 0)
+            {
+                return true;
+            }
+            if(txtBarrio.Text.Length > 0)
+            {
+                return true;
+            }
+            if(txtNacionalidad.Text.Length > 0)
+            {
+                return true;
+            }
+            if(cbPaisNacimento.Texts.Length > 0)
+            {
+                return true;
+            }
+            if(cbDepartamento.Texts.Length > 0)
+            {
+                return true;
+            }
+            if(cbMunicipio.Texts.Length > 0)
+            {
+                return true;
+            }
+            if(cbEtnia.Texts.Length > 0)
+            {
+                return true;
+            }
+            if(cbLenguaMaterna.Texts.Length > 0)
+            {
+                return true;
+            }
+            if(cbDiscapacidad.Texts.Length > 0)
+            {
+                return true;
+            }
+            if(chSexoMas.Checked || chSexoFem.Checked)
+            {
+                return true;
+            }
+            if(chPartidaNacimeintoSi.Checked || ChParitdaNacimientoNo.Checked)
+            {
+                return true;
+            }
+
+
+            return false;
+        }
         private void btnGuardarMatricula_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("");
+
+            Clases.ClassEstudiantes estudiante = new Clases.ClassEstudiantes();
+            Clases.ClassDatosAcademicos datosAcademicos = new Clases.ClassDatosAcademicos();
+
+            estudiante.Nombre1 = "No editar";
+            datosAcademicos.CodigoEstudiante = "No editar";
+
+            bool respo = ValidarEditarEstudiante();
+            bool response;
+
+            if (respo)
+            {
+
+                response = ValidarLongitudEstudiante();
+                if (!response) return;
+
+                estudiante.Nombre1 = txtNombre1.Text;
+                estudiante.Nombre2 = txtNombre2.Text;
+                estudiante.Apellido1 = txtApellido1.Text;
+                estudiante.Apellido2 = txtApellido2.Text;
+                estudiante.Cedula = txtCedula.Text;
+                estudiante.PartidaNacimiento = chPartidaNacimeintoSi.Checked;
+                estudiante.FechaNacimiento = txtFechaNacimiento.Text;
+                estudiante.Telefono = txtTelefono.Text;
+                estudiante.Direccion = txtDireccion.Text;
+                estudiante.Barrio = txtBarrio.Text;
+                estudiante.Peso = double.Parse(txtPeso.Text);
+                estudiante.Talla = double.Parse(txtTalla.Text);
+                estudiante.TerritorioIndigena = txtTerritorioIndigena.Text;
+                estudiante.ComunidadIndigena = txtComunidadIndigena.Text;
+                estudiante.Sexo = chSexoMas.Checked ? "Masculino" : "Femenino";
+                estudiante.Pais = cbPaisNacimento.Texts;
+                estudiante.Departamento = cbDepartamento.Texts;
+                estudiante.Municipio = cbMunicipio.Texts;
+                estudiante.Nacionalidad = txtNacionalidad.Text;
+                estudiante.Etnia = cbEtnia.Texts;
+                estudiante.Lengua = cbLenguaMaterna.Texts;
+                estudiante.Discapacidad = cbDiscapacidad.Texts;
+                estudiante.NombresTutor = "Hola";
+                estudiante.CedulaTutor = "Hola";
+                estudiante.TelefonoTutor = "Hola";
+
+                var res = estudiante.ValidarNombres();
+                if (res.result == false)
+                {
+                    MessageBox.Show(res.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                res = estudiante.ValidarApellidos();
+                if (res.result == false)
+                {
+                    MessageBox.Show(res.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                res = estudiante.ValidarCedula();
+                if (res.result == false)
+                {
+                    MessageBox.Show(res.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                res = estudiante.ValidarTelefono();
+                if (res.result == false)
+                {
+                    MessageBox.Show(res.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                res = estudiante.ValidarEspacios();
+                if (res.result == false)
+                {
+                    MessageBox.Show(res.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                res = estudiante.ValidarPesoTalla();
+                if (res.result == false)
+                {
+                    MessageBox.Show(res.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                res = estudiante.ValidarFechaNacimiento();
+                if (res.result == false)
+                {
+                    MessageBox.Show(res.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+
+            // Validar Datos Academicos
+
+            bool editarDatos = ValidarEditarDatos();
+
+            if (editarDatos)
+            {
+                response = ValidarLongitudDatos();
+
+                if (!response) return;
+
+                datosAcademicos.CodigoEstudiante = txtCodigoEstudiante.Text;
+                datosAcademicos.NivelEducativo = txtNivelEducativo.Text;
+                datosAcademicos.Grado = cbGrado.Texts;
+                datosAcademicos.Seccion = cbSeccion.Texts;
+                datosAcademicos.Turno = cbTurno.Texts;
+                datosAcademicos.Modalidad = cbModalidad.Texts;
+                datosAcademicos.NombreCentroEducativo = cbCentroEducativo.Texts;
+                datosAcademicos.Repitente = chRepitenteSi.Checked;
+
+                var res2 = datosAcademicos.ValidarCamposVacios();
+                if (res2.result == false)
+                {
+                    MessageBox.Show(res2.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                res2 = datosAcademicos.ValidarCodigoEstudiante();
+                if (res2.result == false)
+                {
+                    MessageBox.Show(res2.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+
+            if(ValidarEditarDatos() == false && ValidarEditarEstudiante() == false)
+            {
+                MessageBox.Show("No se ha editado ningún campo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string resultado = new Controllers.ControllerEstudiante().EditarEstudiante(estudiante, datosAcademicos, idEstudiante);
+
+            if (resultado == "1")
+            {
+                MessageBox.Show("Estudiante editado correctamente", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show(resultado, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private bool ValidarEditarDatos()
+        {
+            if(txtCodigoEstudiante.Text.Length > 0)
+            {
+                return true;
+            }
+            if(txtNivelEducativo.Text.Length > 0)
+            {
+                return true;
+            }
+            if(cbGrado.Texts.Length > 0)
+            {
+                return true;
+            }
+            if(cbSeccion.Texts.Length > 0)
+            {
+                return true;
+            }
+            if(cbTurno.Texts.Length > 0)
+            {
+                return true;
+            }
+            if(cbModalidad.Texts.Length > 0)
+            {
+                return true;
+            }
+            if(cbCentroEducativo.Texts.Length > 0)
+            {
+                return true;
+            }
+            if(chRepitenteSi.Checked || chRepitenteNo.Checked)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        private bool ValidarLongitudDatos()
+        {
+            if(txtCodigoEstudiante.Text.Length > 20)
+            {
+                MessageBox.Show("El código del estudiante no puede tener más de 20 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            if(txtNivelEducativo.Text.Length > 100)
+            {
+                MessageBox.Show("El nivel educativo no puede tener más de 100 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            bool res = ValidarRepitente();
+
+            if(!res) return false;
+
+            return true;
+        }
+
+        private bool ValidarRepitente()
+        {
+            if(chRepitenteSi.Checked && chRepitenteNo.Checked)
+            {
+                MessageBox.Show("Debe seleccionar solo una opción para repitente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            if(chRepitenteSi.Checked == false && chRepitenteNo.Checked == false)
+            {
+                MessageBox.Show("Debe seleccionar una opción para repitente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            return true;
         }
 
         private void txtLenguaMaternaMatricula_OnSelectedIndexChanged(object sender, EventArgs e)

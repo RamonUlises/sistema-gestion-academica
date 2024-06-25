@@ -338,10 +338,19 @@ namespace SGA
                 
                 if (response)
                 {
-                    //txtBuscarEstudiantes.Visible = false;
-                    //showSubMenu(pnlEditar);
 
                     new Editar_Estudiante(estudiante).ShowDialog();
+
+                    flowLayoutPanel1.Controls.Clear();
+
+                    if(txtBuscarEstudiantes.Text.Length > 0)
+                    {
+                        BuscarEstudiantes(txtBuscarEstudiantes.Text);
+                    }
+                    else
+                    {
+                        MostrarEstudiantes();
+                    }
                 }
             };
 
@@ -543,5 +552,9 @@ namespace SGA
             txtBuscarEstudiantes.Visible = true;
         }
 
+        private void panel17_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

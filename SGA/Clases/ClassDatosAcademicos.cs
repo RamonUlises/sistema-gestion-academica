@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace SGA.Clases
@@ -70,6 +71,14 @@ namespace SGA.Clases
             {
                 return Validation(false, "El código del estudiante debe tener menos de 20 caracteres");
             }
+
+            string pattern = @"^[A-Z]{3,5}[0-9]{13,15}$";
+
+            if(!Regex.IsMatch(this.CodigoEstudiante, pattern))
+            {
+                return Validation(false, "El código del estudiante no cumple con el formato requerido");
+            }
+
             return Validation(true, "Correcto");
         }
         public ValidarResultados Validation(bool result, string message)
